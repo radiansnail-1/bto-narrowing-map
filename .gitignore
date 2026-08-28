@@ -1,0 +1,17 @@
+node_modules/
+.next/
+out/
+coverage/
+playwright-report/
+test-results/
+*.tsbuildinfo
+.DS_Store
+
+# Local inputs used to regenerate the checked-in map binaries.
+work/geo-raw/
+
+# Local configuration and secrets.
+.env*
+!.env.example
+.claude/
+.codex/

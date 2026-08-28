@@ -1,0 +1,1168 @@
+{
+ "version": 1,
+ "generatedAt": "2026-08-28",
+ "projection": {
+  "originLatitude": 1.37,
+  "originLongitude": 103.87,
+  "unitsPerDegree": 85,
+  "kmPerUnit": 1.31,
+  "quant": 1000
+ },
+ "bounds": {
+  "x0": -22.465,
+  "z0": -8.566,
+  "x1": 18.571,
+  "z1": 17.961
+ },
+ "sources": [
+  {
+   "name": "URA Master Plan 2019 Subzone Boundary (No Sea)",
+   "role": "land, coastline, planning-area boundaries",
+   "url": "https://data.gov.sg/datasets/d_8594ae9ff96d0c708bc2af633048edfb/view",
+   "license": "Singapore Open Data Licence",
+   "retrieved": "2026-08-28"
+  },
+  {
+   "name": "OpenStreetMap (Overpass API extract)",
+   "role": "building footprints and tagged heights/levels, roads, MRT routes and stations, water, parks, runways",
+   "url": "https://www.openstreetmap.org/copyright",
+   "license": "ODbL 1.0 — © OpenStreetMap contributors",
+   "retrieved": "2026-08-28"
+  }
+ ],
+ "heightMethod": "OSM height tag when present; else building:levels × storey height; else deterministic band from building type, footprint area and planning area (visual approximation, not survey data).",
+ "counts": {
+  "buildings": 118415,
+  "buildingsWithTaggedHeight": 3794,
+  "buildingsWithTaggedLevels": 27295,
+  "landPolygons": 372,
+  "roads": 28852,
+  "railWays": 255,
+  "stations": 187,
+  "waterPolygons": 150,
+  "greenPolygons": 216
+ },
+ "tileSize": 3,
+ "tiles": [
+  {
+   "x0": -3,
+   "z0": -3,
+   "x1": 0,
+   "z1": 0,
+   "byteOffset": 0,
+   "byteLength": 121456,
+   "count": 5137,
+   "maxHeightM": 300
+  },
+  {
+   "x0": -3,
+   "z0": -6,
+   "x1": 0,
+   "z1": -3,
+   "byteOffset": 121456,
+   "byteLength": 44312,
+   "count": 1107,
+   "maxHeightM": 300
+  },
+  {
+   "x0": -3,
+   "z0": -9,
+   "x1": 0,
+   "z1": -6,
+   "byteOffset": 165768,
+   "byteLength": 8464,
+   "count": 340,
+   "maxHeightM": 46
+  },
+  {
+   "x0": -3,
+   "z0": 0,
+   "x1": 0,
+   "z1": 3,
+   "byteOffset": 174232,
+   "byteLength": 163840,
+   "count": 6650,
+   "maxHeightM": 133
+  },
+  {
+   "x0": -3,
+   "z0": 3,
+   "x1": 0,
+   "z1": 6,
+   "byteOffset": 338072,
+   "byteLength": 182288,
+   "count": 7384,
+   "maxHeightM": 143
+  },
+  {
+   "x0": -3,
+   "z0": 6,
+   "x1": 0,
+   "z1": 9,
+   "byteOffset": 520360,
+   "byteLength": 86124,
+   "count": 3549,
+   "maxHeightM": 245
+  },
+  {
+   "x0": -3,
+   "z0": 9,
+   "x1": 0,
+   "z1": 12,
+   "byteOffset": 606484,
+   "byteLength": 14244,
+   "count": 442,
+   "maxHeightM": 65
+  },
+  {
+   "x0": -3,
+   "z0": 12,
+   "x1": 0,
+   "z1": 15,
+   "byteOffset": 620728,
+   "byteLength": 1604,
+   "count": 71,
+   "maxHeightM": 19
+  },
+  {
+   "x0": -6,
+   "z0": -3,
+   "x1": -3,
+   "z1": 0,
+   "byteOffset": 622332,
+   "byteLength": 71360,
+   "count": 3282,
+   "maxHeightM": 86
+  },
+  {
+   "x0": -6,
+   "z0": -6,
+   "x1": -3,
+   "z1": -3,
+   "byteOffset": 693692,
+   "byteLength": 48452,
+   "count": 1615,
+   "maxHeightM": 50
+  },
+  {
+   "x0": -6,
+   "z0": -9,
+   "x1": -3,
+   "z1": -6,
+   "byteOffset": 742144,
+   "byteLength": 68944,
+   "count": 2059,
+   "maxHeightM": 300
+  },
+  {
+   "x0": -6,
+   "z0": 0,
+   "x1": -3,
+   "z1": 3,
+   "byteOffset": 811088,
+   "byteLength": 50916,
+   "count": 2242,
+   "maxHeightM": 92
+  },
+  {
+   "x0": -6,
+   "z0": 3,
+   "x1": -3,
+   "z1": 6,
+   "byteOffset": 862004,
+   "byteLength": 165512,
+   "count": 6426,
+   "maxHeightM": 159
+  },
+  {
+   "x0": -6,
+   "z0": 6,
+   "x1": -3,
+   "z1": 9,
+   "byteOffset": 1027516,
+   "byteLength": 76364,
+   "count": 2306,
+   "maxHeightM": 183
+  },
+  {
+   "x0": -6,
+   "z0": 9,
+   "x1": -3,
+   "z1": 12,
+   "byteOffset": 1103880,
+   "byteLength": 16180,
+   "count": 541,
+   "maxHeightM": 47
+  },
+  {
+   "x0": -6,
+   "z0": 12,
+   "x1": -3,
+   "z1": 15,
+   "byteOffset": 1120060,
+   "byteLength": 616,
+   "count": 20,
+   "maxHeightM": 19
+  },
+  {
+   "x0": -9,
+   "z0": -3,
+   "x1": -6,
+   "z1": 0,
+   "byteOffset": 1120676,
+   "byteLength": 32980,
+   "count": 1137,
+   "maxHeightM": 77
+  },
+  {
+   "x0": -9,
+   "z0": -6,
+   "x1": -6,
+   "z1": -3,
+   "byteOffset": 1153656,
+   "byteLength": 50328,
+   "count": 1448,
+   "maxHeightM": 104
+  },
+  {
+   "x0": -9,
+   "z0": -9,
+   "x1": -6,
+   "z1": -6,
+   "byteOffset": 1203984,
+   "byteLength": 21244,
+   "count": 691,
+   "maxHeightM": 107
+  },
+  {
+   "x0": -9,
+   "z0": 0,
+   "x1": -6,
+   "z1": 3,
+   "byteOffset": 1225228,
+   "byteLength": 84292,
+   "count": 3420,
+   "maxHeightM": 92
+  },
+  {
+   "x0": -9,
+   "z0": 3,
+   "x1": -6,
+   "z1": 6,
+   "byteOffset": 1309520,
+   "byteLength": 146668,
+   "count": 5690,
+   "maxHeightM": 143
+  },
+  {
+   "x0": -9,
+   "z0": 6,
+   "x1": -6,
+   "z1": 9,
+   "byteOffset": 1456188,
+   "byteLength": 55300,
+   "count": 2143,
+   "maxHeightM": 112
+  },
+  {
+   "x0": -9,
+   "z0": 9,
+   "x1": -6,
+   "z1": 12,
+   "byteOffset": 1511488,
+   "byteLength": 712,
+   "count": 31,
+   "maxHeightM": 26
+  },
+  {
+   "x0": -9,
+   "z0": 12,
+   "x1": -6,
+   "z1": 15,
+   "byteOffset": 1512200,
+   "byteLength": 5056,
+   "count": 174,
+   "maxHeightM": 26
+  },
+  {
+   "x0": -12,
+   "z0": -3,
+   "x1": -9,
+   "z1": 0,
+   "byteOffset": 1517256,
+   "byteLength": 80212,
+   "count": 2598,
+   "maxHeightM": 104
+  },
+  {
+   "x0": -12,
+   "z0": -6,
+   "x1": -9,
+   "z1": -3,
+   "byteOffset": 1597468,
+   "byteLength": 24620,
+   "count": 1037,
+   "maxHeightM": 46
+  },
+  {
+   "x0": -12,
+   "z0": -9,
+   "x1": -9,
+   "z1": -6,
+   "byteOffset": 1622088,
+   "byteLength": 944,
+   "count": 43,
+   "maxHeightM": 26
+  },
+  {
+   "x0": -12,
+   "z0": 0,
+   "x1": -9,
+   "z1": 3,
+   "byteOffset": 1623032,
+   "byteLength": 88268,
+   "count": 2708,
+   "maxHeightM": 122
+  },
+  {
+   "x0": -12,
+   "z0": 3,
+   "x1": -9,
+   "z1": 6,
+   "byteOffset": 1711300,
+   "byteLength": 58056,
+   "count": 2131,
+   "maxHeightM": 122
+  },
+  {
+   "x0": -12,
+   "z0": 6,
+   "x1": -9,
+   "z1": 9,
+   "byteOffset": 1769356,
+   "byteLength": 6444,
+   "count": 231,
+   "maxHeightM": 60
+  },
+  {
+   "x0": -12,
+   "z0": 9,
+   "x1": -9,
+   "z1": 12,
+   "byteOffset": 1775800,
+   "byteLength": 1440,
+   "count": 62,
+   "maxHeightM": 26
+  },
+  {
+   "x0": -12,
+   "z0": 12,
+   "x1": -9,
+   "z1": 15,
+   "byteOffset": 1777240,
+   "byteLength": 100,
+   "count": 5,
+   "maxHeightM": 13
+  },
+  {
+   "x0": -15,
+   "z0": -3,
+   "x1": -12,
+   "z1": 0,
+   "byteOffset": 1777340,
+   "byteLength": 13940,
+   "count": 577,
+   "maxHeightM": 46
+  },
+  {
+   "x0": -15,
+   "z0": -6,
+   "x1": -12,
+   "z1": -3,
+   "byteOffset": 1791280,
+   "byteLength": 11940,
+   "count": 516,
+   "maxHeightM": 46
+  },
+  {
+   "x0": -15,
+   "z0": -9,
+   "x1": -12,
+   "z1": -6,
+   "byteOffset": 1803220,
+   "byteLength": 4896,
+   "count": 225,
+   "maxHeightM": 26
+  },
+  {
+   "x0": -15,
+   "z0": 0,
+   "x1": -12,
+   "z1": 3,
+   "byteOffset": 1808116,
+   "byteLength": 67944,
+   "count": 2072,
+   "maxHeightM": 77
+  },
+  {
+   "x0": -15,
+   "z0": 3,
+   "x1": -12,
+   "z1": 6,
+   "byteOffset": 1876060,
+   "byteLength": 35188,
+   "count": 1256,
+   "maxHeightM": 122
+  },
+  {
+   "x0": -15,
+   "z0": 6,
+   "x1": -12,
+   "z1": 9,
+   "byteOffset": 1911248,
+   "byteLength": 10088,
+   "count": 370,
+   "maxHeightM": 182
+  },
+  {
+   "x0": -15,
+   "z0": 9,
+   "x1": -12,
+   "z1": 12,
+   "byteOffset": 1921336,
+   "byteLength": 764,
+   "count": 34,
+   "maxHeightM": 23
+  },
+  {
+   "x0": -15,
+   "z0": 12,
+   "x1": -12,
+   "z1": 15,
+   "byteOffset": 1922100,
+   "byteLength": 288,
+   "count": 14,
+   "maxHeightM": 23
+  },
+  {
+   "x0": -18,
+   "z0": -3,
+   "x1": -15,
+   "z1": 0,
+   "byteOffset": 1922388,
+   "byteLength": 2536,
+   "count": 98,
+   "maxHeightM": 26
+  },
+  {
+   "x0": -18,
+   "z0": -6,
+   "x1": -15,
+   "z1": -3,
+   "byteOffset": 1924924,
+   "byteLength": 1572,
+   "count": 67,
+   "maxHeightM": 26
+  },
+  {
+   "x0": -18,
+   "z0": 0,
+   "x1": -15,
+   "z1": 3,
+   "byteOffset": 1926496,
+   "byteLength": 29324,
+   "count": 1007,
+   "maxHeightM": 56
+  },
+  {
+   "x0": -18,
+   "z0": 3,
+   "x1": -15,
+   "z1": 6,
+   "byteOffset": 1955820,
+   "byteLength": 36672,
+   "count": 1413,
+   "maxHeightM": 44
+  },
+  {
+   "x0": -18,
+   "z0": 6,
+   "x1": -15,
+   "z1": 9,
+   "byteOffset": 1992492,
+   "byteLength": 4524,
+   "count": 196,
+   "maxHeightM": 26
+  },
+  {
+   "x0": -18,
+   "z0": 9,
+   "x1": -15,
+   "z1": 12,
+   "byteOffset": 1997016,
+   "byteLength": 3548,
+   "count": 157,
+   "maxHeightM": 40
+  },
+  {
+   "x0": -18,
+   "z0": 12,
+   "x1": -15,
+   "z1": 15,
+   "byteOffset": 2000564,
+   "byteLength": 80,
+   "count": 4,
+   "maxHeightM": 13
+  },
+  {
+   "x0": -21,
+   "z0": 0,
+   "x1": -18,
+   "z1": 3,
+   "byteOffset": 2000644,
+   "byteLength": 4232,
+   "count": 160,
+   "maxHeightM": 29
+  },
+  {
+   "x0": -21,
+   "z0": 3,
+   "x1": -18,
+   "z1": 6,
+   "byteOffset": 2004876,
+   "byteLength": 33200,
+   "count": 1422,
+   "maxHeightM": 62
+  },
+  {
+   "x0": -21,
+   "z0": 6,
+   "x1": -18,
+   "z1": 9,
+   "byteOffset": 2038076,
+   "byteLength": 17068,
+   "count": 690,
+   "maxHeightM": 48
+  },
+  {
+   "x0": -24,
+   "z0": 3,
+   "x1": -21,
+   "z1": 6,
+   "byteOffset": 2055144,
+   "byteLength": 232,
+   "count": 8,
+   "maxHeightM": 23
+  },
+  {
+   "x0": -24,
+   "z0": 6,
+   "x1": -21,
+   "z1": 9,
+   "byteOffset": 2055376,
+   "byteLength": 3228,
+   "count": 124,
+   "maxHeightM": 35
+  },
+  {
+   "x0": -24,
+   "z0": 9,
+   "x1": -21,
+   "z1": 12,
+   "byteOffset": 2058604,
+   "byteLength": 4524,
+   "count": 209,
+   "maxHeightM": 41
+  },
+  {
+   "x0": -24,
+   "z0": 12,
+   "x1": -21,
+   "z1": 15,
+   "byteOffset": 2063128,
+   "byteLength": 60,
+   "count": 3,
+   "maxHeightM": 10
+  },
+  {
+   "x0": 0,
+   "z0": -3,
+   "x1": 3,
+   "z1": 0,
+   "byteOffset": 2063188,
+   "byteLength": 139580,
+   "count": 4390,
+   "maxHeightM": 80
+  },
+  {
+   "x0": 0,
+   "z0": -6,
+   "x1": 3,
+   "z1": -3,
+   "byteOffset": 2202768,
+   "byteLength": 15488,
+   "count": 442,
+   "maxHeightM": 100
+  },
+  {
+   "x0": 0,
+   "z0": 0,
+   "x1": 3,
+   "z1": 3,
+   "byteOffset": 2218256,
+   "byteLength": 181684,
+   "count": 7710,
+   "maxHeightM": 300
+  },
+  {
+   "x0": 0,
+   "z0": 3,
+   "x1": 3,
+   "z1": 6,
+   "byteOffset": 2399940,
+   "byteLength": 194484,
+   "count": 8078,
+   "maxHeightM": 92
+  },
+  {
+   "x0": 0,
+   "z0": 6,
+   "x1": 3,
+   "z1": 9,
+   "byteOffset": 2594424,
+   "byteLength": 12336,
+   "count": 419,
+   "maxHeightM": 92
+  },
+  {
+   "x0": 3,
+   "z0": -3,
+   "x1": 6,
+   "z1": 0,
+   "byteOffset": 2606760,
+   "byteLength": 36656,
+   "count": 842,
+   "maxHeightM": 59
+  },
+  {
+   "x0": 3,
+   "z0": -6,
+   "x1": 6,
+   "z1": -3,
+   "byteOffset": 2643416,
+   "byteLength": 8196,
+   "count": 210,
+   "maxHeightM": 80
+  },
+  {
+   "x0": 3,
+   "z0": 0,
+   "x1": 6,
+   "z1": 3,
+   "byteOffset": 2651612,
+   "byteLength": 49376,
+   "count": 1336,
+   "maxHeightM": 59
+  },
+  {
+   "x0": 3,
+   "z0": 3,
+   "x1": 6,
+   "z1": 6,
+   "byteOffset": 2700988,
+   "byteLength": 210284,
+   "count": 8935,
+   "maxHeightM": 98
+  },
+  {
+   "x0": 3,
+   "z0": 6,
+   "x1": 6,
+   "z1": 9,
+   "byteOffset": 2911272,
+   "byteLength": 76,
+   "count": 1,
+   "maxHeightM": 16
+  },
+  {
+   "x0": 6,
+   "z0": -3,
+   "x1": 9,
+   "z1": 0,
+   "byteOffset": 2911348,
+   "byteLength": 46536,
+   "count": 1647,
+   "maxHeightM": 56
+  },
+  {
+   "x0": 6,
+   "z0": -6,
+   "x1": 9,
+   "z1": -3,
+   "byteOffset": 2957884,
+   "byteLength": 1184,
+   "count": 51,
+   "maxHeightM": 19
+  },
+  {
+   "x0": 6,
+   "z0": 0,
+   "x1": 9,
+   "z1": 3,
+   "byteOffset": 2959068,
+   "byteLength": 103864,
+   "count": 3397,
+   "maxHeightM": 104
+  },
+  {
+   "x0": 6,
+   "z0": 3,
+   "x1": 9,
+   "z1": 6,
+   "byteOffset": 3062932,
+   "byteLength": 63464,
+   "count": 2525,
+   "maxHeightM": 77
+  },
+  {
+   "x0": 9,
+   "z0": -3,
+   "x1": 12,
+   "z1": 0,
+   "byteOffset": 3126396,
+   "byteLength": 10308,
+   "count": 375,
+   "maxHeightM": 41
+  },
+  {
+   "x0": 9,
+   "z0": -6,
+   "x1": 12,
+   "z1": -3,
+   "byteOffset": 3136704,
+   "byteLength": 80,
+   "count": 4,
+   "maxHeightM": 16
+  },
+  {
+   "x0": 9,
+   "z0": 0,
+   "x1": 12,
+   "z1": 3,
+   "byteOffset": 3136784,
+   "byteLength": 7368,
+   "count": 268,
+   "maxHeightM": 78
+  },
+  {
+   "x0": 9,
+   "z0": 3,
+   "x1": 12,
+   "z1": 6,
+   "byteOffset": 3144152,
+   "byteLength": 4180,
+   "count": 149,
+   "maxHeightM": 46
+  },
+  {
+   "x0": 12,
+   "z0": -3,
+   "x1": 15,
+   "z1": 0,
+   "byteOffset": 3148332,
+   "byteLength": 1820,
+   "count": 80,
+   "maxHeightM": 26
+  },
+  {
+   "x0": 12,
+   "z0": -6,
+   "x1": 15,
+   "z1": -3,
+   "byteOffset": 3150152,
+   "byteLength": 1816,
+   "count": 76,
+   "maxHeightM": 26
+  },
+  {
+   "x0": 12,
+   "z0": 0,
+   "x1": 15,
+   "z1": 3,
+   "byteOffset": 3151968,
+   "byteLength": 1060,
+   "count": 37,
+   "maxHeightM": 22
+  },
+  {
+   "x0": 12,
+   "z0": 3,
+   "x1": 15,
+   "z1": 6,
+   "byteOffset": 3153028,
+   "byteLength": 2184,
+   "count": 77,
+   "maxHeightM": 26
+  },
+  {
+   "x0": 15,
+   "z0": -3,
+   "x1": 18,
+   "z1": 0,
+   "byteOffset": 3155212,
+   "byteLength": 500,
+   "count": 21,
+   "maxHeightM": 19
+  },
+  {
+   "x0": 15,
+   "z0": -6,
+   "x1": 18,
+   "z1": -3,
+   "byteOffset": 3155712,
+   "byteLength": 60,
+   "count": 3,
+   "maxHeightM": 16
+  }
+ ],
+ "areas": [
+  {
+   "name": "ANG MO KIO",
+   "x": -2.372,
+   "z": -0.858,
+   "areaKm2": 14.05
+  },
+  {
+   "name": "BEDOK",
+   "x": 4.965,
+   "z": 3.906,
+   "areaKm2": 21.9
+  },
+  {
+   "name": "BISHAN",
+   "x": -2.513,
+   "z": 1.279,
+   "areaKm2": 7.66
+  },
+  {
+   "name": "BOON LAY",
+   "x": -14.262,
+   "z": 4.693,
+   "areaKm2": 8.34
+  },
+  {
+   "name": "BUKIT BATOK",
+   "x": -9.798,
+   "z": 1.219,
+   "areaKm2": 11.22
+  },
+  {
+   "name": "BUKIT MERAH",
+   "x": -3.984,
+   "z": 8.033,
+   "areaKm2": 14.56
+  },
+  {
+   "name": "BUKIT PANJANG",
+   "x": -8.245,
+   "z": 0.27,
+   "areaKm2": 9.09
+  },
+  {
+   "name": "BUKIT TIMAH",
+   "x": -6.74,
+   "z": 3.4,
+   "areaKm2": 17.64
+  },
+  {
+   "name": "CENTRAL WATER CATCHMENT",
+   "x": -5.848,
+   "z": -0.565,
+   "areaKm2": 37.44
+  },
+  {
+   "name": "CHANGI",
+   "x": 10.865,
+   "z": 1.673,
+   "areaKm2": 41.78
+  },
+  {
+   "name": "CHANGI BAY",
+   "x": 13.29,
+   "z": 3.618,
+   "areaKm2": 1.99
+  },
+  {
+   "name": "CHOA CHU KANG",
+   "x": -10.439,
+   "z": -1.322,
+   "areaKm2": 6.16
+  },
+  {
+   "name": "CLEMENTI",
+   "x": -9.286,
+   "z": 4.455,
+   "areaKm2": 9.59
+  },
+  {
+   "name": "DOWNTOWN CORE",
+   "x": -1.233,
+   "z": 7.073,
+   "areaKm2": 5.12
+  },
+  {
+   "name": "GEYLANG",
+   "x": 1.659,
+   "z": 4.174,
+   "areaKm2": 9.72
+  },
+  {
+   "name": "HOUGANG",
+   "x": 1.683,
+   "z": 0.541,
+   "areaKm2": 14.04
+  },
+  {
+   "name": "JURONG EAST",
+   "x": -11.493,
+   "z": 4.213,
+   "areaKm2": 18
+  },
+  {
+   "name": "JURONG WEST",
+   "x": -14.033,
+   "z": 2.413,
+   "areaKm2": 14.79
+  },
+  {
+   "name": "KALLANG",
+   "x": -0.294,
+   "z": 5.004,
+   "areaKm2": 8.65
+  },
+  {
+   "name": "LIM CHU KANG",
+   "x": -12.811,
+   "z": -5.155,
+   "areaKm2": 17.63
+  },
+  {
+   "name": "MANDAI",
+   "x": -5.741,
+   "z": -4.558,
+   "areaKm2": 11.85
+  },
+  {
+   "name": "MARINA EAST",
+   "x": 0.2,
+   "z": 6.926,
+   "areaKm2": 1.86
+  },
+  {
+   "name": "MARINA SOUTH",
+   "x": -0.372,
+   "z": 7.605,
+   "areaKm2": 1.64
+  },
+  {
+   "name": "MARINE PARADE",
+   "x": 2.233,
+   "z": 5.931,
+   "areaKm2": 6.18
+  },
+  {
+   "name": "MUSEUM",
+   "x": -1.979,
+   "z": 6.297,
+   "areaKm2": 0.84
+  },
+  {
+   "name": "NEWTON",
+   "x": -2.714,
+   "z": 5.214,
+   "areaKm2": 2.09
+  },
+  {
+   "name": "NORTH-EASTERN ISLANDS",
+   "x": 14.01,
+   "z": -2.689,
+   "areaKm2": 67.76
+  },
+  {
+   "name": "NOVENA",
+   "x": -2.949,
+   "z": 3.656,
+   "areaKm2": 9.04
+  },
+  {
+   "name": "ORCHARD",
+   "x": -3.095,
+   "z": 5.627,
+   "areaKm2": 0.97
+  },
+  {
+   "name": "OUTRAM",
+   "x": -2.375,
+   "z": 7.407,
+   "areaKm2": 1.38
+  },
+  {
+   "name": "PASIR RIS",
+   "x": 6.655,
+   "z": -0.732,
+   "areaKm2": 15.92
+  },
+  {
+   "name": "PAYA LEBAR",
+   "x": 3.806,
+   "z": 0.901,
+   "areaKm2": 11.77
+  },
+  {
+   "name": "PIONEER",
+   "x": -16.746,
+   "z": 4.88,
+   "areaKm2": 12.31
+  },
+  {
+   "name": "PUNGGOL",
+   "x": 3.404,
+   "z": -3.006,
+   "areaKm2": 9.44
+  },
+  {
+   "name": "QUEENSTOWN",
+   "x": -7.262,
+   "z": 6.878,
+   "areaKm2": 21.85
+  },
+  {
+   "name": "RIVER VALLEY",
+   "x": -3.062,
+   "z": 6.116,
+   "areaKm2": 1.49
+  },
+  {
+   "name": "ROCHOR",
+   "x": -1.42,
+   "z": 5.598,
+   "areaKm2": 1.6
+  },
+  {
+   "name": "SELETAR",
+   "x": 0.603,
+   "z": -3.769,
+   "areaKm2": 10.93
+  },
+  {
+   "name": "SEMBAWANG",
+   "x": -4.349,
+   "z": -7.288,
+   "areaKm2": 12.73
+  },
+  {
+   "name": "SENGKANG",
+   "x": 1.505,
+   "z": -1.809,
+   "areaKm2": 10.68
+  },
+  {
+   "name": "SERANGOON",
+   "x": -0.186,
+   "z": 0.408,
+   "areaKm2": 10.18
+  },
+  {
+   "name": "SIMPANG",
+   "x": -1.452,
+   "z": -6.297,
+   "areaKm2": 8.34
+  },
+  {
+   "name": "SINGAPORE RIVER",
+   "x": -2.447,
+   "z": 6.791,
+   "areaKm2": 0.96
+  },
+  {
+   "name": "SOUTHERN ISLANDS",
+   "x": -2.903,
+   "z": 10.795,
+   "areaKm2": 7.18
+  },
+  {
+   "name": "STRAITS VIEW",
+   "x": -0.955,
+   "z": 8.394,
+   "areaKm2": 1.13
+  },
+  {
+   "name": "SUNGEI KADUT",
+   "x": -9.566,
+   "z": -4.091,
+   "areaKm2": 17.72
+  },
+  {
+   "name": "TAMPINES",
+   "x": 7.143,
+   "z": 2.228,
+   "areaKm2": 20.96
+  },
+  {
+   "name": "TANGLIN",
+   "x": -4.454,
+   "z": 5.238,
+   "areaKm2": 7.61
+  },
+  {
+   "name": "TENGAH",
+   "x": -12.007,
+   "z": 0.523,
+   "areaKm2": 7.42
+  },
+  {
+   "name": "TOA PAYOH",
+   "x": -0.763,
+   "z": 2.832,
+   "areaKm2": 8.24
+  },
+  {
+   "name": "TUAS",
+   "x": -20.136,
+   "z": 7.63,
+   "areaKm2": 48.05
+  },
+  {
+   "name": "WESTERN ISLANDS",
+   "x": -13.683,
+   "z": 10.238,
+   "areaKm2": 46.15
+  },
+  {
+   "name": "WESTERN WATER CATCHMENT",
+   "x": -15.323,
+   "z": -1.031,
+   "areaKm2": 70.28
+  },
+  {
+   "name": "WOODLANDS",
+   "x": -6.995,
+   "z": -6.008,
+   "areaKm2": 13.72
+  },
+  {
+   "name": "YISHUN",
+   "x": -2.809,
+   "z": -3.823,
+   "areaKm2": 21.03
+  }
+ ],
+ "files": {
+  "land": "land.bin",
+  "water": "water.bin",
+  "green": "green.bin",
+  "buildings": "buildings.bin",
+  "lines": "lines.bin",
+  "rail": "rail.json"
+ }
+}

@@ -1,0 +1,61 @@
+# Narrow Down Your BTO
+
+An interactive desktop map for narrowing Singapore BTO projects by commute, budget, nearby amenities, and estimated waiting time. Projects begin equally visible and dim only when they miss criteria the visitor has answered—there is no hidden composite ranking.
+
+![Singapore BTO map overview](artifacts/bto-overview.png)
+
+## What it includes
+
+- 21 launched or officially announced BTO records from the dated project snapshot
+- A real-geography miniature Singapore assembled from 118,415 building footprints
+- MRT/LRT, major roads, water, greenery, runways, planning areas, and orientation landmarks
+- Four transparent narrowing criteria with `pass`, `miss`, `unknown`, and unanswered states
+- A selected-project fly-to view with an approximate 1 km context ring and curated amenities
+- A software-renderer lite path for headless browsers and lower-capability environments
+
+This is a location-exploration prototype, not financial, eligibility, routing, or application advice. Project facts can become stale; follow the linked official HDB sources before making a decision.
+
+## Run locally
+
+Requirements: Node.js 20+ and npm.
+
+```bash
+npm ci
+npm run dev
+```
+
+Open <http://localhost:3000>.
+
+## Verification
+
+```bash
+npm run lint
+npm run test
+npm run build
+npm run test:e2e
+```
+
+The map asset contract is also covered by tests: processed asset size, geometry sanity, transport classes, station coverage, and the absence of raw GeoJSON in `public/map/`.
+
+## Map data and regeneration
+
+The browser loads compact processed files from `public/map/`; it does not fetch a live map API or ship the raw source extracts.
+
+```bash
+npm run map:build
+```
+
+Regeneration expects locally downloaded inputs under `work/geo-raw/`. That directory is intentionally ignored because the raw extracts are large. See the header of `scripts/build-map-assets.ts` for the required source files and queries.
+
+Map sources and retrieval dates are recorded in `public/map/manifest.json`:
+
+- URA Master Plan 2019 Subzone Boundary (No Sea), under the Singapore Open Data Licence
+- OpenStreetMap via Overpass, © OpenStreetMap contributors, under ODbL 1.0
+
+Where OSM provides `height` or `building:levels`, those tags drive the miniature. Other building heights are deterministic visual approximations by footprint, type, and planning area; they are not survey data. Project and amenity records remain separate from this visual context and keep their own official-source metadata.
+
+## Stack
+
+Next.js App Router, TypeScript, React 19, React Three Fiber, Three.js, Vitest, and Playwright.
+
+The package remains marked `private` to prevent accidental npm publication. No separate software licence is granted by this repository; the source-data licences above continue to apply to their respective data.
