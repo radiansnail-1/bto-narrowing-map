@@ -2,7 +2,8 @@ import { defineConfig, devices } from '@playwright/test';
 
 export default defineConfig({
   testDir: './e2e',
-  timeout: 30_000,
+  // The real map geometry is intentionally loaded in E2E; allow slower software WebGL runners room to finish.
+  timeout: 60_000,
   use: {
     baseURL: 'http://127.0.0.1:3000',
     trace: 'retain-on-failure',

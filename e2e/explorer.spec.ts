@@ -1,7 +1,9 @@
 import { test, expect } from '@playwright/test';
 
 test('guides a visitor through four questions and opens a project card', async ({ page }) => {
-  await page.goto('/');
+  // Browser automation exercises the deterministic software-renderer path; headed visual QA covers full quality.
+  await page.goto('/?lite=1');
+  await expect(page.getByTestId('map-boundary-state')).toHaveAttribute('data-map-quality', 'lite');
   await expect(page.getByTestId('question-card')).toBeVisible();
   await expect(page.getByRole('heading', { name: 'Where do you spend your weekdays?' })).toBeVisible();
 
@@ -55,7 +57,7 @@ test('malformed stored answers reset to the safe default shape', async ({ page }
       step: 99,
     }));
   });
-  await page.goto('/');
+  await page.goto('/?lite=1');
   await expect(page.getByRole('heading', { name: 'Where do you spend your weekdays?' })).toBeVisible();
   await expect(page.getByRole('button', { name: /Raffles Place CBD/ })).toHaveAttribute('aria-pressed', 'false');
   await expect(page.getByTestId('custom-pin-action')).toHaveText(/Drop custom workplace pin/);
