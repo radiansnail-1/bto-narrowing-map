@@ -2,10 +2,14 @@
 
 ## 2026-08-28
 
+- Added smooth arrow-key ground panning and one coordinated camera path for mouse orbit, cursor-centred bounded wheel zoom, and project fly-to transitions.
+- Changed project selection to frame the complete approximate 1 km context inside HUD-safe viewport bounds.
+- Replaced amenity dots with complete place-area overlays: 36 conservatively matched OSM footprints and 16 coordinate-area fallbacks for all 52 mapped amenity records.
+- Added camera math, map-asset integrity, and browser-flow coverage. Current verification: lint passed, 24/24 tests passed, production build passed, and 2/2 Playwright tests passed.
 - Replaced the procedural city backdrop with processed URA/OSM geometry: 118,415 building footprints, coastline and planning areas, major roads, MRT/LRT, water, greenery, runways, stations, and recognizable landmarks.
 - Added tiled binary map assets, a deterministic regeneration pipeline, source/licence metadata, zoom-aware infrastructure ribbons, focused 1 km project context, camera animation, post-processing, and a software-renderer lite path.
 - Compacted the interface into a desktop HUD with layer controls, criterion chips, a collapsible project tray, project details, and preserved semantic controls.
-- Added map-asset integrity coverage and retained the guided-flow/storage E2E coverage. Final local verification: lint passed, 14/14 tests passed, production build passed, and 2/2 Playwright tests passed.
+- Added map-asset integrity coverage and retained the guided-flow/storage E2E coverage.
 - Prepared the project for public GitHub publication with a README, CI workflow, canonical resume files, and exclusions for raw geodata and local artifacts.
 
 ## 2026-08-27

@@ -17,7 +17,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 import { ShapeUtils, Vector2 } from 'three';
 import { geoToScenePosition, SCENE_KM_PER_UNIT } from '../lib/geo.ts';
-import { LINE_CLASS, MAP_QUANT, type MapManifest } from '../lib/map-format.ts';
+import { LINE_CLASS, MAP_QUANT, type MapManifest, type PlaceHighlight, type PlaceHighlightData } from '../lib/map-format.ts';
 
 type Pt = [number, number];
 type OsmGeometryPoint = { lat: number; lon: number };
@@ -493,6 +493,73 @@ const green = polygonLayer('green.json', 0.12, (tags) => tags.landuse !== 'milit
 console.log(`water polygons ${water.count} (${water.indices.length / 3} tris), green polygons ${green.count} (${green.indices.length / 3} tris)`);
 
 /* ----------------------------------------------------------------------------------------------- */
+/* Curated amenity highlights: real venue footprints when defensible, area glyphs otherwise         */
+/* ----------------------------------------------------------------------------------------------- */
+
+type SnapshotAmenity = { id: string; category: string; name: string; coordinates: { latitude: number; longitude: number } | null };
+const snapshot = JSON.parse(fs.readFileSync(path.join(ROOT, 'data', 'official-data-snapshot.json'), 'utf8')) as { amenities: SnapshotAmenity[] };
+const placeElements = readJson<{ elements: OsmElement[] }>('places.json').elements;
+const STOP_WORDS = new Set(['singapore', 'the', 'at', 'and', 'of', 'blk', 'block', 'street', 'road', 'avenue', 'lorong', 'market', 'food', 'hawker', 'centre', 'center', 'school', 'community', 'club', 'sports', 'facilities', 'hospital', 'polyclinic', 'clinic', 'park', 'mall', 'station', 'mrt']);
+const words = (name: string) => name.toLowerCase().replace(/\bst\.?\b/g, 'saint').replace(/[^a-z0-9]+/g, ' ').trim().split(/\s+/).filter((word) => word.length > 1 && !STOP_WORDS.has(word) && !/^\d+$/.test(word));
+const nameScore = (a: string, b: string) => {
+  const aa = new Set(words(a)); const bb = new Set(words(b));
+  if (!aa.size || !bb.size) return 0;
+  let overlap = 0;
+  for (const token of aa) if (bb.has(token) || Array.from(bb).some((other) => token.length > 4 && other.length > 4 && (token.startsWith(other) || other.startsWith(token)))) overlap += 1;
+  return overlap / Math.min(aa.size, bb.size);
+};
+const relevant = (category: string, tags: Record<string, string>) => {
+  const values = [tags.amenity, tags.leisure, tags.building, tags.shop, tags.healthcare, tags.railway, tags.public_transport].filter(Boolean);
+  if (category === 'hawker') return values.some((v) => ['food_court', 'marketplace'].includes(v)) || /hawker|market|food centre/i.test(tags.name ?? '');
+  if (category === 'park') return values.some((v) => ['park', 'garden', 'nature_reserve', 'playground'].includes(v));
+  if (category === 'sports') return values.some((v) => ['sports_centre', 'stadium', 'pitch', 'track', 'fitness_centre', 'swimming_pool', 'school', 'college', 'community_centre'].includes(v));
+  if (category === 'school') return values.some((v) => ['school', 'college', 'kindergarten', 'university'].includes(v));
+  if (category === 'shopping') return values.some((v) => ['mall', 'retail', 'commercial', 'supermarket'].includes(v));
+  if (category === 'healthcare') return values.some((v) => ['hospital', 'clinic', 'doctors', 'healthcare'].includes(v));
+  if (category === 'mrt') return values.some((v) => ['station', 'subway_entrance', 'train_station', 'transportation'].includes(v));
+  return false;
+};
+type PlaceCandidate = { name: string; tags: Record<string, string>; rings: Pt[][]; centre: Pt };
+const placeCandidates: PlaceCandidate[] = [];
+for (const element of placeElements) {
+  const tags = element.tags ?? {};
+  const name = tags.name ?? tags['name:en'];
+  const rings = elementRings(element).map((ring) => simplifyRing(ring, 0.0015)).filter((ring) => ring.length >= 3);
+  if (!name || !rings.length) continue;
+  const all = rings.flat();
+  placeCandidates.push({ name, tags, rings, centre: centroid(all) });
+}
+
+function fallbackRings(amenity: SnapshotAmenity): Pt[][] {
+  const centre = project(amenity.coordinates!.longitude, amenity.coordinates!.latitude);
+  const radius = amenity.category === 'park' ? 0.065 : amenity.category === 'mrt' ? 0.045 : 0.052;
+  const count = amenity.category === 'mrt' ? 4 : amenity.category === 'shopping' || amenity.category === 'healthcare' ? 8 : 10;
+  const rotation = amenity.category === 'mrt' ? Math.PI / 4 : Math.PI / count;
+  return [[...Array(count)].map((_, i) => [centre[0] + Math.cos(rotation + (i / count) * Math.PI * 2) * radius, centre[1] + Math.sin(rotation + (i / count) * Math.PI * 2) * radius] as Pt)];
+}
+
+const placeHighlights: PlaceHighlight[] = snapshot.amenities.filter((amenity) => amenity.coordinates).map((amenity) => {
+  const anchor = project(amenity.coordinates!.longitude, amenity.coordinates!.latitude);
+  const matches = placeCandidates.map((candidate) => {
+    const distanceM = Math.hypot(candidate.centre[0] - anchor[0], candidate.centre[1] - anchor[1]) * M_PER_UNIT;
+    return { candidate, distanceM, score: nameScore(amenity.name, candidate.name) };
+  }).filter(({ candidate, distanceM, score }) => relevant(amenity.category, candidate.tags) && distanceM <= 220 && (score >= 0.7 || (distanceM <= 75 && score >= 0.65) || distanceM <= 18))
+    .sort((a, b) => (b.score * 140 - b.distanceM) - (a.score * 140 - a.distanceM));
+  const match = matches[0];
+  if (!match) return { amenityId: amenity.id, source: 'coordinate-fallback', rings: fallbackRings(amenity) };
+  return {
+    amenityId: amenity.id,
+    source: 'osm-footprint',
+    sourceName: match.candidate.name,
+    distanceM: Math.round(match.distanceM),
+    rings: match.candidate.rings.map((ring) => ring.length > 48 ? simplifyRing(ring, 0.004) : ring).map((ring) => ring.map(([x, z]) => [Math.round(x * 10000) / 10000, Math.round(z * 10000) / 10000] as Pt)),
+  };
+});
+const placeData: PlaceHighlightData = { version: 1, places: placeHighlights };
+const footprintCount = placeHighlights.filter((place) => place.source === 'osm-footprint').length;
+console.log(`amenity highlights ${placeHighlights.length}: ${footprintCount} OSM footprints, ${placeHighlights.length - footprintCount} coordinate area glyphs`);
+
+/* ----------------------------------------------------------------------------------------------- */
 /* Writers                                                                                           */
 /* ----------------------------------------------------------------------------------------------- */
 
@@ -549,22 +616,23 @@ for (const line of lines) {
 }
 fs.writeFileSync(path.join(OUT, 'lines.bin'), lineBuffer);
 fs.writeFileSync(path.join(OUT, 'rail.json'), JSON.stringify({ lines: railRefs.map((ref) => ({ ref, colour: railColours[ref] })), stations }));
+fs.writeFileSync(path.join(OUT, 'places.json'), JSON.stringify(placeData));
 
 const manifest: MapManifest = {
-  version: 1,
+  version: 2,
   generatedAt: new Date().toISOString().slice(0, 10),
   projection: { originLatitude: 1.37, originLongitude: 103.87, unitsPerDegree: 85, kmPerUnit: SCENE_KM_PER_UNIT, quant: MAP_QUANT },
   bounds: { x0: bx0, z0: bz0, x1: bx1, z1: bz1 },
   sources: [
     { name: 'URA Master Plan 2019 Subzone Boundary (No Sea)', role: 'land, coastline, planning-area boundaries', url: 'https://data.gov.sg/datasets/d_8594ae9ff96d0c708bc2af633048edfb/view', license: 'Singapore Open Data Licence', retrieved: '2026-08-28' },
-    { name: 'OpenStreetMap (Overpass API extract)', role: 'building footprints and tagged heights/levels, roads, MRT routes and stations, water, parks, runways', url: 'https://www.openstreetmap.org/copyright', license: 'ODbL 1.0 — © OpenStreetMap contributors', retrieved: '2026-08-28' },
+    { name: 'OpenStreetMap (Overpass API extract)', role: 'building and matched amenity footprints, roads, MRT routes and stations, water, parks, runways', url: 'https://www.openstreetmap.org/copyright', license: 'ODbL 1.0 — © OpenStreetMap contributors', retrieved: '2026-08-28' },
   ],
   heightMethod: 'OSM height tag when present; else building:levels × storey height; else deterministic band from building type, footprint area and planning area (visual approximation, not survey data).',
-  counts: { buildings: buildingStats.kept, buildingsWithTaggedHeight: buildingStats.taggedHeight, buildingsWithTaggedLevels: buildingStats.taggedLevels, landPolygons: landPolygons.length, roads: Object.values(roadStats).reduce((a, b) => a + b, 0), railWays: seenRailWays.size, stations: stations.length, waterPolygons: water.count, greenPolygons: green.count },
+  counts: { buildings: buildingStats.kept, buildingsWithTaggedHeight: buildingStats.taggedHeight, buildingsWithTaggedLevels: buildingStats.taggedLevels, landPolygons: landPolygons.length, roads: Object.values(roadStats).reduce((a, b) => a + b, 0), railWays: seenRailWays.size, stations: stations.length, waterPolygons: water.count, greenPolygons: green.count, amenityHighlights: placeHighlights.length, amenityFootprints: footprintCount },
   tileSize: TILE_SIZE,
   tiles,
   areas: areaNames.map((name, index) => ({ name, x: areaAccum[index].w ? Math.round((areaAccum[index].x / areaAccum[index].w) * 1000) / 1000 : 0, z: areaAccum[index].w ? Math.round((areaAccum[index].z / areaAccum[index].w) * 1000) / 1000 : 0, areaKm2: Math.round((areaAccum[index].w / UNIT2_PER_KM2) * 100) / 100 })),
-  files: { land: 'land.bin', water: 'water.bin', green: 'green.bin', buildings: 'buildings.bin', lines: 'lines.bin', rail: 'rail.json' },
+  files: { land: 'land.bin', water: 'water.bin', green: 'green.bin', buildings: 'buildings.bin', lines: 'lines.bin', rail: 'rail.json', places: 'places.json' },
 };
 fs.writeFileSync(path.join(OUT, 'manifest.json'), JSON.stringify(manifest, null, 1));
 for (const file of fs.readdirSync(OUT)) console.log(`${file}: ${(fs.statSync(path.join(OUT, file)).size / 1024).toFixed(0)} KB`);

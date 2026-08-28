@@ -2,7 +2,7 @@ import { readFileSync, readdirSync, statSync } from 'node:fs';
 import { join } from 'node:path';
 import { describe, expect, it } from 'vitest';
 import { buildBuildingGeometry, buildRibbonGeometry, parseLines, parsePolygonMesh } from '@/lib/map-assets';
-import { LINE_CLASS, type MapManifest, type RailData } from '@/lib/map-format';
+import { LINE_CLASS, type MapManifest, type PlaceHighlightData, type RailData } from '@/lib/map-format';
 import { geoToScenePosition } from '@/lib/geo';
 
 const MAP_DIR = join(process.cwd(), 'public', 'map');
@@ -78,5 +78,20 @@ describe('preprocessed map assets', () => {
     expect(rail.lines.map((line) => line.ref)).toEqual(expect.arrayContaining(['NSL', 'EWL', 'NEL', 'CCL', 'DTL', 'TEL']));
     expect(rail.lines.some((line) => line.ref === 'JRL')).toBe(false);
     expect(rail.stations.length).toBeGreaterThan(150);
+  });
+
+  it('uses complete area geometry for mapped amenities instead of floating point markers', () => {
+    const places = JSON.parse(readFileSync(join(MAP_DIR, manifest.files.places), 'utf8')) as PlaceHighlightData;
+    expect(manifest.version).toBe(2);
+    expect(places.places).toHaveLength(52);
+    expect(new Set(places.places.map((place) => place.amenityId)).size).toBe(52);
+    expect(places.places.filter((place) => place.source === 'osm-footprint').length).toBeGreaterThanOrEqual(35);
+    for (const place of places.places) {
+      expect(place.rings.length).toBeGreaterThan(0);
+      for (const ring of place.rings) {
+        expect(ring.length).toBeGreaterThanOrEqual(3);
+        expect(ring.flat().every(Number.isFinite)).toBe(true);
+      }
+    }
   });
 });
