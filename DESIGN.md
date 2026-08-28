@@ -1,4 +1,4 @@
-# BTO Explorer — 3D City Visual Rebuild
+# Where To BTO — 3D City Visual Rebuild
 
 ## Verdict
 
@@ -15,7 +15,7 @@ This rebuild is visual and spatial. The existing questionnaire, project matching
 | Similar building heights and forms | Varied massing, towers, podiums, HDB clusters, and selected landmarks |
 | A few thin glowing lines | Layered road and MRT ribbons with hierarchy and restrained bloom |
 | Panels dominate the first impression | Full-bleed city dominates; controls feel like a compact HUD |
-| Selection changes opacity | Selection becomes a cinematic neighbourhood reveal |
+| Selection changes opacity | Selection becomes a cinematic neighbourhood reveal; fit opacity is untouched |
 
 ## Art direction
 
@@ -28,6 +28,19 @@ The initial frame must communicate three things before the user touches anything
 3. The glowing city network explains how the places relate.
 
 The reference-quality bar is not “more polygons.” It is irregular real-world layout, strong silhouette, depth, lighting hierarchy, and purposeful camera motion.
+
+## Service shell
+
+The interface surrounding the Three.js map is a compact, neutral desktop HUD for an independent tool called **Where To BTO**. It borrows the Singapore Government Design System's spacing and control grammar without claiming to be a government service.
+
+- Use Hanken Grotesk only (weights 400/500/600/700), self-hosted through `next/font/local` from the OFL-licensed files in `app/fonts/`; no runtime font fetch and no second typeface anywhere, including map labels and the HUD.
+- Use neutral white and grey surfaces, `#CB2B33` for primary actions, and `#0269D0` for links and keyboard focus.
+- Use 8 px bordered cards, 4 px form controls, and the SGDS 8/16/24 px spacing rhythm.
+- There is no government identity strip, crest, or "official service" wording. The 64 px service header is opaque and stable; the dark cinematic map begins below it.
+- BTO housing is the only red/warm family in the product. The five amenity groups share one accessible palette defined in `lib/amenity-groups.ts`: MRT blue, Food & shopping yellow, Healthcare teal, Schools indigo, Parks & recreation green. No amenity uses red, orange, or pink. Active rows carry their group tint; inactive rows stay neutral.
+- Fit is the only criteria encoding on the map: 100 %, 77 %, 54 %, 31 %, 8 % for 0–4 confirmed misses. Selection is a ring/emissive treatment and never resets fit opacity.
+- The right panel has exactly four views — questions, results, project, amenity — under one typed view state (`lib/panel-view.ts`). Amenity detail replaces the panel content; a selected BTO keeps its map focus and 1 km boundary underneath it.
+- Image provenance (creator, licence, source) is first-class content in the amenity view, joined from `data/amenity-media.json`, which stays separate from the official data snapshot.
 
 ## Rebuild plan
 

@@ -7,6 +7,7 @@ import { ToneMappingMode } from 'postprocessing';
 import { useEffect, useMemo, useRef, useState } from 'react';
 import * as THREE from 'three';
 import { amenities } from '@/data/amenities';
+import { AMENITY_GROUPS } from '@/lib/amenity-groups';
 import { btoProjects } from '@/data/bto-projects';
 import { workHubs } from '@/data/work-hubs';
 import {
@@ -19,12 +20,12 @@ import { geoToScenePosition, ONE_KM_SCENE_RADIUS } from '@/lib/geo';
 import { HEIGHT_SCALE, LINE_CLASS, buildBuildingGeometry, buildCoastWallGeometry, buildRibbonGeometry, linesOfClass, loadMapAssets, type MapAssets } from '@/lib/map-assets';
 import type { PlaceHighlight } from '@/lib/map-format';
 import { projectOpacity } from '@/lib/matching';
-import type { Amenity, AmenityCategory, ProjectMatch } from '@/lib/types';
+import type { Amenity, AmenityGroup, ProjectMatch } from '@/lib/types';
 import './map-scene.css';
 
 interface MapSceneProps {
   matches: Record<string, ProjectMatch>;
-  visibleAmenities: AmenityCategory[];
+  visibleGroups: AmenityGroup[];
   selectedProjectId: string | null;
   customPin: [number, number] | null;
   pinMode: boolean;
@@ -34,9 +35,6 @@ interface MapSceneProps {
 }
 
 const BACKGROUND = '#050b12';
-const amenityColors: Record<AmenityCategory, string> = {
-  mrt: '#62d5e6', hawker: '#f59a71', shopping: '#b8a3ff', healthcare: '#f28cae', schools: '#6dd4a0', parks: '#8cdb8d', sports: '#5fd8cf',
-};
 
 type FocusUniform = { value: THREE.Vector4 };
 type ScalarUniform = { value: number };
@@ -165,9 +163,6 @@ function Terrain({ assets, shared }: { assets: MapAssets; shared: SharedUniforms
       <mesh geometry={assets.land} material={materials.land} receiveShadow raycast={skip} />
       <mesh geometry={coastWall} raycast={skip}>
         <meshStandardMaterial color="#141f27" roughness={0.95} side={THREE.DoubleSide} />
-      </mesh>
-      <mesh geometry={assets.water} position={[0, 0.006, 0]} raycast={skip}>
-        <meshStandardMaterial color="#0c2036" roughness={0.35} metalness={0.1} />
       </mesh>
       <mesh geometry={assets.green} position={[0, 0.004, 0]} raycast={skip}>
         <meshStandardMaterial color="#0f1b17" roughness={1} />
@@ -300,17 +295,24 @@ const CLUSTER_LAYOUT: Array<[number, number, number, number, number]> = [
 function BtoCluster({ project, match, selected, pinMode, onSelect, onGroundSelect }: { project: (typeof btoProjects)[number]; match: ProjectMatch; selected: boolean; pinMode: boolean; onSelect: () => void; onGroundSelect: (position: [number, number]) => void }) {
   const position = project.position;
   const rotation = hash01(project.id) * Math.PI;
-  const opacity = projectOpacity(match, selected);
+  // Fit opacity is exact (100/77/54/31/8 %) and never reset by selection; selection adds a ring and emissive lift instead.
+  const opacity = projectOpacity(match);
   const material = useMemo(() => new THREE.MeshStandardMaterial({ color: '#ff6a63', emissive: '#ff2f33', roughness: 0.5, metalness: 0.1, transparent: true }), []);
   useEffect(() => () => material.dispose(), [material]);
-  material.opacity = 0.35 + opacity * 0.65;
+  material.opacity = opacity;
+  material.depthWrite = opacity > 0.5;
   material.emissiveIntensity = selected ? 1.9 : 0.35 + opacity * 0.55;
   material.color.set('#ff6a63').multiplyScalar(0.55 + opacity * 0.45);
   if (!position) return null;
   return (
     <group position={[position[0], 0, position[1]]} rotation={[0, rotation, 0]} onClick={(event) => { event.stopPropagation(); if (pinMode) onGroundSelect([event.point.x, event.point.z]); else onSelect(); }} onPointerOver={() => { document.body.style.cursor = pinMode ? 'crosshair' : 'pointer'; }} onPointerOut={() => { document.body.style.cursor = 'default'; }}>
+      <mesh position={[0, 0.1, 0]}>
+        <cylinderGeometry args={[0.22, 0.22, 0.2, 16]} />
+        <meshBasicMaterial transparent opacity={0} depthWrite={false} colorWrite={false} />
+      </mesh>
       {CLUSTER_LAYOUT.map(([x, z, w, d, h], i) => <mesh key={i} position={[x, (h * (0.85 + hash01(project.id + i) * 0.3)) / 2, z]} material={material} castShadow><boxGeometry args={[w, h * (0.85 + hash01(project.id + i) * 0.3), d]} /></mesh>)}
-      <mesh position={[0, 0.03, 0]} rotation={[-Math.PI / 2, 0, 0]}><ringGeometry args={[0.2, selected ? 0.225 : 0.212, 48]} /><meshBasicMaterial color={selected ? new THREE.Color('#ffc9b3').multiplyScalar(1.5) : '#ff6a63'} transparent opacity={selected ? 0.95 : 0.25 + opacity * 0.45} side={THREE.DoubleSide} toneMapped={false} depthWrite={false} /></mesh>
+      <mesh position={[0, 0.03, 0]} rotation={[-Math.PI / 2, 0, 0]}><ringGeometry args={[0.2, selected ? 0.232 : 0.212, 48]} /><meshBasicMaterial color={selected ? new THREE.Color('#ffc9b3').multiplyScalar(1.5) : '#ff6a63'} transparent opacity={selected ? 0.95 : 0.25 + opacity * 0.45} side={THREE.DoubleSide} toneMapped={false} depthWrite={false} /></mesh>
+      {selected && <mesh name={`selection-ring-${project.id}`} position={[0, 0.032, 0]} rotation={[-Math.PI / 2, 0, 0]}><ringGeometry args={[0.26, 0.272, 64]} /><meshBasicMaterial color={new THREE.Color('#ffe2d6').multiplyScalar(1.3)} transparent opacity={0.9} side={THREE.DoubleSide} toneMapped={false} depthWrite={false} /></mesh>}
       {selected && <group name={`approximate-1km-context-${project.id}`} userData={{ approximateRadiusKm: 1 }} rotation={[0, -rotation, 0]}>
         <mesh position={[0, 0.026, 0]} rotation={[-Math.PI / 2, 0, 0]}><circleGeometry args={[ONE_KM_SCENE_RADIUS, 96]} /><meshBasicMaterial color="#ff5a4f" transparent opacity={0.03} side={THREE.DoubleSide} depthWrite={false} /></mesh>
         <mesh position={[0, 0.028, 0]} rotation={[-Math.PI / 2, 0, 0]}><ringGeometry args={[ONE_KM_SCENE_RADIUS - 0.009, ONE_KM_SCENE_RADIUS, 128]} /><meshBasicMaterial color={new THREE.Color('#ffb7a6').multiplyScalar(1.2)} transparent opacity={0.85} side={THREE.DoubleSide} depthWrite={false} toneMapped={false} /></mesh>
@@ -342,23 +344,23 @@ function makeHighlightGeometry(place: PlaceHighlight): { fill: THREE.BufferGeome
 
 function AmenityHighlight({ amenity, place, inside, selectedProjectId, pinMode, onSelect, onGroundSelect }: { amenity: Amenity; place: PlaceHighlight; inside: boolean; selectedProjectId: string | null; pinMode: boolean; onSelect: (amenity: Amenity) => void; onGroundSelect: (position: [number, number]) => void }) {
   const geometry = useMemo(() => makeHighlightGeometry(place), [place]);
-  const color = useMemo(() => new THREE.Color(amenityColors[amenity.type]).multiplyScalar(inside ? 1.8 : 1.15), [amenity.type, inside]);
+  const color = useMemo(() => new THREE.Color(AMENITY_GROUPS[amenity.group].palette.map).multiplyScalar(inside ? 1.8 : 1.15), [amenity.group, inside]);
   useEffect(() => () => { geometry.fill.dispose(); geometry.outlines.forEach((outline) => outline.dispose()); }, [geometry]);
   const opacity = selectedProjectId ? (inside ? 0.72 : 0.13) : 0.42;
   return <group name={`amenity-highlight-${amenity.id}`} userData={{ source: place.source, sourceName: place.sourceName }} onClick={(event) => { event.stopPropagation(); if (pinMode) onGroundSelect([event.point.x, event.point.z]); else onSelect(amenity); }} onPointerOver={() => { document.body.style.cursor = pinMode ? 'crosshair' : 'pointer'; }} onPointerOut={() => { document.body.style.cursor = 'default'; }}>
     <mesh geometry={geometry.fill} renderOrder={20}>
       <meshBasicMaterial color={color} transparent opacity={opacity} side={THREE.DoubleSide} depthTest={false} depthWrite={false} toneMapped={false} />
     </mesh>
-    {geometry.outlines.map((outline, index) => <lineLoop key={index} geometry={outline} renderOrder={21}>
+    {geometry.outlines.map((outline, index) => <lineLoop key={index} geometry={outline} renderOrder={21} raycast={skip}>
       <lineBasicMaterial color={color} transparent opacity={selectedProjectId && !inside ? 0.2 : inside ? 1 : 0.72} depthTest={false} depthWrite={false} toneMapped={false} />
     </lineLoop>)}
   </group>;
 }
 
-function AmenityMarkers({ assets, visible, selectedProjectId, pinMode, onSelect, onGroundSelect }: { assets: MapAssets; visible: AmenityCategory[]; selectedProjectId: string | null; pinMode: boolean; onSelect: (amenity: Amenity) => void; onGroundSelect: (position: [number, number]) => void }) {
+function AmenityMarkers({ assets, visible, selectedProjectId, pinMode, onSelect, onGroundSelect }: { assets: MapAssets; visible: AmenityGroup[]; selectedProjectId: string | null; pinMode: boolean; onSelect: (amenity: Amenity) => void; onGroundSelect: (position: [number, number]) => void }) {
   const selected = selectedProjectId ? btoProjects.find((project) => project.id === selectedProjectId) : null;
   const places = useMemo(() => new Map(assets.places.places.map((place) => [place.amenityId, place])), [assets]);
-  return <group>{amenities.filter((amenity) => visible.includes(amenity.type) && amenity.position !== null).map((amenity) => {
+  return <group>{amenities.filter((amenity) => visible.includes(amenity.group) && amenity.position !== null).map((amenity) => {
     const place = places.get(amenity.id);
     if (!place) return null;
     const inside = selected ? selected.amenityIds.includes(amenity.id) : false;
@@ -384,7 +386,7 @@ const DISTRICT_LABELS: Record<string, string> = {
   'TAMPINES': 'Tampines', 'BEDOK': 'Bedok', 'GEYLANG': 'Geylang', 'JURONG WEST': 'Jurong', 'TENGAH': 'Tengah', 'BUKIT MERAH': 'Bukit Merah', 'DOWNTOWN CORE': 'CBD · Marina Bay', 'CHANGI': 'Changi', 'TUAS': 'Tuas', 'CENTRAL WATER CATCHMENT': 'Central Catchment',
 };
 
-function Labels({ assets, matches, selectedProjectId }: { assets: MapAssets; matches: Record<string, ProjectMatch>; selectedProjectId: string | null }) {
+function Labels({ assets, matches, selectedProjectId, pinMode, onProjectSelect }: { assets: MapAssets; matches: Record<string, ProjectMatch>; selectedProjectId: string | null; pinMode: boolean; onProjectSelect: (id: string) => void }) {
   const [zoom, setZoom] = useState(30);
   useFrame(({ camera }) => { const z = Math.round((camera as THREE.OrthographicCamera).zoom); if (Math.abs(z - zoom) > Math.max(2, zoom * 0.08)) setZoom(z); });
   const focused = zoom > 70;
@@ -404,10 +406,10 @@ function Labels({ assets, matches, selectedProjectId }: { assets: MapAssets; mat
         </Html>
       ))}
       {visibleProjects.map((project) => {
-        const opacity = projectOpacity(matches[project.id], project.id === selectedProjectId);
+        const opacity = projectOpacity(matches[project.id]);
         return (
-          <Html key={project.id} position={[project.position![0], 0.16, project.position![1]]} center zIndexRange={[3, 3]} style={{ pointerEvents: 'none' }}>
-            <span className={`map-label map-label-project ${project.id === selectedProjectId ? 'is-selected' : ''}`} style={{ opacity: 0.35 + opacity * 0.65 }}>{project.name.split(' — ')[0]}</span>
+          <Html key={project.id} position={[project.position![0], 0.16, project.position![1]]} center zIndexRange={[3, 3]} wrapperClass="map-label-project-wrapper" style={{ pointerEvents: pinMode ? 'none' : 'auto', cursor: 'pointer', zIndex: 3 }}>
+            <span className={`map-label map-label-project ${project.id === selectedProjectId ? 'is-selected' : ''}`} onClick={() => onProjectSelect(project.id)} style={{ opacity }} data-fit-opacity={opacity}>{project.name.split(' — ')[0]}</span>
           </Html>
         );
       })}
@@ -650,7 +652,7 @@ function detectQuality(): Quality {
   return { shadows: !software && !params.has('noshadow'), effects: !software && !params.has('nofx'), dpr: software ? [1, 1] : [1, 1.5], lite: software };
 }
 
-function SceneContents({ matches, visibleAmenities, selectedProjectId, customPin, pinMode, onProjectSelect, onAmenitySelect, onGroundSelect, onReady, quality }: MapSceneProps & { onReady: () => void; quality: Quality }) {
+function SceneContents({ matches, visibleGroups, selectedProjectId, customPin, pinMode, onProjectSelect, onAmenitySelect, onGroundSelect, onReady, quality }: MapSceneProps & { onReady: () => void; quality: Quality }) {
   const assets = useMapAssets();
   const shared = useMemo<SharedUniforms>(() => ({ focus: { value: new THREE.Vector4(0, 0, ONE_KM_SCENE_RADIUS, 0) }, widthScale: { value: 1 } }), []);
   const focus = shared.focus;
@@ -671,10 +673,10 @@ function SceneContents({ matches, visibleAmenities, selectedProjectId, customPin
       {assets && <Buildings assets={assets} focus={focus} onReady={onReady} />}
       {assets && <Infrastructure assets={assets} shared={shared} />}
       <Landmarks />
-      {assets && <AmenityMarkers assets={assets} visible={visibleAmenities} selectedProjectId={selectedProjectId} pinMode={pinMode} onSelect={onAmenitySelect} onGroundSelect={onGroundSelect} />}
+      {assets && <AmenityMarkers assets={assets} visible={visibleGroups} selectedProjectId={selectedProjectId} pinMode={pinMode} onSelect={onAmenitySelect} onGroundSelect={onGroundSelect} />}
       {btoProjects.filter((project) => project.position !== null).map((project) => <BtoCluster key={project.id} project={project} match={matches[project.id]} selected={project.id === selectedProjectId} pinMode={pinMode} onSelect={() => onProjectSelect(project.id)} onGroundSelect={onGroundSelect} />)}
       <Markers customPin={customPin} />
-      {assets && <Labels assets={assets} matches={matches} selectedProjectId={selectedProjectId} />}
+      {assets && <Labels assets={assets} matches={matches} selectedProjectId={selectedProjectId} pinMode={pinMode} onProjectSelect={onProjectSelect} />}
       <CameraRig selectedPosition={selectedProject?.position ?? null} shared={shared} lite={quality.lite} />
       <OrbitControls makeDefault enabled={!pinMode} enableDamping dampingFactor={0.09} enableZoom={false} minPolarAngle={0.3} maxPolarAngle={1.35} screenSpacePanning={false} />
       {effects && <EffectComposer multisampling={0}>
@@ -691,6 +693,7 @@ export function MapScene(props: MapSceneProps) {
   const [ready, setReady] = useState(false);
   const [quality, setQuality] = useState<Quality | null>(null);
   useEffect(() => { setQuality(detectQuality()); }, []);
+  useEffect(() => { document.body.style.cursor = 'default'; return () => { document.body.style.cursor = 'default'; }; }, [props.pinMode]);
   const selectedProject = btoProjects.find((project) => project.id === props.selectedProjectId);
   const boundaryState = !selectedProject ? 'overview' : selectedProject.position ? 'approximate-1km' : 'unavailable';
   const onReady = useMemo(() => () => setReady(true), []);

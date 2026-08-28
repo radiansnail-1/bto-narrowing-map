@@ -10,7 +10,8 @@
     "test": "vitest run",
     "test:watch": "vitest",
     "test:e2e": "playwright test",
-    "map:build": "node scripts/build-map-assets.ts"
+    "map:build": "node scripts/build-map-assets.ts",
+    "media:build": "node scripts/build-amenity-media.ts"
   },
   "dependencies": {
     "@react-three/drei": "^10.7.6",

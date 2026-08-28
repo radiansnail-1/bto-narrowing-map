@@ -1,0 +1,688 @@
+{
+  "version": 1,
+  "generatedAt": "2026-08-28T15:34:16.481Z",
+  "policy": "Curated visual context only. Separate from data/official-data-snapshot.json; joined by amenityId at render time. Each record is a locally optimised copy of a Wikimedia Commons or explicitly open-licence file with full attribution.",
+  "records": [
+    {
+      "amenityId": "hawker-bukit-merah-central",
+      "file": "/amenities/hawker-bukit-merah-central.webp",
+      "width": 1024,
+      "height": 683,
+      "alt": "Bukit Merah Central Food Centre at Block 163 Bukit Merah Central",
+      "creator": "Choo Yut Shing",
+      "sourceTitle": "Flickr: Bukit Merah Central Food Centre",
+      "sourceUrl": "https://www.flickr.com/photos/25802865@N08/54423244898",
+      "licence": "CC BY 2.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "retrieved": "2026-08-28",
+      "depicts": "venue"
+    },
+    {
+      "amenityId": "hawker-marsiling-mall",
+      "file": "/amenities/hawker-marsiling-mall.webp",
+      "width": 1600,
+      "height": 1032,
+      "alt": "Marsiling Mall, the building that houses Marsiling Mall Hawker Centre, in January 2025",
+      "creator": "Fanz226",
+      "sourceTitle": "Wikimedia Commons: View of Marsiling Mall 202501.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:View%20of%20Marsiling%20Mall%20202501.jpg",
+      "licence": "CC BY-SA 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "retrieved": "2026-08-28",
+      "depicts": "venue"
+    },
+    {
+      "amenityId": "hawker-our-tampines-hub",
+      "file": "/amenities/hawker-our-tampines-hub.webp",
+      "width": 1600,
+      "height": 1200,
+      "alt": "Entrance and sign of The Hawker Centre @ Our Tampines Hub",
+      "creator": "Kbseah",
+      "sourceTitle": "Wikimedia Commons: The Hawker Centre @ Our Tampines Hub, entrance.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:The%20Hawker%20Centre%20%40%20Our%20Tampines%20Hub%2C%20entrance.jpg",
+      "licence": "CC BY-SA 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "retrieved": "2026-08-28",
+      "depicts": "venue"
+    },
+    {
+      "amenityId": "hawker-sembawang-hills",
+      "file": "/amenities/hawker-sembawang-hills.webp",
+      "width": 1600,
+      "height": 901,
+      "alt": "Main entrance of Sembawang Hills Food Centre on Upper Thomson Road",
+      "creator": "BenTanXiaoMing",
+      "sourceTitle": "Wikimedia Commons: Sembawang Hills Food Centre 01.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Sembawang%20Hills%20Food%20Centre%2001.jpg",
+      "licence": "CC BY-SA 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "retrieved": "2026-08-28",
+      "depicts": "venue"
+    },
+    {
+      "amenityId": "hawker-shunfu",
+      "file": "/amenities/hawker-shunfu.webp",
+      "width": 1200,
+      "height": 1600,
+      "alt": "Exterior of Shunfu Mart, the hawker centre and wet market at Block 320 Shunfu Road",
+      "creator": "Kbseah",
+      "sourceTitle": "Wikimedia Commons: Shunfu Mart, exterior.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Shunfu%20Mart%2C%20exterior.jpg",
+      "licence": "CC BY-SA 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "retrieved": "2026-08-28",
+      "depicts": "venue"
+    },
+    {
+      "amenityId": "hawker-tampines-round",
+      "file": "/amenities/hawker-tampines-round.webp",
+      "width": 1600,
+      "height": 1200,
+      "alt": "Exterior of Tampines Round Market and Food Centre seen from Tampines Avenue 5",
+      "creator": "Kbseah",
+      "sourceTitle": "Wikimedia Commons: Tampines Round Market, exterior view.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tampines%20Round%20Market%2C%20exterior%20view.jpg",
+      "licence": "CC BY-SA 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "retrieved": "2026-08-28",
+      "depicts": "venue"
+    },
+    {
+      "amenityId": "health-bukit-merah",
+      "file": "/amenities/health-bukit-merah.webp",
+      "width": 1024,
+      "height": 683,
+      "alt": "Bukit Merah Central, the town-centre block cluster where Bukit Merah Polyclinic is located",
+      "creator": "Choo Yut Shing",
+      "sourceTitle": "Flickr: Bukit Merah Central",
+      "sourceUrl": "https://www.flickr.com/photos/25802865@N08/52637721711",
+      "licence": "CC BY 2.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "retrieved": "2026-08-28",
+      "depicts": "area-context",
+      "note": "Shows Bukit Merah Central, the block cluster that houses the polyclinic at Block 163; no licensed photo of the polyclinic itself was found."
+    },
+    {
+      "amenityId": "health-mount-alvernia",
+      "file": "/amenities/health-mount-alvernia.webp",
+      "width": 1600,
+      "height": 1067,
+      "alt": "Medical Centre A at Mount Alvernia Hospital",
+      "creator": "Joyce See",
+      "sourceTitle": "Wikimedia Commons: Med Centre A - 1.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Med%20Centre%20A%20-%201.jpg",
+      "licence": "CC BY-SA 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "retrieved": "2026-08-28",
+      "depicts": "venue"
+    },
+    {
+      "amenityId": "health-sgh",
+      "file": "/amenities/health-sgh.webp",
+      "width": 1600,
+      "height": 1200,
+      "alt": "Facade of Singapore General Hospital",
+      "creator": "Jaytothez",
+      "sourceTitle": "Wikimedia Commons: Singapore General Hospital Facade.JPG",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Singapore%20General%20Hospital%20Facade.JPG",
+      "licence": "CC BY-SA 3.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "retrieved": "2026-08-28",
+      "depicts": "venue"
+    },
+    {
+      "amenityId": "health-tampines-polyclinic",
+      "file": "/amenities/health-tampines-polyclinic.webp",
+      "width": 1600,
+      "height": 1343,
+      "alt": "Exterior of Our Tampines Hub, the integrated community hub that houses Tampines Polyclinic, April 2026",
+      "creator": "Leongyy02",
+      "sourceTitle": "Wikimedia Commons: Our Tampines Hub Singapore April 2026.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Our%20Tampines%20Hub%20Singapore%20April%202026.jpg",
+      "licence": "CC BY-SA 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "retrieved": "2026-08-28",
+      "depicts": "venue"
+    },
+    {
+      "amenityId": "mrt-caldecott",
+      "file": "/amenities/mrt-caldecott.webp",
+      "width": 1600,
+      "height": 1200,
+      "alt": "Exit 1 of Caldecott MRT station (CC17/TE9), March 2021",
+      "creator": "ZKang123",
+      "sourceTitle": "Wikimedia Commons: CC17 TE9 Caldecott MRT Exit 1 20210302 182719.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:CC17%20TE9%20Caldecott%20MRT%20Exit%201%2020210302%20182719.jpg",
+      "licence": "CC BY-SA 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "retrieved": "2026-08-28",
+      "depicts": "venue"
+    },
+    {
+      "amenityId": "mrt-mayflower",
+      "file": "/amenities/mrt-mayflower.webp",
+      "width": 1600,
+      "height": 1200,
+      "alt": "Exit 1 of Mayflower MRT station (TE6), July 2021",
+      "creator": "ZKang123",
+      "sourceTitle": "Wikimedia Commons: TE6 Mayflower MRT Exit 1 20210727 121201.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:TE6%20Mayflower%20MRT%20Exit%201%2020210727%20121201.jpg",
+      "licence": "CC BY-SA 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "retrieved": "2026-08-28",
+      "depicts": "venue"
+    },
+    {
+      "amenityId": "mrt-outram-park",
+      "file": "/amenities/mrt-outram-park.webp",
+      "width": 1600,
+      "height": 900,
+      "alt": "Aerial view of Outram Park MRT station and its surroundings",
+      "creator": "Justanothersgwikieditor",
+      "sourceTitle": "Wikimedia Commons: Aerial view of Outram MRT Station 01.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Aerial%20view%20of%20Outram%20MRT%20Station%2001.jpg",
+      "licence": "CC BY 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by/4.0",
+      "retrieved": "2026-08-28",
+      "depicts": "venue"
+    },
+    {
+      "amenityId": "mrt-redhill",
+      "file": "/amenities/mrt-redhill.webp",
+      "width": 1600,
+      "height": 1040,
+      "alt": "Exterior of Redhill MRT station (EW18), November 2024",
+      "creator": "Fanz226",
+      "sourceTitle": "Wikimedia Commons: EW18 Redhill MRT Station Exterior 202411.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:EW18%20Redhill%20MRT%20Station%20Exterior%20202411.jpg",
+      "licence": "CC BY-SA 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "retrieved": "2026-08-28",
+      "depicts": "venue"
+    },
+    {
+      "amenityId": "mrt-tampines-east",
+      "file": "/amenities/mrt-tampines-east.webp",
+      "width": 1600,
+      "height": 1200,
+      "alt": "Exit A of Tampines East MRT station (DT33), March 2026",
+      "creator": "ZKang123",
+      "sourceTitle": "Wikimedia Commons: DT33 Tampines East MRT Exit A 20260301 144230.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:DT33%20Tampines%20East%20MRT%20Exit%20A%2020260301%20144230.jpg",
+      "licence": "CC BY-SA 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "retrieved": "2026-08-28",
+      "depicts": "venue"
+    },
+    {
+      "amenityId": "mrt-tampines-ew2",
+      "file": "/amenities/mrt-tampines-ew2.webp",
+      "width": 1600,
+      "height": 1200,
+      "alt": "Exit E of Tampines MRT station (EW2/DT32)",
+      "creator": "ZKang123",
+      "sourceTitle": "Wikimedia Commons: DT32 EW2 Tampines MRT Exit E 20200718 124135.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:DT32%20EW2%20Tampines%20MRT%20Exit%20E%2020200718%20124135.jpg",
+      "licence": "CC BY-SA 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "retrieved": "2026-08-28",
+      "depicts": "venue"
+    },
+    {
+      "amenityId": "mrt-telok-blangah",
+      "file": "/amenities/mrt-telok-blangah.webp",
+      "width": 1600,
+      "height": 1200,
+      "alt": "Exit A of Telok Blangah MRT station (CC28)",
+      "creator": "zhenkang",
+      "sourceTitle": "Wikimedia Commons: CC28 Telok Blangah Exit A.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:CC28%20Telok%20Blangah%20Exit%20A.jpg",
+      "licence": "CC BY-SA 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "retrieved": "2026-08-28",
+      "depicts": "venue"
+    },
+    {
+      "amenityId": "mrt-upper-thomson",
+      "file": "/amenities/mrt-upper-thomson.webp",
+      "width": 1600,
+      "height": 1200,
+      "alt": "Entrance to Upper Thomson MRT station (TE8) with Thomson Plaza behind it",
+      "creator": "Wzhkevin",
+      "sourceTitle": "Wikimedia Commons: Entrance to Upper Thomson MRT Station with Thomson Plaza in background - 2022-07-29.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Entrance%20to%20Upper%20Thomson%20MRT%20Station%20with%20Thomson%20Plaza%20in%20background%20-%202022-07-29.jpg",
+      "licence": "CC BY-SA 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "retrieved": "2026-08-28",
+      "depicts": "venue"
+    },
+    {
+      "amenityId": "park-berlayer-creek",
+      "file": "/amenities/park-berlayer-creek.webp",
+      "width": 1600,
+      "height": 900,
+      "alt": "A sun skink on the Berlayer Creek boardwalk in Labrador Nature Reserve",
+      "creator": "Jason Quinn",
+      "sourceTitle": "Wikimedia Commons: Skink Berlayer Creek Boardwalk 2020 01 20.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Skink%20Berlayer%20Creek%20Boardwalk%202020%2001%2020.jpg",
+      "licence": "CC BY-SA 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "retrieved": "2026-08-28",
+      "depicts": "venue"
+    },
+    {
+      "amenityId": "park-harvey-crescent",
+      "file": "/amenities/park-harvey-crescent.webp",
+      "width": 1600,
+      "height": 1200,
+      "alt": "Siglap Park Connector beside the East–West MRT viaduct where Harvey Avenue meets it, next to the Harvey Crescent playground",
+      "creator": "Wzhkevin",
+      "sourceTitle": "Wikimedia Commons: Siglap Park Connector.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Siglap%20Park%20Connector.jpg",
+      "licence": "CC BY-SA 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "retrieved": "2026-08-28",
+      "depicts": "area-context",
+      "note": "Shows the park connector where Harvey Avenue meets it, about 85 m from the Harvey Crescent playground; no licensed photo of the playground itself was found."
+    },
+    {
+      "amenityId": "park-pearls-hill",
+      "file": "/amenities/park-pearls-hill.webp",
+      "width": 1600,
+      "height": 1200,
+      "alt": "Pond at Pearl's Hill City Park with People's Park Complex in the background",
+      "creator": "Wzhkevin",
+      "sourceTitle": "Wikimedia Commons: Pond at Pearl's Hill City Park, Singapore.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Pond%20at%20Pearl's%20Hill%20City%20Park%2C%20Singapore.jpg",
+      "licence": "CC BY-SA 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "retrieved": "2026-08-28",
+      "depicts": "venue"
+    },
+    {
+      "amenityId": "park-sun-plaza",
+      "file": "/amenities/park-sun-plaza.webp",
+      "width": 1600,
+      "height": 1200,
+      "alt": "Tampines Park Connector path running through Sun Plaza Park",
+      "creator": "Wzhkevin",
+      "sourceTitle": "Wikimedia Commons: Tampines Park Connector running through Sun Plaza Park.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tampines%20Park%20Connector%20running%20through%20Sun%20Plaza%20Park.jpg",
+      "licence": "CC BY-SA 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "retrieved": "2026-08-28",
+      "depicts": "venue"
+    },
+    {
+      "amenityId": "park-tiong-bahru",
+      "file": "/amenities/park-tiong-bahru.webp",
+      "width": 1600,
+      "height": 1200,
+      "alt": "Tiong Bahru Park with its tilted-train playground, December 2025",
+      "creator": "GoAheadFan95",
+      "sourceTitle": "Wikimedia Commons: Tiong Bahru Park, December 2025.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tiong%20Bahru%20Park%2C%20December%202025.jpg",
+      "licence": "CC BY-SA 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "retrieved": "2026-08-28",
+      "depicts": "venue"
+    },
+    {
+      "amenityId": "park-toapayoh-west-planned",
+      "file": "/amenities/park-toapayoh-west-planned.webp",
+      "width": 1600,
+      "height": 900,
+      "alt": "Caldecott MRT station Exit 4 in March 2021, next to the site of the announced Toa Payoh West project and its planned park",
+      "creator": "GoAheadFan95",
+      "sourceTitle": "Wikimedia Commons: Caldecott MRT Station Exit 4, March 2021.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Caldecott%20MRT%20Station%20Exit%204%2C%20March%202021.jpg",
+      "licence": "CC BY-SA 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "retrieved": "2026-08-28",
+      "depicts": "area-context",
+      "note": "Area context only: HDB has announced this 1.1-hectare park but it is not built yet, so the photo shows Caldecott MRT station beside the project site."
+    },
+    {
+      "amenityId": "school-chij-primary-toapayoh",
+      "file": "/amenities/school-chij-primary-toapayoh.webp",
+      "width": 1600,
+      "height": 1200,
+      "alt": "Main gate of the CHIJ (Toa Payoh) campus on Lorong 1 Toa Payoh in 2017",
+      "creator": "R22-3877",
+      "sourceTitle": "Wikimedia Commons: CHIJTP.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:CHIJTP.jpg",
+      "licence": "CC BY-SA 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "retrieved": "2026-08-28",
+      "depicts": "venue"
+    },
+    {
+      "amenityId": "school-st-nicholas",
+      "file": "/amenities/school-st-nicholas.webp",
+      "width": 1600,
+      "height": 1200,
+      "alt": "CHIJ Saint Nicholas Girls' School seen from Ang Mo Kio Street 13",
+      "creator": "R22-3877",
+      "sourceTitle": "Wikimedia Commons: Chijsngs.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Chijsngs.jpg",
+      "licence": "CC BY-SA 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "retrieved": "2026-08-28",
+      "depicts": "venue"
+    },
+    {
+      "amenityId": "shopping-tampines-mall",
+      "file": "/amenities/shopping-tampines-mall.webp",
+      "width": 1600,
+      "height": 1200,
+      "alt": "Exterior of Tampines Mall",
+      "creator": "Terence Ong",
+      "sourceTitle": "Wikimedia Commons: Tampines Mall 2.JPG",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tampines%20Mall%202.JPG",
+      "licence": "CC BY 2.5",
+      "licenceUrl": "https://creativecommons.org/licenses/by/2.5",
+      "retrieved": "2026-08-28",
+      "depicts": "venue"
+    },
+    {
+      "amenityId": "shopping-thomson-plaza",
+      "file": "/amenities/shopping-thomson-plaza.webp",
+      "width": 1600,
+      "height": 1200,
+      "alt": "Entrance to Thomson Plaza shopping mall facing Soo Chow Garden Road",
+      "creator": "Wzhkevin",
+      "sourceTitle": "Wikimedia Commons: Entrance to Thomson Plaza shopping mall facing Soo Chow Garden Road - 2022-07-29.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Entrance%20to%20Thomson%20Plaza%20shopping%20mall%20facing%20Soo%20Chow%20Garden%20Road%20-%202022-07-29.jpg",
+      "licence": "CC BY-SA 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "retrieved": "2026-08-28",
+      "depicts": "venue"
+    },
+    {
+      "amenityId": "sports-bukit-merah-cc",
+      "file": "/amenities/sports-bukit-merah-cc.webp",
+      "width": 1024,
+      "height": 683,
+      "alt": "Bukit Merah Community Centre building",
+      "creator": "Choo Yut Shing",
+      "sourceTitle": "Flickr: Bukit Merah Community Centre",
+      "sourceUrl": "https://www.flickr.com/photos/25802865@N08/52475526186",
+      "licence": "CC BY 2.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "retrieved": "2026-08-28",
+      "depicts": "venue"
+    },
+    {
+      "amenityId": "sports-st-andrews-jc",
+      "file": "/amenities/sports-st-andrews-jc.webp",
+      "width": 1600,
+      "height": 1067,
+      "alt": "Building K of St. Andrew's Junior College in 2015",
+      "creator": "Roy Zuo",
+      "sourceTitle": "Wikimedia Commons: Building K, SAJC, 2015.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Building%20K%2C%20SAJC%2C%202015.jpg",
+      "licence": "CC BY-SA 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "retrieved": "2026-08-28",
+      "depicts": "venue"
+    },
+    {
+      "amenityId": "sports-telok-blangah-cc",
+      "file": "/amenities/sports-telok-blangah-cc.webp",
+      "width": 1024,
+      "height": 683,
+      "alt": "Telok Blangah Community Club building",
+      "creator": "Choo Yut Shing",
+      "sourceTitle": "Flickr: Telok Blangah Community Club",
+      "sourceUrl": "https://www.flickr.com/photos/25802865@N08/52554848437",
+      "licence": "CC BY 2.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "retrieved": "2026-08-28",
+      "depicts": "venue"
+    },
+    {
+      "amenityId": "sports-toapayoh-west-cc",
+      "file": "/amenities/sports-toapayoh-west-cc.webp",
+      "width": 1600,
+      "height": 1200,
+      "alt": "Toa Payoh West Community Club building",
+      "creator": "Terence Ong",
+      "sourceTitle": "Wikimedia Commons: Toa Payoh West Community Club.JPG",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Toa%20Payoh%20West%20Community%20Club.JPG",
+      "licence": "CC BY 2.5",
+      "licenceUrl": "https://creativecommons.org/licenses/by/2.5",
+      "retrieved": "2026-08-28",
+      "depicts": "venue"
+    }
+  ],
+  "blockers": [
+    {
+      "amenityId": "hawker-jalan-kukoh",
+      "reason": "No photograph of Kukoh 21 Food Centre or Block 1 Jalan Kukoh with a reusable licence was found; geosearch results near the block are unidentified or unrelated.",
+      "searched": [
+        "Wikimedia Commons search",
+        "Commons geosearch 300 m",
+        "Openverse"
+      ],
+      "checked": "2026-08-28"
+    },
+    {
+      "amenityId": "hawker-kim-keat",
+      "reason": "No photograph of Kim Keat Palm Market and Food Centre with a reusable licence was found; Commons searches, Toa Payoh categories, a 300 m geosearch and Openverse returned only unrelated Lorong 7 images.",
+      "searched": [
+        "Wikimedia Commons search",
+        "Commons Toa Payoh categories",
+        "Commons geosearch 300 m",
+        "Openverse"
+      ],
+      "checked": "2026-08-28"
+    },
+    {
+      "amenityId": "hawker-mayflower",
+      "reason": "No photograph of Mayflower Market and Food Centre with a reusable licence was found; nearby results show only Mayflower MRT station exits.",
+      "searched": [
+        "Wikimedia Commons search",
+        "Commons Ang Mo Kio category",
+        "Commons geosearch 300 m",
+        "Openverse"
+      ],
+      "checked": "2026-08-28"
+    },
+    {
+      "amenityId": "hawker-telok-blangah",
+      "reason": "The NEA record marks this hawker centre as under construction (estimated 2027), and no reusable photograph of the site was found.",
+      "searched": [
+        "Wikimedia Commons search",
+        "Commons geosearch 300 m",
+        "Openverse"
+      ],
+      "checked": "2026-08-28"
+    },
+    {
+      "amenityId": "health-toapayoh-polyclinic",
+      "reason": "No photograph of Toa Payoh Polyclinic with a reusable licence was found.",
+      "searched": [
+        "Wikimedia Commons search",
+        "Commons Toa Payoh categories",
+        "Commons geosearch 300 m",
+        "Openverse"
+      ],
+      "checked": "2026-08-28"
+    },
+    {
+      "amenityId": "park-mar-thoma",
+      "reason": "No photograph of Mar Thoma Road Park with a reusable licence was found; the only nearby geotagged images show a neighbouring temple.",
+      "searched": [
+        "Wikimedia Commons search",
+        "Commons Parks in Singapore category",
+        "Commons geosearch 300 m",
+        "Openverse"
+      ],
+      "checked": "2026-08-28"
+    },
+    {
+      "amenityId": "park-shangri-la",
+      "reason": "No photograph of Shangri-La Playground in Ang Mo Kio with a reusable licence was found; search results are hotels of the same name.",
+      "searched": [
+        "Wikimedia Commons search",
+        "Commons Playgrounds in Singapore category",
+        "Commons geosearch 300 m",
+        "Openverse"
+      ],
+      "checked": "2026-08-28"
+    },
+    {
+      "amenityId": "park-taman-permata",
+      "reason": "No photograph of Taman Permata Park with a reusable licence was found; results are Malaysian and Indonesian places of the same name.",
+      "searched": [
+        "Wikimedia Commons search",
+        "Commons geosearch 300 m",
+        "Openverse"
+      ],
+      "checked": "2026-08-28"
+    },
+    {
+      "amenityId": "park-thomson-walk",
+      "reason": "No photograph of the Thomson Walk playground with a reusable licence was found; similarly named Soo Chow Walk images are a different playground.",
+      "searched": [
+        "Wikimedia Commons search",
+        "Commons Playgrounds in Singapore category",
+        "Commons geosearch 300 m",
+        "Openverse"
+      ],
+      "checked": "2026-08-28"
+    },
+    {
+      "amenityId": "school-blangah-rise",
+      "reason": "No photograph of Blangah Rise Primary School with a reusable licence was found; nearby results show the Southern Ridges instead.",
+      "searched": [
+        "Wikimedia Commons search",
+        "Commons Primary schools in Singapore category",
+        "Commons geosearch 300 m",
+        "Openverse"
+      ],
+      "checked": "2026-08-28"
+    },
+    {
+      "amenityId": "school-chongzheng",
+      "reason": "No photograph of Chongzheng Primary School with a reusable licence was found; search results are unrelated Chinese sites of the same name.",
+      "searched": [
+        "Wikimedia Commons search",
+        "Commons Primary schools in Singapore category",
+        "Commons geosearch 300 m",
+        "Openverse"
+      ],
+      "checked": "2026-08-28"
+    },
+    {
+      "amenityId": "school-gan-eng-seng",
+      "reason": "No photograph of Gan Eng Seng Primary School with a reusable licence was found; Commons images labelled GESS show the separate Gan Eng Seng School on Henderson Road.",
+      "searched": [
+        "Wikimedia Commons search",
+        "Commons Primary schools in Singapore category",
+        "Commons geosearch 300 m",
+        "Openverse"
+      ],
+      "checked": "2026-08-28"
+    },
+    {
+      "amenityId": "school-northoaks",
+      "reason": "No photograph of Northoaks Primary School with a reusable licence was found.",
+      "searched": [
+        "Wikimedia Commons search",
+        "Commons Primary schools in Singapore category",
+        "Commons geosearch 300 m",
+        "Openverse"
+      ],
+      "checked": "2026-08-28"
+    },
+    {
+      "amenityId": "school-woodgrove-primary",
+      "reason": "No photograph of Woodgrove Primary School with a reusable licence was found.",
+      "searched": [
+        "Wikimedia Commons search",
+        "Commons Woodlands category",
+        "Commons geosearch 300 m",
+        "Openverse"
+      ],
+      "checked": "2026-08-28"
+    },
+    {
+      "amenityId": "sports-citylife-tampines",
+      "reason": "No photograph of CityLife@Tampines or its sports facilities with a reusable licence was found.",
+      "searched": [
+        "Wikimedia Commons search",
+        "Commons Tampines category",
+        "Commons geosearch 300 m",
+        "Openverse"
+      ],
+      "checked": "2026-08-28"
+    },
+    {
+      "amenityId": "sports-jelutung-harbour-park",
+      "reason": "No photograph of Jelutung Harbour Park or its fitness corner and basketball court with a reusable licence was found.",
+      "searched": [
+        "Wikimedia Commons search",
+        "Commons Sembawang category",
+        "Commons geosearch 300 m",
+        "Openverse"
+      ],
+      "checked": "2026-08-28"
+    },
+    {
+      "amenityId": "sports-kebun-baru-cc",
+      "reason": "No photograph of Kebun Baru Community Club or its sports facilities with a reusable licence was found; search results are Malaysian and Indonesian places named Kebun Baru.",
+      "searched": [
+        "Wikimedia Commons search",
+        "Commons Community centres in Singapore category",
+        "Commons geosearch 300 m",
+        "Openverse"
+      ],
+      "checked": "2026-08-28"
+    },
+    {
+      "amenityId": "sports-northoaks",
+      "reason": "No photograph of Northoaks Primary School or its sports facilities with a reusable licence was found.",
+      "searched": [
+        "Wikimedia Commons search",
+        "Commons Primary schools in Singapore category",
+        "Commons geosearch 300 m",
+        "Openverse"
+      ],
+      "checked": "2026-08-28"
+    },
+    {
+      "amenityId": "sports-tampines-secondary",
+      "reason": "No photograph of Tampines Secondary School or its sports facilities with a reusable licence was found.",
+      "searched": [
+        "Wikimedia Commons search",
+        "Commons Secondary schools in Singapore category",
+        "Commons geosearch 300 m",
+        "Openverse"
+      ],
+      "checked": "2026-08-28"
+    },
+    {
+      "amenityId": "sports-thomson-cc",
+      "reason": "No photograph of Thomson Community Club or its sports facilities with a reusable licence was found.",
+      "searched": [
+        "Wikimedia Commons search",
+        "Commons Community centres in Singapore category",
+        "Commons geosearch 300 m",
+        "Openverse"
+      ],
+      "checked": "2026-08-28"
+    },
+    {
+      "amenityId": "sports-woodgrove-primary",
+      "reason": "No photograph of Woodgrove Primary School or its sports facilities with a reusable licence was found.",
+      "searched": [
+        "Wikimedia Commons search",
+        "Commons Woodlands category",
+        "Commons geosearch 300 m",
+        "Openverse"
+      ],
+      "checked": "2026-08-28"
+    }
+  ]
+}

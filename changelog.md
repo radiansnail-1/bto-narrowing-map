@@ -1,5 +1,16 @@
 # Changelog
 
+## 2026-08-28 (product/data pass)
+
+- Renamed the product and metadata to "Where To BTO"; removed the pseudo-government identity strip and prototype disclaimer; no crest.
+- Switched all typography to self-hosted Hanken Grotesk (OFL, `next/font/local`, weights 400–700); removed Inter and DM Mono, including map labels and HUD.
+- Replaced seven amenity filters with five groups (MRT, Food & shopping, Healthcare, Schools, Parks & recreation) sharing one accessible palette; BTO housing is the only red family. Underlying official types are preserved; legacy stored selections migrate safely.
+- Made fit opacity exact: 100/77/54/31/8 % for 0–4 confirmed misses; selection keeps fit opacity and is shown with a ring/emissive treatment.
+- Fixed the dead "Finish narrowing" action with a typed right-panel view state (questions | results | project | amenity): grouped, unranked results, Edit answers, result → project, amenity → full detail with Back and preserved 1 km context; removed the floating amenity popover.
+- Added a separate typed amenity media manifest and build pipeline (`npm run media:build`) with 32 local open-licence WebP assets, first-class credits, and explicit researched blockers for the 21 records without a defensible photo.
+- Audited the snapshot against HDB (2026-08-28): confirmed November 2026 facts are unpublished, added the published Lakeview/Shunfu launch window and flat types, a Shunfu record, and the HFE deadline note; unpublished values render as "Not published by HDB yet".
+- Completed the final 1600×1000 visual pass and removed a corrupt water-mask mesh that rendered as a rectangular overlay; lint, 46 unit tests, production build, and four Playwright flows pass.
+
 ## 2026-08-28
 
 - Added smooth arrow-key ground panning and one coordinated camera path for mouse orbit, cursor-centred bounded wheel zoom, and project fly-to transitions.

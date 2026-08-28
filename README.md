@@ -1,4 +1,4 @@
-# Narrow Down Your BTO
+# Where To BTO
 
 An interactive desktop map for narrowing Singapore BTO projects by commute, budget, nearby amenities, and estimated waiting time. Projects begin equally visible and dim only when they miss criteria the visitor has answered—there is no hidden composite ranking.
 
@@ -6,10 +6,13 @@ An interactive desktop map for narrowing Singapore BTO projects by commute, budg
 
 ## What it includes
 
-- 21 launched or officially announced BTO records from the dated project snapshot
+- 22 launched or officially announced BTO records from the dated project snapshot (November 2026 project facts stay "Not published by HDB yet" until HDB publishes them)
 - A real-geography miniature Singapore assembled from 118,415 building footprints
 - MRT/LRT, major roads, water, greenery, runways, planning areas, and orientation landmarks
-- Four transparent narrowing criteria with `pass`, `miss`, `unknown`, and unanswered states
+- Four transparent narrowing criteria with `pass`, `miss`, `unknown`, and unanswered states; each confirmed miss dims a project by exactly 23 percentage points (100/77/54/31/8 %)
+- Results grouped without ranking: fits all criteria, could fit (awaiting published data), has trade-offs
+- Five amenity groups (MRT, Food & shopping, Healthcare, Schools, Parks & recreation) over the seven official amenity types, with one shared accessible palette
+- Amenity detail views with 32 locally optimised, fully credited open-licence photos and honest no-photo states for the remaining 21 records (`data/amenity-media.json`)
 - A selected-project fly-to view with an approximate 1 km context ring and curated amenities
 - A software-renderer lite path for headless browsers and lower-capability environments
 
@@ -53,6 +56,10 @@ Map sources and retrieval dates are recorded in `public/map/manifest.json`:
 - OpenStreetMap via Overpass, © OpenStreetMap contributors, under ODbL 1.0
 
 Where OSM provides `height` or `building:levels`, those tags drive the miniature. Other building heights are deterministic visual approximations by footprint, type, and planning area; they are not survey data. Project and amenity records remain separate from this visual context and keep their own official-source metadata.
+
+## Typography and media
+
+The interface uses Hanken Grotesk only (SIL OFL 1.1; files and licence in `app/fonts/`), self-hosted via `next/font/local`. Amenity photographs are downloaded and optimised by `npm run media:build` from the curated picks in `work/amenity-media/picks.json`; every shipped image carries its creator, licence, and source page in `data/amenity-media.json`, which is deliberately separate from the official data snapshot.
 
 ## Stack
 

@@ -6,7 +6,7 @@ import { ONE_KM_SCENE_RADIUS, SCENE_KM_PER_UNIT } from '@/lib/geo';
 import snapshot from '@/data/official-data-snapshot.json';
 
 describe('official snapshot data integrity', () => {
-  it('integrates all 21 official project/announcement records', () => {
+  it('integrates every official project/announcement record in the snapshot', () => {
     expect(btoProjects).toHaveLength(snapshot.scope.projectCount);
     expect(new Set(btoProjects.map((project) => project.id)).size).toBe(btoProjects.length);
     expect(btoProjects.filter((project) => project.launchStatus === 'launched')).toHaveLength(snapshot.scope.namedLaunchedProjectCount);
@@ -25,7 +25,7 @@ describe('official snapshot data integrity', () => {
     for (const project of btoProjects) {
       expect(project.sourceUrls.length).toBeGreaterThan(0);
       expect(project.sourceUrls[0]).toMatch(/^https:\/\//);
-      expect(project.checkedDate).toBe(snapshot.snapshotDate);
+      expect(project.checkedDate >= snapshot.snapshotDate && project.checkedDate <= snapshot.lastAuditDate).toBe(true);
     }
     expect(btoProjects.find((project) => project.id === 'nov-2026-bedok-unnamed')?.position).toBeNull();
     expect(btoProjects.find((project) => project.id === 'nov-2026-bedok-unnamed')?.dataNote).toMatch(/Map location unavailable/);
