@@ -1,0 +1,5 @@
+/* Labels rendered by drei <Html> inside the canvas container; kept out of the HUD stylesheet. */
+.map-label { display: inline-block; white-space: nowrap; font-family: 'DM Mono', monospace; letter-spacing: .08em; text-transform: uppercase; user-select: none; }
+.map-label-district { color: rgba(146, 176, 184, .5); font-size: 9px; letter-spacing: .22em; text-shadow: 0 0 6px rgba(5, 11, 18, .9); }
+.map-label-project { padding: 1px 5px; border: 1px solid rgba(255, 120, 110, .22); border-radius: 2px; color: #ffcfc6; background: rgba(9, 14, 20, .55); font-size: 8px; letter-spacing: .09em; text-shadow: 0 0 8px rgba(255, 90, 80, .35); transform: translateY(-8px); }
+.map-label-project.is-selected { border-color: rgba(255, 190, 170, .8); color: #fff3ee; background: rgba(120, 32, 34, .7); box-shadow: 0 0 18px rgba(255, 90, 80, .35); }

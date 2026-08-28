@@ -1,0 +1,36 @@
+{
+  "name": "bto-narrowing-map",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint .",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:e2e": "playwright test",
+    "map:build": "node scripts/build-map-assets.ts"
+  },
+  "dependencies": {
+    "@react-three/drei": "^10.7.6",
+    "@react-three/fiber": "^9.3.0",
+    "@react-three/postprocessing": "^3.1.1",
+    "next": "^15.5.7",
+    "postprocessing": "^6.39.4",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "three": "^0.179.1"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.55.0",
+    "@types/node": "^22.15.0",
+    "@types/react": "^19.1.0",
+    "@types/react-dom": "^19.1.0",
+    "@types/three": "^0.179.0",
+    "eslint": "^9.35.0",
+    "eslint-config-next": "^15.5.7",
+    "typescript": "^5.9.2",
+    "vitest": "^3.2.4"
+  }
+}
