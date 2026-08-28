@@ -9,8 +9,15 @@ import * as THREE from 'three';
 import { amenities } from '@/data/amenities';
 import { btoProjects } from '@/data/bto-projects';
 import { workHubs } from '@/data/work-hubs';
+import {
+  FALLBACK_BOUNDS, FOCUS_ELEVATION, FOCUS_SAFE_INSETS, KEY_PAN_EASE_SECONDS,
+  KEY_PAN_PX_PER_SECOND, OVERVIEW_AZIMUTH, OVERVIEW_ELEVATION, ZOOM_EASE_SECONDS, approach,
+  clampTarget, clampZoom, isEditableTarget, keyPanDirection, orbitFromOffset, orbitOffset,
+  panDisplacement, wheelZoomFactor, zoomAboutCursor, zoomBounds,
+} from '@/lib/camera';
 import { geoToScenePosition, ONE_KM_SCENE_RADIUS } from '@/lib/geo';
 import { HEIGHT_SCALE, LINE_CLASS, buildBuildingGeometry, buildCoastWallGeometry, buildRibbonGeometry, linesOfClass, loadMapAssets, type MapAssets } from '@/lib/map-assets';
+import type { PlaceHighlight } from '@/lib/map-format';
 import { projectOpacity } from '@/lib/matching';
 import type { Amenity, AmenityCategory, ProjectMatch } from '@/lib/types';
 import './map-scene.css';
@@ -313,17 +320,49 @@ function BtoCluster({ project, match, selected, pinMode, onSelect, onGroundSelec
   );
 }
 
-function AmenityMarkers({ visible, selectedProjectId, pinMode, onSelect, onGroundSelect }: { visible: AmenityCategory[]; selectedProjectId: string | null; pinMode: boolean; onSelect: (amenity: Amenity) => void; onGroundSelect: (position: [number, number]) => void }) {
+function makeHighlightGeometry(place: PlaceHighlight): { fill: THREE.BufferGeometry; outlines: THREE.BufferGeometry[] } {
+  const positions: number[] = [];
+  const indices: number[] = [];
+  const outlines: THREE.BufferGeometry[] = [];
+  for (const ring of place.rings) {
+    if (ring.length < 3) continue;
+    const base = positions.length / 3;
+    for (const [x, z] of ring) positions.push(x, 0.055, z);
+    const triangles = THREE.ShapeUtils.triangulateShape(ring.map(([x, z]) => new THREE.Vector2(x, z)), []);
+    for (const [a, b, c] of triangles) indices.push(base + a, base + c, base + b);
+    const points = [...ring, ring[0]].map(([x, z]) => new THREE.Vector3(x, 0.058, z));
+    outlines.push(new THREE.BufferGeometry().setFromPoints(points));
+  }
+  const fill = new THREE.BufferGeometry();
+  fill.setAttribute('position', new THREE.Float32BufferAttribute(positions, 3));
+  fill.setIndex(indices);
+  fill.computeBoundingSphere();
+  return { fill, outlines };
+}
+
+function AmenityHighlight({ amenity, place, inside, selectedProjectId, pinMode, onSelect, onGroundSelect }: { amenity: Amenity; place: PlaceHighlight; inside: boolean; selectedProjectId: string | null; pinMode: boolean; onSelect: (amenity: Amenity) => void; onGroundSelect: (position: [number, number]) => void }) {
+  const geometry = useMemo(() => makeHighlightGeometry(place), [place]);
+  const color = useMemo(() => new THREE.Color(amenityColors[amenity.type]).multiplyScalar(inside ? 1.8 : 1.15), [amenity.type, inside]);
+  useEffect(() => () => { geometry.fill.dispose(); geometry.outlines.forEach((outline) => outline.dispose()); }, [geometry]);
+  const opacity = selectedProjectId ? (inside ? 0.72 : 0.13) : 0.42;
+  return <group name={`amenity-highlight-${amenity.id}`} userData={{ source: place.source, sourceName: place.sourceName }} onClick={(event) => { event.stopPropagation(); if (pinMode) onGroundSelect([event.point.x, event.point.z]); else onSelect(amenity); }} onPointerOver={() => { document.body.style.cursor = pinMode ? 'crosshair' : 'pointer'; }} onPointerOut={() => { document.body.style.cursor = 'default'; }}>
+    <mesh geometry={geometry.fill} renderOrder={20}>
+      <meshBasicMaterial color={color} transparent opacity={opacity} side={THREE.DoubleSide} depthTest={false} depthWrite={false} toneMapped={false} />
+    </mesh>
+    {geometry.outlines.map((outline, index) => <lineLoop key={index} geometry={outline} renderOrder={21}>
+      <lineBasicMaterial color={color} transparent opacity={selectedProjectId && !inside ? 0.2 : inside ? 1 : 0.72} depthTest={false} depthWrite={false} toneMapped={false} />
+    </lineLoop>)}
+  </group>;
+}
+
+function AmenityMarkers({ assets, visible, selectedProjectId, pinMode, onSelect, onGroundSelect }: { assets: MapAssets; visible: AmenityCategory[]; selectedProjectId: string | null; pinMode: boolean; onSelect: (amenity: Amenity) => void; onGroundSelect: (position: [number, number]) => void }) {
   const selected = selectedProjectId ? btoProjects.find((project) => project.id === selectedProjectId) : null;
+  const places = useMemo(() => new Map(assets.places.places.map((place) => [place.amenityId, place])), [assets]);
   return <group>{amenities.filter((amenity) => visible.includes(amenity.type) && amenity.position !== null).map((amenity) => {
-    const position = amenity.position!;
+    const place = places.get(amenity.id);
+    if (!place) return null;
     const inside = selected ? selected.amenityIds.includes(amenity.id) : false;
-    const color = new THREE.Color(amenityColors[amenity.type]).multiplyScalar(inside ? 1.9 : 0.85);
-    return <group key={amenity.id} position={[position[0], 0, position[1]]} onClick={(event) => { event.stopPropagation(); if (pinMode) onGroundSelect([event.point.x, event.point.z]); else onSelect(amenity); }} onPointerOver={() => { document.body.style.cursor = pinMode ? 'crosshair' : 'pointer'; }} onPointerOut={() => { document.body.style.cursor = 'default'; }}>
-      <mesh position={[0, inside ? 0.11 : 0.05, 0]}><sphereGeometry args={[inside ? 0.024 : 0.017, 12, 8]} /><meshBasicMaterial color={color} toneMapped={false} transparent opacity={selected && !inside ? 0.4 : 1} /></mesh>
-      <mesh position={[0, (inside ? 0.11 : 0.05) / 2, 0]}><cylinderGeometry args={[0.0025, 0.0025, inside ? 0.11 : 0.05, 4]} /><meshBasicMaterial color={color} toneMapped={false} transparent opacity={selected && !inside ? 0.25 : 0.6} /></mesh>
-      {inside && <mesh position={[0, 0.03, 0]} rotation={[-Math.PI / 2, 0, 0]}><ringGeometry args={[0.04, 0.05, 24]} /><meshBasicMaterial color={color} transparent opacity={0.8} side={THREE.DoubleSide} toneMapped={false} depthWrite={false} /></mesh>}
-    </group>;
+    return <AmenityHighlight key={amenity.id} amenity={amenity} place={place} inside={inside} selectedProjectId={selectedProjectId} pinMode={pinMode} onSelect={onSelect} onGroundSelect={onGroundSelect} />;
   })}</group>;
 }
 
@@ -380,14 +419,9 @@ function Labels({ assets, matches, selectedProjectId }: { assets: MapAssets; mat
 /* Camera                                                                                            */
 /* ----------------------------------------------------------------------------------------------- */
 
-const AZIMUTH = -0.36;
-const CAMERA_DISTANCE = 60;
 const OVERVIEW_TARGET = new THREE.Vector3(0.6, 0, 3.6);
-const OVERVIEW_ELEVATION = 0.66;
-const FOCUS_ELEVATION = 0.74;
 
 type CameraGoal = { target: THREE.Vector3; azimuth: number; elevation: number; zoom: number };
-const orbitOffset = (azimuth: number, elevation: number) => new THREE.Vector3(Math.sin(azimuth) * Math.cos(elevation), Math.sin(elevation), Math.cos(azimuth) * Math.cos(elevation)).multiplyScalar(CAMERA_DISTANCE);
 const easeInOut = (t: number) => (t < 0.5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2);
 
 function CameraRig({ selectedPosition, shared, lite }: { selectedPosition: [number, number] | null; shared: SharedUniforms; lite: boolean }) {
@@ -401,41 +435,81 @@ function CameraRig({ selectedPosition, shared, lite }: { selectedPosition: [numb
   const goalRef = useRef<CameraGoal | null>(null);
   const tween = useRef<{ from: CameraGoal; to: CameraGoal; startedAt: number; duration: number } | null>(null);
   const userOwned = useRef(false);
-  const pointer = useRef(new THREE.Vector2());
-  const parallax = useRef(new THREE.Vector2());
+  const heldKeys = useRef(new Set<string>());
+  const panVelocity = useRef(new THREE.Vector2());
+  const desiredZoom = useRef(camera.zoom);
+  const zoomCursor = useRef(new THREE.Vector2());
   const focusStrength = useRef(0);
 
-  const overviewGoal = (): CameraGoal => ({ target: OVERVIEW_TARGET.clone(), azimuth: AZIMUTH, elevation: OVERVIEW_ELEVATION, zoom: THREE.MathUtils.clamp(Math.min((size.width - 200) / 43, (size.height - 120) / 24), 20, 60) });
+  const overviewGoal = (): CameraGoal => ({ target: OVERVIEW_TARGET.clone(), azimuth: OVERVIEW_AZIMUTH, elevation: OVERVIEW_ELEVATION, zoom: zoomBounds(size.width, size.height).overview });
   const focusGoal = (p: [number, number]): CameraGoal => {
-    const zoom = THREE.MathUtils.clamp(size.height / 5.6, 110, 175);
-    const right = new THREE.Vector3(Math.cos(AZIMUTH), 0, -Math.sin(AZIMUTH));
-    return { target: new THREE.Vector3(p[0], 0.1, p[1]).addScaledVector(right, 150 / zoom), azimuth: AZIMUTH, elevation: FOCUS_ELEVATION, zoom };
+    const zoom = zoomBounds(size.width, size.height).focus;
+    const right = new THREE.Vector3(Math.cos(OVERVIEW_AZIMUTH), 0, -Math.sin(OVERVIEW_AZIMUTH));
+    const forward = new THREE.Vector3(-Math.sin(OVERVIEW_AZIMUTH), 0, -Math.cos(OVERVIEW_AZIMUTH));
+    const horizontalOffsetPx = (FOCUS_SAFE_INSETS.left - FOCUS_SAFE_INSETS.right) / -2;
+    const verticalOffsetPx = (FOCUS_SAFE_INSETS.top - FOCUS_SAFE_INSETS.bottom) / 2;
+    return {
+      target: new THREE.Vector3(p[0], 0, p[1]).addScaledVector(right, horizontalOffsetPx / zoom).addScaledVector(forward, verticalOffsetPx / zoom),
+      azimuth: OVERVIEW_AZIMUTH,
+      elevation: FOCUS_ELEVATION,
+      zoom,
+    };
   };
 
-  const apply = (goal: CameraGoal, azimuthOffset = 0, targetOffset?: THREE.Vector3) => {
+  const apply = (goal: CameraGoal) => {
     if (!controls) return;
-    const target = targetOffset ? goal.target.clone().add(targetOffset) : goal.target;
-    camera.position.copy(target).add(orbitOffset(goal.azimuth + azimuthOffset, goal.elevation));
-    controls.target.copy(target);
+    camera.position.copy(goal.target).add(orbitOffset(goal.azimuth, goal.elevation));
+    controls.target.copy(goal.target);
     if (Math.abs(camera.zoom - goal.zoom) > 1e-3) { camera.zoom = goal.zoom; camera.updateProjectionMatrix(); }
+    desiredZoom.current = goal.zoom;
     controls.update();
   };
 
   useEffect(() => {
     if (!controls) return;
     const onStart = () => { userOwned.current = true; tween.current = null; };
+    const onChange = () => invalidate();
     controls.addEventListener('start', onStart);
-    return () => controls.removeEventListener('start', onStart);
-  }, [controls]);
+    controls.addEventListener('change', onChange);
+    return () => { controls.removeEventListener('start', onStart); controls.removeEventListener('change', onChange); };
+  }, [controls, invalidate]);
 
   useEffect(() => {
     const element = gl.domElement;
-    const onMove = (event: PointerEvent) => { const rect = element.getBoundingClientRect(); pointer.current.set(((event.clientX - rect.left) / rect.width) * 2 - 1, ((event.clientY - rect.top) / rect.height) * 2 - 1); };
-    const onLeave = () => pointer.current.set(0, 0);
-    element.addEventListener('pointermove', onMove);
-    element.addEventListener('pointerleave', onLeave);
-    return () => { element.removeEventListener('pointermove', onMove); element.removeEventListener('pointerleave', onLeave); };
-  }, [gl]);
+    const onWheel = (event: WheelEvent) => {
+      event.preventDefault();
+      const rect = element.getBoundingClientRect();
+      zoomCursor.current.set(((event.clientX - rect.left) / rect.width) * 2 - 1, -(((event.clientY - rect.top) / rect.height) * 2 - 1));
+      const bounds = zoomBounds(size.width, size.height);
+      desiredZoom.current = clampZoom((desiredZoom.current || camera.zoom) * wheelZoomFactor(event.deltaY, event.deltaMode, event.ctrlKey), bounds);
+      userOwned.current = true;
+      tween.current = null;
+      invalidate();
+    };
+    element.addEventListener('wheel', onWheel, { passive: false });
+    return () => element.removeEventListener('wheel', onWheel);
+  }, [camera, gl, invalidate, size.height, size.width]);
+
+  useEffect(() => {
+    const onKeyDown = (event: KeyboardEvent) => {
+      if (!['ArrowUp', 'ArrowDown', 'ArrowLeft', 'ArrowRight'].includes(event.key) || isEditableTarget(event.target)) return;
+      event.preventDefault();
+      heldKeys.current.add(event.key);
+      userOwned.current = true;
+      tween.current = null;
+      invalidate();
+    };
+    const onKeyUp = (event: KeyboardEvent) => {
+      if (!['ArrowUp', 'ArrowDown', 'ArrowLeft', 'ArrowRight'].includes(event.key)) return;
+      heldKeys.current.delete(event.key);
+      invalidate();
+    };
+    const onBlur = () => heldKeys.current.clear();
+    window.addEventListener('keydown', onKeyDown);
+    window.addEventListener('keyup', onKeyUp);
+    window.addEventListener('blur', onBlur);
+    return () => { window.removeEventListener('keydown', onKeyDown); window.removeEventListener('keyup', onKeyUp); window.removeEventListener('blur', onBlur); };
+  }, [invalidate]);
 
   // Fly-to on selection change; on first mount, a short opening settle instead of a long intro.
   const selectedKey = selectedPosition ? `${selectedPosition[0]},${selectedPosition[1]}` : 'overview';
@@ -454,7 +528,8 @@ function CameraRig({ selectedPosition, shared, lite }: { selectedPosition: [numb
       tween.current = { from, to: goal, startedAt: performance.now(), duration: 1900 };
       return;
     }
-    const from: CameraGoal = { target: controls.target.clone(), azimuth: Math.atan2(camera.position.x - controls.target.x, camera.position.z - controls.target.z), elevation: Math.asin(THREE.MathUtils.clamp((camera.position.y - controls.target.y) / CAMERA_DISTANCE, -1, 1)), zoom: camera.zoom };
+    const orbit = orbitFromOffset(camera.position.clone().sub(controls.target));
+    const from: CameraGoal = { target: controls.target.clone(), azimuth: orbit.azimuth, elevation: orbit.elevation, zoom: camera.zoom };
     goalRef.current = goal;
     if (reduced) { apply(goal); tween.current = null; return; }
     tween.current = { from, to: goal, startedAt: performance.now(), duration: selectedPosition ? 1500 : 1300 };
@@ -480,13 +555,6 @@ function CameraRig({ selectedPosition, shared, lite }: { selectedPosition: [numb
     else focus.value.w = focusStrength.current;
     // Ribbons keep a near-constant on-screen weight instead of ballooning when zoomed in.
     shared.widthScale.value = THREE.MathUtils.clamp(Math.pow(30 / camera.zoom, 0.55), 0.28, 1.25);
-    if (userOwned.current) { controls.update(); return; }
-    const reduced = prefersReducedMotion() || lite;
-    if (!reduced) parallax.current.lerp(pointer.current, 1 - Math.exp(-dt * 2.2));
-    const right = new THREE.Vector3(Math.cos(goal.azimuth), 0, -Math.sin(goal.azimuth));
-    const forward = new THREE.Vector3(-Math.sin(goal.azimuth), 0, -Math.cos(goal.azimuth));
-    const drift = reduced ? undefined : right.multiplyScalar((parallax.current.x * 9) / goal.zoom).add(forward.multiplyScalar((-parallax.current.y * 7) / goal.zoom));
-    const azimuthDrift = reduced ? 0 : parallax.current.x * 0.012;
     const active = tween.current;
     if (active) {
       const t = Math.min(1, (performance.now() - active.startedAt) / active.duration);
@@ -497,11 +565,35 @@ function CameraRig({ selectedPosition, shared, lite }: { selectedPosition: [numb
         elevation: THREE.MathUtils.lerp(active.from.elevation, active.to.elevation, k),
         zoom: Math.exp(THREE.MathUtils.lerp(Math.log(active.from.zoom), Math.log(active.to.zoom), k)),
       };
-      apply(blended, azimuthDrift * k, drift?.multiplyScalar(k));
+      apply(blended);
       if (t >= 1) tween.current = null; else invalidate();
       return;
     }
-    apply(goal, azimuthDrift, drift);
+    if (!userOwned.current) apply(goal);
+    else {
+      const orbit = orbitFromOffset(camera.position.clone().sub(controls.target));
+      const requested = keyPanDirection(heldKeys.current).multiplyScalar(KEY_PAN_PX_PER_SECOND);
+      panVelocity.current.set(
+        approach(panVelocity.current.x, requested.x, dt, KEY_PAN_EASE_SECONDS),
+        approach(panVelocity.current.y, requested.y, dt, KEY_PAN_EASE_SECONDS),
+      );
+      if (panVelocity.current.lengthSq() > 0.5) {
+        const shift = panDisplacement(panVelocity.current, orbit.azimuth, camera.zoom, dt);
+        const nextTarget = clampTarget(controls.target.clone().add(shift), FALLBACK_BOUNDS);
+        camera.position.add(nextTarget.clone().sub(controls.target));
+        controls.target.copy(nextTarget);
+      }
+      const nextZoom = approach(camera.zoom, desiredZoom.current, dt, ZOOM_EASE_SECONDS);
+      if (Math.abs(nextZoom - camera.zoom) > 0.01) {
+        camera.updateMatrixWorld();
+        zoomAboutCursor(camera, controls.target, nextZoom, zoomCursor.current);
+        const clamped = clampTarget(controls.target, FALLBACK_BOUNDS);
+        camera.position.add(clamped.clone().sub(controls.target));
+        controls.target.copy(clamped);
+      }
+      controls.update();
+      if (panVelocity.current.lengthSq() > 0.5 || Math.abs(desiredZoom.current - camera.zoom) > 0.05) invalidate();
+    }
     if (!lite && Math.abs(focusStrength.current - strengthTarget) > 0.01) invalidate();
     if (process.env.NODE_ENV !== 'production') (window as unknown as { __mapScene?: unknown; __mapGl?: unknown }).__mapScene = scene;
     if (process.env.NODE_ENV !== 'production') (window as unknown as { __mapScene?: unknown; __mapGl?: unknown; __mapCam?: unknown }).__mapGl = gl;
@@ -579,12 +671,12 @@ function SceneContents({ matches, visibleAmenities, selectedProjectId, customPin
       {assets && <Buildings assets={assets} focus={focus} onReady={onReady} />}
       {assets && <Infrastructure assets={assets} shared={shared} />}
       <Landmarks />
-      <AmenityMarkers visible={visibleAmenities} selectedProjectId={selectedProjectId} pinMode={pinMode} onSelect={onAmenitySelect} onGroundSelect={onGroundSelect} />
+      {assets && <AmenityMarkers assets={assets} visible={visibleAmenities} selectedProjectId={selectedProjectId} pinMode={pinMode} onSelect={onAmenitySelect} onGroundSelect={onGroundSelect} />}
       {btoProjects.filter((project) => project.position !== null).map((project) => <BtoCluster key={project.id} project={project} match={matches[project.id]} selected={project.id === selectedProjectId} pinMode={pinMode} onSelect={() => onProjectSelect(project.id)} onGroundSelect={onGroundSelect} />)}
       <Markers customPin={customPin} />
       {assets && <Labels assets={assets} matches={matches} selectedProjectId={selectedProjectId} />}
       <CameraRig selectedPosition={selectedProject?.position ?? null} shared={shared} lite={quality.lite} />
-      <OrbitControls makeDefault enabled={!pinMode} enableDamping dampingFactor={0.09} minZoom={16} maxZoom={320} minPolarAngle={0.3} maxPolarAngle={1.35} screenSpacePanning={false} />
+      <OrbitControls makeDefault enabled={!pinMode} enableDamping dampingFactor={0.09} enableZoom={false} minPolarAngle={0.3} maxPolarAngle={1.35} screenSpacePanning={false} />
       {effects && <EffectComposer multisampling={0}>
         <Bloom mipmapBlur luminanceThreshold={0.8} luminanceSmoothing={0.2} intensity={0.55} radius={0.5} />
         <ToneMapping mode={ToneMappingMode.ACES_FILMIC} />

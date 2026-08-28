@@ -105,7 +105,7 @@ export function BtoExplorer() {
       <div className="right-panel-wrap">
         <QuestionPanel step={step} answers={answers} selectedProject={selectedProject} selectedMatch={selectedMatch} pinMode={pinMode} onDropCustomPin={() => { setPinMode(true); setSelectedProjectId(null); }} onClearCustomPin={() => setAnswers((current) => ({ ...current, customWorkplace: null }))} onBack={() => setStep((current) => Math.max(0, current - 1))} onNext={() => setStep((current) => Math.min(3, current + 1))} onAnswersChange={setAnswers} onCloseProject={() => { setSelectedProjectId(null); setSelectedAmenity(null); }} />
       </div>
-      <div className="map-legend"><div><i className="legend-bto" /> BTO fit</div><div><i className="legend-amenity" /> selected layer</div><div className="legend-instruction">Drag to orbit · scroll to zoom</div></div>
+      <div className="map-legend"><div><i className="legend-bto" /> BTO fit</div><div><i className="legend-amenity" /> highlighted place</div><div className="legend-instruction">Drag to orbit · arrows to move · scroll to zoom</div></div>
       <div className={`project-tray ${trayOpen ? 'is-open' : ''}`} aria-label="BTO project shortcuts" onMouseEnter={() => setTrayHovered(true)} onMouseLeave={() => setTrayHovered(false)} onFocus={() => setTrayFocused(true)} onBlur={(event) => setTrayFocused(event.currentTarget.contains(event.relatedTarget))}>
         <div className="tray-strip">
           <span className="tray-label">Sites · {btoProjects.length}</span>

@@ -4,8 +4,16 @@ test('guides a visitor through four questions and opens a project card', async (
   // Browser automation exercises the deterministic software-renderer path; headed visual QA covers full quality.
   await page.goto('/?lite=1');
   await expect(page.getByTestId('map-boundary-state')).toHaveAttribute('data-map-quality', 'lite');
+  await expect(page.getByTestId('map-boundary-state')).toHaveAttribute('data-map-ready', 'true', { timeout: 30_000 });
   await expect(page.getByTestId('question-card')).toBeVisible();
   await expect(page.getByRole('heading', { name: 'Where do you spend your weekdays?' })).toBeVisible();
+
+  await expect.poll(() => page.evaluate(() => Boolean((window as unknown as { __mapCamera?: unknown }).__mapCamera))).toBe(true);
+  const targetBefore = await page.evaluate(() => (window as unknown as { __mapCamera: { target: number[] } }).__mapCamera.target);
+  await page.keyboard.down('ArrowRight');
+  await page.waitForTimeout(220);
+  await page.keyboard.up('ArrowRight');
+  await expect.poll(async () => (await page.evaluate(() => (window as unknown as { __mapCamera: { target: number[] } }).__mapCamera.target))[0]).not.toBeCloseTo(targetBefore[0], 2);
 
   await page.getByRole('button', { name: /Raffles Place CBD/ }).click();
   await page.getByRole('button', { name: /Tanjong Pagar/ }).click();
@@ -41,6 +49,13 @@ test('guides a visitor through four questions and opens a project card', async (
   await expect(page.getByRole('heading', { name: 'Tampines Nova' })).toBeVisible();
   await expect(page.locator('.criteria-row')).toHaveCount(4);
   await expect(page.getByTestId('map-boundary-state')).toHaveAttribute('data-boundary-state', 'approximate-1km');
+  await expect.poll(() => page.evaluate(() => (window as unknown as { __mapCamera: { zoom: number } }).__mapCamera.zoom)).toBeGreaterThanOrEqual(390);
+  await expect.poll(() => page.evaluate(() => {
+    const scene = (window as unknown as { __mapScene: { traverse: (visitor: (object: { name: string }) => void) => void } }).__mapScene;
+    let count = 0;
+    scene.traverse((object) => { if (object.name.startsWith('amenity-highlight-')) count += 1; });
+    return count;
+  })).toBeGreaterThan(0);
   await page.getByRole('button', { name: 'Back to narrowing' }).click();
   await expect(page.getByTestId('question-card')).toBeVisible();
   await page.getByRole('button', { name: /Bedok — November 2026/ }).click();

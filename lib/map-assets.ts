@@ -1,5 +1,5 @@
 import * as THREE from 'three';
-import { LINE_CLASS, MAP_QUANT, type LineClass, type MapManifest, type MapTile, type RailData } from '@/lib/map-format';
+import { LINE_CLASS, MAP_QUANT, type LineClass, type MapManifest, type MapTile, type PlaceHighlightData, type RailData } from '@/lib/map-format';
 
 /** Scene units per metre of building height: a deliberate ~2.6× vertical exaggeration so massing reads at overview without turning slabs into needles. */
 export const HEIGHT_SCALE = 0.002;
@@ -9,6 +9,7 @@ export interface ParsedLine { cls: LineClass; ref: number; points: Float32Array 
 export interface MapAssets {
   manifest: MapManifest;
   rail: RailData;
+  places: PlaceHighlightData;
   land: THREE.BufferGeometry;
   water: THREE.BufferGeometry;
   green: THREE.BufferGeometry;
@@ -232,8 +233,9 @@ export function loadMapAssets(base = '/map'): Promise<MapAssets> {
   if (cached) return cached;
   cached = (async () => {
     const manifest = (await (await fetch(`${base}/manifest.json`)).json()) as MapManifest;
-    const [rail, landBuffer, waterBuffer, greenBuffer, linesBuffer, buildingsBuffer] = await Promise.all([
+    const [rail, places, landBuffer, waterBuffer, greenBuffer, linesBuffer, buildingsBuffer] = await Promise.all([
       fetch(`${base}/${manifest.files.rail}`).then((r) => r.json() as Promise<RailData>),
+      fetch(`${base}/${manifest.files.places}`).then((r) => r.json() as Promise<PlaceHighlightData>),
       fetch(`${base}/${manifest.files.land}`).then((r) => r.arrayBuffer()),
       fetch(`${base}/${manifest.files.water}`).then((r) => r.arrayBuffer()),
       fetch(`${base}/${manifest.files.green}`).then((r) => r.arrayBuffer()),
@@ -246,7 +248,7 @@ export function loadMapAssets(base = '/map'): Promise<MapAssets> {
       const l = 0.082 + wobble * 0.022;
       return [Math.round((l * 0.92) * 255), Math.round((l * 1.02) * 255), Math.round((l * 1.06) * 255)];
     });
-    return { manifest, rail, land, water: parsePolygonMesh(waterBuffer), green: parsePolygonMesh(greenBuffer), lines: parseLines(linesBuffer), buildingsBuffer };
+    return { manifest, rail, places, land, water: parsePolygonMesh(waterBuffer), green: parsePolygonMesh(greenBuffer), lines: parseLines(linesBuffer), buildingsBuffer };
   })();
   cached.catch(() => { cached = null; });
   return cached;

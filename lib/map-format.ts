@@ -20,10 +20,20 @@ export interface MapManifest {
   tileSize: number;
   tiles: MapTile[];
   areas: Array<{ name: string; x: number; z: number; areaKm2: number }>;
-  files: { land: string; water: string; green: string; buildings: string; lines: string; rail: string };
+  files: { land: string; water: string; green: string; buildings: string; lines: string; rail: string; places: string };
 }
 
 export interface RailData {
   lines: Array<{ ref: string; colour: string }>;
   stations: Array<{ name: string; x: number; z: number }>;
 }
+
+export interface PlaceHighlight {
+  amenityId: string;
+  source: 'osm-footprint' | 'coordinate-fallback';
+  sourceName?: string;
+  distanceM?: number;
+  rings: Array<Array<[number, number]>>;
+}
+
+export interface PlaceHighlightData { version: 1; places: PlaceHighlight[] }

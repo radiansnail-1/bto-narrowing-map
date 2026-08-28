@@ -1,5 +1,5 @@
 {
- "version": 1,
+ "version": 2,
  "generatedAt": "2026-08-28",
  "projection": {
   "originLatitude": 1.37,
@@ -24,7 +24,7 @@
   },
   {
    "name": "OpenStreetMap (Overpass API extract)",
-   "role": "building footprints and tagged heights/levels, roads, MRT routes and stations, water, parks, runways",
+   "role": "building and matched amenity footprints, roads, MRT routes and stations, water, parks, runways",
    "url": "https://www.openstreetmap.org/copyright",
    "license": "ODbL 1.0 — © OpenStreetMap contributors",
    "retrieved": "2026-08-28"
@@ -40,7 +40,9 @@
   "railWays": 255,
   "stations": 187,
   "waterPolygons": 150,
-  "greenPolygons": 216
+  "greenPolygons": 216,
+  "amenityHighlights": 52,
+  "amenityFootprints": 36
  },
  "tileSize": 3,
  "tiles": [
@@ -1163,6 +1165,7 @@
   "green": "green.bin",
   "buildings": "buildings.bin",
   "lines": "lines.bin",
-  "rail": "rail.json"
+  "rail": "rail.json",
+  "places": "places.json"
  }
 }
