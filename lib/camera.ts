@@ -16,7 +16,7 @@ export const ZOOM_EASE_SECONDS = 0.085;
 /** Fallback island extent in scene units (manifest bounds replace it once assets load). */
 export const FALLBACK_BOUNDS = { x0: -22.5, z0: -8.6, x1: 18.6, z1: 18 };
 export const PAN_MARGIN = 3;
-export const FOCUS_SAFE_INSETS = { left: 190, right: 318, top: 30, bottom: 170 };
+export const FOCUS_SAFE_INSETS = { left: 260, right: 420, top: 24, bottom: 96 };
 
 export type GroundBounds = { x0: number; z0: number; x1: number; z1: number };
 export type ZoomBounds = { min: number; max: number; overview: number; focus: number };

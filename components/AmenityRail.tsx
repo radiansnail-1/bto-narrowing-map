@@ -1,30 +1,11 @@
 'use client';
 
-import { AMENITY_LABELS, type AmenityCategory } from '@/lib/types';
-
-const icons: Record<AmenityCategory, string> = {
-  mrt: '◈',
-  hawker: '◇',
-  shopping: '▦',
-  healthcare: '+',
-  schools: '⌂',
-  parks: '✳',
-  sports: '○',
-};
-
-const colors: Record<AmenityCategory, string> = {
-  mrt: '#63b9ff',
-  hawker: '#f98f68',
-  shopping: '#b497ff',
-  healthcare: '#f376a4',
-  schools: '#63d5a1',
-  parks: '#8bd88b',
-  sports: '#5de0dc',
-};
+import { AMENITY_GROUP_ORDER, AMENITY_GROUPS, amenityGroupStyle } from '@/lib/amenity-groups';
+import type { AmenityGroup } from '@/lib/types';
 
 interface AmenityRailProps {
-  visible: AmenityCategory[];
-  onToggle: (category: AmenityCategory) => void;
+  visible: AmenityGroup[];
+  onToggle: (group: AmenityGroup) => void;
 }
 
 export function AmenityRail({ visible, onToggle }: AmenityRailProps) {
@@ -35,27 +16,27 @@ export function AmenityRail({ visible, onToggle }: AmenityRailProps) {
         <span>Layers</span>
       </div>
       <div className="rail-list">
-        {(Object.keys(AMENITY_LABELS) as AmenityCategory[]).map((category) => {
-          const isVisible = visible.includes(category);
+        {AMENITY_GROUP_ORDER.map((group) => {
+          const definition = AMENITY_GROUPS[group];
+          const isVisible = visible.includes(group);
           return (
             <button
               className={`rail-item ${isVisible ? 'is-active' : ''}`}
-              data-testid={`layer-${category}`}
-              key={category}
-              onClick={() => onToggle(category)}
+              style={amenityGroupStyle(group)}
+              data-testid={`layer-${group}`}
+              key={group}
+              onClick={() => onToggle(group)}
               aria-pressed={isVisible}
-              title={`${isVisible ? 'Hide' : 'Show'} ${AMENITY_LABELS[category]}`}
+              title={`${isVisible ? 'Hide' : 'Show'} ${definition.label}`}
             >
-              <span className="rail-icon" style={{ color: colors[category] }}>{icons[category]}</span>
-              <span className="rail-label">{AMENITY_LABELS[category]}</span>
+              <span className="rail-icon" aria-hidden="true">{definition.icon}</span>
+              <span className="rail-label">{definition.label}<small>{definition.description}</small></span>
               <span className={`rail-switch ${isVisible ? 'on' : ''}`}><i /></span>
             </button>
           );
         })}
       </div>
-      <div className="rail-key"><span className="key-dot" /> 1 km context</div>
+      <div className="rail-key"><span className="key-dot" /> BTO site · 1 km context</div>
     </aside>
   );
 }
-
-export { colors as amenityColors };

@@ -73,8 +73,8 @@ describe('zoom stability and bounds', () => {
     const radius = 1 / 1.31;
     const zoom = focusZoomForRadius(1600, 1000, radius);
     expect(zoom).toBeGreaterThanOrEqual(380);
-    expect(radius * 2 * zoom).toBeLessThanOrEqual(1600 - 190 - 318);
-    expect(radius * 2 * Math.sin(0.74) * zoom).toBeLessThanOrEqual(1000 - 30 - 170);
+    expect(radius * 2 * zoom).toBeLessThanOrEqual(1600 - 260 - 420);
+    expect(radius * 2 * Math.sin(0.74) * zoom).toBeLessThanOrEqual(1000 - 24 - 96);
     expect(focusZoomForRadius(1100, 700, radius)).toBeLessThan(zoom);
   });
 

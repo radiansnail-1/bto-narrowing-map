@@ -8,6 +8,8 @@ export type FlatType =
   | '5-room'
   | 'Community Care Apartment (CCA)';
 export type WaitingBand = 'soon' | 'mid' | 'later';
+
+/** Specific amenity type carried by every official record. Preserved in data and detail UI. */
 export type AmenityCategory =
   | 'mrt'
   | 'hawker'
@@ -17,7 +19,12 @@ export type AmenityCategory =
   | 'parks'
   | 'sports';
 
+/** User-facing amenity group: the five filters/preferences shown in the rail, the question, legends and details. */
+export type AmenityGroup = 'mrt' | 'food-shopping' | 'healthcare' | 'schools' | 'parks-recreation';
+
 export type MatchStatus = 'pass' | 'miss' | 'unknown' | 'unanswered';
+
+export type CriterionKey = 'commute' | 'budget' | 'amenities' | 'waiting';
 
 export interface FlatPrice {
   type: FlatType;
@@ -61,9 +68,12 @@ export interface Amenity {
   id: string;
   name: string;
   type: AmenityCategory;
+  group: AmenityGroup;
   position: [number, number] | null;
   sourceId: string;
   screeningNote: string;
+  status: 'planned' | null;
+  geocodeSource: string | null;
 }
 
 export interface WorkHub {
@@ -79,7 +89,7 @@ export interface ExplorerAnswers {
   workHubIds: string[];
   maxBudget: number | null;
   flatType: FlatType | null;
-  amenityCategories: AmenityCategory[];
+  amenityGroups: AmenityGroup[];
   waitingBand: WaitingBand | null;
   customWorkplace: [number, number] | null;
 }
@@ -102,12 +112,9 @@ export const WAITING_BANDS: Array<{ value: WaitingBand; label: string; descripti
   { value: 'later', label: 'Later is okay', description: '49 months or more' },
 ];
 
-export const AMENITY_LABELS: Record<AmenityCategory, string> = {
-  mrt: 'MRT stations',
-  hawker: 'Hawker centres',
-  shopping: 'Shopping',
-  healthcare: 'Healthcare',
-  schools: 'Schools',
-  parks: 'Parks',
-  sports: 'Sports',
-};
+export const CRITERIA: ReadonlyArray<{ key: CriterionKey; label: string }> = [
+  { key: 'commute', label: 'Commute' },
+  { key: 'budget', label: 'Budget' },
+  { key: 'amenities', label: 'Amenities' },
+  { key: 'waiting', label: 'Waiting' },
+];

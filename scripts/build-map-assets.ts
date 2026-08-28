@@ -308,6 +308,11 @@ const LANDMARK_EXCLUSIONS: Array<[number, number, number]> = [
 ];
 const landmarkCentres = LANDMARK_EXCLUSIONS.map(([lat, lon, r]) => ({ p: project(lon, lat), r: r / M_PER_UNIT }));
 
+type SnapshotAmenity = { id: string; category: string; name: string; coordinates: { latitude: number; longitude: number } | null };
+const snapshot = JSON.parse(fs.readFileSync(path.join(ROOT, 'data', 'official-data-snapshot.json'), 'utf8')) as { amenities: SnapshotAmenity[] };
+const fallbackAmenityAnchors = snapshot.amenities.filter((amenity) => amenity.coordinates).map((amenity) => ({ id: amenity.id, point: project(amenity.coordinates!.longitude, amenity.coordinates!.latitude) }));
+const fallbackBuildingCandidates = new Map<string, Array<{ name?: string; ring: Pt[] }>>();
+
 const KIND = { generic: 0, residential: 1, commercial: 2, industrial: 3, house: 4, civic: 5, construction: 6, retail: 7, transport: 8 } as const;
 function classify(tags: Record<string, string>): number {
   const b = tags.building ?? 'yes';
@@ -365,8 +370,19 @@ for (const file of fs.readdirSync(path.join(RAW, 'buildings')).filter((name) => 
     buildingStats.total += 1;
     const tags = element.tags ?? {};
     if (EXCLUDED_TYPES.has(tags.building ?? 'yes') || tags['building:part']) { buildingStats.excludedType += 1; continue; }
-    for (const rawRing of elementRings(element)) {
+    const rawRings = elementRings(element);
+    const rawHoles = elementHoles(element);
+    for (const rawRing of rawRings) {
       const areaM2 = Math.abs(signedArea(rawRing)) * M_PER_UNIT * M_PER_UNIT;
+      if (areaM2 >= 300 && areaM2 <= 60_000) {
+        for (const amenity of fallbackAmenityAnchors) {
+          if (pointInRing(amenity.point, rawRing) && !rawHoles.some((hole) => pointInRing(amenity.point, hole))) {
+            const candidates = fallbackBuildingCandidates.get(amenity.id) ?? [];
+            candidates.push({ name: tags.name || tags['name:en'], ring: rawRing });
+            fallbackBuildingCandidates.set(amenity.id, candidates);
+          }
+        }
+      }
       if (areaM2 < MIN_BUILDING_M2) { buildingStats.small += 1; continue; }
       const c = centroid(rawRing);
       const areaCode = mask.at(c);
@@ -496,8 +512,6 @@ console.log(`water polygons ${water.count} (${water.indices.length / 3} tris), g
 /* Curated amenity highlights: real venue footprints when defensible, area glyphs otherwise         */
 /* ----------------------------------------------------------------------------------------------- */
 
-type SnapshotAmenity = { id: string; category: string; name: string; coordinates: { latitude: number; longitude: number } | null };
-const snapshot = JSON.parse(fs.readFileSync(path.join(ROOT, 'data', 'official-data-snapshot.json'), 'utf8')) as { amenities: SnapshotAmenity[] };
 const placeElements = readJson<{ elements: OsmElement[] }>('places.json').elements;
 const STOP_WORDS = new Set(['singapore', 'the', 'at', 'and', 'of', 'blk', 'block', 'street', 'road', 'avenue', 'lorong', 'market', 'food', 'hawker', 'centre', 'center', 'school', 'community', 'club', 'sports', 'facilities', 'hospital', 'polyclinic', 'clinic', 'park', 'mall', 'station', 'mrt']);
 const words = (name: string) => name.toLowerCase().replace(/\bst\.?\b/g, 'saint').replace(/[^a-z0-9]+/g, ' ').trim().split(/\s+/).filter((word) => word.length > 1 && !STOP_WORDS.has(word) && !/^\d+$/.test(word));
@@ -546,7 +560,15 @@ const placeHighlights: PlaceHighlight[] = snapshot.amenities.filter((amenity) =>
   }).filter(({ candidate, distanceM, score }) => relevant(amenity.category, candidate.tags) && distanceM <= 220 && (score >= 0.7 || (distanceM <= 75 && score >= 0.65) || distanceM <= 18))
     .sort((a, b) => (b.score * 140 - b.distanceM) - (a.score * 140 - a.distanceM));
   const match = matches[0];
-  if (!match) return { amenityId: amenity.id, source: 'coordinate-fallback', rings: fallbackRings(amenity) };
+  if (!match) {
+    const candidates = fallbackBuildingCandidates.get(amenity.id) ?? [];
+    if (candidates.length === 1) {
+      const candidate = candidates[0];
+      const rings = [candidate.ring].map((ring) => ring.length > 48 ? simplifyRing(ring, 0.004) : ring).map((ring) => ring.map(([x, z]) => [Math.round(x * 10000) / 10000, Math.round(z * 10000) / 10000] as Pt));
+      return { amenityId: amenity.id, source: 'osm-footprint', sourceName: candidate.name || 'OSM building footprint containing the official coordinate', distanceM: 0, rings };
+    }
+    return { amenityId: amenity.id, source: 'coordinate-fallback', rings: fallbackRings(amenity) };
+  }
   return {
     amenityId: amenity.id,
     source: 'osm-footprint',

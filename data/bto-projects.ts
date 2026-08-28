@@ -33,9 +33,12 @@ function launchLabel(record: SnapshotProject): string {
 }
 
 function summary(record: SnapshotProject): string {
-  if (record.launch.status === 'launched') return `Officially launched in the ${record.launch.exercise ?? '2026'} exercise. See HDB's source materials for the complete project details.`;
-  if (record.town) return `HDB has announced upcoming public housing supply for ${record.town}; project-level facts remain unpublished.`;
-  return `HDB has announced a future public housing project here; the project name and town details remain unpublished.`;
+  const note = (record as { publishedNote?: string }).publishedNote;
+  let base: string;
+  if (record.launch.status === 'launched') base = `Officially launched in the ${record.launch.exercise ?? '2026'} exercise. See HDB's source materials for the complete project details.`;
+  else if (record.town) base = `HDB has announced upcoming public housing supply for ${record.town}; project-level facts remain unpublished.`;
+  else base = `HDB has announced a future public housing project here; the project name and town details remain unpublished.`;
+  return note ? `${base} ${note}` : base;
 }
 
 function dataNote(record: SnapshotProject): string {

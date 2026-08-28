@@ -5,6 +5,9 @@ import type { BtoProject, ExplorerAnswers, MatchStatus, ProjectMatch, WaitingBan
 
 export const WORKPLACE_PROXIMITY_KM = 5;
 
+/** Each confirmed miss dims a project by exactly this many percentage points: 100 → 77 → 54 → 31 → 8. */
+export const FIT_OPACITY_STEP = 0.23;
+
 function isWithinStraightLineThreshold(project: BtoProject, points: Array<[number, number]>): MatchStatus {
   if (!project.position) return 'unknown';
   if (points.length === 0) return 'unknown';
@@ -37,16 +40,20 @@ function matchBudget(project: BtoProject, answers: ExplorerAnswers): MatchStatus
   return flat.minPrice <= answers.maxBudget ? 'pass' : 'miss';
 }
 
+/**
+ * A chosen group passes when the project has at least one official amenity record of any
+ * type inside that group (e.g. a hawker centre or a shopping centre satisfies "Food & shopping").
+ */
 function matchAmenities(project: BtoProject, answers: ExplorerAnswers): MatchStatus {
-  if (answers.amenityCategories.length === 0) return 'unanswered';
+  if (answers.amenityGroups.length === 0) return 'unanswered';
   if (project.amenityIds.length === 0) return 'unknown';
 
-  const availableCategories = new Set(
+  const availableGroups = new Set(
     project.amenityIds
-      .map((amenityId) => amenityById.get(amenityId)?.type)
-      .filter((category): category is NonNullable<typeof category> => Boolean(category)),
+      .map((amenityId) => amenityById.get(amenityId)?.group)
+      .filter((group): group is NonNullable<typeof group> => Boolean(group)),
   );
-  return answers.amenityCategories.every((category) => availableCategories.has(category)) ? 'pass' : 'miss';
+  return answers.amenityGroups.every((group) => availableGroups.has(group)) ? 'pass' : 'miss';
 }
 
 function matchWaiting(project: BtoProject, waitingBand: WaitingBand | null): MatchStatus {
@@ -78,7 +85,12 @@ export function matchAllProjects(projects: BtoProject[], answers: ExplorerAnswer
   return Object.fromEntries(projects.map((project) => [project.id, matchProject(project, answers)]));
 }
 
-export function projectOpacity(match: ProjectMatch, selected: boolean): number {
-  if (selected) return 1;
-  return Math.max(0.24, 1 - match.missCount * 0.18);
+/**
+ * Fit opacity is the only visual encoding of criteria: 1 − 0.23 × confirmed misses, i.e.
+ * 100%, 77%, 54%, 31%, 8% for 0–4 misses. It is not a score or a rank, unknown and
+ * unanswered criteria do not change it, and selecting a project never resets it — selection
+ * is shown with an outline/ring/emissive treatment instead.
+ */
+export function projectOpacity(match: ProjectMatch): number {
+  return Math.round((1 - match.missCount * FIT_OPACITY_STEP) * 100) / 100;
 }
