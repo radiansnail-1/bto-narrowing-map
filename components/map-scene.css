@@ -1,6 +1,8 @@
 /* Labels rendered by drei <Html> inside the canvas container; kept out of the HUD stylesheet. */
 .map-label { display: inline-block; white-space: nowrap; font-family: var(--font-ui); font-weight: 500; letter-spacing: .08em; text-transform: uppercase; user-select: none; }
 .map-label-district { color: rgba(146, 176, 184, .5); font-size: 9px; letter-spacing: .22em; text-shadow: 0 0 6px rgba(5, 11, 18, .9); }
-.map-label-project { padding: 1px 5px; font-weight: 600; border: 1px solid rgba(255, 120, 110, .22); border-radius: 2px; color: #ffcfc6; background: rgba(9, 14, 20, .55); font-size: 8px; letter-spacing: .09em; text-shadow: 0 0 8px rgba(255, 90, 80, .35); transform: translateY(-8px); }
+.map-label-project { appearance: none; padding: 1px 5px; font-weight: 600; border: 1px solid rgba(255, 120, 110, .22); border-radius: 2px; color: #ffcfc6; background: rgba(9, 14, 20, .55); cursor: pointer; font-size: 8px; letter-spacing: .09em; line-height: 1.2; text-shadow: 0 0 8px rgba(255, 90, 80, .35); transform: translateY(-8px); }
 .map-label-project.is-selected { border-color: rgba(255, 190, 170, .8); color: #fff3ee; background: rgba(120, 32, 34, .7); box-shadow: 0 0 18px rgba(255, 90, 80, .35); }
+.map-label-project.map-label-status-announced_upcoming { border-color: rgba(230, 167, 0, .45); color: #f1d58a; }
+.map-label-project.map-label-status-planned { border-color: rgba(144, 160, 225, .45); color: #c5ccef; }
 .map-label-project-wrapper { z-index: 3; }

@@ -23,7 +23,7 @@ test('finishes narrowing, shows grouped results, and preserves BTO context throu
   await page.getByRole('button', { name: /Raffles Place CBD/ }).click();
   await page.getByTestId('next-question').click();
   await page.getByLabel('Preferred flat type').selectOption('4-room');
-  await page.getByLabel('Maximum price').fill('500000');
+  await page.getByLabel('Maximum HDB published starting price').fill('500000');
   await page.getByTestId('next-question').click();
 
   await page.getByTestId('amenity-choice-mrt').click();
@@ -42,16 +42,20 @@ test('finishes narrowing, shows grouped results, and preserves BTO context throu
   await expect(page.getByTestId('result-bucket-awaiting')).toBeVisible();
   await expect(page.getByTestId('result-bucket-tradeoffs')).toBeVisible();
   await expect(page.getByTestId('result-row')).toHaveCount(22);
-
   const trayToggle = page.getByRole('button', { name: 'Explore sites', exact: true });
   await trayToggle.click();
+  await expect(page.locator('.tray-label')).toHaveText('Sites · 22');
+  await expect(page.locator('.tray-list button')).toHaveCount(22);
+
   await page.getByRole('button', { name: 'Redhill Peaks', exact: true }).click();
   await expect(page.getByTestId('project-card')).toBeVisible();
   await expect(page.getByTestId('map-boundary-state')).toHaveAttribute('data-boundary-state', 'approximate-1km');
   const selectedOpacity = await page.locator('.map-label-project', { hasText: 'Redhill Peaks' }).getAttribute('data-fit-opacity');
 
+  await page.getByTestId('right-panel').evaluate((element) => { element.scrollTop = 120; });
   await page.locator('[data-testid="project-amenity"][data-amenity-id="park-tiong-bahru"]').click();
   await expect(page.getByTestId('right-panel')).toHaveAttribute('data-panel-view', 'amenity');
+  await expect.poll(() => page.getByTestId('right-panel').evaluate((element) => element.scrollTop)).toBe(0);
   await expect(page.getByTestId('amenity-card')).toHaveAttribute('data-amenity-id', 'park-tiong-bahru');
   await expect(page.getByTestId('amenity-image')).toBeVisible();
   await expect(page.getByTestId('amenity-credit')).toContainText('Photo:');
@@ -63,7 +67,7 @@ test('finishes narrowing, shows grouped results, and preserves BTO context throu
   await page.getByRole('button', { name: /Back to results/ }).click();
   await expect(page.getByTestId('results-card')).toBeVisible();
   await page.getByTestId('edit-answers').click();
-  await expect(page.getByRole('heading', { name: 'Where do you spend your weekdays?' })).toBeVisible();
+  await expect(page.getByRole('heading', { name: 'Where do you work, study, or travel regularly?' })).toBeVisible();
 });
 
 test('legacy storage migrates to grouped amenities and the v2 key', async ({ page }) => {
@@ -86,6 +90,50 @@ test('legacy storage migrates to grouped amenities and the v2 key', async ({ pag
   await expect(page.getByTestId('layer-mrt')).toHaveAttribute('aria-pressed', 'true');
   await expect(page.getByTestId('layer-parks-recreation')).toHaveAttribute('aria-pressed', 'true');
   await expect.poll(() => page.evaluate(() => ({ current: Boolean(localStorage.getItem('where-to-bto:v2')), legacy: Boolean(localStorage.getItem('bto-narrowing-map:v1')) }))).toEqual({ current: true, legacy: false });
+});
+
+test('explains result criteria, builds a shortlist, filters launch stages, and restores the flow from Guides', async ({ page }) => {
+  await openReadyMap(page);
+  await expect(page.getByTestId('question-promise')).toContainText('22 projects');
+  for (let step = 0; step < 4; step += 1) await page.getByTestId('next-question').click();
+  await expect(page.getByTestId('results-card')).toBeVisible();
+  await expect(page.locator('.result-criterion')).toHaveCount(88);
+  for (let index = 0; index < 4; index += 1) await page.locator('.result-row .shortlist-toggle').nth(index).click();
+  await expect(page.getByTestId('shortlist-panel')).toContainText('4/4');
+  await expect(page.locator('.result-row .shortlist-toggle:disabled')).toHaveCount(18);
+  await expect(page.locator('.result-row .shortlist-toggle.is-added:disabled')).toHaveCount(0);
+  await expect(page.locator('.compare-table')).toBeVisible();
+  await page.getByLabel('Show launch stage').selectOption('announced_upcoming');
+  await expect(page.locator('.result-row')).toHaveCount(7);
+  await expect(page.locator('.tray-label')).toHaveText('Sites · 7');
+  await expect(page.locator('.tray-list button')).toHaveCount(7);
+  await page.getByTestId('result-row').first().click();
+  await expect(page.getByTestId('project-card')).toBeVisible();
+  await expect(page.getByRole('button', { name: 'Shortlist full', exact: true })).toBeDisabled();
+  await page.getByRole('button', { name: /Back to results/ }).click();
+  await expect(page.getByTestId('results-card')).toBeVisible();
+  await page.getByRole('link', { name: 'Understand unknowns' }).click();
+  await expect(page.getByRole('heading', { name: 'How to handle BTO information HDB has not published yet' })).toBeVisible();
+  await page.getByRole('link', { name: 'Map', exact: true }).first().click();
+  await expect(page.getByTestId('right-panel')).toHaveAttribute('data-panel-view', 'results');
+  await expect(page.getByTestId('shortlist-panel')).toContainText('4/4');
+  await expect(page.getByLabel('Show launch stage')).toHaveValue('announced_upcoming');
+});
+
+test('restores a project-origin amenity back through the original questions flow', async ({ page }) => {
+  await openReadyMap(page);
+  await page.locator('.map-label-project', { hasText: 'Redhill Peaks' }).click();
+  await expect(page.getByTestId('project-card')).toBeVisible();
+  await page.locator('[data-testid="project-amenity"][data-amenity-id="park-tiong-bahru"]').click();
+  await expect(page.getByTestId('amenity-card')).toBeVisible();
+  await page.getByRole('link', { name: 'Guides', exact: true }).click();
+  await expect(page.getByRole('heading', { name: 'BTO comparison guides' })).toBeVisible();
+  await page.getByRole('link', { name: 'Map', exact: true }).first().click();
+  await expect(page.getByTestId('amenity-card')).toBeVisible();
+  await page.getByTestId('amenity-back').click();
+  await expect(page.getByTestId('project-card')).toBeVisible();
+  await page.getByRole('button', { name: /Back to narrowing/ }).click();
+  await expect(page.getByRole('heading', { name: 'Where do you work, study, or travel regularly?' })).toBeVisible();
 });
 
 test('map amenity click opens the full panel and back restores the selected project', async ({ page }) => {
@@ -135,10 +183,64 @@ test('map amenity click opens the full panel and back restores the selected proj
 
 test('branding and visible interface typography use Hanken Grotesk only', async ({ page }) => {
   await openReadyMap(page);
-  await expect(page.getByText('Where To BTO', { exact: true })).toBeVisible();
+  await expect(page.getByRole('heading', { name: 'Where To BTO' })).toBeVisible();
   const families = await page.evaluate(() => ['body', 'h1', 'button', '.rail-label', '.map-label'].map((selector) => getComputedStyle(document.querySelector(selector)!).fontFamily));
   for (const family of families) {
     expect(family).toMatch(/hanken/i);
     expect(family).not.toMatch(/Inter|DM Mono/i);
   }
+});
+
+test('map and information pages share one stable service header', async ({ page }) => {
+  await page.setViewportSize({ width: 834, height: 734 });
+  await page.goto('/');
+  const readHeader = () => page.locator('.site-header-inner').evaluate((element) => {
+    const header = element.getBoundingClientRect();
+    const brand = element.querySelector('.site-wordmark')!.getBoundingClientRect();
+    const nav = element.querySelector('.site-nav')!.getBoundingClientRect();
+    return { height: header.height, brandX: brand.x, brandY: brand.y, navX: nav.x, navY: nav.y };
+  });
+  const mapHeader = await readHeader();
+  await page.getByRole('link', { name: 'Projects', exact: true }).click();
+  await expect(page.getByRole('heading', { name: 'Singapore BTO projects' })).toBeVisible();
+  expect(await readHeader()).toEqual(mapHeader);
+  await expect(page.getByText('Independent BTO location explorer')).toHaveCount(0);
+});
+
+test('crawlable project, FAQ, AI-info, sitemap, and robots surfaces are linked and source-conscious', async ({ page, request }) => {
+  await page.goto('/bto-projects');
+  await expect(page).toHaveTitle('Singapore BTO Projects | Where To BTO');
+  await expect(page.getByRole('heading', { name: 'Singapore BTO projects' })).toBeVisible();
+  await expect(page.locator('.directory-card')).toHaveCount(22);
+  await expect(page.locator('link[rel="canonical"]')).toHaveAttribute('href', /\/bto-projects$/);
+
+  await page.getByRole('link', { name: 'Sembawang Voyage', exact: true }).first().click();
+  await expect(page.getByRole('heading', { name: 'Sembawang Voyage' })).toBeVisible();
+  await expect(page.getByRole('heading', { name: 'Official sources' })).toBeVisible();
+  await expect(page.locator('script[type="application/ld+json"]')).toHaveCount(1);
+  await expect.poll(() => page.locator('script[type="application/ld+json"]').evaluate((element) => element.textContent)).toContain('BreadcrumbList');
+  await expect(page.getByText('44 months', { exact: true })).toBeVisible();
+
+  await page.goto('/faq');
+  await expect(page.locator('.faq-list details')).toHaveCount(10);
+  await expect.poll(() => page.locator('script[type="application/ld+json"]').evaluate((element) => element.textContent)).toContain('FAQPage');
+
+  await page.goto('/guides');
+  await expect(page.locator('.guide-row')).toHaveCount(6);
+  await page.getByRole('link', { name: 'How to compare commutes before choosing a BTO', exact: true }).click();
+  await expect(page.getByRole('heading', { name: 'How to compare commutes before choosing a BTO' })).toBeVisible();
+
+  await page.goto('/ai-info');
+  await expect(page.getByRole('heading', { name: 'Information for researchers and answer engines' })).toBeVisible();
+  await expect(page.getByText(/not an HDB or Singapore Government service/i)).toBeVisible();
+
+  const sitemapResponse = await request.get('/sitemap.xml');
+  expect(sitemapResponse.ok()).toBe(true);
+  const sitemapBody = await sitemapResponse.text();
+  expect(sitemapBody).toContain('/bto-projects/sembawang-voyage');
+  expect(sitemapBody).toContain('/guides/how-to-choose-a-bto-location');
+
+  const robotsResponse = await request.get('/robots.txt');
+  expect(robotsResponse.ok()).toBe(true);
+  expect(await robotsResponse.text()).toContain('Sitemap:');
 });

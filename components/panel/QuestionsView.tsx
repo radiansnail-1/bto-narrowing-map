@@ -6,6 +6,7 @@ import { answeredCriteria } from '@/lib/results';
 import { CRITERIA, FLAT_TYPES, MAX_AMENITY_PREFERENCES, WAITING_BANDS, type AmenityGroup, type ExplorerAnswers, type FlatType, type WaitingBand } from '@/lib/types';
 
 interface QuestionsViewProps {
+  projectCount: number;
   step: number;
   answers: ExplorerAnswers;
   pinMode: boolean;
@@ -18,10 +19,10 @@ interface QuestionsViewProps {
 }
 
 const questions = [
-  { eyebrow: '01 / 04', title: 'Where do you spend your weekdays?', hint: 'Choose up to two work hubs. We treat them equally.' },
-  { eyebrow: '02 / 04', title: 'What kind of home fits your budget?', hint: 'Both fields are optional. Unpublished prices stay neutral.' },
+  { eyebrow: '01 / 04', title: 'Where do you work, study, or travel regularly?', hint: 'Choose up to two regular destinations. We treat them equally.' },
+  { eyebrow: '02 / 04', title: 'What published starting price fits your budget?', hint: 'Choose a flat type and HDB starting-price ceiling, or leave this unanswered if you do not know yet.' },
   { eyebrow: '03 / 04', title: 'What should be close by?', hint: 'Pick the essentials you would like within 1 km.' },
-  { eyebrow: '04 / 04', title: 'How patient can you be?', hint: 'We compare your preference with the official estimate.' },
+  { eyebrow: '04 / 04', title: 'How long can you wait for the flat?', hint: 'We compare your preference with HDB’s published estimate when one exists.' },
 ];
 
 function toggleGroup(answers: ExplorerAnswers, group: AmenityGroup): ExplorerAnswers {
@@ -34,7 +35,7 @@ function toggleGroup(answers: ExplorerAnswers, group: AmenityGroup): ExplorerAns
   };
 }
 
-export function QuestionsView({ step, answers, pinMode, onDropCustomPin, onClearCustomPin, onBack, onNext, onFinish, onAnswersChange }: QuestionsViewProps) {
+export function QuestionsView({ projectCount, step, answers, pinMode, onDropCustomPin, onClearCustomPin, onBack, onNext, onFinish, onAnswersChange }: QuestionsViewProps) {
   const question = questions[step];
   const answered = answeredCriteria(answers);
   const last = step === questions.length - 1;
@@ -55,6 +56,7 @@ export function QuestionsView({ step, answers, pinMode, onDropCustomPin, onClear
       <div className="question-topline"><span>{question.eyebrow}</span><span className="question-status">{step === 0 ? 'Start here' : 'Narrowing'}</span></div>
       <h1>{question.title}</h1>
       <p className="question-hint">{question.hint}</p>
+      {step === 0 && <p className="question-promise" data-testid="question-promise">Answer up to four optional questions to narrow {projectCount} projects. Skip anything you are unsure about.</p>}
 
       {step === 0 && (
         <div className="option-stack">
@@ -68,6 +70,7 @@ export function QuestionsView({ step, answers, pinMode, onDropCustomPin, onClear
           })}
           <button className={`custom-pin-button ${answers.customWorkplace ? 'is-placed' : ''}`} onClick={answers.customWorkplace ? onClearCustomPin : onDropCustomPin} data-testid="custom-pin-action">{pinMode ? 'Click the map to place pin' : answers.customWorkplace ? 'Remove custom workplace pin' : `＋ Drop custom workplace pin${answers.workHubIds.length ? ' · replaces hubs' : ''}`}</button>
           <p className="inline-note">Hubs use an equally weighted straight-line proximity screen (≤ 5 km); official transit times are not included. {answers.customWorkplace ? 'Custom pin uses the same straight-line rule, not a routed journey.' : 'Or skip this question and explore freely.'}</p>
+          {(answers.workHubIds.length > 0 || answers.customWorkplace !== null) && <button type="button" className="clear-criterion" onClick={() => { onAnswersChange({ ...answers, workHubIds: [], customWorkplace: null }); onClearCustomPin(); }}>Clear regular destinations</button>}
         </div>
       )}
 
@@ -78,9 +81,10 @@ export function QuestionsView({ step, answers, pinMode, onDropCustomPin, onClear
             <option value="">Any flat type</option>
             {FLAT_TYPES.map((flatType) => <option key={flatType} value={flatType}>{flatType}</option>)}
           </select>
-          <label htmlFor="max-budget">Maximum price <span>optional</span></label>
+          <label htmlFor="max-budget">Maximum HDB published starting price <span>optional</span></label>
           <div className="input-prefix"><span>$</span><input id="max-budget" type="number" min="0" step="10000" placeholder="e.g. 500000" value={answers.maxBudget ?? ''} onChange={(event) => onAnswersChange({ ...answers, maxBudget: event.target.value ? Number(event.target.value) : null })} /></div>
-          <p className="inline-note">Passes when the official minimum published price is at or below your maximum. Projects without a published price stay neutral.</p>
+          <p className="inline-note">This compares HDB’s published starting price only. It does not assess your HFE, grants, loan, or total household budget. If you do not know these yet, skip this question.</p>
+          {(answers.flatType !== null || answers.maxBudget !== null) && <button type="button" className="clear-criterion" onClick={() => onAnswersChange({ ...answers, flatType: null, maxBudget: null })}>Clear budget preference</button>}
         </div>
       )}
 
@@ -99,6 +103,7 @@ export function QuestionsView({ step, answers, pinMode, onDropCustomPin, onClear
             );
           })}
           <p className="inline-note">Choose up to {MAX_AMENITY_PREFERENCES}. A group passes when any official record of that group sits within the 1 km screen. No choice means amenities stay informational, not a filter.</p>
+          {answers.amenityGroups.length > 0 && <button type="button" className="clear-criterion" onClick={() => onAnswersChange({ ...answers, amenityGroups: [] })}>Clear amenity preference</button>}
         </div>
       )}
 
@@ -106,6 +111,7 @@ export function QuestionsView({ step, answers, pinMode, onDropCustomPin, onClear
         <div className="option-stack">
           {WAITING_BANDS.map((band) => <button key={band.value} className={`choice-row ${answers.waitingBand === band.value ? 'is-selected' : ''}`} onClick={() => onAnswersChange({ ...answers, waitingBand: band.value as WaitingBand })} aria-pressed={answers.waitingBand === band.value}><span className="choice-check">{answers.waitingBand === band.value ? '✓' : ''}</span><span>{band.label}</span><small>{band.description}</small></button>)}
           <p className="inline-note">Finish to see projects grouped by how they meet your answers. You can change any answer afterwards.</p>
+          {answers.waitingBand !== null && <button type="button" className="clear-criterion" onClick={() => onAnswersChange({ ...answers, waitingBand: null })}>Clear waiting-time preference</button>}
         </div>
       )}
 

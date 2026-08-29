@@ -1,6 +1,9 @@
 import { workHubs } from '@/data/work-hubs';
+import { amenities } from '@/data/amenities';
+import { btoProjects } from '@/data/bto-projects';
 import { AMENITY_GROUP_ORDER, isAmenityGroup, migrateToAmenityGroups } from '@/lib/amenity-groups';
-import { FLAT_TYPES, MAX_AMENITY_PREFERENCES, WAITING_BANDS, type AmenityGroup, type ExplorerAnswers } from '@/lib/types';
+import type { FlowKind, PanelView } from '@/lib/panel-view';
+import { FLAT_TYPES, MAX_AMENITY_PREFERENCES, WAITING_BANDS, type AmenityGroup, type BtoProject, type ExplorerAnswers } from '@/lib/types';
 
 /** Current persisted shape. The legacy key is read once, migrated, then removed. */
 export const STORAGE_KEY = 'where-to-bto:v2';
@@ -14,6 +17,19 @@ export interface StoredState {
   answers: ExplorerAnswers;
   visibleGroups: AmenityGroup[];
   step: number;
+  shortlistIds?: string[];
+  view?: StoredPanelView;
+  launchStatusFilter?: 'all' | BtoProject['launchStatus'];
+}
+
+/** The only panel state that is safe to restore after a content-page navigation. */
+export interface StoredPanelView {
+  kind: PanelView['kind'];
+  selectedProjectId: string | null;
+  amenityId: string | null;
+  returnTo: FlowKind | 'project' | null;
+  /** Original flow beneath an amenity opened from a project. */
+  projectReturnTo: FlowKind | null;
 }
 
 type StorageLike = Pick<Storage, 'getItem' | 'setItem' | 'removeItem'>;
@@ -77,13 +93,42 @@ export function parseStep(value: unknown): number | null {
   return typeof value === 'number' && Number.isInteger(value) && value >= 0 && value <= MAX_STEP ? value : null;
 }
 
+export function parseShortlistIds(value: unknown): string[] | null {
+  if (!Array.isArray(value)) return null;
+  if (value.length > 4) return null;
+  const validIds = new Set(btoProjects.map((project) => project.id));
+  if (value.some((id) => typeof id !== 'string' || !validIds.has(id))) return null;
+  return [...new Set(value)];
+}
+
+export function parsePanelView(value: unknown): StoredPanelView | null {
+  if (!value || typeof value !== 'object') return null;
+  const record = value as Partial<StoredPanelView>;
+  const kinds = new Set<PanelView['kind']>(['questions', 'results', 'project', 'amenity']);
+  const flowKinds = new Set<FlowKind>(['questions', 'results']);
+  const projectIds = new Set(btoProjects.map((project) => project.id));
+  const amenityIds = new Set(amenities.map((amenity) => amenity.id));
+  const selectedProjectId = record.selectedProjectId === null ? null : typeof record.selectedProjectId === 'string' && projectIds.has(record.selectedProjectId) ? record.selectedProjectId : null;
+  const amenityId = record.amenityId === null ? null : typeof record.amenityId === 'string' && amenityIds.has(record.amenityId) ? record.amenityId : null;
+  const returnTo = record.returnTo === null ? null : record.returnTo === 'project' ? 'project' : flowKinds.has(record.returnTo as FlowKind) ? record.returnTo as FlowKind : null;
+  const projectReturnTo = record.projectReturnTo === null || record.projectReturnTo === undefined ? null : flowKinds.has(record.projectReturnTo as FlowKind) ? record.projectReturnTo as FlowKind : null;
+  if (!kinds.has(record.kind as PanelView['kind'])) return null;
+  if (record.kind === 'project' && !selectedProjectId) return null;
+  if (record.kind === 'amenity' && (!amenityId || !returnTo || (returnTo === 'project' && (!selectedProjectId || !projectReturnTo)))) return null;
+  return { kind: record.kind as PanelView['kind'], selectedProjectId, amenityId, returnTo, projectReturnTo };
+}
+
+export function parseLaunchStatusFilter(value: unknown): StoredState['launchStatusFilter'] | null {
+  return value === 'all' || value === 'launched' || value === 'announced_upcoming' || value === 'planned' ? value : null;
+}
+
 /** Parses a raw JSON string from either storage generation into the fields that validated. */
 export function parseStoredState(raw: string | null): Partial<StoredState> {
   if (!raw) return {};
   let parsed: unknown;
   try { parsed = JSON.parse(raw); } catch { return {}; }
   if (!parsed || typeof parsed !== 'object') return {};
-  const record = parsed as { answers?: unknown; visibleGroups?: unknown; visibleAmenities?: unknown; step?: unknown };
+  const record = parsed as { answers?: unknown; visibleGroups?: unknown; visibleAmenities?: unknown; step?: unknown; shortlistIds?: unknown; view?: unknown; launchStatusFilter?: unknown };
   const state: Partial<StoredState> = {};
   const answers = parseAnswers(record.answers);
   if (answers) state.answers = answers;
@@ -91,6 +136,12 @@ export function parseStoredState(raw: string | null): Partial<StoredState> {
   if (visible) state.visibleGroups = visible;
   const step = parseStep(record.step);
   if (step !== null) state.step = step;
+  const shortlistIds = parseShortlistIds(record.shortlistIds);
+  if (shortlistIds) state.shortlistIds = shortlistIds;
+  const view = parsePanelView(record.view);
+  if (view) state.view = view;
+  const launchStatusFilter = parseLaunchStatusFilter(record.launchStatusFilter);
+  if (launchStatusFilter) state.launchStatusFilter = launchStatusFilter;
   return state;
 }
 

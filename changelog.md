@@ -1,5 +1,26 @@
 # Changelog
 
+## 2026-08-29 (user journey and shortlist pass)
+
+- Added a first-time promise, clearer question wording, HDB starting-price/HFE guidance, and explicit clear-to-unanswered controls for every criterion.
+- Added visible criterion statuses and reasons, chosen-answer summary, zero-fit guidance, launch-stage filters, and status distinction on map labels.
+- Added a validated local shortlist capped at four projects, side-by-side comparison, project-page add/remove actions, persisted result/project flow, and panel-scroll resets.
+- Added a substantive Start Here guide and contextual commute, amenities, price/wait, and unpublished-data links.
+- Corrected launch-filter consistency across map, labels, tray, counts, results, and selected context; preserved nested amenity return flow; made the missing-budget reason truthful; added explicit shortlist-full feedback; and made map project labels keyboard-operable.
+- Verified the final scope with `git diff --check`, lint, 58 unit tests, a 41-route production build, 8 Playwright flows, and fresh-tab visual/runtime QA with no console errors.
+
+## 2026-08-29 (crawlable content and SEO pass)
+
+- Added 22 statically generated, source-linked BTO project pages plus a complete project directory.
+- Added six substantive comparison guides, a ten-question FAQ, transparent methodology/source register, and a visible canonical AI-information page.
+- Added unique route metadata, canonicals, Open Graph/Twitter fields, WebSite/WebApplication/WebPage/Article/Breadcrumb/FAQ JSON-LD, `sitemap.xml`, `robots.txt`, web manifest, and site icon.
+- Added internal navigation from the map shell and a shared public-service-style content shell using the existing self-hosted Hanken Grotesk system.
+- Replaced the map/content header split with one 64 px header, removed the generic W tile, beta badge, status dot, and brand subtitle, and locked route-to-route geometry at the 834×734 review viewport.
+- Flattened the crawlable pages into a calmer editorial layout: no eyebrow labels, hero accent stripe, floating hero card, side-tab callouts, or repeated equal-sized guide cards.
+- Added focused guides for commute checks, 1 km amenity context, and unpublished launch facts, and rebuilt the guide index as a scannable list.
+- Production URLs resolve from an explicit site URL or Vercel's stable production hostname; no guessed deployment domain is hardcoded.
+- Verified the initial crawlable-content pass with metadata/robots/sitemap response checks and visual states at 834×734 and 390×844; the later user-journey pass supersedes its test and route totals above.
+
 ## 2026-08-28 (product/data pass)
 
 - Renamed the product and metadata to "Where To BTO"; removed the pseudo-government identity strip and prototype disclaimer; no crest.
@@ -28,4 +49,4 @@
 - Built the initial Next.js/TypeScript/React Three Fiber prototype with 21 official project records, 53 curated amenities, five work hubs, four transparent narrowing criteria, local persistence, project focus, and no bus-stop layer.
 - Locked the 1 km amenity context and equal-weight straight-line workplace screen; incomplete official data remains neutral rather than fabricated.
 
-**Last updated:** 2026-08-28
+**Last updated:** 2026-08-29
