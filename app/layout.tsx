@@ -24,6 +24,7 @@ export const metadata: Metadata = {
     follow: true,
     googleBot: { index: true, follow: true, 'max-image-preview': 'large', 'max-snippet': -1, 'max-video-preview': -1 },
   },
+  verification: { google: 'P7egGOJORhCn186LwnExyQbQefOROzGS23JLLEum2hc' },
   category: 'housing',
   other: { 'google-adsense-account': ADSENSE_CLIENT },
 };
