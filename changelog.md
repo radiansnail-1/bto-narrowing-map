@@ -1,5 +1,14 @@
 # Changelog
 
+## 2026-08-29 (domain, AdSense, and repository governance)
+
+- Connected `wheretobto.com` to Vercel with valid apex HTTPS and `www` redirect, set the canonical production URL, and published the GitHub repository homepage.
+- Activated the existing Google publisher account for website AdSense, added and verified the site, requested review, enabled Google's three-choice consent manager, and kept Auto Ads off.
+- Added exact manual in-article and bottom units, responsive reserved layouts, `/ads.txt`, verification metadata, privacy disclosure, sitemap coverage, and production environment wiring. The map, privacy page, and AI disclosure page have no ad placements.
+- Verified production in Chrome: guide pages contain both intended units, other eligible content has only the bottom unit, and the interactive map has none.
+- Published draft PR #5; local lint, 59 unit tests, 43-route build, GitHub CI/E2E, and Vercel checks all passed.
+- Protected `main` with required PR review, code-owner review, CI, conversation resolution, and no force pushes/deletion; added `@radiansnail-1` as owner for every repository path.
+
 ## 2026-08-29 (user journey and shortlist pass)
 
 - Added a first-time promise, clearer question wording, HDB starting-price/HFE guidance, and explicit clear-to-unanswered controls for every criterion.

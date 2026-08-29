@@ -24,5 +24,8 @@
 - **The product outcome is a defensible shortlist, not completed questions** — questions should expose chosen answers and plain reasons, then lead into a capped side-by-side comparison. “Finish narrowing” is a transition into decision work, not the end of the product.
 - **Persist navigation intent, not just selected IDs** — a restored amenity view must retain both its project context and whether that project came from Questions or Results. Validate every nested return target before restoring it.
 - **One filter must define every visible project surface** — map clusters, labels, project tray, counts, results, and selected-project context all derive from the same launch-stage subset so hidden selections cannot leave stale map boundaries or titles.
+- **Ads stay subordinate to the decision tool** — use only named manual units: one in-article guide placement and one non-sticky content-footer placement. Keep Auto Ads off and keep the map, privacy page, and AI disclosure page free of ad placements.
+- **Publisher configuration has a hard identity boundary** — public client and slot IDs may live in source/environment configuration, but bank, tax, identity, address/PIN, and payment-profile actions must be completed by the account owner.
+- **Public contribution does not imply merge access** — outsiders may fork and open PRs, while `main` requires CI, an approving review, and code-owner review. `@radiansnail-1` owns all paths; administrator bypass remains available only to avoid locking out the sole owner.
 
 **Last updated:** 2026-08-29
