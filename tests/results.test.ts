@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest';
 import { btoProjects } from '@/data/bto-projects';
-import { answeredCount, bucketFor, groupResults } from '@/lib/results';
+import { answeredCount, bucketFor, criterionAnswerLabel, criterionReason, filterProjectsByLaunchStatus, groupResults } from '@/lib/results';
 import type { ExplorerAnswers, MatchStatus, ProjectMatch } from '@/lib/types';
 
 const baseAnswers: ExplorerAnswers = { workHubIds: [], maxBudget: null, flatType: null, amenityGroups: [], waitingBand: null, customWorkplace: null };
@@ -11,6 +11,12 @@ function match(statuses: Partial<Record<keyof Omit<ProjectMatch, 'missCount'>, M
 }
 
 describe('result grouping', () => {
+  it('filters projects by launch stage without changing their source order', () => {
+    expect(filterProjectsByLaunchStatus(btoProjects, 'all')).toHaveLength(22);
+    expect(filterProjectsByLaunchStatus(btoProjects, 'launched')).toHaveLength(13);
+    expect(filterProjectsByLaunchStatus(btoProjects, 'announced_upcoming')).toHaveLength(7);
+    expect(filterProjectsByLaunchStatus(btoProjects, 'planned')).toHaveLength(2);
+  });
   it('puts all-pass, pass-plus-unknown, miss-plus-unknown, and unanswered-only matches in the right buckets', () => {
     expect(bucketFor(match())).toBe('fits');
     expect(bucketFor(match({ budget: 'unknown' }))).toBe('awaiting');
@@ -53,5 +59,26 @@ describe('answered criteria', () => {
     expect(answeredCount({ ...baseAnswers, amenityGroups: ['mrt'] })).toBe(1);
     expect(answeredCount({ ...baseAnswers, waitingBand: 'soon' })).toBe(1);
     expect(answeredCount({ ...baseAnswers, workHubIds: ['raffles-place'], flatType: '4-room', maxBudget: 500000, amenityGroups: ['mrt'], waitingBand: 'soon' })).toBe(4);
+  });
+});
+
+describe('explainable result criteria', () => {
+  it('labels the chosen answer without creating a ranking score', () => {
+    expect(criterionAnswerLabel('commute', { ...baseAnswers, workHubIds: ['raffles-place'] })).toContain('Raffles');
+    expect(criterionAnswerLabel('budget', { ...baseAnswers, flatType: '4-room', maxBudget: 500000 })).toContain('$500,000');
+  });
+
+  it('explains pass, miss, unknown, and unanswered states plainly', () => {
+    const project = btoProjects[0];
+    const answers = { ...baseAnswers, waitingBand: 'soon' as const };
+    expect(criterionReason(project, 'waiting', 'pass', answers)).toContain('within');
+    expect(criterionReason(project, 'waiting', 'miss', answers)).toContain('outside');
+    expect(criterionReason(project, 'waiting', 'unknown', answers)).toContain('not published');
+    expect(criterionReason(project, 'waiting', 'unanswered', baseAnswers)).toContain('Not used');
+  });
+
+  it('does not call a missing budget ceiling an unpublished price', () => {
+    const project = btoProjects[0];
+    expect(criterionReason(project, 'budget', 'unknown', { ...baseAnswers, flatType: '4-room' })).toBe('Add a maximum price to compare');
   });
 });

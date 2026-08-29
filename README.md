@@ -15,6 +15,8 @@ An interactive desktop map for narrowing Singapore BTO projects by commute, budg
 - Amenity detail views with 32 locally optimised, fully credited open-licence photos and honest no-photo states for the remaining 21 records (`data/amenity-media.json`)
 - A selected-project fly-to view with an approximate 1 km context ring and curated amenities
 - A software-renderer lite path for headless browsers and lower-capability environments
+- A crawlable information layer: 22 static project pages, project directory, FAQ, six decision guides (including a Start Here walkthrough), methodology/source register, and canonical AI-information page
+- Route-specific titles, descriptions, canonicals and JSON-LD, plus generated `sitemap.xml`, `robots.txt`, web manifest, and site icon
 
 This is a location-exploration prototype, not financial, eligibility, routing, or application advice. Project facts can become stale; follow the linked official HDB sources before making a decision.
 
@@ -29,6 +31,8 @@ npm run dev
 
 Open <http://localhost:3000>.
 
+Production metadata uses `NEXT_PUBLIC_SITE_URL` when set, then Vercel's stable production hostname variables. This avoids hardcoding a guessed deployment URL; set `NEXT_PUBLIC_SITE_URL` when a custom domain becomes canonical.
+
 ## Verification
 
 ```bash
@@ -39,6 +43,8 @@ npm run test:e2e
 ```
 
 The map asset contract is also covered by tests: processed asset size, geometry sanity, transport classes, station coverage, and the absence of raw GeoJSON in `public/map/`.
+
+SEO integrity tests cover unique project slugs, complete sitemap inclusion, substantive FAQ copy, canonical metadata, structured data, visible official-source sections, and crawl access. The content routes are statically generated; important project facts are available as semantic HTML rather than only inside the Three.js canvas.
 
 ## Map data and regeneration
 

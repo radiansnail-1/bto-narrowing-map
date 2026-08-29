@@ -1,37 +1,33 @@
 'use client';
 
 import { amenityById } from '@/data/amenities';
+import Link from 'next/link';
 import { AMENITY_GROUPS, AMENITY_TYPE_LABELS, amenityGroupStyle } from '@/lib/amenity-groups';
 import type { FlowKind } from '@/lib/panel-view';
-import { CRITERIA, type Amenity, type BtoProject, type MatchStatus, type ProjectMatch } from '@/lib/types';
+import { MATCH_STATUS_LABELS, criterionReason } from '@/lib/results';
+import { CRITERIA, type Amenity, type BtoProject, type ExplorerAnswers, type ProjectMatch } from '@/lib/types';
 import { NOT_PUBLISHED, flatTypeList, priceText, waitingText } from './format';
 
 interface ProjectViewProps {
   project: BtoProject;
   match: ProjectMatch;
+  answers: ExplorerAnswers;
   returnTo: FlowKind;
   onClose: () => void;
   onOpenAmenity: (amenity: Amenity) => void;
+  isShortlisted: boolean;
+  shortlistFull: boolean;
+  onToggleShortlist: () => void;
 }
 
-const STATUS_LABELS: Record<MatchStatus, string> = { pass: 'Pass', miss: 'Miss', unknown: 'Awaiting data', unanswered: 'Not answered' };
-
-function statusDetail(key: (typeof CRITERIA)[number]['key'], status: MatchStatus, project: BtoProject): string | null {
-  if (status !== 'unknown') return null;
-  if (key === 'commute') return project.position ? null : 'HDB has not published a map location for this project.';
-  if (key === 'budget') return 'HDB has not published a price for the flat type you chose.';
-  if (key === 'waiting') return 'HDB has not published an estimated waiting time.';
-  return 'No official amenity record has been screened for this site yet.';
-}
-
-export function ProjectView({ project, match, returnTo, onClose, onOpenAmenity }: ProjectViewProps) {
+export function ProjectView({ project, match, answers, returnTo, onClose, onOpenAmenity, isShortlisted, shortlistFull, onToggleShortlist }: ProjectViewProps) {
   const nearby = project.amenityIds.map((id) => amenityById.get(id)).filter((amenity): amenity is Amenity => Boolean(amenity));
   const prices = priceText(project);
   const flats = flatTypeList(project);
   return (
     <section className="project-card panel-card" data-testid="project-card">
       <button className="card-back" onClick={onClose}>← {returnTo === 'results' ? 'Back to results' : 'Back to narrowing'}</button>
-      <div className="card-kicker"><span className="live-dot" /> Selected project</div>
+      <div className="card-kicker"><span className="live-dot" /> Selected project <button type="button" className={`shortlist-toggle project-shortlist-toggle ${isShortlisted ? 'is-added' : ''}`} aria-pressed={isShortlisted} disabled={shortlistFull && !isShortlisted} onClick={onToggleShortlist}>{isShortlisted ? 'Remove from shortlist' : shortlistFull ? 'Shortlist full' : 'Add to shortlist'}</button></div>
       <h2>{project.name}</h2>
       <p className="card-town">{project.town ?? 'Town not published'} <span>•</span> {project.launchLabel}</p>
       <div className="card-rule" />
@@ -47,8 +43,8 @@ export function ProjectView({ project, match, returnTo, onClose, onOpenAmenity }
         <div className="criteria-summary-label">Your criteria</div>
         {CRITERIA.map(({ key, label }) => {
           const status = match[key];
-          const detail = statusDetail(key, status, project);
-          return <div className="criteria-row" key={key} title={detail ?? undefined}><span>{label}</span><span className={`criteria-status ${status}`}>{STATUS_LABELS[status]}</span></div>;
+          const detail = criterionReason(project, key, status, answers);
+          return <div className="criteria-row" key={key}><span><strong>{label}</strong><em>{detail}</em></span><span className={`criteria-status ${status}`}>{MATCH_STATUS_LABELS[status]}</span></div>;
         })}
       </div>
       <div className="nearby-amenities" data-testid="project-amenities">
@@ -68,6 +64,7 @@ export function ProjectView({ project, match, returnTo, onClose, onOpenAmenity }
         )}
       </div>
       <p className="project-summary">{project.summary}</p>
+      <div className="project-guide-links"><strong>Useful next reads</strong>{!project.position && <Link href="/guides/handling-unpublished-bto-information">Why upcoming project data is incomplete →</Link>}{project.position && <Link href="/guides/comparing-bto-commutes">How to validate the commute →</Link>}{project.position && <Link href="/guides/checking-amenities-near-a-bto">What to check within 1 km →</Link>}<Link href="/guides/understanding-bto-price-and-wait-data">How to read price and wait data →</Link></div>
       <p className="project-note">{project.dataNote}</p>
       <div className="source-links">{project.sourceUrls.slice(0, 2).map((url, index) => <a className="source-link" href={url} key={url} target="_blank" rel="noreferrer">{index === 0 ? 'HDB source' : 'Official detail'} ↗</a>)}</div>
       <p className="data-stamp">Official snapshot · checked {project.checkedDate}</p>

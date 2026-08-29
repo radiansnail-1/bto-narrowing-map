@@ -20,7 +20,7 @@ import { geoToScenePosition, ONE_KM_SCENE_RADIUS } from '@/lib/geo';
 import { HEIGHT_SCALE, LINE_CLASS, buildBuildingGeometry, buildCoastWallGeometry, buildRibbonGeometry, linesOfClass, loadMapAssets, type MapAssets } from '@/lib/map-assets';
 import type { PlaceHighlight } from '@/lib/map-format';
 import { projectOpacity } from '@/lib/matching';
-import type { Amenity, AmenityGroup, ProjectMatch } from '@/lib/types';
+import type { Amenity, AmenityGroup, BtoProject, ProjectMatch } from '@/lib/types';
 import './map-scene.css';
 
 interface MapSceneProps {
@@ -29,6 +29,7 @@ interface MapSceneProps {
   selectedProjectId: string | null;
   customPin: [number, number] | null;
   pinMode: boolean;
+  launchStatusFilter: 'all' | BtoProject['launchStatus'];
   onProjectSelect: (id: string) => void;
   onAmenitySelect: (amenity: Amenity) => void;
   onGroundSelect: (position: [number, number]) => void;
@@ -386,11 +387,11 @@ const DISTRICT_LABELS: Record<string, string> = {
   'TAMPINES': 'Tampines', 'BEDOK': 'Bedok', 'GEYLANG': 'Geylang', 'JURONG WEST': 'Jurong', 'TENGAH': 'Tengah', 'BUKIT MERAH': 'Bukit Merah', 'DOWNTOWN CORE': 'CBD · Marina Bay', 'CHANGI': 'Changi', 'TUAS': 'Tuas', 'CENTRAL WATER CATCHMENT': 'Central Catchment',
 };
 
-function Labels({ assets, matches, selectedProjectId, pinMode, onProjectSelect }: { assets: MapAssets; matches: Record<string, ProjectMatch>; selectedProjectId: string | null; pinMode: boolean; onProjectSelect: (id: string) => void }) {
+function Labels({ assets, matches, selectedProjectId, pinMode, launchStatusFilter, onProjectSelect }: { assets: MapAssets; matches: Record<string, ProjectMatch>; selectedProjectId: string | null; pinMode: boolean; launchStatusFilter: MapSceneProps['launchStatusFilter']; onProjectSelect: (id: string) => void }) {
   const [zoom, setZoom] = useState(30);
   useFrame(({ camera }) => { const z = Math.round((camera as THREE.OrthographicCamera).zoom); if (Math.abs(z - zoom) > Math.max(2, zoom * 0.08)) setZoom(z); });
   const focused = zoom > 70;
-  const mapped = btoProjects.filter((project) => project.position !== null);
+  const mapped = btoProjects.filter((project) => project.position !== null && (launchStatusFilter === 'all' || project.launchStatus === launchStatusFilter));
   const visibleProjects: typeof mapped = [];
   const minSeparation = 60 / zoom;
   for (const project of mapped) {
@@ -409,7 +410,7 @@ function Labels({ assets, matches, selectedProjectId, pinMode, onProjectSelect }
         const opacity = projectOpacity(matches[project.id]);
         return (
           <Html key={project.id} position={[project.position![0], 0.16, project.position![1]]} center zIndexRange={[3, 3]} wrapperClass="map-label-project-wrapper" style={{ pointerEvents: pinMode ? 'none' : 'auto', cursor: 'pointer', zIndex: 3 }}>
-            <span className={`map-label map-label-project ${project.id === selectedProjectId ? 'is-selected' : ''}`} onClick={() => onProjectSelect(project.id)} style={{ opacity }} data-fit-opacity={opacity}>{project.name.split(' — ')[0]}</span>
+            <button type="button" className={`map-label map-label-project map-label-status-${project.launchStatus} ${project.id === selectedProjectId ? 'is-selected' : ''}`} onClick={() => onProjectSelect(project.id)} style={{ opacity }} data-fit-opacity={opacity} data-launch-status={project.launchStatus} aria-label={`Open ${project.name.split(' — ')[0]} project details`} title={`${project.name.split(' — ')[0]} · ${project.launchStatus === 'launched' ? 'past launch' : project.launchStatus === 'planned' ? 'planned project' : 'upcoming project'}`}>{project.name.split(' — ')[0]}</button>
           </Html>
         );
       })}
@@ -652,7 +653,7 @@ function detectQuality(): Quality {
   return { shadows: !software && !params.has('noshadow'), effects: !software && !params.has('nofx'), dpr: software ? [1, 1] : [1, 1.5], lite: software };
 }
 
-function SceneContents({ matches, visibleGroups, selectedProjectId, customPin, pinMode, onProjectSelect, onAmenitySelect, onGroundSelect, onReady, quality }: MapSceneProps & { onReady: () => void; quality: Quality }) {
+function SceneContents({ matches, visibleGroups, selectedProjectId, customPin, pinMode, launchStatusFilter, onProjectSelect, onAmenitySelect, onGroundSelect, onReady, quality }: MapSceneProps & { onReady: () => void; quality: Quality }) {
   const assets = useMapAssets();
   const shared = useMemo<SharedUniforms>(() => ({ focus: { value: new THREE.Vector4(0, 0, ONE_KM_SCENE_RADIUS, 0) }, widthScale: { value: 1 } }), []);
   const focus = shared.focus;
@@ -674,9 +675,9 @@ function SceneContents({ matches, visibleGroups, selectedProjectId, customPin, p
       {assets && <Infrastructure assets={assets} shared={shared} />}
       <Landmarks />
       {assets && <AmenityMarkers assets={assets} visible={visibleGroups} selectedProjectId={selectedProjectId} pinMode={pinMode} onSelect={onAmenitySelect} onGroundSelect={onGroundSelect} />}
-      {btoProjects.filter((project) => project.position !== null).map((project) => <BtoCluster key={project.id} project={project} match={matches[project.id]} selected={project.id === selectedProjectId} pinMode={pinMode} onSelect={() => onProjectSelect(project.id)} onGroundSelect={onGroundSelect} />)}
+      {btoProjects.filter((project) => project.position !== null && (launchStatusFilter === 'all' || project.launchStatus === launchStatusFilter)).map((project) => <BtoCluster key={project.id} project={project} match={matches[project.id]} selected={project.id === selectedProjectId} pinMode={pinMode} onSelect={() => onProjectSelect(project.id)} onGroundSelect={onGroundSelect} />)}
       <Markers customPin={customPin} />
-      {assets && <Labels assets={assets} matches={matches} selectedProjectId={selectedProjectId} pinMode={pinMode} onProjectSelect={onProjectSelect} />}
+      {assets && <Labels assets={assets} matches={matches} selectedProjectId={selectedProjectId} pinMode={pinMode} launchStatusFilter={launchStatusFilter} onProjectSelect={onProjectSelect} />}
       <CameraRig selectedPosition={selectedProject?.position ?? null} shared={shared} lite={quality.lite} />
       <OrbitControls makeDefault enabled={!pinMode} enableDamping dampingFactor={0.09} enableZoom={false} minPolarAngle={0.3} maxPolarAngle={1.35} screenSpacePanning={false} />
       {effects && <EffectComposer multisampling={0}>

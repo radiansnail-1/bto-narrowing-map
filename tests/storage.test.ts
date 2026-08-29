@@ -74,4 +74,40 @@ describe('stored explorer state', () => {
     expect(() => loadStoredState(broken)).not.toThrow();
     expect(loadStoredState(broken)).toEqual({});
   });
+
+  it('restores only known shortlist ids and safe project panel views', () => {
+    const parsed = parseStoredState(JSON.stringify({
+      answers: { ...legacyAnswers, amenityCategories: [] },
+      shortlistIds: ['sembawang-voyage', 'redhill-peaks', 'sembawang-voyage'],
+      view: { kind: 'project', selectedProjectId: 'redhill-peaks', amenityId: null, returnTo: 'results' },
+    }));
+    expect(parsed.shortlistIds).toEqual(['sembawang-voyage', 'redhill-peaks']);
+    expect(parsed.view).toEqual({ kind: 'project', selectedProjectId: 'redhill-peaks', amenityId: null, returnTo: 'results', projectReturnTo: null });
+  });
+
+  it('drops malformed shortlist and panel values instead of restoring stale ids', () => {
+    const parsed = parseStoredState(JSON.stringify({
+      answers: { ...legacyAnswers, amenityCategories: [] },
+      shortlistIds: ['not-a-project'],
+      view: { kind: 'project', selectedProjectId: 'not-a-project', amenityId: null, returnTo: 'results' },
+    }));
+    expect(parsed).not.toHaveProperty('shortlistIds');
+    expect(parsed).not.toHaveProperty('view');
+  });
+
+  it('keeps the original questions/results flow for an amenity opened from a project', () => {
+    const parsed = parseStoredState(JSON.stringify({
+      answers: { ...legacyAnswers, amenityCategories: [] },
+      view: { kind: 'amenity', selectedProjectId: 'redhill-peaks', amenityId: 'park-tiong-bahru', returnTo: 'project', projectReturnTo: 'questions' },
+    }));
+    expect(parsed.view).toEqual({ kind: 'amenity', selectedProjectId: 'redhill-peaks', amenityId: 'park-tiong-bahru', returnTo: 'project', projectReturnTo: 'questions' });
+  });
+
+  it('rejects a nested amenity view without a valid project return flow', () => {
+    const parsed = parseStoredState(JSON.stringify({
+      answers: { ...legacyAnswers, amenityCategories: [] },
+      view: { kind: 'amenity', selectedProjectId: 'redhill-peaks', amenityId: 'park-tiong-bahru', returnTo: 'project' },
+    }));
+    expect(parsed).not.toHaveProperty('view');
+  });
 });
