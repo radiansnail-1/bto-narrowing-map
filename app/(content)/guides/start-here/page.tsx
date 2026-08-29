@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import { JsonLd } from '@/components/JsonLd';
+import { GuideArticleBody } from '@/components/GuideArticleBody';
 import { absoluteUrl } from '@/lib/site';
 
 export const metadata: Metadata = {
@@ -26,7 +27,7 @@ export default function StartHereGuidePage() {
       <article>
         <header className="content-hero"><h1>How to use Where To BTO</h1><p>A short walkthrough from first question to a small, explainable BTO shortlist.</p><p className="data-line">Updated 29 Aug 2026 · 3 minute read</p></header>
         <section className="article-intro"><p>Where To BTO is a transparent first screen. It helps you organise the constraints that matter in an ordinary week, then shows which project facts are confirmed, missing, or a trade-off. It does not calculate eligibility, financing, or routed travel times.</p></section>
-        <div className="article-body">{steps.map(([title, body]) => <section key={title}><h2>{title}</h2><p>{body}</p></section>)}</div>
+        <GuideArticleBody sections={steps} />
         <aside className="content-callout"><h2>Try the flow</h2><p>Answer only the questions you can answer today. You can return to this guide and the map will keep your saved answers, results, project view, and shortlist on this device.</p><Link className="primary-link" href="/">Start narrowing</Link></aside>
         <section className="article-next"><h2>Next reads</h2><Link href="/guides/how-to-choose-a-bto-location">Build a location shortlist <span>→</span></Link><Link href="/guides/handling-unpublished-bto-information">Handle unpublished project information <span>→</span></Link></section>
       </article>

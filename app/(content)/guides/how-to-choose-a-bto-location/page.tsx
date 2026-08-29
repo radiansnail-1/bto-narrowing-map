@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import { JsonLd } from '@/components/JsonLd';
+import { GuideArticleBody } from '@/components/GuideArticleBody';
 import { absoluteUrl } from '@/lib/site';
 
 export const metadata: Metadata = {
@@ -29,7 +30,7 @@ export default function LocationGuidePage() {
       <article>
         <header className="content-hero"><h1>How to compare BTO locations</h1><p>Use a sequence of real constraints to get from “every launch looks possible” to a shortlist with visible trade-offs.</p><p className="data-line">Updated 29 Aug 2026 · 6 minute read</p></header>
         <section className="article-intro"><p>The location question is personal, but the comparison method can still be rigorous. Keep each criterion separate, distinguish confirmed misses from missing data, and validate the shortlist against official sources.</p></section>
-        <div className="article-body">{sections.map(([title, body]) => <section key={title}><h2>{title}</h2><p>{body}</p></section>)}</div>
+        <GuideArticleBody sections={sections} />
         <aside className="content-callout"><h2>Turn the checklist into a shortlist</h2><p>Answer four questions on the map. Each confirmed miss dims a project by exactly 23 percentage points; unknown facts remain neutral.</p><Link className="primary-link" href="/">Start narrowing</Link></aside>
         <section className="article-next"><h2>Next reads</h2><Link href="/guides/understanding-bto-price-and-wait-data">Understand published prices and waiting times <span>→</span></Link><Link href="/methodology">See the complete matching methodology <span>→</span></Link></section>
       </article>

@@ -1,5 +1,6 @@
 import { describe, expect, it } from 'vitest';
 import sitemap from '@/app/sitemap';
+import { GET as getAdsTxt } from '@/app/ads.txt/route';
 import { FAQ_ITEMS } from '@/data/faq';
 import { btoProjects } from '@/data/bto-projects';
 import { GUIDES } from '@/data/guides';
@@ -18,6 +19,7 @@ describe('crawlable site surface', () => {
     expect(paths).toContain('/bto-projects');
     expect(paths).toContain('/faq');
     expect(paths).toContain('/methodology');
+    expect(paths).toContain('/privacy');
     expect(paths).toContain('/ai-info');
     for (const guide of GUIDES) expect(paths).toContain(guide.href);
     for (const project of btoProjects) expect(paths).toContain(`/bto-projects/${project.id}`);
@@ -31,6 +33,12 @@ describe('crawlable site surface', () => {
       expect(guide.title.length).toBeGreaterThan(18);
       expect(guide.description.length).toBeGreaterThan(80);
     }
+  });
+
+  it('publishes the AdSense seller declaration', async () => {
+    const response = getAdsTxt();
+    expect(response.headers.get('content-type')).toContain('text/plain');
+    await expect(response.text()).resolves.toBe('google.com, pub-8143877198625443, DIRECT, f08c47fec0942fa0\n');
   });
 
   it('keeps FAQ questions distinct and substantive', () => {
