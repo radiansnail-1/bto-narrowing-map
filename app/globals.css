@@ -365,6 +365,14 @@ button { color: inherit; }
 .article-body section + section { border-top: 1px solid var(--line); }
 .article-body h2 { margin: 0 0 10px; color: #141414; font-size: 23px; line-height: 1.25; letter-spacing: -.02em; }
 .article-body p { margin: 0 0 20px; color: var(--ink-2); font-size: 15px; line-height: 1.75; }
+.ad-slot { display: grid; gap: 7px; width: 100%; overflow: hidden; color: var(--muted); background: #fff; }
+.ad-label { font-size: 10px; font-weight: 600; letter-spacing: .06em; text-align: center; text-transform: uppercase; }
+.ad-slot-article { min-height: 120px; margin: 22px 0 18px; padding: 12px 0; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+.ad-slot-bottom { min-height: 112px; place-content: center; padding: 12px max(24px, calc((100vw - 980px) / 2)); border-top: 1px solid var(--line); background: #f1f1f1; }
+.ad-slot-bottom > .adsbygoogle, .ad-slot-bottom > .ad-preview { width: min(970px, calc(100vw - 48px)); }
+.ad-preview { display: grid; min-height: 90px; place-items: center; border: 1px dashed var(--line-strong); color: var(--muted); background: #fafafa; font-size: 12px; }
+.site-bottom-ad { flex: 0 0 auto; }
+.privacy-body a { color: var(--link); }
 .article-next { margin-top: 28px; }
 .article-next h2 { font-size: 18px; }
 .article-next a { display: flex; align-items: center; justify-content: space-between; padding: 14px 0; border-top: 1px solid var(--line); color: var(--link); font-size: 14px; font-weight: 700; text-decoration: none; }

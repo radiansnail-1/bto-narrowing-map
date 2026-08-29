@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import { hankenGrotesk } from './fonts';
+import { ADSENSE_CLIENT } from '@/lib/adsense';
 import { SITE_DESCRIPTION, SITE_NAME, SITE_URL } from '@/lib/site';
 import './globals.css';
 
@@ -24,6 +25,7 @@ export const metadata: Metadata = {
     googleBot: { index: true, follow: true, 'max-image-preview': 'large', 'max-snippet': -1, 'max-video-preview': -1 },
   },
   category: 'housing',
+  other: { 'google-adsense-account': ADSENSE_CLIENT },
 };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {

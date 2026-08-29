@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import { JsonLd } from '@/components/JsonLd';
+import { GuideArticleBody } from '@/components/GuideArticleBody';
 import { absoluteUrl } from '@/lib/site';
 
 export const metadata: Metadata = {
@@ -26,7 +27,7 @@ export default function AmenityGuidePage() {
       <nav className="breadcrumbs" aria-label="Breadcrumb"><Link href="/">Map</Link><span>/</span><Link href="/guides">Guides</Link><span>/</span><span>Amenities</span></nav>
       <article>
         <header className="content-hero"><h1>What to check within 1 km of a BTO</h1><p>Nearby amenities are useful only when they fit your routines, routes, timing, and access needs.</p><p className="data-line">Updated 29 Aug 2026 · 5 minute read</p></header>
-        <div className="article-body">{sections.map(([title, body]) => <section key={title}><h2>{title}</h2><p>{body}</p></section>)}</div>
+        <GuideArticleBody sections={sections} />
         <aside className="content-callout"><h2>Inspect each project’s context</h2><p>Select a mapped BTO site to see its approximate 1 km boundary and curated nearby amenities.</p><Link className="primary-link" href="/">Open the map</Link></aside>
         <section className="article-next"><h2>Next reads</h2><Link href="/guides/comparing-bto-commutes">Compare complete commutes <span>→</span></Link><Link href="/methodology">Read the amenity-data limits <span>→</span></Link></section>
       </article>

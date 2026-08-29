@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import { JsonLd } from '@/components/JsonLd';
+import { GuideArticleBody } from '@/components/GuideArticleBody';
 import { absoluteUrl } from '@/lib/site';
 
 export const metadata: Metadata = {
@@ -25,7 +26,7 @@ export default function UnknownDataGuidePage() {
       <nav className="breadcrumbs" aria-label="Breadcrumb"><Link href="/">Map</Link><span>/</span><Link href="/guides">Guides</Link><span>/</span><span>Unpublished information</span></nav>
       <article>
         <header className="content-hero"><h1>How to handle BTO information HDB has not published yet</h1><p>Keep missing facts visible. Do not turn an early announcement into a more precise project than the source supports.</p><p className="data-line">Updated 29 Aug 2026 · 4 minute read</p></header>
-        <div className="article-body">{sections.map(([title, body]) => <section key={title}><h2>{title}</h2><p>{body}</p></section>)}</div>
+        <GuideArticleBody sections={sections} />
         <aside className="content-callout"><h2>See what is known today</h2><p>Project pages separate published values from fields that HDB has not released yet and link back to their sources.</p><Link className="primary-link" href="/bto-projects">Browse project records</Link></aside>
         <section className="article-next"><h2>Next reads</h2><Link href="/guides/understanding-bto-price-and-wait-data">Read prices and waiting times carefully <span>→</span></Link><Link href="/methodology">See how unknowns affect matching <span>→</span></Link></section>
       </article>

@@ -14,6 +14,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...GUIDES.map((guide) => ({ url: absoluteUrl(guide.href), lastModified: editorialDate, changeFrequency: 'monthly' as const, priority: 0.8 })),
     { url: absoluteUrl('/faq'), lastModified: editorialDate, changeFrequency: 'monthly', priority: 0.7 },
     { url: absoluteUrl('/methodology'), lastModified: dataDate, changeFrequency: 'monthly', priority: 0.7 },
+    { url: absoluteUrl('/privacy'), lastModified: editorialDate, changeFrequency: 'yearly', priority: 0.3 },
     { url: absoluteUrl('/ai-info'), lastModified: dataDate, changeFrequency: 'monthly', priority: 0.5 },
   ];
   return [

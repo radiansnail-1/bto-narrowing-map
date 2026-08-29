@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import { JsonLd } from '@/components/JsonLd';
+import { GuideArticleBody } from '@/components/GuideArticleBody';
 import { absoluteUrl } from '@/lib/site';
 
 export const metadata: Metadata = {
@@ -26,7 +27,7 @@ export default function CommuteGuidePage() {
       <nav className="breadcrumbs" aria-label="Breadcrumb"><Link href="/">Map</Link><span>/</span><Link href="/guides">Guides</Link><span>/</span><span>Commutes</span></nav>
       <article>
         <header className="content-hero"><h1>How to compare commutes before choosing a BTO</h1><p>A commute check should describe the complete weekly journey, not just the nearest station or distance to the city centre.</p><p className="data-line">Updated 29 Aug 2026 · 5 minute read</p></header>
-        <div className="article-body">{sections.map(([title, body]) => <section key={title}><h2>{title}</h2><p>{body}</p></section>)}</div>
+        <GuideArticleBody sections={sections} />
         <aside className="content-callout"><h2>Start with a rough screen</h2><p>The map can compare up to two preset workplace hubs or one custom point. Validate the final shortlist with current routing information.</p><Link className="primary-link" href="/">Compare workplace locations</Link></aside>
         <section className="article-next"><h2>Next reads</h2><Link href="/guides/how-to-choose-a-bto-location">Build a location shortlist <span>→</span></Link><Link href="/methodology">See how workplace matching works <span>→</span></Link></section>
       </article>
