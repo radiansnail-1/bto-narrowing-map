@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import { Analytics } from '@vercel/analytics/next';
 import { hankenGrotesk } from './fonts';
 import { SITE_DESCRIPTION, SITE_NAME, SITE_URL } from '@/lib/site';
 import './globals.css';
@@ -29,7 +30,10 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en" className={hankenGrotesk.variable}>
-      <body className={hankenGrotesk.className}>{children}</body>
+      <body className={hankenGrotesk.className}>
+        {children}
+        <Analytics />
+      </body>
     </html>
   );
 }
