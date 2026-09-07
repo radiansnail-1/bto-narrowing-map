@@ -34,7 +34,6 @@ describe('official snapshot data integrity', () => {
 
   it('keeps official work hubs and the 1 km scene scale explicit', () => {
     expect(workHubs).toHaveLength(snapshot.workHubs.length);
-    expect(workHubs.every((hub) => hub.travelTime === null)).toBe(true);
     expect(ONE_KM_SCENE_RADIUS * SCENE_KM_PER_UNIT).toBeCloseTo(1);
     expect(amenities.some((amenity) => (amenity.type as string) === 'bus')).toBe(false);
   });

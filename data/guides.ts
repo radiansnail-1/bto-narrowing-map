@@ -1,6 +1,9 @@
+import { REDDIT_GUIDES, PRACTICAL_GUIDES_CHECKED } from '@/data/reddit-guides';
+
 export const GUIDES = [
   {
     href: '/guides/start-here',
+    checkedDate: '2026-09-07',
     category: 'Start here',
     title: 'How to use Where To BTO',
     description: 'A quick walkthrough of the map, optional questions, result groups, shortlist, comparison, and the official checks to make afterwards.',
@@ -13,6 +16,7 @@ export const GUIDES = [
   },
   {
     href: '/guides/comparing-bto-commutes',
+    checkedDate: '2026-09-07',
     category: 'Commute',
     title: 'How to compare commutes before choosing a BTO',
     description: 'Use map distance as a first screen, then check transfers, walking routes, peak conditions, and both applicants’ weekly travel.',
@@ -35,4 +39,5 @@ export const GUIDES = [
     title: 'How to handle BTO information HDB has not published yet',
     description: 'Keep unknown project names, coordinates, prices, flat mixes, and waiting times visible without treating them as good or bad news.',
   },
+  ...REDDIT_GUIDES.map((guide) => ({ href: `/guides/${guide.slug}`, category: guide.category, title: guide.title, description: guide.description, checkedDate: PRACTICAL_GUIDES_CHECKED })),
 ] as const;

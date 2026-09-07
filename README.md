@@ -1,6 +1,6 @@
 # Where To BTO
 
-An interactive desktop map for narrowing Singapore BTO projects by commute, budget, nearby amenities, and estimated waiting time. Projects begin equally visible and dim only when they miss criteria the visitor has answered—there is no hidden composite ranking.
+An interactive map and mobile questionnaire for narrowing Singapore BTO projects by commute, budget, nearby amenities, and estimated waiting time. Projects begin equally visible and dim only when they miss criteria the visitor has answered—there is no hidden composite ranking.
 
 ![Singapore BTO map overview](artifacts/bto-overview.png)
 
@@ -15,7 +15,10 @@ An interactive desktop map for narrowing Singapore BTO projects by commute, budg
 - Amenity detail views with 32 locally optimised, fully credited open-licence photos and honest no-photo states for the remaining 21 records (`data/amenity-media.json`)
 - A selected-project fly-to view with an approximate 1 km context ring and curated amenities
 - A software-renderer lite path for headless browsers and lower-capability environments
-- A crawlable information layer: 22 static project pages, project directory, FAQ, six decision guides (including a Start Here walkthrough), methodology/source register, and canonical AI-information page
+- A mobile layout with an automatically loaded 3D map, one-finger pan, pinch zoom, two-finger rotation and a reset-view button
+- Free Google Maps transit links from approximate project anchors to selected destinations
+- An illustrative Deferred Income Assessment payment calculator
+- A crawlable information layer: 22 static project pages, project directory, FAQ, nine decision guides (including a Start Here walkthrough), methodology/source register, and canonical AI-information page
 - Route-specific titles, descriptions, canonicals and JSON-LD, plus generated `sitemap.xml`, `robots.txt`, web manifest, and site icon
 
 This is a location-exploration prototype, not financial, eligibility, routing, or application advice. Project facts can become stale; follow the linked official HDB sources before making a decision.
@@ -31,7 +34,7 @@ npm run dev
 
 Open <http://localhost:3000>.
 
-Production metadata uses `NEXT_PUBLIC_SITE_URL` when set, then Vercel's stable production hostname variables. This avoids hardcoding a guessed deployment URL; set `NEXT_PUBLIC_SITE_URL` when a custom domain becomes canonical.
+Production metadata defaults to the verified canonical domain `https://wheretobto.com`. Set `NEXT_PUBLIC_SITE_URL` only when the canonical domain changes; preview and local hostnames do not become canonicals.
 
 ## Verification
 

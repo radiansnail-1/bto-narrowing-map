@@ -4,7 +4,7 @@ import Image from 'next/image';
 import { btoProjects } from '@/data/bto-projects';
 import { officialSourceById } from '@/data/sources';
 import { AMENITY_GROUPS, AMENITY_TYPE_LABELS, amenityGroupStyle } from '@/lib/amenity-groups';
-import { mediaBlockerForAmenity, mediaForAmenity } from '@/lib/amenity-media';
+import { amenityMediaBlockerById, amenityMediaById } from '@/lib/amenity-media';
 import type { Amenity, BtoProject } from '@/lib/types';
 
 interface AmenityViewProps {
@@ -16,8 +16,8 @@ interface AmenityViewProps {
 
 export function AmenityView({ amenity, selectedProject, backLabel, onBack }: AmenityViewProps) {
   const group = AMENITY_GROUPS[amenity.group];
-  const media = mediaForAmenity(amenity.id);
-  const blocker = mediaBlockerForAmenity(amenity.id);
+  const media = amenityMediaById.get(amenity.id);
+  const blocker = amenityMediaBlockerById.get(amenity.id);
   const source = officialSourceById.get(amenity.sourceId);
   const listedFor = btoProjects.filter((project) => project.amenityIds.includes(amenity.id));
   const insideSelected = selectedProject ? selectedProject.amenityIds.includes(amenity.id) : null;

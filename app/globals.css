@@ -439,3 +439,69 @@ button { color: inherit; }
   .next-button { min-height: 36px; padding: 7px 13px; }
   .progress-bar { margin-top: 10px; }
 }
+
+.map-region { display: contents; }
+.map-loading { display: grid; place-items: center; color: #e6eef2; }
+.mobile-explorer-tools { display: none; }
+.map-touch-controls { display: none; }
+.map-loading-status { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); pointer-events: none; padding: 8px 12px; border-radius: 6px; background: #132332; color: white; font-size: 14px; }
+.transit-links { margin: 20px 0; padding: 16px; border: 1px solid var(--line); border-radius: 6px; background: var(--surface-subtle); }
+.transit-links h3 { margin: 0 0 12px; font-size: 16px; }
+.transit-destination-picker { display: grid; gap: 6px; font-size: 13px; }
+.transit-destination-picker select { min-height: 44px; width: 100%; padding: 8px; border: 1px solid var(--line-strong); border-radius: 4px; background: white; }
+.transit-route-links { display: grid; gap: 8px; margin: 12px 0; }
+.transit-route-links a { padding: 10px 0; color: var(--link); font-size: 14px; line-height: 1.45; }
+
+@media (max-width: 1023px) {
+  :root { --header-height: 100px; }
+  .site-header { width: 100%; }
+  .site-header-inner { flex-wrap: wrap; align-content: center; gap: 5px; padding: 8px 14px; }
+  .site-wordmark { line-height: 26px; }
+  .site-nav { width: 100%; margin: 0; overflow-x: auto; }
+  .site-nav a { display: block; min-height: 40px; padding: 10px 9px; }
+  .site-nav a:last-child { display: block; }
+  .explorer-shell { display: flex; flex-direction: column; min-width: 0; width: 100%; height: 100dvh; overflow-x: hidden; overflow-y: auto; background: #f5f5f5; }
+  .explorer-shell .site-header { position: sticky; top: 0; order: 0; flex: 0 0 var(--header-height); }
+  .map-title { position: static; order: 1; flex-wrap: wrap; align-self: stretch; gap: 6px 10px; margin: 16px 14px 0; padding: 0; border: 0; background: none; }
+  .map-title-eyebrow { color: var(--accent); }
+  .map-title strong { color: var(--ink); font-size: 20px; }
+  .map-title-sub { color: var(--muted); }
+  .launch-filter { position: static; order: 2; justify-content: space-between; margin: 12px 14px 0; padding: 0; border: 0; background: none; font-size: 13px; }
+  .launch-filter select { min-height: 44px; max-width: 70%; padding: 8px; font-size: 16px; }
+  .mobile-explorer-tools { display: grid; order: 4; gap: 10px; margin: 10px 14px 16px; }
+  .mobile-explorer-tools p { margin: 0; color: var(--muted); font-size: 13px; line-height: 1.5; }
+  .mobile-explorer-tools > div { display: flex; flex-wrap: wrap; gap: 8px; }
+  .mobile-explorer-tools button { min-height: 44px; padding: 10px 14px; border: 1px solid var(--line-strong); border-radius: 6px; background: white; font-size: 14px; font-weight: 600; }
+  .mobile-explorer-tools a { color: var(--link); font-size: 14px; }
+  .map-region { position: relative; display: block; order: 3; flex: 0 0 clamp(240px, 45dvh, 360px); margin-top: 12px; width: 100%; scroll-margin-top: var(--header-height); }
+  .map-canvas { position: absolute; inset: 0; }
+  .map-touch-controls { position: absolute; top: 10px; left: 10px; z-index: 3; display: flex; }
+  .map-touch-controls button { min-height: 44px; padding: 10px 14px; border: 1px solid #647584; border-radius: 6px; background: #132332; color: white; font: inherit; font-size: 14px; }
+  .amenity-rail { position: static; display: block; order: 5; width: auto; margin: 10px 14px 16px; padding: 10px; box-shadow: none; }
+  .rail-heading, .rail-key { display: none; }
+  .rail-list { display: flex; overflow-x: auto; gap: 8px; }
+  .rail-item { min-width: 150px; min-height: 44px; }
+  .right-panel-wrap { position: static; order: 6; flex: 0 0 auto; width: auto; max-height: none; margin: 0 14px 16px; overflow: visible; scroll-margin-top: calc(var(--header-height) + 12px); }
+  .panel-card { box-shadow: 0 2px 8px rgba(0, 0, 0, .04); }
+  .question-card, .results-card, .project-card, .amenity-card { padding: 18px; }
+  .question-card h1, .results-card h1 { font-size: 24px; }
+  .question-hint, .inline-note, .question-promise { font-size: 13px; line-height: 1.55; }
+  .choice-row, .tag-choice, .custom-pin-button, .text-button, .next-button, .shortlist-toggle, .card-back { min-height: 44px; }
+  .choice-row { padding: 10px; font-size: 14px; }
+  .choice-row small { font-size: 10px; }
+  .budget-form select, .input-prefix input { font-size: 16px; }
+  .question-actions { position: sticky; bottom: 0; z-index: 2; padding: 12px 0 max(12px, env(safe-area-inset-bottom)); background: white; }
+  .project-tray { position: static; order: 7; flex: 0 0 auto; margin: 0 14px 16px; scroll-margin-top: calc(var(--header-height) + 12px); box-shadow: none; }
+  .tray-strip { flex-wrap: wrap; gap: 8px; padding: 6px 10px; }
+  .tray-current { display: none; }
+  .tray-toggle, .tray-list button { min-height: 44px; font-size: 13px; }
+  .tray-list-inner { max-height: 320px; }
+  .tray-list button { width: 100%; white-space: normal; text-align: left; }
+  .map-legend { display: none; }
+  .freshness-note { position: static; order: 8; margin: 0 14px 20px; color: var(--muted); line-height: 1.5; }
+  .content-shell { height: 100dvh; }
+  .breadcrumbs { flex-wrap: wrap; }
+  .content-hero h1 { font-size: 32px; overflow-wrap: anywhere; }
+  .article-body { padding-inline: 18px; }
+  .article-body a { overflow-wrap: anywhere; }
+}

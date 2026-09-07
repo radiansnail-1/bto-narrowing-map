@@ -11,7 +11,6 @@ export interface MapAssets {
   rail: RailData;
   places: PlaceHighlightData;
   land: THREE.BufferGeometry;
-  water: THREE.BufferGeometry;
   green: THREE.BufferGeometry;
   lines: ParsedLine[];
   buildingsBuffer: ArrayBuffer;
@@ -233,11 +232,10 @@ export function loadMapAssets(base = '/map'): Promise<MapAssets> {
   if (cached) return cached;
   cached = (async () => {
     const manifest = (await (await fetch(`${base}/manifest.json`)).json()) as MapManifest;
-    const [rail, places, landBuffer, waterBuffer, greenBuffer, linesBuffer, buildingsBuffer] = await Promise.all([
+    const [rail, places, landBuffer, greenBuffer, linesBuffer, buildingsBuffer] = await Promise.all([
       fetch(`${base}/${manifest.files.rail}`).then((r) => r.json() as Promise<RailData>),
       fetch(`${base}/${manifest.files.places}`).then((r) => r.json() as Promise<PlaceHighlightData>),
       fetch(`${base}/${manifest.files.land}`).then((r) => r.arrayBuffer()),
-      fetch(`${base}/${manifest.files.water}`).then((r) => r.arrayBuffer()),
       fetch(`${base}/${manifest.files.green}`).then((r) => r.arrayBuffer()),
       fetch(`${base}/${manifest.files.lines}`).then((r) => r.arrayBuffer()),
       fetch(`${base}/${manifest.files.buildings}`).then((r) => r.arrayBuffer()),
@@ -248,7 +246,7 @@ export function loadMapAssets(base = '/map'): Promise<MapAssets> {
       const l = 0.082 + wobble * 0.022;
       return [Math.round((l * 0.92) * 255), Math.round((l * 1.02) * 255), Math.round((l * 1.06) * 255)];
     });
-    return { manifest, rail, places, land, water: parsePolygonMesh(waterBuffer), green: parsePolygonMesh(greenBuffer), lines: parseLines(linesBuffer), buildingsBuffer };
+    return { manifest, rail, places, land, green: parsePolygonMesh(greenBuffer), lines: parseLines(linesBuffer), buildingsBuffer };
   })();
   cached.catch(() => { cached = null; });
   return cached;

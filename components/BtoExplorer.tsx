@@ -1,8 +1,8 @@
 'use client';
 
-import { useEffect, useMemo, useState } from 'react';
+import { useEffect, useMemo, useRef, useState } from 'react';
+import dynamic from 'next/dynamic';
 import { AmenityRail } from '@/components/AmenityRail';
-import { MapScene } from '@/components/MapScene';
 import { AmenityView } from '@/components/panel/AmenityView';
 import { ProjectView } from '@/components/panel/ProjectView';
 import { QuestionsView } from '@/components/panel/QuestionsView';
@@ -15,11 +15,27 @@ import { DATA_CHECKED_DATE } from '@/data/sources';
 import { AMENITY_GROUP_ORDER, AMENITY_GROUPS } from '@/lib/amenity-groups';
 import { matchAllProjects, projectOpacity } from '@/lib/matching';
 import { filterProjectsByLaunchStatus } from '@/lib/results';
-import { QUESTIONS_VIEW, closeAmenity, closeProject, editAnswers, finishQuestions, flowKindOf, openAmenity, openProject, type PanelView } from '@/lib/panel-view';
+import { QUESTIONS_VIEW, RESULTS_VIEW, closeAmenity, closeProject, flowKindOf, openAmenity, openProject, type PanelView } from '@/lib/panel-view';
 import { DEFAULT_ANSWERS, DEFAULT_VISIBLE_GROUPS, MAX_STEP, loadStoredState, saveStoredState, type StoredPanelView } from '@/lib/storage';
 import type { Amenity, AmenityGroup, BtoProject, ExplorerAnswers } from '@/lib/types';
 
+const MapScene = dynamic(() => import('@/components/MapScene').then((module) => module.MapScene), {
+  ssr: false,
+  loading: () => <div className="map-canvas map-loading" role="status">Loading the Singapore map…</div>,
+});
+
 export function BtoExplorer() {
+  const [isMobile, setIsMobile] = useState<boolean | null>(null);
+  const panelLocation = useRef<string | null>(null);
+  const mapRegion = useRef<HTMLDivElement>(null);
+  const tray = useRef<HTMLDivElement>(null);
+  useEffect(() => {
+    const media = window.matchMedia('(max-width: 1023px)');
+    const update = () => setIsMobile(media.matches);
+    update();
+    media.addEventListener('change', update);
+    return () => media.removeEventListener('change', update);
+  }, []);
   const [answers, setAnswers] = useState<ExplorerAnswers>(DEFAULT_ANSWERS);
   const [visibleGroups, setVisibleGroups] = useState<AmenityGroup[]>(DEFAULT_VISIBLE_GROUPS);
   const [step, setStep] = useState(0);
@@ -85,7 +101,15 @@ export function BtoExplorer() {
   useEffect(() => {
     const panel = document.querySelector<HTMLElement>('[data-testid="right-panel"]');
     if (panel) panel.scrollTop = 0;
-  }, [view.kind, selectedProjectId, activeAmenityId]);
+    const location = `${view.kind}:${selectedProjectId}:${activeAmenityId}:${step}`;
+    if (panelLocation.current !== null && panelLocation.current !== location && window.matchMedia('(max-width: 1023px)').matches) {
+      panel?.scrollIntoView({ block: 'start' });
+    }
+    panelLocation.current = location;
+  }, [view.kind, selectedProjectId, activeAmenityId, step]);
+  useEffect(() => {
+    if (pinMode && isMobile) mapRegion.current?.scrollIntoView({ block: 'center' });
+  }, [pinMode, isMobile]);
 
   const matches = useMemo(() => matchAllProjects(btoProjects, answers), [answers]);
   const selectedMatch = visibleSelectedProject ? matches[visibleSelectedProject.id] : null;
@@ -120,6 +144,7 @@ export function BtoExplorer() {
   const placeCustomPin = (position: [number, number]) => {
     setAnswers((current) => ({ ...current, workHubIds: [], customWorkplace: position }));
     setPinMode(false);
+    if (isMobile) document.querySelector('[data-testid="right-panel"]')?.scrollIntoView({ block: 'start' });
   };
 
   const startPinMode = () => {
@@ -145,18 +170,26 @@ export function BtoExplorer() {
       return <ProjectView project={visibleSelectedProject} match={selectedMatch} answers={answers} returnTo={effective.returnTo} isShortlisted={shortlistIds.includes(visibleSelectedProject.id)} shortlistFull={shortlistIds.length >= 4} onToggleShortlist={() => toggleShortlist(visibleSelectedProject.id)} onClose={deselectProject} onOpenAmenity={selectAmenity} />;
     }
     if (flowKindOf(effective) === 'results') {
-      return <ResultsView projects={btoProjects} matches={matches} answers={answers} selectedProjectId={visibleSelectedProject?.id ?? null} shortlistIds={shortlistIds} launchStatusFilter={launchStatusFilter} onLaunchStatusFilterChange={setLaunchStatusFilter} onToggleShortlist={toggleShortlist} onOpenProject={selectProject} onEditAnswers={() => { setStep(0); setView(editAnswers()); }} />;
+      return <ResultsView projects={btoProjects} matches={matches} answers={answers} selectedProjectId={visibleSelectedProject?.id ?? null} shortlistIds={shortlistIds} launchStatusFilter={launchStatusFilter} onLaunchStatusFilterChange={setLaunchStatusFilter} onToggleShortlist={toggleShortlist} onOpenProject={selectProject} onEditAnswers={() => { setStep(0); setView(QUESTIONS_VIEW); }} />;
     }
-    return <QuestionsView projectCount={visibleProjects.length} step={step} answers={answers} pinMode={pinMode} onDropCustomPin={startPinMode} onClearCustomPin={() => setAnswers((current) => ({ ...current, customWorkplace: null }))} onBack={() => setStep((current) => Math.max(0, current - 1))} onNext={() => setStep((current) => Math.min(MAX_STEP, current + 1))} onFinish={() => setView(finishQuestions())} onAnswersChange={setAnswers} />;
+    return <QuestionsView projectCount={visibleProjects.length} step={step} answers={answers} pinMode={pinMode} onDropCustomPin={startPinMode} onClearCustomPin={() => setAnswers((current) => ({ ...current, customWorkplace: null }))} onBack={() => setStep((current) => Math.max(0, current - 1))} onNext={() => setStep((current) => Math.min(MAX_STEP, current + 1))} onFinish={() => setView(RESULTS_VIEW)} onAnswersChange={setAnswers} />;
   };
 
   return (
     <main className="explorer-shell">
-      <MapScene matches={matches} visibleGroups={visibleGroups} selectedProjectId={visibleSelectedProject?.id ?? null} customPin={answers.customWorkplace} pinMode={pinMode} launchStatusFilter={launchStatusFilter} onProjectSelect={selectProject} onAmenitySelect={selectAmenity} onGroundSelect={placeCustomPin} />
+      <div className="map-region" id="explorer-map" ref={mapRegion}>
+        <MapScene matches={matches} visibleGroups={visibleGroups} selectedProjectId={visibleSelectedProject?.id ?? null} customPin={answers.customWorkplace} pinMode={pinMode} launchStatusFilter={launchStatusFilter} onProjectSelect={selectProject} onAmenitySelect={selectAmenity} onGroundSelect={placeCustomPin} onCancelPin={() => setPinMode(false)} />
+      </div>
       <h1 className="sr-only">Where To BTO</h1>
       <SiteHeader />
       <div className="map-title"><span className="map-title-eyebrow">Map view</span><strong>{visibleSelectedProject ? (visibleSelectedProject.town ?? 'Future site') : 'Singapore'}</strong><span className="map-title-sub" data-testid="map-context-label">{visibleSelectedProject ? (visibleSelectedProject.position ? 'Approximate 1 km context' : 'Location unavailable · no 1 km context') : launchStatusLabel}</span></div>
       <label className="launch-filter" htmlFor="launch-status-filter"><span>Show</span><select id="launch-status-filter" value={launchStatusFilter} onChange={(event) => setLaunchStatusFilter(event.target.value as typeof launchStatusFilter)}><option value="all">All launch stages</option><option value="launched">Past launches</option><option value="announced_upcoming">Upcoming</option><option value="planned">Planned</option></select></label>
+      <div className="mobile-explorer-tools">
+        <p>{pinMode ? 'Tap the map to place your workplace pin.' : 'One finger to pan · pinch to zoom · two-finger drag to rotate. Tap a project to explore.'}</p>
+        <div><button type="button" onClick={() => document.querySelector('[data-testid="right-panel"]')?.scrollIntoView({ block: 'start' })}>{view.kind === 'questions' ? 'Narrow your options ↓' : view.kind === 'results' ? 'View your results ↓' : 'View details ↓'}</button>
+          <button type="button" onClick={() => { setTrayOpen(true); tray.current?.scrollIntoView({ block: 'start' }); }}>Browse {visibleProjects.length} projects</button></div>
+        <p>Scroll outside the map to reach the questions.</p>
+      </div>
       <AmenityRail visible={visibleGroups} onToggle={toggleGroup} />
       <div className="right-panel-wrap" data-testid="right-panel" data-panel-view={view.kind}>
         {renderPanel()}
@@ -166,7 +199,7 @@ export function BtoExplorer() {
         {AMENITY_GROUP_ORDER.map((group) => <div key={group}><i className="legend-amenity" style={{ borderColor: AMENITY_GROUPS[group].palette.map, backgroundColor: `${AMENITY_GROUPS[group].palette.map}55` }} /> {AMENITY_GROUPS[group].shortLabel}</div>)}
         <div className="legend-instruction">Drag to orbit · arrows to move · scroll to zoom</div>
       </div>
-      <div className={`project-tray ${trayOpen ? 'is-open' : ''}`} aria-label="BTO project shortcuts" onMouseEnter={() => setTrayHovered(true)} onMouseLeave={() => setTrayHovered(false)} onFocus={() => setTrayFocused(true)} onBlur={(event) => setTrayFocused(event.currentTarget.contains(event.relatedTarget))}>
+      <div ref={tray} className={`project-tray ${trayOpen ? 'is-open' : ''}`} aria-label="BTO project shortcuts" onMouseEnter={() => setTrayHovered(true)} onMouseLeave={() => setTrayHovered(false)} onFocus={() => setTrayFocused(true)} onBlur={(event) => setTrayFocused(event.currentTarget.contains(event.relatedTarget))}>
         <div className="tray-strip">
           <span className="tray-label">Sites · {visibleProjects.length}</span>
           {visibleSelectedProject && <span className="tray-current"><span className="tray-dot" style={{ opacity: projectOpacity(matches[visibleSelectedProject.id]) }} />{visibleSelectedProject.name}</span>}

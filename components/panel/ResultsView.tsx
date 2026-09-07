@@ -62,7 +62,7 @@ export function ResultsView({ projects, matches, answers, selectedProjectId, sho
                         <button type="button" className="result-row-main" onClick={() => onOpenProject(project.id)} data-testid="result-row">
                           <span className="tray-dot" style={{ opacity: projectOpacity(match) }} aria-hidden="true" />
                           <span className="result-row-text"><strong>{project.canonicalName ?? `${project.name.split(' — ')[0]} · name not published`}</strong><small>{project.town ?? 'Town not published'} · {project.launchStatus === 'launched' ? 'Past launch' : project.launchStatus === 'planned' ? 'Planned' : 'Upcoming'}</small></span>
-                          <span className="result-status-line">{CRITERIA.map(({ key, label }) => <span key={key} className={`result-criterion ${match[key]}`}><b>{label}</b><em>{MATCH_STATUS_LABELS[match[key]]}</em><small>{criterionReason(project, key, match[key], answers)}</small></span>)}</span>
+                          <span className="result-status-line">{CRITERIA.map(({ key, label }) => <span key={key} className={`result-criterion ${match[key]}`}><b>{label}</b><em>{MATCH_STATUS_LABELS[match[key]]}</em><small>{criterionReason(key, match[key], answers)}</small></span>)}</span>
                         </button>
                         <button type="button" className={`shortlist-toggle ${shortlistIds.includes(project.id) ? 'is-added' : ''}`} aria-pressed={shortlistIds.includes(project.id)} disabled={shortlistIds.length >= 4 && !shortlistIds.includes(project.id)} onClick={() => onToggleShortlist(project.id)}>{shortlistIds.includes(project.id) ? 'Shortlisted' : shortlistIds.length >= 4 ? 'Shortlist full' : 'Add to shortlist'}</button>
                       </div>

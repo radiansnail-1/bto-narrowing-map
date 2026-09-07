@@ -1,0 +1,22 @@
+.layout { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 32px; align-items: start; margin: 32px 0; }
+.form { display: grid; gap: 24px; }
+.form fieldset { margin: 0; padding: 0; border: 0; min-width: 0; }
+.form legend { font-size: 20px; font-weight: 700; margin-bottom: 16px; }
+.fields { display: grid; grid-template-columns: 1fr 1fr; gap: 20px 16px; }
+.field { display: flex; flex-direction: column; gap: 7px; font-size: 14px; font-weight: 600; }
+.field input { width: 100%; min-height: 46px; border: 1px solid var(--line-strong); border-radius: 4px; padding: 10px 12px; color: var(--ink); background: white; }
+.field small { color: var(--muted); font-size: 12px; font-weight: 400; line-height: 1.5; }
+.field .error, .error { color: var(--accent-ink); }
+.results { border: 1px solid var(--line); background: var(--surface-subtle); padding: 24px; }
+.results h2 { margin: 0 0 8px; font-size: 22px; }
+.results p { color: var(--muted); line-height: 1.55; }
+.step { padding: 20px 0; border-bottom: 1px solid var(--line); }
+.step h3 { margin: 0 0 10px; font-size: 15px; }
+.amount { display: block; font-size: clamp(28px, 4vw, 38px); font-weight: 700; letter-spacing: -.03em; }
+.step dl { margin: 12px 0 0; display: grid; gap: 8px; }
+.step dl div { display: flex; justify-content: space-between; gap: 20px; font-size: 14px; }
+.step dd { margin: 0; font-weight: 600; text-align: right; }
+.notice { padding: 12px 14px; border-left: 3px solid var(--accent); background: var(--accent-tint); }
+.reset { justify-self: start; border: 1px solid var(--line-strong); padding: 10px 16px; background: white; cursor: pointer; border-radius: 4px; }
+@media(max-width: 760px) { .layout { grid-template-columns: 1fr; gap: 24px; } .results { padding: 20px; } }
+@media(max-width: 420px) { .fields { grid-template-columns: 1fr; } }

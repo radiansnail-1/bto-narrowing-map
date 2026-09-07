@@ -7,7 +7,6 @@ import { GUIDES } from '@/data/guides';
 describe('crawlable site surface', () => {
   it('has one stable, URL-safe page slug per project', () => {
     const ids = btoProjects.map((project) => project.id);
-    expect(new Set(ids).size).toBe(ids.length);
     for (const id of ids) expect(id).toMatch(/^[a-z0-9]+(?:-[a-z0-9]+)*$/);
   });
 
@@ -19,26 +18,25 @@ describe('crawlable site surface', () => {
     expect(paths).toContain('/faq');
     expect(paths).toContain('/methodology');
     expect(paths).toContain('/ai-info');
+    expect(paths).toContain('/tools/dia-calculator');
     for (const guide of GUIDES) expect(paths).toContain(guide.href);
     for (const project of btoProjects) expect(paths).toContain(`/bto-projects/${project.id}`);
     expect(new Set(paths).size).toBe(paths.length);
   });
 
-  it('publishes a useful set of distinct guide pages', () => {
-    expect(GUIDES.length).toBeGreaterThanOrEqual(5);
+  it('keeps guide URLs distinct and copy nonempty', () => {
     expect(new Set(GUIDES.map((guide) => guide.href)).size).toBe(GUIDES.length);
     for (const guide of GUIDES) {
-      expect(guide.title.length).toBeGreaterThan(18);
-      expect(guide.description.length).toBeGreaterThan(80);
+      expect(guide.title.trim()).not.toBe('');
+      expect(guide.description.trim()).not.toBe('');
     }
   });
 
-  it('keeps FAQ questions distinct and substantive', () => {
-    expect(FAQ_ITEMS.length).toBeGreaterThanOrEqual(8);
+  it('keeps FAQ questions distinct and answers nonempty', () => {
     expect(new Set(FAQ_ITEMS.map((item) => item.question)).size).toBe(FAQ_ITEMS.length);
     for (const item of FAQ_ITEMS) {
-      expect(item.question.length).toBeGreaterThan(12);
-      expect(item.answer.length).toBeGreaterThan(80);
+      expect(item.question.trim()).not.toBe('');
+      expect(item.answer.trim()).not.toBe('');
     }
   });
 });

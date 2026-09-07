@@ -8,5 +8,4 @@ export const workHubs: WorkHub[] = snapshot.workHubs.map((hub) => ({
   shortName: hub.name,
   position: geoToScenePosition(hub.coordinates)!,
   source: hub.source,
-  travelTime: null,
 }));

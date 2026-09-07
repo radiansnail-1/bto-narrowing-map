@@ -80,7 +80,7 @@ export function criterionAnswerLabel(key: CriterionKey, answers: ExplorerAnswers
   return WAITING_BANDS.find((band) => band.value === answers.waitingBand)?.label ?? 'No wait preference';
 }
 
-export function criterionReason(project: BtoProject, key: CriterionKey, status: MatchStatus, answers: ExplorerAnswers): string {
+export function criterionReason(key: CriterionKey, status: MatchStatus, answers: ExplorerAnswers): string {
   if (status === 'unanswered') return 'Not used';
   if (key === 'commute') {
     if (status === 'unknown') return 'Location not published';

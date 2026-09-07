@@ -82,7 +82,6 @@ export interface WorkHub {
   shortName: string;
   position: [number, number];
   source: string;
-  travelTime: null;
 }
 
 export interface ExplorerAnswers {

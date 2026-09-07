@@ -68,7 +68,7 @@ export function QuestionsView({ projectCount, step, answers, pinMode, onDropCust
               onAnswersChange({ ...answers, workHubIds: next, customWorkplace: null });
             }} aria-pressed={checked}><span className="choice-check">{checked ? '✓' : ''}</span><span>{hub.name}</span><small>straight-line screen</small></button>;
           })}
-          <button className={`custom-pin-button ${answers.customWorkplace ? 'is-placed' : ''}`} onClick={answers.customWorkplace ? onClearCustomPin : onDropCustomPin} data-testid="custom-pin-action">{pinMode ? 'Click the map to place pin' : answers.customWorkplace ? 'Remove custom workplace pin' : `＋ Drop custom workplace pin${answers.workHubIds.length ? ' · replaces hubs' : ''}`}</button>
+          <button className={`custom-pin-button ${answers.customWorkplace ? 'is-placed' : ''}`} onClick={answers.customWorkplace ? onClearCustomPin : onDropCustomPin} data-testid="custom-pin-action">{pinMode ? 'Tap the map to place pin' : answers.customWorkplace ? 'Remove custom workplace pin' : `＋ Drop custom workplace pin${answers.workHubIds.length ? ' · replaces hubs' : ''}`}</button>
           <p className="inline-note">Hubs use an equally weighted straight-line proximity screen (≤ 5 km); official transit times are not included. {answers.customWorkplace ? 'Custom pin uses the same straight-line rule, not a routed journey.' : 'Or skip this question and explore freely.'}</p>
           {(answers.workHubIds.length > 0 || answers.customWorkplace !== null) && <button type="button" className="clear-criterion" onClick={() => { onAnswersChange({ ...answers, workHubIds: [], customWorkplace: null }); onClearCustomPin(); }}>Clear regular destinations</button>}
         </div>

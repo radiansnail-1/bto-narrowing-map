@@ -6,6 +6,8 @@ export default defineConfig({
   timeout: 60_000,
   use: {
     baseURL: 'http://127.0.0.1:3000',
+    // Full Chromium can use the local GPU; headless-shell forces slow software GL.
+    channel: 'chromium',
     trace: 'retain-on-failure',
   },
   webServer: {

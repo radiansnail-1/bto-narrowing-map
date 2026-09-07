@@ -1,0 +1,240 @@
+[
+  {
+    "url": "https://wheretobto.com/",
+    "status": 200,
+    "final": "https://wheretobto.com/",
+    "canonical": "https://wheretobto.com",
+    "noindex": false
+  },
+  {
+    "url": "https://wheretobto.com/bto-projects",
+    "status": 200,
+    "final": "https://wheretobto.com/bto-projects",
+    "canonical": "https://wheretobto.com/bto-projects",
+    "noindex": false
+  },
+  {
+    "url": "https://wheretobto.com/guides",
+    "status": 200,
+    "final": "https://wheretobto.com/guides",
+    "canonical": "https://wheretobto.com/guides",
+    "noindex": false
+  },
+  {
+    "url": "https://wheretobto.com/guides/start-here",
+    "status": 200,
+    "final": "https://wheretobto.com/guides/start-here",
+    "canonical": "https://wheretobto.com/guides/start-here",
+    "noindex": false
+  },
+  {
+    "url": "https://wheretobto.com/guides/how-to-choose-a-bto-location",
+    "status": 200,
+    "final": "https://wheretobto.com/guides/how-to-choose-a-bto-location",
+    "canonical": "https://wheretobto.com/guides/how-to-choose-a-bto-location",
+    "noindex": false
+  },
+  {
+    "url": "https://wheretobto.com/guides/comparing-bto-commutes",
+    "status": 200,
+    "final": "https://wheretobto.com/guides/comparing-bto-commutes",
+    "canonical": "https://wheretobto.com/guides/comparing-bto-commutes",
+    "noindex": false
+  },
+  {
+    "url": "https://wheretobto.com/guides/checking-amenities-near-a-bto",
+    "status": 200,
+    "final": "https://wheretobto.com/guides/checking-amenities-near-a-bto",
+    "canonical": "https://wheretobto.com/guides/checking-amenities-near-a-bto",
+    "noindex": false
+  },
+  {
+    "url": "https://wheretobto.com/guides/understanding-bto-price-and-wait-data",
+    "status": 200,
+    "final": "https://wheretobto.com/guides/understanding-bto-price-and-wait-data",
+    "canonical": "https://wheretobto.com/guides/understanding-bto-price-and-wait-data",
+    "noindex": false
+  },
+  {
+    "url": "https://wheretobto.com/guides/handling-unpublished-bto-information",
+    "status": 200,
+    "final": "https://wheretobto.com/guides/handling-unpublished-bto-information",
+    "canonical": "https://wheretobto.com/guides/handling-unpublished-bto-information",
+    "noindex": false
+  },
+  {
+    "url": "https://wheretobto.com/faq",
+    "status": 200,
+    "final": "https://wheretobto.com/faq",
+    "canonical": "https://wheretobto.com/faq",
+    "noindex": false
+  },
+  {
+    "url": "https://wheretobto.com/methodology",
+    "status": 200,
+    "final": "https://wheretobto.com/methodology",
+    "canonical": "https://wheretobto.com/methodology",
+    "noindex": false
+  },
+  {
+    "url": "https://wheretobto.com/ai-info",
+    "status": 200,
+    "final": "https://wheretobto.com/ai-info",
+    "canonical": "https://wheretobto.com/ai-info",
+    "noindex": false
+  },
+  {
+    "url": "https://wheretobto.com/bto-projects/sembawang-voyage",
+    "status": 200,
+    "final": "https://wheretobto.com/bto-projects/sembawang-voyage",
+    "canonical": "https://wheretobto.com/bto-projects/sembawang-voyage",
+    "noindex": false
+  },
+  {
+    "url": "https://wheretobto.com/bto-projects/sembawang-deck",
+    "status": 200,
+    "final": "https://wheretobto.com/bto-projects/sembawang-deck",
+    "canonical": "https://wheretobto.com/bto-projects/sembawang-deck",
+    "noindex": false
+  },
+  {
+    "url": "https://wheretobto.com/bto-projects/tampines-bliss",
+    "status": 200,
+    "final": "https://wheretobto.com/bto-projects/tampines-bliss",
+    "canonical": "https://wheretobto.com/bto-projects/tampines-bliss",
+    "noindex": false
+  },
+  {
+    "url": "https://wheretobto.com/bto-projects/tampines-nova",
+    "status": 200,
+    "final": "https://wheretobto.com/bto-projects/tampines-nova",
+    "canonical": "https://wheretobto.com/bto-projects/tampines-nova",
+    "noindex": false
+  },
+  {
+    "url": "https://wheretobto.com/bto-projects/kim-keat-crest",
+    "status": 200,
+    "final": "https://wheretobto.com/bto-projects/kim-keat-crest",
+    "canonical": "https://wheretobto.com/bto-projects/kim-keat-crest",
+    "noindex": false
+  },
+  {
+    "url": "https://wheretobto.com/bto-projects/redhill-peaks",
+    "status": 200,
+    "final": "https://wheretobto.com/bto-projects/redhill-peaks",
+    "canonical": "https://wheretobto.com/bto-projects/redhill-peaks",
+    "noindex": false
+  },
+  {
+    "url": "https://wheretobto.com/bto-projects/sembawang-portico",
+    "status": 200,
+    "final": "https://wheretobto.com/bto-projects/sembawang-portico",
+    "canonical": "https://wheretobto.com/bto-projects/sembawang-portico",
+    "noindex": false
+  },
+  {
+    "url": "https://wheretobto.com/bto-projects/sembawang-brook",
+    "status": 200,
+    "final": "https://wheretobto.com/bto-projects/sembawang-brook",
+    "canonical": "https://wheretobto.com/bto-projects/sembawang-brook",
+    "noindex": false
+  },
+  {
+    "url": "https://wheretobto.com/bto-projects/woodgrove-acres",
+    "status": 200,
+    "final": "https://wheretobto.com/bto-projects/woodgrove-acres",
+    "canonical": "https://wheretobto.com/bto-projects/woodgrove-acres",
+    "noindex": false
+  },
+  {
+    "url": "https://wheretobto.com/bto-projects/kebun-baru-ridge",
+    "status": 200,
+    "final": "https://wheretobto.com/bto-projects/kebun-baru-ridge",
+    "canonical": "https://wheretobto.com/bto-projects/kebun-baru-ridge",
+    "noindex": false
+  },
+  {
+    "url": "https://wheretobto.com/bto-projects/kebun-baru-breeze",
+    "status": 200,
+    "final": "https://wheretobto.com/bto-projects/kebun-baru-breeze",
+    "canonical": "https://wheretobto.com/bto-projects/kebun-baru-breeze",
+    "noindex": false
+  },
+  {
+    "url": "https://wheretobto.com/bto-projects/lakeview-cascadia",
+    "status": 200,
+    "final": "https://wheretobto.com/bto-projects/lakeview-cascadia",
+    "canonical": "https://wheretobto.com/bto-projects/lakeview-cascadia",
+    "noindex": false
+  },
+  {
+    "url": "https://wheretobto.com/bto-projects/berlayar-rise",
+    "status": 200,
+    "final": "https://wheretobto.com/bto-projects/berlayar-rise",
+    "canonical": "https://wheretobto.com/bto-projects/berlayar-rise",
+    "noindex": false
+  },
+  {
+    "url": "https://wheretobto.com/bto-projects/nov-2026-bedok-unnamed",
+    "status": 200,
+    "final": "https://wheretobto.com/bto-projects/nov-2026-bedok-unnamed",
+    "canonical": "https://wheretobto.com/bto-projects/nov-2026-bedok-unnamed",
+    "noindex": false
+  },
+  {
+    "url": "https://wheretobto.com/bto-projects/nov-2026-geylang-unnamed",
+    "status": 200,
+    "final": "https://wheretobto.com/bto-projects/nov-2026-geylang-unnamed",
+    "canonical": "https://wheretobto.com/bto-projects/nov-2026-geylang-unnamed",
+    "noindex": false
+  },
+  {
+    "url": "https://wheretobto.com/bto-projects/nov-2026-sembawang-unnamed",
+    "status": 200,
+    "final": "https://wheretobto.com/bto-projects/nov-2026-sembawang-unnamed",
+    "canonical": "https://wheretobto.com/bto-projects/nov-2026-sembawang-unnamed",
+    "noindex": false
+  },
+  {
+    "url": "https://wheretobto.com/bto-projects/nov-2026-tengah-unnamed",
+    "status": 200,
+    "final": "https://wheretobto.com/bto-projects/nov-2026-tengah-unnamed",
+    "canonical": "https://wheretobto.com/bto-projects/nov-2026-tengah-unnamed",
+    "noindex": false
+  },
+  {
+    "url": "https://wheretobto.com/bto-projects/nov-2026-yishun-unnamed",
+    "status": 200,
+    "final": "https://wheretobto.com/bto-projects/nov-2026-yishun-unnamed",
+    "canonical": "https://wheretobto.com/bto-projects/nov-2026-yishun-unnamed",
+    "noindex": false
+  },
+  {
+    "url": "https://wheretobto.com/bto-projects/nov-2026-toa-payoh-west-caldecott",
+    "status": 200,
+    "final": "https://wheretobto.com/bto-projects/nov-2026-toa-payoh-west-caldecott",
+    "canonical": "https://wheretobto.com/bto-projects/nov-2026-toa-payoh-west-caldecott",
+    "noindex": false
+  },
+  {
+    "url": "https://wheretobto.com/bto-projects/lakeview-second-unnamed",
+    "status": 200,
+    "final": "https://wheretobto.com/bto-projects/lakeview-second-unnamed",
+    "canonical": "https://wheretobto.com/bto-projects/lakeview-second-unnamed",
+    "noindex": false
+  },
+  {
+    "url": "https://wheretobto.com/bto-projects/shunfu-unnamed",
+    "status": 200,
+    "final": "https://wheretobto.com/bto-projects/shunfu-unnamed",
+    "canonical": "https://wheretobto.com/bto-projects/shunfu-unnamed",
+    "noindex": false
+  },
+  {
+    "url": "https://wheretobto.com/bto-projects/pearls-hill-unnamed",
+    "status": 200,
+    "final": "https://wheretobto.com/bto-projects/pearls-hill-unnamed",
+    "canonical": "https://wheretobto.com/bto-projects/pearls-hill-unnamed",
+    "noindex": false
+  }
+]

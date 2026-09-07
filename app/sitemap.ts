@@ -7,12 +7,14 @@ import { absoluteUrl } from '@/lib/site';
 export default function sitemap(): MetadataRoute.Sitemap {
   const dataDate = new Date(`${DATA_CHECKED_DATE}T00:00:00Z`);
   const editorialDate = new Date('2026-08-29T00:00:00Z');
+  const updateDate = new Date('2026-09-07T00:00:00Z');
   const staticRoutes: MetadataRoute.Sitemap = [
-    { url: absoluteUrl('/'), lastModified: dataDate, changeFrequency: 'weekly', priority: 1 },
+    { url: absoluteUrl('/'), lastModified: updateDate, changeFrequency: 'weekly', priority: 1 },
     { url: absoluteUrl('/bto-projects'), lastModified: dataDate, changeFrequency: 'weekly', priority: 0.9 },
-    { url: absoluteUrl('/guides'), lastModified: editorialDate, changeFrequency: 'monthly', priority: 0.7 },
-    ...GUIDES.map((guide) => ({ url: absoluteUrl(guide.href), lastModified: editorialDate, changeFrequency: 'monthly' as const, priority: 0.8 })),
-    { url: absoluteUrl('/faq'), lastModified: editorialDate, changeFrequency: 'monthly', priority: 0.7 },
+    { url: absoluteUrl('/guides'), lastModified: updateDate, changeFrequency: 'monthly', priority: 0.7 },
+    ...GUIDES.map((guide) => ({ url: absoluteUrl(guide.href), lastModified: 'checkedDate' in guide ? new Date(`${guide.checkedDate}T00:00:00Z`) : editorialDate, changeFrequency: 'monthly' as const, priority: 0.8 })),
+    { url: absoluteUrl('/tools/dia-calculator'), lastModified: updateDate, changeFrequency: 'monthly', priority: 0.8 },
+    { url: absoluteUrl('/faq'), lastModified: updateDate, changeFrequency: 'monthly', priority: 0.7 },
     { url: absoluteUrl('/methodology'), lastModified: dataDate, changeFrequency: 'monthly', priority: 0.7 },
     { url: absoluteUrl('/ai-info'), lastModified: dataDate, changeFrequency: 'monthly', priority: 0.5 },
   ];

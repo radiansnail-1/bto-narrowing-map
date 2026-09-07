@@ -18,16 +18,20 @@ export const FALLBACK_BOUNDS = { x0: -22.5, z0: -8.6, x1: 18.6, z1: 18 };
 export const PAN_MARGIN = 3;
 export const FOCUS_SAFE_INSETS = { left: 260, right: 420, top: 24, bottom: 96 };
 
+/** Compact maps have their controls outside the canvas. */
+export function focusSafeInsets(width: number) {
+  return width < 1024 ? { left: 20, right: 20, top: 20, bottom: 20 } : FOCUS_SAFE_INSETS;
+}
+
 export type GroundBounds = { x0: number; z0: number; x1: number; z1: number };
 export type ZoomBounds = { min: number; max: number; overview: number; focus: number };
 
-export const PAN_KEYS = new Set(['ArrowUp', 'ArrowDown', 'ArrowLeft', 'ArrowRight']);
-
 /** Overview/focus zoom for a viewport, plus the wheel/pinch limits that keep the island framed and buildings readable. */
 export function zoomBounds(width: number, height: number): ZoomBounds {
-  const overview = THREE.MathUtils.clamp(Math.min((width - 200) / 43, (height - 120) / 24), 20, 60);
+  const compact = width < 1024;
+  const overview = THREE.MathUtils.clamp(Math.min((width - (compact ? 32 : 200)) / 43, (height - (compact ? 32 : 120)) / 24), compact ? 5 : 20, 60);
   const focus = focusZoomForRadius(width, height, 1 / 1.31);
-  return { min: Math.max(12, overview * 0.72), max: MAX_ZOOM, overview, focus };
+  return { min: Math.max(compact ? 3 : 12, overview * 0.72), max: MAX_ZOOM, overview, focus };
 }
 
 /**
@@ -36,11 +40,12 @@ export function zoomBounds(width: number, height: number): ZoomBounds {
  * keeps the boundary clear of the HUD, details card and bottom project tray.
  */
 export function focusZoomForRadius(width: number, height: number, radius: number, elevation = FOCUS_ELEVATION): number {
-  const usableWidth = Math.max(320, width - FOCUS_SAFE_INSETS.left - FOCUS_SAFE_INSETS.right);
-  const usableHeight = Math.max(280, height - FOCUS_SAFE_INSETS.top - FOCUS_SAFE_INSETS.bottom);
+  const insets = focusSafeInsets(width);
+  const usableWidth = Math.max(width < 1024 ? 100 : 320, width - insets.left - insets.right);
+  const usableHeight = Math.max(width < 1024 ? 100 : 280, height - insets.top - insets.bottom);
   const horizontal = usableWidth / (radius * 2.2);
   const vertical = usableHeight / (radius * 2.2 * Math.sin(elevation));
-  return THREE.MathUtils.clamp(Math.min(horizontal, vertical), 150, 420);
+  return THREE.MathUtils.clamp(Math.min(horizontal, vertical), width < 1024 ? 30 : 150, 420);
 }
 
 /** Camera offset from the target for an orbit azimuth/elevation at the fixed orbit distance. */

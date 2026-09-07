@@ -6,3 +6,8 @@
 .map-label-project.map-label-status-announced_upcoming { border-color: rgba(230, 167, 0, .45); color: #f1d58a; }
 .map-label-project.map-label-status-planned { border-color: rgba(144, 160, 225, .45); color: #c5ccef; }
 .map-label-project-wrapper { z-index: 3; }
+
+@media (max-width: 1023px) {
+  .map-label-project { position: relative; min-height: 28px; padding: 5px 7px; font-size: 10px; letter-spacing: .03em; }
+  .map-label-project::after { content: ''; position: absolute; inset: -8px 0; }
+}
