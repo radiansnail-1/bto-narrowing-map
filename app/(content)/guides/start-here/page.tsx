@@ -20,13 +20,13 @@ const steps = [
 export default function StartHereGuidePage() {
   const url = absoluteUrl('/guides/start-here');
   return <>
-    <JsonLd value={{ '@context': 'https://schema.org', '@type': 'Article', headline: 'How to Use Where To BTO', description: metadata.description, datePublished: '2026-08-29', dateModified: '2026-08-29', mainEntityOfPage: url, publisher: { '@type': 'Organization', name: 'Where To BTO', url: absoluteUrl('/') } }} />
+    <JsonLd value={{ '@context': 'https://schema.org', '@type': 'Article', headline: 'How to Use Where To BTO', description: metadata.description, datePublished: '2026-08-29', dateModified: '2026-09-07', mainEntityOfPage: url, publisher: { '@type': 'Organization', name: 'Where To BTO', url: absoluteUrl('/') } }} />
     <main className="content-main narrow-content">
       <nav className="breadcrumbs" aria-label="Breadcrumb"><Link href="/">Map</Link><span>/</span><Link href="/guides">Guides</Link><span>/</span><span>Start here</span></nav>
       <article>
-        <header className="content-hero"><h1>How to use Where To BTO</h1><p>A short walkthrough from first question to a small, explainable BTO shortlist.</p><p className="data-line">Updated 29 Aug 2026 · 3 minute read</p></header>
-        <section className="article-intro"><p>Where To BTO is a transparent first screen. It helps you organise the constraints that matter in an ordinary week, then shows which project facts are confirmed, missing, or a trade-off. It does not calculate eligibility, financing, or routed travel times.</p></section>
-        <div className="article-body">{steps.map(([title, body]) => <section key={title}><h2>{title}</h2><p>{body}</p></section>)}</div>
+        <header className="content-hero"><h1>How to use Where To BTO</h1><p>A short walkthrough from first question to a small, explainable BTO shortlist.</p><p className="data-line">Updated 7 Sep 2026 · 3 minute read</p></header>
+        <section className="article-intro"><p>Where To BTO is a transparent first screen. It helps you organise the constraints that matter in an ordinary week, then shows which project facts are confirmed, missing, or a trade-off. The map does not determine eligibility or use routed travel times for matching. The separate DIA calculator explores payment assumptions, while project transit links open current routes in Google Maps.</p></section>
+        <div className="article-body"><section><h2>On your phone</h2><p>The 3D map loads automatically. Use one finger to pan, pinch to zoom, and drag with two fingers to rotate. Tap a project to read its details, or use Browse projects. Reset view restores the selected project or the island overview. Scroll outside the canvas, or tap Narrow your options, to reach the questions.</p></section>{steps.map(([title, body]) => <section key={title}><h2>{title}</h2><p>{body}</p></section>)}</div>
         <aside className="content-callout"><h2>Try the flow</h2><p>Answer only the questions you can answer today. You can return to this guide and the map will keep your saved answers, results, project view, and shortlist on this device.</p><Link className="primary-link" href="/">Start narrowing</Link></aside>
         <section className="article-next"><h2>Next reads</h2><Link href="/guides/how-to-choose-a-bto-location">Build a location shortlist <span>→</span></Link><Link href="/guides/handling-unpublished-bto-information">Handle unpublished project information <span>→</span></Link></section>
       </article>

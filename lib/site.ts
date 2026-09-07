@@ -6,13 +6,11 @@ function withProtocol(value: string): string {
 }
 
 function resolveSiteUrl(): URL {
-  const configured = process.env.NEXT_PUBLIC_SITE_URL
-    ?? process.env.VERCEL_PROJECT_PRODUCTION_URL
-    ?? process.env.VERCEL_URL;
-  return new URL(configured ? withProtocol(configured) : 'http://localhost:3000');
+  const configured = process.env.NEXT_PUBLIC_SITE_URL;
+  return new URL(configured ? withProtocol(configured) : 'https://wheretobto.com');
 }
 
-/** Uses Vercel's stable production hostname automatically; a custom domain can override it. */
+/** The verified public domain stays canonical in local and preview builds too. */
 export const SITE_URL = resolveSiteUrl();
 
 export function absoluteUrl(path = '/'): string {

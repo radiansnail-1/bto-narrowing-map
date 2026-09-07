@@ -1,0 +1,26 @@
+import type { Metadata } from 'next';
+import Link from 'next/link';
+import DiaCalculator from '@/components/DiaCalculator';
+import { JsonLd } from '@/components/JsonLd';
+import { absoluteUrl } from '@/lib/site';
+
+export const metadata: Metadata = {
+  title: 'DIA Calculator — BTO Downpayment and Future Loan',
+  description: 'Explore Deferred Income Assessment payment timing for an uncompleted BTO flat: initial downpayment, future HDB loan, CPF, assumed grants and cash needed at keys.',
+  alternates: { canonical: '/tools/dia-calculator' },
+  openGraph: { title: 'DIA Calculator | Where To BTO', description: 'Model your initial downpayment, CPF, future loan and cash at keys.', url: '/tools/dia-calculator' },
+};
+const booking = 'https://www.hdb.gov.sg/buying-a-flat/bto-sbf-and-open-booking-of-flats/process-for-buying-a-new-flat/booking-of-flat';
+const loan = 'https://www.hdb.gov.sg/buying-a-flat/flat-grant-and-loan-eligibility/housing-loan/housing-loan-from-hdb';
+export default function DiaCalculatorPage() {
+  return <main className="content-main">
+    <JsonLd value={{ '@context': 'https://schema.org', '@type': 'WebApplication', name: 'Where To BTO DIA Calculator', url: absoluteUrl('/tools/dia-calculator'), description: metadata.description, applicationCategory: 'FinanceApplication', operatingSystem: 'Any', offers: { '@type': 'Offer', price: '0', priceCurrency: 'SGD' } }} />
+    <nav className="breadcrumbs" aria-label="Breadcrumb"><Link href="/">Map</Link><span>/</span><span>DIA calculator</span></nav>
+    <header className="content-hero"><h1>DIA calculator</h1><p>A smaller payment now. A clearer picture of what you may need at keys.</p></header>
+    <aside className="content-callout"><h2>Deferred Income Assessment, explained</h2><p>DIA lets eligible young couples have income assessed later for the Enhanced CPF Housing Grant (EHG) and an HDB housing loan. This calculator models an <strong>uncompleted BTO flat from the July 2025 sales exercise onwards, with DIA and a first HDB loan</strong>. It assumes a 99-year lease and that the full 75% loan-to-value limit is available, subject to income.</p><p>It estimates payments only. HDB confirms scheme eligibility; bank loans, completed flats, short leases and earlier applications need a different payment plan.</p></aside>
+    <DiaCalculator />
+    <section className="content-callout"><h2>Check that this scenario fits</h2><p>From July 2025, at least one partner must be a current full-time student or NSF, or have completed full-time studies or NS within 12 months before the HFE application. At HFE application, at least one partner must be aged 30 or below; the couple must be married or applying under the Fiancé/Fiancée Scheme, and at least one must be a first-timer. HDB verifies DIA at flat booking. <a href={booking}>Check HDB’s complete DIA conditions</a>.</p><p>For uncompleted flats, income assessment is approximately three months before completion. The 2.5% initial downpayment for eligible couples began with the June 2024 sales exercise; before July 2025, both partners had to meet the student/NSF condition. This tool uses the later scenario only. <a href="https://www.hdb.gov.sg/hdb-pulse/news/2024/greater-support-for-young-couples">Read HDB’s initial-downpayment announcement</a>.</p></section>
+    <section className="content-callout"><h2>What the estimate includes</h2><p>The initial payment uses cash and usable CPF savings. At keys, the assumed grant and remaining usable CPF reduce the balance before the modelled loan and cash payment. Grants are separate from your own CPF balance and are not assumed available at signing. Enter S$0 for the grant to test a scenario without one. Grants above 95% of price are outside this model: HDB requires at least 5% from your own cash/CPF in that case. Confirm the treatment of excess grants with HDB.</p><p>The monthly loan calculation uses monthly-rest amortisation. The assessment rate is the higher of 3% and the entered repayment rate. The model applies a 30% income limit and a 75% price cap; actual tenure is limited by 25 years, applicants’ average age and remaining lease. HDB’s concessionary rate is pegged 0.1 percentage point above CPF OA interest and reviewed quarterly. <a href={loan}>HDB loan and CPF-use rules</a>.</p><p>Income ceilings are not tested here. HDB announced a family ceiling of S$16,000 for new HFE applications from 24 August 2026, up from S$14,000. Existing HFE holders should check the transition rules and the policies applicable to their application. <a href="https://www.hdb.gov.sg/hdb-pulse/news/2026/increase-in-income-ceilings-and-greater-support-for-families-with-children">Read HDB’s dated announcement and annexes</a>.</p><p>Allow separately for stamp duty, legal fees, insurance, renovation, moving and an emergency reserve. This is a flat-price funding estimate, not the full cost of buying a home. <a href="https://www.hdb.gov.sg/buying-a-flat/bto-sbf-and-open-booking-of-flats/process-for-buying-a-new-flat/sign-agreement-for-lease">HDB payments at signing</a>.</p><p>Sources checked 7 September 2026. Future rules, income, approved grants and interest rates can change. Confirm your payment plan with HDB before committing.</p></section>
+    <p><Link className="secondary-link" href="/">Compare BTO locations on the map →</Link></p>
+  </main>;
+}

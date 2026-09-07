@@ -49,11 +49,3 @@ export function openAmenity(view: PanelView, amenityId: string): PanelView {
 export function closeAmenity(view: PanelView): PanelView {
   return view.kind === 'amenity' ? view.returnTo : view;
 }
-
-export function finishQuestions(): PanelView {
-  return RESULTS_VIEW;
-}
-
-export function editAnswers(): PanelView {
-  return QUESTIONS_VIEW;
-}

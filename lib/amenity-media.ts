@@ -45,11 +45,3 @@ export const amenityMedia = manifest as AmenityMediaManifest;
 
 export const amenityMediaById = new Map(amenityMedia.records.map((record) => [record.amenityId, record]));
 export const amenityMediaBlockerById = new Map((amenityMedia.blockers ?? []).map((blocker) => [blocker.amenityId, blocker]));
-
-export function mediaForAmenity(amenityId: string): AmenityMediaRecord | null {
-  return amenityMediaById.get(amenityId) ?? null;
-}
-
-export function mediaBlockerForAmenity(amenityId: string): AmenityMediaBlocker | null {
-  return amenityMediaBlockerById.get(amenityId) ?? null;
-}

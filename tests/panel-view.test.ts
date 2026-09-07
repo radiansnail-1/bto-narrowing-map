@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest';
 import {
-  QUESTIONS_VIEW, RESULTS_VIEW, closeAmenity, closeProject, editAnswers, finishQuestions, flowKindOf, openAmenity, openProject,
+  QUESTIONS_VIEW, RESULTS_VIEW, closeAmenity, closeProject, flowKindOf, openAmenity, openProject,
 } from '@/lib/panel-view';
 
 describe('panel view transitions', () => {
@@ -33,10 +33,5 @@ describe('panel view transitions', () => {
     const nested = openAmenity(openProject(RESULTS_VIEW), 'park-tiong-bahru');
     expect(flowKindOf(nested)).toBe('results');
     expect(flowKindOf(openAmenity(openProject(QUESTIONS_VIEW), 'mrt-redhill'))).toBe('questions');
-  });
-
-  it('transitions from finishing questions to results and back to editing answers', () => {
-    expect(finishQuestions()).toEqual(RESULTS_VIEW);
-    expect(editAnswers()).toEqual(QUESTIONS_VIEW);
   });
 });

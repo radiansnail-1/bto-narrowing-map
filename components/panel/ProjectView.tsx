@@ -4,6 +4,7 @@ import { amenityById } from '@/data/amenities';
 import Link from 'next/link';
 import { AMENITY_GROUPS, AMENITY_TYPE_LABELS, amenityGroupStyle } from '@/lib/amenity-groups';
 import type { FlowKind } from '@/lib/panel-view';
+import { TransitLinks } from '@/components/TransitLinks';
 import { MATCH_STATUS_LABELS, criterionReason } from '@/lib/results';
 import { CRITERIA, type Amenity, type BtoProject, type ExplorerAnswers, type ProjectMatch } from '@/lib/types';
 import { NOT_PUBLISHED, flatTypeList, priceText, waitingText } from './format';
@@ -43,7 +44,7 @@ export function ProjectView({ project, match, answers, returnTo, onClose, onOpen
         <div className="criteria-summary-label">Your criteria</div>
         {CRITERIA.map(({ key, label }) => {
           const status = match[key];
-          const detail = criterionReason(project, key, status, answers);
+          const detail = criterionReason(key, status, answers);
           return <div className="criteria-row" key={key}><span><strong>{label}</strong><em>{detail}</em></span><span className={`criteria-status ${status}`}>{MATCH_STATUS_LABELS[status]}</span></div>;
         })}
       </div>
@@ -65,6 +66,7 @@ export function ProjectView({ project, match, answers, returnTo, onClose, onOpen
       </div>
       <p className="project-summary">{project.summary}</p>
       <div className="project-guide-links"><strong>Useful next reads</strong>{!project.position && <Link href="/guides/handling-unpublished-bto-information">Why upcoming project data is incomplete →</Link>}{project.position && <Link href="/guides/comparing-bto-commutes">How to validate the commute →</Link>}{project.position && <Link href="/guides/checking-amenities-near-a-bto">What to check within 1 km →</Link>}<Link href="/guides/understanding-bto-price-and-wait-data">How to read price and wait data →</Link></div>
+      <TransitLinks project={project} answers={answers} />
       <p className="project-note">{project.dataNote}</p>
       <div className="source-links">{project.sourceUrls.slice(0, 2).map((url, index) => <a className="source-link" href={url} key={url} target="_blank" rel="noreferrer">{index === 0 ? 'HDB source' : 'Official detail'} ↗</a>)}</div>
       <p className="data-stamp">Official snapshot · checked {project.checkedDate}</p>

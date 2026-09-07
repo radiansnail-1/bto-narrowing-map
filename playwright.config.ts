@@ -4,12 +4,16 @@ export default defineConfig({
   testDir: './e2e',
   // The real map geometry is intentionally loaded in E2E; allow slower software WebGL runners room to finish.
   timeout: 60_000,
+  // Concurrent software-WebGL scenes compete for the runner's limited CPU.
+  workers: 1,
   use: {
     baseURL: 'http://127.0.0.1:3000',
+    // Full Chromium can use the local GPU; headless-shell forces slow software GL.
+    channel: 'chromium',
     trace: 'retain-on-failure',
   },
   webServer: {
-    command: 'npm run dev',
+    command: process.env.CI ? 'npm run start' : 'npm run dev',
     url: 'http://127.0.0.1:3000',
     reuseExistingServer: !process.env.CI,
   },

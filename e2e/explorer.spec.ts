@@ -222,11 +222,11 @@ test('crawlable project, FAQ, AI-info, sitemap, and robots surfaces are linked a
   await expect(page.getByText('44 months', { exact: true })).toBeVisible();
 
   await page.goto('/faq');
-  await expect(page.locator('.faq-list details')).toHaveCount(10);
+  await expect(page.locator('.faq-list details')).toHaveCount(11);
   await expect.poll(() => page.locator('script[type="application/ld+json"]').evaluate((element) => element.textContent)).toContain('FAQPage');
 
   await page.goto('/guides');
-  await expect(page.locator('.guide-row')).toHaveCount(6);
+  await expect(page.locator('.guide-row')).toHaveCount(9);
   await page.getByRole('link', { name: 'How to compare commutes before choosing a BTO', exact: true }).click();
   await expect(page.getByRole('heading', { name: 'How to compare commutes before choosing a BTO' })).toBeVisible();
 

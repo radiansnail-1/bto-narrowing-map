@@ -57,6 +57,16 @@ describe('keyboard panning', () => {
 });
 
 describe('zoom stability and bounds', () => {
+  it('keeps the island and selected context inside narrow mobile map viewports', () => {
+    for (const width of [320, 390, 767, 844, 1023]) {
+      const bounds = zoomBounds(width, 360);
+      expect(bounds.overview * 43).toBeLessThanOrEqual(width - 32);
+      expect(bounds.min).toBeLessThan(bounds.overview);
+      const radius = 1 / 1.31;
+      expect(radius * 2 * bounds.focus).toBeLessThanOrEqual(width - 40);
+      expect(radius * 2 * Math.sin(0.74) * bounds.focus).toBeLessThanOrEqual(320);
+    }
+  });
   it('derives overview, focus and wheel limits that nest correctly for the desktop viewport', () => {
     const bounds = zoomBounds(1600, 1000);
     expect(bounds.min).toBeLessThan(bounds.overview);

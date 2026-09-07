@@ -11,8 +11,8 @@ import { AMENITY_GROUPS } from '@/lib/amenity-groups';
 import { btoProjects } from '@/data/bto-projects';
 import { workHubs } from '@/data/work-hubs';
 import {
-  FALLBACK_BOUNDS, FOCUS_ELEVATION, FOCUS_SAFE_INSETS, KEY_PAN_EASE_SECONDS,
-  KEY_PAN_PX_PER_SECOND, OVERVIEW_AZIMUTH, OVERVIEW_ELEVATION, ZOOM_EASE_SECONDS, approach,
+  FALLBACK_BOUNDS, FOCUS_ELEVATION, focusSafeInsets, KEY_PAN_EASE_SECONDS,
+  KEY_PAN_PX_PER_SECOND, KEY_PAN_STEP_PX, OVERVIEW_AZIMUTH, OVERVIEW_ELEVATION, ZOOM_EASE_SECONDS, approach,
   clampTarget, clampZoom, isEditableTarget, keyPanDirection, orbitFromOffset, orbitOffset,
   panDisplacement, wheelZoomFactor, zoomAboutCursor, zoomBounds,
 } from '@/lib/camera';
@@ -33,9 +33,12 @@ interface MapSceneProps {
   onProjectSelect: (id: string) => void;
   onAmenitySelect: (amenity: Amenity) => void;
   onGroundSelect: (position: [number, number]) => void;
+  onCancelPin: () => void;
 }
 
 const BACKGROUND = '#050b12';
+// Explicitly enabled only for the CI test build; normal production exposes no test API.
+const exposeMapTestApi = process.env.NODE_ENV !== 'production' || process.env.NEXT_PUBLIC_MAP_TEST_API === '1';
 
 type FocusUniform = { value: THREE.Vector4 };
 type ScalarUniform = { value: number };
@@ -427,7 +430,7 @@ const OVERVIEW_TARGET = new THREE.Vector3(0.6, 0, 3.6);
 type CameraGoal = { target: THREE.Vector3; azimuth: number; elevation: number; zoom: number };
 const easeInOut = (t: number) => (t < 0.5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2);
 
-function CameraRig({ selectedPosition, shared, lite }: { selectedPosition: [number, number] | null; shared: SharedUniforms; lite: boolean }) {
+function CameraRig({ selectedPosition, shared, lite, touch, resetKey }: { resetKey: number; selectedPosition: [number, number] | null; shared: SharedUniforms; lite: boolean; touch: boolean }) {
   const focus = shared.focus;
   const invalidate = useThree((state) => state.invalidate);
   const camera = useThree((state) => state.camera as THREE.OrthographicCamera);
@@ -439,18 +442,27 @@ function CameraRig({ selectedPosition, shared, lite }: { selectedPosition: [numb
   const tween = useRef<{ from: CameraGoal; to: CameraGoal; startedAt: number; duration: number } | null>(null);
   const userOwned = useRef(false);
   const heldKeys = useRef(new Set<string>());
+  const pendingPanPixels = useRef(new THREE.Vector2());
   const panVelocity = useRef(new THREE.Vector2());
   const desiredZoom = useRef(camera.zoom);
   const zoomCursor = useRef(new THREE.Vector2());
   const focusStrength = useRef(0);
+  const framedSize = useRef(`${size.width},${size.height}`);
+  const getState = useThree((state) => state.get);
+  useEffect(() => {
+    if (!exposeMapTestApi) return;
+    Object.defineProperty(window, '__mapPendingFrames', { configurable: true, get: () => getState().internal.frames });
+    return () => { delete (window as unknown as { __mapPendingFrames?: number }).__mapPendingFrames; };
+  }, [getState]);
 
   const overviewGoal = (): CameraGoal => ({ target: OVERVIEW_TARGET.clone(), azimuth: OVERVIEW_AZIMUTH, elevation: OVERVIEW_ELEVATION, zoom: zoomBounds(size.width, size.height).overview });
   const focusGoal = (p: [number, number]): CameraGoal => {
     const zoom = zoomBounds(size.width, size.height).focus;
     const right = new THREE.Vector3(Math.cos(OVERVIEW_AZIMUTH), 0, -Math.sin(OVERVIEW_AZIMUTH));
     const forward = new THREE.Vector3(-Math.sin(OVERVIEW_AZIMUTH), 0, -Math.cos(OVERVIEW_AZIMUTH));
-    const horizontalOffsetPx = (FOCUS_SAFE_INSETS.left - FOCUS_SAFE_INSETS.right) / -2;
-    const verticalOffsetPx = (FOCUS_SAFE_INSETS.top - FOCUS_SAFE_INSETS.bottom) / 2;
+    const insets = focusSafeInsets(size.width);
+    const horizontalOffsetPx = (insets.left - insets.right) / -2;
+    const verticalOffsetPx = (insets.top - insets.bottom) / 2;
     return {
       target: new THREE.Vector3(p[0], 0, p[1]).addScaledVector(right, horizontalOffsetPx / zoom).addScaledVector(forward, verticalOffsetPx / zoom),
       azimuth: OVERVIEW_AZIMUTH,
@@ -471,13 +483,14 @@ function CameraRig({ selectedPosition, shared, lite }: { selectedPosition: [numb
   useEffect(() => {
     if (!controls) return;
     const onStart = () => { userOwned.current = true; tween.current = null; };
-    const onChange = () => invalidate();
+    const onChange = () => { if (touch) desiredZoom.current = camera.zoom; invalidate(); };
     controls.addEventListener('start', onStart);
     controls.addEventListener('change', onChange);
     return () => { controls.removeEventListener('start', onStart); controls.removeEventListener('change', onChange); };
-  }, [controls, invalidate]);
+  }, [camera, controls, invalidate, touch]);
 
   useEffect(() => {
+    if (touch) return; // OrbitControls owns native pinch/wheel zoom on touch devices.
     const element = gl.domElement;
     const onWheel = (event: WheelEvent) => {
       event.preventDefault();
@@ -491,12 +504,13 @@ function CameraRig({ selectedPosition, shared, lite }: { selectedPosition: [numb
     };
     element.addEventListener('wheel', onWheel, { passive: false });
     return () => element.removeEventListener('wheel', onWheel);
-  }, [camera, gl, invalidate, size.height, size.width]);
+  }, [camera, gl, invalidate, size.height, size.width, touch]);
 
   useEffect(() => {
     const onKeyDown = (event: KeyboardEvent) => {
       if (!['ArrowUp', 'ArrowDown', 'ArrowLeft', 'ArrowRight'].includes(event.key) || isEditableTarget(event.target)) return;
       event.preventDefault();
+      if (!heldKeys.current.has(event.key)) pendingPanPixels.current.add(keyPanDirection([event.key]).multiplyScalar(KEY_PAN_STEP_PX));
       heldKeys.current.add(event.key);
       userOwned.current = true;
       tween.current = null;
@@ -522,6 +536,8 @@ function CameraRig({ selectedPosition, shared, lite }: { selectedPosition: [numb
     // Software renderers snap like reduced motion: every tween frame would cost hundreds of milliseconds.
     const reduced = prefersReducedMotion() || lite;
     userOwned.current = false;
+    pendingPanPixels.current.set(0, 0);
+    panVelocity.current.set(0, 0);
     invalidate();
     if (!goalRef.current) {
       goalRef.current = goal;
@@ -537,13 +553,18 @@ function CameraRig({ selectedPosition, shared, lite }: { selectedPosition: [numb
     if (reduced) { apply(goal); tween.current = null; return; }
     tween.current = { from, to: goal, startedAt: performance.now(), duration: selectedPosition ? 1500 : 1300 };
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [controls, selectedKey]);
+  }, [controls, selectedKey, resetKey]);
 
-  // Keep the overview framed to the viewport while nobody has taken manual control.
+  // Reframe on rotation/resizing while nobody has taken manual control.
   useEffect(() => {
-    if (!controls || selectedPosition || !goalRef.current || tween.current || userOwned.current) return;
-    goalRef.current = overviewGoal();
+    const sizeKey = `${size.width},${size.height}`;
+    if (framedSize.current === sizeKey) return;
+    framedSize.current = sizeKey;
+    if (!controls || !goalRef.current || userOwned.current) return;
+    goalRef.current = selectedPosition ? focusGoal(selectedPosition) : overviewGoal();
+    tween.current = null;
     apply(goalRef.current);
+    invalidate();
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [size.width, size.height]);
 
@@ -553,7 +574,7 @@ function CameraRig({ selectedPosition, shared, lite }: { selectedPosition: [numb
     const dt = Math.min(delta, 0.1);
     const strengthTarget = selectedPosition ? 1 : 0;
     if (lite) focusStrength.current = strengthTarget;
-    else focusStrength.current += (strengthTarget - focusStrength.current) * (1 - Math.exp(-dt * 4));
+    else focusStrength.current = approach(focusStrength.current, strengthTarget, delta, 0.25);
     if (selectedPosition) focus.value.set(selectedPosition[0], selectedPosition[1], ONE_KM_SCENE_RADIUS, focusStrength.current);
     else focus.value.w = focusStrength.current;
     // Ribbons keep a near-constant on-screen weight instead of ballooning when zoomed in.
@@ -569,7 +590,9 @@ function CameraRig({ selectedPosition, shared, lite }: { selectedPosition: [numb
         zoom: Math.exp(THREE.MathUtils.lerp(Math.log(active.from.zoom), Math.log(active.to.zoom), k)),
       };
       apply(blended);
-      if (t >= 1) tween.current = null; else invalidate();
+      if (t >= 1) tween.current = null;
+      // Finish with one frame at rest so zoom-dependent uniforms and focus dimming settle too.
+      invalidate();
       return;
     }
     if (!userOwned.current) apply(goal);
@@ -580,14 +603,18 @@ function CameraRig({ selectedPosition, shared, lite }: { selectedPosition: [numb
         approach(panVelocity.current.x, requested.x, dt, KEY_PAN_EASE_SECONDS),
         approach(panVelocity.current.y, requested.y, dt, KEY_PAN_EASE_SECONDS),
       );
-      if (panVelocity.current.lengthSq() > 0.5) {
-        const shift = panDisplacement(panVelocity.current, orbit.azimuth, camera.zoom, dt);
+      if (panVelocity.current.lengthSq() > 0.5 || pendingPanPixels.current.lengthSq() > 0) {
+        const shift = panDisplacement(panVelocity.current, orbit.azimuth, camera.zoom, dt)
+          .add(panDisplacement(pendingPanPixels.current, orbit.azimuth, camera.zoom, 1));
+        pendingPanPixels.current.set(0, 0);
         const nextTarget = clampTarget(controls.target.clone().add(shift), FALLBACK_BOUNDS);
         camera.position.add(nextTarget.clone().sub(controls.target));
         controls.target.copy(nextTarget);
       }
-      const nextZoom = approach(camera.zoom, desiredZoom.current, dt, ZOOM_EASE_SECONDS);
-      if (Math.abs(nextZoom - camera.zoom) > 0.01) {
+      // Use the same remaining-distance cutoff as invalidation. A per-frame cutoff
+      // can stall before reaching it on high-refresh displays and render forever.
+      if (Math.abs(desiredZoom.current - camera.zoom) > 0.05) {
+        const nextZoom = approach(camera.zoom, desiredZoom.current, dt, ZOOM_EASE_SECONDS);
         camera.updateMatrixWorld();
         zoomAboutCursor(camera, controls.target, nextZoom, zoomCursor.current);
         const clamped = clampTarget(controls.target, FALLBACK_BOUNDS);
@@ -595,13 +622,17 @@ function CameraRig({ selectedPosition, shared, lite }: { selectedPosition: [numb
         controls.target.copy(clamped);
       }
       controls.update();
+      // Native touch pan must obey the same island bounds as keyboard and wheel.
+      const boundedTarget = clampTarget(controls.target, FALLBACK_BOUNDS);
+      camera.position.add(boundedTarget.clone().sub(controls.target));
+      controls.target.copy(boundedTarget);
       if (panVelocity.current.lengthSq() > 0.5 || Math.abs(desiredZoom.current - camera.zoom) > 0.05) invalidate();
     }
     if (!lite && Math.abs(focusStrength.current - strengthTarget) > 0.01) invalidate();
-    if (process.env.NODE_ENV !== 'production') (window as unknown as { __mapScene?: unknown; __mapGl?: unknown }).__mapScene = scene;
-    if (process.env.NODE_ENV !== 'production') (window as unknown as { __mapScene?: unknown; __mapGl?: unknown; __mapCam?: unknown }).__mapGl = gl;
-    if (process.env.NODE_ENV !== 'production') (window as unknown as { __mapCam?: unknown }).__mapCam = camera;
-    if (process.env.NODE_ENV !== 'production') (window as unknown as { __mapCamera?: unknown }).__mapCamera = { zoom: camera.zoom, size: [size.width, size.height], target: controls.target.toArray(), position: camera.position.toArray(), userOwned: userOwned.current, tween: Boolean(tween.current) };
+    if (exposeMapTestApi) (window as unknown as { __mapScene?: unknown; __mapGl?: unknown }).__mapScene = scene;
+    if (exposeMapTestApi) (window as unknown as { __mapScene?: unknown; __mapGl?: unknown; __mapCam?: unknown }).__mapGl = gl;
+    if (exposeMapTestApi) (window as unknown as { __mapCam?: unknown }).__mapCam = camera;
+    if (exposeMapTestApi) (window as unknown as { __mapCamera?: unknown }).__mapCamera = { zoom: camera.zoom, size: [size.width, size.height], target: controls.target.toArray(), position: camera.position.toArray(), userOwned: userOwned.current, tween: Boolean(tween.current) };
   });
   return null;
 }
@@ -635,11 +666,13 @@ function ShadowRig({ selectedPosition, shadows }: { selectedPosition: [number, n
 /* Scene                                                                                             */
 /* ----------------------------------------------------------------------------------------------- */
 
-type Quality = { shadows: boolean; effects: boolean; dpr: [number, number]; lite: boolean };
+type Quality = { shadows: boolean; effects: boolean; dpr: [number, number]; lite: boolean; touch: boolean };
 
 /** Software GL (headless Chromium, VMs) gets a lite path: no shadow pass, no post-processing, dpr 1. */
 function detectQuality(): Quality {
   const params = new URLSearchParams(window.location.search);
+  const touch = window.matchMedia('(pointer: coarse)').matches;
+  const compact = window.matchMedia('(max-width: 1023px)').matches;
   let software = params.has('lite');
   if (!software) {
     try {
@@ -650,10 +683,11 @@ function detectQuality(): Quality {
       probe?.getExtension('WEBGL_lose_context')?.loseContext();
     } catch { software = false; }
   }
-  return { shadows: !software && !params.has('noshadow'), effects: !software && !params.has('nofx'), dpr: software ? [1, 1] : [1, 1.5], lite: software };
+  const lite = software || compact;
+  return { shadows: !lite && !params.has('noshadow'), effects: !lite && !params.has('nofx'), dpr: lite ? [1, 1] : [1, 1.5], lite, touch };
 }
 
-function SceneContents({ matches, visibleGroups, selectedProjectId, customPin, pinMode, launchStatusFilter, onProjectSelect, onAmenitySelect, onGroundSelect, onReady, quality }: MapSceneProps & { onReady: () => void; quality: Quality }) {
+function SceneContents({ matches, visibleGroups, selectedProjectId, customPin, pinMode, launchStatusFilter, onProjectSelect, onAmenitySelect, onGroundSelect, onReady, quality, resetKey }: MapSceneProps & { onReady: () => void; quality: Quality; resetKey: number }) {
   const assets = useMapAssets();
   const shared = useMemo<SharedUniforms>(() => ({ focus: { value: new THREE.Vector4(0, 0, ONE_KM_SCENE_RADIUS, 0) }, widthScale: { value: 1 } }), []);
   const focus = shared.focus;
@@ -678,8 +712,8 @@ function SceneContents({ matches, visibleGroups, selectedProjectId, customPin, p
       {btoProjects.filter((project) => project.position !== null && (launchStatusFilter === 'all' || project.launchStatus === launchStatusFilter)).map((project) => <BtoCluster key={project.id} project={project} match={matches[project.id]} selected={project.id === selectedProjectId} pinMode={pinMode} onSelect={() => onProjectSelect(project.id)} onGroundSelect={onGroundSelect} />)}
       <Markers customPin={customPin} />
       {assets && <Labels assets={assets} matches={matches} selectedProjectId={selectedProjectId} pinMode={pinMode} launchStatusFilter={launchStatusFilter} onProjectSelect={onProjectSelect} />}
-      <CameraRig selectedPosition={selectedProject?.position ?? null} shared={shared} lite={quality.lite} />
-      <OrbitControls makeDefault enabled={!pinMode} enableDamping dampingFactor={0.09} enableZoom={false} minPolarAngle={0.3} maxPolarAngle={1.35} screenSpacePanning={false} />
+      <CameraRig selectedPosition={selectedProject?.position ?? null} shared={shared} lite={quality.lite} touch={quality.touch} resetKey={resetKey} />
+      <OrbitControls makeDefault touches={{ ONE: THREE.TOUCH.PAN, TWO: THREE.TOUCH.DOLLY_ROTATE }} enabled={!pinMode} enableDamping dampingFactor={0.09} enableZoom={quality.touch} minZoom={3} maxZoom={520} minPolarAngle={0.3} maxPolarAngle={1.35} screenSpacePanning={false} />
       {effects && <EffectComposer multisampling={0}>
         <Bloom mipmapBlur luminanceThreshold={0.8} luminanceSmoothing={0.2} intensity={0.55} radius={0.5} />
         <ToneMapping mode={ToneMappingMode.ACES_FILMIC} />
@@ -692,6 +726,7 @@ function SceneContents({ matches, visibleGroups, selectedProjectId, customPin, p
 
 export function MapScene(props: MapSceneProps) {
   const [ready, setReady] = useState(false);
+  const [resetKey, setResetKey] = useState(0);
   const [quality, setQuality] = useState<Quality | null>(null);
   useEffect(() => { setQuality(detectQuality()); }, []);
   useEffect(() => { document.body.style.cursor = 'default'; return () => { document.body.style.cursor = 'default'; }; }, [props.pinMode]);
@@ -700,9 +735,13 @@ export function MapScene(props: MapSceneProps) {
   const onReady = useMemo(() => () => setReady(true), []);
   return (
     <div className={`map-canvas ${props.pinMode ? 'is-pin-mode' : ''}`} aria-label="Interactive cinematic map of Singapore BTO locations" data-testid="map-boundary-state" data-boundary-state={boundaryState} data-map-ready={ready ? 'true' : 'false'} data-map-quality={quality ? (quality.effects ? 'full' : 'lite') : 'pending'}>
-      {quality && <Canvas orthographic frameloop={quality.lite ? 'demand' : 'always'} shadows={quality.shadows ? { type: THREE.PCFSoftShadowMap } : false} dpr={quality.dpr} gl={{ antialias: !quality.effects, powerPreference: 'high-performance', stencil: false }} camera={{ position: [0, 36, 48], zoom: 30, near: 0.5, far: 220 }}>
-        <SceneContents {...props} onReady={onReady} quality={quality} />
+      {quality && <Canvas orthographic frameloop="demand" shadows={quality.shadows ? { type: THREE.PCFSoftShadowMap } : false} dpr={quality.dpr} gl={{ antialias: !quality.effects, powerPreference: 'high-performance', stencil: false }} camera={{ position: [0, 36, 48], zoom: 30, near: 0.5, far: 220 }}>
+        <SceneContents {...props} onReady={onReady} quality={quality} resetKey={resetKey} />
       </Canvas>}
+      {!ready && <span className="map-loading-status" role="status">Loading map…</span>}
+      <div className="map-touch-controls">
+        {props.pinMode ? <button type="button" onClick={props.onCancelPin}>Cancel pin</button> : <button type="button" onClick={() => setResetKey((key) => key + 1)}>Reset view</button>}
+      </div>
     </div>
   );
 }

@@ -69,16 +69,14 @@ describe('explainable result criteria', () => {
   });
 
   it('explains pass, miss, unknown, and unanswered states plainly', () => {
-    const project = btoProjects[0];
     const answers = { ...baseAnswers, waitingBand: 'soon' as const };
-    expect(criterionReason(project, 'waiting', 'pass', answers)).toContain('within');
-    expect(criterionReason(project, 'waiting', 'miss', answers)).toContain('outside');
-    expect(criterionReason(project, 'waiting', 'unknown', answers)).toContain('not published');
-    expect(criterionReason(project, 'waiting', 'unanswered', baseAnswers)).toContain('Not used');
+    expect(criterionReason('waiting', 'pass', answers)).toContain('within');
+    expect(criterionReason('waiting', 'miss', answers)).toContain('outside');
+    expect(criterionReason('waiting', 'unknown', answers)).toContain('not published');
+    expect(criterionReason('waiting', 'unanswered', baseAnswers)).toContain('Not used');
   });
 
   it('does not call a missing budget ceiling an unpublished price', () => {
-    const project = btoProjects[0];
-    expect(criterionReason(project, 'budget', 'unknown', { ...baseAnswers, flatType: '4-room' })).toBe('Add a maximum price to compare');
+    expect(criterionReason('budget', 'unknown', { ...baseAnswers, flatType: '4-room' })).toBe('Add a maximum price to compare');
   });
 });

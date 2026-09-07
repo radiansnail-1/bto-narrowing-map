@@ -58,7 +58,7 @@ describe('project matching', () => {
 
   it('matches either food type through the shared food-and-shopping group', () => {
     const template = btoProjects.find((project) => project.id === 'tampines-bliss')!;
-    const answers = { ...baseAnswers, amenityGroups: ['food-shopping'] as const };
+    const answers: ExplorerAnswers = { ...baseAnswers, amenityGroups: ['food-shopping'] };
     expect(matchProject({ ...template, amenityIds: ['hawker-tampines-round'] }, answers).amenities).toBe('pass');
     expect(matchProject({ ...template, amenityIds: ['shopping-tampines-mall'] }, answers).amenities).toBe('pass');
     expect(matchProject({ ...template, amenityIds: ['mrt-tampines-east'] }, answers).amenities).toBe('miss');

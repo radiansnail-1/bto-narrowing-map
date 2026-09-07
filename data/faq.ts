@@ -26,7 +26,7 @@ export const FAQ_ITEMS: FaqItem[] = [
   },
   {
     question: 'Are commute times live public-transport estimates?',
-    answer: 'No. Preset workplace matching uses straight-line distance to one or two selected workplace anchors, with a 5 km threshold. A custom workplace pin uses the same rule. The tool does not claim live or routed travel times.',
+    answer: 'No. Preset workplace matching uses straight-line distance to one or two selected workplace anchors, with a 5 km threshold. A custom workplace pin uses the same rule. Project details provide free Google Maps transit links, where you can choose a departure time and check current estimates. The map filter itself does not use routed travel times.',
   },
   {
     question: 'How is the budget criterion calculated?',
@@ -39,6 +39,10 @@ export const FAQ_ITEMS: FaqItem[] = [
   {
     question: 'How current is the project information?',
     answer: 'Every project record carries a checked date and source links. The site also shows the latest full snapshot audit date. BTO information changes, so the linked HDB sources remain authoritative.',
+  },
+  {
+    question: 'Can I estimate my Deferred Income Assessment payments?',
+    answer: 'The DIA calculator models initial downpayment, usable CPF, an assumed grant, future HDB loan and cash needed at keys for its stated uncompleted-flat scenario. It does not determine DIA eligibility, award a grant or guarantee a loan. Keep stamp duty, legal fees and other costs separate.',
   },
   {
     question: 'Can Where To BTO determine whether I am eligible to apply?',

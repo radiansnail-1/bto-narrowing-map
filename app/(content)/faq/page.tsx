@@ -24,6 +24,7 @@ export default function FaqPage() {
         <nav className="breadcrumbs" aria-label="Breadcrumb"><Link href="/">Map</Link><span>/</span><span>FAQ</span></nav>
         <header className="content-hero"><h1>About the BTO map and its data</h1><p>Clear answers about what Where To BTO does, how the four criteria work, and which decisions still belong on official HDB services.</p></header>
         <section className="faq-list" aria-label="Questions and answers">{FAQ_ITEMS.map((item, index) => <details key={item.question} open={index === 0}><summary>{item.question}<span aria-hidden="true">+</span></summary><div><p>{item.answer}</p>{index === 1 && <p><a href="https://www.hdb.gov.sg/buying-a-flat/bto-sbf-and-open-booking-of-flats/finding-a-new-flat" rel="noreferrer">Open HDB’s official new-flat guidance</a>.</p>}</div></details>)}</section>
+        <p><Link href="/tools/dia-calculator">Try the DIA calculator</Link> · <Link href="/guides/dia-hfe-and-housing-grants">Understand DIA and grant timing</Link> · <Link href="/guides/comparing-bto-commutes">Check your commute</Link></p>
         <aside className="content-callout"><h2>Still comparing locations?</h2><p>Use the map to answer only the criteria that matter to you, then inspect the grouped results without a hidden ranking.</p><Link className="primary-link" href="/">Open the interactive map</Link></aside>
       </main>
     </>
