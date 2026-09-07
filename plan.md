@@ -1,8 +1,8 @@
 # Where To BTO — Plan
 
 **Goal:** Help couples build an explainable BTO shortlist with an accessible 3D map and source-backed planning tools.
-**Status:** Mobile, performance, DIA, transit-link and editorial improvements are implemented and locally verified. The checkpoint is intended for PR merge after required CI passes; GitHub is the authority for delivery state.
-**Next action:** Inspect the checkpoint PR. After merge, handle deployment separately and inspect representative Search Console exclusions against the deployed canonical pages.
+**Status:** Mobile, performance, DIA, transit-link and editorial improvements are implemented and locally verified. PR #7 is open. Corrective changes address CI failures; the final head must pass required CI and receive the required approving/code-owner review before merge. GitHub is the authority for delivery state.
+**Next action:** Inspect https://github.com/radiansnail-1/bto-narrowing-map/pull/7 and its required checks/review. After merge, handle deployment separately and inspect representative Search Console exclusions against the deployed canonical pages.
 
 ## Resume state
 
@@ -10,9 +10,10 @@
 - **Checkpoint branch:** `codex/handoff-mobile-dia-seo`
 - **Base:** `main`; implementation began from `b2af53c`.
 - **Resume:** `gh pr status`
-- **Evidence already produced:** `npm run test` — 72 tests in 11 files; `npx playwright test --workers=1` — 13 passed together; `npm run lint` — passed; `npm run build` — passed with TypeScript validation and 45 generated static pages; `git diff --check` — passed.
+- **Evidence already produced:** `npm run test` — 72 tests in 11 files; browser suite — 14 passed together against the production test build with forced SwiftShader (`--use-angle=swiftshader --enable-unsafe-swiftshader`, one worker); `npm run lint` — passed; `NEXT_PUBLIC_MAP_TEST_API=1 npm run build` — passed with TypeScript validation and 45 generated static pages; `git diff --check` — passed.
 - **Browser evidence:** Chromium mobile emulation at 320/390px and 844px landscape/1023px; automatic map loading, pan/pinch/rotate/reset, pin placement/cancellation, selected-project resize, full questionnaire, DIA validation and three new articles. Desktop flows and demand-rendering regression passed.
 - **Limits:** Physical iPhone/Safari, older integrated GPUs and deployed behavior of this patch remain unverified. Local production smoke had no application runtime exceptions; Vercel analytics returns 404 outside Vercel hosting.
+- **CI correction:** Queued short arrow taps survive between frames; focus fades use actual elapsed time; idle checks inspect the queued-frame count. CI runs sequential browser checks against the built app and uploads failure traces. The original pan/idle/shortlist failures were reproduced with concurrent software rendering; the corrected full software-rendered suite passed.
 - **External blocker:** Search Console's detailed exclusion tables stalled. The aggregate report is recorded, but individual excluded URLs and submitted-sitemap status remain unverified.
 
 ## Product state
@@ -44,6 +45,7 @@
 
 ## Boundaries and pointers
 
+- RMS wiki is the user-confirmed destination for durable product notes after verified merge; preserve its unrelated existing edits.
 - No backend/CMS/auth, ranking engine, bus-stop layer, new UI dependency, paid API, deployment or Search Console submission is part of this checkpoint.
 - Never invent unpublished HDB facts or imply Government endorsement. Keep official records, visual geometry and licensed media separate; exclude `work/geo-raw/`.
 - Evidence and source limitations: `artifacts/mobile-seo-audit.md`, `artifacts/codebase-audit.md`, `artifacts/dia-research.md`, `artifacts/reddit-content-research.md`, `artifacts/transit-and-reference-research.md`.

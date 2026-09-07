@@ -45,6 +45,8 @@ npm run build
 npm run test:e2e
 ```
 
+CI runs browser tests sequentially against the production build to avoid cold development compilation and competing software-WebGL scenes. Its build enables `NEXT_PUBLIC_MAP_TEST_API=1` for camera diagnostics; ordinary production builds omit that test API. Failed CI runs retain Playwright traces for seven days.
+
 The map asset contract is also covered by tests: processed asset size, geometry sanity, transport classes, station coverage, and the absence of raw GeoJSON in `public/map/`.
 
 SEO integrity tests cover unique project slugs, complete sitemap inclusion, substantive FAQ copy, canonical metadata, structured data, visible official-source sections, and crawl access. The content routes are statically generated; important project facts are available as semantic HTML rather than only inside the Three.js canvas.

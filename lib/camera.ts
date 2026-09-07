@@ -11,6 +11,8 @@ export const FOCUS_ELEVATION = 0.74;
 export const MAX_ZOOM = 520;
 /** Screen-space keyboard pan speed. Divided by the camera zoom it becomes a constant on-screen speed at any zoom. */
 export const KEY_PAN_PX_PER_SECOND = 760;
+/** A discrete arrow tap remains visible even if key-up arrives before the next frame. */
+export const KEY_PAN_STEP_PX = 24;
 export const KEY_PAN_EASE_SECONDS = 0.11;
 export const ZOOM_EASE_SECONDS = 0.085;
 /** Fallback island extent in scene units (manifest bounds replace it once assets load). */

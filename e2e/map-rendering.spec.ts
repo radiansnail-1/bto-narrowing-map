@@ -4,16 +4,14 @@ import type { OrthographicCamera, WebGLRenderer } from 'three';
 type MapWindow = Window & {
   __mapGl: WebGLRenderer;
   __mapCam: OrthographicCamera;
+  __mapPendingFrames: number;
 };
 
 async function expectIdle(page: Page) {
-  // Wait for animation/damping to finish, then prove the renderer stays asleep.
+  // A gap between slow software-rendered frames is not proof of idle.
+  // Wait until R3F has no queued frame, then verify the render counter stays put.
   const frame = () => page.evaluate(() => (window as unknown as MapWindow).__mapGl.info.render.frame);
-  await expect.poll(async () => {
-    const before = await frame();
-    await page.waitForTimeout(250);
-    return (await frame()) - before;
-  }, { timeout: 15_000 }).toBe(0);
+  await expect.poll(() => page.evaluate(() => (window as unknown as MapWindow).__mapPendingFrames), { timeout: 15_000 }).toBe(0);
   const before = await frame();
   await page.waitForTimeout(750);
   expect(await frame()).toBe(before);
@@ -62,5 +60,20 @@ test('animated map wakes for camera changes and sleeps when idle without fetchin
   await page.mouse.move(600, 450);
   await page.mouse.wheel(0, -200);
   await expect.poll(zoom).toBeGreaterThan(overviewZoom + 5);
+  await expectIdle(page);
+});
+
+test('an arrow tap queued between frames still moves the map', async ({ page }) => {
+  await page.goto('/?lite=1');
+  await expect(page.getByTestId('map-boundary-state')).toHaveAttribute('data-map-ready', 'true', { timeout: 30_000 });
+  await page.waitForFunction(() => Boolean((window as unknown as MapWindow).__mapCam));
+  await expectIdle(page);
+  const before = await page.evaluate(() => (window as unknown as MapWindow).__mapCam.position.x);
+  // Reproduce a busy renderer delivering both keyboard events before its next frame.
+  await page.evaluate(() => {
+    window.dispatchEvent(new KeyboardEvent('keydown', { key: 'ArrowRight' }));
+    window.dispatchEvent(new KeyboardEvent('keyup', { key: 'ArrowRight' }));
+  });
+  await expect.poll(() => page.evaluate(() => (window as unknown as MapWindow).__mapCam.position.x)).toBeGreaterThan(before);
   await expectIdle(page);
 });

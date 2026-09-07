@@ -1,5 +1,12 @@
 # Changelog
 
+## 2026-09-07 — CI failure correction
+
+- Reproduced the desktop pan, idle-rendering and shortlist timeout failures under concurrent software rendering; separately proved that a key tap released before a frame was lost.
+- Retained a discrete pan step for short arrow taps and changed visual focus fading to elapsed time rather than a capped frame delta.
+- Made the idle regression wait for an empty frame queue, added a between-frame key-tap regression, and ran browser checks sequentially against the production test build with failure trace retention.
+- Verified 72 unit tests, lint and the production test build; all 14 browser checks passed together under forced SwiftShader. PR #7's final required CI and review remain GitHub-owned merge gates.
+
 ## 2026-09-07 — Mobile, DIA, transit and planning content
 
 - Fixed the desktop minimum-width layout on phones while keeping the 3D map automatically loaded; added intuitive touch pan/pinch/rotation, reset and pin cancellation, responsive focus and bounded native pan.

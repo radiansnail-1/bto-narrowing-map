@@ -12,7 +12,7 @@ import { btoProjects } from '@/data/bto-projects';
 import { workHubs } from '@/data/work-hubs';
 import {
   FALLBACK_BOUNDS, FOCUS_ELEVATION, focusSafeInsets, KEY_PAN_EASE_SECONDS,
-  KEY_PAN_PX_PER_SECOND, OVERVIEW_AZIMUTH, OVERVIEW_ELEVATION, ZOOM_EASE_SECONDS, approach,
+  KEY_PAN_PX_PER_SECOND, KEY_PAN_STEP_PX, OVERVIEW_AZIMUTH, OVERVIEW_ELEVATION, ZOOM_EASE_SECONDS, approach,
   clampTarget, clampZoom, isEditableTarget, keyPanDirection, orbitFromOffset, orbitOffset,
   panDisplacement, wheelZoomFactor, zoomAboutCursor, zoomBounds,
 } from '@/lib/camera';
@@ -37,6 +37,8 @@ interface MapSceneProps {
 }
 
 const BACKGROUND = '#050b12';
+// Explicitly enabled only for the CI test build; normal production exposes no test API.
+const exposeMapTestApi = process.env.NODE_ENV !== 'production' || process.env.NEXT_PUBLIC_MAP_TEST_API === '1';
 
 type FocusUniform = { value: THREE.Vector4 };
 type ScalarUniform = { value: number };
@@ -440,11 +442,18 @@ function CameraRig({ selectedPosition, shared, lite, touch, resetKey }: { resetK
   const tween = useRef<{ from: CameraGoal; to: CameraGoal; startedAt: number; duration: number } | null>(null);
   const userOwned = useRef(false);
   const heldKeys = useRef(new Set<string>());
+  const pendingPanPixels = useRef(new THREE.Vector2());
   const panVelocity = useRef(new THREE.Vector2());
   const desiredZoom = useRef(camera.zoom);
   const zoomCursor = useRef(new THREE.Vector2());
   const focusStrength = useRef(0);
   const framedSize = useRef(`${size.width},${size.height}`);
+  const getState = useThree((state) => state.get);
+  useEffect(() => {
+    if (!exposeMapTestApi) return;
+    Object.defineProperty(window, '__mapPendingFrames', { configurable: true, get: () => getState().internal.frames });
+    return () => { delete (window as unknown as { __mapPendingFrames?: number }).__mapPendingFrames; };
+  }, [getState]);
 
   const overviewGoal = (): CameraGoal => ({ target: OVERVIEW_TARGET.clone(), azimuth: OVERVIEW_AZIMUTH, elevation: OVERVIEW_ELEVATION, zoom: zoomBounds(size.width, size.height).overview });
   const focusGoal = (p: [number, number]): CameraGoal => {
@@ -501,6 +510,7 @@ function CameraRig({ selectedPosition, shared, lite, touch, resetKey }: { resetK
     const onKeyDown = (event: KeyboardEvent) => {
       if (!['ArrowUp', 'ArrowDown', 'ArrowLeft', 'ArrowRight'].includes(event.key) || isEditableTarget(event.target)) return;
       event.preventDefault();
+      if (!heldKeys.current.has(event.key)) pendingPanPixels.current.add(keyPanDirection([event.key]).multiplyScalar(KEY_PAN_STEP_PX));
       heldKeys.current.add(event.key);
       userOwned.current = true;
       tween.current = null;
@@ -526,6 +536,8 @@ function CameraRig({ selectedPosition, shared, lite, touch, resetKey }: { resetK
     // Software renderers snap like reduced motion: every tween frame would cost hundreds of milliseconds.
     const reduced = prefersReducedMotion() || lite;
     userOwned.current = false;
+    pendingPanPixels.current.set(0, 0);
+    panVelocity.current.set(0, 0);
     invalidate();
     if (!goalRef.current) {
       goalRef.current = goal;
@@ -562,7 +574,7 @@ function CameraRig({ selectedPosition, shared, lite, touch, resetKey }: { resetK
     const dt = Math.min(delta, 0.1);
     const strengthTarget = selectedPosition ? 1 : 0;
     if (lite) focusStrength.current = strengthTarget;
-    else focusStrength.current += (strengthTarget - focusStrength.current) * (1 - Math.exp(-dt * 4));
+    else focusStrength.current = approach(focusStrength.current, strengthTarget, delta, 0.25);
     if (selectedPosition) focus.value.set(selectedPosition[0], selectedPosition[1], ONE_KM_SCENE_RADIUS, focusStrength.current);
     else focus.value.w = focusStrength.current;
     // Ribbons keep a near-constant on-screen weight instead of ballooning when zoomed in.
@@ -591,8 +603,10 @@ function CameraRig({ selectedPosition, shared, lite, touch, resetKey }: { resetK
         approach(panVelocity.current.x, requested.x, dt, KEY_PAN_EASE_SECONDS),
         approach(panVelocity.current.y, requested.y, dt, KEY_PAN_EASE_SECONDS),
       );
-      if (panVelocity.current.lengthSq() > 0.5) {
-        const shift = panDisplacement(panVelocity.current, orbit.azimuth, camera.zoom, dt);
+      if (panVelocity.current.lengthSq() > 0.5 || pendingPanPixels.current.lengthSq() > 0) {
+        const shift = panDisplacement(panVelocity.current, orbit.azimuth, camera.zoom, dt)
+          .add(panDisplacement(pendingPanPixels.current, orbit.azimuth, camera.zoom, 1));
+        pendingPanPixels.current.set(0, 0);
         const nextTarget = clampTarget(controls.target.clone().add(shift), FALLBACK_BOUNDS);
         camera.position.add(nextTarget.clone().sub(controls.target));
         controls.target.copy(nextTarget);
@@ -615,10 +629,10 @@ function CameraRig({ selectedPosition, shared, lite, touch, resetKey }: { resetK
       if (panVelocity.current.lengthSq() > 0.5 || Math.abs(desiredZoom.current - camera.zoom) > 0.05) invalidate();
     }
     if (!lite && Math.abs(focusStrength.current - strengthTarget) > 0.01) invalidate();
-    if (process.env.NODE_ENV !== 'production') (window as unknown as { __mapScene?: unknown; __mapGl?: unknown }).__mapScene = scene;
-    if (process.env.NODE_ENV !== 'production') (window as unknown as { __mapScene?: unknown; __mapGl?: unknown; __mapCam?: unknown }).__mapGl = gl;
-    if (process.env.NODE_ENV !== 'production') (window as unknown as { __mapCam?: unknown }).__mapCam = camera;
-    if (process.env.NODE_ENV !== 'production') (window as unknown as { __mapCamera?: unknown }).__mapCamera = { zoom: camera.zoom, size: [size.width, size.height], target: controls.target.toArray(), position: camera.position.toArray(), userOwned: userOwned.current, tween: Boolean(tween.current) };
+    if (exposeMapTestApi) (window as unknown as { __mapScene?: unknown; __mapGl?: unknown }).__mapScene = scene;
+    if (exposeMapTestApi) (window as unknown as { __mapScene?: unknown; __mapGl?: unknown; __mapCam?: unknown }).__mapGl = gl;
+    if (exposeMapTestApi) (window as unknown as { __mapCam?: unknown }).__mapCam = camera;
+    if (exposeMapTestApi) (window as unknown as { __mapCamera?: unknown }).__mapCamera = { zoom: camera.zoom, size: [size.width, size.height], target: controls.target.toArray(), position: camera.position.toArray(), userOwned: userOwned.current, tween: Boolean(tween.current) };
   });
   return null;
 }
