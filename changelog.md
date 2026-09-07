@@ -6,6 +6,7 @@
 - Retained a discrete pan step for short arrow taps and changed visual focus fading to elapsed time rather than a capped frame delta.
 - Made the idle regression wait for an empty frame queue, added a between-frame key-tap regression, and ran browser checks sequentially against the production test build with failure trace retention.
 - Verified 72 unit tests, lint and the production test build; all 14 browser checks passed together under forced SwiftShader. PR #7's final required CI and review remain GitHub-owned merge gates.
+- The subsequent Linux run passed 13 checks; its combined mobile gesture/resize test exhausted the whole-test budget. Separated resize coverage and replaced repeated resets with one reset asserting zoom, target and orbit. Both revised software-rendered checks passed locally; the suite now has 15 checks.
 
 ## 2026-09-07 — Mobile, DIA, transit and planning content
 

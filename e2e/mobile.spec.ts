@@ -26,7 +26,7 @@ test('mobile loads the map and can narrow and open transit routes', async ({ pag
   await expect(page.locator('canvas')).toHaveCount(1);
 });
 
-test('mobile map supports pan, pinch, rotate, reset and reframes selection on resize', async ({ page, context }) => {
+test('mobile map supports pan, pinch, rotate and reset', async ({ page, context }) => {
   test.setTimeout(90_000);
   await page.goto('/');
   const map = page.getByTestId('map-boundary-state');
@@ -47,21 +47,28 @@ test('mobile map supports pan, pinch, rotate, reset and reframes selection on re
   await expect.poll(async () => (await camera()).target[0]).not.toBeCloseTo(beforePan.target[0], 1);
   const orbit = (state: typeof beforePan) => Math.atan2(state.position[0] - state.target[0], state.position[2] - state.target[2]);
   expect(orbit(await camera())).toBeCloseTo(orbit(beforePan), 2);
-  await page.getByRole('button', { name: 'Reset view', exact: true }).click();
   const fingers = (distance: number) => [{ x: x - distance, y, id: 1 }, { x: x + distance, y, id: 2 }];
   await session.send('Input.dispatchTouchEvent', { type: 'touchStart', touchPoints: fingers(30) });
   for (const distance of [40, 55, 70, 85]) await session.send('Input.dispatchTouchEvent', { type: 'touchMove', touchPoints: fingers(distance) });
   await session.send('Input.dispatchTouchEvent', { type: 'touchEnd', touchPoints: [] });
   await expect.poll(zoom).toBeGreaterThan(before * 1.2);
-  await page.getByRole('button', { name: 'Reset view', exact: true }).click();
-  await expect.poll(zoom).toBeCloseTo(before, 1);
   const beforeRotate = await camera();
   await session.send('Input.dispatchTouchEvent', { type: 'touchStart', touchPoints: fingers(40) });
   for (const shift of [15, 30, 45]) await session.send('Input.dispatchTouchEvent', { type: 'touchMove', touchPoints: fingers(40).map((point) => ({ ...point, x: point.x + shift })) });
   await session.send('Input.dispatchTouchEvent', { type: 'touchEnd', touchPoints: [] });
   await expect.poll(async () => orbit(await camera())).not.toBeCloseTo(orbit(beforeRotate), 1);
   await page.getByRole('button', { name: 'Reset view', exact: true }).click();
+  await expect.poll(zoom).toBeCloseTo(before, 1);
+  await expect.poll(async () => (await camera()).target[0]).toBeCloseTo(beforePan.target[0], 2);
+  await expect.poll(async () => (await camera()).target[2]).toBeCloseTo(beforePan.target[2], 2);
+  await expect.poll(async () => orbit(await camera())).toBeCloseTo(orbit(beforePan), 2);
+});
+
+test('mobile map reframes the selected project after a viewport resize', async ({ page }) => {
   await page.setViewportSize({ width: 767, height: 844 });
+  await page.goto('/');
+  await expect(page.getByTestId('map-boundary-state')).toHaveAttribute('data-map-ready', 'true', { timeout: 30_000 });
+  const zoom = () => page.evaluate(() => (window as unknown as { __mapCamera: { zoom: number } }).__mapCamera.zoom);
   await page.getByRole('button', { name: /Browse 22 projects/ }).click();
   await page.getByRole('button', { name: 'Redhill Peaks', exact: true }).click();
   await expect.poll(zoom).toBeGreaterThan(270);
