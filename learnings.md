@@ -35,3 +35,8 @@
 - **Index exclusions are not all defects** — expected redirects should remain redirects. Discovered-but-not-indexed pages have not yet been crawled; successful public HTTP responses do not prove Google fetched or indexed them. Report aggregate status separately from unavailable URL-level evidence.
 
 **Last updated:** 2026-09-07
+
+- **A guide date is not a project-data audit** — use per-guide publication/source-check dates throughout visible copy, Open Graph, JSON-LD and sitemap output. Preserve older guide dates and the official snapshot date when publishing another article.
+- **HFE preparation is separate from sales eligibility** — HDB's recommended document date, processing from complete documents, a valid issued letter at flat application and service suspension during a sales window are different steps. Annex B of the August 2026 release governs existing-letter transition decisions.
+- **Read GSC report cutoffs explicitly** — on 17 October the latest complete performance date was 15 October; the indexing report was dated 12 October and sitemap last-read 14 October. A discovered URL can return HTTP 200 and a valid canonical yet remain uncrawled.
+- **Current Vercel CLI can resolve a project when the connector cannot** — the connector returned an empty project list/404 in the correct team, while the authenticated CLI resolved the existing project and production commit. Keep the explicit team scope and use provider Ready status plus canonical HTTP checks.

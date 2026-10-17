@@ -1,10 +1,21 @@
 # Where To BTO — Plan
 
 **Goal:** Help couples build an explainable BTO shortlist with an accessible 3D map and source-backed planning tools.
-**Status:** Mobile, performance, DIA, transit-link and editorial improvements are implemented and locally verified. PR #7 is open. Corrective changes address CI failures; the final head must pass required CI and receive the required approving/code-owner review before merge. GitHub is the authority for delivery state.
-**Next action:** Inspect https://github.com/radiansnail-1/bto-narrowing-map/pull/7 and its required checks/review. After merge, handle deployment separately and inspect representative Search Console exclusions against the deployed canonical pages.
+**Status:** The September implementation is merged and live at `8b1de46` (PR #7). The 17 October SEO run adds a sourced November HFE-readiness guide in `codex/seo-bto-news-20261017`; publication awaits [PR #8](https://github.com/radiansnail-1/bto-narrowing-map/pull/8)'s required CI and approving review.
+**Next action:** Review the SEO PR, then merge only after the exact final head passes `verify` and the required approval. Verify the resulting Vercel production deployment and canonical guide before reporting publication. If publication happens after 17 October, set the new guide's publication date to the actual release date and update its date regression assertion before the final checks.
 
-## Resume state
+## Current SEO run — 17 October 2026
+
+- Isolated checkout: `/Users/brian/Documents/Codex/2026-10-17/ok-i-future-this-one-needs/bto-seo-20261017`, based on current `origin/main` (`8b1de46`). The owner's checkout remains untouched.
+- New guide: `/guides/november-2026-bto-hfe-checklist`. It distinguishes HFE preparation, issued-letter readiness, August income-ceiling transition and February 2027 ballot changes; it does not promise an approval or application slot.
+- Reuses the practical-guide route, adds per-guide dates, directory/sitemap coverage and a contextual link. The three older practical guides keep 7 September dates; the official project audit remains 28 August.
+- Validation: lint, 72 unit tests, production test build and all 15 sequential browser checks passed. An ordinary production build without the map test flag also passed. Phone (390px) and desktop (1440px) visual review passed; physical Safari remains untested.
+- Search Console property: `sc-domain:wheretobto.com`. Complete 9–15 October versus 2–8 October: 9/4 clicks, 324/290 impressions, 2.8%/1.4% CTR. This small sample predates the new article.
+- Indexing report dated 12 October: 20 indexed, 19 discovered/unindexed, 3 redirects. Sitemap read 14 October: Success, 38 discovered pages. The inspected upcoming Bedok URL is discovered/unindexed with no crawl; no sitemap or indexing request was submitted.
+- News baseline and dated source links: `artifacts/seo-log.md`. The HDB portal still presents November as upcoming, with no dated sales window; no new project details were fabricated or added to the map.
+- Release gate: `main` requires `verify` and one approving review (including code-owner review when applicable); auto-merge is disabled. Do not bypass these settings. Previously verified production/rollback deployment: `dpl_Dcvq5jHgs2vLj35F2p4Cp5hjfsFp`, `https://where-to-ffhvex57l-radiansnail-1s-projects.vercel.app`.
+
+## September implementation evidence (historical)
 
 - **Path:** `/Users/brian/Documents/ChatGPT/BTO/bto-narrowing-map`
 - **Checkpoint branch:** `codex/handoff-mobile-dia-seo`
@@ -25,13 +36,13 @@
 - Full-quality rendering sleeps when idle. Removed unused water loading, redundant wrappers and shallow test assertions.
 - `/tools/dia-calculator` models a stated uncompleted-flat, DIA, first-HDB-loan scenario; it does not determine eligibility, award grants or guarantee borrowing.
 - Project details link to free Google Maps transit directions using approximate anchors. Current estimates appear externally; the map's 5 km criterion remains straight-line distance.
-- Crawlable surface: 22 project records, directory, FAQ, methodology, AI information, nine guides and the calculator. New guides cover DIA/HFE/EHG timing, cash/CPF milestones, and Standard/Plus/Prime commitments.
+- Crawlable surface: 22 project records, directory, FAQ, methodology, AI information, ten guides (one awaiting publication) and the calculator. New guides cover DIA/HFE/EHG timing, cash/CPF milestones, and Standard/Plus/Prime commitments.
 - Canonicals default to the verified `https://wheretobto.com`; an explicit `NEXT_PUBLIC_SITE_URL` can override the domain. Editorial dates do not silently advance project-data freshness.
 
 ## TODO
 
-- [ ] Deploy this merged change only under a separate deployment request; inspect deployed mobile/calculator/content behavior afterwards.
-- [ ] Reopen Search Console detail tables, identify the 18 discovered URLs and 3 redirect examples, inspect representative canonical URLs, and verify submitted `/sitemap.xml` status. Do not remove expected canonical redirects just to lower the count.
+- [x] September implementation merged and verified live through Vercel production state at `8b1de46`; scoped SEO releases are now authorized by the recurring schedule, subject to its review, CI and live-verification gates.
+- [ ] Follow the 19 discovered/unindexed URLs from the 12 October report. Upcoming Bedok inspection and submitted sitemap status are now verified; inspect additional priority examples as useful. Preserve expected canonical redirects.
 - [ ] If in-app transit estimates are wanted, configure a free registered OneMap token with renewal and verify its live contract. No token is currently configured; no paid API is needed for the existing external links.
 - [ ] Refresh the official BTO snapshot when HDB publishes November 2026 project details: names, prices, classification, coordinates and waits.
 - [ ] Test physical mobile Safari and re-measure the full visual path on an older integrated-GPU laptop before claiming broad hardware coverage.
@@ -47,9 +58,9 @@
 ## Boundaries and pointers
 
 - RMS wiki is the user-confirmed destination for durable product notes after verified merge; preserve its unrelated existing edits.
-- No backend/CMS/auth, ranking engine, bus-stop layer, new UI dependency, paid API, deployment or Search Console submission is part of this checkpoint.
+- No backend/CMS/auth, ranking engine, bus-stop layer, new UI dependency or paid API changes are authorized under the SEO schedule. Scoped content publication is authorized after its release gates; Search Console submissions need a substantive reason.
 - Never invent unpublished HDB facts or imply Government endorsement. Keep official records, visual geometry and licensed media separate; exclude `work/geo-raw/`.
 - Evidence and source limitations: `artifacts/mobile-seo-audit.md`, `artifacts/codebase-audit.md`, `artifacts/dia-research.md`, `artifacts/reddit-content-research.md`, `artifacts/transit-and-reference-research.md`.
 - No tracked Graphify graph or repository Graphify publication requirement is present.
 
-**Last updated:** 2026-09-07
+**Last updated:** 2026-10-17

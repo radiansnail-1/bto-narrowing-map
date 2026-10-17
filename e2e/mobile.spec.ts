@@ -103,11 +103,14 @@ test('mobile DIA calculator validates inputs and guides expose canonical content
   await page.getByRole('button', { name: 'Reset example' }).click();
   await expect(page.locator('#dia-price')).toHaveAttribute('aria-invalid', 'false');
   expect(await page.evaluate(() => document.documentElement.scrollWidth)).toBe(390);
-  for (const slug of ['dia-hfe-and-housing-grants', 'bto-cash-cpf-payment-timeline', 'standard-plus-prime-bto-restrictions']) {
+  for (const slug of ['november-2026-bto-hfe-checklist', 'dia-hfe-and-housing-grants', 'bto-cash-cpf-payment-timeline', 'standard-plus-prime-bto-restrictions']) {
     const response = await page.goto(`/guides/${slug}`);
     expect(response!.status()).toBe(200);
     await expect(page.locator('article h1')).toBeVisible();
     await expect(page.locator('link[rel="canonical"]')).toHaveAttribute('href', `https://wheretobto.com/guides/${slug}`);
+    const date = slug === 'november-2026-bto-hfe-checklist' ? '2026-10-17' : '2026-09-07';
+    await expect(page.locator('meta[property="article:published_time"]')).toHaveAttribute('content', date);
+    await expect(page.locator('article time').first()).toHaveAttribute('datetime', date);
     expect(await page.evaluate(() => document.documentElement.scrollWidth)).toBe(390);
   }
 });
