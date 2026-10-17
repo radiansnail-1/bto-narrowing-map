@@ -39,5 +39,5 @@ export const GUIDES = [
     title: 'How to handle BTO information HDB has not published yet',
     description: 'Keep unknown project names, coordinates, prices, flat mixes, and waiting times visible without treating them as good or bad news.',
   },
-  ...REDDIT_GUIDES.map((guide) => ({ href: `/guides/${guide.slug}`, category: guide.category, title: guide.title, description: guide.description, checkedDate: PRACTICAL_GUIDES_CHECKED })),
+  ...REDDIT_GUIDES.map((guide) => ({ href: `/guides/${guide.slug}`, category: guide.category, title: guide.title, description: guide.description, checkedDate: guide.checkedDate ?? PRACTICAL_GUIDES_CHECKED })),
 ] as const;

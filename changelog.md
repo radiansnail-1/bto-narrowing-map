@@ -1,5 +1,17 @@
 # Changelog
 
+## 2026-10-18 — Publication date and automatic maintenance authority
+
+- Rechecked the November HFE guide's official sources and moved publication/source-check dates and regression coverage to the actual intended release date.
+- Recorded Brian's automatic-merge instruction and expanded verified-news maintenance scope to necessary website code, project/map data and affected calculator rules, while keeping exact-head CI and production verification gates.
+
+## 2026-10-17 — November HFE guide and recurring SEO baseline
+
+- Added a primary-source HFE-readiness checklist for the November 2026 BTO exercise, covering missed preparation dates, pending documents, existing-letter transitions and policy effective dates.
+- Added per-guide metadata and visible dates, sitemap/directory coverage and a contextual internal link; preserved older guide and official project audit dates.
+- Extended browser coverage for the new route and publication dates; updated the directory count to ten. Lint, 72 unit tests, all 15 sequential browser checks and both verification/ordinary production builds passed.
+- Established a dated news and growth log with authenticated Search Console and Vercel Analytics evidence. September PR #7 is confirmed merged and live; the new guide awaits the required approving review and CI before publication.
+
 ## 2026-09-07 — CI failure correction
 
 - Reproduced the desktop pan, idle-rendering and shortlist timeout failures under concurrent software rendering; separately proved that a key tap released before a frame was lost.
@@ -53,4 +65,4 @@
 - Built the Next.js/TypeScript/React Three Fiber prototype with official project records, curated amenities, workplace anchors, four criteria, local persistence and no bus-stop layer.
 - Kept the 1 km amenity context and equal-weight straight-line workplace screen explicit; missing official data remained neutral.
 
-**Last updated:** 2026-09-07
+**Last updated:** 2026-10-18
