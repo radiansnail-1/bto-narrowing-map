@@ -1,5 +1,10 @@
 # Changelog
 
+## 2026-10-18 — Publication date and automatic maintenance authority
+
+- Rechecked the November HFE guide's official sources and moved publication/source-check dates and regression coverage to the actual intended release date.
+- Recorded Brian's automatic-merge instruction and expanded verified-news maintenance scope to necessary website code, project/map data and affected calculator rules, while keeping exact-head CI and production verification gates.
+
 ## 2026-10-17 — November HFE guide and recurring SEO baseline
 
 - Added a primary-source HFE-readiness checklist for the November 2026 BTO exercise, covering missed preparation dates, pending documents, existing-letter transitions and policy effective dates.
@@ -60,4 +65,4 @@
 - Built the Next.js/TypeScript/React Three Fiber prototype with official project records, curated amenities, workplace anchors, four criteria, local persistence and no bus-stop layer.
 - Kept the 1 km amenity context and equal-weight straight-line workplace screen explicit; missing official data remained neutral.
 
-**Last updated:** 2026-10-17
+**Last updated:** 2026-10-18

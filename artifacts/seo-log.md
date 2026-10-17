@@ -1,5 +1,12 @@
 # Where To BTO — SEO and news log
 
+## 18 October 2026 — Automatic merge and verified-news maintenance
+
+- Brian explicitly requested automatic merging without a separate human approval and confirmed that BTO news can require code changes. The saved every-two-days schedule now authorizes scoped website code, official project/map data and affected calculator/eligibility rules, with primary-source/effective-date evidence and focused regression tests. The independent criteria and neutral unknown states remain part of the product contract.
+- Merge policy: all required checks must pass on the exact final head and the PR must be conflict-free. Use the existing administrator allowance if review is the only remaining gate. No repository-wide settings or branch protections are changed, and failing/pending CI cannot be overridden. This instruction supersedes the 17 October human-review wait documented below.
+- Rechecked all guide sources: rendered HDB Flat Portal, 22 August income-ceiling release, quarterly supply release, HFE application guidance and Annex B. The portal continues to show November as upcoming with no dated sales window; the guide's facts remain supported. No speculative project data was added. Publication/source-check dates and the browser regression now use 18 October; older guide and official project audit dates remain unchanged.
+- PR #8's previous head passed all CI on 17 October. The date/policy correction receives fresh final-head checks before the authorized merge, followed by Ready production and canonical HTTP verification. Final release readback is recorded on [PR #8](https://github.com/radiansnail-1/bto-narrowing-map/pull/8), avoiding a separate status-only commit.
+
 ## 17 October 2026 — November HFE readiness
 
 **Delivery:** [PR #8](https://github.com/radiansnail-1/bto-narrowing-map/pull/8), prepared on branch `codex/seo-bto-news-20261017`, based on `origin/main` at `8b1de46`. The new guide is not yet a verified production publication. The associated PR must pass `verify` and receive the required approving review before merge; automatic merge is disabled in repository settings. No protection was changed. The current production deployment remains Ready at `8b1de46`, deployment `dpl_Dcvq5jHgs2vLj35F2p4Cp5hjfsFp` ([rollback/source deployment](https://where-to-ffhvex57l-radiansnail-1s-projects.vercel.app)).

@@ -18,7 +18,7 @@ const lease = 'https://www.hdb.gov.sg/buying-a-flat/bto-sbf-and-open-booking-of-
 export const REDDIT_GUIDES: PracticalGuide[] = [
   {
     slug: 'november-2026-bto-hfe-checklist', category: 'Upcoming launches',
-    publishedDate: '2026-10-17', checkedDate: '2026-10-17',
+    publishedDate: '2026-10-18', checkedDate: '2026-10-18',
     title: 'November 2026 BTO: what if you missed the HFE date?',
     description: 'Missed HDB’s recommended 25 September HFE document date? Check your letter, pending documents and November 2026 launch readiness.',
     answer: 'Apply for an HFE letter now if you need one. HDB asked November applicants to submit their documents by 25 September 2026, but you still need a valid, issued HFE letter when submitting a flat application. A pending application cannot replace that letter, and applying now does not guarantee it will arrive in time.',
