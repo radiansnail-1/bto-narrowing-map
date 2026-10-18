@@ -4,7 +4,8 @@ const navigation = [
   { href: '/', label: 'Map' },
   { href: '/bto-projects', label: 'Projects' },
   { href: '/guides', label: 'Guides' },
-  { href: '/tools/dia-calculator', label: 'Calculator' },
+  { href: '/tools/bto-roadmap', label: 'Funding roadmap' },
+  { href: '/tools/dia-calculator', label: 'DIA calculator' },
   { href: '/faq', label: 'FAQ' },
   { href: '/methodology', label: 'Methodology' },
 ] as const;

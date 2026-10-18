@@ -66,6 +66,7 @@ export function ProjectView({ project, match, answers, returnTo, onClose, onOpen
       </div>
       <p className="project-summary">{project.summary}</p>
       <div className="project-guide-links"><strong>Useful next reads</strong>{!project.position && <Link href="/guides/handling-unpublished-bto-information">Why upcoming project data is incomplete →</Link>}{project.position && <Link href="/guides/comparing-bto-commutes">How to validate the commute →</Link>}{project.position && <Link href="/guides/checking-amenities-near-a-bto">What to check within 1 km →</Link>}<Link href="/guides/understanding-bto-price-and-wait-data">How to read price and wait data →</Link></div>
+      <p><Link className="source-link" href="/tools/bto-roadmap">Plan cash and CPF by payment date →</Link></p>
       <TransitLinks project={project} answers={answers} />
       <p className="project-note">{project.dataNote}</p>
       <div className="source-links">{project.sourceUrls.slice(0, 2).map((url, index) => <a className="source-link" href={url} key={url} target="_blank" rel="noreferrer">{index === 0 ? 'HDB source' : 'Official detail'} ↗</a>)}</div>

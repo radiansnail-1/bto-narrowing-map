@@ -19,6 +19,7 @@ describe('crawlable site surface', () => {
     expect(paths).toContain('/methodology');
     expect(paths).toContain('/ai-info');
     expect(paths).toContain('/tools/dia-calculator');
+    expect(paths).toContain('/tools/bto-roadmap');
     for (const guide of GUIDES) expect(paths).toContain(guide.href);
     for (const project of btoProjects) expect(paths).toContain(`/bto-projects/${project.id}`);
     expect(new Set(paths).size).toBe(paths.length);
