@@ -18,6 +18,7 @@ An interactive map and mobile questionnaire for narrowing Singapore BTO projects
 - A mobile layout with an automatically loaded 3D map, one-finger pan, pinch zoom, two-finger rotation and a reset-view button
 - Free Google Maps transit links from approximate project anchors to selected destinations
 - An illustrative Deferred Income Assessment payment calculator
+- A BTO funding roadmap with monthly cash/CPF savings, payment dates, fees, renovation/reserves, HDB/bank scenarios and loan repayment charts; figures remain assumptions and saving is opt-in on the device
 - A crawlable information layer: 22 static project pages, project directory, FAQ, ten decision guides (including a November 2026 HFE checklist), methodology/source register, and canonical AI-information page
 - Route-specific titles, descriptions, canonicals and JSON-LD, plus generated `sitemap.xml`, `robots.txt`, web manifest, and site icon
 

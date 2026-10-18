@@ -1,5 +1,12 @@
 # Changelog
 
+## 2026-10-18 — BTO funding roadmap
+
+- Added an original month-by-month funding planner after comparing the linked BTO financing tool with current shipped features. It includes two applicants’ savings, payment stages, cash/CPF allocation, duty/fees, renovation, reserves and full-term loan costs.
+- Added explicit HDB/bank and ordinary/staggered/DIA scenario inputs, sourced payment schedules, optional device-only saving and accessible chart data. No grant, eligibility or loan approval is inferred.
+- Linked the tool from shared navigation, project records, the DIA calculator and payment guide; maintained canonical metadata and sitemap coverage. Project snapshot facts and dates stay separate.
+- Verified lint, 87 unit tests, production test build, all 17 sequential browser flows and an ordinary production build. Reviewed charts, links and keyboard controls at desktop/phone widths; physical Safari remains untested.
+
 ## 2026-10-18 — Publication date and automatic maintenance authority
 
 - Rechecked the November HFE guide's official sources and moved publication/source-check dates and regression coverage to the actual intended release date.

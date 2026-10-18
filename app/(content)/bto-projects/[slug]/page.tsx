@@ -111,6 +111,8 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
             ) : <div className="empty-state"><strong>{NOT_PUBLISHED}</strong><p>HDB has announced this supply but has not published the project-level flat mix or prices.</p></div>}
           </section>
 
+          <p><Link className="secondary-link" href="/tools/bto-roadmap">Plan cash and CPF for a price scenario →</Link></p>
+
           <section className="content-section" aria-labelledby="amenities-heading">
             <div className="section-heading"><div><h2 id="amenities-heading">Nearby amenities in the project snapshot</h2><p>Curated within the tool’s approximate 1 km context; not a complete local directory.</p></div><span>{nearby.length}</span></div>
             {nearby.length ? <div className="amenity-content-groups">{AMENITY_GROUP_ORDER.map((group) => {

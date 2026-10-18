@@ -1,0 +1,93 @@
+.roadmap { display: grid; grid-template-columns: minmax(0, 1.05fr) minmax(380px, .95fr); gap: 28px; align-items: start; margin: 28px 0 56px; }
+.form { display: grid; gap: 23px; min-width: 0; }
+.form fieldset { min-width: 0; margin: 0; padding: 0; border: 0; }
+.form legend { margin-bottom: 14px; font-size: 19px; font-weight: 700; letter-spacing: -.02em; }
+.fields { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 17px 14px; }
+.field { display: flex; min-width: 0; flex-direction: column; gap: 6px; color: var(--ink-2); font-size: 13px; font-weight: 600; }
+.field input, .field select { width: 100%; min-width: 0; min-height: 43px; padding: 9px 11px; border: 1px solid var(--line-strong); border-radius: 4px; color: var(--ink); background: #fff; }
+.field input[aria-invalid="true"] { border-color: var(--accent); }
+.field small { color: var(--muted); font-size: 11px; font-weight: 400; line-height: 1.45; }
+.currencyInput { display: flex; min-height: 43px; align-items: center; border: 1px solid var(--line-strong); border-radius: 4px; background: #fff; }
+.currencyInput:focus-within { outline: 2px solid var(--focus); outline-offset: 1px; }
+.currencyInput:has(input[aria-invalid="true"]) { border-color: var(--accent); }
+.currencyInput > span { padding-left: 10px; color: var(--muted); font-size: 13px; font-weight: 500; }
+.currencyInput input { min-height: 41px; border: 0; outline: 0; background: transparent; }
+.field .error, .error { color: var(--accent-ink); }
+.advanced { padding: 14px 16px; border: 1px solid var(--line); background: #fff; }
+.advanced summary, .dataDetails summary { color: var(--link); cursor: pointer; font-size: 14px; font-weight: 700; }
+.advanced[open] summary { margin-bottom: 17px; }
+.policyHint { margin: 12px 0 0; padding: 10px 12px; border-left: 3px solid var(--warning); color: var(--muted); background: #fff8df; font-size: 12px; line-height: 1.45; }
+.actions { display: flex; flex-wrap: wrap; align-items: center; gap: 10px; }
+.reset, .save, .load { min-height: 40px; padding: 8px 13px; border: 1px solid var(--line-strong); border-radius: 4px; color: var(--ink-2); background: #fff; cursor: pointer; font-size: 12px; font-weight: 700; }
+.reset:hover, .load:hover { background: var(--surface-subtle); }
+.save { border-color: var(--accent); color: #fff; background: var(--accent); }
+.save:hover { background: var(--accent-strong); }
+.save:disabled { border-color: var(--line); color: var(--muted); background: var(--surface-subtle); cursor: not-allowed; }
+.optin { display: inline-flex; align-items: center; gap: 7px; color: var(--ink-2); font-size: 12px; }
+.optin input { width: 17px; height: 17px; accent-color: var(--accent); }
+.storageNote { margin: -14px 0 0; color: var(--muted); font-size: 11px; line-height: 1.45; }
+.results { min-width: 0; padding: 23px; border: 1px solid var(--line); background: var(--surface-subtle); }
+.srOnly { position: absolute; width: 1px; height: 1px; margin: -1px; padding: 0; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; border: 0; }
+.resultHead { display: flex; align-items: flex-end; justify-content: space-between; gap: 12px; padding-bottom: 14px; border-bottom: 1px solid var(--line); }
+.resultHead h2 { margin: 3px 0 0; font-size: 24px; letter-spacing: -.025em; }
+.kicker { color: var(--accent); font-size: 11px; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; }
+.assumption { color: var(--muted); font-size: 10px; text-align: right; }
+.metrics { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 1px; margin: 16px 0; border: 1px solid var(--line); background: var(--line); }
+.metrics div { display: grid; gap: 5px; padding: 12px; background: #fff; }
+.metrics span { color: var(--muted); font-size: 11px; line-height: 1.35; }
+.metrics strong { font-size: clamp(18px,2.5vw,24px); letter-spacing: -.03em; overflow-wrap: anywhere; }
+.explain, .chartSection > p, .loanSection > p { color: var(--muted); font-size: 12px; line-height: 1.5; }
+.purchaseSummary { margin-top: 17px; padding: 13px; border: 1px solid var(--line); background: #fff; }
+.purchaseSummary h3 { margin: 0 0 10px; font-size: 15px; }
+.purchaseSummary dl { display: grid; gap: 7px; margin: 0; }
+.purchaseSummary dl div { display: flex; justify-content: space-between; gap: 12px; font-size: 12px; }
+.purchaseSummary dt { color: var(--muted); }
+.purchaseSummary dd { margin: 0; font-weight: 700; text-align: right; }
+.purchaseSummary p { margin: 11px 0 0; color: var(--muted); font-size: 11px; line-height: 1.45; }
+.timeline, .chartSection, .loanSection { margin-top: 23px; padding-top: 18px; border-top: 1px solid var(--line); }
+.timeline h3, .chartSection h3, .loanSection h3 { margin: 0 0 11px; font-size: 17px; }
+.milestone { margin: 0; padding: 14px 0; border-top: 1px solid var(--line); }
+.milestoneTop { display: flex; align-items: flex-start; justify-content: space-between; gap: 10px; }
+.milestoneTop span { color: var(--muted); font-size: 11px; }
+.milestoneTop h4 { margin: 2px 0 0; font-size: 14px; }
+.milestoneTop > strong { color: var(--accent-ink); font-size: 12px; text-align: right; }
+.milestone dl { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 7px 14px; margin: 12px 0 0; }
+.milestone dl div { display: flex; justify-content: space-between; gap: 8px; font-size: 11px; }
+.milestone dt { color: var(--muted); }
+.milestone dd { margin: 0; color: var(--ink-2); font-weight: 700; text-align: right; }
+.chartSection > p, .loanSection > p { margin: 0 0 12px; }
+.chart { margin: 0; padding: 12px; border: 1px solid var(--line); background: #fff; }
+.chart svg { display: block; width: 100%; height: 170px; overflow: visible; }
+.chart svg line { stroke: var(--line-strong); stroke-width: .6; }
+.chart svg .zeroLine { stroke: #777; stroke-dasharray: 1.5 1.5; }
+.chart polyline { fill: none; stroke-width: 1.5; vector-effect: non-scaling-stroke; }
+.chart .cashLine { stroke: var(--accent); }
+.chart .cpfLine { stroke: #287d62; stroke-dasharray: 5 3; }
+.chart .loanLine { stroke: #287d62; }
+.chart figcaption { display: flex; flex-wrap: wrap; gap: 16px; margin-top: 7px; color: var(--muted); font-size: 11px; }
+.chart figcaption span { display: inline-flex; align-items: center; gap: 6px; }
+.chart figcaption i { width: 12px; height: 3px; background: var(--accent); }
+.chart figcaption .legendCpf { background: #287d62; }
+.axisEnds { margin-left: auto; }
+.monthSelect { display: grid; gap: 7px; margin-top: 14px; color: var(--ink-2); font-size: 12px; font-weight: 700; }
+.monthSelect input { width: 100%; accent-color: var(--accent); cursor: pointer; }
+.monthReadout { display: flex; flex-wrap: wrap; gap: 8px 14px; padding: 11px; border: 1px solid var(--line); background: #fff; color: var(--ink-2); font-size: 11px; }
+.monthReadout strong { flex-basis: 100%; font-size: 12px; }
+.monthReadout span:last-child { flex-basis: 100%; color: var(--muted); }
+.dataDetails { margin-top: 13px; }
+.dataDetails summary { font-size: 12px; }
+.tableWrap { width: 100%; margin-top: 10px; overflow-x: auto; border: 1px solid var(--line); background: #fff; }
+.tableWrap table { width: 100%; border-collapse: collapse; font-size: 11px; }
+.tableWrap caption { padding: 9px; color: var(--muted); text-align: left; }
+.tableWrap th, .tableWrap td { padding: 8px; border-top: 1px solid var(--line); text-align: right; white-space: nowrap; }
+.tableWrap thead th { color: var(--ink-2); background: var(--surface-subtle); }
+.tableWrap tbody th { color: var(--ink-2); text-align: left; }
+.caveat { margin: 20px 0 0; padding: 12px; border-left: 3px solid var(--accent); color: var(--muted); background: var(--accent-tint); font-size: 11px; line-height: 1.5; }
+@media(max-width: 950px) { .roadmap { grid-template-columns: minmax(0,1fr); } .results { order: 2; } }
+@media(max-width: 620px) { .fields { grid-template-columns: 1fr; } .results { padding: 17px; } .resultHead { align-items: flex-start; flex-direction: column; } .assumption { text-align: left; } .metrics { grid-template-columns: 1fr 1fr; } .milestone dl { grid-template-columns: 1fr; } }
+
+.chartScale { display: flex; justify-content: space-between; gap: 12px; color: var(--muted); font-size: 12px; }
+.jumpLink { color: var(--link); font-size: 14px; font-weight: 600; min-height: 44px; display: inline-flex; align-items: center; }
+
+.metrics div:last-child { grid-column: 1 / -1; }
+.roadmap :global(#roadmap-results), .form { scroll-margin-top: calc(var(--header-height) + 20px); }

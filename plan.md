@@ -1,8 +1,18 @@
 # Where To BTO — Plan
 
 **Goal:** Help couples build an explainable BTO shortlist with an accessible 3D map and source-backed planning tools.
-**Status:** The September implementation is merged and live at `8b1de46` (PR #7). The 17 October SEO run adds a sourced November HFE-readiness guide in `codex/seo-bto-news-20261017`; [PR #8](https://github.com/radiansnail-1/bto-narrowing-map/pull/8) is proceeding through final-head CI for automatic merge and production verification under Brian's 18 October authorization.
-**Next action:** Merge PR #8 automatically once all required checks pass on its final head, using the existing admin allowance for a review-only gate, then verify the Ready Vercel production deployment and canonical guide. The guide's publication and source-review dates are now 18 October after official-source rechecks.
+**Status:** PR #8 is merged at `a4f16c8` and its November HFE guide is verified live. Brian’s 18 October competitor-feature request adds an original BTO funding roadmap in `codex/competitor-features-20261018`.
+**Next action:** Complete final validation, open the scoped roadmap PR, automatically merge after exact-head checks, then verify the Ready production deployment and canonical tool. Existing production before this change is `dpl_7MYSjMnEH1mn6Qp6vFhjwjrNi5QV` (preserve for rollback).
+
+## Current feature work — 18 October 2026
+
+- Compared the linked `btofinancing.vercel.app` against shipped code. Spawn workers handled capability inventory, official rules, pure calculation/tests and UI; the parent integrated and reviewed the combined result. Evidence: `artifacts/competitor-financing-review.md`.
+- `/tools/bto-roadmap` adds monthly household cash/CPF assumptions, dated price/fee/renovation stages, reserves, HDB/bank payment scenarios, a savings runway and full-term loan schedule. Assumed grant/loan figures remain separate from eligibility or approval.
+- Bank DIA signing is cash-only; option fees credit once; the bank cash minimum cannot be displaced by a large grant/loan combination. Contributions occur after monthly payments so a payment gap stays visible even if later income restores cash.
+- Financial scenario saving is opt-in local storage with explicit load and removal; no account, query-string financial state, dependency, tracking or map-data change.
+- Shared navigation, project pages/panels, the DIA page and payment guide link to the tool. Metadata, structured data and sitemap cover its one canonical URL.
+- Required final validation and release evidence belong on the exact PR head and production readback. Phone emulation does not establish physical Safari coverage.
+- Local verification passed: lint, 87 unit tests, production verification build and 17 sequential browser checks, plus an ordinary production build. Manual desktop/phone charts, navigation and keyboard month selection passed. Full evidence and scope limits are in the comparison artifact.
 
 ## Current SEO run — 17 October 2026
 
@@ -36,7 +46,7 @@
 - Full-quality rendering sleeps when idle. Removed unused water loading, redundant wrappers and shallow test assertions.
 - `/tools/dia-calculator` models a stated uncompleted-flat, DIA, first-HDB-loan scenario; it does not determine eligibility, award grants or guarantee borrowing.
 - Project details link to free Google Maps transit directions using approximate anchors. Current estimates appear externally; the map's 5 km criterion remains straight-line distance.
-- Crawlable surface: 22 project records, directory, FAQ, methodology, AI information, ten guides (one awaiting publication) and the calculator. New guides cover DIA/HFE/EHG timing, cash/CPF milestones, and Standard/Plus/Prime commitments.
+- Crawlable surface: 22 project records, directory, FAQ, methodology, AI information, ten published guides and the calculator. New guides cover DIA/HFE/EHG timing, cash/CPF milestones, and Standard/Plus/Prime commitments.
 - Canonicals default to the verified `https://wheretobto.com`; an explicit `NEXT_PUBLIC_SITE_URL` can override the domain. Editorial dates do not silently advance project-data freshness.
 
 ## TODO

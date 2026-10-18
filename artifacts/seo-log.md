@@ -63,3 +63,11 @@ Visible query opportunities, same comparison: “bto locations” 15/13 impressi
 - Lockfile installation also reported inherited advisories (including critical development-tool advisories and a moderate Next.js advisory). Dependencies were unchanged under this content scope; a separate maintenance review is needed.
 
 **Next observation:** First resolve the PR's required review and final-head CI; after merge, verify the Ready production deployment, guide response, metadata/canonical, sitemap and assets. Only then record publication. Check the new URL's discovery/indexing after release and compare subsequent complete weekly windows; these small pre-release samples establish no causal SEO gain. Continue news checks from the cutoff above and do not repeat these baseline announcements as fresh news.
+
+## 18 October 2026 — Direct competitor-feature request
+
+PR #8 is now confirmed merged at `a4f16c89013c532e4ecabda2668a77dda6fc1ad2`; its HFE guide is verified live on the Ready deployment `dpl_7MYSjMnEH1mn6Qp6vFhjwjrNi5QV`. This supersedes the previous entry’s pending-release next action.
+
+Brian’s separate linked-competitor request produced `/tools/bto-roadmap`, addressing the missing month-by-month cash/CPF funding question. Shared navigation, project records, the DIA tool and payment guide link to it; canonical metadata, WebApplication JSON-LD and sitemap cover the URL. Reviewed official financing sources on 18 October, preserved project audit dates, and manually reviewed all new copy/labels/CTAs. Lint, 87 unit tests, both build modes and 17 sequential browser checks passed; phone/desktop charts and keyboard selection were reviewed. Detailed sources, comparison, safeguards and validation: `artifacts/competitor-financing-review.md`.
+
+This was feature delivery, not a new scheduled article/news or analytics run. The previous news cutoff and performance windows remain unchanged; no indexing or search-outcome improvement is claimed. After publication, observe the new URL’s discovery/indexing and subsequent complete weekly windows without attributing small samples to this change. Exact PR/head and live deployment evidence belong in the delivery record and PR once verified.
