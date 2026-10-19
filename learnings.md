@@ -34,7 +34,10 @@
 - **Reddit identifies questions, official sources answer them** — dated HDB/CPF/IRAS sources resolve policy; anecdotes cannot establish eligibility or future grants. Preserve different sales-cohort rules instead of merging them into one generic answer.
 - **Index exclusions are not all defects** — expected redirects should remain redirects. Discovered-but-not-indexed pages have not yet been crawled; successful public HTTP responses do not prove Google fetched or indexed them. Report aggregate status separately from unavailable URL-level evidence.
 
-**Last updated:** 2026-09-07
+- **A reserve is not extra funding** — explain each buyer's OA retention limit before adding a household reserve. The roadmap protects its entered reserve at purchase and repayment stages; do not subtract it from starting OA and enter it again, or describe its household input as per-person eligibility validation.
+- **Keep publication evidence tied to the current article** — retain responsive screenshots and ordinary-production generated HTML from the exact PR head. A previous guide's screenshot or a verification build alone does not establish the current release.
+
+**Last updated:** 2026-10-19 (UTC; new SEO findings)
 
 - **A guide date is not a project-data audit** — use per-guide publication/source-check dates throughout visible copy, Open Graph, JSON-LD and sitemap output. Preserve older guide dates and the official snapshot date when publishing another article.
 - **HFE preparation is separate from sales eligibility** — HDB's recommended document date, processing from complete documents, a valid issued letter at flat application and service suspension during a sales window are different steps. Annex B of the August 2026 release governs existing-letter transition decisions.

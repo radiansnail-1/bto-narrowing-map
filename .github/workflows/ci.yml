@@ -26,6 +26,17 @@ jobs:
       - run: npm run test
       - run: npm run build
       - run: npm run test:e2e
+      # Keep the diagnostic camera API out of the ordinary production output.
+      - run: env -u NEXT_PUBLIC_MAP_TEST_API npm run build
+      - uses: actions/upload-artifact@v4
+        with:
+          name: oa-reserve-publication-evidence
+          path: |
+            test-results/oa-reserve-*.png
+            .next/server/app/**/cpf-oa-reserve-for-bto.html
+          include-hidden-files: true
+          if-no-files-found: error
+          retention-days: 7
       - uses: actions/upload-artifact@v4
         if: failure()
         with:

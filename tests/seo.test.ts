@@ -3,6 +3,7 @@ import sitemap from '@/app/sitemap';
 import { FAQ_ITEMS } from '@/data/faq';
 import { btoProjects } from '@/data/bto-projects';
 import { GUIDES } from '@/data/guides';
+import { REDDIT_GUIDES } from '@/data/reddit-guides';
 
 describe('crawlable site surface', () => {
   it('has one stable, URL-safe page slug per project', () => {
@@ -31,6 +32,24 @@ describe('crawlable site surface', () => {
       expect(guide.title.trim()).not.toBe('');
       expect(guide.description.trim()).not.toBe('');
     }
+  });
+
+  it('keeps the OA reserve guide dated, sourced and included exactly once', () => {
+    const guide = REDDIT_GUIDES.find(({ slug }) => slug === 'cpf-oa-reserve-for-bto');
+    expect(guide).toBeDefined();
+    expect(guide?.publishedDate).toBe('2026-10-19');
+    expect(guide?.checkedDate).toBe('2026-10-19');
+    expect(guide?.sections).toHaveLength(5);
+    const sources = guide?.sections.flatMap(section => section.sources ?? []) ?? [];
+    expect(sources).toHaveLength(6);
+    for (const source of sources) expect(new URL(source.href).hostname).toBe('www.cpf.gov.sg');
+    const path = '/guides/cpf-oa-reserve-for-bto';
+    expect(GUIDES.filter(guide => guide.href === path)).toHaveLength(1);
+    const entries = sitemap().filter(entry => new URL(entry.url).pathname === path);
+    expect(entries).toHaveLength(1);
+    expect(entries[0].lastModified).toEqual(new Date('2026-10-19T00:00:00Z'));
+    expect(REDDIT_GUIDES.find(({ slug }) => slug === 'november-2026-bto-hfe-checklist')?.publishedDate).toBe('2026-10-18');
+    expect(REDDIT_GUIDES.find(({ slug }) => slug === 'bto-cash-cpf-payment-timeline')?.publishedDate).toBeUndefined();
   });
 
   it('keeps FAQ questions distinct and answers nonempty', () => {

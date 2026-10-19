@@ -1,8 +1,18 @@
 # Where To BTO — Plan
 
 **Goal:** Help couples build an explainable BTO shortlist with an accessible 3D map and source-backed planning tools.
-**Status:** PR #8 is merged at `a4f16c8` and its November HFE guide is verified live. Brian’s 18 October competitor-feature request adds an original BTO funding roadmap in `codex/competitor-features-20261018`.
-**Next action:** Complete final validation, open the scoped roadmap PR, automatically merge after exact-head checks, then verify the Ready production deployment and canonical tool. Existing production before this change is `dpl_7MYSjMnEH1mn6Qp6vFhjwjrNi5QV` (preserve for rollback).
+**Status:** PR #8 is merged at `a4f16c8`; roadmap PR #9 is merged at `46a0dab60de861c1ad7e874c78396fb14bf65353` and its production deployment is Ready. The 19 October SEO run adds a distinct CPF OA reserve decision guide.
+**Next action:** Check the 19 October guide's exact-head CI and responsive/generated-output evidence, then merge under the existing allowance and verify the Ready production source and canonical URL. Final release evidence belongs on the scoped PR; after publication, observe discovery/indexing rather than claiming an SEO effect. Previous production/rollback: `dpl_DGujUjWrDkJd8Kdmc6GLzDLJ1geQ`.
+
+## Current SEO run — 19 October 2026 (UTC)
+
+- New guide: `/guides/cpf-oa-reserve-for-bto`. It answers whether to retain OA, not when downpayments fall due. CPF Board's dedicated retention page and two related articles support the per-buyer rule, lender differences and buffer/loan trade-off.
+- Three coverage-gap candidates were assessed across financing, family proximity incentives and unit-booking availability. Sparse query data does not establish demand. The new guide includes uneven applicant balances, separate cash reserves and instructions matching the shipped roadmap's household reserve field.
+- Added contextual links from the payment guide and funding roadmap, inherited directory inclusion, accurate Article metadata and sitemap date. Older guide dates and the official project snapshot are unchanged. No calculator rule or project fact changed.
+- Required validation is the existing full `verify` job, plus actual-guide phone/desktop screenshots, keyboard/link checks and an ordinary production build without the diagnostic camera flag. Artifact upload remains read-only; no dependency, tracking or permission was added. Physical Safari is not established by Chromium emulation.
+- Latest final GSC data: 11–17 October versus 4–10 October, 7/7 clicks and 292/336 impressions. Upcoming Bedok remains discovered/currently not indexed; sitemap API has no errors/warnings but was last downloaded 14 October. No resubmission or indexing request.
+- News check attempted 19 October after the 17 October 22:45 UTC cutoff: CPF Board index read; HDB news/loan/release pages returned 403, Flat Portal 503, MND index no readable body. No consequential new fact was verified. This limited check does not advance the last complete news cutoff or project audit date.
+- Full dated source, selection, editorial and measurement limits are in `artifacts/seo-log.md`; exact CI/head and production readback belong on the scoped PR.
 
 ## Current feature work — 18 October 2026
 
@@ -73,4 +83,4 @@
 - Evidence and source limitations: `artifacts/mobile-seo-audit.md`, `artifacts/codebase-audit.md`, `artifacts/dia-research.md`, `artifacts/reddit-content-research.md`, `artifacts/transit-and-reference-research.md`.
 - No tracked Graphify graph or repository Graphify publication requirement is present.
 
-**Last updated:** 2026-10-18
+**Last updated:** 2026-10-19 (UTC)

@@ -17,6 +17,67 @@ const lease = 'https://www.hdb.gov.sg/buying-a-flat/bto-sbf-and-open-booking-of-
 
 export const REDDIT_GUIDES: PracticalGuide[] = [
   {
+    slug: 'cpf-oa-reserve-for-bto', publishedDate: '2026-10-19', checkedDate: '2026-10-19',
+    category: 'Budget and payments',
+    title: 'Should you keep $20,000 in CPF OA for your BTO?',
+    description: 'Taking an HDB loan for a BTO? Compare each buyer’s $20,000 CPF OA retention option, the funding gap it can create and a separate cash emergency fund.',
+    answer: 'With an HDB housing loan, each buyer can choose to retain up to $20,000 in their own CPF Ordinary Account (OA), rather than use it for the flat purchase. It is an option, not an extra payment or a compulsory minimum balance. Keeping a buffer leaves less OA for the purchase, so check the resulting loan or cash requirement before deciding.',
+    sections: [
+      {
+        heading: 'Check the rule for your lender, not a household allowance',
+        paragraphs: [
+          'CPF Board says HDB-loan buyers may retain up to $20,000 in OA, with the remaining available OA savings used towards the flat before the housing loan is disbursed. A couple’s potential $40,000 buffer therefore depends on each buyer’s own balance and choice. One buyer cannot treat the other buyer’s unused allowance as permission to retain more than $20,000 under this option.',
+          'Bank-loan buyers can choose to retain any amount in OA. CPF Board recommends retaining at least $20,000 as a safety net, but that recommendation is not the HDB-loan retention limit. A bank loan also has its own cash-payment requirements; keeping OA does not remove them.',
+          'This guide focuses on buyers below age 55 planning an ordinary BTO purchase. Check your own CPF usage limits and HDB documents, especially if a buyer will turn 55 before purchase completion. Do not treat an online reserve input as confirmation that your savings are usable.',
+        ],
+        sources: [
+          { title: 'CPF Board: OA retention option and timing', href: 'https://www.cpf.gov.sg/member/home-ownership/using-your-cpf-to-buy-a-home/retain-20000-in-your-oa-if-you-are-taking-a-housing-loan' },
+          { title: 'CPF Board: HDB-loan and bank-loan CPF rules', href: 'https://www.cpf.gov.sg/member/infohub/educational-resources/3-differences-between-hdb-loan-and-bank-loan' },
+        ],
+      },
+      {
+        heading: 'Write down each buyer’s buffer before adding the balances',
+        paragraphs: [
+          'Consider a fictional couple with $50,000 in one OA and $10,000 in the other. Assume these are their own savings, are otherwise usable for this purchase and exclude grants. If the first buyer retains $20,000 and the second retains $10,000, the household keeps $30,000 in OA and has $30,000 left towards the purchase. It does not have a $40,000 reserve simply because there are two buyers.',
+          'Compared with using all $60,000, this choice leaves $30,000 less for the purchase. That difference needs to be covered by other confirmed funding, such as cash or a higher approved loan within the lender’s limits. If your approved loan is already at its limit, choosing a reserve does not automatically increase it.',
+          'Repeat the calculation using the balances and payments expected at your actual appointments. Keep grants, fees and amounts already paid separate. This example explains the difference between two reserve choices; it is not a complete downpayment schedule or a loan offer.',
+        ],
+        sources: [{ title: 'CPF Board: individual retention and monthly-instalment trade-off', href: 'https://www.cpf.gov.sg/member/home-ownership/using-your-cpf-to-buy-a-home/retain-20000-in-your-oa-if-you-are-taking-a-housing-loan' }],
+      },
+      {
+        heading: 'Compare a housing buffer with a smaller loan',
+        paragraphs: [
+          'Retained OA can provide a safety net for permitted housing repayments if income is interrupted. Using more OA for the purchase instead can reduce the loan needed. Compare both plans using the same price, repayment term and rate assumption, rather than treating the reserve as free money.',
+          'For each plan, record the monthly repayment, expected monthly OA additions and cash needed if one applicant’s additions stop. Then ask how long the chosen OA buffer could support the intended housing payments. Do not count the same balance as both purchase funding and a repayment reserve.',
+          'CPF Board’s worked comparison shows that retaining OA can mean a larger outstanding loan and higher instalments. Your result depends on your own approved financing and repayment split. Neither an assumed future salary nor a possible grant is a confirmed way to close a funding gap.',
+        ],
+        sources: [{ title: 'CPF Board: how retaining OA affects instalments', href: 'https://www.cpf.gov.sg/member/infohub/educational-resources/how-much-cpf-oa-should-you-use-when-buying-your-first-home' }],
+      },
+      {
+        heading: 'Keep the cash emergency fund separate',
+        paragraphs: [
+          'An OA housing buffer is not the same as cash available for groceries, renovation or a cash-only purchase payment. Keep a separate cash plan for those expenses. A household can have OA left over and still face a cash shortfall at an appointment or during a work break.',
+          'Write down two different amounts: OA deliberately retained for housing or retirement, and cash protected for everyday needs and unexpected costs. Test the plan after purchase payments and renovation, not only against today’s combined account balances. The right reserve is one the household can fund without hiding another shortfall.',
+        ],
+        sources: [{ title: 'CPF Board: housing safety net and retirement purpose', href: 'https://www.cpf.gov.sg/member/home-ownership/using-your-cpf-to-buy-a-home/retain-20000-in-your-oa-if-you-are-taking-a-housing-loan' }],
+      },
+      {
+        heading: 'Model the reserve once in the funding roadmap',
+        paragraphs: [
+          'In Where To BTO’s funding roadmap, enter the starting OA balances you expect to be usable for this plan. Open “Advanced assumptions · fees and reserves” and enter the household buffer in “Protected CPF reserve”. For the fictional couple above, that means starting balances of $50,000 and $10,000, with a $30,000 protected reserve. Do not first subtract the reserve from those starting balances and then enter it again.',
+          'Keep the loan as a separate assumption and compare the cash shortfalls with and without the reserve. The roadmap does not automatically increase the loan when you protect more OA. Its reserve is a household modelling amount: it does not verify each buyer’s $20,000 limit, CPF eligibility or HDB approval. It also keeps that reserve protected in its repayment projection, rather than simulating an emergency decision to spend it.',
+          'CPF Board says HDB-loan buyers must decide how much to retain at the point of purchase. Confirm how to record that choice with HDB before the relevant payment is finalised. The roadmap does not submit the instruction. Use the map to compare locations only after the funding plan still leaves room for your chosen reserves.',
+        ],
+        sources: [{ title: 'CPF Board: when to decide how much OA to retain', href: 'https://www.cpf.gov.sg/member/home-ownership/using-your-cpf-to-buy-a-home/retain-20000-in-your-oa-if-you-are-taking-a-housing-loan' }],
+      },
+    ],
+    next: [
+      { title: 'Compare reserve choices in the funding roadmap', href: '/tools/bto-roadmap' },
+      { title: 'Plan the cash and CPF payment milestones', href: '/guides/bto-cash-cpf-payment-timeline' },
+      { title: 'Compare BTO locations on the map', href: '/' },
+    ],
+  },
+  {
     slug: 'november-2026-bto-hfe-checklist', category: 'Upcoming launches',
     publishedDate: '2026-10-18', checkedDate: '2026-10-18',
     title: 'November 2026 BTO: what if you missed the HFE date?',
@@ -55,7 +116,7 @@ export const REDDIT_GUIDES: PracticalGuide[] = [
       {heading:'Worked example: a $500,000 flat with a full 75% loan',paragraphs:['Assume a $500,000 purchase, an approved $375,000 HDB loan, no grant, the ordinary 10%/15% schedule and no special payment scheme. The price contribution outside the loan totals $125,000: $50,000 at lease signing and $75,000 at keys, before accounting for amounts already paid.', 'If the approved loan is instead $325,000, the amount outside the loan becomes $175,000. That extra $50,000 is a funding gap even though the advertised loan-to-value ceiling remains 75%. This is arithmetic for planning, not a loan offer.'],sources:[{title:'HDB: loan limits and downpayment overview',href:'https://www.mynicehome.gov.sg/get-started/hdb-loans-guide/'}]},
       {heading:'Stamp duty is additional to the downpayment',paragraphs:['For a residential property with a $500,000 dutiable value, Buyer’s Stamp Duty is $9,600: $1,800 on the first $180,000, $3,600 on the next $180,000 and $4,200 on the remaining $140,000. IRAS generally uses the higher of price or market value. This example excludes legal fees and any other applicable duties.', 'Keep a separate move-in budget for renovation, furniture, appliances and your emergency reserve. Test the plan against a lower loan or slower savings growth before increasing your maximum project price.'],sources:[{title:'IRAS: current stamp duty rates',href:'https://www.iras.gov.sg/quick-links/tax-rates/stamp-duty'},{title:'CPF Board: other HDB purchase expenses',href:'https://www.cpf.gov.sg/member/infohub/educational-resources/hdb-option-fee-and-housing-expenses-you-should-know'}]},
     ],
-    next:[{title:'Build your month-by-month funding roadmap',href:'/tools/bto-roadmap'},{title:'Understand DIA and grant timing',href:'/guides/dia-hfe-and-housing-grants'},{title:'Read project prices without overestimating affordability',href:'/guides/understanding-bto-price-and-wait-data'}],
+    next:[{title:'Decide how much CPF OA to retain',href:'/guides/cpf-oa-reserve-for-bto'},{title:'Build your month-by-month funding roadmap',href:'/tools/bto-roadmap'},{title:'Understand DIA and grant timing',href:'/guides/dia-hfe-and-housing-grants'},{title:'Read project prices without overestimating affordability',href:'/guides/understanding-bto-price-and-wait-data'}],
   },
   {
     slug:'standard-plus-prime-bto-restrictions',category:'Ownership commitments',

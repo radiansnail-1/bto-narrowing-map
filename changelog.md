@@ -1,5 +1,12 @@
 # Changelog
 
+## 2026-10-19 — CPF OA reserve decision guide
+
+- Added a distinct primary-source guide on each buyer's OA retention option, unequal balances, the purchase-funding trade-off, separate cash reserves and the roadmap's reserve assumptions.
+- Linked it from the existing payment guide and funding tool; retained automatic guide-directory, canonical/Article metadata and sitemap coverage. Preserved older guide and official project audit dates.
+- Added article-specific responsive, keyboard, source/date and navigation regressions. CI now also builds ordinary production output without the map test flag and retains this article's screenshots/generated HTML for manual release review; Actions permissions remain read-only.
+- Refreshed the dated analytics/news log and reconciled merged roadmap PR #9. Exact-head validation and final release evidence are recorded on the scoped PR, not inferred from a draft or previous article.
+
 ## 2026-10-18 — BTO funding roadmap
 
 - Added an original month-by-month funding planner after comparing the linked BTO financing tool with current shipped features. It includes two applicants’ savings, payment stages, cash/CPF allocation, duty/fees, renovation, reserves and full-term loan costs.
@@ -72,4 +79,4 @@
 - Built the Next.js/TypeScript/React Three Fiber prototype with official project records, curated amenities, workplace anchors, four criteria, local persistence and no bus-stop layer.
 - Kept the 1 km amenity context and equal-weight straight-line workplace screen explicit; missing official data remained neutral.
 
-**Last updated:** 2026-10-18
+**Last updated:** 2026-10-19 (UTC)
