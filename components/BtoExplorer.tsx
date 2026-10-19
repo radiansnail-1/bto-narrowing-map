@@ -1,6 +1,7 @@
 'use client';
 
 import { useEffect, useMemo, useRef, useState } from 'react';
+import Link from 'next/link';
 import dynamic from 'next/dynamic';
 import { AmenityRail } from '@/components/AmenityRail';
 import { AmenityView } from '@/components/panel/AmenityView';
@@ -192,6 +193,10 @@ export function BtoExplorer() {
       </div>
       <AmenityRail visible={visibleGroups} onToggle={toggleGroup} />
       <div className="right-panel-wrap" data-testid="right-panel" data-panel-view={view.kind}>
+        <aside className="explorer-intro panel-card" aria-label="About Where To BTO">
+          <p><strong>Where To BTO</strong> is an independent tool for comparing Singapore BTO projects by location, published starting prices, nearby amenities and waiting time.</p>
+          <Link href="/methodology">Check the sources and limitations</Link>
+        </aside>
         {renderPanel()}
       </div>
       <div className="map-legend" aria-label="Map legend">

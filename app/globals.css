@@ -72,6 +72,9 @@ button { color: inherit; }
 .right-panel-wrap::-webkit-scrollbar { width: 6px; }
 .right-panel-wrap::-webkit-scrollbar-thumb { border-radius: 6px; background: #a8a8a8; }
 .question-card, .project-card, .results-card, .amenity-card { padding: 20px; }
+.explorer-intro { margin-bottom: 12px; padding: 16px 20px; font-size: 13px; line-height: 1.5; }
+.explorer-intro p { margin: 0 0 8px; }
+.explorer-intro a { color: var(--link); }
 .criteria-chips { display: flex; flex-wrap: wrap; gap: 6px; margin: 0 0 16px; padding: 0; list-style: none; }
 .criteria-chip { display: inline-flex; align-items: center; gap: 5px; padding: 5px 9px; border: 1px solid #c7c7c7; border-radius: 999px; color: #383838; background: #fff; font-size: 11px; font-weight: 600; }
 .criteria-chip.is-current { border-color: var(--accent); color: var(--accent-ink); background: var(--accent-tint); }

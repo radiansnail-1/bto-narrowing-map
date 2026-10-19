@@ -1,5 +1,11 @@
 # Changelog
 
+## 2026-10-19 — Where To BTO homepage explanation
+
+- Added a visible initial-HTML explanation of the independent BTO comparison tool and a link to its sources/limitations beside the questionnaire. Map, project facts, comparison rules and financial calculations are unchanged.
+- Lint, 88 unit tests, ordinary production build, generated-HTML inspection, desktop/phone browser checks and phone next-question navigation passed. Exact-head CI remains required before merge.
+- Scoped PR and verified website publication are pending; no native application release or indexing/ranking result is claimed.
+
 ## 2026-10-19 — CPF OA reserve decision guide
 
 - Added a distinct primary-source guide on each buyer's OA retention option, unequal balances, the purchase-funding trade-off, separate cash reserves and the roadmap's reserve assumptions.
