@@ -15,6 +15,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...GUIDES.map((guide) => ({ url: absoluteUrl(guide.href), lastModified: 'checkedDate' in guide ? new Date(`${guide.checkedDate}T00:00:00Z`) : editorialDate, changeFrequency: 'monthly' as const, priority: 0.8 })),
     { url: absoluteUrl('/tools/dia-calculator'), lastModified: updateDate, changeFrequency: 'monthly', priority: 0.8 },
     { url: absoluteUrl('/tools/bto-roadmap'), lastModified: new Date('2026-10-18T00:00:00Z'), changeFrequency: 'monthly', priority: 0.8 },
+    { url: absoluteUrl('/tools'), lastModified: new Date('2026-10-19T00:00:00Z'), changeFrequency: 'monthly', priority: 0.75 },
+    { url: absoluteUrl('/zh'), lastModified: new Date('2026-10-19T00:00:00Z'), changeFrequency: 'monthly', priority: 0.75 },
     { url: absoluteUrl('/faq'), lastModified: updateDate, changeFrequency: 'monthly', priority: 0.7 },
     { url: absoluteUrl('/methodology'), lastModified: dataDate, changeFrequency: 'monthly', priority: 0.7 },
     { url: absoluteUrl('/ai-info'), lastModified: dataDate, changeFrequency: 'monthly', priority: 0.5 },

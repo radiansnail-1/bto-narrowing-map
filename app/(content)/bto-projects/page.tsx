@@ -46,6 +46,7 @@ export default function ProjectsPage() {
           <div className="hero-actions">
             <Link className="primary-link" href="/">Narrow projects on the map</Link>
             <Link className="secondary-link" href="/guides/how-to-choose-a-bto-location">Read the location checklist</Link>
+            <Link className="secondary-link" href="/tools">Choose a BTO calculator</Link>
           </div>
           <p className="data-line">Snapshot audited {formatDate(DATA_CHECKED_DATE)} · HDB source links on every project page</p>
         </section>

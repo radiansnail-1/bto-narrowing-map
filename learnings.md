@@ -1,5 +1,7 @@
 # Learnings
 
+- **Website localization — 19 October 2026:** Use real translated entry pages with reciprocal alternate links; label linked English-only content. App Store listing languages do not establish native UI language support, and Apple may lock Marketing URL edits by version state.
+
 - **Website readability — 19 October 2026:** A map application still needs a visible text explanation; place it inside the existing scrollable panel so the map and mobile questionnaire retain their layout.
 
 - **Official facts stay separate from visual context** — project, price, wait, and amenity records remain dated and source-linked; missing facts resolve to `unknown` instead of becoming invented matches. The geospatial backdrop must not silently change product data.
