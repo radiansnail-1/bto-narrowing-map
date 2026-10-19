@@ -1,5 +1,12 @@
 # Where To BTO — Plan
 
+## Where To BTO homepage explanation — 19 October 2026
+
+- Current scoped branch: `codex/aeo-home-definition-20261019` website improvement, based on the current production source; prior product/release state below is preserved.
+- Added a visible initial-HTML explanation of the independent BTO comparison tool and a link to its sources/limitations beside the questionnaire. Map, project facts, comparison rules and financial calculations are unchanged.
+- Lint, 88 unit tests, ordinary production build, generated-HTML inspection, desktop/phone browser checks and phone next-question navigation passed. Exact-head CI remains required before merge.
+- Publication status: source prepared; scoped PR, exact final-head gates and live production verification are pending. Next action: publish the scoped PR, satisfy its gates, merge and verify the intended custom domain.
+
 **Goal:** Help couples build an explainable BTO shortlist with an accessible 3D map and source-backed planning tools.
 **Status:** PR #8 is merged at `a4f16c8`; roadmap PR #9 is merged at `46a0dab60de861c1ad7e874c78396fb14bf65353` and its production deployment is Ready. The 19 October SEO run adds a distinct CPF OA reserve decision guide.
 **Next action:** Check the 19 October guide's exact-head CI and responsive/generated-output evidence, then merge under the existing allowance and verify the Ready production source and canonical URL. Final release evidence belongs on the scoped PR; after publication, observe discovery/indexing rather than claiming an SEO effect. Previous production/rollback: `dpl_DGujUjWrDkJd8Kdmc6GLzDLJ1geQ`.

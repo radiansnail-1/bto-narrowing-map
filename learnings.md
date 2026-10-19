@@ -1,5 +1,7 @@
 # Learnings
 
+- **Website readability — 19 October 2026:** A map application still needs a visible text explanation; place it inside the existing scrollable panel so the map and mobile questionnaire retain their layout.
+
 - **Official facts stay separate from visual context** — project, price, wait, and amenity records remain dated and source-linked; missing facts resolve to `unknown` instead of becoming invented matches. The geospatial backdrop must not silently change product data.
 - **Ship processed geometry, not source extracts** — `scripts/build-map-assets.ts` converts URA and OSM inputs from ignored `work/geo-raw/` into the compact `public/map/` contract. Raw downloads are large, unstable publication inputs and do not belong in the repository.
 - **Building height is a visual approximation unless tagged** — OSM `height` and `building:levels` win when present; other heights use deterministic bands. The UI and documentation must never describe the miniature as surveyed 3D data.
