@@ -2,6 +2,8 @@
 
 ## Chinese product entry and calculator navigation — 19 October 2026
 
+Publication: PR #12 is open; local checks and responsive QA passed. Required final-head checks and live verification remain pending.
+
 Added server-rendered /zh Simplified Chinese product introduction and /tools chooser routing readers to the existing DIA illustration or cash/CPF funding roadmap. Core map/project/financial-tool interfaces remain English and the Chinese page labels those destinations; SG-specific data, calculation and matching rules are unchanged. Search Console current displayed window through 17 October shows 33 impressions for bto calculator, supporting a clearer entrance rather than another calculator. Lint, 89 tests and production build passed; responsive checks passed; end-to-end gates/publication are pending. Next: scoped PR, required checks, and verified production release. Preserve the existing untracked node_modules symlink and prior TODOs.
 
 ## Where To BTO homepage explanation — 19 October 2026
