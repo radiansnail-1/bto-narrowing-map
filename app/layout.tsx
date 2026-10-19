@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   title: { default: SITE_NAME, template: `%s | ${SITE_NAME}` },
   description: SITE_DESCRIPTION,
   applicationName: SITE_NAME,
-  alternates: { canonical: '/' },
+  alternates: { canonical: '/', languages: { 'en-SG': '/', 'zh-Hans': '/zh', 'x-default': '/' } },
   openGraph: {
     title: SITE_NAME,
     description: SITE_DESCRIPTION,

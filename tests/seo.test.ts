@@ -4,6 +4,8 @@ import { FAQ_ITEMS } from '@/data/faq';
 import { btoProjects } from '@/data/bto-projects';
 import { GUIDES } from '@/data/guides';
 import { REDDIT_GUIDES } from '@/data/reddit-guides';
+import { metadata as chineseMetadata } from '@/app/(content)/zh/page';
+import { metadata as toolsMetadata } from '@/app/(content)/tools/page';
 
 describe('crawlable site surface', () => {
   it('has one stable, URL-safe page slug per project', () => {
@@ -21,9 +23,23 @@ describe('crawlable site surface', () => {
     expect(paths).toContain('/ai-info');
     expect(paths).toContain('/tools/dia-calculator');
     expect(paths).toContain('/tools/bto-roadmap');
+    expect(paths).toContain('/tools');
+    expect(paths).toContain('/zh');
     for (const guide of GUIDES) expect(paths).toContain(guide.href);
     for (const project of btoProjects) expect(paths).toContain(`/bto-projects/${project.id}`);
     expect(new Set(paths).size).toBe(paths.length);
+  });
+
+  it('keeps the Chinese entry and calculator chooser discoverable with honest metadata', () => {
+    const entries = sitemap();
+    const paths = entries.map((entry) => new URL(entry.url).pathname);
+    expect(paths).toContain('/zh');
+    expect(paths).toContain('/tools');
+    expect(chineseMetadata.alternates?.canonical).toBe('/zh');
+    expect(chineseMetadata.alternates?.languages).toMatchObject({ 'en-SG': '/', 'zh-Hans': '/zh' });
+    expect(chineseMetadata.openGraph).toMatchObject({ locale: 'zh_CN', url: '/zh' });
+    expect(toolsMetadata.alternates?.canonical).toBe('/tools');
+    expect(toolsMetadata.title).toContain('BTO Calculators');
   });
 
   it('keeps guide URLs distinct and copy nonempty', () => {
