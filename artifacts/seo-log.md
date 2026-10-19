@@ -1,5 +1,49 @@
 # Where To BTO — SEO and news log
 
+## 19 October 2026 (UTC) — CPF OA reserve decision
+
+### Coverage, evidence and intent
+
+- Reconciled GitHub first: PR #8 is merged at `a4f16c8`; roadmap PR #9 is merged at `46a0dab60de861c1ad7e874c78396fb14bf65353`. Current production is Ready at that source, deployment `dpl_DGujUjWrDkJd8Kdmc6GLzDLJ1geQ` (preserved for rollback). The only open PR, #5, concerns AdSense and is untouched. Historical pending wording does not represent retained article work.
+- Read the ten-guide directory, practical-guide bodies and relevant full location, amenities, price/wait, start-here and roadmap pages before selection. Assessed three distinct questions: individual OA retention (selected); BTO proximity versus resale PHG (a possible focused clarification, but broader current HDB priority evidence was unavailable); and whether HDB's unit watchlist reserves a flat (viable future guide, directly supported by HDB answers). No demand was invented from sparse data.
+- New intended URL: `https://wheretobto.com/guides/cpf-oa-reserve-for-bto`. The current payment guide explains when cash/CPF is due; this guide explains whether to retain OA, unequal applicant balances, the funding trade-off and two separate emergency buffers. The roadmap's brief rule is not a complete answer to that decision.
+- Primary sources read as visible text on 19 October: [CPF Board's dedicated OA-retention page](https://www.cpf.gov.sg/member/home-ownership/using-your-cpf-to-buy-a-home/retain-20000-in-your-oa-if-you-are-taking-a-housing-loan) (including eligibility, timing and instalment comparison), [HDB/bank loan differences](https://www.cpf.gov.sg/member/infohub/educational-resources/3-differences-between-hdb-loan-and-bank-loan), and the linked [first-home OA-use article](https://www.cpf.gov.sg/member/infohub/educational-resources/how-much-cpf-oa-should-you-use-when-buying-your-first-home). CPF Board directly supports the rules; no detail is attributed to the inaccessible HDB loan page.
+- Other candidate evidence: [CPF Board PHG/resale and 4km conditions](https://www.cpf.gov.sg/member/infohub/educational-resources/a-guide-to-enhanced-cpf-housing-and-proximity-grant); [HDB: watchlist is not a reservation](https://ask.gov.sg/hdb/questions/cmttq9kyu02mc4a011yrfw5bh); [HDB: watchlist notifications](https://ask.gov.sg/hdb/questions/cmttq9kyy02mg4a01i1l4dxba). HDB's priority-scheme page returned 403, so no new priority-policy claims were made.
+
+### Current Search Console evidence
+
+Authenticated read-only property: **`sc-domain:wheretobto.com`**. Web search, final data. Latest returned final reporting date: **17 October 2026**; query and page reports bounded to 25 rows each.
+
+| Metric | 11–17 Oct 2026 | 4–10 Oct 2026 |
+| --- | ---: | ---: |
+| Clicks | 7 | 7 |
+| Impressions | 292 | 336 |
+| CTR | 2.40% | 2.08% |
+| Average position | 24.18 | 18.00 |
+
+- Current URLs: project directory 100 impressions/0 clicks; DIA calculator 36/2; Tampines Bliss 60/3; guide directory 13/0; upcoming Caldecott 22/0. Query examples: “bto locations” 12/0, “bto calculator” 10/0, “caldecott bto” 6/0. One “bto appointment date tracker” impression is not proven demand. Visible query rows are anonymised and do not sum to property totals.
+- Evidence-led action: add a useful reserve-decision explanation and contextual links from the existing payment guide and roadmap, supporting visitors who already reach financing content. No broad title rewrite, thin location variant or invented traffic projection. Weekly differences in this small sample do not establish a trend or a content effect.
+- Sitemap API: canonical sitemap, 0 errors/warnings, not pending; last downloaded **14 October**, 38 submitted URLs. Its legacy `indexed: 0` field is not a current site indexing count. No unchanged sitemap was resubmitted.
+- Priority inspection: `/bto-projects/nov-2026-bedok-unnamed` remains **Discovered – currently not indexed**, with sitemap discovery and no established crawl/canonical. The earlier 12 October aggregate indexing report is historical, not a fresh count. No indexing request was sent.
+- Current Vercel visitor/referral/conversion reports were not exposed by the bounded deployment reader. The earlier 41-visitor UI report remains historical and was not reused as current traffic. No TriElite PostHog call, new tracking or measurement service. No current AI-referral, citation or downstream conversion result is established.
+
+### News check and maintenance boundary
+
+- Previous complete cutoff remains **17 October 2026, 22:45 UTC**. This run attempted a follow-up through **19 October 2026, 17:04 UTC**; it is a **limited check, not a new complete cutoff**.
+- Read the [CPF Board news index](https://www.cpf.gov.sg/member/infohub/news/news-releases): the latest visible item is 17 October's retirement-planning roadshows, not a BTO eligibility, payment or rate change. Older September rate news is not a new development.
+- The readable connector attempted the [HDB news index](https://www.hdb.gov.sg/hdb-pulse/news), [quarterly supply release](https://www.hdb.gov.sg/hdb-pulse/news/2026/20261001-Flash-Estimate-of-3rd-Quarter-2026-Resale-Price-Index-and-Upcoming-Flat-Supply) and [HDB loan guidance](https://www.hdb.gov.sg/buying-a-flat/flat-grant-and-loan-eligibility/housing-loan/housing-loan-from-hdb): HTTP 403. [Flat Portal](https://homes.hdb.gov.sg/) returned 503. The [MND release index](https://www.mnd.gov.sg/newsroom/press-releases) yielded no readable text. HDB's reachable AskGov answers and linked CPF primary documents were followed rather than treating one failed fetch as absence of sources.
+- [CNA BTO topic discovery](https://www.channelnewsasia.com/topic/bto) exposed older June/February items, not a verified new consequential announcement. It is not evidence of complete official news coverage. No new launch, application deadline, price, classification, wait, eligibility or calculator rule was verified; none was invented or changed. The official snapshot audit date stays unchanged, and the unfinished official-news interval remains explicit for the next check.
+
+### Editorial, implementation and release gates
+
+- Manually reviewed the complete title, description, direct opening, five sections, official source labels, existing route callout and three CTAs. There is no FAQ, fabricated experience, guaranteed grant/loan or government endorsement. The hypothetical unequal-balance example was independently calculated: $60,000 total, $30,000 retained, $30,000 towards purchase.
+- Checked the shipped roadmap source and UI: its reserve is household-level and remains protected through repayments. The guide explains no double subtraction, no automatic loan increase, no per-person validation and no instruction submitted to HDB. No financing logic changed.
+- Reused `data/reddit-guides.ts` through `data/guides.ts` and the static guide route. Added contextual links from the payment guide and roadmap; the directory, canonical, Article JSON-LD and sitemap use one URL. Only this new article and directory receive 19 October UTC dates. Older guide dates and the project-data audit are preserved.
+- Exact-head release requirements: existing full `verify` job (lint, unit tests, diagnostic production build and sequential Chromium suite); new article at 390px/1440px plus 320px overflow, keyboard/source/link checks and retained screenshots; ordinary production rebuild with `NEXT_PUBLIC_MAP_TEST_API` removed and generated article HTML retained. CI permissions stay `contents: read`; no dependency or Graphify gate was added. No local app install/build on the small cloud instance.
+- Editorial passed before PR preparation. Test/build/browser results and the permitted conflict-free merge must be observed, not assumed. After merge, verify the Ready **production** deployment's exact source, canonical live body/metadata/JSON-LD, directory/backlinks, sitemap and static assets. Final result and reproduction commands belong in the scoped PR and durable delivery record, avoiding a status-only repository commit. Physical Safari remains untested.
+
+**Next observation:** After verified publication, inspect this article's discovery/indexing and compare subsequent complete weekly windows. Preserve the incomplete official-news interval for retry. Do not equate successful publication or sitemap inclusion with Google indexing, AI citations or improved search outcomes.
+
 ## 18 October 2026 — Automatic merge and verified-news maintenance
 
 - Brian explicitly requested automatic merging without a separate human approval and confirmed that BTO news can require code changes. The saved every-two-days schedule now authorizes scoped website code, official project/map data and affected calculator/eligibility rules, with primary-source/effective-date evidence and focused regression tests. The independent criteria and neutral unknown states remain part of the product contract.
