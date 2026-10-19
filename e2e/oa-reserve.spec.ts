@@ -24,6 +24,18 @@ for (const width of [390, 1440]) {
     await expect(page.locator('.article-body a')).toHaveCount(6);
     for (const href of await page.locator('.article-body a').evaluateAll(links => links.map(link => (link as HTMLAnchorElement).href))) expect(new URL(href).hostname).toBe('www.cpf.gov.sg');
     expect(await page.evaluate(() => document.documentElement.scrollWidth)).toBe(width);
+    mkdirSync('test-results', { recursive: true });
+    await page.screenshot({ path: `test-results/oa-reserve-${width}-hero.png` });
+    expect(await page.locator('.content-shell').evaluate(element => element.scrollWidth)).toBe(width);
+    for (const [index, section] of (await page.locator('.article-body section').all()).entries()) {
+      await section.evaluate(element => {
+        const shell = element.closest('.content-shell')!;
+        const header = document.querySelector('.site-header')!;
+        shell.scrollTop += element.getBoundingClientRect().top - header.getBoundingClientRect().bottom - 16;
+      });
+      await page.screenshot({ path: `test-results/oa-reserve-${width}-section-${index + 1}.png` });
+    }
+    await page.locator('.content-shell').evaluate(element => { element.scrollTop = 0; });
     await page.keyboard.press('Tab');
     const firstFocus = await page.evaluate(() => ({ tag: document.activeElement?.tagName, outline: getComputedStyle(document.activeElement!).outlineStyle }));
     expect(firstFocus.tag).toBe('A');
