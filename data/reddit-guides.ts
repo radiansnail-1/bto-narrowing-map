@@ -50,7 +50,7 @@ export const REDDIT_GUIDES: PracticalGuide[] = [
       "heading": "Read your own status and invitation before assuming a date",
       "paragraphs": [
         "Open the official HDB Flat Portal from HDB's website and check your application's status and correspondence. If an invitation is available, record its date, the flat list and the instructions that apply to your household. Follow any request for documents or action by its stated deadline.",
-        "Use the timetable for your sales exercise. For example, the June 2026 annex described December 2026 as the tentative start of that exercise's booking. That is a dated cohort example, not the appointment date for every June applicant or a timetable for a later launch.",
+        "Record an exercise's tentative booking start separately from your own appointment. A broad timetable does not identify the day your household will be called. Check the notice sent for your application.",
         "If no invitation has arrived, an unofficial appointment tracker or another applicant's message cannot confirm your appointment. Ask HDB about a missing or conflicting notice rather than treating a community estimate as an official instruction."
       ],
       "sources": [
@@ -216,7 +216,7 @@ export const REDDIT_GUIDES: PracticalGuide[] = [
       { heading: 'Keep the two policy start dates separate', paragraphs: ['For eligible families applying for an HFE letter from 24 August 2026, the household income ceiling increased to $16,000. The corresponding ceiling for eligible singles aged 35 and above became $8,000. These ceilings do not establish your grant amount or approved loan.', 'The additional ballot chance for each eligible Singapore Citizen child starts with the February 2027 sales exercise. Do not add those future chances to a November 2026 application.'], sources: [{ title: 'HDB: income-ceiling and ballot changes, with effective dates', href: 'https://www.hdb.gov.sg/hdb-pulse/news/2026/increase-in-income-ceilings-and-greater-support-for-families-with-children' }] },
       { heading: 'Use the remaining time to make a conditional shortlist', paragraphs: ['Choose the work and caregiving destinations that matter, then compare travel trade-offs on the map. Record the price, waiting time and flat type that would make each location workable for your household. Leave a field open if HDB has not published it.', 'At launch, check each shortlisted project against the official prices, classification, flat mix, estimated wait and application dates. Use your HFE outcome and confirmed savings for the funding plan. The map and DIA calculator help you explore choices; neither issues an HFE letter nor submits a flat application.'] },
     ],
-    next: [{ title: 'Build a conditional shortlist on the map', href: '/' }, { title: 'Understand DIA, HFE and grant timing', href: '/guides/dia-hfe-and-housing-grants' }, { title: 'Plan cash and CPF by payment milestone', href: '/guides/bto-cash-cpf-payment-timeline' }],
+    next: [{ title: 'Understand a queue number beyond flat supply', href: '/guides/bto-queue-number-beyond-flat-supply' }, { title: 'Build a conditional shortlist on the map', href: '/' }, { title: 'Understand DIA, HFE and grant timing', href: '/guides/dia-hfe-and-housing-grants' }, { title: 'Plan cash and CPF by payment milestone', href: '/guides/bto-cash-cpf-payment-timeline' }],
   },
   {
     slug: 'dia-hfe-and-housing-grants', category: 'Eligibility and grants',
