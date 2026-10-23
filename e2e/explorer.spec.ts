@@ -1,3 +1,4 @@
+import { GUIDES } from '../data/guides';
 import { test, expect, type Page } from '@playwright/test';
 
 async function openReadyMap(page: Page) {
@@ -226,7 +227,7 @@ test('crawlable project, FAQ, AI-info, sitemap, and robots surfaces are linked a
   await expect.poll(() => page.locator('script[type="application/ld+json"]').evaluate((element) => element.textContent)).toContain('FAQPage');
 
   await page.goto('/guides');
-  await expect(page.locator('.guide-row')).toHaveCount(11);
+  await expect(page.locator('.guide-row')).toHaveCount(GUIDES.length);
   await page.getByRole('link', { name: 'How to compare commutes before choosing a BTO', exact: true }).click();
   await expect(page.getByRole('heading', { name: 'How to compare commutes before choosing a BTO' })).toBeVisible();
 
