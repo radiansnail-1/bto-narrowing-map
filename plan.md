@@ -1,5 +1,14 @@
 # Where To BTO — Plan
 
+## Queue number beyond flat supply — 23 October 2026 (PR #14)
+
+- **Goal:** Publish one distinct English applicant guide at `/guides/bto-queue-number-beyond-flat-supply`, retained branch `seo/bto-queue-number-beyond-flat-supply`, [actual PR #14](https://github.com/radiansnail-1/bto-narrowing-map/pull/14). Prior PR10 CPF article is verified history, not retained new delivery.
+- **Actual state:** Initial source `86aecfb7816fc1b20d8e8649a0c287b4839140c0` prepared from exact production `c22859bcf9dbf2cfff2a32233d4d2b51d67dbc7c`. Complete article, current guide answers and full PR5 guide changes reviewed. Added a related HFE-guide link and directory introduction; publication/source dates only on the new guide. Existing project snapshot, finance logic, neutral map matching and user TODOs below remain intact.
+- **Next action:** Required hosted source/build/browser verification on the final head, followed by ordinary approved merge and exact-source candidate/promotion/live proof only if gates pass. A PR or passing preview is not publication.
+- **Known blocker to resolve:** Existing `e2e/explorer.spec.ts` asserts11guide rows; this source adds a twelfth. The private publisher reader reports `source_path_outside_approved_website_scope` for that test path. Do not bypass the file scope via another writer or weaken/delete directory coverage. Capture actual hosted result; retain this same draft/PR if blocked and request the owning bridge's narrowly approved test repair rather than new filler.
+- **News:** Limited official check through 2026-10-23T03:47:12Z; last complete cutoff remains17October22:45UTC. HDB index timed out and MND showed bot verification; CPF/IRAS and official indexed releases yielded no newly confirmed consequential change. No new project, sales dates or calculator rule is inferred; project audit dates do not advance.
+- **Measurement:** Final Pacific14–20October4clicks/195impressions versus7–13October10/359; very small sample, with only1and2impressions on19/20October. One appointment-tracker impression is a weak related signal. Planner Singapore English available; broad queue-number estimate70/month, exact beyond-supply estimate unknown. No causal gain, indexing, business conversion or traffic forecast. Observe7/28days after verified publication, retaining earlier observation plans.
+
 ## Chinese product entry and calculator navigation — 19 October 2026
 
 Publication: PR #12 is open; local checks and responsive QA passed. Required final-head checks and live verification remain pending.
@@ -96,4 +105,4 @@ Added server-rendered /zh Simplified Chinese product introduction and /tools cho
 - Evidence and source limitations: `artifacts/mobile-seo-audit.md`, `artifacts/codebase-audit.md`, `artifacts/dia-research.md`, `artifacts/reddit-content-research.md`, `artifacts/transit-and-reference-research.md`.
 - No tracked Graphify graph or repository Graphify publication requirement is present.
 
-**Last updated:** 2026-10-19 (UTC)
+**Last updated:** 2026-10-23 (SEO section; prior owner/native TODOs retained)

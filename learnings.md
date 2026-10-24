@@ -50,3 +50,12 @@
 - **Current Vercel CLI can resolve a project when the connector cannot** — the connector returned an empty project list/404 in the correct team, while the authenticated CLI resolved the existing project and production commit. Keep the explicit team scope and use provider Ready status plus canonical HTTP checks.
 - **A savings forecast needs payment ordering** — apply contributions after the month’s payments, retain the pre-contribution cash low and credit the option fee once. Month-end balances can look positive while an earlier payment still needs bridging cash. Under bank-loan DIA, the initial 2.5% is cash-only; a generic CPF-first preference cannot override it.
 - **A repayment chart must cover its stated term** — keep full loan amortisation separate from the shorter savings runway. Give charts visible scales and tabular data; label loan/grant figures as assumptions and keep financial storage opt-in.
+
+
+## 23 October 2026 — Queue interpretation and publication gates
+
+- Queue position, invitation and booking are separate states. Compare the applicant's actual town/type/category supply pool; a ratio is not a household probability, and a saved unit is not reserved.
+- Use dated exercise conditions for application restrictions and tentative timetables. A current site footer or crawl date does not turn an August announcement into new October news. Incomplete index access leaves the news interval open.
+- Preserve full existing answers and all open-PR heads. PR5 concerns manual ad rendering and ownership, not a competing queue article; never merge or copy its tracking changes during SEO work.
+- New guide directory entries can change an exact browser-count fixture. A publisher scope denial for a required test path is a concrete release blocker; retain the same draft and do not remove coverage or bypass the approved writer.
+- Planner synonyms are not additive traffic. Null exact-query estimates and suppressed Search Console rows remain unknown; tiny dated declines do not establish a content cause.
