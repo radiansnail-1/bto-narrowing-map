@@ -10,6 +10,8 @@ async function openReadyMap(page: Page) {
 }
 
 test('finishes narrowing, shows grouped results, and preserves BTO context through amenity details', async ({ page }) => {
+  // This complete map flow takes longer on software-WebGL runners than individual journeys.
+  test.setTimeout(90_000);
   await openReadyMap(page);
   await expect(page).toHaveTitle('Where To BTO');
   await expect(page.getByText('Prototype — not an official Government service')).toHaveCount(0);
