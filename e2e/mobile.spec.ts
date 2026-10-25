@@ -27,7 +27,8 @@ test('mobile loads the map and can narrow and open transit routes', async ({ pag
 });
 
 test('mobile map supports pan, pinch, rotate and reset', async ({ page, context }) => {
-  test.setTimeout(90_000);
+  // The private software-WebGL trace takes 80s just to reach the third gesture.
+  test.setTimeout(240_000);
   await page.goto('/');
   const map = page.getByTestId('map-boundary-state');
   await expect(map).toHaveAttribute('data-map-ready', 'true', { timeout: 30_000 });
@@ -44,24 +45,25 @@ test('mobile map supports pan, pinch, rotate and reset', async ({ page, context 
   await session.send('Input.dispatchTouchEvent', { type: 'touchStart', touchPoints: [{ x: x - 80, y: y + 100, id: 1 }] });
   for (const shift of [20, 40, 60]) await session.send('Input.dispatchTouchEvent', { type: 'touchMove', touchPoints: [{ x: x - 80 + shift, y: y + 100, id: 1 }] });
   await session.send('Input.dispatchTouchEvent', { type: 'touchEnd', touchPoints: [] });
-  await expect.poll(async () => (await camera()).target[0]).not.toBeCloseTo(beforePan.target[0], 1);
+  // A camera read alone can take over 6s on the private software-WebGL runner.
+  await expect.poll(async () => (await camera()).target[0], { timeout: 15_000 }).not.toBeCloseTo(beforePan.target[0], 1);
   const orbit = (state: typeof beforePan) => Math.atan2(state.position[0] - state.target[0], state.position[2] - state.target[2]);
   expect(orbit(await camera())).toBeCloseTo(orbit(beforePan), 2);
   const fingers = (distance: number) => [{ x: x - distance, y, id: 1 }, { x: x + distance, y, id: 2 }];
   await session.send('Input.dispatchTouchEvent', { type: 'touchStart', touchPoints: fingers(30) });
   for (const distance of [40, 55, 70, 85]) await session.send('Input.dispatchTouchEvent', { type: 'touchMove', touchPoints: fingers(distance) });
   await session.send('Input.dispatchTouchEvent', { type: 'touchEnd', touchPoints: [] });
-  await expect.poll(zoom).toBeGreaterThan(before * 1.2);
+  await expect.poll(zoom, { timeout: 15_000 }).toBeGreaterThan(before * 1.2);
   const beforeRotate = await camera();
   await session.send('Input.dispatchTouchEvent', { type: 'touchStart', touchPoints: fingers(40) });
   for (const shift of [15, 30, 45]) await session.send('Input.dispatchTouchEvent', { type: 'touchMove', touchPoints: fingers(40).map((point) => ({ ...point, x: point.x + shift })) });
   await session.send('Input.dispatchTouchEvent', { type: 'touchEnd', touchPoints: [] });
-  await expect.poll(async () => orbit(await camera())).not.toBeCloseTo(orbit(beforeRotate), 1);
+  await expect.poll(async () => orbit(await camera()), { timeout: 15_000 }).not.toBeCloseTo(orbit(beforeRotate), 1);
   await page.getByRole('button', { name: 'Reset view', exact: true }).click();
-  await expect.poll(zoom).toBeCloseTo(before, 1);
-  await expect.poll(async () => (await camera()).target[0]).toBeCloseTo(beforePan.target[0], 2);
-  await expect.poll(async () => (await camera()).target[2]).toBeCloseTo(beforePan.target[2], 2);
-  await expect.poll(async () => orbit(await camera())).toBeCloseTo(orbit(beforePan), 2);
+  await expect.poll(zoom, { timeout: 15_000 }).toBeCloseTo(before, 1);
+  await expect.poll(async () => (await camera()).target[0], { timeout: 15_000 }).toBeCloseTo(beforePan.target[0], 2);
+  await expect.poll(async () => (await camera()).target[2], { timeout: 15_000 }).toBeCloseTo(beforePan.target[2], 2);
+  await expect.poll(async () => orbit(await camera()), { timeout: 15_000 }).toBeCloseTo(orbit(beforePan), 2);
 });
 
 test('mobile map reframes the selected project after a viewport resize', async ({ page }) => {
@@ -71,10 +73,10 @@ test('mobile map reframes the selected project after a viewport resize', async (
   const zoom = () => page.evaluate(() => (window as unknown as { __mapCamera: { zoom: number } }).__mapCamera.zoom);
   await page.getByRole('button', { name: /Browse 22 projects/ }).click();
   await page.getByRole('button', { name: 'Redhill Peaks', exact: true }).click();
-  await expect.poll(zoom).toBeGreaterThan(270);
+  await expect.poll(zoom, { timeout: 15_000 }).toBeGreaterThan(270);
   await page.setViewportSize({ width: 320, height: 844 });
-  await expect.poll(zoom).toBeLessThan(180);
-  await expect.poll(zoom).toBeGreaterThan(150);
+  await expect.poll(zoom, { timeout: 15_000 }).toBeLessThan(180);
+  await expect.poll(zoom, { timeout: 15_000 }).toBeGreaterThan(150);
 });
 
 test('mobile workplace pin can be placed and cancelled', async ({ page }) => {
