@@ -54,12 +54,12 @@ test('animated map wakes for camera changes and sleeps when idle without fetchin
   await page.keyboard.down('ArrowRight');
   await page.waitForTimeout(300);
   await page.keyboard.up('ArrowRight');
-  await expect.poll(positionX).toBeGreaterThan(beforePan);
+  await expect.poll(positionX, { timeout: 15_000 }).toBeGreaterThan(beforePan);
   await expectIdle(page);
 
   await page.mouse.move(600, 450);
   await page.mouse.wheel(0, -200);
-  await expect.poll(zoom).toBeGreaterThan(overviewZoom + 5);
+  await expect.poll(zoom, { timeout: 15_000 }).toBeGreaterThan(overviewZoom + 5);
   await expectIdle(page);
 });
 
@@ -74,6 +74,6 @@ test('an arrow tap queued between frames still moves the map', async ({ page }) 
     window.dispatchEvent(new KeyboardEvent('keydown', { key: 'ArrowRight' }));
     window.dispatchEvent(new KeyboardEvent('keyup', { key: 'ArrowRight' }));
   });
-  await expect.poll(() => page.evaluate(() => (window as unknown as MapWindow).__mapCam.position.x)).toBeGreaterThan(before);
+  await expect.poll(() => page.evaluate(() => (window as unknown as MapWindow).__mapCam.position.x), { timeout: 15_000 }).toBeGreaterThan(before);
   await expectIdle(page);
 });

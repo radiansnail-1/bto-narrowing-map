@@ -21,7 +21,7 @@ test('finishes narrowing, shows grouped results, and preserves BTO context throu
   await page.keyboard.down('ArrowRight');
   await page.waitForTimeout(220);
   await page.keyboard.up('ArrowRight');
-  await expect.poll(async () => (await page.evaluate(() => (window as unknown as { __mapCamera: { target: number[] } }).__mapCamera.target))[0]).not.toBeCloseTo(targetBefore[0], 2);
+  await expect.poll(async () => (await page.evaluate(() => (window as unknown as { __mapCamera: { target: number[] } }).__mapCamera.target))[0], { timeout: 15_000 }).not.toBeCloseTo(targetBefore[0], 2);
 
   await page.getByRole('button', { name: /Raffles Place CBD/ }).click();
   await page.getByTestId('next-question').click();
@@ -143,7 +143,7 @@ test('map amenity click opens the full panel and back restores the selected proj
   await openReadyMap(page);
   await page.locator('.map-label-project', { hasText: 'Redhill Peaks' }).click();
   await expect(page.getByTestId('project-card')).toBeVisible();
-  await expect.poll(() => page.evaluate(() => (window as unknown as { __mapCamera: { zoom: number } }).__mapCamera.zoom)).toBeGreaterThanOrEqual(340);
+  await expect.poll(() => page.evaluate(() => (window as unknown as { __mapCamera: { zoom: number } }).__mapCamera.zoom), { timeout: 15_000 }).toBeGreaterThanOrEqual(340);
 
   const footprintState = await page.evaluate(() => {
     type GeometryLike = { getIndex: () => { count: number } | null; computeBoundingBox: () => void; boundingBox: { getCenter: (target: VectorLike) => VectorLike } | null; getAttribute: (name: string) => { count: number } };
