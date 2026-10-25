@@ -52,10 +52,23 @@ test('mobile map supports pan, pinch, rotate and reset', async ({ page, context 
     throw new Error('No exposed canvas area is available for the touch gesture');
   });
   let { x, y } = await gestureOrigin();
+  const canvas = page.locator('canvas');
+  await canvas.evaluate((element) => {
+    let starts = 0;
+    element.setAttribute('data-e2e-pointer-starts', '0');
+    element.addEventListener('pointerdown', () => element.setAttribute('data-e2e-pointer-starts', String(++starts)));
+  });
   const session = await context.newCDPSession(page);
+  let pointerStarts = 0;
+  const touchStart = async (touchPoints: Array<{ x: number; y: number; id: number }>) => {
+    await session.send('Input.dispatchTouchEvent', { type: 'touchStart', touchPoints });
+    pointerStarts += touchPoints.length;
+    // CDP can return before the canvas/OrbitControls has processed the finger-down events.
+    await expect(canvas).toHaveAttribute('data-e2e-pointer-starts', String(pointerStarts));
+  };
   const camera = () => page.evaluate(() => (window as unknown as CameraWindow).__mapCamera);
   const beforePan = await camera();
-  await session.send('Input.dispatchTouchEvent', { type: 'touchStart', touchPoints: [{ x: x - 80, y, id: 1 }] });
+  await touchStart([{ x: x - 80, y, id: 1 }]);
   for (const shift of [20, 40, 60]) await session.send('Input.dispatchTouchEvent', { type: 'touchMove', touchPoints: [{ x: x - 80 + shift, y, id: 1 }] });
   // A fast CDP gesture must stay down until the slow software-rendered map consumes it.
   await expect.poll(async () => (await camera()).target[0]).not.toBeCloseTo(beforePan.target[0], 1);
@@ -65,14 +78,14 @@ test('mobile map supports pan, pinch, rotate and reset', async ({ page, context 
   expect(orbit(await camera())).toBeCloseTo(orbit(beforePan), 2);
   ({ x, y } = await gestureOrigin());
   const fingers = (distance: number) => [{ x: x - distance, y, id: 1 }, { x: x + distance, y, id: 2 }];
-  await session.send('Input.dispatchTouchEvent', { type: 'touchStart', touchPoints: fingers(30) });
+  await touchStart(fingers(30));
   for (const distance of [40, 55, 70, 85]) await session.send('Input.dispatchTouchEvent', { type: 'touchMove', touchPoints: fingers(distance) });
   await expect.poll(zoom).toBeGreaterThan(before * 1.2);
   await session.send('Input.dispatchTouchEvent', { type: 'touchEnd', touchPoints: [] });
   await expect.poll(zoom).toBeGreaterThan(before * 1.2);
   const beforeRotate = await camera();
   ({ x, y } = await gestureOrigin());
-  await session.send('Input.dispatchTouchEvent', { type: 'touchStart', touchPoints: fingers(40) });
+  await touchStart(fingers(40));
   for (const shift of [15, 30, 45]) await session.send('Input.dispatchTouchEvent', { type: 'touchMove', touchPoints: fingers(40).map((point) => ({ ...point, x: point.x + shift })) });
   await expect.poll(async () => orbit(await camera())).not.toBeCloseTo(orbit(beforeRotate), 1);
   await session.send('Input.dispatchTouchEvent', { type: 'touchEnd', touchPoints: [] });
