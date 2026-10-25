@@ -27,7 +27,8 @@ test('mobile loads the map and can narrow and open transit routes', async ({ pag
 });
 
 test('mobile map supports pan, pinch, rotate and reset', async ({ page, context }) => {
-  test.setTimeout(90_000);
+  // The private software-WebGL trace takes 80s just to reach the third gesture.
+  test.setTimeout(240_000);
   await page.goto('/');
   const map = page.getByTestId('map-boundary-state');
   await expect(map).toHaveAttribute('data-map-ready', 'true', { timeout: 30_000 });
