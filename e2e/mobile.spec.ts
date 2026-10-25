@@ -34,14 +34,15 @@ test('mobile map supports pan, pinch, rotate and reset', async ({ page, context 
   await map.scrollIntoViewIfNeeded();
   type CameraWindow = Window & {
     __mapCamera: { zoom: number; target: number[]; position: number[] };
-    __mapGl: { info: { render: { frame: number } } };
     __mapPendingFrames: number;
   };
   const zoom = () => page.evaluate(() => (window as unknown as CameraWindow).__mapCamera.zoom);
   await expect.poll(zoom).toBeGreaterThan(0);
   await expect.poll(() => page.evaluate(() => (window as unknown as CameraWindow).__mapPendingFrames), { timeout: 15_000 }).toBe(0);
   const before = await zoom();
-  const gestureOrigin = () => page.locator('canvas').evaluate((canvas) => {
+  const gestureOrigin = () => page.evaluate(() => {
+    const canvas = document.querySelector('canvas');
+    if (!canvas) throw new Error('The map canvas is unavailable');
     const box = canvas.getBoundingClientRect(), x = box.x + box.width / 2;
     for (const ratio of [0.8, 0.65, 0.5, 0.35]) {
       const y = box.y + box.height * ratio;
@@ -52,17 +53,12 @@ test('mobile map supports pan, pinch, rotate and reset', async ({ page, context 
   });
   let { x, y } = await gestureOrigin();
   const session = await context.newCDPSession(page);
-  const frame = () => page.evaluate(() => (window as unknown as CameraWindow).__mapGl.info.render.frame);
-  const touchMove = async (touchPoints: Array<{ x: number; y: number; id: number }>) => {
-    const previousFrame = await frame();
-    await session.send('Input.dispatchTouchEvent', { type: 'touchMove', touchPoints });
-    // Keep the finger down until the map has consumed each move, even on slow WebGL.
-    await expect.poll(frame).toBeGreaterThan(previousFrame);
-  };
   const camera = () => page.evaluate(() => (window as unknown as CameraWindow).__mapCamera);
   const beforePan = await camera();
   await session.send('Input.dispatchTouchEvent', { type: 'touchStart', touchPoints: [{ x: x - 80, y, id: 1 }] });
-  for (const shift of [20, 40, 60]) await touchMove([{ x: x - 80 + shift, y, id: 1 }]);
+  for (const shift of [20, 40, 60]) await session.send('Input.dispatchTouchEvent', { type: 'touchMove', touchPoints: [{ x: x - 80 + shift, y, id: 1 }] });
+  // A fast CDP gesture must stay down until the slow software-rendered map consumes it.
+  await expect.poll(async () => (await camera()).target[0]).not.toBeCloseTo(beforePan.target[0], 1);
   await session.send('Input.dispatchTouchEvent', { type: 'touchEnd', touchPoints: [] });
   await expect.poll(async () => (await camera()).target[0]).not.toBeCloseTo(beforePan.target[0], 1);
   const orbit = (state: typeof beforePan) => Math.atan2(state.position[0] - state.target[0], state.position[2] - state.target[2]);
@@ -70,13 +66,15 @@ test('mobile map supports pan, pinch, rotate and reset', async ({ page, context 
   ({ x, y } = await gestureOrigin());
   const fingers = (distance: number) => [{ x: x - distance, y, id: 1 }, { x: x + distance, y, id: 2 }];
   await session.send('Input.dispatchTouchEvent', { type: 'touchStart', touchPoints: fingers(30) });
-  for (const distance of [40, 55, 70, 85]) await touchMove(fingers(distance));
+  for (const distance of [40, 55, 70, 85]) await session.send('Input.dispatchTouchEvent', { type: 'touchMove', touchPoints: fingers(distance) });
+  await expect.poll(zoom).toBeGreaterThan(before * 1.2);
   await session.send('Input.dispatchTouchEvent', { type: 'touchEnd', touchPoints: [] });
   await expect.poll(zoom).toBeGreaterThan(before * 1.2);
   const beforeRotate = await camera();
   ({ x, y } = await gestureOrigin());
   await session.send('Input.dispatchTouchEvent', { type: 'touchStart', touchPoints: fingers(40) });
-  for (const shift of [15, 30, 45]) await touchMove(fingers(40).map((point) => ({ ...point, x: point.x + shift })));
+  for (const shift of [15, 30, 45]) await session.send('Input.dispatchTouchEvent', { type: 'touchMove', touchPoints: fingers(40).map((point) => ({ ...point, x: point.x + shift })) });
+  await expect.poll(async () => orbit(await camera())).not.toBeCloseTo(orbit(beforeRotate), 1);
   await session.send('Input.dispatchTouchEvent', { type: 'touchEnd', touchPoints: [] });
   await expect.poll(async () => orbit(await camera())).not.toBeCloseTo(orbit(beforeRotate), 1);
   await page.getByRole('button', { name: 'Reset view', exact: true }).click();
