@@ -370,6 +370,9 @@ button { color: inherit; }
 .article-body p { margin: 0 0 20px; color: var(--ink-2); font-size: 15px; line-height: 1.75; }
 .article-next { margin-top: 28px; }
 .article-next h2 { font-size: 18px; }
+.article-languages { display: flex; flex-wrap: wrap; gap: 8px 16px; margin: 0 0 24px; font-size: 13px; }
+.article-languages a { color: var(--link); text-underline-offset: 3px; }
+.article-languages a[aria-current="page"] { color: var(--ink); font-weight: 700; }
 .article-next a { display: flex; align-items: center; justify-content: space-between; padding: 14px 0; border-top: 1px solid var(--line); color: var(--link); font-size: 14px; font-weight: 700; text-decoration: none; }
 .source-register { display: grid; gap: 0; margin: 0; padding: 0; list-style: none; }
 .source-register li { display: grid; grid-template-columns: 190px 1fr; gap: 18px; padding: 13px 0; border-top: 1px solid var(--line); }

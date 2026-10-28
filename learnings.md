@@ -1,3 +1,11 @@
+## Five-language daily publishing readiness — 28 October 2026
+
+PR #16: https://github.com/radiansnail-1/bto-narrowing-map/pull/16 . The owner requested a working content-driven publisher before 29 October. New articles live in data/article-bundles/<slug>.json with complete en/es/fr/de/zh-Hans copy; the build discovers records and generates five static pages, self-canonicals, reciprocal language links, schema and sitemap entries. Add content records rather than daily template edits. Existing English routes and the /zh product page stay intact.
+
+The original handling-unpublished-bto-information article is the five-language canary. Original publication/source-review dates stay 29 August; translation update is 28 October. No new scheduled article slot or housing/finance fact is counted. Root layouts use route groups so html lang is correct without request headers or dynamic rendering. Exact-head CI includes existing 19 browser checks and an ordinary production build.
+
+Local validation: lint, 93 unit tests and ordinary production build passed; 55 static pages include the four translated routes. Partial copied-English text, incomplete copy, invalid dates, unsafe links and differing citation/navigation targets fail validation. Chinese phone/French desktop canary layout and language navigation passed source-built browser review; remote checks, merge and exact-source Ready release remain required. Preserve unrelated prior TODOs and dated history below.
+
 # Learnings
 
 - **Website localization — 19 October 2026:** Use real translated entry pages with reciprocal alternate links; label linked English-only content. App Store listing languages do not establish native UI language support, and Apple may lock Marketing URL edits by version state.

@@ -3,6 +3,7 @@ import { btoProjects } from '@/data/bto-projects';
 import { GUIDES } from '@/data/guides';
 import { DATA_CHECKED_DATE } from '@/data/sources';
 import { absoluteUrl } from '@/lib/site';
+import { ARTICLE_BUNDLES, ARTICLE_LANGUAGES, articleLanguages, articlePath } from '@/data/article-bundles';
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const dataDate = new Date(`${DATA_CHECKED_DATE}T00:00:00Z`);
@@ -23,6 +24,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   ];
   return [
     ...staticRoutes,
+    ...ARTICLE_BUNDLES.flatMap(bundle => ARTICLE_LANGUAGES.filter(language => language !== 'en').map(language => ({ url: absoluteUrl(articlePath(bundle.slug, language)), lastModified: new Date(`${bundle.updatedDate}T00:00:00Z`), changeFrequency: 'monthly' as const, priority: 0.7, alternates: { languages: Object.fromEntries(Object.entries(articleLanguages(bundle.slug)).map(([code, path]) => [code, absoluteUrl(path)])) } }))),
     ...btoProjects.map((project) => ({
       url: absoluteUrl(`/bto-projects/${project.id}`),
       lastModified: new Date(`${project.checkedDate}T00:00:00Z`),
