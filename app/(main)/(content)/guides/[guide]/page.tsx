@@ -4,14 +4,18 @@ import { notFound } from 'next/navigation';
 import { JsonLd } from '@/components/JsonLd';
 import { REDDIT_GUIDES, PRACTICAL_GUIDES_CHECKED } from '@/data/reddit-guides';
 import { absoluteUrl } from '@/lib/site';
+import { ARTICLE_BUNDLES, LEGACY_ARTICLE_SLUGS, articleBundle } from '@/data/article-bundles';
+import { LocalizedArticle, localizedArticleMetadata } from '@/components/LocalizedArticle';
 
 interface Props { params: Promise<{ guide: string }> }
 export const dynamicParams = false;
 export function generateStaticParams() {
-  return REDDIT_GUIDES.map(({ slug }) => ({ guide: slug }));
+  return [...REDDIT_GUIDES.map(({ slug }) => ({ guide: slug })), ...ARTICLE_BUNDLES.filter(bundle => !LEGACY_ARTICLE_SLUGS.includes(bundle.slug)).map(({ slug }) => ({ guide: slug }))];
 }
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { guide } = await params;
+  const bundle = articleBundle(guide);
+  if (bundle) return localizedArticleMetadata(bundle, 'en');
   const article = REDDIT_GUIDES.find(({ slug }) => slug === guide);
   if (!article) return {};
   const publishedDate = article.publishedDate ?? PRACTICAL_GUIDES_CHECKED;
@@ -26,6 +30,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 }
 export default async function PracticalGuidePage({ params }: Props) {
   const { guide } = await params;
+  const bundle = articleBundle(guide);
+  if (bundle) return <LocalizedArticle bundle={bundle} language="en" />;
   const article = REDDIT_GUIDES.find(({ slug }) => slug === guide);
   if (!article) notFound();
   const publishedDate = article.publishedDate ?? PRACTICAL_GUIDES_CHECKED;

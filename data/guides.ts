@@ -1,6 +1,7 @@
 import { REDDIT_GUIDES, PRACTICAL_GUIDES_CHECKED } from '@/data/reddit-guides';
+import { ARTICLE_BUNDLES } from '@/data/article-bundles';
 
-export const GUIDES = [
+const existingGuides = [
   {
     href: '/guides/start-here',
     checkedDate: '2026-09-07',
@@ -41,3 +42,4 @@ export const GUIDES = [
   },
   ...REDDIT_GUIDES.map((guide) => ({ href: `/guides/${guide.slug}`, category: guide.category, title: guide.title, description: guide.description, checkedDate: guide.checkedDate ?? PRACTICAL_GUIDES_CHECKED })),
 ] as const;
+export const GUIDES = [...existingGuides, ...ARTICLE_BUNDLES.filter(bundle => !existingGuides.some(guide => guide.href === `/guides/${bundle.slug}`)).map(bundle => ({ href: `/guides/${bundle.slug}`, checkedDate: bundle.checkedDate, category: bundle.translations.en.category, title: bundle.translations.en.title, description: bundle.translations.en.description }))];

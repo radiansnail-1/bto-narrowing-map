@@ -78,3 +78,9 @@ The interface uses Hanken Grotesk only (SIL OFL 1.1; files and licence in `app/f
 Next.js App Router, TypeScript, React 19, React Three Fiber, Three.js, Vitest, and Playwright.
 
 The package remains marked `private` to prevent accidental npm publication. No separate software licence is granted by this repository; the source-data licences above continue to apply to their respective data.
+
+## Daily article authoring
+
+Add one JSON file at `data/article-bundles/<slug>.json`, using the existing canary as the complete schema example. Required metadata: `slug`, actual `publishedDate`, `checkedDate`, `updatedDate`; `translations` contains exactly `en`, `es`, `fr`, `de`, `zh-Hans`. Every copy has `category`, `title`, `description`, `answer`, structured `sections` (heading, paragraphs, optional source-title/href objects), `callout` (title/text/href/label), and `next` links (title/href). Translate all copy; preserve citation URLs, destination identity and paragraph/section coverage. The loader refuses existing unrelated slugs. No manual imports or new page templates are needed.
+
+`npm test`, `npm run lint`, `npm run build` and the existing browser suite remain the release gates. The cloud runner separately checks all five article pages at phone and desktop sizes before the normal merge/release. Existing English articles are migrated only when explicitly reviewed, without changing their original dates.

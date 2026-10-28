@@ -1,8 +1,8 @@
 import type { Metadata } from 'next';
 import { Analytics } from '@vercel/analytics/next';
-import { hankenGrotesk } from './fonts';
+import { hankenGrotesk } from '../fonts';
 import { SITE_DESCRIPTION, SITE_NAME, SITE_URL } from '@/lib/site';
-import './globals.css';
+import '../globals.css';
 
 export const metadata: Metadata = {
   metadataBase: SITE_URL,

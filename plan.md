@@ -1,3 +1,11 @@
+## Five-language daily publishing readiness — 28 October 2026
+
+The owner requested a working content-driven publisher before 29 October. New articles live in data/article-bundles/<slug>.json with complete en/es/fr/de/zh-Hans copy; the build discovers records and generates five static pages, self-canonicals, reciprocal language links, schema and sitemap entries. Add content records rather than daily template edits. Existing English routes and the /zh product page stay intact.
+
+The original handling-unpublished-bto-information article is the five-language canary. Original publication/source-review dates stay 29 August; translation update is 28 October. No new scheduled article slot or housing/finance fact is counted. Root layouts use route groups so html lang is correct without request headers or dynamic rendering. Exact-head CI includes existing 19 browser checks and an ordinary production build.
+
+Local validation: lint, 93 unit tests and ordinary production build passed; 55 static pages include the four translated routes. Partial copied-English text, incomplete copy, invalid dates, unsafe links and differing citation/navigation targets fail validation. Source and responsive canary inspection are in progress; remote checks, merge and exact-source Ready release remain required. Preserve unrelated prior TODOs and dated history below.
+
 # Where To BTO — Plan
 
 ## Queue number beyond flat supply — 23 October 2026 (PR #14)

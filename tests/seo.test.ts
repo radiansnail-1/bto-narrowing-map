@@ -4,8 +4,8 @@ import { FAQ_ITEMS } from '@/data/faq';
 import { btoProjects } from '@/data/bto-projects';
 import { GUIDES } from '@/data/guides';
 import { REDDIT_GUIDES } from '@/data/reddit-guides';
-import { metadata as chineseMetadata } from '@/app/(content)/zh/page';
-import { metadata as toolsMetadata } from '@/app/(content)/tools/page';
+import { metadata as chineseMetadata } from '@/app/(main)/(content)/zh/page';
+import { metadata as toolsMetadata } from '@/app/(main)/(content)/tools/page';
 
 describe('crawlable site surface', () => {
   it('has one stable, URL-safe page slug per project', () => {
