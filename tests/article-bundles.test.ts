@@ -48,7 +48,7 @@ describe('five-language article publishing', () => {
     } finally { ARTICLE_BUNDLES.pop(); }
   });
   it('keeps the existing English guide once and adds each translated canary to the sitemap', () => {
-    const b = ARTICLE_BUNDLES[0], entries = sitemap();
+    const b = ARTICLE_BUNDLES.find(bundle => bundle.slug === 'handling-unpublished-bto-information')!, entries = sitemap();
     for (const language of ARTICLE_LANGUAGES) expect(entries.filter(entry => new URL(entry.url).pathname === articlePath(b.slug, language))).toHaveLength(1);
     expect(new Set(entries.map(entry => entry.url)).size).toBe(entries.length);
     expect(b.publishedDate).toBe('2026-08-29'); expect(b.checkedDate).toBe('2026-08-29');

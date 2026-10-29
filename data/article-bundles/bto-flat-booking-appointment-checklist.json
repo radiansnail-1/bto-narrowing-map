@@ -1,0 +1,558 @@
+{
+  "slug": "bto-flat-booking-appointment-checklist",
+  "publishedDate": "2026-10-29",
+  "checkedDate": "2026-10-29",
+  "updatedDate": "2026-10-29",
+  "translations": {
+    "en": {
+      "category": "Booking preparation",
+      "title": "BTO flat-booking appointment: what should you prepare?",
+      "description": "Turn your HDB invitation into a household document checklist, unit shortlist and payment check. Keep booking separate from lease signing and key collection.",
+      "answer": "Start with your own HDB invitation package. Record the appointment details, prepare the documents it requests for your household, check your unit choices and confirm the option-fee instructions. A generic checklist cannot confirm that your documents are sufficient or that a preferred flat will remain available. This guide covers preparing to attend your own booking appointment in Singapore.",
+      "sections": [
+        {
+          "heading": "Make the invitation your working checklist",
+          "paragraphs": [
+            "Open the HDB Flat Portal through HDB’s website and read the invitation package for your application. Put the appointment date, time, location, requested documents and any action deadline in one note. Keep the flat list with that note so you are preparing for the correct exercise and flat type.",
+            "Use three columns: requirement in the invitation; person it concerns; action still needed. For example, a fictional couple might record one identity check as ready and one requested relationship document as unresolved. This is a way to organise preparation, not an official document list."
+          ],
+          "sources": [
+            {
+              "title": "HDB: invitation package and booking instructions",
+              "href": "https://www.hdb.gov.sg/buying-a-flat/bto-sbf-and-open-booking-of-flats/process-for-buying-a-new-flat/booking-of-flat"
+            }
+          ]
+        },
+        {
+          "heading": "Check documents person by person",
+          "paragraphs": [
+            "HDB’s buying guide identifies identity and relationship documents, with other records depending on the household. Do not assume every example applies to you, or that an example replaces a document requested in your invitation. Compare the package with the people and circumstances in your actual application.",
+            "For each requested item, check whose record it is, whether the details are correct and how HDB asks you to provide it. Resolve a missing or inconsistent record with HDB before the appointment. Do not upload identity records to Where To BTO or send them to someone offering unofficial appointment help."
+          ],
+          "sources": [
+            {
+              "title": "HDB MyNiceHome: documents at flat booking",
+              "href": "https://www.mynicehome.gov.sg/get-started/hdb-bto-sbf-buying-guide/"
+            }
+          ]
+        },
+        {
+          "heading": "Confirm attendance before the day",
+          "paragraphs": [
+            "HDB’s booking instructions require personal attendance. Check the arrangements for your own application and allow time to reach the location stated in the invitation. Keep the official notice accessible rather than relying on a forwarded screenshot of another household’s appointment.",
+            "If you cannot attend, contact HDB and read its current instructions before making arrangements. This guide does not verify a representative’s paperwork or provide an authorisation form. Do not assume that sending someone else, changing the date or missing the appointment is automatically accepted."
+          ],
+          "sources": [
+            {
+              "title": "HDB: personal attendance and current arrangements",
+              "href": "https://www.hdb.gov.sg/buying-a-flat/bto-sbf-and-open-booking-of-flats/process-for-buying-a-new-flat/booking-of-flat"
+            }
+          ]
+        },
+        {
+          "heading": "Take a shortlist that can change",
+          "paragraphs": [
+            "Recheck the official flat list and available choices near your appointment. Write down a few acceptable alternatives and the reasons you would reject a unit, such as a price beyond your confirmed funding. Discuss those limits with your co-applicant before a choice becomes urgent.",
+            "Use a simple record: unit reference; actual listed price; acceptable trade-off; question still open. A project starting price is not the price of every unit. Where To BTO can help revisit project-level location trade-offs, but it does not hold a unit or confirm live availability."
+          ],
+          "sources": [
+            {
+              "title": "HDB MyNiceHome: booking stage and unit watchlist",
+              "href": "https://www.mynicehome.gov.sg/get-started/hdb-bto-sbf-buying-guide/"
+            }
+          ]
+        },
+        {
+          "heading": "Prepare for the booking payment, then the later milestones",
+          "paragraphs": [
+            "An option fee is due when booking and forms part of the downpayment. Check HDB’s current amount for the flat type and the payment instructions for your appointment. Confirm that you can make that payment using the required method; a combined cash-and-CPF balance does not establish this.",
+            "Keep separate lines for booking, signing the Agreement for Lease and collecting keys. The later payments and their dates depend on your own financing and applicable arrangements. Use the existing payment-timeline guide for planning, then reconcile its assumptions with your HDB or lender documents. Do not count an amount already paid twice."
+          ],
+          "sources": [
+            {
+              "title": "HDB: option fee",
+              "href": "https://www.hdb.gov.sg/buying-a-flat/bto-sbf-and-open-booking-of-flats/process-for-buying-a-new-flat/booking-of-flat"
+            },
+            {
+              "title": "HDB MyNiceHome: separate purchase milestones",
+              "href": "https://www.mynicehome.gov.sg/get-started/hdb-bto-sbf-buying-guide/"
+            }
+          ]
+        },
+        {
+          "heading": "Leave with a clear record of what happens next",
+          "paragraphs": [
+            "Before leaving, check the documents or acknowledgements you receive and note any outstanding action, deadline and official contact route. Keep an unresolved question marked unresolved until HDB answers it; the checklist itself is not evidence of eligibility or a completed purchase.",
+            "If the available choices no longer fit, ask HDB about the consequences for your own application before deciding not to select. Booking, cancelling after booking and missing an appointment are different situations. This preparation guide does not determine which rules or waivers apply to your household."
+          ],
+          "sources": [
+            {
+              "title": "HDB: current booking instructions and next stages",
+              "href": "https://www.hdb.gov.sg/buying-a-flat/bto-sbf-and-open-booking-of-flats/process-for-buying-a-new-flat/booking-of-flat"
+            }
+          ]
+        }
+      ],
+      "callout": {
+        "title": "Revisit the project trade-offs",
+        "text": "Use the independent map to organise location choices. Confirm your booking, documents and available flats with HDB.",
+        "href": "/",
+        "label": "Open the comparison map"
+      },
+      "next": [
+        {
+          "title": "Understand a queue number beyond flat supply",
+          "href": "/guides/bto-queue-number-beyond-flat-supply"
+        },
+        {
+          "title": "Plan cash and CPF by payment milestone",
+          "href": "/guides/bto-cash-cpf-payment-timeline"
+        },
+        {
+          "title": "Explore assumptions in the funding roadmap",
+          "href": "/tools/bto-roadmap"
+        }
+      ]
+    },
+    "es": {
+      "category": "Preparación de la reserva",
+      "title": "Cita para reservar un BTO: ¿qué debes preparar?",
+      "description": "Convierte tu invitación de HDB en una lista de documentos, viviendas posibles y pagos. Distingue la reserva, la firma del contrato y la entrega de llaves.",
+      "answer": "Empieza por el paquete de invitación de HDB correspondiente a tu solicitud. Anota los datos de la cita, prepara los documentos que pide para tu hogar, revisa las viviendas posibles y confirma las instrucciones del pago de reserva. Una lista general no garantiza que la documentación sea suficiente ni que una vivienda siga disponible. Esta guía trata de preparar tu propia asistencia a una cita de reserva en Singapur.",
+      "sections": [
+        {
+          "heading": "Usa la invitación como lista de trabajo",
+          "paragraphs": [
+            "Accede al HDB Flat Portal desde la web de HDB y lee el paquete de invitación de tu solicitud. Reúne en una nota la fecha, la hora, el lugar, los documentos solicitados y los plazos de actuación. Guarda con ella la lista de viviendas para preparar el ejercicio y el tipo de vivienda correctos.",
+            "Utiliza tres columnas: requisito de la invitación; persona a la que afecta; acción pendiente. Por ejemplo, una pareja ficticia podría marcar una comprobación de identidad como preparada y un documento de relación solicitado como pendiente. Es un método de organización, no una lista oficial de documentos."
+          ],
+          "sources": [
+            {
+              "title": "HDB: paquete de invitación e instrucciones de reserva",
+              "href": "https://www.hdb.gov.sg/buying-a-flat/bto-sbf-and-open-booking-of-flats/process-for-buying-a-new-flat/booking-of-flat"
+            }
+          ]
+        },
+        {
+          "heading": "Revisa los documentos de cada persona",
+          "paragraphs": [
+            "La guía de compra de HDB menciona documentos de identidad y de relación, además de otros justificantes según el hogar. No supongas que cada ejemplo se aplica a tu caso ni que sustituye un documento solicitado en la invitación. Compara el paquete con las personas y circunstancias de tu solicitud real.",
+            "Para cada elemento solicitado, comprueba de quién es el documento, si sus datos son correctos y cómo pide HDB que lo presentes. Aclara con HDB cualquier documento ausente o incoherente antes de la cita. No subas documentos de identidad a Where To BTO ni los envíes a personas que ofrezcan ayuda no oficial para la cita."
+          ],
+          "sources": [
+            {
+              "title": "HDB MyNiceHome: documentos al reservar una vivienda",
+              "href": "https://www.mynicehome.gov.sg/get-started/hdb-bto-sbf-buying-guide/"
+            }
+          ]
+        },
+        {
+          "heading": "Confirma la asistencia con antelación",
+          "paragraphs": [
+            "Las instrucciones de reserva de HDB exigen asistencia personal. Comprueba lo que corresponde a tu solicitud y deja tiempo para llegar al lugar indicado. Conserva accesible el aviso oficial en vez de depender de una captura reenviada de la cita de otro hogar.",
+            "Si no puedes asistir, contacta con HDB y lee sus instrucciones actuales antes de organizar una alternativa. Esta guía no verifica los documentos de un representante ni facilita un formulario de autorización. No des por aceptado que vaya otra persona, que se cambie la fecha o que faltes a la cita."
+          ],
+          "sources": [
+            {
+              "title": "HDB: asistencia personal y disposiciones actuales",
+              "href": "https://www.hdb.gov.sg/buying-a-flat/bto-sbf-and-open-booking-of-flats/process-for-buying-a-new-flat/booking-of-flat"
+            }
+          ]
+        },
+        {
+          "heading": "Lleva una selección que admita cambios",
+          "paragraphs": [
+            "Vuelve a comprobar la lista oficial y las opciones disponibles cerca de la fecha de la cita. Anota varias alternativas aceptables y los motivos para descartar una vivienda, como un precio superior a la financiación confirmada. Habla de esos límites con tu cosolicitante antes de tener que elegir con urgencia.",
+            "Lleva un registro sencillo: referencia de la vivienda; precio anunciado concreto; concesión aceptable; pregunta pendiente. El precio inicial de un proyecto no es el de cada vivienda. Where To BTO ayuda a revisar las diferencias de ubicación entre proyectos, pero no retiene viviendas ni confirma su disponibilidad en tiempo real."
+          ],
+          "sources": [
+            {
+              "title": "HDB MyNiceHome: reserva y lista de viviendas favoritas",
+              "href": "https://www.mynicehome.gov.sg/get-started/hdb-bto-sbf-buying-guide/"
+            }
+          ]
+        },
+        {
+          "heading": "Prepara el pago de reserva y separa las etapas posteriores",
+          "paragraphs": [
+            "Al reservar se paga una cantidad de opción que forma parte del pago inicial. Comprueba el importe actual de HDB para el tipo de vivienda y las instrucciones de pago de tu cita. Confirma que puedes pagar por el método exigido; sumar efectivo y CPF no demuestra que puedas hacerlo.",
+            "Mantén líneas separadas para la reserva, la firma del Agreement for Lease y la recogida de llaves. Los pagos y las fechas posteriores dependen de tu financiación y de las condiciones aplicables. Usa la guía existente de pagos para planificar y contrasta sus supuestos con tus documentos de HDB o del prestamista. No cuentes dos veces un importe ya pagado."
+          ],
+          "sources": [
+            {
+              "title": "HDB: pago de opción al reservar",
+              "href": "https://www.hdb.gov.sg/buying-a-flat/bto-sbf-and-open-booking-of-flats/process-for-buying-a-new-flat/booking-of-flat"
+            },
+            {
+              "title": "HDB MyNiceHome: etapas de la compra",
+              "href": "https://www.mynicehome.gov.sg/get-started/hdb-bto-sbf-buying-guide/"
+            }
+          ]
+        },
+        {
+          "heading": "Sal con un registro claro del siguiente paso",
+          "paragraphs": [
+            "Antes de salir, revisa los documentos o justificantes recibidos y anota las acciones pendientes, los plazos y la vía oficial de contacto. Mantén cada pregunta sin resolver hasta que HDB la responda; la lista por sí sola no prueba la elegibilidad ni una compra completada.",
+            "Si las opciones disponibles ya no encajan, pregunta a HDB por las consecuencias para tu solicitud antes de decidir no elegir. Reservar, cancelar después de reservar y faltar a una cita son situaciones diferentes. Esta guía no determina qué reglas o exenciones corresponden a tu hogar."
+          ],
+          "sources": [
+            {
+              "title": "HDB: instrucciones actuales y siguientes etapas",
+              "href": "https://www.hdb.gov.sg/buying-a-flat/bto-sbf-and-open-booking-of-flats/process-for-buying-a-new-flat/booking-of-flat"
+            }
+          ]
+        }
+      ],
+      "callout": {
+        "title": "Revisa las diferencias entre proyectos",
+        "text": "Organiza las opciones de ubicación con el mapa independiente. Confirma con HDB la reserva, los documentos y las viviendas disponibles.",
+        "href": "/",
+        "label": "Abrir el mapa comparativo"
+      },
+      "next": [
+        {
+          "title": "Entender un número de cola superior a la oferta",
+          "href": "/guides/bto-queue-number-beyond-flat-supply"
+        },
+        {
+          "title": "Planificar efectivo y CPF por etapa de pago",
+          "href": "/guides/bto-cash-cpf-payment-timeline"
+        },
+        {
+          "title": "Explorar supuestos en el plan de financiación",
+          "href": "/tools/bto-roadmap"
+        }
+      ]
+    },
+    "fr": {
+      "category": "Préparation de la réservation",
+      "title": "Rendez-vous de réservation BTO : que préparer ?",
+      "description": "Transformez votre invitation HDB en liste de documents, de logements possibles et de paiements. Distinguez réservation, signature du contrat et remise des clés.",
+      "answer": "Commencez par le dossier d’invitation HDB de votre propre demande. Notez les détails du rendez-vous, préparez les documents demandés pour votre foyer, vérifiez vos choix de logements et les instructions de paiement des frais d’option. Une liste générale ne garantit ni un dossier suffisant ni la disponibilité d’un logement. Ce guide prépare votre présence à votre propre rendez-vous de réservation à Singapour.",
+      "sections": [
+        {
+          "heading": "Faites de l’invitation votre liste de travail",
+          "paragraphs": [
+            "Accédez au HDB Flat Portal depuis le site de HDB et lisez le dossier d’invitation de votre demande. Regroupez date, heure, lieu, documents demandés et échéances dans une note. Conservez la liste des logements avec cette note afin de préparer la bonne session de vente et le bon type de logement.",
+            "Utilisez trois colonnes : exigence de l’invitation ; personne concernée ; action restante. Un couple fictif pourrait, par exemple, indiquer une vérification d’identité prête et un justificatif de relation demandé encore manquant. C’est une méthode d’organisation, pas une liste officielle de documents."
+          ],
+          "sources": [
+            {
+              "title": "HDB : dossier d’invitation et consignes de réservation",
+              "href": "https://www.hdb.gov.sg/buying-a-flat/bto-sbf-and-open-booking-of-flats/process-for-buying-a-new-flat/booking-of-flat"
+            }
+          ]
+        },
+        {
+          "heading": "Vérifiez les documents de chaque personne",
+          "paragraphs": [
+            "Le guide d’achat de HDB mentionne les pièces d’identité et les justificatifs de relation, ainsi que d’autres documents selon le foyer. Ne supposez pas que chaque exemple vous concerne ou remplace une pièce demandée dans votre invitation. Comparez le dossier aux personnes et à la situation de votre demande réelle.",
+            "Pour chaque pièce demandée, vérifiez la personne concernée, l’exactitude des renseignements et le mode de transmission exigé par HDB. Clarifiez toute pièce manquante ou incohérente avec HDB avant le rendez-vous. Ne transmettez pas de pièces d’identité à Where To BTO ni à une personne proposant une aide non officielle pour le rendez-vous."
+          ],
+          "sources": [
+            {
+              "title": "HDB MyNiceHome : documents lors de la réservation",
+              "href": "https://www.mynicehome.gov.sg/get-started/hdb-bto-sbf-buying-guide/"
+            }
+          ]
+        },
+        {
+          "heading": "Confirmez votre présence à l’avance",
+          "paragraphs": [
+            "Les consignes de réservation de HDB imposent une présence personnelle. Vérifiez les dispositions propres à votre demande et prévoyez le trajet jusqu’au lieu indiqué dans l’invitation. Gardez l’avis officiel accessible plutôt qu’une capture transférée du rendez-vous d’un autre foyer.",
+            "Si vous ne pouvez pas venir, contactez HDB et consultez ses consignes actuelles avant de prendre d’autres dispositions. Ce guide ne vérifie pas les pièces d’un représentant et ne fournit pas de formulaire d’autorisation. Ne présumez pas qu’un remplacement, un changement de date ou une absence soit automatiquement accepté."
+          ],
+          "sources": [
+            {
+              "title": "HDB : présence personnelle et dispositions actuelles",
+              "href": "https://www.hdb.gov.sg/buying-a-flat/bto-sbf-and-open-booking-of-flats/process-for-buying-a-new-flat/booking-of-flat"
+            }
+          ]
+        },
+        {
+          "heading": "Préparez une sélection adaptable",
+          "paragraphs": [
+            "Revérifiez la liste officielle et les choix disponibles à l’approche du rendez-vous. Notez plusieurs solutions acceptables et vos motifs de refus, comme un prix dépassant le financement confirmé. Discutez de ces limites avec votre codemandeur avant de devoir choisir dans l’urgence.",
+            "Tenez un relevé simple : référence du logement ; prix effectivement affiché ; compromis acceptable ; question ouverte. Le prix de départ d’un projet n’est pas celui de chaque logement. Where To BTO aide à revoir les compromis de localisation entre projets, mais ne réserve aucun logement et ne confirme pas les disponibilités en temps réel."
+          ],
+          "sources": [
+            {
+              "title": "HDB MyNiceHome : réservation et liste de logements favoris",
+              "href": "https://www.mynicehome.gov.sg/get-started/hdb-bto-sbf-buying-guide/"
+            }
+          ]
+        },
+        {
+          "heading": "Préparez le paiement de réservation et séparez les étapes suivantes",
+          "paragraphs": [
+            "Des frais d’option sont dus lors de la réservation et entrent dans l’apport initial. Vérifiez le montant actuel de HDB pour le type de logement et les consignes de paiement de votre rendez-vous. Assurez-vous de pouvoir payer par le moyen demandé ; un total combinant liquidités et CPF ne suffit pas à le démontrer.",
+            "Distinguez réservation, signature de l’Agreement for Lease et remise des clés. Les paiements ultérieurs et leurs dates dépendent de votre financement et des dispositions applicables. Utilisez le guide existant des étapes de paiement pour planifier, puis confrontez ses hypothèses à vos documents HDB ou bancaires. Ne comptez pas deux fois une somme déjà versée."
+          ],
+          "sources": [
+            {
+              "title": "HDB : frais d’option",
+              "href": "https://www.hdb.gov.sg/buying-a-flat/bto-sbf-and-open-booking-of-flats/process-for-buying-a-new-flat/booking-of-flat"
+            },
+            {
+              "title": "HDB MyNiceHome : étapes distinctes de l’achat",
+              "href": "https://www.mynicehome.gov.sg/get-started/hdb-bto-sbf-buying-guide/"
+            }
+          ]
+        },
+        {
+          "heading": "Repartez avec une suite clairement notée",
+          "paragraphs": [
+            "Avant de partir, vérifiez les documents ou accusés reçus et notez les actions restantes, les échéances et le moyen de contact officiel. Laissez toute question ouverte jusqu’à la réponse de HDB ; la liste ne prouve ni l’éligibilité ni la réalisation de l’achat.",
+            "Si les logements disponibles ne conviennent plus, demandez à HDB les conséquences pour votre demande avant de décider de ne rien choisir. Réserver, annuler après réservation et manquer un rendez-vous sont des situations différentes. Ce guide ne détermine pas les règles ou dérogations applicables à votre foyer."
+          ],
+          "sources": [
+            {
+              "title": "HDB : consignes actuelles et étapes suivantes",
+              "href": "https://www.hdb.gov.sg/buying-a-flat/bto-sbf-and-open-booking-of-flats/process-for-buying-a-new-flat/booking-of-flat"
+            }
+          ]
+        }
+      ],
+      "callout": {
+        "title": "Revoyez les compromis entre projets",
+        "text": "Organisez vos choix de localisation avec la carte indépendante. Confirmez réservation, documents et disponibilités auprès de HDB.",
+        "href": "/",
+        "label": "Ouvrir la carte comparative"
+      },
+      "next": [
+        {
+          "title": "Comprendre un rang de file au-delà de l’offre",
+          "href": "/guides/bto-queue-number-beyond-flat-supply"
+        },
+        {
+          "title": "Planifier liquidités et CPF par étape de paiement",
+          "href": "/guides/bto-cash-cpf-payment-timeline"
+        },
+        {
+          "title": "Explorer les hypothèses du plan de financement",
+          "href": "/tools/bto-roadmap"
+        }
+      ]
+    },
+    "de": {
+      "category": "Vorbereitung der Wohnungsbuchung",
+      "title": "BTO-Buchungstermin: Was sollten Sie vorbereiten?",
+      "description": "Machen Sie aus Ihrer HDB-Einladung eine Unterlagen-, Wohnungs- und Zahlungscheckliste. Trennen Sie Buchung, Vertragsunterzeichnung und Schlüsselübergabe.",
+      "answer": "Beginnen Sie mit den HDB-Einladungsunterlagen zu Ihrem eigenen Antrag. Notieren Sie die Termindaten, bereiten Sie die für Ihren Haushalt verlangten Dokumente vor und prüfen Sie Wohnungsauswahl und Zahlungsanweisungen zur Optionsgebühr. Eine allgemeine Checkliste bestätigt weder vollständige Unterlagen noch die Verfügbarkeit einer Wunschwohnung. Dieser Leitfaden betrifft die Vorbereitung Ihrer persönlichen Teilnahme an einem Buchungstermin in Singapur.",
+      "sections": [
+        {
+          "heading": "Machen Sie die Einladung zur Arbeitsliste",
+          "paragraphs": [
+            "Öffnen Sie das HDB Flat Portal über die HDB-Website und lesen Sie die Einladungsunterlagen Ihres Antrags. Halten Sie Datum, Uhrzeit, Ort, verlangte Dokumente und Handlungsfristen in einer Notiz fest. Bewahren Sie die Wohnungsliste dabei auf, damit Sie die richtige Verkaufsrunde und den richtigen Wohnungstyp vorbereiten.",
+            "Nutzen Sie drei Spalten: Anforderung der Einladung; betroffene Person; offene Handlung. Ein fiktives Paar könnte etwa einen Identitätsnachweis als vorbereitet und einen verlangten Beziehungsnachweis als offen markieren. Das ist eine Organisationshilfe, keine amtliche Dokumentenliste."
+          ],
+          "sources": [
+            {
+              "title": "HDB: Einladungsunterlagen und Buchungsanweisungen",
+              "href": "https://www.hdb.gov.sg/buying-a-flat/bto-sbf-and-open-booking-of-flats/process-for-buying-a-new-flat/booking-of-flat"
+            }
+          ]
+        },
+        {
+          "heading": "Prüfen Sie die Unterlagen für jede Person",
+          "paragraphs": [
+            "Der HDB-Kaufleitfaden nennt Identitäts- und Beziehungsnachweise sowie weitere haushaltsabhängige Unterlagen. Nicht jedes Beispiel gilt für Sie, und ein Beispiel ersetzt kein in Ihrer Einladung verlangtes Dokument. Gleichen Sie die Unterlagen mit den Personen und Umständen Ihres tatsächlichen Antrags ab.",
+            "Prüfen Sie für jedes verlangte Dokument, wen es betrifft, ob die Angaben stimmen und wie HDB die Vorlage verlangt. Klären Sie fehlende oder widersprüchliche Unterlagen vor dem Termin mit HDB. Laden Sie keine Ausweise bei Where To BTO hoch und senden Sie sie nicht an Personen, die inoffizielle Terminhilfe anbieten."
+          ],
+          "sources": [
+            {
+              "title": "HDB MyNiceHome: Unterlagen bei der Wohnungsbuchung",
+              "href": "https://www.mynicehome.gov.sg/get-started/hdb-bto-sbf-buying-guide/"
+            }
+          ]
+        },
+        {
+          "heading": "Klären Sie die Teilnahme vor dem Termin",
+          "paragraphs": [
+            "Die HDB-Buchungsanweisungen verlangen persönliche Teilnahme. Prüfen Sie die Regelungen für Ihren Antrag und planen Sie genügend Zeit für den Weg zum angegebenen Ort ein. Halten Sie die amtliche Mitteilung bereit, statt sich auf ein weitergeleitetes Bildschirmfoto des Termins eines anderen Haushalts zu verlassen.",
+            "Falls Sie nicht teilnehmen können, kontaktieren Sie HDB und lesen Sie die aktuellen Anweisungen, bevor Sie andere Vorkehrungen treffen. Dieser Leitfaden prüft keine Vertreterunterlagen und stellt kein Vollmachtsformular bereit. Gehen Sie nicht davon aus, dass eine Vertretung, Terminänderung oder Abwesenheit automatisch akzeptiert wird."
+          ],
+          "sources": [
+            {
+              "title": "HDB: persönliche Teilnahme und aktuelle Regelungen",
+              "href": "https://www.hdb.gov.sg/buying-a-flat/bto-sbf-and-open-booking-of-flats/process-for-buying-a-new-flat/booking-of-flat"
+            }
+          ]
+        },
+        {
+          "heading": "Nehmen Sie eine anpassbare Auswahlliste mit",
+          "paragraphs": [
+            "Prüfen Sie kurz vor dem Termin erneut die amtliche Wohnungsliste und die verfügbaren Optionen. Notieren Sie mehrere akzeptable Alternativen und Ausschlussgründe, etwa einen Preis oberhalb Ihrer bestätigten Finanzierung. Besprechen Sie diese Grenzen mit der mitantragstellenden Person, bevor Zeitdruck entsteht.",
+            "Führen Sie eine einfache Liste: Wohnungsreferenz; tatsächlich angegebener Preis; akzeptabler Kompromiss; offene Frage. Der Einstiegspreis eines Projekts ist nicht der Preis jeder Wohnung. Where To BTO hilft beim erneuten Abwägen von Projektstandorten, hält aber keine Wohnung frei und bestätigt keine Live-Verfügbarkeit."
+          ],
+          "sources": [
+            {
+              "title": "HDB MyNiceHome: Buchung und Wohnungsvormerkliste",
+              "href": "https://www.mynicehome.gov.sg/get-started/hdb-bto-sbf-buying-guide/"
+            }
+          ]
+        },
+        {
+          "heading": "Bereiten Sie die Buchungszahlung vor und trennen Sie spätere Schritte",
+          "paragraphs": [
+            "Bei der Buchung wird eine Optionsgebühr fällig, die Teil der Anzahlung ist. Prüfen Sie den aktuellen HDB-Betrag für den Wohnungstyp und die Zahlungsanweisungen Ihres Termins. Stellen Sie sicher, dass Sie mit dem verlangten Zahlungsmittel zahlen können; ein Gesamtbetrag aus Bargeld und CPF belegt das nicht.",
+            "Führen Sie getrennte Zeilen für Buchung, Unterzeichnung des Agreement for Lease und Schlüsselübergabe. Spätere Zahlungen und Termine hängen von Ihrer Finanzierung und den geltenden Regelungen ab. Nutzen Sie den vorhandenen Zahlungsleitfaden zur Planung und gleichen Sie seine Annahmen mit Ihren HDB- oder Kreditunterlagen ab. Zählen Sie bereits gezahlte Beträge nicht doppelt."
+          ],
+          "sources": [
+            {
+              "title": "HDB: Optionsgebühr",
+              "href": "https://www.hdb.gov.sg/buying-a-flat/bto-sbf-and-open-booking-of-flats/process-for-buying-a-new-flat/booking-of-flat"
+            },
+            {
+              "title": "HDB MyNiceHome: getrennte Kaufmeilensteine",
+              "href": "https://www.mynicehome.gov.sg/get-started/hdb-bto-sbf-buying-guide/"
+            }
+          ]
+        },
+        {
+          "heading": "Halten Sie die nächsten Schritte klar fest",
+          "paragraphs": [
+            "Prüfen Sie vor dem Gehen erhaltene Dokumente oder Bestätigungen und notieren Sie offene Aufgaben, Fristen und den amtlichen Kontaktweg. Markieren Sie offene Fragen als offen, bis HDB antwortet; die Checkliste belegt weder Anspruchsberechtigung noch einen abgeschlossenen Kauf.",
+            "Passen die verfügbaren Wohnungen nicht mehr, fragen Sie HDB nach den Folgen für Ihren Antrag, bevor Sie auf eine Auswahl verzichten. Buchung, Stornierung nach Buchung und Nichterscheinen sind unterschiedliche Situationen. Dieser Leitfaden entscheidet nicht, welche Regeln oder Ausnahmen für Ihren Haushalt gelten."
+          ],
+          "sources": [
+            {
+              "title": "HDB: aktuelle Buchungsanweisungen und nächste Schritte",
+              "href": "https://www.hdb.gov.sg/buying-a-flat/bto-sbf-and-open-booking-of-flats/process-for-buying-a-new-flat/booking-of-flat"
+            }
+          ]
+        }
+      ],
+      "callout": {
+        "title": "Wägen Sie die Projektstandorte erneut ab",
+        "text": "Ordnen Sie Standortoptionen mit der unabhängigen Karte. Bestätigen Sie Buchung, Unterlagen und verfügbare Wohnungen bei HDB.",
+        "href": "/",
+        "label": "Vergleichskarte öffnen"
+      },
+      "next": [
+        {
+          "title": "Eine Wartelistennummer oberhalb des Angebots verstehen",
+          "href": "/guides/bto-queue-number-beyond-flat-supply"
+        },
+        {
+          "title": "Bargeld und CPF nach Zahlungsmeilensteinen planen",
+          "href": "/guides/bto-cash-cpf-payment-timeline"
+        },
+        {
+          "title": "Annahmen im Finanzierungsplan prüfen",
+          "href": "/tools/bto-roadmap"
+        }
+      ]
+    },
+    "zh-Hans": {
+      "category": "选房预约准备",
+      "title": "BTO 选房预约前，该准备什么？",
+      "description": "把 HDB 邀请资料整理成家庭文件清单、备选单位和付款核查表，并区分选房、签署租契协议与领取钥匙三个阶段。",
+      "answer": "先看你这份申请的 HDB 邀请资料，记下预约详情，准备家庭所需文件，复查可选单位，并确认选房定金的付款指示。通用清单不能保证文件齐全，也不能保证心仪单位仍可选择。本指南适用于准备亲自出席新加坡 BTO 选房预约的申请人。",
+      "sections": [
+        {
+          "heading": "把邀请资料变成待办清单",
+          "paragraphs": [
+            "从 HDB 官方网站进入 HDB Flat Portal，阅读自己申请的邀请资料。把日期、时间、地点、所需文件和办理期限集中记在一份笔记里，并附上单位清单，确认准备的是正确销售活动和房型。",
+            "可分成三栏：邀请资料的要求、涉及哪位家庭成员、还有什么待办事项。例如，一对虚构的夫妻可以把一项身份证明标为已准备，把一份被要求提供的关系证明标为待补。这是整理方法，并非官方文件清单。"
+          ],
+          "sources": [
+            {
+              "title": "HDB：邀请资料与选房指示",
+              "href": "https://www.hdb.gov.sg/buying-a-flat/bto-sbf-and-open-booking-of-flats/process-for-buying-a-new-flat/booking-of-flat"
+            }
+          ]
+        },
+        {
+          "heading": "逐人核对文件",
+          "paragraphs": [
+            "HDB 购房指南列出身份证明、关系证明及按家庭情况需要的其他文件。不要假定每个例子都适用于自己，也不要用例子代替邀请资料明确要求的文件。应按真实申请中的成员和情况逐项核对。",
+            "针对每份所需文件，确认属于谁、资料是否正确，以及 HDB 要求如何提交。预约前向 HDB 处理缺漏或不一致的记录。不要把身份证明上传至 Where To BTO，也不要发给声称能提供非官方预约协助的人。"
+          ],
+          "sources": [
+            {
+              "title": "HDB MyNiceHome：选房时所需文件",
+              "href": "https://www.mynicehome.gov.sg/get-started/hdb-bto-sbf-buying-guide/"
+            }
+          ]
+        },
+        {
+          "heading": "提前确认出席安排",
+          "paragraphs": [
+            "HDB 选房指示要求本人出席。核对自己申请适用的安排，并预留前往邀请资料所列地点的时间。保留可随时查看的官方通知，不要依靠别人家庭预约通知的转发截图。",
+            "如果无法出席，先联系 HDB 并阅读其现行指示，再安排替代方案。本指南不核实代表所需文件，也不提供授权表格。不要假定派人代办、更改日期或缺席会自动获准。"
+          ],
+          "sources": [
+            {
+              "title": "HDB：本人出席及现行安排",
+              "href": "https://www.hdb.gov.sg/buying-a-flat/bto-sbf-and-open-booking-of-flats/process-for-buying-a-new-flat/booking-of-flat"
+            }
+          ]
+        },
+        {
+          "heading": "带一份可调整的备选清单",
+          "paragraphs": [
+            "临近预约时，再查官方单位清单和可选单位。写下几个可接受的替代选择，以及不接受某单位的原因，例如售价超过已确认的资金安排。在必须仓促决定前，先与共同申请人讨论这些底线。",
+            "可简单记录：单位编号、实际标价、能接受的取舍、尚未解决的问题。项目起价不代表每个单位的售价。Where To BTO 可协助重看项目层面的地点取舍，但不会保留单位，也不能确认实时供应。"
+          ],
+          "sources": [
+            {
+              "title": "HDB MyNiceHome：选房阶段与关注单位清单",
+              "href": "https://www.mynicehome.gov.sg/get-started/hdb-bto-sbf-buying-guide/"
+            }
+          ]
+        },
+        {
+          "heading": "准备选房付款，并分开记录后续阶段",
+          "paragraphs": [
+            "选房时需支付定金，之后计入首付款。请核查 HDB 针对该房型的现行金额，以及你这次预约的付款指示。确认能用指定方式付款；现金和 CPF 合计余额充足，并不等于可以完成这笔付款。",
+            "选房、签署 Agreement for Lease（租契协议）和领取钥匙，应分别列项。后续付款和日期取决于自己的融资及适用安排。可用现有付款时间线指南作规划，再与 HDB 或贷款机构文件核对假设。已付金额不要重复计算。"
+          ],
+          "sources": [
+            {
+              "title": "HDB：选房定金",
+              "href": "https://www.hdb.gov.sg/buying-a-flat/bto-sbf-and-open-booking-of-flats/process-for-buying-a-new-flat/booking-of-flat"
+            },
+            {
+              "title": "HDB MyNiceHome：不同购房阶段",
+              "href": "https://www.mynicehome.gov.sg/get-started/hdb-bto-sbf-buying-guide/"
+            }
+          ]
+        },
+        {
+          "heading": "离开前记清下一步",
+          "paragraphs": [
+            "离开前核对收到的文件或确认记录，写下未办事项、期限和官方联系渠道。HDB 回答前，尚未解决的问题应继续标为待确认；清单本身不是资格证明，也不代表购房已经完成。",
+            "如果剩余单位已不符合需要，在决定不选房前，向 HDB 确认自己申请会受什么影响。选房、选房后取消和缺席预约是不同情况。本指南不能判定哪些规则或豁免适用于你的家庭。"
+          ],
+          "sources": [
+            {
+              "title": "HDB：现行选房指示与后续阶段",
+              "href": "https://www.hdb.gov.sg/buying-a-flat/bto-sbf-and-open-booking-of-flats/process-for-buying-a-new-flat/booking-of-flat"
+            }
+          ]
+        }
+      ],
+      "callout": {
+        "title": "重新考虑项目取舍",
+        "text": "用独立比较地图整理地点选择；选房、文件及可选单位须向 HDB 确认。",
+        "href": "/",
+        "label": "打开比较地图"
+      },
+      "next": [
+        {
+          "title": "了解排队号码超过单位供应量的含义",
+          "href": "/guides/bto-queue-number-beyond-flat-supply"
+        },
+        {
+          "title": "按付款阶段规划现金与 CPF",
+          "href": "/guides/bto-cash-cpf-payment-timeline"
+        },
+        {
+          "title": "在资金规划工具中检视假设",
+          "href": "/tools/bto-roadmap"
+        }
+      ]
+    }
+  }
+}
