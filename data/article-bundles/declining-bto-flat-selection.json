@@ -1,0 +1,733 @@
+{
+  "slug": "declining-bto-flat-selection",
+  "publishedDate": "2026-10-31",
+  "checkedDate": "2026-10-31",
+  "updatedDate": "2026-10-31",
+  "translations": {
+    "en": {
+      "category": "Ballot and booking",
+      "title": "What happens if you decline BTO flat selection?",
+      "description": "Separate an unsuccessful application from declining available flats. Check household-specific consequences, the limited-choice waiver and the stage before deciding.",
+      "answer": "If HDB invites you to book while flats are available and you do not book, a non-selection count can affect subsequent applications. The consequences differ for first-timer families, first-timer singles and second-timer families. A limited-choice waiver may apply. Check your application stage, household category and the choices HDB says are available before deciding; an unsuccessful ballot and cancellation after booking are different situations.",
+      "sections": [
+        {
+          "heading": "Was the application unsuccessful, or did you decline a chance?",
+          "paragraphs": [
+            "HDB describes an application as unsuccessful if you receive no queue number, or all flats have been booked before your number is due. A queue number beyond supply is not itself proof of either outcome. Read the actual result and any invitation for your own exercise.",
+            "Being invited while units remain, then choosing not to book, is a different case. HDB’s current application table says this can incur a non-selection count and cancel all ongoing flat applications. Do not treat missing an appointment or sending a cancellation request as a way to avoid those consequences."
+          ],
+          "sources": [
+            {
+              "title": "HDB: unsuccessful applications and invitations",
+              "href": "https://www.hdb.gov.sg/sitecore/content/hdbinfoweb/home/buying-a-flat/bto-sbf-and-open-booking-of-flats/process-for-buying-a-new-flat/modes-of-sales"
+            },
+            {
+              "title": "HDB: cancellation and non-selection consequences",
+              "href": "https://www.hdb.gov.sg/buying-a-flat/bto-sbf-and-open-booking-of-flats/process-for-buying-a-new-flat/application?anchor=changes-to-flat-application"
+            }
+          ]
+        },
+        {
+          "heading": "Which household category applies?",
+          "paragraphs": [
+            "For first-timer families, including First-Timer (Parents & Married Couples), one non-selection count places subsequent applications in the second-timer category for one year. HDB also resets additional ballot chances accumulated from unsuccessful Standard BTO applications to zero.",
+            "If another non-selection count is incurred during that year, first-timer priority is suspended for a further year. This is not the same as saying every first-timer family is barred from all applications for a year.",
+            "For first-timer singles and second-timer families, HDB’s current table says one non-selection count prevents participation in sales exercises for one year. Ask HDB which category and dates apply to your household; a co-applicant’s informal description is not a determination."
+          ],
+          "sources": [
+            {
+              "title": "HDB: current household-category table",
+              "href": "https://www.hdb.gov.sg/buying-a-flat/bto-sbf-and-open-booking-of-flats/process-for-buying-a-new-flat/application?anchor=changes-to-flat-application"
+            },
+            {
+              "title": "HDB: June 2026 Annex B, dated corroboration",
+              "href": "https://www.hdb.gov.sg/-/media/hdb-pulse/news/2026/20260617-HDB-Launches-6952-Flats-Across-7-Projects-in-June-2026-BTO-Sales-Exercise/Annex-B.pdf"
+            }
+          ]
+        },
+        {
+          "heading": "Does having very few choices change the result?",
+          "paragraphs": [
+            "HDB publishes a waiver of the non-selection count when applicants have 10 or fewer BTO flats, or 5 or fewer SBF flats, to choose from when due to book. These are different sale types. Do not apply the SBF threshold to a BTO appointment.",
+            "Ask HDB to confirm the available choices relevant to your application and the waiver’s application. Your personal shortlist is not the official count: in a fictional case, liking only 3 out of 11 available BTO flats does not turn 11 choices into 3 for this rule. The example does not decide anyone’s eligibility or exemption."
+          ],
+          "sources": [
+            {
+              "title": "HDB: limited-choice waiver",
+              "href": "https://www.hdb.gov.sg/buying-a-flat/bto-sbf-and-open-booking-of-flats/process-for-buying-a-new-flat/application?anchor=changes-to-flat-application"
+            },
+            {
+              "title": "HDB: June 2026 non-selection footnote",
+              "href": "https://www.hdb.gov.sg/-/media/hdb-pulse/news/2026/20260617-HDB-Launches-6952-Flats-Across-7-Projects-in-June-2026-BTO-Sales-Exercise/Annex-B.pdf"
+            }
+          ]
+        },
+        {
+          "heading": "Make a decision record before the appointment",
+          "paragraphs": [
+            "Record the sales exercise and flat type, actual application status, household category, appointment date, available-choice information and question for HDB. Keep the official response with the record. If another application is ongoing, specifically ask how it would be affected.",
+            "Compare the remaining units with your confirmed funding and minimum household needs. Where To BTO helps compare project locations; it does not provide live unit stock, grant a waiver or submit a cancellation. Use HDB’s official contact route for your case and avoid sharing identity documents in public trackers."
+          ],
+          "sources": [
+            {
+              "title": "HDB: application changes and official cancellation route",
+              "href": "https://www.hdb.gov.sg/buying-a-flat/bto-sbf-and-open-booking-of-flats/process-for-buying-a-new-flat/application?anchor=changes-to-flat-application"
+            }
+          ]
+        },
+        {
+          "heading": "Already booked a flat? Use the later-stage rules",
+          "paragraphs": [
+            "Once a flat is booked, cancellation is a separate stage. HDB’s table lists option-fee forfeiture and further application restrictions for cancellation before signing the Agreement for Lease; later cancellation has its own rules. Do not carry a pre-booking waiver or an informal forum answer into that stage. Read the current row and obtain a case-specific explanation before acting."
+          ],
+          "sources": [
+            {
+              "title": "HDB: stage-specific financial forfeitures and restrictions",
+              "href": "https://www.hdb.gov.sg/buying-a-flat/bto-sbf-and-open-booking-of-flats/process-for-buying-a-new-flat/application?anchor=changes-to-flat-application"
+            }
+          ]
+        },
+        {
+          "heading": "Does “no financial forfeiture” mean no consequence?",
+          "paragraphs": [
+            "No. The current table separates money from application consequences. A pre-booking case can have no financial forfeiture in that column while still incurring a non-selection count and restrictions. It is not a promise that every fee is refunded."
+          ],
+          "sources": [
+            {
+              "title": "HDB: separate forfeiture and consequence columns",
+              "href": "https://www.hdb.gov.sg/buying-a-flat/bto-sbf-and-open-booking-of-flats/process-for-buying-a-new-flat/application?anchor=changes-to-flat-application"
+            }
+          ]
+        },
+        {
+          "heading": "Can a saved watchlist protect a unit while I decide?",
+          "paragraphs": [
+            "No. A shortlist is a planning record, not a reservation. Recheck official availability for your household and discuss acceptable alternatives before your turn. This guide does not establish that a unit will remain available or that you can apply in the next launch."
+          ],
+          "sources": [
+            {
+              "title": "HDB: applicable exercise and availability, June 2026",
+              "href": "https://www.hdb.gov.sg/-/media/hdb-pulse/news/2026/20260617-HDB-Launches-6952-Flats-Across-7-Projects-in-June-2026-BTO-Sales-Exercise/Annex-B.pdf"
+            }
+          ]
+        },
+        {
+          "heading": "Which dates and sources should I use?",
+          "paragraphs": [
+            "Current official guidance was read on 31 October 2026. The June 2026 annex corroborates the non-selection rules for that dated cohort; its old income ceilings and tentative booking dates are not instructions for a later exercise. Use the terms and notices governing your own application. This is an independent explanation, not an HDB decision or legal advice."
+          ],
+          "sources": [
+            {
+              "title": "HDB: current application guidance",
+              "href": "https://www.hdb.gov.sg/buying-a-flat/bto-sbf-and-open-booking-of-flats/process-for-buying-a-new-flat/application?anchor=changes-to-flat-application"
+            },
+            {
+              "title": "HDB: June 2026 administrative details",
+              "href": "https://www.hdb.gov.sg/-/media/hdb-pulse/news/2026/20260617-HDB-Launches-6952-Flats-Across-7-Projects-in-June-2026-BTO-Sales-Exercise/Annex-B.pdf"
+            }
+          ]
+        }
+      ],
+      "callout": {
+        "title": "Recheck the household’s location trade-offs",
+        "text": "Compare project-level commute, amenities, published prices and waits. Keep eligibility, available units and non-selection decisions with HDB.",
+        "href": "/",
+        "label": "Open the comparison map"
+      },
+      "next": [
+        {
+          "title": "Understand a queue number beyond supply",
+          "href": "/guides/bto-queue-number-beyond-flat-supply"
+        },
+        {
+          "title": "Prepare for the booking appointment",
+          "href": "/guides/bto-flat-booking-appointment-checklist"
+        },
+        {
+          "title": "Check the cash and CPF payment stages",
+          "href": "/guides/bto-cash-cpf-payment-timeline"
+        }
+      ]
+    },
+    "es": {
+      "category": "Sorteo y reserva",
+      "title": "¿Qué ocurre si decides no elegir una vivienda BTO?",
+      "description": "Distingue una solicitud no seleccionada de rechazar viviendas disponibles. Revisa las consecuencias para tu hogar, la exención por pocas opciones y la etapa de compra.",
+      "answer": "Si HDB te invita a reservar cuando hay viviendas disponibles y no reservas, un cómputo de no selección puede afectar a solicitudes posteriores. Las consecuencias son distintas para familias de la categoría first-timer, personas solteras de la categoría first-timer y familias de la categoría second-timer. Puede aplicarse una exención cuando quedan pocas opciones. Antes de decidir, confirma la etapa, la categoría del hogar y las opciones que reconoce HDB; un sorteo sin éxito y cancelar después de reservar son situaciones diferentes.",
+      "sections": [
+        {
+          "heading": "¿La solicitud no tuvo éxito o rechazaste una oportunidad?",
+          "paragraphs": [
+            "HDB considera que una solicitud no tuvo éxito si no recibes número de cola o si todas las viviendas ya se reservaron antes de llegar tu turno. Un número superior a la oferta no demuestra por sí solo ninguno de esos resultados. Lee el resultado y cualquier invitación correspondientes a tu ejercicio.",
+            "Recibir una invitación cuando quedan viviendas y decidir no reservar es otro caso. La tabla actual de HDB indica que puede generar un cómputo de no selección y cancelar todas las solicitudes de vivienda en curso. No consideres faltar a la cita o pedir la cancelación como una forma de evitar esas consecuencias."
+          ],
+          "sources": [
+            {
+              "href": "https://www.hdb.gov.sg/sitecore/content/hdbinfoweb/home/buying-a-flat/bto-sbf-and-open-booking-of-flats/process-for-buying-a-new-flat/modes-of-sales",
+              "title": "HDB: solicitudes sin éxito e invitaciones"
+            },
+            {
+              "href": "https://www.hdb.gov.sg/buying-a-flat/bto-sbf-and-open-booking-of-flats/process-for-buying-a-new-flat/application?anchor=changes-to-flat-application",
+              "title": "HDB: cancelación y consecuencias de no seleccionar"
+            }
+          ]
+        },
+        {
+          "heading": "¿Qué categoría corresponde a tu hogar?",
+          "paragraphs": [
+            "Para las familias de la categoría first-timer, incluidas las de la categoría First-Timer (Parents & Married Couples), un cómputo de no selección sitúa las solicitudes posteriores en la categoría second-timer durante un año. HDB también pone a cero las oportunidades adicionales de sorteo acumuladas por solicitudes BTO Standard sin éxito.",
+            "Si se acumula otro cómputo de no selección durante ese año, la prioridad first-timer queda suspendida un año más. Esto no significa que todas las familias de la categoría first-timer tengan prohibido presentar cualquier solicitud durante un año.",
+            "Para las personas solteras de la categoría first-timer y las familias de la categoría second-timer, la tabla actual de HDB establece que un cómputo de no selección impide participar en ejercicios de venta durante un año. Pregunta a HDB qué categoría y fechas corresponden a tu hogar; la descripción informal de un cosolicitante no lo determina."
+          ],
+          "sources": [
+            {
+              "href": "https://www.hdb.gov.sg/buying-a-flat/bto-sbf-and-open-booking-of-flats/process-for-buying-a-new-flat/application?anchor=changes-to-flat-application",
+              "title": "HDB: tabla actual por categoría del hogar"
+            },
+            {
+              "href": "https://www.hdb.gov.sg/-/media/hdb-pulse/news/2026/20260617-HDB-Launches-6952-Flats-Across-7-Projects-in-June-2026-BTO-Sales-Exercise/Annex-B.pdf",
+              "title": "HDB: anexo B de junio de 2026, corroboración fechada"
+            }
+          ]
+        },
+        {
+          "heading": "¿Cambia algo si quedan muy pocas opciones?",
+          "paragraphs": [
+            "HDB publica una exención del cómputo de no selección cuando al llegar el turno se pueden elegir 10 viviendas BTO o menos, o 5 viviendas SBF o menos. Son modalidades de venta diferentes. No apliques el umbral de SBF a una cita BTO.",
+            "Pide a HDB que confirme las opciones pertinentes para tu solicitud y cómo se aplica la exención. Tu lista personal no es el cómputo oficial: en un caso ficticio, que solo te gusten 3 de 11 BTO disponibles no convierte 11 opciones en 3 a efectos de esta regla. El ejemplo no determina la elegibilidad ni la exención de nadie."
+          ],
+          "sources": [
+            {
+              "href": "https://www.hdb.gov.sg/buying-a-flat/bto-sbf-and-open-booking-of-flats/process-for-buying-a-new-flat/application?anchor=changes-to-flat-application",
+              "title": "HDB: exención por opciones limitadas"
+            },
+            {
+              "href": "https://www.hdb.gov.sg/-/media/hdb-pulse/news/2026/20260617-HDB-Launches-6952-Flats-Across-7-Projects-in-June-2026-BTO-Sales-Exercise/Annex-B.pdf",
+              "title": "HDB: nota de no selección de junio de 2026"
+            }
+          ]
+        },
+        {
+          "heading": "Prepara un registro de decisión antes de la cita",
+          "paragraphs": [
+            "Anota el ejercicio de venta, el tipo de vivienda, el estado real de la solicitud, la categoría del hogar, la fecha de la cita, la información sobre opciones disponibles y la pregunta para HDB. Guarda la respuesta oficial con ese registro. Si hay otra solicitud en curso, pregunta específicamente cómo se vería afectada.",
+            "Compara las viviendas restantes con tu financiación confirmada y las necesidades mínimas del hogar. Where To BTO ayuda a comparar ubicaciones de proyectos; no ofrece inventario de unidades en tiempo real, concede exenciones ni presenta cancelaciones. Usa la vía oficial de HDB para tu caso y evita compartir documentos de identidad en registros públicos."
+          ],
+          "sources": [
+            {
+              "href": "https://www.hdb.gov.sg/buying-a-flat/bto-sbf-and-open-booking-of-flats/process-for-buying-a-new-flat/application?anchor=changes-to-flat-application",
+              "title": "HDB: cambios de solicitud y vía oficial de cancelación"
+            }
+          ]
+        },
+        {
+          "heading": "¿Ya reservaste? Consulta las reglas de esa etapa",
+          "paragraphs": [
+            "Después de reservar, la cancelación pertenece a otra etapa. La tabla de HDB contempla perder el pago de opción y otras restricciones de solicitud si se cancela antes de firmar el Agreement for Lease; cancelar más adelante tiene sus propias reglas. No traslades una exención previa a la reserva ni un comentario de un foro a esa etapa. Lee la fila actual y pide una explicación de tu caso antes de actuar."
+          ],
+          "sources": [
+            {
+              "href": "https://www.hdb.gov.sg/buying-a-flat/bto-sbf-and-open-booking-of-flats/process-for-buying-a-new-flat/application?anchor=changes-to-flat-application",
+              "title": "HDB: pérdidas y restricciones según la etapa"
+            }
+          ]
+        },
+        {
+          "heading": "¿«Sin pérdida económica» significa que no hay consecuencias?",
+          "paragraphs": [
+            "No. La tabla actual distingue las cantidades que se pierden de las consecuencias para las solicitudes. Antes de reservar puede figurar ninguna pérdida en esa columna y, aun así, aplicarse un cómputo de no selección y restricciones. No es una promesa de devolución de todas las tasas."
+          ],
+          "sources": [
+            {
+              "href": "https://www.hdb.gov.sg/buying-a-flat/bto-sbf-and-open-booking-of-flats/process-for-buying-a-new-flat/application?anchor=changes-to-flat-application",
+              "title": "HDB: columnas separadas de pérdidas y consecuencias"
+            }
+          ]
+        },
+        {
+          "heading": "¿Guardar una lista de favoritas retiene una vivienda mientras decido?",
+          "paragraphs": [
+            "No. Una lista es un registro de planificación, no una reserva. Vuelve a comprobar la disponibilidad oficial para tu hogar y habla de alternativas aceptables antes de tu turno. Esta guía no garantiza que una vivienda siga disponible ni que puedas solicitar en el siguiente lanzamiento."
+          ],
+          "sources": [
+            {
+              "href": "https://www.hdb.gov.sg/-/media/hdb-pulse/news/2026/20260617-HDB-Launches-6952-Flats-Across-7-Projects-in-June-2026-BTO-Sales-Exercise/Annex-B.pdf",
+              "title": "HDB: ejercicio y disponibilidad aplicables, junio de 2026"
+            }
+          ]
+        },
+        {
+          "heading": "¿Qué fechas y fuentes debo utilizar?",
+          "paragraphs": [
+            "La guía oficial actual se consultó el 31 de octubre de 2026. El anexo de junio de 2026 corrobora las reglas de no selección de ese ejercicio; sus antiguos límites de ingresos y fechas provisionales de reserva no son instrucciones para un ejercicio posterior. Usa las condiciones y avisos de tu solicitud. Esta es una explicación independiente, no una decisión de HDB ni asesoramiento jurídico."
+          ],
+          "sources": [
+            {
+              "href": "https://www.hdb.gov.sg/buying-a-flat/bto-sbf-and-open-booking-of-flats/process-for-buying-a-new-flat/application?anchor=changes-to-flat-application",
+              "title": "HDB: orientación actual sobre solicitudes"
+            },
+            {
+              "href": "https://www.hdb.gov.sg/-/media/hdb-pulse/news/2026/20260617-HDB-Launches-6952-Flats-Across-7-Projects-in-June-2026-BTO-Sales-Exercise/Annex-B.pdf",
+              "title": "HDB: detalles administrativos de junio de 2026"
+            }
+          ]
+        }
+      ],
+      "callout": {
+        "title": "Revisa los compromisos de ubicación del hogar",
+        "text": "Compara desplazamientos, servicios, precios publicados y esperas por proyecto. Confirma con HDB la elegibilidad, las viviendas disponibles y las decisiones de no selección.",
+        "label": "Abrir el mapa comparativo",
+        "href": "/"
+      },
+      "next": [
+        {
+          "title": "Entender un número de cola superior a la oferta",
+          "href": "/guides/bto-queue-number-beyond-flat-supply"
+        },
+        {
+          "title": "Preparar la cita de reserva",
+          "href": "/guides/bto-flat-booking-appointment-checklist"
+        },
+        {
+          "title": "Revisar las etapas de pago con efectivo y CPF",
+          "href": "/guides/bto-cash-cpf-payment-timeline"
+        }
+      ]
+    },
+    "fr": {
+      "category": "Tirage et réservation",
+      "title": "Que se passe-t-il si vous refusez de choisir un logement BTO ?",
+      "description": "Distinguez une demande infructueuse du refus de logements disponibles. Vérifiez les conséquences selon votre foyer, la dispense pour choix limité et l’étape d’achat.",
+      "answer": "Si HDB vous invite à réserver alors que des logements sont disponibles et que vous ne réservez pas, un refus de sélection comptabilisé peut affecter vos demandes suivantes. Les conséquences diffèrent entre familles de la catégorie first-timer, célibataires de la catégorie first-timer et familles de la catégorie second-timer. Une dispense pour choix limité peut s’appliquer. Vérifiez l’étape, la catégorie du foyer et les choix reconnus par HDB avant de décider ; un tirage infructueux et une annulation après réservation sont différents.",
+      "sections": [
+        {
+          "heading": "Demande infructueuse ou occasion refusée ?",
+          "paragraphs": [
+            "HDB considère une demande comme infructueuse si vous ne recevez aucun numéro de passage ou si tous les logements ont été réservés avant votre tour. Un numéro au-delà de l’offre ne prouve, à lui seul, aucun de ces résultats. Lisez le résultat et toute invitation concernant votre propre session.",
+            "Être invité alors que des logements restent disponibles, puis ne pas réserver, est une autre situation. Le tableau actuel de HDB indique qu’un refus de sélection peut être comptabilisé et que toutes les demandes de logement en cours peuvent être annulées. Ne considérez pas l’absence au rendez-vous ou une demande d’annulation comme un moyen d’éviter ces conséquences."
+          ],
+          "sources": [
+            {
+              "href": "https://www.hdb.gov.sg/sitecore/content/hdbinfoweb/home/buying-a-flat/bto-sbf-and-open-booking-of-flats/process-for-buying-a-new-flat/modes-of-sales",
+              "title": "HDB : demandes infructueuses et invitations"
+            },
+            {
+              "href": "https://www.hdb.gov.sg/buying-a-flat/bto-sbf-and-open-booking-of-flats/process-for-buying-a-new-flat/application?anchor=changes-to-flat-application",
+              "title": "HDB : annulation et conséquences de la non-sélection"
+            }
+          ]
+        },
+        {
+          "heading": "Quelle catégorie s’applique à votre foyer ?",
+          "paragraphs": [
+            "Pour les familles de la catégorie first-timer, y compris la catégorie First-Timer (Parents & Married Couples), un refus comptabilisé place les demandes suivantes dans la catégorie second-timer pendant un an. HDB remet également à zéro les chances supplémentaires accumulées après des demandes BTO Standard infructueuses.",
+            "Si un autre refus est comptabilisé pendant cette année, la priorité first-timer est suspendue une année supplémentaire. Cela ne signifie pas que toutes les familles de la catégorie first-timer sont exclues de toute demande pendant un an.",
+            "Pour les célibataires de la catégorie first-timer et les familles de la catégorie second-timer, le tableau actuel de HDB prévoit qu’un refus comptabilisé empêche de participer aux sessions de vente pendant un an. Demandez à HDB quelle catégorie et quelles dates s’appliquent à votre foyer ; l’appellation informelle donnée par un codemandeur ne tranche pas la question."
+          ],
+          "sources": [
+            {
+              "href": "https://www.hdb.gov.sg/buying-a-flat/bto-sbf-and-open-booking-of-flats/process-for-buying-a-new-flat/application?anchor=changes-to-flat-application",
+              "title": "HDB : tableau actuel par catégorie de foyer"
+            },
+            {
+              "href": "https://www.hdb.gov.sg/-/media/hdb-pulse/news/2026/20260617-HDB-Launches-6952-Flats-Across-7-Projects-in-June-2026-BTO-Sales-Exercise/Annex-B.pdf",
+              "title": "HDB : annexe B de juin 2026, confirmation datée"
+            }
+          ]
+        },
+        {
+          "heading": "Un choix très limité change-t-il le résultat ?",
+          "paragraphs": [
+            "HDB prévoit de ne pas comptabiliser le refus lorsqu’il reste, au moment de réserver, 10 logements BTO ou moins, ou 5 logements SBF ou moins, parmi lesquels choisir. Il s’agit de modes de vente différents. N’appliquez pas le seuil SBF à un rendez-vous BTO.",
+            "Demandez à HDB de confirmer les choix pertinents pour votre demande et l’application de la dispense. Votre liste personnelle n’est pas le décompte officiel : dans un exemple fictif, n’apprécier que 3 des 11 BTO disponibles ne transforme pas 11 choix en 3 au regard de cette règle. Cet exemple ne décide de l’éligibilité ni de la dispense de personne."
+          ],
+          "sources": [
+            {
+              "href": "https://www.hdb.gov.sg/buying-a-flat/bto-sbf-and-open-booking-of-flats/process-for-buying-a-new-flat/application?anchor=changes-to-flat-application",
+              "title": "HDB : dispense pour choix limité"
+            },
+            {
+              "href": "https://www.hdb.gov.sg/-/media/hdb-pulse/news/2026/20260617-HDB-Launches-6952-Flats-Across-7-Projects-in-June-2026-BTO-Sales-Exercise/Annex-B.pdf",
+              "title": "HDB : note sur la non-sélection de juin 2026"
+            }
+          ]
+        },
+        {
+          "heading": "Préparez une fiche de décision avant le rendez-vous",
+          "paragraphs": [
+            "Notez la session de vente, le type de logement, l’état réel de la demande, la catégorie du foyer, la date du rendez-vous, les choix disponibles et la question à poser à HDB. Conservez sa réponse officielle avec cette fiche. Si une autre demande est en cours, demandez expressément comment elle serait affectée.",
+            "Comparez les logements restants à votre financement confirmé et aux besoins minimaux du foyer. Where To BTO aide à comparer les emplacements des projets ; il ne fournit pas de stock de logements en direct, n’accorde pas de dispense et ne dépose pas d’annulation. Utilisez le canal officiel de HDB pour votre cas et ne partagez pas de pièces d’identité dans des suivis publics."
+          ],
+          "sources": [
+            {
+              "href": "https://www.hdb.gov.sg/buying-a-flat/bto-sbf-and-open-booking-of-flats/process-for-buying-a-new-flat/application?anchor=changes-to-flat-application",
+              "title": "HDB : modification de demande et canal officiel d’annulation"
+            }
+          ]
+        },
+        {
+          "heading": "Déjà réservé ? Consultez les règles de l’étape suivante",
+          "paragraphs": [
+            "Après réservation, l’annulation relève d’une autre étape. Le tableau de HDB prévoit la perte des frais d’option et d’autres restrictions de demande pour une annulation avant la signature de l’Agreement for Lease ; une annulation ultérieure a ses propres règles. Ne transposez pas une dispense avant réservation ou une réponse de forum à cette étape. Lisez la ligne actuelle et obtenez une explication de votre cas avant d’agir."
+          ],
+          "sources": [
+            {
+              "href": "https://www.hdb.gov.sg/buying-a-flat/bto-sbf-and-open-booking-of-flats/process-for-buying-a-new-flat/application?anchor=changes-to-flat-application",
+              "title": "HDB : pertes et restrictions selon l’étape"
+            }
+          ]
+        },
+        {
+          "heading": "« Aucune perte financière » signifie-t-il aucune conséquence ?",
+          "paragraphs": [
+            "Non. Le tableau actuel distingue l’argent perdu des conséquences pour les demandes. Avant réservation, la colonne financière peut indiquer aucune perte alors qu’un refus est comptabilisé et que des restrictions s’appliquent. Ce n’est pas une promesse de remboursement de tous les frais."
+          ],
+          "sources": [
+            {
+              "href": "https://www.hdb.gov.sg/buying-a-flat/bto-sbf-and-open-booking-of-flats/process-for-buying-a-new-flat/application?anchor=changes-to-flat-application",
+              "title": "HDB : colonnes distinctes des pertes et conséquences"
+            }
+          ]
+        },
+        {
+          "heading": "Une liste de favoris garde-t-elle un logement pendant ma réflexion ?",
+          "paragraphs": [
+            "Non. Une présélection est un outil de préparation, pas une réservation. Vérifiez de nouveau la disponibilité officielle pour votre foyer et discutez des alternatives acceptables avant votre tour. Ce guide ne garantit ni qu’un logement restera disponible ni que vous pourrez demander au lancement suivant."
+          ],
+          "sources": [
+            {
+              "href": "https://www.hdb.gov.sg/-/media/hdb-pulse/news/2026/20260617-HDB-Launches-6952-Flats-Across-7-Projects-in-June-2026-BTO-Sales-Exercise/Annex-B.pdf",
+              "title": "HDB : session et disponibilité applicables, juin 2026"
+            }
+          ]
+        },
+        {
+          "heading": "Quelles dates et sources utiliser ?",
+          "paragraphs": [
+            "Les consignes officielles actuelles ont été lues le 31 octobre 2026. L’annexe de juin 2026 confirme les règles de non-sélection pour cette session datée ; ses anciens plafonds de revenus et dates provisoires de réservation ne sont pas des instructions pour une session ultérieure. Utilisez les conditions et avis régissant votre demande. C’est une explication indépendante, pas une décision de HDB ni un conseil juridique."
+          ],
+          "sources": [
+            {
+              "href": "https://www.hdb.gov.sg/buying-a-flat/bto-sbf-and-open-booking-of-flats/process-for-buying-a-new-flat/application?anchor=changes-to-flat-application",
+              "title": "HDB : consignes actuelles de demande"
+            },
+            {
+              "href": "https://www.hdb.gov.sg/-/media/hdb-pulse/news/2026/20260617-HDB-Launches-6952-Flats-Across-7-Projects-in-June-2026-BTO-Sales-Exercise/Annex-B.pdf",
+              "title": "HDB : détails administratifs de juin 2026"
+            }
+          ]
+        }
+      ],
+      "callout": {
+        "title": "Réexaminez les compromis de localisation du foyer",
+        "text": "Comparez trajets, services, prix publiés et délais par projet. Confiez à HDB la confirmation de l’éligibilité, des logements disponibles et des décisions de non-sélection.",
+        "label": "Ouvrir la carte comparative",
+        "href": "/"
+      },
+      "next": [
+        {
+          "title": "Comprendre un numéro de passage au-delà de l’offre",
+          "href": "/guides/bto-queue-number-beyond-flat-supply"
+        },
+        {
+          "title": "Préparer le rendez-vous de réservation",
+          "href": "/guides/bto-flat-booking-appointment-checklist"
+        },
+        {
+          "title": "Vérifier les étapes de paiement en espèces et CPF",
+          "href": "/guides/bto-cash-cpf-payment-timeline"
+        }
+      ]
+    },
+    "de": {
+      "category": "Losverfahren und Buchung",
+      "title": "Was passiert, wenn Sie bei BTO keine Wohnung auswählen?",
+      "description": "Unterscheiden Sie einen erfolglosen Antrag vom Verzicht auf verfügbare Wohnungen. Prüfen Sie Haushaltskategorie, Folgen, Ausnahme bei geringer Auswahl und Kaufphase.",
+      "answer": "Lädt HDB Sie zur Buchung ein, während Wohnungen verfügbar sind, und buchen Sie nicht, kann ein gezählter Auswahlverzicht spätere Anträge beeinflussen. Die Folgen unterscheiden sich für Familien der Kategorie First-Timer, Alleinstehende der Kategorie First-Timer und Familien der Kategorie Second-Timer. Bei geringer Auswahl kann eine Ausnahme gelten. Prüfen Sie vor der Entscheidung Phase, Haushaltskategorie und die von HDB anerkannten Auswahlmöglichkeiten; ein erfolgloses Losverfahren und eine Stornierung nach Buchung sind andere Fälle.",
+      "sections": [
+        {
+          "heading": "War der Antrag erfolglos oder haben Sie eine Gelegenheit abgelehnt?",
+          "paragraphs": [
+            "HDB bezeichnet einen Antrag als erfolglos, wenn Sie keine Wartelistennummer erhalten oder alle Wohnungen vor Ihrem Aufruf gebucht sind. Eine Nummer oberhalb des Angebots belegt für sich allein keines dieser Ergebnisse. Lesen Sie das tatsächliche Ergebnis und eine etwaige Einladung Ihres eigenen Verkaufsverfahrens.",
+            "Eine Einladung bei noch verfügbaren Wohnungen und der anschließende Verzicht auf eine Buchung sind ein anderer Fall. Laut aktueller HDB-Tabelle kann dies als Auswahlverzicht zählen und zur Aufhebung aller laufenden Wohnungsanträge führen. Betrachten Sie Nichterscheinen oder eine Stornierungsanfrage nicht als Möglichkeit, diese Folgen zu umgehen."
+          ],
+          "sources": [
+            {
+              "href": "https://www.hdb.gov.sg/sitecore/content/hdbinfoweb/home/buying-a-flat/bto-sbf-and-open-booking-of-flats/process-for-buying-a-new-flat/modes-of-sales",
+              "title": "HDB: erfolglose Anträge und Einladungen"
+            },
+            {
+              "href": "https://www.hdb.gov.sg/buying-a-flat/bto-sbf-and-open-booking-of-flats/process-for-buying-a-new-flat/application?anchor=changes-to-flat-application",
+              "title": "HDB: Stornierung und Folgen des Auswahlverzichts"
+            }
+          ]
+        },
+        {
+          "heading": "Welche Haushaltskategorie gilt?",
+          "paragraphs": [
+            "Bei Familien der Kategorie First-Timer, einschließlich First-Timer (Parents & Married Couples), führt ein gezählter Auswahlverzicht dazu, dass spätere Anträge ein Jahr lang der Kategorie Second-Timer zugeordnet werden. Zusätzlich setzt HDB angesammelte zusätzliche Loschancen aus erfolglosen Anträgen für Standard-BTO-Wohnungen auf null.",
+            "Wird innerhalb dieses Jahres ein weiterer Auswahlverzicht gezählt, wird die First-Timer-Priorität für ein weiteres Jahr ausgesetzt. Das bedeutet nicht, dass jede Familie der Kategorie First-Timer ein Jahr lang von sämtlichen Anträgen ausgeschlossen wird.",
+            "Für Alleinstehende der Kategorie First-Timer und Familien der Kategorie Second-Timer sieht die aktuelle HDB-Tabelle nach einem gezählten Auswahlverzicht einen einjährigen Ausschluss von Verkaufsverfahren vor. Fragen Sie HDB, welche Kategorie und Daten für Ihren Haushalt gelten; die informelle Bezeichnung durch einen Mitantragsteller entscheidet das nicht."
+          ],
+          "sources": [
+            {
+              "href": "https://www.hdb.gov.sg/buying-a-flat/bto-sbf-and-open-booking-of-flats/process-for-buying-a-new-flat/application?anchor=changes-to-flat-application",
+              "title": "HDB: aktuelle Tabelle nach Haushaltskategorie"
+            },
+            {
+              "href": "https://www.hdb.gov.sg/-/media/hdb-pulse/news/2026/20260617-HDB-Launches-6952-Flats-Across-7-Projects-in-June-2026-BTO-Sales-Exercise/Annex-B.pdf",
+              "title": "HDB: Anhang B vom Juni 2026 als datierter Beleg"
+            }
+          ]
+        },
+        {
+          "heading": "Ändert eine sehr geringe Auswahl das Ergebnis?",
+          "paragraphs": [
+            "HDB veröffentlicht eine Ausnahme von der Zählung, wenn zum Buchungstermin höchstens 10 BTO-Wohnungen oder höchstens 5 SBF-Wohnungen zur Auswahl stehen. Das sind verschiedene Verkaufsarten. Wenden Sie den SBF-Grenzwert nicht auf einen BTO-Termin an.",
+            "Lassen Sie HDB die für Ihren Antrag relevanten verfügbaren Wohnungen und die Anwendung der Ausnahme bestätigen. Ihre persönliche Wunschliste ist nicht die amtliche Zahl: Wenn in einem fiktiven Fall nur 3 von 11 verfügbaren BTO-Wohnungen gefallen, werden dadurch für diese Regel nicht aus 11 Auswahlmöglichkeiten 3. Das Beispiel entscheidet weder Anspruch noch Ausnahme im Einzelfall."
+          ],
+          "sources": [
+            {
+              "href": "https://www.hdb.gov.sg/buying-a-flat/bto-sbf-and-open-booking-of-flats/process-for-buying-a-new-flat/application?anchor=changes-to-flat-application",
+              "title": "HDB: Ausnahme bei geringer Auswahl"
+            },
+            {
+              "href": "https://www.hdb.gov.sg/-/media/hdb-pulse/news/2026/20260617-HDB-Launches-6952-Flats-Across-7-Projects-in-June-2026-BTO-Sales-Exercise/Annex-B.pdf",
+              "title": "HDB: Fußnote zum Auswahlverzicht vom Juni 2026"
+            }
+          ]
+        },
+        {
+          "heading": "Halten Sie die Entscheidung vor dem Termin schriftlich fest",
+          "paragraphs": [
+            "Notieren Sie Verkaufsverfahren, Wohnungstyp, tatsächlichen Antragsstatus, Haushaltskategorie, Termin, Angaben zur verfügbaren Auswahl und Ihre Frage an HDB. Bewahren Sie die amtliche Antwort dazu auf. Läuft ein weiterer Antrag, fragen Sie ausdrücklich nach den Folgen für diesen.",
+            "Vergleichen Sie verbleibende Wohnungen mit bestätigter Finanzierung und den Mindestbedürfnissen des Haushalts. Where To BTO hilft beim Standortvergleich von Projekten; es bietet keinen Live-Wohnungsbestand, gewährt keine Ausnahme und reicht keine Stornierung ein. Nutzen Sie für Ihren Fall den offiziellen HDB-Kontaktweg und teilen Sie keine Ausweise in öffentlichen Beobachtungslisten."
+          ],
+          "sources": [
+            {
+              "href": "https://www.hdb.gov.sg/buying-a-flat/bto-sbf-and-open-booking-of-flats/process-for-buying-a-new-flat/application?anchor=changes-to-flat-application",
+              "title": "HDB: Antragsänderungen und amtlicher Stornierungsweg"
+            }
+          ]
+        },
+        {
+          "heading": "Schon gebucht? Dann gelten die Regeln der späteren Phase",
+          "paragraphs": [
+            "Nach einer Buchung gehört die Stornierung zu einer anderen Phase. Die HDB-Tabelle nennt den Verlust der Optionsgebühr und weitere Antragsbeschränkungen bei Stornierung vor Unterzeichnung des Agreement for Lease; für spätere Stornierungen gelten eigene Regeln. Übertragen Sie keine Ausnahme vor Buchung oder Forumsantwort auf diese Phase. Lesen Sie die aktuelle Tabellenzeile und lassen Sie Ihren Fall vor einer Handlung erklären."
+          ],
+          "sources": [
+            {
+              "href": "https://www.hdb.gov.sg/buying-a-flat/bto-sbf-and-open-booking-of-flats/process-for-buying-a-new-flat/application?anchor=changes-to-flat-application",
+              "title": "HDB: phasenabhängige Geldverluste und Beschränkungen"
+            }
+          ]
+        },
+        {
+          "heading": "Bedeutet „kein finanzieller Verlust“ auch keine Folgen?",
+          "paragraphs": [
+            "Nein. Die aktuelle Tabelle trennt Geldverluste von Antragsfolgen. Vor der Buchung kann die finanzielle Spalte keinen Verlust nennen, während dennoch ein Auswahlverzicht gezählt wird und Beschränkungen gelten. Das ist keine Zusage, dass jede Gebühr erstattet wird."
+          ],
+          "sources": [
+            {
+              "href": "https://www.hdb.gov.sg/buying-a-flat/bto-sbf-and-open-booking-of-flats/process-for-buying-a-new-flat/application?anchor=changes-to-flat-application",
+              "title": "HDB: getrennte Spalten für Geldverluste und Folgen"
+            }
+          ]
+        },
+        {
+          "heading": "Hält eine gespeicherte Merkliste eine Wohnung während meiner Entscheidung frei?",
+          "paragraphs": [
+            "Nein. Eine Auswahlliste dient der Planung und ist keine Reservierung. Prüfen Sie die amtliche Verfügbarkeit für Ihren Haushalt erneut und besprechen Sie akzeptable Alternativen vor Ihrem Aufruf. Dieser Leitfaden belegt weder die spätere Verfügbarkeit einer Wohnung noch die Zulässigkeit eines Antrags beim nächsten Verkaufsstart."
+          ],
+          "sources": [
+            {
+              "href": "https://www.hdb.gov.sg/-/media/hdb-pulse/news/2026/20260617-HDB-Launches-6952-Flats-Across-7-Projects-in-June-2026-BTO-Sales-Exercise/Annex-B.pdf",
+              "title": "HDB: geltendes Verfahren und Verfügbarkeit im Juni 2026"
+            }
+          ]
+        },
+        {
+          "heading": "Welche Daten und Quellen sollte ich verwenden?",
+          "paragraphs": [
+            "Die aktuellen amtlichen Hinweise wurden am 31. Oktober 2026 gelesen. Anhang B vom Juni 2026 bestätigt die Regeln zum Auswahlverzicht für dieses damalige Verfahren; seine alten Einkommensgrenzen und vorläufigen Buchungstermine sind keine Anleitung für spätere Verfahren. Nutzen Sie die Bedingungen und Mitteilungen Ihres eigenen Antrags. Dies ist eine unabhängige Erklärung, keine HDB-Entscheidung oder Rechtsberatung."
+          ],
+          "sources": [
+            {
+              "href": "https://www.hdb.gov.sg/buying-a-flat/bto-sbf-and-open-booking-of-flats/process-for-buying-a-new-flat/application?anchor=changes-to-flat-application",
+              "title": "HDB: aktuelle Antragshinweise"
+            },
+            {
+              "href": "https://www.hdb.gov.sg/-/media/hdb-pulse/news/2026/20260617-HDB-Launches-6952-Flats-Across-7-Projects-in-June-2026-BTO-Sales-Exercise/Annex-B.pdf",
+              "title": "HDB: Verwaltungsangaben vom Juni 2026"
+            }
+          ]
+        }
+      ],
+      "callout": {
+        "title": "Wägen Sie die Standortkompromisse des Haushalts erneut ab",
+        "text": "Vergleichen Sie Arbeitswege, Einrichtungen, veröffentlichte Preise und Wartezeiten auf Projektebene. Anspruch, verfügbare Wohnungen und Auswahlverzicht klären Sie mit HDB.",
+        "label": "Vergleichskarte öffnen",
+        "href": "/"
+      },
+      "next": [
+        {
+          "title": "Eine Wartelistennummer oberhalb des Angebots verstehen",
+          "href": "/guides/bto-queue-number-beyond-flat-supply"
+        },
+        {
+          "title": "Den Buchungstermin vorbereiten",
+          "href": "/guides/bto-flat-booking-appointment-checklist"
+        },
+        {
+          "title": "Zahlungsphasen mit Bargeld und CPF prüfen",
+          "href": "/guides/bto-cash-cpf-payment-timeline"
+        }
+      ]
+    },
+    "zh-Hans": {
+      "category": "抽签与选房",
+      "title": "收到邀请后不选 BTO 单位，会有什么后果？",
+      "description": "区分申请不成功与放弃仍可选的单位，核对家庭类别、弃选后果、选择有限时的豁免及所处购房阶段。",
+      "answer": "如果 HDB 在仍有单位可选时邀请你选房，而你没有预订，所记录的弃选次数可能影响之后的申请。首次购屋家庭、首次购屋单身人士及 second-timer 家庭的后果并不相同；选择有限时可能适用豁免。决定前，应核对申请阶段、家庭类别及 HDB 认定的可选单位。抽签申请不成功、收到邀请后不选房，以及预订后取消，是不同情况。",
+      "sections": [
+        {
+          "heading": "是申请不成功，还是放弃了一次选房机会？",
+          "paragraphs": [
+            "HDB 将没有获发排队号码，或轮到该号码前所有单位已订完的申请，视为不成功。排队号码超过供应量，本身不能证明上述任何一种结果。请阅读自己销售活动的真实结果及收到的邀请。",
+            "仍有单位时获邀选房，之后决定不预订，是另一种情况。HDB 现行申请表格说明，这可能计入一次弃选，并取消所有正在进行的购房申请。不要把缺席预约或提出取消申请，当作避免这些后果的方法。"
+          ],
+          "sources": [
+            {
+              "href": "https://www.hdb.gov.sg/sitecore/content/hdbinfoweb/home/buying-a-flat/bto-sbf-and-open-booking-of-flats/process-for-buying-a-new-flat/modes-of-sales",
+              "title": "HDB：申请不成功与选房邀请"
+            },
+            {
+              "href": "https://www.hdb.gov.sg/buying-a-flat/bto-sbf-and-open-booking-of-flats/process-for-buying-a-new-flat/application?anchor=changes-to-flat-application",
+              "title": "HDB：取消申请及弃选后果"
+            }
+          ]
+        },
+        {
+          "heading": "你的家庭属于哪一类别？",
+          "paragraphs": [
+            "首次购屋家庭，包括 First-Timer (Parents & Married Couples) 类别，被计入一次弃选后，之后的申请会在一年内按 second-timer 类别处理。HDB 也会把因之前申请 Standard BTO 不成功而累积的额外抽签机会归零。",
+            "如果这一年内再被计入一次弃选，首次购屋优先资格会再暂停一年。这不等于所有首次购屋家庭都会被禁止申请任何单位一年。",
+            "对于首次购屋单身人士及 second-timer 家庭，HDB 现行表格说明，计入一次弃选后，一年内不能参加销售活动。请向 HDB 确认自己家庭适用的类别及日期；共同申请人的非正式称呼不能代替认定。"
+          ],
+          "sources": [
+            {
+              "href": "https://www.hdb.gov.sg/buying-a-flat/bto-sbf-and-open-booking-of-flats/process-for-buying-a-new-flat/application?anchor=changes-to-flat-application",
+              "title": "HDB：按家庭类别列出的现行表格"
+            },
+            {
+              "href": "https://www.hdb.gov.sg/-/media/hdb-pulse/news/2026/20260617-HDB-Launches-6952-Flats-Across-7-Projects-in-June-2026-BTO-Sales-Exercise/Annex-B.pdf",
+              "title": "HDB：2026 年 6 月附件 B，注明日期的印证"
+            }
+          ]
+        },
+        {
+          "heading": "剩余选择很少，结果会不同吗？",
+          "paragraphs": [
+            "HDB 公布的规则是：轮到选房时，可选 BTO 单位为 10 个或以下，或可选 SBF 单位为 5 个或以下，可豁免弃选次数。这是两种不同的销售方式，不能把 SBF 门槛用于 BTO 预约。",
+            "请 HDB 确认与你申请有关的可选单位及豁免如何适用。个人愿望清单不是官方数量：在一个虚构例子中，11 个可选 BTO 单位里只喜欢 3 个，不会使这项规则中的 11 个选择变成 3 个。例子不判定任何人的资格或豁免。"
+          ],
+          "sources": [
+            {
+              "href": "https://www.hdb.gov.sg/buying-a-flat/bto-sbf-and-open-booking-of-flats/process-for-buying-a-new-flat/application?anchor=changes-to-flat-application",
+              "title": "HDB：选择有限时的弃选豁免"
+            },
+            {
+              "href": "https://www.hdb.gov.sg/-/media/hdb-pulse/news/2026/20260617-HDB-Launches-6952-Flats-Across-7-Projects-in-June-2026-BTO-Sales-Exercise/Annex-B.pdf",
+              "title": "HDB：2026 年 6 月弃选规则脚注"
+            }
+          ]
+        },
+        {
+          "heading": "预约前，写清决定所需的信息",
+          "paragraphs": [
+            "记下销售活动、房型、实际申请状态、家庭类别、预约日期、可选单位资料，以及要问 HDB 的问题，并保留官方答复。如有另一份正在进行的申请，应特别询问它会受什么影响。",
+            "将剩余单位与你已确认的资金安排及家庭最低需求比较。Where To BTO 可帮助比较项目地点，但不提供实时单位库存、不批准豁免，也不代交取消申请。自己的个案应通过 HDB 官方渠道处理，避免在公开追踪表中分享身份证明。"
+          ],
+          "sources": [
+            {
+              "href": "https://www.hdb.gov.sg/buying-a-flat/bto-sbf-and-open-booking-of-flats/process-for-buying-a-new-flat/application?anchor=changes-to-flat-application",
+              "title": "HDB：更改申请与官方取消渠道"
+            }
+          ]
+        },
+        {
+          "heading": "已经预订单位？应查下一阶段的规则",
+          "paragraphs": [
+            "一旦预订，取消就属于另一个阶段。HDB 表格列明，在签署 Agreement for Lease（租契协议）前取消，会涉及没收选房定金及其他申请限制；再往后的取消另有规则。不要把预订前的豁免或论坛答案套用到这一阶段。行动前，应阅读现行对应行，并取得针对自己个案的说明。"
+          ],
+          "sources": [
+            {
+              "href": "https://www.hdb.gov.sg/buying-a-flat/bto-sbf-and-open-booking-of-flats/process-for-buying-a-new-flat/application?anchor=changes-to-flat-application",
+              "title": "HDB：不同阶段的款项没收及申请限制"
+            }
+          ]
+        },
+        {
+          "heading": "“没有款项被没收”是否表示没有其他后果？",
+          "paragraphs": [
+            "不是。现行表格把金钱损失与申请后果分开列出。预订前的个案，即使金钱一栏列为没有没收款项，仍可能计入弃选并受到限制。这不是承诺每一项费用都会退还。"
+          ],
+          "sources": [
+            {
+              "href": "https://www.hdb.gov.sg/buying-a-flat/bto-sbf-and-open-booking-of-flats/process-for-buying-a-new-flat/application?anchor=changes-to-flat-application",
+              "title": "HDB：分别列示款项没收及其他后果"
+            }
+          ]
+        },
+        {
+          "heading": "保存关注清单，能在考虑期间保留单位吗？",
+          "paragraphs": [
+            "不能。备选清单是规划记录，不是预订。轮到自己前，应再次核查适用于家庭的官方供应，并讨论可接受的替代选择。本指南不保证某个单位会继续可选，也不能证明你能参加下一次销售活动。"
+          ],
+          "sources": [
+            {
+              "href": "https://www.hdb.gov.sg/-/media/hdb-pulse/news/2026/20260617-HDB-Launches-6952-Flats-Across-7-Projects-in-June-2026-BTO-Sales-Exercise/Annex-B.pdf",
+              "title": "HDB：2026 年 6 月适用批次与单位供应"
+            }
+          ]
+        },
+        {
+          "heading": "应参考哪些日期与来源？",
+          "paragraphs": [
+            "现行官方指引于 2026 年 10 月 31 日阅读。2026 年 6 月附件可印证该批次的弃选规则，但其中旧收入顶限及暂定选房时间，不是之后销售活动的指示。请使用自己申请适用的条款和通知。本文是独立说明，并非 HDB 决定或法律意见。"
+          ],
+          "sources": [
+            {
+              "href": "https://www.hdb.gov.sg/buying-a-flat/bto-sbf-and-open-booking-of-flats/process-for-buying-a-new-flat/application?anchor=changes-to-flat-application",
+              "title": "HDB：现行申请指引"
+            },
+            {
+              "href": "https://www.hdb.gov.sg/-/media/hdb-pulse/news/2026/20260617-HDB-Launches-6952-Flats-Across-7-Projects-in-June-2026-BTO-Sales-Exercise/Annex-B.pdf",
+              "title": "HDB：2026 年 6 月行政详情"
+            }
+          ]
+        }
+      ],
+      "callout": {
+        "title": "重新检视家庭对地点的取舍",
+        "text": "比较项目层面的通勤、设施、已公布价格及等候时间。资格、可选单位及弃选决定须向 HDB 确认。",
+        "label": "打开比较地图",
+        "href": "/"
+      },
+      "next": [
+        {
+          "title": "了解排队号码超过供应量的含义",
+          "href": "/guides/bto-queue-number-beyond-flat-supply"
+        },
+        {
+          "title": "准备选房预约",
+          "href": "/guides/bto-flat-booking-appointment-checklist"
+        },
+        {
+          "title": "核对现金与 CPF 付款阶段",
+          "href": "/guides/bto-cash-cpf-payment-timeline"
+        }
+      ]
+    }
+  }
+}

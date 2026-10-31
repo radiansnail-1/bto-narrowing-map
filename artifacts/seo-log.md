@@ -170,3 +170,13 @@ Planner receipt: {"source":"Google Ads Keyword Planner","site":"where-to-bto","a
 ## 29 October 2026 — Owner-requested retained PR17 repair
 
 PR17 retains the original flat-booking appointment guide and its five complete language records. The historical canary date assertion now selects handling-unpublished-bto-information by stable slug instead of the first sorted article; all date and sitemap assertions remain. This is a source repair, not a release. Rerun native tests and the full hosted five-language build/layout receipt, refresh current source and other-draft comparisons, then use the normal merge and live release at the next eligible slot. Project-news cutoffs and original article dates remain unchanged.
+
+
+## 31 October 2026 — Non-selection guide preparation
+
+The new guide answers what happens when an invited household does not select an available flat. Current full queue and appointment guides mention the issue but do not explain the household-category consequences or limited-choice thresholds. Current HDB application guidance, modes-of-sale guidance and the dated June 2026 administrative annex were read. All five complete versions retain the same facts, citation destinations and navigation; they do not determine any household's case.
+
+Existing research and observation history is preserved. The official-news check found no newly confirmed project or calculation change; access limitations leave the previous complete news cutoff unchanged. Search demand and later outcomes remain uncertain. Normal source, language, build, layout, merge and live release checks remain required. No publication or measured gain is claimed at this source checkpoint.
+
+
+Publication checkpoint: [PR18](https://github.com/radiansnail-1/bto-narrowing-map/pull/18) contains the complete five-language non-selection guide. Source and translation review are complete; exact-head tests, build and layout verification, checked merge and independent production verification remain pending. Resume this same article if a check fails. Existing published articles and unfinished owner work remain preserved.

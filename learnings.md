@@ -91,3 +91,11 @@ Planner receipt: {"source":"Google Ads Keyword Planner","site":"where-to-bto","a
 ## 29 October 2026 — Owner-requested retained PR17 repair
 
 PR17 retains the original flat-booking appointment guide and its five complete language records. The historical canary date assertion now selects handling-unpublished-bto-information by stable slug instead of the first sorted article; all date and sitemap assertions remain. This is a source repair, not a release. Rerun native tests and the full hosted five-language build/layout receipt, refresh current source and other-draft comparisons, then use the normal merge and live release at the next eligible slot. Project-news cutoffs and original article dates remain unchanged.
+
+
+## Non-selection guidance — 31 October 2026
+
+Separate an unsuccessful application from declining an available flat. Explain household categories and the limited-choice waiver using current HDB guidance. A personal shortlist is not the official available-choice count. Keep the June 2026 annex visibly dated and preserve Singapore policy meaning in every translation. Do not promise an individual waiver or future eligibility.
+
+
+Publication checkpoint: [PR18](https://github.com/radiansnail-1/bto-narrowing-map/pull/18) contains the complete five-language non-selection guide. Source and translation review are complete; exact-head tests, build and layout verification, checked merge and independent production verification remain pending. Resume this same article if a check fails. Existing published articles and unfinished owner work remain preserved.
