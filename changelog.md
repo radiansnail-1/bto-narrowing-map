@@ -77,3 +77,8 @@ Planner receipt: {"source":"Google Ads Keyword Planner","site":"where-to-bto","a
 ## 29 October 2026 — Owner-requested retained PR17 repair
 
 PR17 retains the original flat-booking appointment guide and its five complete language records. The historical canary date assertion now selects handling-unpublished-bto-information by stable slug instead of the first sorted article; all date and sitemap assertions remain. This is a source repair, not a release. Rerun native tests and the full hosted five-language build/layout receipt, refresh current source and other-draft comparisons, then use the normal merge and live release at the next eligible slot. Project-news cutoffs and original article dates remain unchanged.
+
+
+## 2026-10-31 — Non-selection article source
+
+Added the complete five-language non-selection article through the existing content pipeline. It has eight sections and thirteen paragraphs per language, with primary citations, three practical questions and an explicit fictional example. Source and meaning review completed; build, layout and release verification remain pending. Existing project data and calculations are unchanged.
