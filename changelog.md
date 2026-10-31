@@ -82,3 +82,6 @@ PR17 retains the original flat-booking appointment guide and its five complete l
 ## 2026-10-31 — Non-selection article source
 
 Added the complete five-language non-selection article through the existing content pipeline. It has eight sections and thirteen paragraphs per language, with primary citations, three practical questions and an explicit fictional example. Source and meaning review completed; build, layout and release verification remain pending. Existing project data and calculations are unchanged.
+
+
+Publication checkpoint: [PR18](https://github.com/radiansnail-1/bto-narrowing-map/pull/18) contains the complete five-language non-selection guide. Source and translation review are complete; exact-head tests, build and layout verification, checked merge and independent production verification remain pending. Resume this same article if a check fails. Existing published articles and unfinished owner work remain preserved.

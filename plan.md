@@ -143,3 +143,6 @@ PR17 retains the original flat-booking appointment guide and its five complete l
 ## 31 October 2026 — Non-selection guide
 
 Prepared the complete English, Spanish, French, German and Simplified Chinese guide in data/article-bundles/declining-bto-flat-selection.json. It distinguishes unsuccessful applications, declining available flats, household categories and later cancellation stages. Full source and translation review completed. Pull request assignment, build and layout checks, merge and production verification remain pending. Preserve existing project dates, financial calculations and unfinished work.
+
+
+Publication checkpoint: [PR18](https://github.com/radiansnail-1/bto-narrowing-map/pull/18) contains the complete five-language non-selection guide. Source and translation review are complete; exact-head tests, build and layout verification, checked merge and independent production verification remain pending. Resume this same article if a check fails. Existing published articles and unfinished owner work remain preserved.

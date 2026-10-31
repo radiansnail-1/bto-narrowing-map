@@ -96,3 +96,6 @@ PR17 retains the original flat-booking appointment guide and its five complete l
 ## Non-selection guidance — 31 October 2026
 
 Separate an unsuccessful application from declining an available flat. Explain household categories and the limited-choice waiver using current HDB guidance. A personal shortlist is not the official available-choice count. Keep the June 2026 annex visibly dated and preserve Singapore policy meaning in every translation. Do not promise an individual waiver or future eligibility.
+
+
+Publication checkpoint: [PR18](https://github.com/radiansnail-1/bto-narrowing-map/pull/18) contains the complete five-language non-selection guide. Source and translation review are complete; exact-head tests, build and layout verification, checked merge and independent production verification remain pending. Resume this same article if a check fails. Existing published articles and unfinished owner work remain preserved.
