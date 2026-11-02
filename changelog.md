@@ -85,3 +85,8 @@ Added the complete five-language non-selection article through the existing cont
 
 
 Publication checkpoint: [PR18](https://github.com/radiansnail-1/bto-narrowing-map/pull/18) contains the complete five-language non-selection guide. Source and translation review are complete; exact-head tests, build and layout verification, checked merge and independent production verification remain pending. Resume this same article if a check fails. Existing published articles and unfinished owner work remain preserved.
+
+
+## 2026-11-02 — Prepared PR19
+
+Expanded the existing booking guide in English, Spanish, French, German and Simplified Chinese with a fictional three-option worksheet and official watchlist sources. Added Bayshore Oasis separately; reconciled Sembawang Anchor, Plantation Dew and Toa Payoh Hillside names, published waits and revised CCA count. Added boundary and unknown-data regressions. Existing URLs and original dates remain; final checks and release are pending.

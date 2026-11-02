@@ -99,3 +99,8 @@ Separate an unsuccessful application from declining an available flat. Explain h
 
 
 Publication checkpoint: [PR18](https://github.com/radiansnail-1/bto-narrowing-map/pull/18) contains the complete five-language non-selection guide. Source and translation review are complete; exact-head tests, build and layout verification, checked merge and independent production verification remain pending. Resume this same article if a check fails. Existing published articles and unfinished owner work remain preserved.
+
+
+## 2 November 2026 — Existing answer and partial project records
+
+The current booking guide already answers unit-shortlist preparation, so expand that page rather than add a duplicate. An official watchlist is monitoring, not reservation. A town bucket can contain several projects: Bayshore Oasis needs a separate record from the additional unnamed Bedok project. Partial announcement updates retain unknown prices, classification and exact locations. Keep the full snapshot audit date separate from individual record checks. Waiting-time filters use the published 34/38-month values; revised CCA and rental counts must remain distinct.

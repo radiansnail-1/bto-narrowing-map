@@ -146,3 +146,8 @@ Prepared the complete English, Spanish, French, German and Simplified Chinese gu
 
 
 Publication checkpoint: [PR18](https://github.com/radiansnail-1/bto-narrowing-map/pull/18) contains the complete five-language non-selection guide. Source and translation review are complete; exact-head tests, build and layout verification, checked merge and independent production verification remain pending. Resume this same article if a check fails. Existing published articles and unfinished owner work remain preserved.
+
+
+## 2 November 2026 — PR19
+
+PR19: https://github.com/radiansnail-1/bto-narrowing-map/pull/19 . Update the existing flat-booking appointment guide in all five languages; retain its 29 October publication date. Add the complete unit comparison example and official watchlist explanation. Reconcile the partial HDB announcements of 31 October and 1 November. Source review is complete; tests, builds, ten layouts, checked merge and production verification remain pending. Continue this same branch and PR. Preserve all earlier tasks and completed releases.

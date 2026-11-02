@@ -180,3 +180,12 @@ Existing research and observation history is preserved. The official-news check 
 
 
 Publication checkpoint: [PR18](https://github.com/radiansnail-1/bto-narrowing-map/pull/18) contains the complete five-language non-selection guide. Source and translation review are complete; exact-head tests, build and layout verification, checked merge and independent production verification remain pending. Resume this same article if a check fails. Existing published articles and unfinished owner work remain preserved.
+
+
+## 2 November 2026 — PR19 review checkpoint
+
+PR19 https://github.com/radiansnail-1/bto-narrowing-map/pull/19 improves the existing booking answer, not a new article. Full five-language text, source labels and navigation reviewed. Source: current HDB AskGov watchlist/reservation and notification answers; HDB booking guidance and MyNiceHome buying guide. Official HDB announcements dated 31 October and 1 November support the partial project update. Classification, prices, exact application dates and unsupported coordinates remain unknown; earlier project audits remain dated.
+
+GSC final Web/Pacific 24–30 October: 0 clicks/14 impressions; 17–23 October: 1/72. Tiny, inconclusive sample; query rows do not establish topic demand. Planner 2 November 04:37 UTC, English/Singapore: three selected terms returned null estimates. Unknown is not zero. Shared 2 November citation observation remains an isolated configured Codex benchmark, not a traffic measure. Bounded news checks do not advance the earlier complete news cutoff.
+
+Five target URLs: https://wheretobto.com/guides/bto-flat-booking-appointment-checklist ; https://wheretobto.com/es/guides/bto-flat-booking-appointment-checklist ; https://wheretobto.com/fr/guides/bto-flat-booking-appointment-checklist ; https://wheretobto.com/de/guides/bto-flat-booking-appointment-checklist ; https://wheretobto.com/zh-Hans/guides/bto-flat-booking-appointment-checklist . Final source/build/browser/layout checks and canonical release verification remain pending. Preserve prior observation plans; review this update after 28 days, 30 November, with final-data lag. No search or business gain claimed.
