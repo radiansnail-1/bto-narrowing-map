@@ -99,3 +99,19 @@ Separate an unsuccessful application from declining an available flat. Explain h
 
 
 Publication checkpoint: [PR18](https://github.com/radiansnail-1/bto-narrowing-map/pull/18) contains the complete five-language non-selection guide. Source and translation review are complete; exact-head tests, build and layout verification, checked merge and independent production verification remain pending. Resume this same article if a check fails. Existing published articles and unfinished owner work remain preserved.
+
+
+## 2 November 2026 — Existing answer and partial project records
+
+The current booking guide already answers unit-shortlist preparation, so expand that page rather than add a duplicate. An official watchlist is monitoring, not reservation. A town bucket can contain several projects: Bayshore Oasis needs a separate record from the additional unnamed Bedok project. Partial announcement updates retain unknown prices, classification and exact locations. Keep the full snapshot audit date separate from individual record checks. Waiting-time filters use the published 34/38-month values; revised CCA and rental counts must remain distinct.
+
+
+PR19 fixture diagnosis, 2 November 2026: derive corpus counts from the content registry while preserving explicit shortlist limits. Individual project checks may postdate the last complete snapshot audit; do not advance the full audit date to satisfy an old fixture. Repair the actual date invariant after reading its source. A service scope refusal is a capability blocker; retain the exact path and error instead of using another writer.
+
+
+## 2 November 2026 — PR19 source-backed fixture repair
+
+The existing booking guide and all five versions remain on PR19. Reproduced both failures at retained head 5714782752b579805d6aee70a1ee596fadee1fb4: an obsolete 22-project filter fixture and the assumption that every individual source check predates the last full audit. Added the two already-cited HDB announcement references (31 October and 1 November), read again on 2 November, to the central source register. A partial check after the full audit now requires a matching dated source linked to that individual project. The 28 August full-audit date and all project values/unknowns remain unchanged. Filter assertions compare exact ordered membership to the raw registry, with an independent interleaved-status fixture. The two affected files pass all 13 tests. Final exact-head hosted tests, builds, browser/layout checks, overlap review and checked release remain required. Existing publication dates, earlier work and observation plans remain preserved.
+
+
+PR19 full-browser recovery, 2 November 2026: native verify on b3ec02de9ff8deec5e62eb3c02d31156f2c492ea passed unit coverage and 18 browser flows, then exposed two remaining mobile expectations tied to the old 22-project corpus. Both now read the existing snapshot project count, including the exact Browse button name. No timeout, gesture, viewport, map, transit-link or shortlist assertion is removed or loosened. Re-run the complete checks and ten language layouts on the resulting head before release.

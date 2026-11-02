@@ -1,4 +1,33 @@
 import { GUIDES } from '../data/guides';
+import { btoProjects } from '../data/bto-projects';
+const projectCount = btoProjects.length;
+const announcedCount = btoProjects.filter(project => project.launchStatus === 'announced_upcoming').length;
+
+test('published November project facts stay readable at phone and desktop widths', async ({ page }) => {
+  for (const width of [390, 1440]) {
+    await page.setViewportSize({ width, height: 900 });
+    for (const [slug, name, wait] of [
+      ['nov-2026-sembawang-unnamed', 'Sembawang Anchor', '34 months'],
+      ['nov-2026-tengah-unnamed', 'Plantation Dew', '38 months'],
+      ['nov-2026-bayshore-oasis', 'Bayshore Oasis', '38 months'],
+    ]) {
+      await page.goto('/bto-projects/' + slug);
+      await expect(page.getByRole('heading', { name, exact: true })).toBeVisible();
+      await expect(page.getByText(wait, { exact: true })).toBeVisible();
+      await expect(page.locator('.status-pill')).toHaveText('Upcoming');
+      await expect(page.locator('.fact-grid div').filter({ has: page.getByText('Classification', { exact: true }) }).locator('dd')).toHaveText('Not published by HDB yet');
+      await expect(page.locator('.fact-grid div').filter({ has: page.getByText('Map location', { exact: true }) }).locator('dd')).toHaveText('Not published by HDB yet');
+      await expect(page.locator('a[href*="1310-shorter-waiting-time-flats"]')).toBeVisible();
+      expect(await page.evaluate(() => document.documentElement.scrollWidth)).toBeLessThanOrEqual(width);
+    }
+    await page.goto('/bto-projects/nov-2026-toa-payoh-west-caldecott');
+    await expect(page.getByRole('heading', { name: 'Toa Payoh Hillside', exact: true })).toBeVisible();
+    await expect(page.getByRole('row', { name: /Community Care Apartment/ })).toContainText('260');
+    await expect(page.getByRole('row', { name: /Community Care Apartment/ })).not.toContainText('240');
+    expect(await page.evaluate(() => document.documentElement.scrollWidth)).toBeLessThanOrEqual(width);
+  }
+});
+
 import { test, expect, type Page } from '@playwright/test';
 
 async function openReadyMap(page: Page) {
@@ -44,11 +73,11 @@ test('finishes narrowing, shows grouped results, and preserves BTO context throu
   await expect(page.getByTestId('result-bucket-fits')).toBeVisible();
   await expect(page.getByTestId('result-bucket-awaiting')).toBeVisible();
   await expect(page.getByTestId('result-bucket-tradeoffs')).toBeVisible();
-  await expect(page.getByTestId('result-row')).toHaveCount(22);
+  await expect(page.getByTestId('result-row')).toHaveCount(projectCount);
   const trayToggle = page.getByRole('button', { name: 'Explore sites', exact: true });
   await trayToggle.click();
-  await expect(page.locator('.tray-label')).toHaveText('Sites · 22');
-  await expect(page.locator('.tray-list button')).toHaveCount(22);
+  await expect(page.locator('.tray-label')).toHaveText(`Sites · ${projectCount}`);
+  await expect(page.locator('.tray-list button')).toHaveCount(projectCount);
 
   await page.getByRole('button', { name: 'Redhill Peaks', exact: true }).click();
   await expect(page.getByTestId('project-card')).toBeVisible();
@@ -97,19 +126,19 @@ test('legacy storage migrates to grouped amenities and the v2 key', async ({ pag
 
 test('explains result criteria, builds a shortlist, filters launch stages, and restores the flow from Guides', async ({ page }) => {
   await openReadyMap(page);
-  await expect(page.getByTestId('question-promise')).toContainText('22 projects');
+  await expect(page.getByTestId('question-promise')).toContainText(`${projectCount} projects`);
   for (let step = 0; step < 4; step += 1) await page.getByTestId('next-question').click();
   await expect(page.getByTestId('results-card')).toBeVisible();
-  await expect(page.locator('.result-criterion')).toHaveCount(88);
+  await expect(page.locator('.result-criterion')).toHaveCount(projectCount * 4);
   for (let index = 0; index < 4; index += 1) await page.locator('.result-row .shortlist-toggle').nth(index).click();
   await expect(page.getByTestId('shortlist-panel')).toContainText('4/4');
-  await expect(page.locator('.result-row .shortlist-toggle:disabled')).toHaveCount(18);
+  await expect(page.locator('.result-row .shortlist-toggle:disabled')).toHaveCount(projectCount - 4);
   await expect(page.locator('.result-row .shortlist-toggle.is-added:disabled')).toHaveCount(0);
   await expect(page.locator('.compare-table')).toBeVisible();
   await page.getByLabel('Show launch stage').selectOption('announced_upcoming');
-  await expect(page.locator('.result-row')).toHaveCount(7);
-  await expect(page.locator('.tray-label')).toHaveText('Sites · 7');
-  await expect(page.locator('.tray-list button')).toHaveCount(7);
+  await expect(page.locator('.result-row')).toHaveCount(announcedCount);
+  await expect(page.locator('.tray-label')).toHaveText(`Sites · ${announcedCount}`);
+  await expect(page.locator('.tray-list button')).toHaveCount(announcedCount);
   await page.getByTestId('result-row').first().click();
   await expect(page.getByTestId('project-card')).toBeVisible();
   await expect(page.getByRole('button', { name: 'Shortlist full', exact: true })).toBeDisabled();
@@ -214,7 +243,7 @@ test('crawlable project, FAQ, AI-info, sitemap, and robots surfaces are linked a
   await page.goto('/bto-projects');
   await expect(page).toHaveTitle('Singapore BTO Projects | Where To BTO');
   await expect(page.getByRole('heading', { name: 'Singapore BTO projects' })).toBeVisible();
-  await expect(page.locator('.directory-card')).toHaveCount(22);
+  await expect(page.locator('.directory-card')).toHaveCount(projectCount);
   await expect(page.locator('link[rel="canonical"]')).toHaveAttribute('href', /\/bto-projects$/);
 
   await page.getByRole('link', { name: 'Sembawang Voyage', exact: true }).first().click();

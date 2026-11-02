@@ -85,3 +85,16 @@ Added the complete five-language non-selection article through the existing cont
 
 
 Publication checkpoint: [PR18](https://github.com/radiansnail-1/bto-narrowing-map/pull/18) contains the complete five-language non-selection guide. Source and translation review are complete; exact-head tests, build and layout verification, checked merge and independent production verification remain pending. Resume this same article if a check fails. Existing published articles and unfinished owner work remain preserved.
+
+
+## 2026-11-02 — Prepared PR19
+
+Expanded the existing booking guide in English, Spanish, French, German and Simplified Chinese with a fictional three-option worksheet and official watchlist sources. Added Bayshore Oasis separately; reconciled Sembawang Anchor, Plantation Dew and Toa Payoh Hillside names, published waits and revised CCA count. Added boundary and unknown-data regressions. Existing URLs and original dates remain; final checks and release are pending.
+
+
+## 2 November 2026 — PR19 source-backed fixture repair
+
+The existing booking guide and all five versions remain on PR19. Reproduced both failures at retained head 5714782752b579805d6aee70a1ee596fadee1fb4: an obsolete 22-project filter fixture and the assumption that every individual source check predates the last full audit. Added the two already-cited HDB announcement references (31 October and 1 November), read again on 2 November, to the central source register. A partial check after the full audit now requires a matching dated source linked to that individual project. The 28 August full-audit date and all project values/unknowns remain unchanged. Filter assertions compare exact ordered membership to the raw registry, with an independent interleaved-status fixture. The two affected files pass all 13 tests. Final exact-head hosted tests, builds, browser/layout checks, overlap review and checked release remain required. Existing publication dates, earlier work and observation plans remain preserved.
+
+
+PR19 full-browser recovery, 2 November 2026: native verify on b3ec02de9ff8deec5e62eb3c02d31156f2c492ea passed unit coverage and 18 browser flows, then exposed two remaining mobile expectations tied to the old 22-project corpus. Both now read the existing snapshot project count, including the exact Browse button name. No timeout, gesture, viewport, map, transit-link or shortlist assertion is removed or loosened. Re-run the complete checks and ten language layouts on the resulting head before release.

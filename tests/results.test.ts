@@ -1,5 +1,6 @@
 import { describe, expect, it } from 'vitest';
 import { btoProjects } from '@/data/bto-projects';
+import snapshot from '@/data/official-data-snapshot.json';
 import { answeredCount, bucketFor, criterionAnswerLabel, criterionReason, filterProjectsByLaunchStatus, groupResults } from '@/lib/results';
 import type { ExplorerAnswers, MatchStatus, ProjectMatch } from '@/lib/types';
 
@@ -12,10 +13,24 @@ function match(statuses: Partial<Record<keyof Omit<ProjectMatch, 'missCount'>, M
 
 describe('result grouping', () => {
   it('filters projects by launch stage without changing their source order', () => {
-    expect(filterProjectsByLaunchStatus(btoProjects, 'all')).toHaveLength(22);
-    expect(filterProjectsByLaunchStatus(btoProjects, 'launched')).toHaveLength(13);
-    expect(filterProjectsByLaunchStatus(btoProjects, 'announced_upcoming')).toHaveLength(7);
-    expect(filterProjectsByLaunchStatus(btoProjects, 'planned')).toHaveLength(2);
+    for (const stage of ['all', 'launched', 'announced_upcoming', 'planned'] as const) {
+      const expected = snapshot.projects.filter((project) => stage === 'all' || project.launch.status === stage).map((project) => project.id);
+      expect(filterProjectsByLaunchStatus(btoProjects, stage).map((project) => project.id)).toEqual(expected);
+    }
+  });
+  it('filters an interleaved fixture by actual membership and preserves input order', () => {
+    const projects = [
+      { ...btoProjects[0], id: 'planned-a', launchStatus: 'planned' as const },
+      { ...btoProjects[0], id: 'launched-a', launchStatus: 'launched' as const },
+      { ...btoProjects[0], id: 'announced-a', launchStatus: 'announced_upcoming' as const },
+      { ...btoProjects[0], id: 'planned-b', launchStatus: 'planned' as const },
+      { ...btoProjects[0], id: 'launched-b', launchStatus: 'launched' as const },
+    ];
+    const ids = (stage: 'all' | 'launched' | 'announced_upcoming' | 'planned') => filterProjectsByLaunchStatus(projects, stage).map((project) => project.id);
+    expect(ids('all')).toEqual(['planned-a', 'launched-a', 'announced-a', 'planned-b', 'launched-b']);
+    expect(ids('planned')).toEqual(['planned-a', 'planned-b']);
+    expect(ids('launched')).toEqual(['launched-a', 'launched-b']);
+    expect(ids('announced_upcoming')).toEqual(['announced-a']);
   });
   it('puts all-pass, pass-plus-unknown, miss-plus-unknown, and unanswered-only matches in the right buckets', () => {
     expect(bucketFor(match())).toBe('fits');

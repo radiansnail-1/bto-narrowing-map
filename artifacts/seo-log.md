@@ -180,3 +180,23 @@ Existing research and observation history is preserved. The official-news check 
 
 
 Publication checkpoint: [PR18](https://github.com/radiansnail-1/bto-narrowing-map/pull/18) contains the complete five-language non-selection guide. Source and translation review are complete; exact-head tests, build and layout verification, checked merge and independent production verification remain pending. Resume this same article if a check fails. Existing published articles and unfinished owner work remain preserved.
+
+
+## 2 November 2026 — PR19 review checkpoint
+
+PR19 https://github.com/radiansnail-1/bto-narrowing-map/pull/19 improves the existing booking answer, not a new article. Full five-language text, source labels and navigation reviewed. Source: current HDB AskGov watchlist/reservation and notification answers; HDB booking guidance and MyNiceHome buying guide. Official HDB announcements dated 31 October and 1 November support the partial project update. Classification, prices, exact application dates and unsupported coordinates remain unknown; earlier project audits remain dated.
+
+GSC final Web/Pacific 24–30 October: 0 clicks/14 impressions; 17–23 October: 1/72. Tiny, inconclusive sample; query rows do not establish topic demand. Planner 2 November 04:37 UTC, English/Singapore: three selected terms returned null estimates. Unknown is not zero. Shared 2 November citation observation remains an isolated configured Codex benchmark, not a traffic measure. Bounded news checks do not advance the earlier complete news cutoff.
+
+Five target URLs: https://wheretobto.com/guides/bto-flat-booking-appointment-checklist ; https://wheretobto.com/es/guides/bto-flat-booking-appointment-checklist ; https://wheretobto.com/fr/guides/bto-flat-booking-appointment-checklist ; https://wheretobto.com/de/guides/bto-flat-booking-appointment-checklist ; https://wheretobto.com/zh-Hans/guides/bto-flat-booking-appointment-checklist . Final source/build/browser/layout checks and canonical release verification remain pending. Preserve prior observation plans; review this update after 28 days, 30 November, with final-data lag. No search or business gain claimed.
+
+
+PR19 validation checkpoint, 2 November 2026: runner 41390500368 completed unsuccessfully on d86daecb52988dd900e884f87157f2bd03f78344. Install/lint passed; 93 of 95 unit tests passed, including both new partial-announcement regressions. Existing tests/results.test.ts and tests/data.test.ts require scoped fixture repair; both read_source calls returned source_path_outside_approved_website_scope. Browser registry-count repairs and 390/1440 project assertions are retained on this same branch, not yet validated. Builds, browser/layout proof, merge and canonical release remain pending. Keep the same draft and original article date; no new publication is claimed.
+
+
+## 2 November 2026 — PR19 source-backed fixture repair
+
+The existing booking guide and all five versions remain on PR19. Reproduced both failures at retained head 5714782752b579805d6aee70a1ee596fadee1fb4: an obsolete 22-project filter fixture and the assumption that every individual source check predates the last full audit. Added the two already-cited HDB announcement references (31 October and 1 November), read again on 2 November, to the central source register. A partial check after the full audit now requires a matching dated source linked to that individual project. The 28 August full-audit date and all project values/unknowns remain unchanged. Filter assertions compare exact ordered membership to the raw registry, with an independent interleaved-status fixture. The two affected files pass all 13 tests. Final exact-head hosted tests, builds, browser/layout checks, overlap review and checked release remain required. Existing publication dates, earlier work and observation plans remain preserved.
+
+
+PR19 full-browser recovery, 2 November 2026: native verify on b3ec02de9ff8deec5e62eb3c02d31156f2c492ea passed unit coverage and 18 browser flows, then exposed two remaining mobile expectations tied to the old 22-project corpus. Both now read the existing snapshot project count, including the exact Browse button name. No timeout, gesture, viewport, map, transit-link or shortlist assertion is removed or loosened. Re-run the complete checks and ten language layouts on the resulting head before release.
