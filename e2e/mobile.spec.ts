@@ -1,4 +1,5 @@
 import { test, expect } from '@playwright/test';
+import snapshot from '../data/official-data-snapshot.json';
 
 test.use({ viewport: { width: 390, height: 844 }, isMobile: true, hasTouch: true });
 
@@ -17,7 +18,7 @@ test('mobile loads the map and can narrow and open transit routes', async ({ pag
   await page.setViewportSize({ width: 390, height: 844 });
   await page.getByRole('button', { name: /Raffles Place CBD/ }).click();
   for (let step = 0; step < 4; step++) await page.getByTestId('next-question').click();
-  await expect(page.getByTestId('result-row')).toHaveCount(22);
+  await expect(page.getByTestId('result-row')).toHaveCount(snapshot.scope.projectCount);
   await page.getByTestId('result-row').filter({ hasText: 'Redhill Peaks' }).click();
   await expect(page.getByTestId('project-card')).toBeVisible();
   const route = page.getByRole('link', { name: /Transit to Raffles Place/ });
@@ -71,7 +72,7 @@ test('mobile map reframes the selected project after a viewport resize', async (
   await page.goto('/');
   await expect(page.getByTestId('map-boundary-state')).toHaveAttribute('data-map-ready', 'true', { timeout: 30_000 });
   const zoom = () => page.evaluate(() => (window as unknown as { __mapCamera: { zoom: number } }).__mapCamera.zoom);
-  await page.getByRole('button', { name: /Browse 22 projects/ }).click();
+  await page.getByRole('button', { name: `Browse ${snapshot.scope.projectCount} projects`, exact: true }).click();
   await page.getByRole('button', { name: 'Redhill Peaks', exact: true }).click();
   await expect.poll(zoom, { timeout: 15_000 }).toBeGreaterThan(270);
   await page.setViewportSize({ width: 320, height: 844 });
