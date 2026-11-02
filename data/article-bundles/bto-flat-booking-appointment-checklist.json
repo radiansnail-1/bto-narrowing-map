@@ -1,8 +1,8 @@
 {
   "slug": "bto-flat-booking-appointment-checklist",
   "publishedDate": "2026-10-29",
-  "checkedDate": "2026-10-29",
-  "updatedDate": "2026-10-29",
+  "checkedDate": "2026-11-02",
+  "updatedDate": "2026-11-02",
   "translations": {
     "en": {
       "category": "Booking preparation",
@@ -53,12 +53,23 @@
           "heading": "Take a shortlist that can change",
           "paragraphs": [
             "Recheck the official flat list and available choices near your appointment. Write down a few acceptable alternatives and the reasons you would reject a unit, such as a price beyond your confirmed funding. Discuss those limits with your co-applicant before a choice becomes urgent.",
-            "Use a simple record: unit reference; actual listed price; acceptable trade-off; question still open. A project starting price is not the price of every unit. Where To BTO can help revisit project-level location trade-offs, but it does not hold a unit or confirm live availability."
+            "Use a simple record: unit reference; actual listed price; acceptable trade-off; question still open. A project starting price is not the price of every unit. Where To BTO can help revisit project-level location trade-offs, but it does not hold a unit or confirm live availability.",
+            "Record each exact unit reference with the official floor-plan link, listed price, source version and time checked. Keep published facts, personal preferences and unresolved questions in separate columns. The independent map’s approximate project anchor cannot establish a unit’s view, sunlight, noise or accessible route.",
+            "Fictional comparison, not real units: A fits the confirmed funding but has an unresolved layout need; B exceeds that funding; C was saved earlier but the official list now shows it taken. Keep A as a question to resolve, exclude B unless the funding genuinely changes, and remove C from currently available alternatives. Do not turn an unknown into a pass because other choices disappeared.",
+            "HDB’s watchlist monitors units; it does not reserve them. Booking depends on availability for your ethnic group at your appointment. HDB says taken-up units trigger email notifications and the notification frequency can be changed in the watchlist service. Treat an email as a reason to refresh your record, not a complete live availability list. Recheck the official list and your agreed minimums close to the appointment."
           ],
           "sources": [
             {
               "title": "HDB MyNiceHome: booking stage and unit watchlist",
               "href": "https://www.mynicehome.gov.sg/get-started/hdb-bto-sbf-buying-guide/"
+            },
+            {
+              "title": "HDB: watchlist does not reserve a unit",
+              "href": "https://ask.gov.sg/hdb/questions/cmttq9kyu02mc4a011yrfw5bh"
+            },
+            {
+              "title": "HDB: taken-up notifications and frequency",
+              "href": "https://ask.gov.sg/hdb/questions/cmttq9kyy02mg4a01i1l4dxba"
             }
           ]
         },
@@ -111,6 +122,10 @@
         {
           "title": "Explore assumptions in the funding roadmap",
           "href": "/tools/bto-roadmap"
+        },
+        {
+          "title": "Check non-selection consequences",
+          "href": "/guides/declining-bto-flat-selection"
         }
       ]
     },
@@ -163,12 +178,23 @@
           "heading": "Lleva una selección que admita cambios",
           "paragraphs": [
             "Vuelve a comprobar la lista oficial y las opciones disponibles cerca de la fecha de la cita. Anota varias alternativas aceptables y los motivos para descartar una vivienda, como un precio superior a la financiación confirmada. Habla de esos límites con tu cosolicitante antes de tener que elegir con urgencia.",
-            "Lleva un registro sencillo: referencia de la vivienda; precio anunciado concreto; concesión aceptable; pregunta pendiente. El precio inicial de un proyecto no es el de cada vivienda. Where To BTO ayuda a revisar las diferencias de ubicación entre proyectos, pero no retiene viviendas ni confirma su disponibilidad en tiempo real."
+            "Lleva un registro sencillo: referencia de la vivienda; precio anunciado concreto; concesión aceptable; pregunta pendiente. El precio inicial de un proyecto no es el de cada vivienda. Where To BTO ayuda a revisar las diferencias de ubicación entre proyectos, pero no retiene viviendas ni confirma su disponibilidad en tiempo real.",
+            "Registra la referencia exacta de cada vivienda, el enlace al plano oficial, el precio anunciado, la versión de la fuente y la hora de consulta. Separa los datos publicados, las preferencias personales y las preguntas pendientes. La ubicación aproximada del proyecto en el mapa independiente no confirma vistas, sol, ruido ni una ruta accesible de una vivienda concreta.",
+            "Comparación ficticia, no viviendas reales: A encaja en la financiación confirmada, pero queda una necesidad de distribución por aclarar; B supera esa financiación; C se guardó antes, pero la lista oficial ya la muestra ocupada. Mantén A como pregunta pendiente, descarta B salvo que cambie realmente la financiación y elimina C de las alternativas disponibles. Un dato desconocido no se vuelve favorable porque desaparezcan otras opciones.",
+            "La lista de seguimiento de HDB permite vigilar viviendas, pero no las reserva. Poder reservar depende de la disponibilidad para tu grupo étnico en la cita. HDB indica que envía avisos por correo cuando se ocupa una vivienda y permite cambiar su frecuencia en el servicio. Usa el aviso para actualizar tu registro, no como lista completa de disponibilidad actual. Revisa la lista oficial y los mínimos acordados cerca de la cita."
           ],
           "sources": [
             {
               "title": "HDB MyNiceHome: reserva y lista de viviendas favoritas",
               "href": "https://www.mynicehome.gov.sg/get-started/hdb-bto-sbf-buying-guide/"
+            },
+            {
+              "title": "HDB: el seguimiento no reserva viviendas",
+              "href": "https://ask.gov.sg/hdb/questions/cmttq9kyu02mc4a011yrfw5bh"
+            },
+            {
+              "title": "HDB: avisos y frecuencia",
+              "href": "https://ask.gov.sg/hdb/questions/cmttq9kyy02mg4a01i1l4dxba"
             }
           ]
         },
@@ -221,6 +247,10 @@
         {
           "title": "Explorar supuestos en el plan de financiación",
           "href": "/tools/bto-roadmap"
+        },
+        {
+          "title": "Consultar consecuencias de no elegir",
+          "href": "/guides/declining-bto-flat-selection"
         }
       ]
     },
@@ -273,12 +303,23 @@
           "heading": "Préparez une sélection adaptable",
           "paragraphs": [
             "Revérifiez la liste officielle et les choix disponibles à l’approche du rendez-vous. Notez plusieurs solutions acceptables et vos motifs de refus, comme un prix dépassant le financement confirmé. Discutez de ces limites avec votre codemandeur avant de devoir choisir dans l’urgence.",
-            "Tenez un relevé simple : référence du logement ; prix effectivement affiché ; compromis acceptable ; question ouverte. Le prix de départ d’un projet n’est pas celui de chaque logement. Where To BTO aide à revoir les compromis de localisation entre projets, mais ne réserve aucun logement et ne confirme pas les disponibilités en temps réel."
+            "Tenez un relevé simple : référence du logement ; prix effectivement affiché ; compromis acceptable ; question ouverte. Le prix de départ d’un projet n’est pas celui de chaque logement. Where To BTO aide à revoir les compromis de localisation entre projets, mais ne réserve aucun logement et ne confirme pas les disponibilités en temps réel.",
+            "Notez pour chaque logement sa référence exacte, le lien du plan officiel, le prix affiché, la version de la source et l’heure de consultation. Séparez faits publiés, préférences personnelles et questions ouvertes. Le repère approximatif du projet sur la carte indépendante ne confirme ni vue, ni ensoleillement, ni bruit, ni trajet accessible d’un logement précis.",
+            "Comparaison fictive, sans logements réels : A respecte le financement confirmé, mais un besoin lié au plan reste à clarifier ; B dépasse ce financement ; C avait été enregistré, mais la liste officielle l’indique désormais réservé. Gardez A comme question à résoudre, écartez B sauf changement réel du financement et retirez C des solutions disponibles. Une inconnue ne devient pas favorable parce que d’autres choix disparaissent.",
+            "La liste de suivi HDB surveille les logements sans les réserver. La réservation dépend de la disponibilité pour votre groupe ethnique au rendez-vous. HDB indique envoyer un courriel lorsqu’un logement est pris et permettre de régler la fréquence des notifications dans le service. Utilisez l’alerte pour actualiser votre relevé, pas comme une liste exhaustive des disponibilités actuelles. Revérifiez la liste officielle et vos exigences minimales à l’approche du rendez-vous."
           ],
           "sources": [
             {
               "title": "HDB MyNiceHome : réservation et liste de logements favoris",
               "href": "https://www.mynicehome.gov.sg/get-started/hdb-bto-sbf-buying-guide/"
+            },
+            {
+              "title": "HDB : le suivi ne réserve pas le logement",
+              "href": "https://ask.gov.sg/hdb/questions/cmttq9kyu02mc4a011yrfw5bh"
+            },
+            {
+              "title": "HDB : alertes et fréquence",
+              "href": "https://ask.gov.sg/hdb/questions/cmttq9kyy02mg4a01i1l4dxba"
             }
           ]
         },
@@ -331,6 +372,10 @@
         {
           "title": "Explorer les hypothèses du plan de financement",
           "href": "/tools/bto-roadmap"
+        },
+        {
+          "title": "Vérifier les conséquences d’une non-sélection",
+          "href": "/guides/declining-bto-flat-selection"
         }
       ]
     },
@@ -383,12 +428,23 @@
           "heading": "Nehmen Sie eine anpassbare Auswahlliste mit",
           "paragraphs": [
             "Prüfen Sie kurz vor dem Termin erneut die amtliche Wohnungsliste und die verfügbaren Optionen. Notieren Sie mehrere akzeptable Alternativen und Ausschlussgründe, etwa einen Preis oberhalb Ihrer bestätigten Finanzierung. Besprechen Sie diese Grenzen mit der mitantragstellenden Person, bevor Zeitdruck entsteht.",
-            "Führen Sie eine einfache Liste: Wohnungsreferenz; tatsächlich angegebener Preis; akzeptabler Kompromiss; offene Frage. Der Einstiegspreis eines Projekts ist nicht der Preis jeder Wohnung. Where To BTO hilft beim erneuten Abwägen von Projektstandorten, hält aber keine Wohnung frei und bestätigt keine Live-Verfügbarkeit."
+            "Führen Sie eine einfache Liste: Wohnungsreferenz; tatsächlich angegebener Preis; akzeptabler Kompromiss; offene Frage. Der Einstiegspreis eines Projekts ist nicht der Preis jeder Wohnung. Where To BTO hilft beim erneuten Abwägen von Projektstandorten, hält aber keine Wohnung frei und bestätigt keine Live-Verfügbarkeit.",
+            "Notieren Sie die genaue Wohnungsreferenz, den Link zum amtlichen Grundriss, den angegebenen Preis, die Quellenversion und den Prüfzeitpunkt. Trennen Sie veröffentlichte Fakten, persönliche Wünsche und offene Fragen. Der ungefähre Projektpunkt auf der unabhängigen Karte belegt weder Aussicht, Sonneneinstrahlung, Lärm noch einen barrierefreien Weg für eine bestimmte Wohnung.",
+            "Fiktiver Vergleich, keine echten Wohnungen: A passt zur bestätigten Finanzierung, doch eine Grundrissanforderung ist ungeklärt; B übersteigt die Finanzierung; C war gespeichert, wird in der amtlichen Liste inzwischen aber als vergeben angezeigt. Behalten Sie A als offene Frage, schließen Sie B ohne echte Finanzierungsänderung aus und entfernen Sie C aus den verfügbaren Alternativen. Eine Unbekannte wird nicht zum erfüllten Kriterium, weil andere Optionen wegfallen.",
+            "Die HDB-Merkliste beobachtet Wohnungen, reserviert sie aber nicht. Eine Buchung hängt von der Verfügbarkeit für Ihre ethnische Gruppe zum Termin ab. Laut HDB erhalten Sie bei Vergabe einer gemerkten Wohnung eine E-Mail; die Benachrichtigungshäufigkeit lässt sich im Merklisten-Dienst ändern. Nehmen Sie die Nachricht zum Anlass für eine Aktualisierung, nicht als vollständige Live-Liste. Prüfen Sie die amtliche Liste und Ihre vereinbarten Mindestanforderungen kurz vor dem Termin erneut."
           ],
           "sources": [
             {
               "title": "HDB MyNiceHome: Buchung und Wohnungsvormerkliste",
               "href": "https://www.mynicehome.gov.sg/get-started/hdb-bto-sbf-buying-guide/"
+            },
+            {
+              "title": "HDB: Merkliste ist keine Reservierung",
+              "href": "https://ask.gov.sg/hdb/questions/cmttq9kyu02mc4a011yrfw5bh"
+            },
+            {
+              "title": "HDB: Vergabehinweise und Häufigkeit",
+              "href": "https://ask.gov.sg/hdb/questions/cmttq9kyy02mg4a01i1l4dxba"
             }
           ]
         },
@@ -441,6 +497,10 @@
         {
           "title": "Annahmen im Finanzierungsplan prüfen",
           "href": "/tools/bto-roadmap"
+        },
+        {
+          "title": "Folgen einer Nichtauswahl prüfen",
+          "href": "/guides/declining-bto-flat-selection"
         }
       ]
     },
@@ -493,12 +553,23 @@
           "heading": "带一份可调整的备选清单",
           "paragraphs": [
             "临近预约时，再查官方单位清单和可选单位。写下几个可接受的替代选择，以及不接受某单位的原因，例如售价超过已确认的资金安排。在必须仓促决定前，先与共同申请人讨论这些底线。",
-            "可简单记录：单位编号、实际标价、能接受的取舍、尚未解决的问题。项目起价不代表每个单位的售价。Where To BTO 可协助重看项目层面的地点取舍，但不会保留单位，也不能确认实时供应。"
+            "可简单记录：单位编号、实际标价、能接受的取舍、尚未解决的问题。项目起价不代表每个单位的售价。Where To BTO 可协助重看项目层面的地点取舍，但不会保留单位，也不能确认实时供应。",
+            "逐个记下准确单位编号、官方户型图链接、实际标价、资料版本及查询时间。把已公布事实、个人偏好和待确认问题分栏记录。独立地图上的项目大致位置，不能确认某个单位的景观、日晒、噪声或无障碍路线。",
+            "以下是虚构比较，并非真实单位：A 符合已确认的资金安排，但一项户型需求仍待查清；B 超出资金范围；C 曾被保存，但官方清单现已显示被选走。把 A 留作待解决的问题；除非资金安排确实改变，否则排除 B；把 C 从当前可选名单中移除。不要因为其他选择减少，就把未知条件视为符合。",
+            "HDB 的关注单位清单用于监测，并不保留单位。能否选到仍取决于预约时该单位是否可供你的族群选择。HDB 说明，关注的单位被选走时会发出电邮，也可在该服务中调整通知频率。收到通知后应更新记录，不要把电邮当作完整的实时供应清单。临近预约时，再核对官方清单和双方商定的最低要求。"
           ],
           "sources": [
             {
               "title": "HDB MyNiceHome：选房阶段与关注单位清单",
               "href": "https://www.mynicehome.gov.sg/get-started/hdb-bto-sbf-buying-guide/"
+            },
+            {
+              "title": "HDB：关注清单并不保留单位",
+              "href": "https://ask.gov.sg/hdb/questions/cmttq9kyu02mc4a011yrfw5bh"
+            },
+            {
+              "title": "HDB：单位被选走的通知及频率",
+              "href": "https://ask.gov.sg/hdb/questions/cmttq9kyy02mg4a01i1l4dxba"
             }
           ]
         },
@@ -551,6 +622,10 @@
         {
           "title": "在资金规划工具中检视假设",
           "href": "/tools/bto-roadmap"
+        },
+        {
+          "title": "核对不选房的后果",
+          "href": "/guides/declining-bto-flat-selection"
         }
       ]
     }
