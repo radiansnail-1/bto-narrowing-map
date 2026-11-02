@@ -9,6 +9,10 @@ import { generateStaticParams as englishParams } from '@/app/(main)/(content)/gu
 import { generateStaticParams as localizedParams } from '@/app/(localized)/[language]/guides/[guide]/page';
 import { generateStaticParams as languageParams } from '@/app/(localized)/[language]/layout';
 import sitemap from '@/app/sitemap';
+import snapshot from '@/data/official-data-snapshot.json';
+import { projectById } from '@/data/bto-projects';
+import { matchProject } from '@/lib/matching';
+import type { ExplorerAnswers } from '@/lib/types';
 
 const fixture = () => ({ ...structuredClone(ARTICLE_BUNDLES[0]), slug: 'new-five-language-fixture' });
 describe('five-language article publishing', () => {
@@ -52,5 +56,40 @@ describe('five-language article publishing', () => {
     for (const language of ARTICLE_LANGUAGES) expect(entries.filter(entry => new URL(entry.url).pathname === articlePath(b.slug, language))).toHaveLength(1);
     expect(new Set(entries.map(entry => entry.url)).size).toBe(entries.length);
     expect(b.publishedDate).toBe('2026-08-29'); expect(b.checkedDate).toBe('2026-08-29');
+  });
+});
+
+describe('partial November 2026 announcement reconciliation', () => {
+  it('uses the published wait in matching while unpublished price and location remain unknown', () => {
+    const answers: ExplorerAnswers = { workHubIds: [], customWorkplace: [0, 0], maxBudget: 600000, flatType: '4-room', amenityGroups: [], waitingBand: 'soon' };
+    const anchor = projectById.get('nov-2026-sembawang-unnamed')!;
+    expect(anchor.name).toBe('Sembawang Anchor');
+    expect(anchor.estimatedWaitingTimeMonths).toBe(34);
+    expect(matchProject(anchor, answers)).toMatchObject({ waiting: 'pass', budget: 'unknown', commute: 'unknown' });
+    for (const id of ['nov-2026-bayshore-oasis', 'nov-2026-tengah-unnamed']) {
+      const project = projectById.get(id)!;
+      expect(project.estimatedWaitingTimeMonths).toBe(38);
+      expect(matchProject(project, answers).waiting).toBe('miss');
+      expect(matchProject(project, { ...answers, waitingBand: 'mid' }).waiting).toBe('pass');
+      expect(project.classification).toBeNull();
+      expect(project.position).toBeNull();
+      expect(project.flatTypes.every(flat => flat.minPrice === null && flat.units === null)).toBe(true);
+      expect(project.launchStatus).toBe('announced_upcoming');
+    }
+    expect(projectById.get('nov-2026-bedok-unnamed')!.estimatedWaitingTimeMonths).toBeNull();
+    expect(projectById.get('nov-2026-bedok-unnamed')!.name).not.toBe(projectById.get('nov-2026-bayshore-oasis')!.name);
+  });
+  it('separates revised CCA counts, sale units and rental units without advancing the full snapshot audit', () => {
+    const project = projectById.get('nov-2026-toa-payoh-west-caldecott')!;
+    expect(project.name).toBe('Toa Payoh Hillside');
+    expect(project.flatTypes.find(flat => flat.type === 'Community Care Apartment (CCA)')!.units).toBe(260);
+    expect(project.approxBtoUnits).toBe(590 + 580 + 260);
+    expect(project.publicRentalUnitsApprox).toBe(230);
+    expect(project.estimatedWaitingTimeMonths).toBeNull();
+    expect(project.classification).toBeNull();
+    expect(project.coordinateAccuracy).toContain('not the project centroid');
+    expect(snapshot.lastAuditDate).toBe('2026-08-28');
+    expect(snapshot.scope.projectCount).toBe(snapshot.projects.length);
+    expect(snapshot.projects.find(record => record.id === 'nov-2026-geylang-unnamed')!.checkedDate).toBe('2026-08-28');
   });
 });

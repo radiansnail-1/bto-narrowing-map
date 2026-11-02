@@ -6,7 +6,7 @@ An interactive map and mobile questionnaire for narrowing Singapore BTO projects
 
 ## What it includes
 
-- 22 launched or officially announced BTO records from the dated project snapshot (November 2026 project facts stay "Not published by HDB yet" until HDB publishes them)
+- 23 launched, announced or planned BTO records: the dated snapshot has a partial 2 November update for official 31 October/1 November announcements. Unpublished fields remain unknown, and older records retain their own audit dates.
 - A real-geography miniature Singapore assembled from 118,415 building footprints
 - MRT/LRT, major roads, water, greenery, runways, planning areas, and orientation landmarks
 - Four transparent narrowing criteria with `pass`, `miss`, `unknown`, and unanswered states; each confirmed miss dims a project by exactly 23 percentage points (100/77/54/31/8 %)
@@ -19,7 +19,7 @@ An interactive map and mobile questionnaire for narrowing Singapore BTO projects
 - Free Google Maps transit links from approximate project anchors to selected destinations
 - An illustrative Deferred Income Assessment payment calculator
 - A BTO funding roadmap with monthly cash/CPF savings, payment dates, fees, renovation/reserves, HDB/bank scenarios and loan repayment charts; figures remain assumptions and saving is opt-in on the device
-- A crawlable information layer: 22 static project pages, project directory, FAQ, eleven decision guides (including a November 2026 HFE checklist and CPF OA reserve guide), methodology/source register, and canonical AI-information page
+- A crawlable information layer: 23 static project pages, project directory, FAQ, source-driven decision guides, methodology/source register, and canonical AI-information page
 - Route-specific titles, descriptions, canonicals and JSON-LD, plus generated `sitemap.xml`, `robots.txt`, web manifest, and site icon
 
 This is a location-exploration prototype, not financial, eligibility, routing, or application advice. Project facts can become stale; follow the linked official HDB sources before making a decision.
