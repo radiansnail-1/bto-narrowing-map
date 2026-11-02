@@ -151,3 +151,6 @@ Publication checkpoint: [PR18](https://github.com/radiansnail-1/bto-narrowing-ma
 ## 2 November 2026 — PR19
 
 PR19: https://github.com/radiansnail-1/bto-narrowing-map/pull/19 . Update the existing flat-booking appointment guide in all five languages; retain its 29 October publication date. Add the complete unit comparison example and official watchlist explanation. Reconcile the partial HDB announcements of 31 October and 1 November. Source review is complete; tests, builds, ten layouts, checked merge and production verification remain pending. Continue this same branch and PR. Preserve all earlier tasks and completed releases.
+
+
+PR19 recovery checkpoint, 2 November 2026: hosted run 41390500368 passed install and lint, then passed 93 of 95 unit tests. The two remaining failures are existing fixed-count and full-audit-date fixtures in tests/results.test.ts and tests/data.test.ts. The publishing service refuses both source reads with source_path_outside_approved_website_scope. Retain this PR and partial project records; resume through the supported service after those exact paths are available for scoped fixture repair. Browser count fixtures and new project viewport checks are prepared but unvalidated. No merge or production release occurred.

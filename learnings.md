@@ -104,3 +104,6 @@ Publication checkpoint: [PR18](https://github.com/radiansnail-1/bto-narrowing-ma
 ## 2 November 2026 — Existing answer and partial project records
 
 The current booking guide already answers unit-shortlist preparation, so expand that page rather than add a duplicate. An official watchlist is monitoring, not reservation. A town bucket can contain several projects: Bayshore Oasis needs a separate record from the additional unnamed Bedok project. Partial announcement updates retain unknown prices, classification and exact locations. Keep the full snapshot audit date separate from individual record checks. Waiting-time filters use the published 34/38-month values; revised CCA and rental counts must remain distinct.
+
+
+PR19 fixture diagnosis, 2 November 2026: derive corpus counts from the content registry while preserving explicit shortlist limits. Individual project checks may postdate the last complete snapshot audit; do not advance the full audit date to satisfy an old fixture. Repair the actual date invariant after reading its source. A service scope refusal is a capability blocker; retain the exact path and error instead of using another writer.
