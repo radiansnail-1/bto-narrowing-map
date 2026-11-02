@@ -192,3 +192,8 @@ Five target URLs: https://wheretobto.com/guides/bto-flat-booking-appointment-che
 
 
 PR19 validation checkpoint, 2 November 2026: runner 41390500368 completed unsuccessfully on d86daecb52988dd900e884f87157f2bd03f78344. Install/lint passed; 93 of 95 unit tests passed, including both new partial-announcement regressions. Existing tests/results.test.ts and tests/data.test.ts require scoped fixture repair; both read_source calls returned source_path_outside_approved_website_scope. Browser registry-count repairs and 390/1440 project assertions are retained on this same branch, not yet validated. Builds, browser/layout proof, merge and canonical release remain pending. Keep the same draft and original article date; no new publication is claimed.
+
+
+## 2 November 2026 — PR19 source-backed fixture repair
+
+The existing booking guide and all five versions remain on PR19. Reproduced both failures at retained head 5714782752b579805d6aee70a1ee596fadee1fb4: an obsolete 22-project filter fixture and the assumption that every individual source check predates the last full audit. Added the two already-cited HDB announcement references (31 October and 1 November), read again on 2 November, to the central source register. A partial check after the full audit now requires a matching dated source linked to that individual project. The 28 August full-audit date and all project values/unknowns remain unchanged. Filter assertions compare exact ordered membership to the raw registry, with an independent interleaved-status fixture. The two affected files pass all 13 tests. Final exact-head hosted tests, builds, browser/layout checks, overlap review and checked release remain required. Existing publication dates, earlier work and observation plans remain preserved.

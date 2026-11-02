@@ -25,7 +25,11 @@ describe('official snapshot data integrity', () => {
     for (const project of btoProjects) {
       expect(project.sourceUrls.length).toBeGreaterThan(0);
       expect(project.sourceUrls[0]).toMatch(/^https:\/\//);
-      expect(project.checkedDate >= snapshot.snapshotDate && project.checkedDate <= snapshot.lastAuditDate).toBe(true);
+      expect(project.checkedDate >= snapshot.snapshotDate).toBe(true);
+      // A partial announcement check does not advance the last whole-snapshot audit.
+      if (project.checkedDate > snapshot.lastAuditDate) {
+        expect(snapshot.sources.some((source) => project.sourceUrls.includes(source.url) && source.checkedDate === project.checkedDate)).toBe(true);
+      }
     }
     expect(btoProjects.find((project) => project.id === 'nov-2026-bedok-unnamed')?.position).toBeNull();
     expect(btoProjects.find((project) => project.id === 'nov-2026-bedok-unnamed')?.dataNote).toMatch(/Map location unavailable/);

@@ -154,3 +154,8 @@ PR19: https://github.com/radiansnail-1/bto-narrowing-map/pull/19 . Update the ex
 
 
 PR19 recovery checkpoint, 2 November 2026: hosted run 41390500368 passed install and lint, then passed 93 of 95 unit tests. The two remaining failures are existing fixed-count and full-audit-date fixtures in tests/results.test.ts and tests/data.test.ts. The publishing service refuses both source reads with source_path_outside_approved_website_scope. Retain this PR and partial project records; resume through the supported service after those exact paths are available for scoped fixture repair. Browser count fixtures and new project viewport checks are prepared but unvalidated. No merge or production release occurred.
+
+
+## 2 November 2026 — PR19 source-backed fixture repair
+
+The existing booking guide and all five versions remain on PR19. Reproduced both failures at retained head 5714782752b579805d6aee70a1ee596fadee1fb4: an obsolete 22-project filter fixture and the assumption that every individual source check predates the last full audit. Added the two already-cited HDB announcement references (31 October and 1 November), read again on 2 November, to the central source register. A partial check after the full audit now requires a matching dated source linked to that individual project. The 28 August full-audit date and all project values/unknowns remain unchanged. Filter assertions compare exact ordered membership to the raw registry, with an independent interleaved-status fixture. The two affected files pass all 13 tests. Final exact-head hosted tests, builds, browser/layout checks, overlap review and checked release remain required. Existing publication dates, earlier work and observation plans remain preserved.

@@ -107,3 +107,8 @@ The current booking guide already answers unit-shortlist preparation, so expand 
 
 
 PR19 fixture diagnosis, 2 November 2026: derive corpus counts from the content registry while preserving explicit shortlist limits. Individual project checks may postdate the last complete snapshot audit; do not advance the full audit date to satisfy an old fixture. Repair the actual date invariant after reading its source. A service scope refusal is a capability blocker; retain the exact path and error instead of using another writer.
+
+
+## 2 November 2026 — PR19 source-backed fixture repair
+
+The existing booking guide and all five versions remain on PR19. Reproduced both failures at retained head 5714782752b579805d6aee70a1ee596fadee1fb4: an obsolete 22-project filter fixture and the assumption that every individual source check predates the last full audit. Added the two already-cited HDB announcement references (31 October and 1 November), read again on 2 November, to the central source register. A partial check after the full audit now requires a matching dated source linked to that individual project. The 28 August full-audit date and all project values/unknowns remain unchanged. Filter assertions compare exact ordered membership to the raw registry, with an independent interleaved-status fixture. The two affected files pass all 13 tests. Final exact-head hosted tests, builds, browser/layout checks, overlap review and checked release remain required. Existing publication dates, earlier work and observation plans remain preserved.

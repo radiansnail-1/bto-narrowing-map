@@ -12,6 +12,22 @@
   },
   "sources": [
     {
+      "id": "hdb-november-2026-shorter-waiting-time-announcement",
+      "agency": "HDB",
+      "title": "1,310 Shorter Waiting Time Flats to be Offered in November 2026 BTO Exercise",
+      "url": "https://www.hdb.gov.sg/hdb-pulse/news/2026/1310-shorter-waiting-time-flats-to-be-offered-in-november-2026-bto-exercise",
+      "checkedDate": "2026-11-02",
+      "usage": "Partial announcement check only: named projects, waiting times and the additional town buckets. Classification, prices and exact application dates remain unpublished; this does not advance the whole-snapshot audit."
+    },
+    {
+      "id": "hdb-toa-payoh-west-master-plan-october-2026",
+      "agency": "HDB",
+      "title": "HDB Unveils Master Plan for Toa Payoh West",
+      "url": "https://www.hdb.gov.sg/hdb-pulse/news/2026/hdb-unveils-master-plan-for-toa-payoh-west",
+      "checkedDate": "2026-11-02",
+      "usage": "Partial Toa Payoh Hillside announcement check, including the revised 260 Community Care Apartments and separate public-rental count; not a full project or policy audit."
+    },
+    {
       "id": "hdb-june-2026-launch",
       "agency": "HDB",
       "title": "HDB Launches 6,952 Flats Across 7 Projects in June 2026 BTO Sales Exercise",
