@@ -5,10 +5,10 @@
     "definition": "Named BTO projects launched in the February and June 2026 exercises, plus BTO projects officially announced for the November 2026 exercise and other future projects (Lakeview, Shunfu, Pearl's Hill) for which HDB has published facts.",
     "latestSalesExercise": "June 2026 BTO (the most recent named exercise at the snapshot date)",
     "upcomingExercise": "November 2026 BTO (HDB moved the previously announced October exercise to November on 2026-08-22)",
-    "projectCount": 22,
+    "projectCount": 23,
     "namedLaunchedProjectCount": 13,
-    "upcomingRecordCount": 9,
-    "caveat": "For the November exercise HDB has published town-level supply only. The records below are five generic town buckets plus a separately detailed Toa Payoh West record; they are release buckets, not a claim that each town contains exactly one project. Project names, prices, classifications, coordinates and waits remain null until HDB publishes them."
+    "upcomingRecordCount": 10,
+    "caveat": "Partial project update checked 2 November 2026 against HDB announcements of 31 October and 1 November. Three named projects and Toa Payoh Hillside have some published facts; the additional Bedok, Geylang and Yishun buckets retain unknown fields. Announcement is not launch; exact application dates, classification and prices remain unpublished. Older records retain their own checked dates."
   },
   "sources": [
     {
@@ -1121,7 +1121,7 @@
     {
       "id": "nov-2026-bedok-unnamed",
       "canonicalName": null,
-      "displayName": "Bedok — November 2026 BTO release (project name not published)",
+      "displayName": "Bedok — additional November 2026 project (name not published)",
       "town": "Bedok",
       "region": "East",
       "launch": {
@@ -1137,10 +1137,45 @@
       "coordinates": null,
       "amenityIds": [],
       "sourceUrls": [
-        "https://www.hdb.gov.sg/hdb-pulse/news/2026/increase-in-income-ceilings-and-greater-support-for-families-with-children"
+        "https://www.hdb.gov.sg/hdb-pulse/news/2026/increase-in-income-ceilings-and-greater-support-for-families-with-children",
+        "https://www.hdb.gov.sg/hdb-pulse/news/2026/1310-shorter-waiting-time-flats-to-be-offered-in-november-2026-bto-exercise"
       ],
-      "checkedDate": "2026-08-28",
-      "publishedNote": "HDB (23 Aug 2026): project details, including classification, will be shared at the November 2026 launch; applicants should submit HFE letter documents by 25 September 2026."
+      "checkedDate": "2026-11-02",
+      "publishedNote": "HDB (1 Nov 2026) names Bayshore Oasis separately and confirms one other Bedok project in November. This retained bucket represents that other project; its name, flat mix, prices, classification, wait and coordinates remain unpublished."
+    },
+    {
+      "id": "nov-2026-bayshore-oasis",
+      "canonicalName": "Bayshore Oasis",
+      "displayName": "Bayshore Oasis",
+      "town": "Bedok",
+      "region": "East",
+      "launch": {
+        "exercise": "November 2026 BTO",
+        "launchDate": "2026-11",
+        "status": "announced_upcoming"
+      },
+      "classification": null,
+      "estimatedWaitingTimeMonths": 38,
+      "estimatedCompletionDate": null,
+      "flatTypes": [
+        {
+          "type": "2-room Flexi",
+          "units": null
+        },
+        {
+          "type": "4-room",
+          "units": null
+        }
+      ],
+      "approxUnits": null,
+      "coordinates": null,
+      "amenityIds": [],
+      "sourceUrls": [
+        "https://www.hdb.gov.sg/hdb-pulse/news/2026/1310-shorter-waiting-time-flats-to-be-offered-in-november-2026-bto-exercise"
+      ],
+      "checkedDate": "2026-11-02",
+      "publishedNote": "HDB (1 Nov 2026): 855 flats for sale; waiting time 3 years 2 months. Bounded by Bayshore Drive and Bayshore Walk. Rental flats also announced; rental count, per-type counts, prices, classification and exact coordinates not published. Proposed amenities remain planned, not operating.",
+      "approxBtoUnits": 855
     },
     {
       "id": "nov-2026-geylang-unnamed",
@@ -1168,8 +1203,8 @@
     },
     {
       "id": "nov-2026-sembawang-unnamed",
-      "canonicalName": null,
-      "displayName": "Sembawang — November 2026 BTO release (project name not published)",
+      "canonicalName": "Sembawang Anchor",
+      "displayName": "Sembawang Anchor",
       "town": "Sembawang",
       "region": "North",
       "launch": {
@@ -1178,22 +1213,41 @@
         "status": "announced_upcoming"
       },
       "classification": null,
-      "estimatedWaitingTimeMonths": null,
+      "estimatedWaitingTimeMonths": 34,
       "estimatedCompletionDate": null,
-      "flatTypes": null,
+      "flatTypes": [
+        {
+          "type": "2-room Flexi",
+          "units": null
+        },
+        {
+          "type": "3-room",
+          "units": null
+        },
+        {
+          "type": "4-room",
+          "units": null
+        },
+        {
+          "type": "5-room",
+          "units": null
+        }
+      ],
       "approxUnits": null,
       "coordinates": null,
       "amenityIds": [],
       "sourceUrls": [
-        "https://www.hdb.gov.sg/hdb-pulse/news/2026/increase-in-income-ceilings-and-greater-support-for-families-with-children"
+        "https://www.hdb.gov.sg/hdb-pulse/news/2026/increase-in-income-ceilings-and-greater-support-for-families-with-children",
+        "https://www.hdb.gov.sg/hdb-pulse/news/2026/1310-shorter-waiting-time-flats-to-be-offered-in-november-2026-bto-exercise"
       ],
-      "checkedDate": "2026-08-28",
-      "publishedNote": "HDB (23 Aug 2026): project details, including classification, will be shared at the November 2026 launch; applicants should submit HFE letter documents by 25 September 2026."
+      "checkedDate": "2026-11-02",
+      "publishedNote": "HDB (1 Nov 2026): 1310 flats for sale; waiting time 2 years 10 months. Bounded by Admiralty Lane and Sembawang Drive; 6 blocks including sold/rental integration. Prices, classification, exact coordinates, per-type and rental counts remain unpublished.",
+      "approxBtoUnits": 1310
     },
     {
       "id": "nov-2026-tengah-unnamed",
-      "canonicalName": null,
-      "displayName": "Tengah — November 2026 BTO release (project name not published)",
+      "canonicalName": "Plantation Dew",
+      "displayName": "Plantation Dew",
       "town": "Tengah",
       "region": "West",
       "launch": {
@@ -1202,17 +1256,40 @@
         "status": "announced_upcoming"
       },
       "classification": null,
-      "estimatedWaitingTimeMonths": null,
+      "estimatedWaitingTimeMonths": 38,
       "estimatedCompletionDate": null,
-      "flatTypes": null,
+      "flatTypes": [
+        {
+          "type": "2-room Flexi",
+          "units": null
+        },
+        {
+          "type": "3-room",
+          "units": null
+        },
+        {
+          "type": "4-room",
+          "units": null
+        },
+        {
+          "type": "5-room",
+          "units": null
+        },
+        {
+          "type": "3Gen",
+          "units": null
+        }
+      ],
       "approxUnits": null,
       "coordinates": null,
       "amenityIds": [],
       "sourceUrls": [
-        "https://www.hdb.gov.sg/hdb-pulse/news/2026/increase-in-income-ceilings-and-greater-support-for-families-with-children"
+        "https://www.hdb.gov.sg/hdb-pulse/news/2026/increase-in-income-ceilings-and-greater-support-for-families-with-children",
+        "https://www.hdb.gov.sg/hdb-pulse/news/2026/1310-shorter-waiting-time-flats-to-be-offered-in-november-2026-bto-exercise"
       ],
-      "checkedDate": "2026-08-28",
-      "publishedNote": "HDB (23 Aug 2026): project details, including classification, will be shared at the November 2026 launch; applicants should submit HFE letter documents by 25 September 2026."
+      "checkedDate": "2026-11-02",
+      "publishedNote": "HDB (1 Nov 2026): 710 flats for sale; waiting time 3 years 2 months. Bounded by Tengah Garden Avenue, Plantation Walk and a future park. White Flat option announced for 3-, 4- and 5-room flats; new amenities and transport remain planned. Prices, classification, exact coordinates, per-type and rental counts remain unpublished.",
+      "approxBtoUnits": 710
     },
     {
       "id": "nov-2026-yishun-unnamed",
@@ -1240,8 +1317,8 @@
     },
     {
       "id": "nov-2026-toa-payoh-west-caldecott",
-      "canonicalName": null,
-      "displayName": "Toa Payoh West near Caldecott MRT — project name not published",
+      "canonicalName": "Toa Payoh Hillside",
+      "displayName": "Toa Payoh Hillside",
       "town": "Toa Payoh",
       "region": "Central",
       "launch": {
@@ -1254,22 +1331,19 @@
       "estimatedWaitingTimeMonths": null,
       "estimatedCompletionDate": null,
       "approxUnitsTotal": 1600,
-      "approxBtoUnits": 1410,
+      "approxBtoUnits": 1430,
       "flatTypes": [
         {
           "type": "2-room Flexi",
-          "units": 590,
-          "unitsAreApproximate": true
+          "units": 590
         },
         {
           "type": "4-room",
-          "units": 580,
-          "unitsAreApproximate": true
+          "units": 580
         },
         {
           "type": "Community Care Apartment (CCA)",
-          "units": 240,
-          "unitsAreApproximate": true
+          "units": 260
         }
       ],
       "publicRentalUnitsApprox": 230,
@@ -1287,10 +1361,11 @@
       "sourceUrls": [
         "https://www.hdb.gov.sg/hdb-pulse/news/2026/increase-in-income-ceilings-and-greater-support-for-families-with-children",
         "https://www.hdb.gov.sg/hdb-pulse/news/2026/public-housing-projects-will-be-developed-in-pearls-hill-and-toa-payoh-west",
-        "https://www.onemap.gov.sg/api/common/elastic/search?searchVal=Caldecott%20MRT%20Station&returnGeom=Y&getAddrDetails=Y&pageNum=1"
+        "https://www.onemap.gov.sg/api/common/elastic/search?searchVal=Caldecott%20MRT%20Station&returnGeom=Y&getAddrDetails=Y&pageNum=1",
+        "https://www.hdb.gov.sg/hdb-pulse/news/2026/hdb-unveils-master-plan-for-toa-payoh-west"
       ],
-      "checkedDate": "2026-08-28",
-      "publishedNote": "HDB (23 Aug 2026): project details, including classification, will be shared at the November 2026 launch; applicants should submit HFE letter documents by 25 September 2026."
+      "checkedDate": "2026-11-02",
+      "publishedNote": "HDB (31 Oct 2026): 590 2-room Flexi, 580 4-room and 260 Community Care Apartments, plus about 230 rental flats; the broad total remains stated as about 1,600. CCA count revised from 240 to 260. CCA eligibility age reduces to 55 from the November 2026 sales exercise; other eligibility conditions still apply. Exact launch dates, prices, classification and wait remain unpublished. Caldecott MRT is only an approximate map anchor; planned facilities are not operating amenities."
     },
     {
       "id": "lakeview-second-unnamed",
