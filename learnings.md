@@ -115,3 +115,10 @@ The existing booking guide and all five versions remain on PR19. Reproduced both
 
 
 PR19 full-browser recovery, 2 November 2026: native verify on b3ec02de9ff8deec5e62eb3c02d31156f2c492ea passed unit coverage and 18 browser flows, then exposed two remaining mobile expectations tied to the old 22-project corpus. Both now read the existing snapshot project count, including the exact Browse button name. No timeout, gesture, viewport, map, transit-link or shortlist assertion is removed or loosened. Re-run the complete checks and ten language layouts on the resulting head before release.
+
+
+## 3 November 2026 — Project-specific layout evidence
+
+White Flat, default layout and OCS are related but separate choices. Use the exact project and flat-type documents; a dated Crawford Heights brochure illustrates exclusions, not Plantation Dew pricing or five-room terms. Compare an equal household requirement and written work scope before inferring net savings. A layout sketch is not renovation approval. Current coverage refresh can preserve all card history through opportunities:[]; update actually changed answers from exact source and retain original individual checks/full-audit dates.
+
+Article retained in PR20: https://github.com/radiansnail-1/bto-narrowing-map/pull/20 . Final checks and production release are pending.
