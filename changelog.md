@@ -98,3 +98,10 @@ The existing booking guide and all five versions remain on PR19. Reproduced both
 
 
 PR19 full-browser recovery, 2 November 2026: native verify on b3ec02de9ff8deec5e62eb3c02d31156f2c492ea passed unit coverage and 18 browser flows, then exposed two remaining mobile expectations tied to the old 22-project corpus. Both now read the existing snapshot project count, including the exact Browse button name. No timeout, gesture, viewport, map, transit-link or shortlist assertion is removed or loosened. Re-run the complete checks and ten language layouts on the resulting head before release.
+
+
+## 2026-11-03 — White Flat decision guide source
+
+Added complete English, Spanish, French, German and Simplified Chinese source for a distinct White Flat/default-layout choice. Includes a fictional two-option worksheet, current announcement versus historical brochure limits, project-specific component checks and official renovation guidance. Manual source/translation review completed; required tests, builds, layouts and release are pending. Existing project facts, calculations, original article dates and /zh product entry unchanged.
+
+Article retained in PR20: https://github.com/radiansnail-1/bto-narrowing-map/pull/20 . Final checks and production release are pending.
