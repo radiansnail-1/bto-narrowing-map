@@ -162,3 +162,8 @@ The existing booking guide and all five versions remain on PR19. Reproduced both
 
 
 PR19 full-browser recovery, 2 November 2026: native verify on b3ec02de9ff8deec5e62eb3c02d31156f2c492ea passed unit coverage and 18 browser flows, then exposed two remaining mobile expectations tied to the old 22-project corpus. Both now read the existing snapshot project count, including the exact Browse button name. No timeout, gesture, viewport, map, transit-link or shortlist assertion is removed or loosened. Re-run the complete checks and ten language layouts on the resulting head before release.
+
+
+## 3 November 2026 — PR20 White Flat guide
+
+PR20: https://github.com/radiansnail-1/bto-narrowing-map/pull/20 . Complete en/es/fr/de/zh-Hans source is retained in data/article-bundles/choosing-bto-white-flat-option.json. Manual source and translation review passed; exact-head tests, builds, layouts, checked merge/release and independent live verification remain pending. PR19 is completed history. Preserve existing owner TODOs, project check dates and calculators. The four-file handoff append returned provider_http_422 without a source commit; current branch/head and unchanged file tails were read before this single-file diagnostic append.
