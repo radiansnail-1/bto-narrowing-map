@@ -1,4 +1,44 @@
 import { GUIDES } from '../data/guides';
+import { ARTICLE_BUNDLES, ARTICLE_LANGUAGES, articlePath } from '../data/article-bundles';
+
+for (const width of [390, 1440]) {
+  test('article bundles support keyboard language roundtrips at ' + width, async ({ page }) => {
+    // Exercise every content-driven article, including new records discovered by the loader.
+    test.setTimeout(120_000);
+    await page.setViewportSize({ width, height: 900 });
+    expect(ARTICLE_BUNDLES.length).toBeGreaterThan(0);
+    for (const bundle of ARTICLE_BUNDLES) {
+      await page.goto('/guides');
+      const discovery = page.locator('a[href="' + articlePath(bundle.slug) + '"]');
+      await expect(discovery).toHaveCount(1);
+      await discovery.focus();
+      await expect(discovery).toBeFocused();
+      await page.keyboard.press('Enter');
+      await expect(page.locator('article h1')).toHaveText(bundle.translations.en.title);
+      let current = 'en';
+      for (const language of [...ARTICLE_LANGUAGES.slice(1), 'en'] as const) {
+        const currentLink = page.locator('.article-languages a[lang="' + current + '"]');
+        const target = page.locator('.article-languages a[lang="' + language + '"]');
+        await expect(currentLink).toBeVisible();
+        await currentLink.focus();
+        if (language === 'en') {
+          for (let index = 1; index < ARTICLE_LANGUAGES.length; index++) await page.keyboard.press('Shift+Tab');
+        } else {
+          await page.keyboard.press('Tab');
+        }
+        await expect(target).toBeFocused();
+        await page.keyboard.press('Enter');
+        await expect(page).toHaveURL(new RegExp(articlePath(bundle.slug, language) + '$'));
+        await expect(page.locator('html')).toHaveAttribute('lang', language);
+        await expect(page.locator('article h1')).toHaveText(bundle.translations[language].title);
+        await expect(page.locator('.article-languages a[aria-current="page"]')).toHaveAttribute('lang', language);
+        expect(await page.evaluate(() => document.documentElement.scrollWidth)).toBeLessThanOrEqual(width);
+        current = language;
+      }
+    }
+  });
+}
+
 import { btoProjects } from '../data/bto-projects';
 const projectCount = btoProjects.length;
 const announcedCount = btoProjects.filter(project => project.launchStatus === 'announced_upcoming').length;
