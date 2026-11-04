@@ -219,3 +219,14 @@ PR21: https://github.com/radiansnail-1/bto-narrowing-map/pull/21 . Source: data/
 Bounded HDB/MND/CPF/IRAS news check confirms no new consequential change beyond the already recorded1November announcements. HDB index incomplete and MND robot wall; complete17October22:45UTC news cutoff and project audit dates stay unchanged. Final GSC Pacific26Oct–1Nov:1click/45impressions;19–25Oct:1/22. Exact-intent query evidence unknown. English Singapore Planner4November04:31UTC: three estimates null. Small samples inconclusive; no measured gain. Shared citation observation41747943212 reused, configuredgpt-6-luna, actual model unreported, fixed15-question set2026-10-20-v1, final-answer-links-v2; not consumer-wide coverage or traffic.
 
 Observe actual final page/query data on11November and2December with reporting lag; preserve prior observations. All five URLs and final validation/release/live evidence belong in this log and durable closeout. Source checkpoint only; no publication claim.
+
+PR21 translation refinement: describe total permanent disability without implying a local occupational-disability test in German or Spanish. Actual scheme definitions and conditions still govern. Complete source review retained; final head must pass all checks.
+
+Exact five release targets:
+- https://wheretobto.com/guides/hps-fire-home-insurance
+- https://wheretobto.com/es/guides/hps-fire-home-insurance
+- https://wheretobto.com/fr/guides/hps-fire-home-insurance
+- https://wheretobto.com/de/guides/hps-fire-home-insurance
+- https://wheretobto.com/zh-Hans/guides/hps-fire-home-insurance
+
+Current source receipt41774520825 is an initial check, not final changed-head proof. Required gates remain exact-head hosted/native tests, ordinary final build without map-test variable, ten language layouts, actual keyboard/language/map/calculator navigation and independent canonical release. Browser-download failure diagnosed: default archive invalid; official Chrome for Testing141.0.7390.122 metadata download and valid archive provide the local review browser. No application dependency changed.
