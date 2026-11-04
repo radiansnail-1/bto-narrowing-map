@@ -122,3 +122,7 @@ PR19 full-browser recovery, 2 November 2026: native verify on b3ec02de9ff8deec5e
 White Flat, default layout and OCS are related but separate choices. Use the exact project and flat-type documents; a dated Crawford Heights brochure illustrates exclusions, not Plantation Dew pricing or five-room terms. Compare an equal household requirement and written work scope before inferring net savings. A layout sketch is not renovation approval. Current coverage refresh can preserve all card history through opportunities:[]; update actually changed answers from exact source and retain original individual checks/full-audit dates.
 
 Article retained in PR20: https://github.com/radiansnail-1/bto-narrowing-map/pull/20 . Final checks and production release are pending.
+
+
+## 4 November 2026 — PR21
+Mortgage protection, reinstatement of HDB-provided elements and private contents cover are separate interests. A receipt or renovation quotation does not prove active cover. Compare actual covered people/property, periods, limits and conditions. Preserve Singapore-policy meaning and source URLs across translations; no insurer ranking or assumed individual approval.

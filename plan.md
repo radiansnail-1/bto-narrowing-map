@@ -167,3 +167,7 @@ PR19 full-browser recovery, 2 November 2026: native verify on b3ec02de9ff8deec5e
 ## 3 November 2026 — PR20 White Flat guide
 
 PR20: https://github.com/radiansnail-1/bto-narrowing-map/pull/20 . Complete en/es/fr/de/zh-Hans source is retained in data/article-bundles/choosing-bto-white-flat-option.json. Manual source and translation review passed; exact-head tests, builds, layouts, checked merge/release and independent live verification remain pending. PR19 is completed history. Preserve existing owner TODOs, project check dates and calculators. The four-file handoff append returned provider_http_422 without a source commit; current branch/head and unchanged file tails were read before this single-file diagnostic append.
+
+
+## 4 November 2026 — PR21
+PR21 retains the new HPS, HDB fire insurance and home insurance guide in data/article-bundles/hps-fire-home-insurance.json, complete in en/es/fr/de/zh-Hans. Six sections and twelve paragraphs per language manually reviewed. PR19/20 remain completed history. Next: exact-head tests, both builds, ten layouts, actual keyboard/map/calculator review, checked merge/release and live verification. Existing owner tasks and PR5 remain preserved. Not yet published.
