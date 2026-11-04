@@ -9,7 +9,7 @@ for (const width of [390, 1440]) {
     expect(ARTICLE_BUNDLES.length).toBeGreaterThan(0);
     for (const bundle of ARTICLE_BUNDLES) {
       await page.goto('/guides');
-      const discovery = page.locator('a[href="' + articlePath(bundle.slug) + '"]');
+      const discovery = page.locator('.guide-row h2 a[href="' + articlePath(bundle.slug) + '"]');
       await expect(discovery).toHaveCount(1);
       await discovery.focus();
       await expect(discovery).toBeFocused();
