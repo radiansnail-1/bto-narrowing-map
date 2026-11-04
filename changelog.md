@@ -105,3 +105,7 @@ PR19 full-browser recovery, 2 November 2026: native verify on b3ec02de9ff8deec5e
 Added complete English, Spanish, French, German and Simplified Chinese source for a distinct White Flat/default-layout choice. Includes a fictional two-option worksheet, current announcement versus historical brochure limits, project-specific component checks and official renovation guidance. Manual source/translation review completed; required tests, builds, layouts and release are pending. Existing project facts, calculations, original article dates and /zh product entry unchanged.
 
 Article retained in PR20: https://github.com/radiansnail-1/bto-narrowing-map/pull/20 . Final checks and production release are pending.
+
+
+## 2026-11-04 — PR21 source
+Added the complete five-language insurance distinction and fictional policy-document worksheet through the existing article loader. Existing project records, calculators and published guides remain unchanged. Source and translation review completed; normal validation and release remain pending.

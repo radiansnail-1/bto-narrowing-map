@@ -211,3 +211,26 @@ Sources read on 3 November: HDB's 1 November announcement; the Crawford Heights 
 Baseline: final Search Console Web, Pacific25–31October0clicks15impressions;18–24October1click36impressions. Returned queries do not establish this intent's demand. Missing rows unknown; tiny sample inconclusive. Planner3November04:36UTC, English/Singapore: HDB white flat10monthly estimate; two exact seeds unknown. Advertiser competition is not organic difficulty. Shared2November citation run41368098279 remains current: CodexCLI0.163.0, configured gpt-6-luna, actual model unreported, question set2026-10-20-v1. Own-site answer-source citations1/1branded and0/2unbranded; literal names1/1and0/2with identity unverified. Its22-project count is stale; no new benchmark or traffic inference.
 
 Hypothesis: a distinct project-specific layout worksheet may support relevant discovery. Preserve existing observations and review actual page/query outcomes after7/28days, with complete data and reporting lag;28day target1December. Final checks, layouts and publication remain pending. Target URLs: https://wheretobto.com/guides/choosing-bto-white-flat-option ; https://wheretobto.com/es/guides/choosing-bto-white-flat-option ; https://wheretobto.com/fr/guides/choosing-bto-white-flat-option ; https://wheretobto.com/de/guides/choosing-bto-white-flat-option ; https://wheretobto.com/zh-Hans/guides/choosing-bto-white-flat-option . No measured gain claimed.
+
+
+## 4 November 2026 — PR21
+PR21: https://github.com/radiansnail-1/bto-narrowing-map/pull/21 . Source: data/article-bundles/hps-fire-home-insurance.json. Complete six-section/twelve-paragraph translations reviewed in en/es/fr/de/zh-Hans. CPF comparison FAQ, educational guide and current HPS guidance actually read today; HDB direct page is incomplete but its official indexed scope/renewal text was read. No prices, insurer recommendation or personal coverage conclusion. Current64-page coverage saved revision33; current PR5 ad-only diff compared. No duplicate existing payment/OA answer.
+
+Bounded HDB/MND/CPF/IRAS news check confirms no new consequential change beyond the already recorded1November announcements. HDB index incomplete and MND robot wall; complete17October22:45UTC news cutoff and project audit dates stay unchanged. Final GSC Pacific26Oct–1Nov:1click/45impressions;19–25Oct:1/22. Exact-intent query evidence unknown. English Singapore Planner4November04:31UTC: three estimates null. Small samples inconclusive; no measured gain. Shared citation observation41747943212 reused, configuredgpt-6-luna, actual model unreported, fixed15-question set2026-10-20-v1, final-answer-links-v2; not consumer-wide coverage or traffic.
+
+Observe actual final page/query data on11November and2December with reporting lag; preserve prior observations. All five URLs and final validation/release/live evidence belong in this log and durable closeout. Source checkpoint only; no publication claim.
+
+PR21 translation refinement: describe total permanent disability without implying a local occupational-disability test in German or Spanish. Actual scheme definitions and conditions still govern. Complete source review retained; final head must pass all checks.
+
+Exact five release targets:
+- https://wheretobto.com/guides/hps-fire-home-insurance
+- https://wheretobto.com/es/guides/hps-fire-home-insurance
+- https://wheretobto.com/fr/guides/hps-fire-home-insurance
+- https://wheretobto.com/de/guides/hps-fire-home-insurance
+- https://wheretobto.com/zh-Hans/guides/hps-fire-home-insurance
+
+Current source receipt41774520825 is an initial check, not final changed-head proof. Required gates remain exact-head hosted/native tests, ordinary final build without map-test variable, ten language layouts, actual keyboard/language/map/calculator navigation and independent canonical release. Browser-download failure diagnosed: default archive invalid; official Chrome for Testing141.0.7390.122 metadata download and valid archive provide the local review browser. No application dependency changed.
+
+PR21 browser capability recovery: official Chrome archive downloaded, but local launch cannot create its required socket (Operation not permitted). Do not change runtime permissions or infer a site defect. Add a content-driven hosted keyboard journey for every article bundle at390/1440: actual guide discovery, Tab/Shift-Tab and Enter through all five languages, headings/root-language/current-link/URL and overflow assertions. Existing map/calculator/browser assertions remain intact. This uses the existing trusted browser workflow and dependencies, not a preview bypass or a new workflow. Final hosted/browser source proof and manual ten-layout review remain mandatory; physical Safari is unverified.
+
+PR21 native CI41774973278: all20existing browser journeys passed; both new keyboard cases stopped at an over-broad guide-discovery selector. Each directory row intentionally has a heading link and a separate arrow link. Scope the selector to .guide-row h2 a, retaining exact count1, focus, Tab/Shift-Tab, Enter, all-language heading/URL/lang/current-link and no-overflow assertions. No product defect or assertion weakening inferred. Re-run final exact head before release.

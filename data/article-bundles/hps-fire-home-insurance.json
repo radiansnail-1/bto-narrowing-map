@@ -1,0 +1,478 @@
+{
+  "slug": "hps-fire-home-insurance",
+  "publishedDate": "2026-11-04",
+  "checkedDate": "2026-11-04",
+  "updatedDate": "2026-11-04",
+  "translations": {
+    "en": {
+      "category": "Home protection",
+      "title": "HPS, HDB fire insurance and home insurance: what is protected?",
+      "description": "Separate mortgage protection, HDB-provided building reinstatement and private contents cover before assuming your BTO renovation or belongings are insured.",
+      "answer": "No. HDB fire insurance does not replace Home Protection Scheme (HPS) cover or insure your renovation and belongings. HPS protects the housing loan against specified events affecting an insured member; HDB fire insurance covers specified HDB-provided structures and fixtures. Private home insurance may cover contents or renovation, depending on the policy. Check the actual insured people, property, limits and dates separately.",
+      "sections": [
+        {
+          "heading": "Start with three different questions",
+          "paragraphs": [
+            "Ask who would repay the housing loan if an insured borrower experiences a covered event, what would pay to reinstate HDB-provided parts after a fire, and what would cover your own renovation or possessions. A receipt for one policy does not answer all three questions.",
+            "CPF Board’s comparison distinguishes HPS, HDB fire insurance and private home insurance. Treat that distinction as the start of a document check, not confirmation that your household has active cover."
+          ],
+          "sources": [
+            {
+              "title": "CPF Board: three insurance types",
+              "href": "https://www.cpf.gov.sg/service/article/what-is-the-difference-between-home-protection-scheme-hdb-fire-insurance-and-home-insurance"
+            }
+          ]
+        },
+        {
+          "heading": "Check HPS against the borrower and loan",
+          "paragraphs": [
+            "HPS is mortgage-reducing insurance for specified events such as death, terminal illness or total permanent disability. A claim is subject to scheme conditions; the loan settlement is limited by the insured sum and share of cover. It is not a renovation-repair fund.",
+            "Check each owner’s approved cover, share, loan details and policy period. CPF Board explains that the household’s total share should reach at least 100%, with each owner able to apply for up to 100%. Do not interpret two owners as automatic full cover for either owner. If relying on other life insurance for exemption, verify approval through the current CPF process rather than assuming the policy name is enough."
+          ],
+          "sources": [
+            {
+              "title": "CPF Board: HPS cover and exemption",
+              "href": "https://www.cpf.gov.sg/member/home-ownership/protecting-against-losing-your-home"
+            }
+          ]
+        },
+        {
+          "heading": "Separate HDB reinstatement from your fit-out",
+          "paragraphs": [
+            "HDB’s fire-insurance guidance covers reinstating specified internal structures, fixtures and areas built and provided by HDB. It excludes home contents such as furniture, renovations and personal belongings. Rebuilding the original supplied parts and replacing a household’s chosen fit-out are different costs.",
+            "The HDB-loan requirement does not establish the conditions of a bank loan. Check your lender’s requirements and actual certificate. For HDB loans commencing on or after 1 September 1994, HDB says fire insurance must be bought and renewed every five years while the loan remains outstanding. Check the expiry date rather than assuming a past purchase is still valid."
+          ],
+          "sources": [
+            {
+              "title": "HDB: fire-insurance scope and renewal",
+              "href": "https://www.hdb.gov.sg/managing-my-home/home-ownership/fire-insurance"
+            }
+          ]
+        },
+        {
+          "heading": "Read private home cover item by item",
+          "paragraphs": [
+            "A private policy may cover renovation, belongings or other losses, but scope differs. List the property and risks you want to check, then locate the matching policy wording, insured amounts, exclusions and any excess. A sales headline or the word comprehensive is not the policy schedule.",
+            "CPF’s education guide describes this extra layer separately from HPS and HDB fire insurance. This article does not recommend a provider, a sum insured or a replacement policy. Ask the insurer about unclear wording before treating an item as covered."
+          ],
+          "sources": [
+            {
+              "title": "CPF Board: home-protection guide",
+              "href": "https://www.cpf.gov.sg/member/infohub/educational-resources/protect-your-home-insurance-for-your-hdb-flat"
+            }
+          ]
+        },
+        {
+          "heading": "Try a three-row evidence worksheet",
+          "paragraphs": [
+            "Fictional example: a couple has an HPS approval notice, an older fire-insurance receipt and a proposed kitchen quotation. Their worksheet has three rows: borrower/loan cover; HDB-provided reinstatement; their own kitchen and contents. Beside each, record the actual document, covered person or property, period, limit and unresolved question.",
+            "The kitchen quotation establishes a proposed cost, not insurance cover. The older receipt needs a validity check. A blank field stays unknown until the relevant document or provider confirms it. Keep private policy and health details out of a shared shortlist; a neutral note of the missing confirmation is enough."
+          ]
+        },
+        {
+          "heading": "Keep insurance and purchase funding distinct",
+          "paragraphs": [
+            "Use the existing cash/CPF payment timeline for purchase milestones and the OA-reserve guide for funding trade-offs. Neither an assumed claim nor an unconfirmed insurance payout is available purchase cash. Record premiums and renewal dates from actual documents in your separate household budget.",
+            "Does HPS replace fire insurance? No: they address different risks. Does fire insurance cover a new kitchen? Do not assume so; check the private policy for renovation cover. Is a policy purchase proof of an approved claim? No; applicable terms and the actual event still matter. Where To BTO helps organise published project facts and illustrative funding assumptions, not verify personal insurance or approve claims."
+          ]
+        }
+      ],
+      "callout": {
+        "title": "Keep the funding plan separate",
+        "text": "Use the illustrative roadmap to explore purchase funding, then verify insurance requirements with CPF, HDB, your lender and the relevant insurer.",
+        "href": "/tools/bto-roadmap",
+        "label": "Open the funding roadmap"
+      },
+      "next": [
+        {
+          "href": "/guides/bto-cash-cpf-payment-timeline",
+          "title": "Check cash and CPF payment dates"
+        },
+        {
+          "href": "/guides/cpf-oa-reserve-for-bto",
+          "title": "Compare the CPF OA reserve choice"
+        },
+        {
+          "href": "/guides/choosing-bto-white-flat-option",
+          "title": "Check the layout and written fit-out scope"
+        }
+      ]
+    },
+    "es": {
+      "category": "Protección del hogar",
+      "title": "HPS, seguro de incendios de HDB y seguro del hogar: ¿qué protegen?",
+      "description": "Distingue la protección hipotecaria, la reposición de elementos suministrados por HDB y la cobertura privada antes de dar por aseguradas tus reformas y pertenencias.",
+      "answer": "No. El seguro de incendios de HDB no sustituye a Home Protection Scheme (HPS) ni asegura tus reformas y pertenencias. HPS protege el préstamo ante determinados sucesos que afectan a una persona asegurada; el seguro de HDB cubre ciertos elementos y estructuras suministrados por HDB. Un seguro privado puede cubrir contenido o reformas según la póliza. Comprueba por separado personas, bienes, límites y fechas.",
+      "sections": [
+        {
+          "heading": "Empieza con tres preguntas distintas",
+          "paragraphs": [
+            "Pregunta quién atendería el préstamo si una persona asegurada sufre un suceso cubierto, qué pagaría la reposición de elementos suministrados por HDB tras un incendio y qué cubriría tus propias reformas o posesiones. El recibo de una póliza no responde a las tres preguntas.",
+            "La comparación de CPF Board distingue HPS, el seguro de incendios de HDB y el seguro privado del hogar. Úsala para empezar a revisar documentos, no como confirmación de que tu hogar tiene cobertura vigente."
+          ],
+          "sources": [
+            {
+              "title": "CPF Board: tres tipos de seguro",
+              "href": "https://www.cpf.gov.sg/service/article/what-is-the-difference-between-home-protection-scheme-hdb-fire-insurance-and-home-insurance"
+            }
+          ]
+        },
+        {
+          "heading": "Comprueba HPS para cada prestatario y préstamo",
+          "paragraphs": [
+            "HPS es un seguro hipotecario decreciente para sucesos determinados, como fallecimiento, enfermedad terminal o discapacidad total y permanente. La indemnización depende de las condiciones; la liquidación del préstamo está limitada por la suma y la proporción aseguradas. No es un fondo para reparar reformas.",
+            "Revisa la cobertura aprobada de cada propietario, su proporción, los datos del préstamo y el periodo. CPF Board explica que la proporción total del hogar debe alcanzar al menos el 100%, y cada propietario puede solicitar hasta el 100%. Tener dos propietarios no implica cobertura íntegra automática para cada uno. Si utilizas otro seguro de vida para solicitar exención, verifica su aprobación mediante el proceso actual de CPF; el nombre de la póliza no basta."
+          ],
+          "sources": [
+            {
+              "title": "CPF Board: cobertura y exención de HPS",
+              "href": "https://www.cpf.gov.sg/member/home-ownership/protecting-against-losing-your-home"
+            }
+          ]
+        },
+        {
+          "heading": "Separa la reposición de HDB de tus propias obras",
+          "paragraphs": [
+            "La ayuda de HDB cubre reponer determinadas estructuras interiores, elementos y zonas construidos y suministrados por HDB. Excluye contenido como muebles, reformas y pertenencias. Recuperar los elementos originales y reemplazar el acondicionamiento elegido por el hogar son costes distintos.",
+            "La obligación vinculada a un préstamo HDB no establece las condiciones de un préstamo bancario. Revisa los requisitos del prestamista y el certificado real. Para préstamos HDB iniciados desde el 1 de septiembre de 1994, HDB exige comprar y renovar el seguro cada cinco años mientras quede deuda. Comprueba el vencimiento; una compra antigua no demuestra vigencia."
+          ],
+          "sources": [
+            {
+              "title": "HDB: alcance y renovación del seguro de incendios",
+              "href": "https://www.hdb.gov.sg/managing-my-home/home-ownership/fire-insurance"
+            }
+          ]
+        },
+        {
+          "heading": "Revisa la cobertura privada elemento por elemento",
+          "paragraphs": [
+            "Una póliza privada puede cubrir reformas, pertenencias u otras pérdidas, pero su alcance varía. Enumera los bienes y riesgos que quieres comprobar y localiza el texto correspondiente, las sumas aseguradas, exclusiones y posibles franquicias. Un titular comercial o la palabra completo no sustituye a las condiciones.",
+            "La guía educativa de CPF presenta esta protección adicional por separado de HPS y del seguro de incendios de HDB. Este artículo no recomienda proveedor, suma asegurada ni póliza de sustitución. Consulta al asegurador cualquier texto ambiguo antes de considerar cubierto un elemento."
+          ],
+          "sources": [
+            {
+              "title": "CPF Board: guía de protección del hogar",
+              "href": "https://www.cpf.gov.sg/member/infohub/educational-resources/protect-your-home-insurance-for-your-hdb-flat"
+            }
+          ]
+        },
+        {
+          "heading": "Prueba una ficha de tres filas",
+          "paragraphs": [
+            "Ejemplo ficticio: una pareja tiene una aprobación de HPS, un recibo antiguo del seguro de incendios y un presupuesto de cocina. Su ficha contiene tres filas: persona/préstamo; reposición de elementos de HDB; cocina y contenido propios. Anota para cada una el documento real, la persona o el bien cubierto, el periodo, el límite y la pregunta pendiente.",
+            "El presupuesto acredita un coste propuesto, no cobertura. Hay que comprobar la vigencia del recibo antiguo. Un campo vacío sigue siendo desconocido hasta confirmarlo con el documento o proveedor pertinente. No incluyas datos privados de salud o pólizas en una lista compartida; basta una nota neutral sobre la confirmación pendiente."
+          ]
+        },
+        {
+          "heading": "Separa seguro y financiación de la compra",
+          "paragraphs": [
+            "Usa la guía de pagos en efectivo/CPF para los hitos de compra y la de reserva OA para comparar financiación. Una reclamación supuesta o un pago no confirmado no es efectivo disponible para comprar. Lleva primas y vencimientos reales a tu presupuesto doméstico separado.",
+            "¿HPS sustituye al seguro de incendios? No: responden a riesgos distintos. ¿El seguro de incendios cubre una cocina nueva? No lo supongas; consulta la cobertura privada de reformas. ¿Comprar una póliza demuestra que se aprobará una reclamación? No; importan las condiciones y el suceso real. Where To BTO organiza datos publicados y supuestos financieros ilustrativos, pero no verifica seguros personales ni aprueba reclamaciones."
+          ]
+        }
+      ],
+      "callout": {
+        "title": "Mantén separado el plan de financiación",
+        "text": "Explora la financiación con la hoja ilustrativa y verifica los seguros con CPF, HDB, tu prestamista y el asegurador correspondiente.",
+        "href": "/tools/bto-roadmap",
+        "label": "Abrir la hoja de financiación"
+      },
+      "next": [
+        {
+          "href": "/guides/bto-cash-cpf-payment-timeline",
+          "title": "Revisar fechas de pagos en efectivo y CPF"
+        },
+        {
+          "href": "/guides/cpf-oa-reserve-for-bto",
+          "title": "Comparar la reserva CPF OA"
+        },
+        {
+          "href": "/guides/choosing-bto-white-flat-option",
+          "title": "Comprobar distribución y alcance escrito de las obras"
+        }
+      ]
+    },
+    "fr": {
+      "category": "Protection du logement",
+      "title": "HPS, assurance incendie HDB et assurance habitation : que protègent-elles ?",
+      "description": "Distinguez protection du prêt, remise en état des éléments fournis par HDB et garanties privées avant de considérer vos travaux et biens comme assurés.",
+      "answer": "Non. L’assurance incendie HDB ne remplace pas Home Protection Scheme (HPS) et n’assure pas vos travaux ni vos biens. HPS protège le prêt contre certains événements touchant un assuré ; l’assurance HDB couvre des structures et équipements précis fournis par HDB. Une assurance privée peut couvrir les biens ou travaux selon le contrat. Vérifiez séparément personnes, biens, plafonds et dates.",
+      "sections": [
+        {
+          "heading": "Commencez par trois questions différentes",
+          "paragraphs": [
+            "Demandez qui rembourserait le prêt si un emprunteur assuré subissait un événement couvert, ce qui financerait la remise en état des éléments fournis par HDB après un incendie et ce qui couvrirait vos travaux ou biens personnels. Le reçu d’un contrat ne répond pas aux trois questions.",
+            "CPF Board distingue HPS, assurance incendie HDB et assurance habitation privée. Cette distinction ouvre une vérification documentaire ; elle ne confirme pas que votre foyer dispose de garanties actives."
+          ],
+          "sources": [
+            {
+              "title": "CPF Board : trois types d’assurance",
+              "href": "https://www.cpf.gov.sg/service/article/what-is-the-difference-between-home-protection-scheme-hdb-fire-insurance-and-home-insurance"
+            }
+          ]
+        },
+        {
+          "heading": "Vérifiez HPS pour l’emprunteur et le prêt",
+          "paragraphs": [
+            "HPS est une assurance de prêt à capital décroissant pour des événements déterminés, comme le décès, une maladie terminale ou une invalidité totale et permanente. Une demande dépend des conditions du régime ; le règlement du prêt est limité par le montant et la part assurés. Ce n’est pas un fonds de réparation des travaux.",
+            "Vérifiez la couverture approuvée de chaque propriétaire, sa part, les données du prêt et la période. CPF Board indique que la part totale du foyer doit atteindre au moins 100%, chaque propriétaire pouvant demander jusqu’à 100%. Deux propriétaires n’impliquent pas une couverture intégrale automatique pour chacun. Si une autre assurance vie sert à demander une exemption, vérifiez l’approbation selon la procédure CPF actuelle ; le nom du contrat ne suffit pas."
+          ],
+          "sources": [
+            {
+              "title": "CPF Board : couverture HPS et exemption",
+              "href": "https://www.cpf.gov.sg/member/home-ownership/protecting-against-losing-your-home"
+            }
+          ]
+        },
+        {
+          "heading": "Séparez remise en état HDB et aménagement personnel",
+          "paragraphs": [
+            "Les indications HDB couvrent la remise en état de certaines structures intérieures, installations et zones construites et fournies par HDB. Le mobilier, les travaux personnels et les effets personnels sont exclus. Restaurer les éléments fournis à l’origine et remplacer l’aménagement choisi par le foyer sont deux coûts différents.",
+            "L’obligation liée à un prêt HDB ne définit pas les conditions d’un prêt bancaire. Vérifiez les exigences du prêteur et le certificat réel. Pour les prêts HDB commencés à partir du 1er septembre 1994, HDB exige l’achat puis le renouvellement de l’assurance tous les cinq ans tant que le prêt reste dû. Vérifiez l’échéance plutôt que de supposer qu’un achat ancien reste valable."
+          ],
+          "sources": [
+            {
+              "title": "HDB : garanties incendie et renouvellement",
+              "href": "https://www.hdb.gov.sg/managing-my-home/home-ownership/fire-insurance"
+            }
+          ]
+        },
+        {
+          "heading": "Lisez les garanties privées poste par poste",
+          "paragraphs": [
+            "Un contrat privé peut couvrir les travaux, biens ou autres pertes, mais son périmètre varie. Listez les biens et risques à vérifier, puis retrouvez les clauses, montants assurés, exclusions et franchises éventuelles. Un slogan ou le mot complet ne remplace pas les dispositions contractuelles.",
+            "Le guide pédagogique CPF présente cette protection supplémentaire séparément de HPS et de l’assurance incendie HDB. Cet article ne recommande ni assureur, ni montant assuré, ni contrat de remplacement. Demandez des précisions à l’assureur avant de considérer un poste comme couvert."
+          ],
+          "sources": [
+            {
+              "title": "CPF Board : guide de protection du logement",
+              "href": "https://www.cpf.gov.sg/member/infohub/educational-resources/protect-your-home-insurance-for-your-hdb-flat"
+            }
+          ]
+        },
+        {
+          "heading": "Essayez une fiche à trois lignes",
+          "paragraphs": [
+            "Exemple fictif : un couple possède un avis d’approbation HPS, un ancien reçu d’assurance incendie et un devis de cuisine. Sa fiche comporte trois lignes : emprunteur/prêt ; éléments fournis par HDB ; cuisine et biens personnels. Inscrivez pour chacune le document réel, la personne ou le bien couvert, la période, le plafond et la question en suspens.",
+            "Le devis établit un coût envisagé, pas une garantie d’assurance. L’ancien reçu nécessite une vérification de validité. Une case vide reste inconnue jusqu’à confirmation documentaire ou du fournisseur compétent. Écartez les données privées de santé et de contrat d’une liste partagée ; une note neutre sur la confirmation manquante suffit."
+          ]
+        },
+        {
+          "heading": "Distinguez assurance et financement de l’achat",
+          "paragraphs": [
+            "Utilisez le calendrier espèces/CPF pour les étapes de l’achat et le guide de réserve OA pour les arbitrages de financement. Une indemnisation supposée ou non confirmée n’est pas de l’argent disponible pour acheter. Inscrivez primes et renouvellements réels dans votre budget familial séparé.",
+            "HPS remplace-t-il l’assurance incendie ? Non : les risques sont différents. L’assurance incendie couvre-t-elle une cuisine neuve ? Ne le supposez pas ; vérifiez les garanties privées pour travaux. Acheter un contrat prouve-t-il qu’une demande sera approuvée ? Non ; les conditions et l’événement réel restent déterminants. Where To BTO organise des faits publiés et des hypothèses de financement illustratives, sans vérifier vos assurances ni approuver de demandes."
+          ]
+        }
+      ],
+      "callout": {
+        "title": "Gardez le financement séparé",
+        "text": "Explorez le financement avec l’outil illustratif, puis vérifiez les assurances auprès de CPF, HDB, du prêteur et de l’assureur concerné.",
+        "href": "/tools/bto-roadmap",
+        "label": "Ouvrir le plan de financement"
+      },
+      "next": [
+        {
+          "href": "/guides/bto-cash-cpf-payment-timeline",
+          "title": "Vérifier les dates de paiement espèces et CPF"
+        },
+        {
+          "href": "/guides/cpf-oa-reserve-for-bto",
+          "title": "Comparer le choix de réserve CPF OA"
+        },
+        {
+          "href": "/guides/choosing-bto-white-flat-option",
+          "title": "Vérifier le plan et le périmètre écrit des travaux"
+        }
+      ]
+    },
+    "de": {
+      "category": "Schutz des Zuhauses",
+      "title": "HPS, HDB-Feuerversicherung und private Wohnungsversicherung: Was ist geschützt?",
+      "description": "Unterscheiden Sie Kreditschutz, Wiederherstellung von HDB-Bestandteilen und private Deckung, bevor Sie Renovierungen oder Besitz als versichert betrachten.",
+      "answer": "Nein. Die HDB-Feuerversicherung ersetzt Home Protection Scheme (HPS) nicht und versichert weder Ihre Renovierung noch Ihren Hausrat. HPS schützt den Kredit bei bestimmten Ereignissen, die ein versichertes Mitglied betreffen; die HDB-Versicherung deckt bestimmte von HDB bereitgestellte Bauteile. Eine private Wohnungsversicherung kann je nach Vertrag Hausrat oder Renovierungen abdecken. Prüfen Sie Personen, Sachen, Grenzen und Zeiträume getrennt.",
+      "sections": [
+        {
+          "heading": "Beginnen Sie mit drei verschiedenen Fragen",
+          "paragraphs": [
+            "Fragen Sie, wer den Kredit bei einem versicherten Ereignis eines versicherten Kreditnehmers bedienen würde, was die Wiederherstellung von HDB-Bestandteilen nach einem Brand bezahlt und was eigene Renovierungen oder Gegenstände schützt. Eine Versicherungsquittung beantwortet nicht alle drei Fragen.",
+            "CPF Board unterscheidet HPS, HDB-Feuerversicherung und private Wohnungsversicherung. Nutzen Sie diese Trennung für die Dokumentenprüfung, nicht als Bestätigung eines aktiven Versicherungsschutzes Ihres Haushalts."
+          ],
+          "sources": [
+            {
+              "title": "CPF Board: drei Versicherungsarten",
+              "href": "https://www.cpf.gov.sg/service/article/what-is-the-difference-between-home-protection-scheme-hdb-fire-insurance-and-home-insurance"
+            }
+          ]
+        },
+        {
+          "heading": "Prüfen Sie HPS für Kreditnehmer und Darlehen",
+          "paragraphs": [
+            "HPS ist eine Versicherung mit sinkender Kreditschutzsumme für bestimmte Ereignisse wie Tod, unheilbare Krankheit im Endstadium oder vollständige und dauerhafte Invalidität. Leistungen richten sich nach den Bedingungen; die Kreditablösung ist durch Versicherungssumme und Deckungsanteil begrenzt. HPS ist kein Fonds für Renovierungsreparaturen.",
+            "Prüfen Sie genehmigten Schutz, Anteil, Kreditdaten und Laufzeit jedes Eigentümers. Laut CPF Board sollen die Anteile des Haushalts zusammen mindestens 100% erreichen; jeder Eigentümer kann bis zu 100% beantragen. Zwei Eigentümer bedeuten nicht automatisch vollen Schutz für jeden. Soll eine andere Lebensversicherung eine Befreiung begründen, prüfen Sie die Genehmigung im aktuellen CPF-Verfahren; der Vertragsname allein genügt nicht."
+          ],
+          "sources": [
+            {
+              "title": "CPF Board: HPS-Schutz und Befreiung",
+              "href": "https://www.cpf.gov.sg/member/home-ownership/protecting-against-losing-your-home"
+            }
+          ]
+        },
+        {
+          "heading": "Trennen Sie HDB-Wiederherstellung und eigenen Ausbau",
+          "paragraphs": [
+            "Die HDB-Hinweise betreffen die Wiederherstellung bestimmter Innenstrukturen, Einrichtungen und Bereiche, die HDB gebaut und bereitgestellt hat. Hausrat wie Möbel, Renovierungen und persönliche Gegenstände ist ausgeschlossen. Ursprüngliche Bauteile wiederherzustellen und den selbst gewählten Ausbau zu ersetzen sind unterschiedliche Kosten.",
+            "Die Pflicht bei einem HDB-Kredit bestimmt nicht die Bedingungen eines Bankkredits. Prüfen Sie die Vorgaben des Kreditgebers und den tatsächlichen Nachweis. Bei HDB-Krediten ab dem 1. September 1994 verlangt HDB den Kauf und die Erneuerung alle fünf Jahre, solange der Kredit offen ist. Prüfen Sie das Ablaufdatum, statt einen früheren Kauf für weiterhin gültig zu halten."
+          ],
+          "sources": [
+            {
+              "title": "HDB: Feuerschutz und Erneuerung",
+              "href": "https://www.hdb.gov.sg/managing-my-home/home-ownership/fire-insurance"
+            }
+          ]
+        },
+        {
+          "heading": "Prüfen Sie private Deckung Punkt für Punkt",
+          "paragraphs": [
+            "Eine private Police kann Renovierungen, Hausrat oder weitere Verluste decken; der Umfang variiert. Listen Sie die gewünschten Sachen und Risiken auf und suchen Sie die passenden Bedingungen, Summen, Ausschlüsse und Selbstbehalte. Ein Werbesatz oder das Wort umfassend ersetzt den Vertrag nicht.",
+            "Der CPF-Ratgeber beschreibt diese zusätzliche Ebene getrennt von HPS und HDB-Feuerschutz. Dieser Artikel empfiehlt weder Anbieter noch Versicherungssumme oder Ersatzvertrag. Klären Sie unverständliche Formulierungen mit dem Versicherer, bevor Sie einen Gegenstand als gedeckt betrachten."
+          ],
+          "sources": [
+            {
+              "title": "CPF Board: Ratgeber zum Wohnungsschutz",
+              "href": "https://www.cpf.gov.sg/member/infohub/educational-resources/protect-your-home-insurance-for-your-hdb-flat"
+            }
+          ]
+        },
+        {
+          "heading": "Nutzen Sie ein Prüfformular mit drei Zeilen",
+          "paragraphs": [
+            "Fiktives Beispiel: Ein Paar besitzt eine HPS-Genehmigung, eine ältere Feuerversicherungsquittung und ein Küchenangebot. Die drei Zeilen lauten Kreditnehmer/Darlehen, HDB-Bestandteile sowie eigene Küche/Hausrat. Tragen Sie jeweils tatsächliches Dokument, versicherte Person oder Sache, Zeitraum, Grenze und offene Frage ein.",
+            "Das Angebot belegt geplante Kosten, keinen Versicherungsschutz. Die alte Quittung verlangt eine Gültigkeitsprüfung. Ein leeres Feld bleibt unbekannt, bis das passende Dokument oder der zuständige Anbieter es bestätigt. Private Gesundheits- und Policendaten gehören nicht in eine geteilte Auswahlliste; eine neutrale Notiz zur fehlenden Bestätigung reicht."
+          ]
+        },
+        {
+          "heading": "Halten Sie Versicherung und Kaufmittel auseinander",
+          "paragraphs": [
+            "Nutzen Sie den Bargeld/CPF-Zeitplan für Kaufetappen und den OA-Reserve-Ratgeber für Finanzierungsabwägungen. Eine vermutete oder unbestätigte Versicherungsleistung ist kein verfügbares Kaufgeld. Übernehmen Sie tatsächliche Prämien und Erneuerungsdaten in Ihr separates Haushaltsbudget.",
+            "Ersetzt HPS die Feuerversicherung? Nein, die Risiken unterscheiden sich. Ist eine neue Küche durch die Feuerversicherung gedeckt? Setzen Sie das nicht voraus; prüfen Sie private Renovierungsdeckung. Belegt der Policenkauf eine genehmigte Leistung? Nein, Bedingungen und Ereignis bleiben entscheidend. Where To BTO ordnet veröffentlichte Projektfakten und illustrative Finanzierungsannahmen, prüft aber keine persönlichen Versicherungen und genehmigt keine Leistungen."
+          ]
+        }
+      ],
+      "callout": {
+        "title": "Kaufmittel getrennt planen",
+        "text": "Untersuchen Sie die Finanzierung mit dem illustrativen Planer und klären Sie Versicherungen mit CPF, HDB, Kreditgeber und zuständigem Versicherer.",
+        "href": "/tools/bto-roadmap",
+        "label": "Finanzierungsplan öffnen"
+      },
+      "next": [
+        {
+          "href": "/guides/bto-cash-cpf-payment-timeline",
+          "title": "Bargeld- und CPF-Zahlungstermine prüfen"
+        },
+        {
+          "href": "/guides/cpf-oa-reserve-for-bto",
+          "title": "CPF-OA-Reserve vergleichen"
+        },
+        {
+          "href": "/guides/choosing-bto-white-flat-option",
+          "title": "Grundriss und schriftlichen Ausbauumfang prüfen"
+        }
+      ]
+    },
+    "zh-Hans": {
+      "category": "住房保障",
+      "title": "HPS、HDB 火险与家居保险：各自保障什么？",
+      "description": "先分清房贷保障、HDB 原有设施修复和私人家居保障，再判断装修或财物是否受保。",
+      "answer": "不会。HDB 火险不能取代 Home Protection Scheme（HPS），也不保障你的装修和个人财物。HPS 针对受保成员遭遇特定事故时的房贷风险；HDB 火险保障指定的 HDB 原有结构与设施。私人家居保险是否涵盖财物或装修，取决于保单。请分别核对受保人、财产、限额及有效日期。",
+      "sections": [
+        {
+          "heading": "先问三个不同的问题",
+          "paragraphs": [
+            "若受保借款人发生受保事故，房贷如何偿还？火灾后，哪些保障用于修复 HDB 原有设施？自己的装修与财物又由什么保障？一张保费收据不能同时回答这三个问题。",
+            "CPF Board 的比较说明区分 HPS、HDB 火险及私人家居保险。可用它开始核对文件，但不能据此认定你家已有有效保障。"
+          ],
+          "sources": [
+            {
+              "title": "CPF Board：三类保险的区别",
+              "href": "https://www.cpf.gov.sg/service/article/what-is-the-difference-between-home-protection-scheme-hdb-fire-insurance-and-home-insurance"
+            }
+          ]
+        },
+        {
+          "heading": "按借款人及贷款核对 HPS",
+          "paragraphs": [
+            "HPS 是递减式房贷保险，针对死亡、末期疾病或完全永久残疾等特定情况。索赔受计划条款约束；偿还贷款的金额受保额和受保比例限制。它不是装修维修基金。",
+            "核对每位屋主获批的保障、比例、贷款资料及保障期。CPF Board 说明，家庭合计受保比例应至少达到 100%，每位屋主可申请最高 100%。两位屋主不代表任何一方自动获得全额保障。若依靠其他人寿保险申请豁免，应按 CPF 现行流程确认批准，不能只看保单名称。"
+          ],
+          "sources": [
+            {
+              "title": "CPF Board：HPS 保障与豁免",
+              "href": "https://www.cpf.gov.sg/member/home-ownership/protecting-against-losing-your-home"
+            }
+          ]
+        },
+        {
+          "heading": "把 HDB 修复保障与自家装修分开",
+          "paragraphs": [
+            "HDB 火险说明涵盖修复指定的内部结构、设施及由 HDB 建造和提供的部分；不包括家具、装修及个人财物。恢复原有设施和更换家庭自行选择的装修，是两类不同支出。",
+            "HDB 贷款的保险要求不能用于推断银行贷款条款。请核对贷款机构要求和实际保险凭证。HDB 说明，1994 年 9 月 1 日起开始的 HDB 贷款，只要仍有未偿贷款，就须购买并每五年续保火险。应核对到期日，不要因为以前买过就认定仍然有效。"
+          ],
+          "sources": [
+            {
+              "title": "HDB：火险范围与续保",
+              "href": "https://www.hdb.gov.sg/managing-my-home/home-ownership/fire-insurance"
+            }
+          ]
+        },
+        {
+          "heading": "逐项阅读私人家居保障",
+          "paragraphs": [
+            "私人保单可能保障装修、财物或其他损失，但范围并不一致。先列出要核对的财产和风险，再找对应条款、保额、除外责任及可能的自付额。广告标题或“全面”字样不能代替保单明细。",
+            "CPF 的教育指南把这层额外保障与 HPS、HDB 火险分开说明。本文不推荐保险公司、保额或替代保单。把某项视为受保前，应先向保险公司澄清不明条款。"
+          ],
+          "sources": [
+            {
+              "title": "CPF Board：住房保障指南",
+              "href": "https://www.cpf.gov.sg/member/infohub/educational-resources/protect-your-home-insurance-for-your-hdb-flat"
+            }
+          ]
+        },
+        {
+          "heading": "试用三行文件核对表",
+          "paragraphs": [
+            "虚构例子：一对夫妇有 HPS 批准通知、旧火险收据及拟议厨房报价。表格分三行：借款人／贷款保障、HDB 原有设施修复、自家厨房与财物。每行记录实际文件、受保人或财产、期限、限额和待确认问题。",
+            "厨房报价说明拟议费用，不证明保险保障。旧收据仍需核对有效期。空白项目保持未知，直到相关文件或机构确认。不要把私人保单或健康资料放进共享选房清单；用中性文字记录尚缺的确认即可。"
+          ]
+        },
+        {
+          "heading": "把保险与购房资金分开",
+          "paragraphs": [
+            "用现有现金／CPF 付款时间表核对购房节点，用 OA 储备指南比较资金取舍。假设中的索赔或尚未确认的保险赔款，不是可用于购房的现金。请按真实文件，在独立家庭预算中记录保费和续保日期。",
+            "HPS 能代替火险吗？不能，两者针对不同风险。火险会保障新厨房吗？不要假定；应核对私人保单的装修保障。买了保单就代表索赔获批吗？不是，仍须看适用条款与实际事故。Where To BTO 帮助整理已公布的项目事实及示例资金假设，不核实个人保险，也不批准索赔。"
+          ]
+        }
+      ],
+      "callout": {
+        "title": "独立核对购房资金",
+        "text": "先用示例规划工具了解购房资金，再向 CPF、HDB、贷款机构及相关保险公司核实保险要求。",
+        "href": "/tools/bto-roadmap",
+        "label": "打开资金规划工具"
+      },
+      "next": [
+        {
+          "href": "/guides/bto-cash-cpf-payment-timeline",
+          "title": "核对现金与 CPF 付款日期"
+        },
+        {
+          "href": "/guides/cpf-oa-reserve-for-bto",
+          "title": "比较 CPF OA 储备选择"
+        },
+        {
+          "href": "/guides/choosing-bto-white-flat-option",
+          "title": "核对户型及书面装修范围"
+        }
+      ]
+    }
+  }
+}
