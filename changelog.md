@@ -109,3 +109,7 @@ Article retained in PR20: https://github.com/radiansnail-1/bto-narrowing-map/pul
 
 ## 2026-11-04 — PR21 source
 Added the complete five-language insurance distinction and fictional policy-document worksheet through the existing article loader. Existing project records, calculators and published guides remain unchanged. Source and translation review completed; normal validation and release remain pending.
+
+## 2026-11-05 — PR22 source
+
+Added complete five-language defect-reporting guidance. Updated seven existing project records with confirmed November launch facts and corrected HFE guidance for the open sales period. Expanded exact launch, CCA and responsive project checks. Existing publication dates and full-audit date remain preserved. Validation and production release are pending.

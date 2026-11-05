@@ -126,3 +126,7 @@ Article retained in PR20: https://github.com/radiansnail-1/bto-narrowing-map/pul
 
 ## 4 November 2026 — PR21
 Mortgage protection, reinstatement of HDB-provided elements and private contents cover are separate interests. A receipt or renovation quotation does not prove active cover. Compare actual covered people/property, periods, limits and conditions. Preserve Singapore-policy meaning and source URLs across translations; no insurer ranking or assumed individual approval.
+
+## 5 November 2026 — PR22
+
+Keep early defect reporting, the one-year DLP, individual assessment and actual repair scheduling separate. Retain item references through joint and closing inspections. A partial launch check leaves missing site values unverified; it does not prove HDB has not published them. Preserve existing project URLs and historical full-audit dates.
