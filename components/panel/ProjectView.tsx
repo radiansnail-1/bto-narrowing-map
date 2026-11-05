@@ -50,7 +50,7 @@ export function ProjectView({ project, match, answers, returnTo, onClose, onOpen
       </div>
       <div className="nearby-amenities" data-testid="project-amenities">
         <div className="criteria-summary-label">Screened within about 1 km</div>
-        {nearby.length === 0 ? <p className="result-empty">{project.position ? 'No official amenity record has been screened for this site yet.' : 'Amenity screening needs a published location; HDB has not published one yet.'}</p> : (
+        {nearby.length === 0 ? <p className="result-empty">{project.position ? 'No official amenity record has been screened for this site yet.' : 'Amenity screening needs a verified project location, which is missing from this record.'}</p> : (
           <ul className="nearby-list">
             {nearby.map((amenity) => (
               <li key={amenity.id}>

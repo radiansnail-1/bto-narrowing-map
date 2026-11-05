@@ -1,7 +1,7 @@
 import type { BtoProject } from '@/lib/types';
 
-/** Copy for facts HDB has not published. Never a generic "Unknown". */
-export const NOT_PUBLISHED = 'Not published by HDB yet';
+/** Missing values are unverified in this dated record; HDB may have newer material. */
+export const NOT_PUBLISHED = 'Not verified in this dated record';
 
 export function priceText(project: BtoProject): string | null {
   const priced = project.flatTypes.filter((item) => item.minPrice !== null);

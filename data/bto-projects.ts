@@ -43,7 +43,7 @@ function summary(record: SnapshotProject): string {
 }
 
 function dataNote(record: SnapshotProject): string {
-  if (!record.coordinates) return 'Map location unavailable: HDB has not published a defensible project coordinate.';
+  if (!record.coordinates) return 'Map location unavailable: this dated record has no verified project coordinate.';
   return record.coordinates.accuracy;
 }
 

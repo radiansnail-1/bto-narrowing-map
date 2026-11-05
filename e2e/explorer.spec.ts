@@ -46,25 +46,38 @@ const announcedCount = btoProjects.filter(project => project.launchStatus === 'a
 test('published November project facts stay readable at phone and desktop widths', async ({ page }) => {
   for (const width of [390, 1440]) {
     await page.setViewportSize({ width, height: 900 });
-    for (const [slug, name, wait] of [
-      ['nov-2026-sembawang-unnamed', 'Sembawang Anchor', '34 months'],
-      ['nov-2026-tengah-unnamed', 'Plantation Dew', '38 months'],
-      ['nov-2026-bayshore-oasis', 'Bayshore Oasis', '38 months'],
+    for (const [slug, name, classification, wait] of [
+      ['nov-2026-bedok-unnamed', 'Bayshore Sails', 'Plus', null],
+      ['nov-2026-bayshore-oasis', 'Bayshore Oasis', 'Plus', '38 months'],
+      ['nov-2026-geylang-unnamed', 'Merpati Meadow', 'Plus', null],
+      ['nov-2026-sembawang-unnamed', 'Sembawang Anchor', 'Standard', '34 months'],
+      ['nov-2026-tengah-unnamed', 'Plantation Dew', 'Standard', '38 months'],
+      ['nov-2026-yishun-unnamed', 'Chencharu Acres', 'Standard', null],
+      ['nov-2026-toa-payoh-west-caldecott', 'Toa Payoh Hillside', 'Prime', null],
     ]) {
       await page.goto('/bto-projects/' + slug);
-      await expect(page.getByRole('heading', { name, exact: true })).toBeVisible();
-      await expect(page.getByText(wait, { exact: true })).toBeVisible();
-      await expect(page.locator('.status-pill')).toHaveText('Upcoming');
-      await expect(page.locator('.fact-grid div').filter({ has: page.getByText('Classification', { exact: true }) }).locator('dd')).toHaveText('Not published by HDB yet');
-      await expect(page.locator('.fact-grid div').filter({ has: page.getByText('Map location', { exact: true }) }).locator('dd')).toHaveText('Not published by HDB yet');
-      await expect(page.locator('a[href*="1310-shorter-waiting-time-flats"]')).toBeVisible();
+      await expect(page.getByRole('heading', { name: name!, exact: true })).toBeVisible();
+      await expect(page.locator('.status-pill')).toHaveText('Launched');
+      await expect(page.locator('.fact-grid div').filter({ has: page.getByText('Classification', { exact: true }) }).locator('dd')).toHaveText(classification!);
+      await expect(page.locator('.fact-grid div').filter({ has: page.getByText('Estimated waiting time', { exact: true }) }).locator('dd')).toHaveText(wait ?? 'Not verified in this dated record');
+      const location = page.locator('.fact-grid div').filter({ has: page.getByText('Map location', { exact: true }) }).locator('dd');
+      if (slug === 'nov-2026-toa-payoh-west-caldecott') await expect(location).toContainText('Caldecott MRT anchor');
+      else await expect(location).toHaveText('Not verified in this dated record');
+      await expect(page.locator('table tbody tr')).not.toHaveCount(0);
+      await expect(page.locator('table tbody tr td:nth-child(3)').first()).toHaveText('Not verified in this dated record');
+      await expect(page.locator('.project-hero')).toContainText('11:59pm Singapore time on 11 November');
+      await expect(page.locator('a[href="https://www.mynicehome.gov.sg/get-started/hdb-bto-sales-launch/"]')).toBeVisible();
       expect(await page.evaluate(() => document.documentElement.scrollWidth)).toBeLessThanOrEqual(width);
     }
     await page.goto('/bto-projects/nov-2026-toa-payoh-west-caldecott');
-    await expect(page.getByRole('heading', { name: 'Toa Payoh Hillside', exact: true })).toBeVisible();
-    await expect(page.getByRole('row', { name: /Community Care Apartment/ })).toContainText('260');
+    await expect(page.getByRole('row', { name: /Community Care Apartment/ })).toContainText('256');
+    await expect(page.getByRole('row', { name: /Community Care Apartment/ })).not.toContainText('260');
     await expect(page.getByRole('row', { name: /Community Care Apartment/ })).not.toContainText('240');
     expect(await page.evaluate(() => document.documentElement.scrollWidth)).toBeLessThanOrEqual(width);
+    await page.goto('/guides/november-2026-bto-hfe-checklist');
+    await expect(page.locator('article')).toContainText('open 4–11 November');
+    await expect(page.locator('article')).toContainText('new HFE applications are suspended');
+    await expect(page.locator('meta[property="article:published_time"]')).toHaveAttribute('content', '2026-10-18');
   }
 });
 

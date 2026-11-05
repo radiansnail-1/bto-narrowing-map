@@ -14,7 +14,7 @@ export type ResultBucket = 'fits' | 'awaiting' | 'tradeoffs';
 
 export const RESULT_BUCKETS: ReadonlyArray<{ id: ResultBucket; title: string; description: string }> = [
   { id: 'fits', title: 'Fits all criteria', description: 'Every answered criterion is a confirmed pass.' },
-  { id: 'awaiting', title: 'Could fit — awaiting published data', description: 'No confirmed miss, but at least one answer depends on a fact HDB has not published yet.' },
+  { id: 'awaiting', title: 'Could fit — awaiting published data', description: 'No confirmed miss, but at least one answer depends on a fact not verified in this dated record.' },
   { id: 'tradeoffs', title: 'Has trade-offs', description: 'At least one answered criterion is a confirmed miss.' },
 ];
 
@@ -83,14 +83,14 @@ export function criterionAnswerLabel(key: CriterionKey, answers: ExplorerAnswers
 export function criterionReason(key: CriterionKey, status: MatchStatus, answers: ExplorerAnswers): string {
   if (status === 'unanswered') return 'Not used';
   if (key === 'commute') {
-    if (status === 'unknown') return 'Location not published';
+    if (status === 'unknown') return 'Location not verified in this record';
     return status === 'pass' ? 'Inside 5 km screen' : 'Outside 5 km screen';
   }
   if (key === 'budget') {
     if (status === 'unknown') {
       if (answers.flatType === null) return 'Choose a flat type';
       if (answers.maxBudget === null) return 'Add a maximum price to compare';
-      return 'Price not published';
+      return 'Price not verified in this record';
     }
     return status === 'pass' ? 'Starting price fits' : 'Starting price is above ceiling';
   }
@@ -98,6 +98,6 @@ export function criterionReason(key: CriterionKey, status: MatchStatus, answers:
     if (status === 'unknown') return 'Amenity records not attached';
     return status === 'pass' ? 'All chosen groups found' : 'Chosen groups missing';
   }
-  if (status === 'unknown') return 'Wait estimate not published';
+  if (status === 'unknown') return 'Wait estimate not verified in this record';
   return status === 'pass' ? 'Wait within selected band' : 'Wait outside selected band';
 }

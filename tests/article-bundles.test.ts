@@ -59,37 +59,57 @@ describe('five-language article publishing', () => {
   });
 });
 
-describe('partial November 2026 announcement reconciliation', () => {
-  it('uses the published wait in matching while unpublished price and location remain unknown', () => {
+describe('November 2026 launch reconciliation', () => {
+  it('uses the published wait while unverified price and location remain unknown after launch', () => {
     const answers: ExplorerAnswers = { workHubIds: [], customWorkplace: [0, 0], maxBudget: 600000, flatType: '4-room', amenityGroups: [], waitingBand: 'soon' };
     const anchor = projectById.get('nov-2026-sembawang-unnamed')!;
     expect(anchor.name).toBe('Sembawang Anchor');
     expect(anchor.estimatedWaitingTimeMonths).toBe(34);
+    expect(anchor.classification).toBe('Standard');
     expect(matchProject(anchor, answers)).toMatchObject({ waiting: 'pass', budget: 'unknown', commute: 'unknown' });
     for (const id of ['nov-2026-bayshore-oasis', 'nov-2026-tengah-unnamed']) {
       const project = projectById.get(id)!;
       expect(project.estimatedWaitingTimeMonths).toBe(38);
       expect(matchProject(project, answers).waiting).toBe('miss');
       expect(matchProject(project, { ...answers, waitingBand: 'mid' }).waiting).toBe('pass');
-      expect(project.classification).toBeNull();
+      expect(project.classification).toBe(id === 'nov-2026-bayshore-oasis' ? 'Plus' : 'Standard');
       expect(project.position).toBeNull();
-      expect(project.flatTypes.every(flat => flat.minPrice === null && flat.units === null)).toBe(true);
-      expect(project.launchStatus).toBe('announced_upcoming');
+      expect(project.flatTypes.every(flat => flat.minPrice === null && flat.maxPrice === null)).toBe(true);
+      expect(project.flatTypes.map(flat => flat.units)).toEqual(id === 'nov-2026-bayshore-oasis' ? [null, null] : [178, 84, 168, null, null]);
+      expect(project.launchStatus).toBe('launched');
+      expect(project.launchDate).toBe('2026-11-04');
     }
     expect(projectById.get('nov-2026-bedok-unnamed')!.estimatedWaitingTimeMonths).toBeNull();
+    expect(projectById.get('nov-2026-bedok-unnamed')!.name).toBe('Bayshore Sails');
     expect(projectById.get('nov-2026-bedok-unnamed')!.name).not.toBe(projectById.get('nov-2026-bayshore-oasis')!.name);
   });
-  it('separates revised CCA counts, sale units and rental units without advancing the full snapshot audit', () => {
+  it('keeps an independently specified pre-launch unknown fixture neutral', () => {
+    const announced = {
+      ...projectById.get('nov-2026-sembawang-unnamed')!,
+      launchStatus: 'announced_upcoming' as const,
+      launchDate: '2026-11',
+      classification: null,
+      position: null,
+      estimatedWaitingTimeMonths: null,
+      flatTypes: [{ type: '4-room' as const, minPrice: null, maxPrice: null, units: null, estimatedFloorAreaSqm: null, estimatedInternalFloorAreaSqm: null }],
+    };
+    const answers: ExplorerAnswers = { workHubIds: [], customWorkplace: [0, 0], maxBudget: 600000, flatType: '4-room', amenityGroups: [], waitingBand: 'soon' };
+    expect(matchProject(announced, answers)).toMatchObject({ waiting: 'unknown', budget: 'unknown', commute: 'unknown', missCount: 0 });
+    expect(announced.classification).toBeNull();
+    expect(announced.launchStatus).toBe('announced_upcoming');
+  });
+  it('separates exact launch CCA counts, sale units and earlier rental estimates without advancing the full audit', () => {
     const project = projectById.get('nov-2026-toa-payoh-west-caldecott')!;
     expect(project.name).toBe('Toa Payoh Hillside');
-    expect(project.flatTypes.find(flat => flat.type === 'Community Care Apartment (CCA)')!.units).toBe(260);
-    expect(project.approxBtoUnits).toBe(590 + 580 + 260);
+    expect(project.flatTypes.find(flat => flat.type === 'Community Care Apartment (CCA)')!.units).toBe(256);
+    expect(project.approxBtoUnits).toBe(592 + 584 + 256);
     expect(project.publicRentalUnitsApprox).toBe(230);
     expect(project.estimatedWaitingTimeMonths).toBeNull();
-    expect(project.classification).toBeNull();
+    expect(project.classification).toBe('Prime');
     expect(project.coordinateAccuracy).toContain('not the project centroid');
     expect(snapshot.lastAuditDate).toBe('2026-08-28');
     expect(snapshot.scope.projectCount).toBe(snapshot.projects.length);
-    expect(snapshot.projects.find(record => record.id === 'nov-2026-geylang-unnamed')!.checkedDate).toBe('2026-08-28');
+    expect(snapshot.projects.find(record => record.id === 'nov-2026-geylang-unnamed')!.checkedDate).toBe('2026-11-05');
+    expect(snapshot.projects.find(record => record.id === 'sembawang-voyage')!.checkedDate).toBe('2026-08-27');
   });
 });
