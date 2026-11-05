@@ -171,3 +171,7 @@ PR20: https://github.com/radiansnail-1/bto-narrowing-map/pull/20 . Complete en/e
 
 ## 4 November 2026 — PR21
 PR21 retains the new HPS, HDB fire insurance and home insurance guide in data/article-bundles/hps-fire-home-insurance.json, complete in en/es/fr/de/zh-Hans. Six sections and twelve paragraphs per language manually reviewed. PR19/20 remain completed history. Next: exact-head tests, both builds, ten layouts, actual keyboard/map/calculator review, checked merge/release and live verification. Existing owner tasks and PR5 remain preserved. Not yet published.
+
+## 5 November 2026 — PR22
+
+PR22: https://github.com/radiansnail-1/bto-narrowing-map/pull/22 . The complete five-language defects guide is retained in data/article-bundles/bto-defects-before-renovation.json. Source and translation review completed. Seven existing project records now reflect confirmed 4 November launch facts; missing prices and coordinates remain unverified. Existing HFE guidance now reflects the open sales period while preserving its original publication date. Tests, builds, layouts and checked production release are pending. Continue this same article and branch. PR21 is completed history. Preserve all existing owner tasks and PR5.
