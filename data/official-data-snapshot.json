@@ -3,14 +3,38 @@
   "lastAuditDate": "2026-08-28",
   "scope": {
     "definition": "Named BTO projects launched in the February and June 2026 exercises, plus BTO projects officially announced for the November 2026 exercise and other future projects (Lakeview, Shunfu, Pearl's Hill) for which HDB has published facts.",
-    "latestSalesExercise": "June 2026 BTO (the most recent named exercise at the snapshot date)",
-    "upcomingExercise": "November 2026 BTO (HDB moved the previously announced October exercise to November on 2026-08-22)",
+    "latestSalesExercise": "November 2026 BTO (launched 4 November 2026)",
+    "upcomingExercise": "Next exercise not verified in this partial check",
     "projectCount": 23,
-    "namedLaunchedProjectCount": 13,
-    "upcomingRecordCount": 10,
-    "caveat": "Partial project update checked 2 November 2026 against HDB announcements of 31 October and 1 November. Three named projects and Toa Payoh Hillside have some published facts; the additional Bedok, Geylang and Yishun buckets retain unknown fields. Announcement is not launch; exact application dates, classification and prices remain unpublished. Older records retain their own checked dates."
+    "namedLaunchedProjectCount": 20,
+    "upcomingRecordCount": 3,
+    "caveat": "Partial check on 5 November against official 4 November launch material: seven existing November records now have confirmed names, classification, flat mix, sales supply and 4–11 November application window. Price ranges, exact coordinates and missing waits are unverified here, not assumed unavailable from HDB. Older project checks and the 28 August full audit remain unchanged."
   },
   "sources": [
+    {
+      "id": "hdb-november-2026-launch-mynicehome",
+      "agency": "HDB",
+      "title": "November 2026 Sales Launch — official MyNiceHome, updated 4 November 2026",
+      "url": "https://www.mynicehome.gov.sg/get-started/hdb-bto-sales-launch/",
+      "checkedDate": "2026-11-05",
+      "usage": "Partial source check: seven launched project names/classifications/types/supply and published street bounds. Not a complete price, wait or coordinate audit. HFE preparation advice on this page differs from the older August announcement; preserve attribution and require a valid issued letter rather than promise eligibility."
+    },
+    {
+      "id": "hdb-november-2026-sales-window",
+      "agency": "HDB",
+      "title": "November 2026 BTO sales landing page",
+      "url": "https://www.hdb.gov.sg/sales-launch",
+      "checkedDate": "2026-11-05",
+      "usage": "7,964 flats across seven projects, application closing11November11:59pmSingaporetime; ballot not first come."
+    },
+    {
+      "id": "hdb-november-2026-supply",
+      "agency": "HDB",
+      "title": "November 2026 flat supply and applications received",
+      "url": "https://services-homes.hdb.gov.sg/sales/application-rate/bto/202611",
+      "checkedDate": "2026-11-05",
+      "usage": "Official indexed4Novsupply counts and4–11Novapplicationperiod. Live application counts are volatile and not copied into the static site; combined Bedok counts are not split by inference."
+    },
     {
       "id": "hdb-november-2026-shorter-waiting-time-announcement",
       "agency": "HDB",
@@ -1320,24 +1344,28 @@
       "region": "West",
       "launch": {
         "exercise": "November 2026 BTO",
-        "launchDate": "2026-11",
-        "status": "announced_upcoming"
+        "launchDate": "2026-11-04",
+        "status": "launched",
+        "applicationWindow": [
+          "2026-11-04",
+          "2026-11-11"
+        ]
       },
-      "classification": null,
+      "classification": "Standard",
       "estimatedWaitingTimeMonths": 38,
       "estimatedCompletionDate": null,
       "flatTypes": [
         {
           "type": "2-room Flexi",
-          "units": null
+          "units": 178
         },
         {
           "type": "3-room",
-          "units": null
+          "units": 84
         },
         {
           "type": "4-room",
-          "units": null
+          "units": 168
         },
         {
           "type": "5-room",
@@ -1353,35 +1381,63 @@
       "amenityIds": [],
       "sourceUrls": [
         "https://www.hdb.gov.sg/hdb-pulse/news/2026/increase-in-income-ceilings-and-greater-support-for-families-with-children",
-        "https://www.hdb.gov.sg/hdb-pulse/news/2026/1310-shorter-waiting-time-flats-to-be-offered-in-november-2026-bto-exercise"
+        "https://www.hdb.gov.sg/hdb-pulse/news/2026/1310-shorter-waiting-time-flats-to-be-offered-in-november-2026-bto-exercise",
+        "https://www.mynicehome.gov.sg/get-started/hdb-bto-sales-launch/",
+        "https://services-homes.hdb.gov.sg/sales/application-rate/bto/202611",
+        "https://www.hdb.gov.sg/sales-launch"
       ],
-      "checkedDate": "2026-11-02",
-      "publishedNote": "HDB (1 Nov 2026): 710 flats for sale; waiting time 3 years 2 months. Bounded by Tengah Garden Avenue, Plantation Walk and a future park. White Flat option announced for 3-, 4- and 5-room flats; new amenities and transport remain planned. Prices, classification, exact coordinates, per-type and rental counts remain unpublished.",
+      "checkedDate": "2026-11-05",
+      "publishedNote": "HDB launch material updated 4 Nov 2026, checked 5 Nov: 710 flats for sale; Standard project. Bounded by Tengah Garden Avenue and Plantation Walk. Application period 4–11 November 2026, closing 11:59pm Singapore time on 11 November; allocation is by ballot, not first come. This partial check verifies name, classification, flat types and sales supply, not a complete price or location audit. Prices, floor areas, completion dates and any missing per-type counts or map coordinates remain unverified in this record; consult the current HDB Flat Portal. Planned facilities are not operating amenities. The 38-month wait remains the estimate in HDB's 1 November announcement. White Flat is offered for 3-, 4- and 5-room units; exact option terms require current project documents.",
       "approxBtoUnits": 710
     },
     {
       "id": "nov-2026-yishun-unnamed",
-      "canonicalName": null,
-      "displayName": "Yishun — November 2026 BTO release (project name not published)",
+      "canonicalName": "Chencharu Acres",
+      "displayName": "Chencharu Acres",
       "town": "Yishun",
       "region": "North",
       "launch": {
         "exercise": "November 2026 BTO",
-        "launchDate": "2026-11",
-        "status": "announced_upcoming"
+        "launchDate": "2026-11-04",
+        "status": "launched",
+        "applicationWindow": [
+          "2026-11-04",
+          "2026-11-11"
+        ]
       },
-      "classification": null,
+      "classification": "Standard",
       "estimatedWaitingTimeMonths": null,
       "estimatedCompletionDate": null,
-      "flatTypes": null,
+      "flatTypes": [
+        {
+          "type": "2-room Flexi",
+          "units": 392
+        },
+        {
+          "type": "3-room",
+          "units": 84
+        },
+        {
+          "type": "4-room",
+          "units": 462
+        },
+        {
+          "type": "5-room",
+          "units": 644
+        }
+      ],
       "approxUnits": null,
       "coordinates": null,
       "amenityIds": [],
       "sourceUrls": [
-        "https://www.hdb.gov.sg/hdb-pulse/news/2026/increase-in-income-ceilings-and-greater-support-for-families-with-children"
+        "https://www.hdb.gov.sg/hdb-pulse/news/2026/increase-in-income-ceilings-and-greater-support-for-families-with-children",
+        "https://www.mynicehome.gov.sg/get-started/hdb-bto-sales-launch/",
+        "https://services-homes.hdb.gov.sg/sales/application-rate/bto/202611",
+        "https://www.hdb.gov.sg/sales-launch"
       ],
-      "checkedDate": "2026-08-28",
-      "publishedNote": "HDB (23 Aug 2026): project details, including classification, will be shared at the November 2026 launch; applicants should submit HFE letter documents by 25 September 2026."
+      "checkedDate": "2026-11-05",
+      "publishedNote": "HDB launch material updated 4 Nov 2026, checked 5 Nov: 1,582 flats for sale; Standard project. Bounded by Yishun Street 82, Yishun Walk and Yishun Avenue 2. Application period 4–11 November 2026, closing 11:59pm Singapore time on 11 November; allocation is by ballot, not first come. This partial check verifies name, classification, flat types and sales supply, not a complete price or location audit. Prices, floor areas, completion dates and any missing per-type counts or map coordinates remain unverified in this record; consult the current HDB Flat Portal. Planned facilities are not operating amenities.",
+      "approxBtoUnits": 1582
     },
     {
       "id": "nov-2026-toa-payoh-west-caldecott",
@@ -1392,26 +1448,30 @@
       "launch": {
         "exercise": "November 2026 BTO",
         "initiallyAnnouncedLaunchDate": "2026-10",
-        "launchDate": "2026-11",
-        "status": "announced_upcoming"
+        "launchDate": "2026-11-04",
+        "status": "launched",
+        "applicationWindow": [
+          "2026-11-04",
+          "2026-11-11"
+        ]
       },
-      "classification": null,
+      "classification": "Prime",
       "estimatedWaitingTimeMonths": null,
       "estimatedCompletionDate": null,
       "approxUnitsTotal": 1600,
-      "approxBtoUnits": 1430,
+      "approxBtoUnits": 1432,
       "flatTypes": [
         {
           "type": "2-room Flexi",
-          "units": 590
+          "units": 592
         },
         {
           "type": "4-room",
-          "units": 580
+          "units": 584
         },
         {
           "type": "Community Care Apartment (CCA)",
-          "units": 260
+          "units": 256
         }
       ],
       "publicRentalUnitsApprox": 230,
@@ -1430,10 +1490,13 @@
         "https://www.hdb.gov.sg/hdb-pulse/news/2026/increase-in-income-ceilings-and-greater-support-for-families-with-children",
         "https://www.hdb.gov.sg/hdb-pulse/news/2026/public-housing-projects-will-be-developed-in-pearls-hill-and-toa-payoh-west",
         "https://www.onemap.gov.sg/api/common/elastic/search?searchVal=Caldecott%20MRT%20Station&returnGeom=Y&getAddrDetails=Y&pageNum=1",
-        "https://www.hdb.gov.sg/hdb-pulse/news/2026/hdb-unveils-master-plan-for-toa-payoh-west"
+        "https://www.hdb.gov.sg/hdb-pulse/news/2026/hdb-unveils-master-plan-for-toa-payoh-west",
+        "https://www.mynicehome.gov.sg/get-started/hdb-bto-sales-launch/",
+        "https://services-homes.hdb.gov.sg/sales/application-rate/bto/202611",
+        "https://www.hdb.gov.sg/sales-launch"
       ],
-      "checkedDate": "2026-11-02",
-      "publishedNote": "HDB (31 Oct 2026): 590 2-room Flexi, 580 4-room and 260 Community Care Apartments, plus about 230 rental flats; the broad total remains stated as about 1,600. CCA count revised from 240 to 260. CCA eligibility age reduces to 55 from the November 2026 sales exercise; other eligibility conditions still apply. Exact launch dates, prices, classification and wait remain unpublished. Caldecott MRT is only an approximate map anchor; planned facilities are not operating amenities."
+      "checkedDate": "2026-11-05",
+      "publishedNote": "HDB launch material updated 4 Nov 2026, checked 5 Nov: 1,432 flats for sale; Prime project. Bounded by Toa Payoh Rise and Toa Payoh Link. Application period 4–11 November 2026, closing 11:59pm Singapore time on 11 November; allocation is by ballot, not first come. This partial check verifies name, classification, flat types and sales supply, not a complete price or location audit. Prices, floor areas, completion dates and any missing per-type counts or map coordinates remain unverified in this record; consult the current HDB Flat Portal. Planned facilities are not operating amenities. Current supply is 592 2-room Flexi, 584 4-room and 256 CCAs, superseding the 31 October approximate sold-flat counts; about 230 rental flats remain a separate earlier announcement. CCA minimum age is 55 from this exercise, subject to other conditions. The Caldecott map point is still an approximate station anchor, not a project centroid."
     },
     {
       "id": "lakeview-second-unnamed",
