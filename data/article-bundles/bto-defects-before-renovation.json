@@ -1,0 +1,598 @@
+{
+  "slug": "bto-defects-before-renovation",
+  "publishedDate": "2026-11-05",
+  "checkedDate": "2026-11-05",
+  "updatedDate": "2026-11-05",
+  "translations": {
+    "en": {
+      "category": "Key collection and move-in",
+      "title": "BTO defects before renovation: what to record and report",
+      "description": "Keep a room-by-room condition record, report through HDB’s official route and track joint and closing inspections before renovation changes the evidence.",
+      "answer": "Inspect the flat systematically after key collection, record each concern clearly and report it through the official Building Service Centre (BSC) or online route before renovation. Keep the acknowledgement, agreed action and closing inspection result. HDB’s move-in guide says to report within 30 days and before works; its one-year Defects Liability Period (DLP) is a separate timeframe. Ask BSC about your actual dates and any unresolved item.",
+      "sections": [
+        {
+          "heading": "Start with your key date and supplied components",
+          "paragraphs": [
+            "Write down the actual key-collection date, project and flat reference, and the components supplied with your unit. Use the Welcome Kit and your purchase documents, including optional components, rather than another owner’s photos as the delivery checklist.",
+            "Inspect one space at a time and assign each concern a short reference such as kitchen-01. HDB’s move-in guide recommends systematic checks and marking concerns with painter’s tape or notes. Describe what you see without deciding the cause or promising that every imperfection qualifies for repair."
+          ],
+          "sources": [
+            {
+              "title": "HDB MyNiceHome: move-in and defects checks, updated 27 July 2026",
+              "href": "https://www.mynicehome.gov.sg/get-settled-in/hdb-move-in-guide/"
+            }
+          ]
+        },
+        {
+          "heading": "Make each record easy to locate and understand",
+          "paragraphs": [
+            "For each item, keep room, exact position, date, observation, photo reference and question. A wider photo can locate the item; a closer photo can show the concern. Keep the original files and note later changes separately. Avoid personal documents or people in pictures shared for assessment.",
+            "Fictional example: kitchen-01, lower edge of supplied cabinet door, photographed before works, visible mark, question: please assess whether rectification is needed. This records an observation; it does not prove defective workmanship. HDB notes that slight colour or grout-width variations can be normal material or construction characteristics."
+          ],
+          "sources": [
+            {
+              "title": "HDB MyNiceHome: normal variations and systematic inspection",
+              "href": "https://www.mynicehome.gov.sg/get-settled-in/hdb-move-in-guide/"
+            }
+          ]
+        },
+        {
+          "heading": "Keep the reporting instruction and DLP separate",
+          "paragraphs": [
+            "The move-in guide states that defects must be reported within 30 days of key collection, before renovation begins. It explains that reporting after works makes responsibility harder to establish. Record that early reporting instruction alongside the one-year DLP, which the guide says starts at key collection.",
+            "HDB’s rectification page provides an online or BSC route within the one-year DLP. If 30 days have passed, works have started or a new concern appears, contact BSC promptly with the actual history. Do not infer automatic loss of all coverage or approval from either timeframe; ask for the applicable assessment and next step."
+          ],
+          "sources": [
+            {
+              "title": "HDB MyNiceHome: reporting timing and DLP",
+              "href": "https://www.mynicehome.gov.sg/get-settled-in/hdb-move-in-guide/"
+            },
+            {
+              "title": "HDB: rectification within and after the one-year DLP",
+              "href": "https://www.hdb.gov.sg/managing-my-home/renovation-and-maintenance/rectification-of-defects-in-new-flats"
+            }
+          ]
+        },
+        {
+          "heading": "Submit through the official route and track the response",
+          "paragraphs": [
+            "Use the Welcome Kit QR code or contact the BSC for your project, checking that the destination is the official service. HDB also identifies an online rectification route. Keep your submitted list, date, reference and acknowledgement; an unsent list or a message to a renovation contractor is not that acknowledgement.",
+            "The move-in guide describes BSC review, a joint inspection to verify issues, rectification and a closing inspection. Take the same item references to the joint inspection and record the agreed action or explanation for each. If an item is not accepted or needs more information, keep it as an open question rather than marking it repaired."
+          ],
+          "sources": [
+            {
+              "title": "HDB MyNiceHome: BSC and inspection process",
+              "href": "https://www.mynicehome.gov.sg/get-settled-in/hdb-move-in-guide/"
+            },
+            {
+              "title": "HDB: official rectification routes",
+              "href": "https://www.hdb.gov.sg/managing-my-home/renovation-and-maintenance/rectification-of-defects-in-new-flats"
+            }
+          ]
+        },
+        {
+          "heading": "Coordinate repairs and renovation using actual arrangements",
+          "paragraphs": [
+            "Ask BSC about access, planned work and the next inspection before fixing renovation dates around an assumed completion day. The guide describes repairs as typically taking less than two weeks; that is not a deadline promised for your item. Keep any actual scheduling confirmation with your record.",
+            "Avoid altering a disputed area merely to make a photo look clearer. Do not dismantle electrical, plumbing or structural elements to diagnose a concern yourself. Renovation approval is a separate process: HDB requires listed renovation contractors and prior permission for specified works. A defect report does not approve your renovation plan."
+          ],
+          "sources": [
+            {
+              "title": "HDB MyNiceHome: repair scheduling",
+              "href": "https://www.mynicehome.gov.sg/get-settled-in/hdb-move-in-guide/"
+            },
+            {
+              "title": "HDB: renovation responsibilities and approvals",
+              "href": "https://www.hdb.gov.sg/managing-my-home/renovation-and-maintenance/renovation/important-information-on-renovations"
+            }
+          ]
+        },
+        {
+          "heading": "Close each item with evidence, not just a completed visit",
+          "paragraphs": [
+            "At the closing inspection, compare each item with the original observation and agreed work. Record inspection date, outcome and any remaining concern or follow-up. A visit taking place does not establish that every item is resolved. Ask BSC how an unresolved item will be handled and keep its response.",
+            "After the one-year DLP, HDB’s page points owners to a repair contractor and says they can approach their HDB Branch for further assistance. Use the applicable route for your circumstances. Where To BTO helps organise project comparisons and planning questions; it does not inspect flats, certify repairs or decide liability."
+          ],
+          "sources": [
+            {
+              "title": "HDB: assistance after the one-year DLP",
+              "href": "https://www.hdb.gov.sg/managing-my-home/renovation-and-maintenance/rectification-of-defects-in-new-flats"
+            }
+          ]
+        }
+      ],
+      "callout": {
+        "title": "Keep project choice and move-in checks connected",
+        "text": "Use the source-linked project records for location comparisons, and keep your own condition and repair record with the official BSC correspondence.",
+        "href": "/bto-projects",
+        "label": "Browse project records"
+      },
+      "next": [
+        {
+          "href": "/guides/choosing-bto-white-flat-option",
+          "title": "Check supplied layout and written work scope"
+        },
+        {
+          "href": "/guides/hps-fire-home-insurance",
+          "title": "Separate repair questions from insurance cover"
+        },
+        {
+          "href": "/guides/bto-flat-booking-appointment-checklist",
+          "title": "Review the earlier booking preparation stage"
+        }
+      ]
+    },
+    "es": {
+      "category": "Entrega de llaves y mudanza",
+      "title": "Defectos del BTO antes de reformar: qué registrar y comunicar",
+      "description": "Documenta el estado por estancia, utiliza el canal oficial de HDB y sigue las inspecciones conjunta y final antes de que las obras alteren las pruebas.",
+      "answer": "Revisa la vivienda de forma sistemática tras recibir las llaves, documenta cada incidencia y comunícala al Building Service Centre (BSC) o por la vía oficial en línea antes de reformar. Conserva el acuse, la actuación acordada y el resultado de la inspección final. HDB indica comunicar los defectos en 30 días y antes de las obras; el Defects Liability Period (DLP) de un año es otro plazo. Consulta al BSC sobre tus fechas e incidencias pendientes.",
+      "sections": [
+        {
+          "heading": "Empieza por la fecha de entrega y los componentes incluidos",
+          "paragraphs": [
+            "Anota la fecha real de entrega de llaves, el proyecto, la referencia de la vivienda y los componentes suministrados. Usa el Welcome Kit y los documentos de compra, incluidos los componentes opcionales, como lista de entrega; no las fotos de otro propietario.",
+            "Revisa una estancia cada vez y asigna una referencia breve a cada incidencia, como cocina-01. La guía de HDB recomienda una revisión sistemática y marcar los puntos con cinta de pintor o notas. Describe lo observado sin decidir la causa ni prometer que toda imperfección da derecho a reparación."
+          ],
+          "sources": [
+            {
+              "title": "HDB MyNiceHome: mudanza y revisión, actualizado el 27 de julio de 2026",
+              "href": "https://www.mynicehome.gov.sg/get-settled-in/hdb-move-in-guide/"
+            }
+          ]
+        },
+        {
+          "heading": "Haz que cada registro sea fácil de localizar y entender",
+          "paragraphs": [
+            "Por cada punto, conserva estancia, posición exacta, fecha, observación, referencia de foto y pregunta. Una foto amplia sitúa el elemento; otra cercana muestra el problema. Guarda los archivos originales y registra por separado los cambios posteriores. Evita documentos personales o personas en las fotos compartidas para valoración.",
+            "Ejemplo ficticio: cocina-01, borde inferior de una puerta de armario suministrada, foto anterior a las obras, marca visible, pregunta: valorar si necesita reparación. Es una observación, no prueba de mala ejecución. HDB señala que pequeñas variaciones de color o de anchura de juntas pueden ser características normales del material o la construcción."
+          ],
+          "sources": [
+            {
+              "title": "HDB MyNiceHome: variaciones normales e inspección sistemática",
+              "href": "https://www.mynicehome.gov.sg/get-settled-in/hdb-move-in-guide/"
+            }
+          ]
+        },
+        {
+          "heading": "Distingue la instrucción de comunicación del DLP",
+          "paragraphs": [
+            "La guía de mudanza indica que los defectos deben comunicarse en los 30 días siguientes a la entrega de llaves y antes de reformar. Explica que hacerlo después dificulta determinar responsabilidades. Anota esa instrucción temprana junto al DLP de un año, que según la guía comienza con la entrega.",
+            "La página de reparación de HDB ofrece la vía en línea o el BSC durante el DLP de un año. Si han pasado 30 días, han comenzado las obras o aparece otra incidencia, contacta pronto con el BSC aportando la historia real. Ninguno de esos plazos permite deducir por sí solo la pérdida automática de toda cobertura o una aprobación; solicita la valoración y el siguiente paso aplicables."
+          ],
+          "sources": [
+            {
+              "title": "HDB MyNiceHome: comunicación y DLP",
+              "href": "https://www.mynicehome.gov.sg/get-settled-in/hdb-move-in-guide/"
+            },
+            {
+              "title": "HDB: reparación durante y después del DLP de un año",
+              "href": "https://www.hdb.gov.sg/managing-my-home/renovation-and-maintenance/rectification-of-defects-in-new-flats"
+            }
+          ]
+        },
+        {
+          "heading": "Utiliza el canal oficial y conserva la respuesta",
+          "paragraphs": [
+            "Usa el QR del Welcome Kit o contacta con el BSC de tu proyecto y comprueba que el destino sea el servicio oficial. HDB también identifica una vía de reparación en línea. Guarda la lista enviada, fecha, referencia y acuse; una lista sin enviar o un mensaje al contratista de reformas no es ese acuse.",
+            "La guía describe revisión del BSC, inspección conjunta para verificar las incidencias, reparación e inspección final. Lleva las mismas referencias y registra la actuación o explicación acordada para cada una. Si un punto no se acepta o necesita información, déjalo pendiente en vez de marcarlo reparado."
+          ],
+          "sources": [
+            {
+              "title": "HDB MyNiceHome: BSC e inspecciones",
+              "href": "https://www.mynicehome.gov.sg/get-settled-in/hdb-move-in-guide/"
+            },
+            {
+              "title": "HDB: vías oficiales de reparación",
+              "href": "https://www.hdb.gov.sg/managing-my-home/renovation-and-maintenance/rectification-of-defects-in-new-flats"
+            }
+          ]
+        },
+        {
+          "heading": "Coordina reparaciones y reformas con acuerdos reales",
+          "paragraphs": [
+            "Pregunta al BSC por el acceso, los trabajos previstos y la próxima inspección antes de fijar la reforma según una fecha supuesta de finalización. La guía dice que las reparaciones suelen durar menos de dos semanas; no promete ese plazo para tu incidencia. Conserva cualquier confirmación real de calendario.",
+            "No modifiques una zona en discusión solo para aclarar una foto. No desmontes elementos eléctricos, de fontanería o estructurales para diagnosticarlos. La autorización de reforma es otro proceso: HDB exige contratistas de su directorio y permiso previo para determinados trabajos. Comunicar un defecto no autoriza tu reforma."
+          ],
+          "sources": [
+            {
+              "title": "HDB MyNiceHome: calendario de reparación",
+              "href": "https://www.mynicehome.gov.sg/get-settled-in/hdb-move-in-guide/"
+            },
+            {
+              "title": "HDB: responsabilidades y autorizaciones de reforma",
+              "href": "https://www.hdb.gov.sg/managing-my-home/renovation-and-maintenance/renovation/important-information-on-renovations"
+            }
+          ]
+        },
+        {
+          "heading": "Cierra cada punto con pruebas, no solo con una visita",
+          "paragraphs": [
+            "En la inspección final, compara cada elemento con la observación original y los trabajos acordados. Registra fecha, resultado y cualquier incidencia o seguimiento pendiente. Que se haya celebrado una visita no demuestra que todo esté resuelto. Pregunta al BSC cómo tratará lo pendiente y guarda la respuesta.",
+            "Después del DLP de un año, HDB remite a un contratista de reparación y señala que se puede pedir ayuda adicional a la HDB Branch. Utiliza la vía aplicable a tu caso. Where To BTO ayuda a organizar comparaciones de proyectos y preguntas de planificación; no inspecciona viviendas, certifica reparaciones ni decide responsabilidades."
+          ],
+          "sources": [
+            {
+              "title": "HDB: ayuda después del DLP de un año",
+              "href": "https://www.hdb.gov.sg/managing-my-home/renovation-and-maintenance/rectification-of-defects-in-new-flats"
+            }
+          ]
+        }
+      ],
+      "callout": {
+        "title": "Conecta la elección del proyecto con la preparación de la mudanza",
+        "text": "Usa los registros con fuentes para comparar ubicaciones y conserva tu registro de estado y reparación junto a la correspondencia oficial del BSC.",
+        "href": "/bto-projects",
+        "label": "Ver registros de proyectos"
+      },
+      "next": [
+        {
+          "href": "/guides/choosing-bto-white-flat-option",
+          "title": "Revisar distribución y alcance escrito de las obras"
+        },
+        {
+          "href": "/guides/hps-fire-home-insurance",
+          "title": "Separar reparaciones de cobertura de seguros"
+        },
+        {
+          "href": "/guides/bto-flat-booking-appointment-checklist",
+          "title": "Revisar la preparación previa de la reserva"
+        }
+      ]
+    },
+    "fr": {
+      "category": "Remise des clés et emménagement",
+      "title": "Défauts du BTO avant rénovation : que consigner et signaler ?",
+      "description": "Documentez l’état pièce par pièce, utilisez le canal officiel HDB et suivez les inspections conjointe et finale avant que les travaux modifient les preuves.",
+      "answer": "Inspectez méthodiquement le logement après la remise des clés, consignez chaque problème et signalez-le au Building Service Centre (BSC) ou par le canal officiel en ligne avant rénovation. Gardez l’accusé, l’action convenue et le résultat de l’inspection finale. HDB demande un signalement sous 30 jours et avant travaux ; le Defects Liability Period (DLP) d’un an est un délai distinct. Interrogez le BSC sur vos dates et les points non résolus.",
+      "sections": [
+        {
+          "heading": "Commencez par la date des clés et les éléments fournis",
+          "paragraphs": [
+            "Notez la date réelle de remise des clés, le projet, la référence du logement et les éléments livrés. Utilisez le Welcome Kit et vos documents d’achat, composants optionnels compris, plutôt que les photos d’un autre propriétaire pour vérifier la livraison.",
+            "Inspectez une pièce à la fois et attribuez un repère court à chaque point, par exemple cuisine-01. Le guide HDB recommande un contrôle systématique et des repères avec ruban de peintre ou notes. Décrivez l’observation sans en décider la cause ni promettre que toute imperfection sera réparée."
+          ],
+          "sources": [
+            {
+              "title": "HDB MyNiceHome : emménagement et contrôle, mise à jour du 27 juillet 2026",
+              "href": "https://www.mynicehome.gov.sg/get-settled-in/hdb-move-in-guide/"
+            }
+          ]
+        },
+        {
+          "heading": "Rendez chaque observation facile à situer et comprendre",
+          "paragraphs": [
+            "Pour chaque point, gardez pièce, emplacement précis, date, observation, référence photo et question. Une vue large situe l’élément ; un gros plan montre le problème. Conservez les fichiers originaux et notez séparément les changements ultérieurs. Évitez documents personnels et personnes sur les photos transmises pour évaluation.",
+            "Exemple fictif : cuisine-01, bord inférieur d’une porte de placard fournie, photo avant travaux, marque visible, question : faut-il une réparation ? Cela consigne une observation, sans prouver une malfaçon. HDB précise que de légères différences de couleur ou de largeur des joints peuvent être des caractéristiques normales des matériaux ou de la construction."
+          ],
+          "sources": [
+            {
+              "title": "HDB MyNiceHome : variations normales et contrôle systématique",
+              "href": "https://www.mynicehome.gov.sg/get-settled-in/hdb-move-in-guide/"
+            }
+          ]
+        },
+        {
+          "heading": "Distinguez l’instruction de signalement et le DLP",
+          "paragraphs": [
+            "Le guide demande de signaler les défauts dans les 30 jours suivant la remise des clés, avant de commencer les rénovations. Il explique qu’après travaux, l’attribution de la responsabilité devient plus difficile. Notez cette instruction précoce à côté du DLP d’un an, qui commence à la remise des clés selon le guide.",
+            "La page HDB sur les réparations propose le canal en ligne ou le BSC pendant le DLP d’un an. Si 30 jours sont passés, si les travaux ont commencé ou si un nouveau problème apparaît, contactez rapidement le BSC avec l’historique réel. Aucun de ces délais ne suffit à conclure à une perte automatique de toute couverture ou à une acceptation ; demandez l’évaluation et la suite applicables."
+          ],
+          "sources": [
+            {
+              "title": "HDB MyNiceHome : délais de signalement et DLP",
+              "href": "https://www.mynicehome.gov.sg/get-settled-in/hdb-move-in-guide/"
+            },
+            {
+              "title": "HDB : réparations pendant et après le DLP d’un an",
+              "href": "https://www.hdb.gov.sg/managing-my-home/renovation-and-maintenance/rectification-of-defects-in-new-flats"
+            }
+          ]
+        },
+        {
+          "heading": "Utilisez le canal officiel et suivez la réponse",
+          "paragraphs": [
+            "Utilisez le QR du Welcome Kit ou contactez le BSC de votre projet en vérifiant que la destination est le service officiel. HDB indique aussi un canal de réparation en ligne. Gardez liste envoyée, date, référence et accusé ; une liste non transmise ou un message à l’entrepreneur de rénovation ne constitue pas cet accusé.",
+            "Le guide décrit l’examen par le BSC, une inspection conjointe pour vérifier les points, les réparations puis une inspection finale. Utilisez les mêmes repères et notez l’action ou l’explication convenue pour chacun. Si un point n’est pas accepté ou nécessite des informations, gardez-le ouvert plutôt que de le déclarer réparé."
+          ],
+          "sources": [
+            {
+              "title": "HDB MyNiceHome : BSC et inspections",
+              "href": "https://www.mynicehome.gov.sg/get-settled-in/hdb-move-in-guide/"
+            },
+            {
+              "title": "HDB : canaux officiels de réparation",
+              "href": "https://www.hdb.gov.sg/managing-my-home/renovation-and-maintenance/rectification-of-defects-in-new-flats"
+            }
+          ]
+        },
+        {
+          "heading": "Coordonnez réparations et rénovation avec un calendrier confirmé",
+          "paragraphs": [
+            "Interrogez le BSC sur l’accès, les travaux prévus et la prochaine inspection avant de caler la rénovation sur une date de fin supposée. Le guide évoque une durée habituelle inférieure à deux semaines ; ce n’est pas un délai garanti pour votre problème. Conservez toute confirmation réelle du calendrier.",
+            "Ne modifiez pas une zone contestée simplement pour rendre une photo plus claire. Ne démontez pas d’éléments électriques, de plomberie ou de structure pour établir vous-même un diagnostic. L’autorisation de rénovation est distincte : HDB exige des entrepreneurs inscrits et un accord préalable pour certains travaux. Un signalement de défaut n’autorise pas votre rénovation."
+          ],
+          "sources": [
+            {
+              "title": "HDB MyNiceHome : programmation des réparations",
+              "href": "https://www.mynicehome.gov.sg/get-settled-in/hdb-move-in-guide/"
+            },
+            {
+              "title": "HDB : responsabilités et autorisations de rénovation",
+              "href": "https://www.hdb.gov.sg/managing-my-home/renovation-and-maintenance/renovation/important-information-on-renovations"
+            }
+          ]
+        },
+        {
+          "heading": "Clôturez chaque point avec des éléments vérifiables",
+          "paragraphs": [
+            "À l’inspection finale, comparez chaque point à l’observation initiale et aux travaux convenus. Notez date, résultat et éventuel problème ou suivi restant. La tenue d’une visite ne prouve pas que tout est réglé. Demandez au BSC comment les points ouverts seront traités et conservez sa réponse.",
+            "Après le DLP d’un an, la page HDB oriente vers un entrepreneur de réparation et indique que l’on peut solliciter son HDB Branch pour une aide complémentaire. Utilisez le canal adapté à votre situation. Where To BTO aide à organiser les comparaisons de projets et les questions de préparation ; il n’inspecte pas les logements, ne certifie pas les réparations et ne décide pas des responsabilités."
+          ],
+          "sources": [
+            {
+              "title": "HDB : aide après le DLP d’un an",
+              "href": "https://www.hdb.gov.sg/managing-my-home/renovation-and-maintenance/rectification-of-defects-in-new-flats"
+            }
+          ]
+        }
+      ],
+      "callout": {
+        "title": "Reliez choix du projet et préparation de l’emménagement",
+        "text": "Comparez les emplacements grâce aux fiches sourcées et conservez votre relevé d’état et de réparation avec les échanges officiels du BSC.",
+        "href": "/bto-projects",
+        "label": "Consulter les fiches des projets"
+      },
+      "next": [
+        {
+          "href": "/guides/choosing-bto-white-flat-option",
+          "title": "Vérifier plan fourni et périmètre écrit des travaux"
+        },
+        {
+          "href": "/guides/hps-fire-home-insurance",
+          "title": "Distinguer réparation et couverture d’assurance"
+        },
+        {
+          "href": "/guides/bto-flat-booking-appointment-checklist",
+          "title": "Revoir la préparation de la réservation"
+        }
+      ]
+    },
+    "de": {
+      "category": "Schlüsselübergabe und Einzug",
+      "title": "BTO-Mängel vor der Renovierung: Was dokumentieren und melden?",
+      "description": "Erfassen Sie den Zustand Raum für Raum, nutzen Sie den offiziellen HDB-Meldeweg und verfolgen Sie gemeinsame und abschließende Prüfungen vor dem Umbau.",
+      "answer": "Prüfen Sie die Wohnung nach der Schlüsselübergabe systematisch, dokumentieren Sie jeden Punkt und melden Sie ihn vor der Renovierung beim Building Service Centre (BSC) oder über den offiziellen Onlineweg. Bewahren Sie Bestätigung, vereinbarte Maßnahmen und Abschlussprüfung auf. HDB verlangt die Meldung innerhalb von 30 Tagen und vor Baubeginn; die einjährige Defects Liability Period (DLP) ist ein eigener Zeitraum. Klären Sie Ihre tatsächlichen Daten und offenen Punkte mit dem BSC.",
+      "sections": [
+        {
+          "heading": "Mit Schlüsseldatum und Lieferumfang beginnen",
+          "paragraphs": [
+            "Notieren Sie das tatsächliche Datum der Schlüsselübergabe, Projekt, Wohnungsreferenz und mitgelieferte Bestandteile. Nutzen Sie Welcome Kit und Kaufunterlagen einschließlich gewählter Zusatzkomponenten als Lieferliste, statt Fotos anderer Eigentümer heranzuziehen.",
+            "Prüfen Sie einen Raum nach dem anderen und geben Sie jedem Punkt eine kurze Kennung wie Küche-01. HDBs Einzugsratgeber empfiehlt systematisches Prüfen und Markieren mit Malerkrepp oder Notizzetteln. Beschreiben Sie Beobachtungen, ohne die Ursache festzulegen oder für jede Unvollkommenheit eine Reparatur zu versprechen."
+          ],
+          "sources": [
+            {
+              "title": "HDB MyNiceHome: Einzug und Mängelprüfung, Stand 27. Juli 2026",
+              "href": "https://www.mynicehome.gov.sg/get-settled-in/hdb-move-in-guide/"
+            }
+          ]
+        },
+        {
+          "heading": "Jeden Eintrag verständlich und auffindbar machen",
+          "paragraphs": [
+            "Halten Sie Raum, genaue Stelle, Datum, Beobachtung, Fotoreferenz und Frage fest. Eine Übersichtsaufnahme zeigt die Lage, eine Nahaufnahme den betreffenden Punkt. Bewahren Sie Originaldateien auf und notieren Sie spätere Änderungen gesondert. Persönliche Unterlagen oder Personen gehören nicht auf zur Beurteilung geteilte Fotos.",
+            "Fiktives Beispiel: Küche-01, untere Kante einer mitgelieferten Schranktür, vor Baubeginn fotografiert, sichtbare Markierung, Frage: Ist eine Nachbesserung nötig? Das ist eine Beobachtung, kein Beweis mangelhafter Ausführung. Laut HDB können leichte Farb- oder Fugenbreitenunterschiede normale Material- oder Baueigenschaften sein."
+          ],
+          "sources": [
+            {
+              "title": "HDB MyNiceHome: normale Abweichungen und systematische Prüfung",
+              "href": "https://www.mynicehome.gov.sg/get-settled-in/hdb-move-in-guide/"
+            }
+          ]
+        },
+        {
+          "heading": "Meldeanweisung und DLP getrennt festhalten",
+          "paragraphs": [
+            "Der Einzugsratgeber verlangt die Meldung innerhalb von 30 Tagen nach Schlüsselübergabe und vor Beginn der Renovierung. Nach Baubeginn sei die Verantwortung schwerer festzustellen. Halten Sie diese frühe Meldeanweisung neben dem einjährigen DLP fest, der laut Ratgeber bei Schlüsselübergabe beginnt.",
+            "HDBs Nachbesserungsseite nennt während des einjährigen DLP den Onlineweg oder das BSC. Sind 30 Tage vergangen, Arbeiten begonnen oder neue Probleme aufgetreten, kontaktieren Sie das BSC zeitnah mit dem tatsächlichen Verlauf. Aus keinem Zeitraum allein folgt automatisch ein vollständiger Anspruchsverlust oder eine Zusage; fragen Sie nach Prüfung und weiterem Vorgehen im Einzelfall."
+          ],
+          "sources": [
+            {
+              "title": "HDB MyNiceHome: Meldezeitpunkt und DLP",
+              "href": "https://www.mynicehome.gov.sg/get-settled-in/hdb-move-in-guide/"
+            },
+            {
+              "title": "HDB: Nachbesserung während und nach dem einjährigen DLP",
+              "href": "https://www.hdb.gov.sg/managing-my-home/renovation-and-maintenance/rectification-of-defects-in-new-flats"
+            }
+          ]
+        },
+        {
+          "heading": "Offiziell melden und die Antwort verfolgen",
+          "paragraphs": [
+            "Nutzen Sie den QR-Code im Welcome Kit oder kontaktieren Sie das BSC Ihres Projekts; prüfen Sie, dass das Ziel der offizielle Dienst ist. HDB nennt auch einen Onlineweg. Bewahren Sie gesendete Liste, Datum, Referenz und Eingangsbestätigung auf. Eine ungesendete Liste oder Nachricht an den Renovierungsbetrieb ist keine solche Bestätigung.",
+            "Der Ratgeber beschreibt BSC-Prüfung, gemeinsame Besichtigung zur Überprüfung, Nachbesserung und Abschlussprüfung. Verwenden Sie dieselben Kennungen und notieren Sie je Punkt vereinbarte Maßnahmen oder Erklärungen. Wird ein Punkt nicht anerkannt oder braucht es weitere Angaben, bleibt er offen statt als repariert zu gelten."
+          ],
+          "sources": [
+            {
+              "title": "HDB MyNiceHome: BSC und Besichtigungen",
+              "href": "https://www.mynicehome.gov.sg/get-settled-in/hdb-move-in-guide/"
+            },
+            {
+              "title": "HDB: offizielle Meldewege",
+              "href": "https://www.hdb.gov.sg/managing-my-home/renovation-and-maintenance/rectification-of-defects-in-new-flats"
+            }
+          ]
+        },
+        {
+          "heading": "Reparaturen und Renovierung nach bestätigtem Ablauf planen",
+          "paragraphs": [
+            "Fragen Sie das BSC nach Zugang, geplanten Arbeiten und nächstem Prüftermin, bevor Sie die Renovierung auf einen angenommenen Fertigstellungstag ausrichten. Der Ratgeber nennt üblicherweise weniger als zwei Wochen für Reparaturen; das ist keine zugesagte Frist für Ihren Punkt. Bewahren Sie tatsächliche Terminbestätigungen auf.",
+            "Verändern Sie eine strittige Stelle nicht bloß für ein deutlicheres Foto. Zerlegen Sie keine Elektro-, Sanitär- oder Bauteile zur eigenen Diagnose. Renovierungsgenehmigungen sind ein eigener Vorgang: HDB verlangt gelistete Betriebe und für bestimmte Arbeiten eine vorherige Erlaubnis. Eine Mängelmeldung genehmigt keinen Umbau."
+          ],
+          "sources": [
+            {
+              "title": "HDB MyNiceHome: Reparaturplanung",
+              "href": "https://www.mynicehome.gov.sg/get-settled-in/hdb-move-in-guide/"
+            },
+            {
+              "title": "HDB: Verantwortung und Renovierungsgenehmigungen",
+              "href": "https://www.hdb.gov.sg/managing-my-home/renovation-and-maintenance/renovation/important-information-on-renovations"
+            }
+          ]
+        },
+        {
+          "heading": "Jeden Punkt anhand von Ergebnissen abschließen",
+          "paragraphs": [
+            "Vergleichen Sie bei der Abschlussprüfung jeden Punkt mit der ursprünglichen Beobachtung und den vereinbarten Arbeiten. Halten Sie Datum, Ergebnis sowie verbleibende Fragen oder Folgeschritte fest. Eine erfolgte Besichtigung beweist nicht, dass alles erledigt ist. Fragen Sie das BSC nach dem Umgang mit offenen Punkten und bewahren Sie die Antwort auf.",
+            "Nach dem einjährigen DLP verweist HDB auf einen Reparaturbetrieb; für weitere Unterstützung können Eigentümer ihre HDB Branch kontaktieren. Nutzen Sie den für Ihre Situation passenden Weg. Where To BTO hilft beim Projektvergleich und bei Planungsfragen, prüft aber keine Wohnungen, bescheinigt keine Reparaturen und entscheidet nicht über Haftung."
+          ],
+          "sources": [
+            {
+              "title": "HDB: Unterstützung nach dem einjährigen DLP",
+              "href": "https://www.hdb.gov.sg/managing-my-home/renovation-and-maintenance/rectification-of-defects-in-new-flats"
+            }
+          ]
+        }
+      ],
+      "callout": {
+        "title": "Projektwahl und Einzugsprüfung verbinden",
+        "text": "Nutzen Sie die quellenverknüpften Projektangaben für Standortvergleiche und bewahren Sie Zustands- und Reparaturnotizen bei der offiziellen BSC-Korrespondenz auf.",
+        "href": "/bto-projects",
+        "label": "Projektangaben ansehen"
+      },
+      "next": [
+        {
+          "href": "/guides/choosing-bto-white-flat-option",
+          "title": "Gelieferten Grundriss und schriftlichen Arbeitsumfang prüfen"
+        },
+        {
+          "href": "/guides/hps-fire-home-insurance",
+          "title": "Reparaturfragen und Versicherungsschutz trennen"
+        },
+        {
+          "href": "/guides/bto-flat-booking-appointment-checklist",
+          "title": "Frühere Buchungsvorbereitung nachlesen"
+        }
+      ]
+    },
+    "zh-Hans": {
+      "category": "领取钥匙与入住",
+      "title": "BTO 装修前发现问题：应记录和报修什么？",
+      "description": "按房间记录状况，通过 HDB 官方渠道报修，并跟进联合及完工检查，避免装修改变现场证据。",
+      "answer": "领钥匙后，逐间检查并清楚记录疑点，在装修前通过所属 Building Service Centre（BSC，建筑服务中心）或官方网上渠道报修。保存收件确认、商定处理及完工检查结果。HDB 入住指南要求在领钥匙后 30 天内、装修前报告；一年的 Defects Liability Period（DLP，缺陷责任期）是另一个期限。请向 BSC 确认实际日期和未解决事项的处理。",
+      "sections": [
+        {
+          "heading": "先记领钥匙日期及随房交付项目",
+          "paragraphs": [
+            "记下实际领钥匙日期、项目、单位编号及随房提供的设施。以 Welcome Kit 和购房文件，包括所选配套为交付清单，不要用其他屋主的照片判定自己应收到什么。",
+            "逐间检查，为每个疑点编一个简短编号，例如厨房-01。HDB 入住指南建议有系统地检查，并用美纹纸胶带或便条标示。描述所见，不自行判定成因，也不要认定每处不完美都符合维修条件。"
+          ],
+          "sources": [
+            {
+              "title": "HDB MyNiceHome：入住与缺陷检查，2026 年 7 月 27 日更新",
+              "href": "https://www.mynicehome.gov.sg/get-settled-in/hdb-move-in-guide/"
+            }
+          ]
+        },
+        {
+          "heading": "让每条记录容易定位和理解",
+          "paragraphs": [
+            "每项记下房间、确切位置、日期、观察、照片编号及问题。全景照可定位，近照可显示疑点。保留原始文件，之后的变化另作记录。供评估的照片避免出现私人文件或人物。",
+            "虚构例子：厨房-01，随房橱柜门下边缘，装修前拍摄，表面可见印痕，问题是是否需要修复。这只是观察，不证明施工有缺陷。HDB 提醒，轻微色差或瓷砖填缝宽度差异，可能属于材料或施工的正常特征。"
+          ],
+          "sources": [
+            {
+              "title": "HDB MyNiceHome：正常差异与系统检查",
+              "href": "https://www.mynicehome.gov.sg/get-settled-in/hdb-move-in-guide/"
+            }
+          ]
+        },
+        {
+          "heading": "分开记录报修要求与 DLP",
+          "paragraphs": [
+            "入住指南要求在领钥匙后 30 天内、装修开始前报告缺陷，并解释装修后较难确定责任。把这项尽早报修的要求，与指南所述从领钥匙日起算的一年 DLP 并列记录。",
+            "HDB 修复网页列出一年 DLP 内可使用网上或 BSC 渠道。若已过 30 天、装修已开始或出现新疑点，应尽快向 BSC 提供实际经过。不要仅凭其中一个期限，就推断所有保障自动失效或维修一定获批；应询问个案评估和下一步。"
+          ],
+          "sources": [
+            {
+              "title": "HDB MyNiceHome：报修时间与 DLP",
+              "href": "https://www.mynicehome.gov.sg/get-settled-in/hdb-move-in-guide/"
+            },
+            {
+              "title": "HDB：一年 DLP 内及之后的修复渠道",
+              "href": "https://www.hdb.gov.sg/managing-my-home/renovation-and-maintenance/rectification-of-defects-in-new-flats"
+            }
+          ]
+        },
+        {
+          "heading": "通过官方渠道提交并跟进答复",
+          "paragraphs": [
+            "使用 Welcome Kit 的二维码，或联系所属项目 BSC，并确认链接目的地是官方服务。HDB 也列明网上报修渠道。保留已提交清单、日期、编号及收件确认；未发送的清单，或发给装修承包商的信息，不等于该确认。",
+            "入住指南说明 BSC 会审核、联合检查核实问题、安排修复，并作完工检查。带上相同事项编号，逐项记录商定处理或解释。未获接纳或需补充资料的项目，应保持待确认，不要标为已修好。"
+          ],
+          "sources": [
+            {
+              "title": "HDB MyNiceHome：BSC 及检查流程",
+              "href": "https://www.mynicehome.gov.sg/get-settled-in/hdb-move-in-guide/"
+            },
+            {
+              "title": "HDB：官方报修渠道",
+              "href": "https://www.hdb.gov.sg/managing-my-home/renovation-and-maintenance/rectification-of-defects-in-new-flats"
+            }
+          ]
+        },
+        {
+          "heading": "按实际安排协调修复与装修",
+          "paragraphs": [
+            "先向 BSC 询问进入单位、拟施工内容及下一次检查，再安排装修，别依赖假设的完工日。指南说修复通常少于两周；这不是你家事项的保证期限。把实际时间确认与记录放在一起。",
+            "不要只为让照片更清楚而改变有争议的区域，也不要自行拆卸电气、水管或结构部分诊断。装修批准是另一流程：HDB 要求使用名录内承包商，指定工程须事先获准。提交缺陷报告不代表装修方案已获批。"
+          ],
+          "sources": [
+            {
+              "title": "HDB MyNiceHome：修复时间协调",
+              "href": "https://www.mynicehome.gov.sg/get-settled-in/hdb-move-in-guide/"
+            },
+            {
+              "title": "HDB：装修责任与批准",
+              "href": "https://www.hdb.gov.sg/managing-my-home/renovation-and-maintenance/renovation/important-information-on-renovations"
+            }
+          ]
+        },
+        {
+          "heading": "以检查结果逐项结案",
+          "paragraphs": [
+            "完工检查时，把每项与原观察及商定工程对照。记录检查日期、结果、余下疑点及后续处理。有人到访不代表所有事项已解决。请 BSC 说明未解决项目如何跟进，并保留答复。",
+            "一年 DLP 后，HDB 网页指向维修承包商，并说明可向所属 HDB Branch（分局）寻求进一步协助。按实际情况使用适当渠道。Where To BTO 帮助整理项目比较及规划问题，不检查单位、不认证维修，也不裁定责任。"
+          ],
+          "sources": [
+            {
+              "title": "HDB：一年 DLP 后的协助",
+              "href": "https://www.hdb.gov.sg/managing-my-home/renovation-and-maintenance/rectification-of-defects-in-new-flats"
+            }
+          ]
+        }
+      ],
+      "callout": {
+        "title": "把选项目与入住准备衔接起来",
+        "text": "用附来源的项目记录比较地点，并把自己的状况及修复记录与 BSC 官方往来一同保存。",
+        "href": "/bto-projects",
+        "label": "浏览项目记录"
+      },
+      "next": [
+        {
+          "href": "/guides/choosing-bto-white-flat-option",
+          "title": "核对交付布局与书面工程范围"
+        },
+        {
+          "href": "/guides/hps-fire-home-insurance",
+          "title": "分清维修问题与保险保障"
+        },
+        {
+          "href": "/guides/bto-flat-booking-appointment-checklist",
+          "title": "回顾较早的选房预约准备"
+        }
+      ]
+    }
+  }
+}
