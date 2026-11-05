@@ -6,7 +6,7 @@ An interactive map and mobile questionnaire for narrowing Singapore BTO projects
 
 ## What it includes
 
-- 23 launched, announced or planned BTO records: the dated snapshot has a partial 2 November update for official 31 October/1 November announcements. Unpublished fields remain unknown, and older records retain their own audit dates.
+- 23 launched, announced or planned BTO records: a partial 5 November check reconciles the seven projects launched on 4 November. Names, classifications, sales supply and application window are verified; missing prices, waits and coordinates remain unverified here. Older records and the whole-snapshot audit retain their own dates.
 - A real-geography miniature Singapore assembled from 118,415 building footprints
 - MRT/LRT, major roads, water, greenery, runways, planning areas, and orientation landmarks
 - Four transparent narrowing criteria with `pass`, `miss`, `unknown`, and unanswered states; each confirmed miss dims a project by exactly 23 percentage points (100/77/54/31/8 %)
