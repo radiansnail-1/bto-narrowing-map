@@ -234,3 +234,18 @@ Current source receipt41774520825 is an initial check, not final changed-head pr
 PR21 browser capability recovery: official Chrome archive downloaded, but local launch cannot create its required socket (Operation not permitted). Do not change runtime permissions or infer a site defect. Add a content-driven hosted keyboard journey for every article bundle at390/1440: actual guide discovery, Tab/Shift-Tab and Enter through all five languages, headings/root-language/current-link/URL and overflow assertions. Existing map/calculator/browser assertions remain intact. This uses the existing trusted browser workflow and dependencies, not a preview bypass or a new workflow. Final hosted/browser source proof and manual ten-layout review remain mandatory; physical Safari is unverified.
 
 PR21 native CI41774973278: all20existing browser journeys passed; both new keyboard cases stopped at an over-broad guide-discovery selector. Each directory row intentionally has a heading link and a separate arrow link. Scope the selector to .guide-row h2 a, retaining exact count1, focus, Tab/Shift-Tab, Enter, all-language heading/URL/lang/current-link and no-overflow assertions. No product defect or assertion weakening inferred. Re-run final exact head before release.
+
+## 5 November 2026 — PR22
+
+PR22: https://github.com/radiansnail-1/bto-narrowing-map/pull/22 . Complete en/es/fr/de/zh-Hans copy in data/article-bundles/bto-defects-before-renovation.json was manually reviewed for meaning, sources and visible labels. Six sections and twelve paragraphs per language. Current coverage and PR5 were compared; the defect-record and BSC handoff task is distinct.
+
+Read HDB rectification and renovation guidance, the MyNiceHome move-in guide, and official November launch and supply pages on 5 November. Confirmed seven-project launch on 4 November and the application window ending 11 November at 11:59pm Singapore time. Missing prices, waits and coordinates remain unverified here. Preserve the historical full audit and bounded news-check limits. No new calculator rule is inferred.
+
+Five targets:
+https://wheretobto.com/guides/bto-defects-before-renovation
+https://wheretobto.com/es/guides/bto-defects-before-renovation
+https://wheretobto.com/fr/guides/bto-defects-before-renovation
+https://wheretobto.com/de/guides/bto-defects-before-renovation
+https://wheretobto.com/zh-Hans/guides/bto-defects-before-renovation
+
+Exact-head tests, builds, keyboard/project/map/calculator checks, ten language layouts and independent live release remain pending. Preserve existing owner work and earlier observation dates.
