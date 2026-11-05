@@ -249,3 +249,9 @@ https://wheretobto.com/de/guides/bto-defects-before-renovation
 https://wheretobto.com/zh-Hans/guides/bto-defects-before-renovation
 
 Exact-head tests, builds, keyboard/project/map/calculator checks, ten language layouts and independent live release remain pending. Preserve existing owner work and earlier observation dates.
+
+PR22 measurement plan: final Search Console Web data for 27 October–2 November has 4 clicks and 106 impressions; 20–26 October has 1 click and 22 impressions. All fourteen Pacific date rows returned. Tiny site totals are inconclusive; returned query/page rows do not establish defects demand. English Singapore Keyword Planner on 5 November at 06:10 UTC was available and uncached: inspection and reporting estimates 10 monthly each, a related broad check 210; renovation-defects unavailable. These are estimates, not organic difficulty or traffic forecasts.
+
+Reused the 4 November fixed fifteen-question Codex live-search observation: configured gpt-6-luna, actual model unreported, question set 2026-10-20-v1. Final-answer own-site citations were branded 1/1 and unbranded 0/2. Literal name matches were 1/1 and 0/2 with identity unverified; the malformed branded-link caveat remains. This is not consumer-wide or traffic evidence.
+
+Hypothesis: a practical condition and BSC handoff record may support relevant discovery without promising repair outcomes. Review actual final page/query evidence on 12 November and 3 December with reporting lag. No measured gain is claimed. Preserve earlier observation plans.
