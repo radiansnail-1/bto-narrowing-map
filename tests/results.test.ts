@@ -87,7 +87,7 @@ describe('explainable result criteria', () => {
     const answers = { ...baseAnswers, waitingBand: 'soon' as const };
     expect(criterionReason('waiting', 'pass', answers)).toContain('within');
     expect(criterionReason('waiting', 'miss', answers)).toContain('outside');
-    expect(criterionReason('waiting', 'unknown', answers)).toContain('not published');
+    expect(criterionReason('waiting', 'unknown', answers)).toBe('Wait estimate not verified in this record');
     expect(criterionReason('waiting', 'unanswered', baseAnswers)).toContain('Not used');
   });
 
