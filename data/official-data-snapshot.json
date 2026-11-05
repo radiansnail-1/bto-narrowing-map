@@ -1136,28 +1136,49 @@
     },
     {
       "id": "nov-2026-bedok-unnamed",
-      "canonicalName": null,
-      "displayName": "Bedok — additional November 2026 project (name not published)",
+      "canonicalName": "Bayshore Sails",
+      "displayName": "Bayshore Sails",
       "town": "Bedok",
       "region": "East",
       "launch": {
         "exercise": "November 2026 BTO",
-        "launchDate": "2026-11",
-        "status": "announced_upcoming"
+        "launchDate": "2026-11-04",
+        "status": "launched",
+        "applicationWindow": [
+          "2026-11-04",
+          "2026-11-11"
+        ]
       },
-      "classification": null,
+      "classification": "Plus",
       "estimatedWaitingTimeMonths": null,
       "estimatedCompletionDate": null,
-      "flatTypes": null,
+      "flatTypes": [
+        {
+          "type": "2-room Flexi",
+          "units": null
+        },
+        {
+          "type": "3-room",
+          "units": null
+        },
+        {
+          "type": "4-room",
+          "units": null
+        }
+      ],
       "approxUnits": null,
       "coordinates": null,
       "amenityIds": [],
       "sourceUrls": [
         "https://www.hdb.gov.sg/hdb-pulse/news/2026/increase-in-income-ceilings-and-greater-support-for-families-with-children",
-        "https://www.hdb.gov.sg/hdb-pulse/news/2026/1310-shorter-waiting-time-flats-to-be-offered-in-november-2026-bto-exercise"
+        "https://www.hdb.gov.sg/hdb-pulse/news/2026/1310-shorter-waiting-time-flats-to-be-offered-in-november-2026-bto-exercise",
+        "https://www.mynicehome.gov.sg/get-started/hdb-bto-sales-launch/",
+        "https://services-homes.hdb.gov.sg/sales/application-rate/bto/202611",
+        "https://www.hdb.gov.sg/sales-launch"
       ],
-      "checkedDate": "2026-11-02",
-      "publishedNote": "HDB (1 Nov 2026) names Bayshore Oasis separately and confirms one other Bedok project in November. This retained bucket represents that other project; its name, flat mix, prices, classification, wait and coordinates remain unpublished."
+      "checkedDate": "2026-11-05",
+      "publishedNote": "HDB launch material updated 4 Nov 2026, checked 5 Nov: 1,637 flats for sale; Plus project. Bounded by Bayshore Road and Bayshore Drive. Application period 4–11 November 2026, closing 11:59pm Singapore time on 11 November; allocation is by ballot, not first come. This partial check verifies name, classification, flat types and sales supply, not a complete price or location audit. Prices, floor areas, completion dates and any missing per-type counts or map coordinates remain unverified in this record; consult the current HDB Flat Portal. Planned facilities are not operating amenities.",
+      "approxBtoUnits": 1637
     },
     {
       "id": "nov-2026-bayshore-oasis",
@@ -1167,10 +1188,14 @@
       "region": "East",
       "launch": {
         "exercise": "November 2026 BTO",
-        "launchDate": "2026-11",
-        "status": "announced_upcoming"
+        "launchDate": "2026-11-04",
+        "status": "launched",
+        "applicationWindow": [
+          "2026-11-04",
+          "2026-11-11"
+        ]
       },
-      "classification": null,
+      "classification": "Plus",
       "estimatedWaitingTimeMonths": 38,
       "estimatedCompletionDate": null,
       "flatTypes": [
@@ -1187,35 +1212,55 @@
       "coordinates": null,
       "amenityIds": [],
       "sourceUrls": [
-        "https://www.hdb.gov.sg/hdb-pulse/news/2026/1310-shorter-waiting-time-flats-to-be-offered-in-november-2026-bto-exercise"
+        "https://www.hdb.gov.sg/hdb-pulse/news/2026/1310-shorter-waiting-time-flats-to-be-offered-in-november-2026-bto-exercise",
+        "https://www.mynicehome.gov.sg/get-started/hdb-bto-sales-launch/",
+        "https://services-homes.hdb.gov.sg/sales/application-rate/bto/202611",
+        "https://www.hdb.gov.sg/sales-launch"
       ],
-      "checkedDate": "2026-11-02",
-      "publishedNote": "HDB (1 Nov 2026): 855 flats for sale; waiting time 3 years 2 months. Bounded by Bayshore Drive and Bayshore Walk. Rental flats also announced; rental count, per-type counts, prices, classification and exact coordinates not published. Proposed amenities remain planned, not operating.",
+      "checkedDate": "2026-11-05",
+      "publishedNote": "HDB launch material updated 4 Nov 2026, checked 5 Nov: 855 flats for sale; Plus project. Bounded by Bayshore Drive and Bayshore Walk. Application period 4–11 November 2026, closing 11:59pm Singapore time on 11 November; allocation is by ballot, not first come. This partial check verifies name, classification, flat types and sales supply, not a complete price or location audit. Prices, floor areas, completion dates and any missing per-type counts or map coordinates remain unverified in this record; consult the current HDB Flat Portal. Planned facilities are not operating amenities. The 38-month wait remains the estimate in HDB's 1 November announcement.",
       "approxBtoUnits": 855
     },
     {
       "id": "nov-2026-geylang-unnamed",
-      "canonicalName": null,
-      "displayName": "Geylang — November 2026 BTO release (project name not published)",
+      "canonicalName": "Merpati Meadow",
+      "displayName": "Merpati Meadow",
       "town": "Geylang",
       "region": "East",
       "launch": {
         "exercise": "November 2026 BTO",
-        "launchDate": "2026-11",
-        "status": "announced_upcoming"
+        "launchDate": "2026-11-04",
+        "status": "launched",
+        "applicationWindow": [
+          "2026-11-04",
+          "2026-11-11"
+        ]
       },
-      "classification": null,
+      "classification": "Plus",
       "estimatedWaitingTimeMonths": null,
       "estimatedCompletionDate": null,
-      "flatTypes": null,
+      "flatTypes": [
+        {
+          "type": "2-room Flexi",
+          "units": 167
+        },
+        {
+          "type": "4-room",
+          "units": 271
+        }
+      ],
       "approxUnits": null,
       "coordinates": null,
       "amenityIds": [],
       "sourceUrls": [
-        "https://www.hdb.gov.sg/hdb-pulse/news/2026/increase-in-income-ceilings-and-greater-support-for-families-with-children"
+        "https://www.hdb.gov.sg/hdb-pulse/news/2026/increase-in-income-ceilings-and-greater-support-for-families-with-children",
+        "https://www.mynicehome.gov.sg/get-started/hdb-bto-sales-launch/",
+        "https://services-homes.hdb.gov.sg/sales/application-rate/bto/202611",
+        "https://www.hdb.gov.sg/sales-launch"
       ],
-      "checkedDate": "2026-08-28",
-      "publishedNote": "HDB (23 Aug 2026): project details, including classification, will be shared at the November 2026 launch; applicants should submit HFE letter documents by 25 September 2026."
+      "checkedDate": "2026-11-05",
+      "publishedNote": "HDB launch material updated 4 Nov 2026, checked 5 Nov: 438 flats for sale; Plus project. Along Merpati Road. Application period 4–11 November 2026, closing 11:59pm Singapore time on 11 November; allocation is by ballot, not first come. This partial check verifies name, classification, flat types and sales supply, not a complete price or location audit. Prices, floor areas, completion dates and any missing per-type counts or map coordinates remain unverified in this record; consult the current HDB Flat Portal. Planned facilities are not operating amenities.",
+      "approxBtoUnits": 438
     },
     {
       "id": "nov-2026-sembawang-unnamed",
@@ -1225,28 +1270,32 @@
       "region": "North",
       "launch": {
         "exercise": "November 2026 BTO",
-        "launchDate": "2026-11",
-        "status": "announced_upcoming"
+        "launchDate": "2026-11-04",
+        "status": "launched",
+        "applicationWindow": [
+          "2026-11-04",
+          "2026-11-11"
+        ]
       },
-      "classification": null,
+      "classification": "Standard",
       "estimatedWaitingTimeMonths": 34,
       "estimatedCompletionDate": null,
       "flatTypes": [
         {
           "type": "2-room Flexi",
-          "units": null
+          "units": 333
         },
         {
           "type": "3-room",
-          "units": null
+          "units": 96
         },
         {
           "type": "4-room",
-          "units": null
+          "units": 464
         },
         {
           "type": "5-room",
-          "units": null
+          "units": 417
         }
       ],
       "approxUnits": null,
@@ -1254,10 +1303,13 @@
       "amenityIds": [],
       "sourceUrls": [
         "https://www.hdb.gov.sg/hdb-pulse/news/2026/increase-in-income-ceilings-and-greater-support-for-families-with-children",
-        "https://www.hdb.gov.sg/hdb-pulse/news/2026/1310-shorter-waiting-time-flats-to-be-offered-in-november-2026-bto-exercise"
+        "https://www.hdb.gov.sg/hdb-pulse/news/2026/1310-shorter-waiting-time-flats-to-be-offered-in-november-2026-bto-exercise",
+        "https://www.mynicehome.gov.sg/get-started/hdb-bto-sales-launch/",
+        "https://services-homes.hdb.gov.sg/sales/application-rate/bto/202611",
+        "https://www.hdb.gov.sg/sales-launch"
       ],
-      "checkedDate": "2026-11-02",
-      "publishedNote": "HDB (1 Nov 2026): 1310 flats for sale; waiting time 2 years 10 months. Bounded by Admiralty Lane and Sembawang Drive; 6 blocks including sold/rental integration. Prices, classification, exact coordinates, per-type and rental counts remain unpublished.",
+      "checkedDate": "2026-11-05",
+      "publishedNote": "HDB launch material updated 4 Nov 2026, checked 5 Nov: 1,310 flats for sale; Standard project. Bounded by Admiralty Lane and Sembawang Drive. Application period 4–11 November 2026, closing 11:59pm Singapore time on 11 November; allocation is by ballot, not first come. This partial check verifies name, classification, flat types and sales supply, not a complete price or location audit. Prices, floor areas, completion dates and any missing per-type counts or map coordinates remain unverified in this record; consult the current HDB Flat Portal. Planned facilities are not operating amenities. The 34-month wait remains the estimate in HDB's 1 November announcement.",
       "approxBtoUnits": 1310
     },
     {
