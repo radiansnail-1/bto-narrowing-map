@@ -130,3 +130,7 @@ Mortgage protection, reinstatement of HDB-provided elements and private contents
 ## 5 November 2026 — PR22
 
 Keep early defect reporting, the one-year DLP, individual assessment and actual repair scheduling separate. Retain item references through joint and closing inspections. A partial launch check leaves missing site values unverified; it does not prove HDB has not published them. Preserve existing project URLs and historical full-audit dates.
+
+## 6 November 2026 — Owner-requested retained PR23 handoff
+
+PR #23: BTO key-collection notice. The retained article answers what to check in a key-collection notice before the appointment. Current production coverage was refreshed across 74 pages. Native CI 42164361949 still needs terminal-status reconciliation; it is not the final hosted five-language proof. This handoff repair changes the PR head, so repeat exact-head source, editorial, five-language, layout and navigation checks, then compare current production and all other open PR heads before normal merge and release. No merge, live delivery or search outcome is claimed.

@@ -257,3 +257,7 @@ Reused the 4 November fixed fifteen-question Codex live-search observation: conf
 Hypothesis: a practical condition and BSC handoff record may support relevant discovery without promising repair outcomes. Review actual final page/query evidence on 12 November and 3 December with reporting lag. No measured gain is claimed. Preserve earlier observation plans.
 
 PR22 validation repair: native and hosted tests exposed two obsolete pre-launch expectations in the announcement fixtures. The current launch now has published classifications and 256 CCAs. Update the dated assertions, preserve all price/location/wait matching checks, and add an independent pre-launch unknown fixture. All article copy and project facts remain unchanged. Re-run complete exact-head validation and browser checks before release.
+
+## 6 November 2026 — Owner-requested retained PR23 handoff
+
+PR #23: BTO key-collection notice. The retained article answers what to check in a key-collection notice before the appointment. Current production coverage was refreshed across 74 pages. Native CI 42164361949 still needs terminal-status reconciliation; it is not the final hosted five-language proof. This handoff repair changes the PR head, so repeat exact-head source, editorial, five-language, layout and navigation checks, then compare current production and all other open PR heads before normal merge and release. No merge, live delivery or search outcome is claimed.

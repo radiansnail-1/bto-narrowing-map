@@ -175,3 +175,7 @@ PR21 retains the new HPS, HDB fire insurance and home insurance guide in data/ar
 ## 5 November 2026 — PR22
 
 PR22: https://github.com/radiansnail-1/bto-narrowing-map/pull/22 . The complete five-language defects guide is retained in data/article-bundles/bto-defects-before-renovation.json. Source and translation review completed. Seven existing project records now reflect confirmed 4 November launch facts; missing prices and coordinates remain unverified. Existing HFE guidance now reflects the open sales period while preserving its original publication date. Tests, builds, layouts and checked production release are pending. Continue this same article and branch. PR21 is completed history. Preserve all existing owner tasks and PR5.
+
+## 6 November 2026 — Owner-requested retained PR23 handoff
+
+PR #23: BTO key-collection notice. The retained article answers what to check in a key-collection notice before the appointment. Current production coverage was refreshed across 74 pages. Native CI 42164361949 still needs terminal-status reconciliation; it is not the final hosted five-language proof. This handoff repair changes the PR head, so repeat exact-head source, editorial, five-language, layout and navigation checks, then compare current production and all other open PR heads before normal merge and release. No merge, live delivery or search outcome is claimed.
