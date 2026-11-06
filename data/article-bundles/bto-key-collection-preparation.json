@@ -1,0 +1,548 @@
+{
+  "slug": "bto-key-collection-preparation",
+  "publishedDate": "2026-11-06",
+  "checkedDate": "2026-11-06",
+  "updatedDate": "2026-11-06",
+  "translations": {
+    "en": {
+      "category": "Key collection preparation",
+      "title": "BTO key collection: what should you prepare from your notice?",
+      "description": "Use your actual HDB key-collection notice to check people, requested items, payment readiness and unresolved questions before the appointment.",
+      "answer": "Read your own key-collection letter in MyHDB Page, then check the appointment, each person’s requested items, the financial worksheet and attendance arrangements. An estimated completion date is not an appointment. Keep missing confirmations open and ask HDB about them before the day. This checklist prepares you for the handover stage; it does not replace your letter or confirm that the purchase can complete.",
+      "sections": [
+        {
+          "heading": "Start with the actual key-collection notice",
+          "paragraphs": [
+            "HDB directs buyers to MyHDB Page for the appointment date and time and the appointment letter. The probable completion date is an estimate; a block looking finished does not establish your household’s appointment. Read the letter for the flat you booked.",
+            "Put the notice date, appointment date, time, place and any earlier action deadline on one private preparation sheet. Keep the official letter beside it. If two records disagree, ask HDB which instruction applies rather than selecting the more convenient date."
+          ],
+          "sources": [
+            {
+              "title": "HDB: key-collection appointment and preparation",
+              "href": "https://www.hdb.gov.sg/buying-a-flat/bto-sbf-and-open-booking-of-flats/process-for-buying-a-new-flat/key-collection"
+            }
+          ]
+        },
+        {
+          "heading": "Match each requested item to the right person",
+          "paragraphs": [
+            "Work through the items in your letter person by person. Use columns for person, item, required form, readiness and question. For a requested identity record, check whose record it is and the form HDB accepts; do not substitute another household’s checklist.",
+            "Separate having a document from checking that it is current and matches the application. Keep originals or accepted digital records as instructed, and note anything still needed. Store identity documents privately; the preparation sheet needs a status, not a copied identity number."
+          ],
+          "sources": [
+            {
+              "title": "HDB: items required for key collection",
+              "href": "https://www.hdb.gov.sg/buying-a-flat/bto-sbf-and-open-booking-of-flats/process-for-buying-a-new-flat/key-collection"
+            }
+          ]
+        },
+        {
+          "heading": "Reconcile the financial worksheet with confirmed funds",
+          "paragraphs": [
+            "HDB says to read the financial worksheet enclosed with the key-collection letter for the required payments. Compare each line with confirmed funds and the payment route in your documents. A combined cash-and-CPF total does not show that every payment can be made as required.",
+            "Use a private reconciliation with columns for amount due, funding source, payment route, due date and confirmation still missing. Mark amounts already paid separately to avoid counting them twice. Use the existing payment-timeline and insurance guides for those subjects; a planning estimate or an old insurance receipt is not a current payment confirmation."
+          ],
+          "sources": [
+            {
+              "title": "HDB: balance payment and financial worksheet",
+              "href": "https://www.hdb.gov.sg/buying-a-flat/bto-sbf-and-open-booking-of-flats/process-for-buying-a-new-flat/key-collection"
+            }
+          ]
+        },
+        {
+          "heading": "Resolve attendance and representation before arranging a substitute",
+          "paragraphs": [
+            "HDB’s key-collection guidance requires applicants to attend personally. Its lease guidance says someone unable to sign the Agreement for Lease or collect keys personally needs a solicitor-prepared Power of Attorney (POA). Do not assume an informal letter or an arrangement used for flat booking is sufficient.",
+            "Ask HDB and the solicitor about the authority, documents and timing for your actual case. HDB lists documents that must still be signed personally, including the loan agreement and undertakings; a POA is not permission for every signature. This guide does not draft or verify legal authority."
+          ],
+          "sources": [
+            {
+              "title": "HDB: attendance at key collection",
+              "href": "https://www.hdb.gov.sg/buying-a-flat/bto-sbf-and-open-booking-of-flats/process-for-buying-a-new-flat/key-collection"
+            },
+            {
+              "title": "HDB: Power of Attorney and personally signed documents",
+              "href": "https://www.hdb.gov.sg/buying-a-flat/bto-sbf-and-open-booking-of-flats/process-for-buying-a-new-flat/sign-agreement-for-lease"
+            }
+          ]
+        },
+        {
+          "heading": "Try a three-row readiness check",
+          "paragraphs": [
+            "Fictional example: two applicants have an appointment letter. Their sheet records one requested identity item as ready, a fire-insurance certificate with validity still to check, and one applicant’s travel clash as unresolved. These are preparation statuses, not evidence that HDB has accepted their documents or a representative.",
+            "Give every open row a next action and a person responsible: check the actual certificate, ask the official contact about attendance, or reconcile a payment line. Add the date and source of the answer when received. Do not turn an unanswered question into a green tick because the appointment is close."
+          ]
+        },
+        {
+          "heading": "Keep changes and the next stage visible",
+          "paragraphs": [
+            "If attendance, household circumstances or funding changes, raise the actual issue through HDB’s official route promptly. A request to change arrangements is not confirmation that the change is accepted. Keep HDB’s response with the letter and update the preparation sheet.",
+            "After key collection, record the actual handover date and use the separate defects-before-renovation guide for condition records and BSC follow-up. Appointment preparation, purchase completion and later defect reporting are different tasks. Keep any outstanding action, responsible person and deadline rather than treating attendance alone as completion."
+          ],
+          "sources": [
+            {
+              "title": "HDB: preparation and steps after key collection",
+              "href": "https://www.hdb.gov.sg/buying-a-flat/bto-sbf-and-open-booking-of-flats/process-for-buying-a-new-flat/key-collection"
+            }
+          ]
+        }
+      ],
+      "callout": {
+        "title": "Keep the purchase stages separate",
+        "text": "Where To BTO organises published project facts and illustrative planning tools; confirm your appointment, documents and payments with HDB.",
+        "href": "/tools/bto-roadmap",
+        "label": "Explore the illustrative funding roadmap"
+      },
+      "next": [
+        {
+          "title": "Review the earlier flat-booking stage",
+          "href": "/guides/bto-flat-booking-appointment-checklist"
+        },
+        {
+          "title": "Check cash and CPF payment milestones",
+          "href": "/guides/bto-cash-cpf-payment-timeline"
+        },
+        {
+          "title": "Distinguish HPS, fire and home insurance",
+          "href": "/guides/hps-fire-home-insurance"
+        },
+        {
+          "title": "Record defects before renovation",
+          "href": "/guides/bto-defects-before-renovation"
+        }
+      ]
+    },
+    "es": {
+      "category": "Preparación para la entrega de llaves",
+      "title": "Entrega de llaves del BTO: ¿qué debes preparar a partir del aviso?",
+      "description": "Utiliza tu aviso real de HDB para comprobar personas, documentos solicitados, pagos y dudas pendientes antes de la entrega de llaves.",
+      "answer": "Lee tu propia carta de entrega de llaves en MyHDB Page y comprueba la cita, los documentos de cada persona, la hoja financiera y la asistencia. Una fecha estimada de finalización no es una cita. Mantén pendientes las confirmaciones que falten y consulta a HDB antes del día. Esta lista prepara la entrega; no sustituye tu carta ni confirma que la compra pueda completarse.",
+      "sections": [
+        {
+          "heading": "Empieza por el aviso real de entrega de llaves",
+          "paragraphs": [
+            "HDB remite a los compradores a MyHDB Page para consultar fecha, hora y carta de la cita. La fecha probable de finalización es una estimación; que un bloque parezca terminado no confirma la cita de tu hogar. Lee la carta correspondiente a la vivienda reservada.",
+            "Reúne en una ficha privada la fecha del aviso, la cita, la hora, el lugar y cualquier plazo de actuación anterior. Conserva la carta oficial al lado. Si dos registros discrepan, pregunta a HDB qué instrucción se aplica en vez de elegir la fecha más cómoda."
+          ],
+          "sources": [
+            {
+              "href": "https://www.hdb.gov.sg/buying-a-flat/bto-sbf-and-open-booking-of-flats/process-for-buying-a-new-flat/key-collection",
+              "title": "HDB: cita y preparación para la entrega"
+            }
+          ]
+        },
+        {
+          "heading": "Asigna cada documento solicitado a la persona correcta",
+          "paragraphs": [
+            "Revisa los elementos de tu carta persona por persona. Utiliza columnas para persona, elemento, formato exigido, estado y pregunta. Si se pide una identificación, comprueba a quién corresponde y qué formato acepta HDB; no sustituyas tu carta por la lista de otro hogar.",
+            "Distingue entre tener un documento y comprobar que esté vigente y coincida con la solicitud. Conserva originales o documentos digitales aceptados según las instrucciones y anota lo pendiente. Guarda la identificación en privado; la ficha necesita un estado, no una copia del número de identidad."
+          ],
+          "sources": [
+            {
+              "href": "https://www.hdb.gov.sg/buying-a-flat/bto-sbf-and-open-booking-of-flats/process-for-buying-a-new-flat/key-collection",
+              "title": "HDB: elementos necesarios para recoger las llaves"
+            }
+          ]
+        },
+        {
+          "heading": "Concilia la hoja financiera con fondos confirmados",
+          "paragraphs": [
+            "HDB indica que se lea la hoja financiera adjunta a la carta para conocer los pagos exigidos. Compara cada línea con los fondos confirmados y la vía de pago de tus documentos. Un total combinado de efectivo y CPF no demuestra que puedas realizar cada pago como corresponde.",
+            "Prepara una conciliación privada con importe pendiente, origen de los fondos, vía de pago, vencimiento y confirmación que falta. Separa lo ya abonado para no contarlo dos veces. Consulta las guías existentes de pagos y seguros para esos temas; una estimación o un recibo antiguo de seguro no es una confirmación de pago vigente."
+          ],
+          "sources": [
+            {
+              "href": "https://www.hdb.gov.sg/buying-a-flat/bto-sbf-and-open-booking-of-flats/process-for-buying-a-new-flat/key-collection",
+              "title": "HDB: saldo y hoja financiera"
+            }
+          ]
+        },
+        {
+          "heading": "Resuelve la asistencia y representación antes de enviar a otra persona",
+          "paragraphs": [
+            "La guía de HDB exige que los solicitantes acudan personalmente a recoger las llaves. Su guía de firma del contrato indica que quien no pueda firmar el Agreement for Lease o recoger las llaves personalmente necesita un Power of Attorney (POA) preparado por un abogado. No supongas que basta una carta informal o un trámite utilizado al reservar.",
+            "Pregunta a HDB y al abogado por la autorización, los documentos y los plazos de tu caso. HDB enumera documentos que aún deben firmarse personalmente, entre ellos el contrato de préstamo y los compromisos; un POA no autoriza todas las firmas. Esta guía no redacta ni verifica poderes legales."
+          ],
+          "sources": [
+            {
+              "href": "https://www.hdb.gov.sg/buying-a-flat/bto-sbf-and-open-booking-of-flats/process-for-buying-a-new-flat/key-collection",
+              "title": "HDB: asistencia a la entrega de llaves"
+            },
+            {
+              "href": "https://www.hdb.gov.sg/buying-a-flat/bto-sbf-and-open-booking-of-flats/process-for-buying-a-new-flat/sign-agreement-for-lease",
+              "title": "HDB: poderes y documentos de firma personal"
+            }
+          ]
+        },
+        {
+          "heading": "Prueba una comprobación de tres filas",
+          "paragraphs": [
+            "Ejemplo ficticio: dos solicitantes tienen una carta de cita. Su ficha marca una identificación solicitada como preparada, un certificado de seguro de incendios con vigencia pendiente de comprobar y un viaje de uno de ellos que coincide con la cita como cuestión abierta. Son estados de preparación, no pruebas de que HDB haya aceptado documentos o representante.",
+            "Asigna a cada fila abierta una acción y una persona responsable: revisar el certificado real, consultar la asistencia por el canal oficial o conciliar un pago. Añade fecha y fuente cuando llegue la respuesta. No conviertas una duda sin contestar en una casilla verde porque la cita esté cerca."
+          ]
+        },
+        {
+          "heading": "Mantén visibles los cambios y la etapa siguiente",
+          "paragraphs": [
+            "Si cambia la asistencia, la situación del hogar o la financiación, plantea el problema real por la vía oficial de HDB cuanto antes. Solicitar un cambio no confirma su aceptación. Guarda la respuesta con la carta y actualiza la ficha.",
+            "Tras recibir las llaves, registra la fecha real de entrega y utiliza la guía separada sobre defectos antes de reformar para documentar el estado y seguir al BSC. Preparar la cita, completar la compra y comunicar defectos son tareas distintas. Conserva acción pendiente, responsable y plazo; acudir no demuestra por sí solo que todo esté completado."
+          ],
+          "sources": [
+            {
+              "href": "https://www.hdb.gov.sg/buying-a-flat/bto-sbf-and-open-booking-of-flats/process-for-buying-a-new-flat/key-collection",
+              "title": "HDB: preparación y pasos tras la entrega"
+            }
+          ]
+        }
+      ],
+      "callout": {
+        "title": "Distingue las etapas de la compra",
+        "text": "Where To BTO organiza datos publicados y herramientas ilustrativas; confirma con HDB tu cita, documentos y pagos.",
+        "href": "/tools/bto-roadmap",
+        "label": "Explorar el plan ilustrativo de financiación"
+      },
+      "next": [
+        {
+          "title": "Revisar la etapa previa de reserva",
+          "href": "/guides/bto-flat-booking-appointment-checklist"
+        },
+        {
+          "title": "Comprobar los hitos de pago en efectivo y CPF",
+          "href": "/guides/bto-cash-cpf-payment-timeline"
+        },
+        {
+          "title": "Distinguir HPS y los seguros de incendios y hogar",
+          "href": "/guides/hps-fire-home-insurance"
+        },
+        {
+          "title": "Documentar defectos antes de reformar",
+          "href": "/guides/bto-defects-before-renovation"
+        }
+      ]
+    },
+    "fr": {
+      "category": "Préparation à la remise des clés",
+      "title": "Remise des clés du BTO : que préparer à partir de votre avis ?",
+      "description": "Utilisez votre avis HDB réel pour vérifier personnes, pièces demandées, paiements et questions ouvertes avant la remise des clés.",
+      "answer": "Lisez votre propre lettre de remise des clés dans MyHDB Page, puis vérifiez rendez-vous, pièces de chaque personne, fiche financière et présence. Une date de fin estimée n’est pas un rendez-vous. Gardez les confirmations manquantes ouvertes et interrogez HDB avant le jour prévu. Cette liste prépare la remise ; elle ne remplace pas votre lettre et ne confirme pas que l’achat peut être finalisé.",
+      "sections": [
+        {
+          "heading": "Partez de l’avis réel de remise des clés",
+          "paragraphs": [
+            "HDB renvoie les acheteurs à MyHDB Page pour la date, l’heure et la lettre du rendez-vous. La date probable d’achèvement est une estimation ; l’apparence terminée d’un bâtiment ne confirme pas le rendez-vous de votre foyer. Lisez la lettre du logement réservé.",
+            "Regroupez date de l’avis, date et heure du rendez-vous, lieu et éventuelle échéance antérieure sur une fiche privée. Conservez la lettre officielle à côté. Si deux documents divergent, demandez à HDB quelle instruction s’applique au lieu de retenir la date la plus commode."
+          ],
+          "sources": [
+            {
+              "href": "https://www.hdb.gov.sg/buying-a-flat/bto-sbf-and-open-booking-of-flats/process-for-buying-a-new-flat/key-collection",
+              "title": "HDB : rendez-vous et préparation de la remise"
+            }
+          ]
+        },
+        {
+          "heading": "Reliez chaque pièce demandée à la bonne personne",
+          "paragraphs": [
+            "Parcourez les éléments de votre lettre personne par personne. Prévoyez des colonnes pour personne, pièce, forme exigée, état de préparation et question. Pour un justificatif d’identité demandé, vérifiez son titulaire et le format accepté par HDB ; ne remplacez pas votre lettre par la liste d’un autre foyer.",
+            "Distinguez possession d’un document et vérification de sa validité et de sa concordance avec la demande. Gardez originaux ou documents numériques acceptés selon les instructions, et notez ce qui manque. Les pièces d’identité restent privées ; la fiche demande un état, pas un numéro d’identité recopié."
+          ],
+          "sources": [
+            {
+              "href": "https://www.hdb.gov.sg/buying-a-flat/bto-sbf-and-open-booking-of-flats/process-for-buying-a-new-flat/key-collection",
+              "title": "HDB : pièces requises pour les clés"
+            }
+          ]
+        },
+        {
+          "heading": "Rapprochez la fiche financière des fonds confirmés",
+          "paragraphs": [
+            "HDB demande de lire la fiche financière jointe à la lettre pour connaître les paiements requis. Comparez chaque ligne aux fonds confirmés et au circuit de paiement indiqué dans vos documents. Un total espèces et CPF ne prouve pas que chaque paiement peut être effectué comme demandé.",
+            "Préparez un rapprochement privé avec montant dû, origine des fonds, circuit de paiement, échéance et confirmation manquante. Isolez les montants déjà payés pour éviter un double comptage. Consultez les guides existants sur paiements et assurances pour ces sujets ; une estimation ou un ancien reçu d’assurance n’est pas une confirmation actuelle de paiement."
+          ],
+          "sources": [
+            {
+              "href": "https://www.hdb.gov.sg/buying-a-flat/bto-sbf-and-open-booking-of-flats/process-for-buying-a-new-flat/key-collection",
+              "title": "HDB : solde et fiche financière"
+            }
+          ]
+        },
+        {
+          "heading": "Réglez présence et représentation avant de prévoir un remplaçant",
+          "paragraphs": [
+            "Les consignes HDB imposent aux demandeurs une présence personnelle à la remise des clés. Le guide de signature indique qu’une personne ne pouvant signer l’Agreement for Lease ou retirer les clés personnellement doit faire préparer un Power of Attorney (POA) par un avocat. Ne supposez pas qu’une lettre informelle ou une disposition utilisée à la réservation suffise.",
+            "Demandez à HDB et à l’avocat quelle autorisation, quelles pièces et quels délais concernent votre cas. HDB énumère des documents qui doivent encore être signés personnellement, notamment le contrat de prêt et les engagements ; un POA n’autorise pas toutes les signatures. Ce guide ne rédige ni ne vérifie de pouvoir juridique."
+          ],
+          "sources": [
+            {
+              "href": "https://www.hdb.gov.sg/buying-a-flat/bto-sbf-and-open-booking-of-flats/process-for-buying-a-new-flat/key-collection",
+              "title": "HDB : présence à la remise des clés"
+            },
+            {
+              "href": "https://www.hdb.gov.sg/buying-a-flat/bto-sbf-and-open-booking-of-flats/process-for-buying-a-new-flat/sign-agreement-for-lease",
+              "title": "HDB : pouvoirs et documents signés personnellement"
+            }
+          ]
+        },
+        {
+          "heading": "Essayez une vérification de préparation à trois lignes",
+          "paragraphs": [
+            "Exemple fictif : deux demandeurs disposent d’une lettre de rendez-vous. Leur fiche indique une pièce d’identité demandée prête, un certificat d’assurance incendie dont la validité reste à vérifier et un déplacement de l’un d’eux incompatible avec la date, non résolu. Ce sont des états de préparation, pas la preuve que HDB a accepté les pièces ou un représentant.",
+            "Attribuez à chaque ligne ouverte une action et un responsable : vérifier le certificat réel, interroger le contact officiel sur la présence ou rapprocher un paiement. Ajoutez date et source de la réponse reçue. Ne transformez pas une question sans réponse en case verte parce que le rendez-vous approche."
+          ]
+        },
+        {
+          "heading": "Gardez visibles les changements et l’étape suivante",
+          "paragraphs": [
+            "Si la présence, la situation du foyer ou le financement change, signalez rapidement le problème réel par le canal officiel HDB. Une demande de modification n’en confirme pas l’acceptation. Conservez la réponse avec la lettre et actualisez la fiche.",
+            "Après remise des clés, notez la date réelle et utilisez le guide distinct sur les défauts avant rénovation pour le relevé d’état et le suivi BSC. Préparation du rendez-vous, finalisation de l’achat et signalement ultérieur sont trois tâches différentes. Gardez action ouverte, responsable et échéance ; la présence seule ne signifie pas que tout est terminé."
+          ],
+          "sources": [
+            {
+              "href": "https://www.hdb.gov.sg/buying-a-flat/bto-sbf-and-open-booking-of-flats/process-for-buying-a-new-flat/key-collection",
+              "title": "HDB : préparation et étapes après les clés"
+            }
+          ]
+        }
+      ],
+      "callout": {
+        "title": "Distinguez les étapes de l’achat",
+        "text": "Where To BTO organise les faits publiés et des outils illustratifs ; confirmez rendez-vous, pièces et paiements auprès de HDB.",
+        "href": "/tools/bto-roadmap",
+        "label": "Explorer le plan de financement illustratif"
+      },
+      "next": [
+        {
+          "title": "Revoir l’étape antérieure de réservation",
+          "href": "/guides/bto-flat-booking-appointment-checklist"
+        },
+        {
+          "title": "Vérifier les étapes de paiement espèces et CPF",
+          "href": "/guides/bto-cash-cpf-payment-timeline"
+        },
+        {
+          "title": "Distinguer HPS, incendie et assurance habitation",
+          "href": "/guides/hps-fire-home-insurance"
+        },
+        {
+          "title": "Consigner les défauts avant rénovation",
+          "href": "/guides/bto-defects-before-renovation"
+        }
+      ]
+    },
+    "de": {
+      "category": "Vorbereitung auf die Schlüsselübergabe",
+      "title": "BTO-Schlüsselübergabe: Was sollten Sie anhand Ihrer Mitteilung vorbereiten?",
+      "description": "Prüfen Sie mit Ihrer tatsächlichen HDB-Mitteilung Personen, verlangte Unterlagen, Zahlungsbereitschaft und offene Fragen vor der Schlüsselübergabe.",
+      "answer": "Lesen Sie Ihren eigenen Brief zur Schlüsselübergabe in MyHDB Page. Prüfen Sie Termin, verlangte Unterlagen je Person, Finanzübersicht und Teilnahme. Ein geschätzter Fertigstellungstermin ist kein Übergabetermin. Lassen Sie fehlende Bestätigungen offen und fragen Sie HDB vor dem Tag. Diese Liste bereitet die Übergabe vor; sie ersetzt Ihren Brief nicht und bestätigt keinen möglichen Kaufabschluss.",
+      "sections": [
+        {
+          "heading": "Mit der tatsächlichen Mitteilung zur Schlüsselübergabe beginnen",
+          "paragraphs": [
+            "HDB verweist Käufer für Datum, Uhrzeit und Terminbrief auf MyHDB Page. Das voraussichtliche Fertigstellungsdatum ist eine Schätzung; ein fertig aussehender Block bestätigt keinen Termin für Ihren Haushalt. Lesen Sie den Brief für die gebuchte Wohnung.",
+            "Halten Sie Mitteilungsdatum, Termin, Uhrzeit, Ort und frühere Handlungsfristen auf einem privaten Vorbereitungsblatt fest. Bewahren Sie den offiziellen Brief daneben auf. Widersprechen sich zwei Angaben, fragen Sie HDB nach der geltenden Anweisung, statt das angenehmere Datum zu wählen."
+          ],
+          "sources": [
+            {
+              "href": "https://www.hdb.gov.sg/buying-a-flat/bto-sbf-and-open-booking-of-flats/process-for-buying-a-new-flat/key-collection",
+              "title": "HDB: Termin und Vorbereitung der Schlüsselübergabe"
+            }
+          ]
+        },
+        {
+          "heading": "Jede verlangte Unterlage der richtigen Person zuordnen",
+          "paragraphs": [
+            "Gehen Sie die Punkte Ihres Briefes Person für Person durch. Nutzen Sie Spalten für Person, Unterlage, verlangte Form, Vorbereitungsstand und Frage. Prüfen Sie bei einem verlangten Identitätsnachweis, wessen Nachweis gebraucht wird und welche Form HDB akzeptiert; ersetzen Sie Ihren Brief nicht durch die Liste eines anderen Haushalts.",
+            "Unterscheiden Sie zwischen dem Besitz eines Dokuments und der Prüfung seiner Gültigkeit und Übereinstimmung mit dem Antrag. Halten Sie Originale oder akzeptierte digitale Nachweise nach Anweisung bereit und notieren Sie Fehlendes. Identitätsunterlagen bleiben privat; das Blatt braucht einen Status, keine kopierte Ausweisnummer."
+          ],
+          "sources": [
+            {
+              "href": "https://www.hdb.gov.sg/buying-a-flat/bto-sbf-and-open-booking-of-flats/process-for-buying-a-new-flat/key-collection",
+              "title": "HDB: erforderliche Unterlagen zur Schlüsselübergabe"
+            }
+          ]
+        },
+        {
+          "heading": "Die Finanzübersicht mit bestätigten Mitteln abgleichen",
+          "paragraphs": [
+            "Laut HDB ist die dem Terminbrief beiliegende Finanzübersicht für die nötigen Zahlungen zu lesen. Vergleichen Sie jede Position mit bestätigten Mitteln und dem Zahlungsweg in Ihren Unterlagen. Eine gemeinsame Bargeld- und CPF-Summe beweist nicht, dass jede Zahlung wie verlangt möglich ist.",
+            "Erstellen Sie einen privaten Abgleich mit fälligem Betrag, Mittelherkunft, Zahlungsweg, Fälligkeit und fehlender Bestätigung. Führen Sie bereits gezahlte Beträge gesondert, damit nichts doppelt zählt. Nutzen Sie für Zahlungstermine und Versicherung die vorhandenen Leitfäden; eine Planungsschätzung oder alte Versicherungsquittung ist keine aktuelle Zahlungsbestätigung."
+          ],
+          "sources": [
+            {
+              "href": "https://www.hdb.gov.sg/buying-a-flat/bto-sbf-and-open-booking-of-flats/process-for-buying-a-new-flat/key-collection",
+              "title": "HDB: Restzahlung und Finanzübersicht"
+            }
+          ]
+        },
+        {
+          "heading": "Teilnahme und Vertretung vor einem Ersatz klären",
+          "paragraphs": [
+            "HDB verlangt bei der Schlüsselübergabe die persönliche Teilnahme der Antragsteller. Laut Leitfaden zur Vertragsunterzeichnung benötigt eine Person, die das Agreement for Lease nicht persönlich unterschreiben oder die Schlüssel nicht selbst abholen kann, eine anwaltlich vorbereitete Power of Attorney (POA). Nehmen Sie nicht an, ein formloser Brief oder eine Regelung von der Wohnungsbuchung genüge.",
+            "Fragen Sie HDB und die anwaltliche Beratung nach Vollmacht, Unterlagen und zeitlichem Ablauf für Ihren Fall. HDB nennt Dokumente, die weiterhin persönlich zu unterschreiben sind, darunter Kreditvertrag und Verpflichtungserklärungen; eine POA erlaubt nicht jede Unterschrift. Dieser Leitfaden erstellt oder prüft keine rechtliche Vollmacht."
+          ],
+          "sources": [
+            {
+              "href": "https://www.hdb.gov.sg/buying-a-flat/bto-sbf-and-open-booking-of-flats/process-for-buying-a-new-flat/key-collection",
+              "title": "HDB: Teilnahme an der Schlüsselübergabe"
+            },
+            {
+              "href": "https://www.hdb.gov.sg/buying-a-flat/bto-sbf-and-open-booking-of-flats/process-for-buying-a-new-flat/sign-agreement-for-lease",
+              "title": "HDB: Vollmacht und persönlich zu unterzeichnende Dokumente"
+            }
+          ]
+        },
+        {
+          "heading": "Eine Prüfung mit drei Zeilen ausprobieren",
+          "paragraphs": [
+            "Fiktives Beispiel: Zwei Antragsteller haben einen Terminbrief. Ihr Blatt führt einen verlangten Identitätsnachweis als vorbereitet, eine Feuerversicherungsbescheinigung mit noch zu prüfender Gültigkeit und eine ungeklärte Reiseüberschneidung einer Person. Das sind Vorbereitungsstände, keine Belege dafür, dass HDB Unterlagen oder Vertretung akzeptiert hat.",
+            "Geben Sie jeder offenen Zeile eine nächste Handlung und eine verantwortliche Person: tatsächliche Bescheinigung prüfen, offiziellen Kontakt zur Teilnahme fragen oder eine Zahlung abgleichen. Ergänzen Sie Datum und Quelle der erhaltenen Antwort. Aus einer unbeantworteten Frage wird kein grüner Haken, weil der Termin näher rückt."
+          ]
+        },
+        {
+          "heading": "Änderungen und den nächsten Schritt sichtbar halten",
+          "paragraphs": [
+            "Ändern sich Teilnahme, Haushaltsumstände oder Finanzierung, melden Sie das konkrete Problem zeitnah über HDBs offiziellen Weg. Eine Änderungsanfrage bestätigt keine Zustimmung. Bewahren Sie die Antwort beim Brief auf und aktualisieren Sie das Blatt.",
+            "Notieren Sie nach der Schlüsselübergabe das tatsächliche Datum und nutzen Sie den gesonderten Leitfaden zu Mängeln vor der Renovierung für Zustandsaufnahmen und BSC-Nachverfolgung. Terminvorbereitung, Kaufabschluss und spätere Mängelmeldung sind verschiedene Aufgaben. Halten Sie offene Handlung, Verantwortung und Frist fest, statt allein aus der Teilnahme auf einen Abschluss zu schließen."
+          ],
+          "sources": [
+            {
+              "href": "https://www.hdb.gov.sg/buying-a-flat/bto-sbf-and-open-booking-of-flats/process-for-buying-a-new-flat/key-collection",
+              "title": "HDB: Vorbereitung und Schritte nach der Schlüsselübergabe"
+            }
+          ]
+        }
+      ],
+      "callout": {
+        "title": "Die Kaufphasen getrennt halten",
+        "text": "Where To BTO ordnet veröffentlichte Projektfakten und illustrative Planungswerkzeuge; bestätigen Sie Termin, Unterlagen und Zahlungen mit HDB.",
+        "href": "/tools/bto-roadmap",
+        "label": "Den illustrativen Finanzierungsplan erkunden"
+      },
+      "next": [
+        {
+          "title": "Die frühere Wohnungsbuchung nachlesen",
+          "href": "/guides/bto-flat-booking-appointment-checklist"
+        },
+        {
+          "title": "Bargeld- und CPF-Zahlungstermine prüfen",
+          "href": "/guides/bto-cash-cpf-payment-timeline"
+        },
+        {
+          "title": "HPS, Feuer- und Hausratversicherung unterscheiden",
+          "href": "/guides/hps-fire-home-insurance"
+        },
+        {
+          "title": "Mängel vor der Renovierung dokumentieren",
+          "href": "/guides/bto-defects-before-renovation"
+        }
+      ]
+    },
+    "zh-Hans": {
+      "category": "领取钥匙前的准备",
+      "title": "BTO 领取钥匙：应按通知准备什么？",
+      "description": "用自己的 HDB 领钥匙通知，逐项核对人员、所需文件、付款准备及待解问题，再出席预约。",
+      "answer": "先在 MyHDB Page 阅读自己的领钥匙通知，再核对预约、各人的所需文件、财务清单及出席安排。预计竣工日期不是预约。未获确认的事项应保持待办，并在预约前向 HDB 询问。这份清单用于准备交接，不能代替通知，也不能证明购房一定可以完成。",
+      "sections": [
+        {
+          "heading": "从实际领钥匙通知开始",
+          "paragraphs": [
+            "HDB 指引买家在 MyHDB Page 查看预约日期、时间及通知。预计竣工日期只是估计；楼宇外观看似完工，不代表你家已有领钥匙预约。应阅读自己所预订单位的通知。",
+            "把通知日期、预约日期、时间、地点及任何更早的办理期限，集中写在私人准备表里，并保留官方通知。若两份记录不一致，应向 HDB 确认适用指示，不要自行选择较方便的日期。"
+          ],
+          "sources": [
+            {
+              "href": "https://www.hdb.gov.sg/buying-a-flat/bto-sbf-and-open-booking-of-flats/process-for-buying-a-new-flat/key-collection",
+              "title": "HDB：领钥匙预约与准备"
+            }
+          ]
+        },
+        {
+          "heading": "把每项所需文件对应到正确的人",
+          "paragraphs": [
+            "按通知逐人核对所需项目。表格可设为：人员、文件、要求形式、准备状态、问题。若要求身份证明，应确认属于谁、HDB 接受什么形式；不要拿其他家庭的清单代替自己的通知。",
+            "把持有文件与确认文件有效、符合申请资料分开。按指示备好原件或获接受的电子文件，记下仍欠什么。身份证明应私下保管；准备表只需状态，不必复制身份证号码。"
+          ],
+          "sources": [
+            {
+              "href": "https://www.hdb.gov.sg/buying-a-flat/bto-sbf-and-open-booking-of-flats/process-for-buying-a-new-flat/key-collection",
+              "title": "HDB：领取钥匙所需文件"
+            }
+          ]
+        },
+        {
+          "heading": "以已确认资金核对财务清单",
+          "paragraphs": [
+            "HDB 要求阅读领钥匙通知所附财务清单，以了解应付款项。把每一行与已确认资金及文件中的付款渠道对照。现金和 CPF 合计足够，不证明每笔款项都能按要求支付。",
+            "私人对账表可列应付金额、资金来源、付款渠道、到期日及尚缺确认。已付款项另列，避免重复计算。付款节点和保险问题可参考现有专门指南；规划估计或旧保险收据，不是当前付款确认。"
+          ],
+          "sources": [
+            {
+              "href": "https://www.hdb.gov.sg/buying-a-flat/bto-sbf-and-open-booking-of-flats/process-for-buying-a-new-flat/key-collection",
+              "title": "HDB：尾款与财务清单"
+            }
+          ]
+        },
+        {
+          "heading": "先解决出席与授权，再安排代办",
+          "paragraphs": [
+            "HDB 领钥匙指引要求申请人亲自出席。签署租契指引说明，无法亲自签署 Agreement for Lease（租契协议）或领取钥匙的人，需要由律师准备 Power of Attorney（POA，授权书）。不要假定非正式信函或选房阶段的安排就足够。",
+            "向 HDB 及律师确认自己个案所需授权、文件和时间。HDB 列明部分文件仍须本人签署，包括贷款协议及承诺书；POA 不是任何签名都可代办的许可。本指南不拟定或核实法律授权。"
+          ],
+          "sources": [
+            {
+              "href": "https://www.hdb.gov.sg/buying-a-flat/bto-sbf-and-open-booking-of-flats/process-for-buying-a-new-flat/key-collection",
+              "title": "HDB：领钥匙出席要求"
+            },
+            {
+              "href": "https://www.hdb.gov.sg/buying-a-flat/bto-sbf-and-open-booking-of-flats/process-for-buying-a-new-flat/sign-agreement-for-lease",
+              "title": "HDB：授权书及须本人签署的文件"
+            }
+          ]
+        },
+        {
+          "heading": "试做三行准备状态表",
+          "paragraphs": [
+            "虚构例子：两位申请人已有预约通知。表中一项所需身份证明标为已准备，火险凭证标为有效期待核，一位申请人的出行与预约冲突则仍待解决。这些只是准备状态，不证明 HDB 已接受文件或代办人。",
+            "每条待办都指定下一步及负责人：查真实凭证、向官方联系人询问出席安排，或核对某笔付款。收到答复时，补上日期及来源。不要因为预约临近，就把未获回答的问题打成绿色勾号。"
+          ]
+        },
+        {
+          "heading": "记清变化及下一个阶段",
+          "paragraphs": [
+            "若出席、家庭情况或资金安排改变，应尽快通过 HDB 官方渠道提出实际问题。申请更改不等于已获接受。把 HDB 答复与通知一同保存，并更新准备表。",
+            "领钥匙后，记录实际交接日期，再用独立的装修前缺陷指南整理单位状况及 BSC 跟进。预约准备、完成购房及之后报修，是不同任务。保留未办事项、负责人及期限，不要只因已出席就认定全部完成。"
+          ],
+          "sources": [
+            {
+              "href": "https://www.hdb.gov.sg/buying-a-flat/bto-sbf-and-open-booking-of-flats/process-for-buying-a-new-flat/key-collection",
+              "title": "HDB：领钥匙前的准备及之后步骤"
+            }
+          ]
+        }
+      ],
+      "callout": {
+        "title": "分开记录购房各阶段",
+        "text": "Where To BTO 整理已公布的项目事实及示例规划工具；预约、文件及付款须向 HDB 确认。",
+        "href": "/tools/bto-roadmap",
+        "label": "查看示例资金路线图"
+      },
+      "next": [
+        {
+          "title": "回顾较早的选房预约阶段",
+          "href": "/guides/bto-flat-booking-appointment-checklist"
+        },
+        {
+          "title": "核对现金与 CPF 付款节点",
+          "href": "/guides/bto-cash-cpf-payment-timeline"
+        },
+        {
+          "title": "分清 HPS、火险及家居保险",
+          "href": "/guides/hps-fire-home-insurance"
+        },
+        {
+          "title": "在装修前记录缺陷",
+          "href": "/guides/bto-defects-before-renovation"
+        }
+      ]
+    }
+  }
+}
