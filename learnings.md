@@ -134,3 +134,7 @@ Keep early defect reporting, the one-year DLP, individual assessment and actual 
 ## 6 November 2026 — Owner-requested retained PR23 handoff
 
 PR #23: BTO key-collection notice. The retained article answers what to check in a key-collection notice before the appointment. Current production coverage was refreshed across 74 pages. Native CI 42164361949 still needs terminal-status reconciliation; it is not the final hosted five-language proof. This handoff repair changes the PR head, so repeat exact-head source, editorial, five-language, layout and navigation checks, then compare current production and all other open PR heads before normal merge and release. No merge, live delivery or search outcome is claimed.
+
+
+## 8 November 2026 — Source identity checks
+For PR #23, production coverage uses the current main SHA; before-merge review separately binds the final validated article head. A handoff repair changes that article head and requires fresh validation. Key-collection preparation must use the household's actual notice and HDB's stage-specific attendance and POA guidance, separately from booking or post-key defects.

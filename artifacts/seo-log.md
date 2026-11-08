@@ -261,3 +261,19 @@ PR22 validation repair: native and hosted tests exposed two obsolete pre-launch 
 ## 6 November 2026 — Owner-requested retained PR23 handoff
 
 PR #23: BTO key-collection notice. The retained article answers what to check in a key-collection notice before the appointment. Current production coverage was refreshed across 74 pages. Native CI 42164361949 still needs terminal-status reconciliation; it is not the final hosted five-language proof. This handoff repair changes the PR head, so repeat exact-head source, editorial, five-language, layout and navigation checks, then compare current production and all other open PR heads before normal merge and release. No merge, live delivery or search outcome is claimed.
+\n
+## 8 November 2026 — Retained PR #23
+Same key-collection article and branch; prior handoff repair confirmed. HDB key-collection and lease/POA guidance reread, including financial worksheet, personal attendance and documents requiring personal signature. Full current 74-page coverage and other PR #5 compared; coverage-only revision44 preserves all cards, research dates and observations. Main remains b52557b34a08ec5764b104a95954db633fed42c3. The article head is a separate identity and will be validated after this commit.
+
+Final Web GSC, observed 8 November 04:35 UTC, Pacific30Oct–5Nov:13 clicks/303 impressions;23–29Oct:0/16, all14 dated rows present. Small samples and incomplete query attribution do not establish exact-intent demand or causation. Latest query/page rows do not show this unpublished article. English Singapore Planner, target2702, 8Nov04:34 UTC: appointment40 and checklist20 estimated monthly searches; documents unavailable, not zero. Advertiser competition is not organic difficulty.
+
+Citation benchmark42430261120, 8Nov00:36 UTC, fixed fifteen-question set2026-10-20-v1, Codex CLI0.163.0 configuredgpt-6-luna; actual model unreported. Own-site final sources:branded1/1, unbranded0/2. Literal name matches1/1 and0/2 have unverified company identity. This is not consumer-wide visibility or traffic.
+
+URLs awaiting exact-head and live proof:
+https://wheretobto.com/guides/bto-key-collection-preparation
+https://wheretobto.com/es/guides/bto-key-collection-preparation
+https://wheretobto.com/fr/guides/bto-key-collection-preparation
+https://wheretobto.com/de/guides/bto-key-collection-preparation
+https://wheretobto.com/zh-Hans/guides/bto-key-collection-preparation
+
+All complete translations reviewed for meaning, citations, twelve paragraphs and navigation. Next: hosted checks and ten layouts, current exact-head overlap check, normal merge, candidate and live verification. No publication claimed here. Observe actual final page/query evidence7/28days after verified delivery; preserve existing pending observations. Official-news search found no new confirmed consequential change beyond the already reconciled4Nov launch; extraction limits and historical exhaustive cutoff17Oct22:45UTC, full snapshot audit28Aug and individual project dates remain.

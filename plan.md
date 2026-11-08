@@ -179,3 +179,7 @@ PR22: https://github.com/radiansnail-1/bto-narrowing-map/pull/22 . The complete 
 ## 6 November 2026 — Owner-requested retained PR23 handoff
 
 PR #23: BTO key-collection notice. The retained article answers what to check in a key-collection notice before the appointment. Current production coverage was refreshed across 74 pages. Native CI 42164361949 still needs terminal-status reconciliation; it is not the final hosted five-language proof. This handoff repair changes the PR head, so repeat exact-head source, editorial, five-language, layout and navigation checks, then compare current production and all other open PR heads before normal merge and release. No merge, live delivery or search outcome is claimed.
+
+
+## 8 November 2026 — Key-collection guide recovery
+Retain PR #23 and its key-collection preparation article in all five languages. The earlier handoff repair is committed. Fresh official guidance and current production coverage were compared; no completed release is being repeated. The unpublished article dates now reflect this release attempt. Next: exact-head hosted validation, layout review, fresh production and other-draft comparison, checked merge and canonical live verification. Preserve pending owner tasks and observations.

@@ -117,3 +117,7 @@ Added complete five-language defect-reporting guidance. Updated seven existing p
 ## 6 November 2026 — Owner-requested retained PR23 handoff
 
 PR #23: BTO key-collection notice. The retained article answers what to check in a key-collection notice before the appointment. Current production coverage was refreshed across 74 pages. Native CI 42164361949 still needs terminal-status reconciliation; it is not the final hosted five-language proof. This handoff repair changes the PR head, so repeat exact-head source, editorial, five-language, layout and navigation checks, then compare current production and all other open PR heads before normal merge and release. No merge, live delivery or search outcome is claimed.
+
+
+## 8 November 2026
+- Continued the retained key-collection guide in English, Spanish, French, German and Simplified Chinese, preserving its notice-first worksheet and official citations. Updated the unpublished record's dates after source review. Release checks and publication remain pending.
