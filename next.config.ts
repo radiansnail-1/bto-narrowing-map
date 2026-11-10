@@ -2,7 +2,7 @@ import type { NextConfig } from 'next';
 
 const nextConfig: NextConfig = {
   reactStrictMode: true,
-  // The shared guide navigation also loads these files on fallback routes.
+  // Runtime directory discovery must retain the registry in every server package.
   outputFileTracingIncludes: {
     '/*': ['./data/article-bundles/*.json'],
   },
