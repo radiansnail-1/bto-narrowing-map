@@ -183,3 +183,6 @@ PR #23: BTO key-collection notice. The retained article answers what to check in
 
 ## 8 November 2026 — Key-collection guide recovery
 Retain PR #23 and its key-collection preparation article in all five languages. The earlier handoff repair is committed. Fresh official guidance and current production coverage were compared; no completed release is being repeated. The unpublished article dates now reflect this release attempt. Next: exact-head hosted validation, layout review, fresh production and other-draft comparison, checked merge and canonical live verification. Preserve pending owner tasks and observations.
+# 10 November 2026 — Owner-requested sitemap runtime repair
+
+Repair the production `/sitemap.xml.rsc` server error without creating another article. The ordinary XML sitemap responds successfully. Explicitly include the article JSON registry in every server function package, including fallback routes, and verify the actual output traces. The new packaging regression fails on the original build; the corrected build, 98 unit checks and 24 browser checks pass. Checked production release and independent live verification remain pending. Existing article observations and unrelated owner tasks remain unchanged.

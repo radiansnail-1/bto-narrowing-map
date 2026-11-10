@@ -138,3 +138,6 @@ PR #23: BTO key-collection notice. The retained article answers what to check in
 
 ## 8 November 2026 — Source identity checks
 For PR #23, production coverage uses the current main SHA; before-merge review separately binds the final validated article head. A handoff repair changes that article head and requires fresh validation. Key-collection preparation must use the household's actual notice and HDB's stage-specific attendance and POA guidance, separately from booking or post-key defects.
+# 10 November 2026 — Verify runtime packaging as well as generated XML
+
+The article loader discovers JSON files at runtime. A successful prebuilt sitemap does not prove that all server functions contain those files: the original sitemap trace included the seven bundles while the fallback trace omitted them. Keep the explicit narrow JSON include for all server traces and the build-output regression. Unknown sitemap component URLs should return 404, not a server error; preserve the real XML sitemap and existing article routes.
