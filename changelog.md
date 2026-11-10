@@ -121,3 +121,6 @@ PR #23: BTO key-collection notice. The retained article answers what to check in
 
 ## 8 November 2026
 - Continued the retained key-collection guide in English, Spanish, French, German and Simplified Chinese, preserving its notice-first worksheet and official citations. Updated the unpublished record's dates after source review. Release checks and publication remain pending.
+# 10 November 2026 — Runtime article registry packaging
+
+- Included article-bundle JSON files in every server function trace and added artifact and sitemap-response regressions. No article, project, calculator or source-review dates changed. Local lint, 98 unit tests, verification build and 24 browser tests passed; checked release and live confirmation are pending.
