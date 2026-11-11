@@ -1,0 +1,538 @@
+{
+  "slug": "bto-renovation-contractor-permit-checks",
+  "publishedDate": "2026-11-11",
+  "checkedDate": "2026-11-11",
+  "updatedDate": "2026-11-11",
+  "translations": {
+    "en": {
+      "category": "Before renovation",
+      "title": "BTO renovation: check the contractor and permit before work starts",
+      "description": "Separate contractor listing, a quotation, an application and a granted permit. Use a work-by-work checklist before starting renovation in your BTO flat.",
+      "answer": "Check the actual contractor against HDB’s Directory of Renovation Contractors, identify every proposed job on your flat’s plan, and confirm which approvals and professional roles apply. For work requiring a permit, check the granted permit and its conditions before that work begins. A quotation, directory listing or submitted application is not permission to start. Owners remain responsible for compliance with HDB’s rules.",
+      "sections": [
+        {
+          "heading": "Start with your flat and a written scope",
+          "paragraphs": [
+            "Keep the correct unit plan, project-specific renovation guidance and the contractor’s proposed scope together. HDB advises owners to check any specific guidelines for their flat through MyHDB Page. Another owner’s approved layout is not approval for yours.",
+            "Give each proposed job a reference: room, location, work and plan version. Separate a layout idea from the work needed to build it. If the description is only “kitchen package”, ask what it includes before treating the scope as settled."
+          ],
+          "sources": [
+            {
+              "title": "HDB: owner responsibilities and renovation rules",
+              "href": "https://www.hdb.gov.sg/managing-my-home/renovation-and-maintenance/renovation/important-information-on-renovations"
+            }
+          ]
+        },
+        {
+          "heading": "Check who will actually carry out the work",
+          "paragraphs": [
+            "HDB requires contractors listed in its Directory of Renovation Contractors (DRC), including for renovation work that does not need HDB approval. Check the actual executing business through the official directory, rather than relying on a logo or a salesperson’s assurance.",
+            "Keep the business name and directory reference beside the contract. HDB’s permit guidance also identifies work-specific licensed professionals and circumstances requiring a Qualified Person. Ask which role applies to each job; a general contractor listing does not establish every specialist qualification."
+          ],
+          "sources": [
+            {
+              "title": "HDB: permit application and professional roles",
+              "href": "https://www.hdb.gov.sg/managing-my-home/renovation-and-maintenance/renovation/application-for-a-renovation-permit"
+            }
+          ]
+        },
+        {
+          "heading": "Keep the four records separate",
+          "paragraphs": [
+            "A quotation describes a commercial proposal. A directory listing identifies a listed contractor. An application records a request. A granted permit is a different record, with its own scope and conditions. Keep each one under its correct status.",
+            "HDB says owners must authorise their contractor’s electronic application, including the signed acknowledgement. Receiving a submission notification is not the same as receiving approval. Use HDB’s official route to view and check a permit once granted."
+          ],
+          "sources": [
+            {
+              "title": "HDB: permit application and professional roles",
+              "href": "https://www.hdb.gov.sg/managing-my-home/renovation-and-maintenance/renovation/application-for-a-renovation-permit"
+            }
+          ]
+        },
+        {
+          "heading": "Make a work-by-work approval sheet",
+          "paragraphs": [
+            "Use columns for job reference, proposed work, responsible contractor or professional, applicable guideline, approval needed, document received, condition and next action. Keep an uncertain requirement open and ask HDB or the appropriate professional; this is not an exhaustive permit checklist.",
+            "Fictional example: a proposed bedroom-wall change has a quotation and a marked plan but no written approval. Mark it “do not start; confirm approved scope”. HDB requires prior written approval for wall demolition or hacking. The example does not establish that any particular wall can be altered."
+          ],
+          "sources": [
+            {
+              "title": "HDB: owner responsibilities and renovation rules",
+              "href": "https://www.hdb.gov.sg/managing-my-home/renovation-and-maintenance/renovation/important-information-on-renovations"
+            }
+          ]
+        },
+        {
+          "heading": "Read the conditions before the start date",
+          "paragraphs": [
+            "For work needing a permit, HDB says to obtain it before that work begins. Compare the actual approved scope and plan with the job being scheduled. Check the applicable work periods, notices and other conditions in the current guidance and documents; do not substitute a generic timetable.",
+            "If the design changes or the documents disagree, ask the contractor and HDB what approval or clarification is required before the changed work. Work not requiring a permit must still meet HDB guidelines. A planned start date does not resolve a missing requirement."
+          ],
+          "sources": [
+            {
+              "title": "HDB: permit application and professional roles",
+              "href": "https://www.hdb.gov.sg/managing-my-home/renovation-and-maintenance/renovation/application-for-a-renovation-permit"
+            }
+          ]
+        },
+        {
+          "heading": "Keep the owner’s checks and the next step visible",
+          "paragraphs": [
+            "Keep the scope, contract, relevant approvals, conditions and dated clarifications together. Assign each open item an owner and next action. HDB makes flat owners responsible for ensuring their contractors follow its rules; outsourcing the application does not remove that responsibility.",
+            "Use the separate defects guide for pre-renovation condition records and BSC follow-up, and the funding roadmap for illustrative cash planning. Where To BTO organises published project facts and planning questions; it does not recommend contractors, certify work or approve a renovation."
+          ],
+          "sources": [
+            {
+              "title": "HDB: owner responsibilities and renovation rules",
+              "href": "https://www.hdb.gov.sg/managing-my-home/renovation-and-maintenance/renovation/important-information-on-renovations"
+            }
+          ]
+        }
+      ],
+      "callout": {
+        "title": "Keep evidence before changing the flat",
+        "text": "Record the flat’s condition separately from the contractor and approval checks, so the two tasks remain clear.",
+        "href": "/guides/bto-defects-before-renovation",
+        "label": "Read the defects-before-renovation guide"
+      },
+      "next": [
+        {
+          "title": "Compare White Flat and default layouts",
+          "href": "/guides/choosing-bto-white-flat-option"
+        },
+        {
+          "title": "Explore the illustrative funding roadmap",
+          "href": "/tools/bto-roadmap"
+        },
+        {
+          "title": "Prepare for key collection",
+          "href": "/guides/bto-key-collection-preparation"
+        }
+      ]
+    },
+    "es": {
+      "category": "Antes de reformar",
+      "title": "Reforma de un BTO: comprueba el contratista y el permiso antes de empezar",
+      "description": "Distingue la inscripción del contratista, el presupuesto, la solicitud y el permiso concedido. Revisa cada trabajo antes de reformar tu BTO.",
+      "answer": "Comprueba al contratista real en el Directory of Renovation Contractors de HDB, identifica cada trabajo en el plano de tu vivienda y confirma las autorizaciones y funciones profesionales aplicables. Si un trabajo exige permiso, revisa el permiso concedido y sus condiciones antes de iniciarlo. Un presupuesto, una inscripción o una solicitud enviada no autorizan el inicio. El propietario sigue siendo responsable del cumplimiento de las reglas de HDB.",
+      "sections": [
+        {
+          "heading": "Empieza por tu vivienda y un alcance escrito",
+          "paragraphs": [
+            "Reúne el plano correcto de la unidad, las instrucciones de reforma específicas del proyecto y el alcance propuesto. HDB aconseja consultar en MyHDB Page las directrices específicas de la vivienda. Un plano aprobado para otro propietario no autoriza el tuyo.",
+            "Asigna a cada trabajo una referencia: habitación, ubicación, actuación y versión del plano. Distingue una idea de distribución de las obras necesarias para realizarla. Si solo dice «paquete de cocina», pide el detalle antes de considerar cerrado el alcance."
+          ],
+          "sources": [
+            {
+              "title": "HDB: responsabilidades del propietario y reglas de reforma",
+              "href": "https://www.hdb.gov.sg/managing-my-home/renovation-and-maintenance/renovation/important-information-on-renovations"
+            }
+          ]
+        },
+        {
+          "heading": "Comprueba quién ejecutará realmente las obras",
+          "paragraphs": [
+            "HDB exige contratistas inscritos en su Directory of Renovation Contractors (DRC), incluso para reformas que no necesitan su aprobación. Comprueba la empresa ejecutora en el directorio oficial; no te bases únicamente en un logotipo o en la palabra del comercial.",
+            "Guarda el nombre de la empresa y su referencia del directorio junto al contrato. La guía de permisos también identifica profesionales habilitados para trabajos concretos y casos que requieren un Qualified Person. Pregunta qué función corresponde a cada trabajo; la inscripción general no acredita todas las cualificaciones especializadas."
+          ],
+          "sources": [
+            {
+              "title": "HDB: solicitud de permiso y funciones profesionales",
+              "href": "https://www.hdb.gov.sg/managing-my-home/renovation-and-maintenance/renovation/application-for-a-renovation-permit"
+            }
+          ]
+        },
+        {
+          "heading": "Distingue los cuatro documentos",
+          "paragraphs": [
+            "Un presupuesto describe una propuesta comercial. La inscripción identifica a un contratista incluido en el directorio. La solicitud registra una petición. El permiso concedido es otro documento, con alcance y condiciones propios. Conserva cada uno con su estado correcto.",
+            "HDB indica que el propietario debe autorizar la solicitud electrónica del contratista, incluido el acuse firmado. Recibir una notificación de envío no equivale a recibir aprobación. Utiliza el canal oficial de HDB para consultar y comprobar el permiso una vez concedido."
+          ],
+          "sources": [
+            {
+              "title": "HDB: solicitud de permiso y funciones profesionales",
+              "href": "https://www.hdb.gov.sg/managing-my-home/renovation-and-maintenance/renovation/application-for-a-renovation-permit"
+            }
+          ]
+        },
+        {
+          "heading": "Prepara una ficha de autorizaciones por trabajo",
+          "paragraphs": [
+            "Incluye referencia, trabajo propuesto, contratista o profesional responsable, directriz aplicable, aprobación necesaria, documento recibido, condición y siguiente acción. Mantén pendiente cualquier requisito dudoso y consulta a HDB o al profesional adecuado; esta ficha no es una lista exhaustiva de permisos.",
+            "Ejemplo ficticio: una modificación de una pared del dormitorio tiene presupuesto y plano marcado, pero no aprobación escrita. Indica «no empezar; confirmar alcance aprobado». HDB exige aprobación escrita previa para demoler o picar paredes. El ejemplo no demuestra que una pared concreta pueda modificarse."
+          ],
+          "sources": [
+            {
+              "title": "HDB: responsabilidades del propietario y reglas de reforma",
+              "href": "https://www.hdb.gov.sg/managing-my-home/renovation-and-maintenance/renovation/important-information-on-renovations"
+            }
+          ]
+        },
+        {
+          "heading": "Lee las condiciones antes de la fecha de inicio",
+          "paragraphs": [
+            "Para los trabajos sujetos a permiso, HDB exige obtenerlo antes de empezarlos. Compara el alcance y el plano aprobados con lo programado. Comprueba horarios, avisos y demás condiciones aplicables en las instrucciones y documentos actuales; no los sustituyas por un calendario genérico.",
+            "Si cambia el diseño o los documentos discrepan, pregunta al contratista y a HDB qué autorización o aclaración hace falta antes de ejecutar el cambio. Los trabajos sin permiso también deben cumplir las directrices. Una fecha de inicio prevista no resuelve un requisito pendiente."
+          ],
+          "sources": [
+            {
+              "title": "HDB: solicitud de permiso y funciones profesionales",
+              "href": "https://www.hdb.gov.sg/managing-my-home/renovation-and-maintenance/renovation/application-for-a-renovation-permit"
+            }
+          ]
+        },
+        {
+          "heading": "Mantén visibles las comprobaciones del propietario",
+          "paragraphs": [
+            "Conserva juntos alcance, contrato, autorizaciones pertinentes, condiciones y aclaraciones fechadas. Asigna responsable y siguiente acción a cada pendiente. HDB responsabiliza al propietario de que el contratista cumpla sus reglas; delegar la solicitud no elimina esa responsabilidad.",
+            "Consulta la guía de defectos para documentar el estado previo y el seguimiento con el BSC, y el plan financiero para cálculos ilustrativos. Where To BTO organiza datos publicados y preguntas de planificación; no recomienda contratistas, certifica trabajos ni aprueba reformas."
+          ],
+          "sources": [
+            {
+              "title": "HDB: responsabilidades del propietario y reglas de reforma",
+              "href": "https://www.hdb.gov.sg/managing-my-home/renovation-and-maintenance/renovation/important-information-on-renovations"
+            }
+          ]
+        }
+      ],
+      "callout": {
+        "title": "Conserva pruebas antes de modificar la vivienda",
+        "text": "Documenta el estado de la vivienda por separado de las comprobaciones del contratista y las autorizaciones.",
+        "href": "/guides/bto-defects-before-renovation",
+        "label": "Leer la guía de defectos antes de reformar"
+      },
+      "next": [
+        {
+          "title": "Comparar White Flat y distribución predeterminada",
+          "href": "/guides/choosing-bto-white-flat-option"
+        },
+        {
+          "title": "Explorar el plan ilustrativo de financiación",
+          "href": "/tools/bto-roadmap"
+        },
+        {
+          "title": "Preparar la entrega de llaves",
+          "href": "/guides/bto-key-collection-preparation"
+        }
+      ]
+    },
+    "fr": {
+      "category": "Avant les travaux",
+      "title": "Rénovation d’un BTO : vérifier l’entreprise et le permis avant de commencer",
+      "description": "Distinguez inscription de l’entreprise, devis, demande et permis accordé. Vérifiez chaque intervention avant de rénover votre logement BTO.",
+      "answer": "Vérifiez l’entreprise exécutante dans le Directory of Renovation Contractors de HDB, repérez chaque intervention sur le plan du logement et confirmez les autorisations et professionnels requis. Pour un travail soumis à permis, contrôlez le permis accordé et ses conditions avant son commencement. Un devis, une inscription ou une demande déposée n’autorise pas les travaux. Le propriétaire reste responsable du respect des règles de HDB.",
+      "sections": [
+        {
+          "heading": "Partir du logement et d’un périmètre écrit",
+          "paragraphs": [
+            "Réunissez le bon plan, les consignes de rénovation propres au projet et le périmètre proposé par l’entreprise. HDB recommande de consulter les directives particulières du logement dans MyHDB Page. Un aménagement approuvé pour un voisin ne vaut pas autorisation pour le vôtre.",
+            "Attribuez une référence à chaque intervention : pièce, emplacement, travail et version du plan. Distinguez l’idée d’aménagement des opérations nécessaires à sa réalisation. Si le descriptif se limite à « forfait cuisine », demandez le détail avant de considérer le périmètre comme arrêté."
+          ],
+          "sources": [
+            {
+              "title": "HDB : responsabilités du propriétaire et règles de rénovation",
+              "href": "https://www.hdb.gov.sg/managing-my-home/renovation-and-maintenance/renovation/important-information-on-renovations"
+            }
+          ]
+        },
+        {
+          "heading": "Vérifier qui exécutera réellement les travaux",
+          "paragraphs": [
+            "HDB exige des entreprises inscrites dans son Directory of Renovation Contractors (DRC), y compris pour les rénovations ne nécessitant pas son approbation. Vérifiez l’entreprise exécutante dans l’annuaire officiel, plutôt que de vous fier à un logo ou à une assurance commerciale.",
+            "Conservez raison sociale et référence d’inscription avec le contrat. Le guide des permis identifie aussi des professionnels habilités selon les travaux et des cas nécessitant un Qualified Person. Demandez quel rôle s’applique à chaque intervention ; l’inscription générale ne prouve pas toutes les qualifications spécialisées."
+          ],
+          "sources": [
+            {
+              "title": "HDB : demande de permis et rôles professionnels",
+              "href": "https://www.hdb.gov.sg/managing-my-home/renovation-and-maintenance/renovation/application-for-a-renovation-permit"
+            }
+          ]
+        },
+        {
+          "heading": "Séparer les quatre documents",
+          "paragraphs": [
+            "Le devis décrit une proposition commerciale. L’inscription identifie une entreprise présente dans l’annuaire. La demande consigne une requête. Le permis accordé constitue un document distinct, avec son périmètre et ses conditions. Gardez chaque élément sous son statut exact.",
+            "HDB indique que le propriétaire doit autoriser la demande électronique de l’entreprise, avec l’accusé signé. Une notification de dépôt n’est pas une approbation. Utilisez le canal officiel HDB pour consulter et vérifier le permis une fois accordé."
+          ],
+          "sources": [
+            {
+              "title": "HDB : demande de permis et rôles professionnels",
+              "href": "https://www.hdb.gov.sg/managing-my-home/renovation-and-maintenance/renovation/application-for-a-renovation-permit"
+            }
+          ]
+        },
+        {
+          "heading": "Créer une fiche d’autorisation par intervention",
+          "paragraphs": [
+            "Prévoyez référence, travaux proposés, entreprise ou professionnel responsable, directive applicable, autorisation nécessaire, document reçu, condition et prochaine action. Laissez tout point incertain ouvert et interrogez HDB ou le professionnel compétent ; cette fiche n’est pas une liste exhaustive des permis.",
+            "Exemple fictif : une modification de cloison de chambre dispose d’un devis et d’un plan annoté, sans approbation écrite. Notez « ne pas commencer ; confirmer le périmètre approuvé ». HDB exige une approbation écrite préalable pour démolir ou buriner des murs. L’exemple ne prouve pas qu’un mur précis peut être modifié."
+          ],
+          "sources": [
+            {
+              "title": "HDB : responsabilités du propriétaire et règles de rénovation",
+              "href": "https://www.hdb.gov.sg/managing-my-home/renovation-and-maintenance/renovation/important-information-on-renovations"
+            }
+          ]
+        },
+        {
+          "heading": "Lire les conditions avant la date de début",
+          "paragraphs": [
+            "Pour les travaux soumis à permis, HDB demande de l’obtenir avant leur commencement. Comparez périmètre et plan approuvés avec l’intervention programmée. Vérifiez périodes de travail, avis et autres conditions dans les directives et documents actuels ; un calendrier générique ne les remplace pas.",
+            "Si le projet change ou si les documents divergent, demandez à l’entreprise et à HDB quelle autorisation ou clarification est nécessaire avant l’intervention modifiée. Les travaux sans permis doivent aussi respecter les directives. Une date de début prévue ne règle pas une exigence manquante."
+          ],
+          "sources": [
+            {
+              "title": "HDB : demande de permis et rôles professionnels",
+              "href": "https://www.hdb.gov.sg/managing-my-home/renovation-and-maintenance/renovation/application-for-a-renovation-permit"
+            }
+          ]
+        },
+        {
+          "heading": "Garder visibles les vérifications du propriétaire",
+          "paragraphs": [
+            "Conservez ensemble périmètre, contrat, autorisations pertinentes, conditions et clarifications datées. Attribuez un responsable et une action à chaque point ouvert. HDB rend les propriétaires responsables du respect des règles par leurs entreprises ; déléguer la demande ne supprime pas cette responsabilité.",
+            "Consultez le guide distinct sur les défauts pour le relevé d’état et le suivi BSC, et le plan de financement pour les hypothèses de trésorerie. Where To BTO organise des faits publiés et des questions de préparation ; il ne recommande pas d’entreprises, ne certifie pas les travaux et n’autorise pas de rénovation."
+          ],
+          "sources": [
+            {
+              "title": "HDB : responsabilités du propriétaire et règles de rénovation",
+              "href": "https://www.hdb.gov.sg/managing-my-home/renovation-and-maintenance/renovation/important-information-on-renovations"
+            }
+          ]
+        }
+      ],
+      "callout": {
+        "title": "Conserver les preuves avant de modifier le logement",
+        "text": "Documentez séparément l’état du logement et les vérifications relatives à l’entreprise et aux autorisations.",
+        "href": "/guides/bto-defects-before-renovation",
+        "label": "Lire le guide des défauts avant rénovation"
+      },
+      "next": [
+        {
+          "title": "Comparer White Flat et plan standard",
+          "href": "/guides/choosing-bto-white-flat-option"
+        },
+        {
+          "title": "Explorer le plan de financement illustratif",
+          "href": "/tools/bto-roadmap"
+        },
+        {
+          "title": "Préparer la remise des clés",
+          "href": "/guides/bto-key-collection-preparation"
+        }
+      ]
+    },
+    "de": {
+      "category": "Vor der Renovierung",
+      "title": "BTO-Renovierung: Unternehmen und Genehmigung vor Arbeitsbeginn prüfen",
+      "description": "Unterscheiden Sie Verzeichniseintrag, Angebot, Antrag und erteilte Genehmigung. Prüfen Sie jede geplante Arbeit vor der Renovierung Ihrer BTO-Wohnung.",
+      "answer": "Prüfen Sie das ausführende Unternehmen im Directory of Renovation Contractors von HDB. Kennzeichnen Sie jede geplante Arbeit im Wohnungsplan und klären Sie erforderliche Genehmigungen und Fachrollen. Prüfen Sie bei genehmigungspflichtigen Arbeiten die erteilte Genehmigung und ihre Bedingungen vor Beginn. Angebot, Verzeichniseintrag oder eingereichter Antrag erlauben keinen Arbeitsbeginn. Eigentümer bleiben für die Einhaltung der HDB-Regeln verantwortlich.",
+      "sections": [
+        {
+          "heading": "Mit der Wohnung und einem schriftlichen Umfang beginnen",
+          "paragraphs": [
+            "Halten Sie den richtigen Wohnungsplan, projektspezifische Renovierungsvorgaben und den vorgeschlagenen Arbeitsumfang zusammen. HDB empfiehlt, besondere Vorgaben für die Wohnung in MyHDB Page zu prüfen. Der genehmigte Plan eines anderen Eigentümers ist keine Genehmigung für Ihren.",
+            "Geben Sie jeder Arbeit eine Referenz: Raum, Stelle, Tätigkeit und Planversion. Trennen Sie eine Gestaltungsidee von den nötigen Bauarbeiten. Steht dort nur „Küchenpaket“, fragen Sie nach den Einzelheiten, bevor Sie den Umfang als geklärt betrachten."
+          ],
+          "sources": [
+            {
+              "title": "HDB: Eigentümerpflichten und Renovierungsregeln",
+              "href": "https://www.hdb.gov.sg/managing-my-home/renovation-and-maintenance/renovation/important-information-on-renovations"
+            }
+          ]
+        },
+        {
+          "heading": "Das tatsächlich ausführende Unternehmen prüfen",
+          "paragraphs": [
+            "HDB verlangt Unternehmen aus seinem Directory of Renovation Contractors (DRC), auch für Renovierungen ohne HDB-Genehmigungspflicht. Prüfen Sie den tatsächlich ausführenden Betrieb im offiziellen Verzeichnis, statt allein auf ein Logo oder eine Verkaufszusage zu vertrauen.",
+            "Bewahren Sie Firmenname und Verzeichnisreferenz beim Vertrag auf. HDBs Genehmigungsleitfaden nennt außerdem zugelassene Fachkräfte für bestimmte Arbeiten und Fälle, die eine Qualified Person erfordern. Fragen Sie nach der Rolle für jede Tätigkeit; der allgemeine Eintrag belegt nicht sämtliche Spezialqualifikationen."
+          ],
+          "sources": [
+            {
+              "title": "HDB: Genehmigungsantrag und Fachrollen",
+              "href": "https://www.hdb.gov.sg/managing-my-home/renovation-and-maintenance/renovation/application-for-a-renovation-permit"
+            }
+          ]
+        },
+        {
+          "heading": "Die vier Nachweise getrennt halten",
+          "paragraphs": [
+            "Ein Angebot beschreibt einen geschäftlichen Vorschlag. Ein Verzeichniseintrag weist einen gelisteten Betrieb aus. Ein Antrag dokumentiert eine Anfrage. Eine erteilte Genehmigung ist ein anderer Nachweis mit eigenem Umfang und Bedingungen. Führen Sie jeden Nachweis unter seinem richtigen Status.",
+            "Laut HDB müssen Eigentümer den elektronischen Antrag des Unternehmens einschließlich unterschriebener Bestätigung autorisieren. Eine Eingangsmitteilung ist keine Genehmigung. Rufen Sie eine erteilte Genehmigung über den offiziellen HDB-Weg auf und prüfen Sie sie."
+          ],
+          "sources": [
+            {
+              "title": "HDB: Genehmigungsantrag und Fachrollen",
+              "href": "https://www.hdb.gov.sg/managing-my-home/renovation-and-maintenance/renovation/application-for-a-renovation-permit"
+            }
+          ]
+        },
+        {
+          "heading": "Eine Genehmigungsübersicht je Arbeit anlegen",
+          "paragraphs": [
+            "Nutzen Sie Spalten für Referenz, geplante Arbeit, verantwortlichen Betrieb oder Fachperson, geltende Vorgabe, erforderliche Zustimmung, erhaltenen Nachweis, Bedingung und nächsten Schritt. Lassen Sie unklare Anforderungen offen und fragen Sie HDB oder die passende Fachperson; dies ist keine vollständige Genehmigungsliste.",
+            "Fiktives Beispiel: Für eine geplante Änderung einer Schlafzimmerwand liegen Angebot und markierter Plan vor, aber keine schriftliche Zustimmung. Vermerken Sie „nicht beginnen; genehmigten Umfang klären“. HDB verlangt vor Wandabriss oder entsprechenden Abbrucharbeiten eine schriftliche Zustimmung. Das Beispiel belegt nicht, dass eine bestimmte Wand verändert werden darf."
+          ],
+          "sources": [
+            {
+              "title": "HDB: Eigentümerpflichten und Renovierungsregeln",
+              "href": "https://www.hdb.gov.sg/managing-my-home/renovation-and-maintenance/renovation/important-information-on-renovations"
+            }
+          ]
+        },
+        {
+          "heading": "Bedingungen vor dem Starttermin lesen",
+          "paragraphs": [
+            "HDB verlangt die Genehmigung für genehmigungspflichtige Arbeiten vor deren Beginn. Vergleichen Sie genehmigten Umfang und Plan mit der angesetzten Arbeit. Prüfen Sie Arbeitszeiten, Mitteilungen und weitere Bedingungen anhand aktueller Vorgaben und Unterlagen; ein allgemeiner Zeitplan ersetzt sie nicht.",
+            "Ändert sich der Entwurf oder widersprechen sich Unterlagen, fragen Sie Betrieb und HDB vor der geänderten Arbeit nach nötiger Zustimmung oder Klärung. Auch genehmigungsfreie Arbeiten müssen HDB-Vorgaben erfüllen. Ein geplanter Starttermin beseitigt keine offene Anforderung."
+          ],
+          "sources": [
+            {
+              "title": "HDB: Genehmigungsantrag und Fachrollen",
+              "href": "https://www.hdb.gov.sg/managing-my-home/renovation-and-maintenance/renovation/application-for-a-renovation-permit"
+            }
+          ]
+        },
+        {
+          "heading": "Eigentümerprüfungen und nächste Schritte sichtbar halten",
+          "paragraphs": [
+            "Bewahren Sie Umfang, Vertrag, einschlägige Genehmigungen, Bedingungen und datierte Klärungen zusammen auf. Ordnen Sie jedem offenen Punkt Verantwortung und nächsten Schritt zu. HDB verpflichtet Eigentümer, die Regeleinhaltung durch ihre Unternehmen sicherzustellen; ein ausgelagerter Antrag hebt diese Verantwortung nicht auf.",
+            "Nutzen Sie den gesonderten Mängelleitfaden für Zustandsaufnahmen und BSC-Nachverfolgung sowie den Finanzierungsplan für illustrative Zahlungsannahmen. Where To BTO ordnet veröffentlichte Projektfakten und Planungsfragen; es empfiehlt keine Betriebe, zertifiziert keine Arbeiten und genehmigt keine Renovierungen."
+          ],
+          "sources": [
+            {
+              "title": "HDB: Eigentümerpflichten und Renovierungsregeln",
+              "href": "https://www.hdb.gov.sg/managing-my-home/renovation-and-maintenance/renovation/important-information-on-renovations"
+            }
+          ]
+        }
+      ],
+      "callout": {
+        "title": "Nachweise vor Veränderungen sichern",
+        "text": "Dokumentieren Sie den Wohnungszustand getrennt von Unternehmens- und Genehmigungsprüfungen.",
+        "href": "/guides/bto-defects-before-renovation",
+        "label": "Mängelleitfaden vor der Renovierung lesen"
+      },
+      "next": [
+        {
+          "title": "White Flat und Standardgrundriss vergleichen",
+          "href": "/guides/choosing-bto-white-flat-option"
+        },
+        {
+          "title": "Den illustrativen Finanzierungsplan erkunden",
+          "href": "/tools/bto-roadmap"
+        },
+        {
+          "title": "Die Schlüsselübergabe vorbereiten",
+          "href": "/guides/bto-key-collection-preparation"
+        }
+      ]
+    },
+    "zh-Hans": {
+      "category": "装修前",
+      "title": "BTO 装修：开工前核对承包商与许可证",
+      "description": "分清承包商名录、报价、申请及已获批许可证。按每项工程核对文件，再安排 BTO 单位装修。",
+      "answer": "先在 HDB 的 Directory of Renovation Contractors（装修承包商名录）核对实际施工公司，再按自己单位的平面图列出每项工程，确认所需审批及专业人员。需要许可证的工程，应在施工前核对已获批许可证及条件。报价、名录登记或已提交申请，都不是开工许可。屋主仍须负责确保工程符合 HDB 规定。",
+      "sections": [
+        {
+          "heading": "从自己的单位及书面工程范围开始",
+          "paragraphs": [
+            "把正确单位平面图、项目专属装修指引及承包商拟定的工程范围放在一起。HDB 建议屋主通过 MyHDB Page 查看单位的特殊装修规定。其他屋主获批的设计，不等于你的单位也获批准。",
+            "为每项工程编参考编号，记录房间、位置、具体工作及图纸版本。把布局想法与实现它所需的工程分开。若报价只写“厨房配套”，应先问清包含什么，再认定范围已经确定。"
+          ],
+          "sources": [
+            {
+              "title": "HDB：屋主责任与装修规定",
+              "href": "https://www.hdb.gov.sg/managing-my-home/renovation-and-maintenance/renovation/important-information-on-renovations"
+            }
+          ]
+        },
+        {
+          "heading": "核对实际由谁施工",
+          "paragraphs": [
+            "HDB 要求使用其 Directory of Renovation Contractors（DRC）名录中的承包商，包括不需要 HDB 批准的装修工程。应通过官方名录核对实际施工公司，不要只凭标志或销售人员口头保证。",
+            "把公司名称及名录参考资料与合同一起保存。HDB 的许可证指引还列出不同工程所需的持牌人员，以及某些必须聘请 Qualified Person（合格专业人员）的情况。逐项询问适用职责；一般承包商名录登记，不能证明所有专项资格。"
+          ],
+          "sources": [
+            {
+              "title": "HDB：许可证申请及专业人员职责",
+              "href": "https://www.hdb.gov.sg/managing-my-home/renovation-and-maintenance/renovation/application-for-a-renovation-permit"
+            }
+          ]
+        },
+        {
+          "heading": "把四类记录分开",
+          "paragraphs": [
+            "报价描述商业建议；名录登记说明公司在名录内；申请记录一项请求；已获批许可证则是另一份有工程范围及条件的文件。应按真实状态保存各项记录。",
+            "HDB 说明屋主须授权承包商提交电子装修申请，并附上已签署的确认表。收到提交通知不等于获得批准。许可证获批后，应通过 HDB 官方渠道查看及核对。"
+          ],
+          "sources": [
+            {
+              "title": "HDB：许可证申请及专业人员职责",
+              "href": "https://www.hdb.gov.sg/managing-my-home/renovation-and-maintenance/renovation/application-for-a-renovation-permit"
+            }
+          ]
+        },
+        {
+          "heading": "按每项工程制作审批核对表",
+          "paragraphs": [
+            "可列工程编号、拟做事项、负责公司或专业人员、适用指引、所需批准、已收文件、条件及下一步。要求不清楚时应保留为待办，并向 HDB 或适当专业人员询问；这不是详尽的许可证清单。",
+            "虚构例子：拟改动卧室墙壁，已有报价及标注图纸，但没有书面批准。应标为“不要开工；确认获批范围”。HDB 要求拆墙或凿墙前先取得书面批准。这个例子不证明任何特定墙壁可以改动。"
+          ],
+          "sources": [
+            {
+              "title": "HDB：屋主责任与装修规定",
+              "href": "https://www.hdb.gov.sg/managing-my-home/renovation-and-maintenance/renovation/important-information-on-renovations"
+            }
+          ]
+        },
+        {
+          "heading": "在开工日期前读清条件",
+          "paragraphs": [
+            "HDB 规定，需要许可证的工程须先获批再施工。把实际获批范围及图纸与排期中的工作逐项比较。依据当前指引及文件核对施工时段、通知及其他条件，不要拿通用时间表代替。",
+            "若设计改变或文件互相矛盾，应在执行变更前向承包商及 HDB 确认需要什么批准或澄清。不需要许可证的工程仍须符合 HDB 指引。已经安排开工日期，不能解决缺失要求。"
+          ],
+          "sources": [
+            {
+              "title": "HDB：许可证申请及专业人员职责",
+              "href": "https://www.hdb.gov.sg/managing-my-home/renovation-and-maintenance/renovation/application-for-a-renovation-permit"
+            }
+          ]
+        },
+        {
+          "heading": "把屋主核对事项及下一步保留下来",
+          "paragraphs": [
+            "把工程范围、合同、相关批准、条件及注明日期的答复集中保存。每项待办都要有负责人及下一步。HDB 要求屋主确保承包商遵守规定；委托别人申请，并不免除屋主责任。",
+            "装修前状况记录及 BSC 跟进，应参考独立的缺陷指南；示例现金规划可用资金路线图。Where To BTO 整理已公布项目资料及规划问题，不推荐承包商、不认证工程，也不审批装修。"
+          ],
+          "sources": [
+            {
+              "title": "HDB：屋主责任与装修规定",
+              "href": "https://www.hdb.gov.sg/managing-my-home/renovation-and-maintenance/renovation/important-information-on-renovations"
+            }
+          ]
+        }
+      ],
+      "callout": {
+        "title": "改动单位前先保存记录",
+        "text": "把单位状况记录与承包商及审批核对分开，避免混淆两个任务。",
+        "href": "/guides/bto-defects-before-renovation",
+        "label": "阅读装修前缺陷指南"
+      },
+      "next": [
+        {
+          "title": "比较 White Flat 与默认布局",
+          "href": "/guides/choosing-bto-white-flat-option"
+        },
+        {
+          "title": "查看示例资金路线图",
+          "href": "/tools/bto-roadmap"
+        },
+        {
+          "title": "准备领取钥匙",
+          "href": "/guides/bto-key-collection-preparation"
+        }
+      ]
+    }
+  }
+}

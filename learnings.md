@@ -141,3 +141,7 @@ For PR #23, production coverage uses the current main SHA; before-merge review s
 # 10 November 2026 — Verify runtime packaging as well as generated XML
 
 The article loader discovers JSON files at runtime. A successful prebuilt sitemap does not prove that all server functions contain those files: the original sitemap trace included the seven bundles while the fallback trace omitted them. Keep the explicit narrow JSON include for all server traces and the build-output regression. Unknown sitemap component URLs should return 404, not a server error; preserve the real XML sitemap and existing article routes.
+
+
+## 11 November 2026 — PR25
+PR25 https://github.com/radiansnail-1/bto-narrowing-map/pull/25 adds a complete five-language contractor/permit preparation guide using the existing article-bundle renderer. Keep quotation, directory listing, application and actual approval distinct; owners retain responsibility. Current79answers and OTHER PR5 compared; coverage-only save now passes and preserves all cards. Earlier releases/packaging repair are history. Final exact-head tests/layouts and checked canonical release remain pending. Evidence, dated baseline, five URLs and7/28day review plan are in artifacts/seo-log.md. Preserve unrelated owner tasks and earlier observations.
