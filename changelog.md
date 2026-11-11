@@ -124,3 +124,7 @@ PR #23: BTO key-collection notice. The retained article answers what to check in
 # 10 November 2026 — Runtime article registry packaging
 
 - Included article-bundle JSON files in every server function trace and added artifact and sitemap-response regressions. No article, project, calculator or source-review dates changed. Local lint, 98 unit tests, verification build and 24 browser tests passed; checked release and live confirmation are pending.
+
+
+## 11 November 2026 — PR25
+PR25 https://github.com/radiansnail-1/bto-narrowing-map/pull/25 adds a complete five-language contractor/permit preparation guide using the existing article-bundle renderer. Keep quotation, directory listing, application and actual approval distinct; owners retain responsibility. Current79answers and OTHER PR5 compared; coverage-only save now passes and preserves all cards. Earlier releases/packaging repair are history. Final exact-head tests/layouts and checked canonical release remain pending. Evidence, dated baseline, five URLs and7/28day review plan are in artifacts/seo-log.md. Preserve unrelated owner tasks and earlier observations.
