@@ -1,0 +1,368 @@
+{
+  "slug": "bto-utilities-before-renovation",
+  "publishedDate": "2026-11-14",
+  "checkedDate": "2026-11-14",
+  "updatedDate": "2026-11-14",
+  "translations": {
+    "en": {
+      "category": "Moving in",
+      "title": "BTO utilities before renovation: account, supply and gas checks",
+      "description": "Separate your SP utilities account from electricity and water readiness and a separate gas appointment before renovating or moving into a BTO.",
+      "answer": "Open an SP utilities account even if you plan to use another electricity retailer. Confirm the account and intended supply date, then check electricity and water readiness separately from gas. SP says BTO electricity and water do not require a turn-on appointment; gas activation is arranged separately through City Energy. An application receipt alone does not settle every preparation task.",
+      "sections": [
+        {
+          "heading": "Start with the account, not a retail plan",
+          "paragraphs": [
+            "HDB’s move-in guide recommends setting up utilities before moving in. You still need an SP account whichever electricity retailer you choose. Use the current official SP route and document checklist; identification and proof of ownership or tenancy are listed. Budget for the security deposit using current information, rather than an old screenshot. This guide does not compare retail plans."
+          ],
+          "sources": [
+            {
+              "title": "HDB MyNiceHome",
+              "href": "https://www.mynicehome.gov.sg/get-settled-in/hdb-move-in-guide/"
+            }
+          ]
+        },
+        {
+          "heading": "Check the BTO appointment distinction",
+          "paragraphs": [
+            "SP distinguishes new BTO flats from resale HDB and other residential properties: BTO electricity and water need no turn-on appointment. That exception does not remove the account-opening step or prove your flat’s actual status. Keep the confirmed date with the account record. For a different property type or an unclear instruction, ask SP which process applies instead of borrowing the BTO exception."
+          ],
+          "sources": [
+            {
+              "title": "SP Group",
+              "href": "https://www.spgroup.com.sg/our-services/utilities/quick-guide-to-your-utilities-residential"
+            }
+          ]
+        },
+        {
+          "heading": "Treat gas as a separate task",
+          "paragraphs": [
+            "If your home will use piped gas, SP says activation is managed separately by City Energy after account opening is confirmed. Follow the current official contact and appointment instructions. Do not infer gas readiness from electricity, water or an application SMS. Check the actual appointment and any required arrangements before scheduling work that depends on it."
+          ],
+          "sources": [
+            {
+              "title": "SP Group",
+              "href": "https://www.spgroup.com.sg/our-services/utilities/quick-guide-to-your-utilities-residential"
+            }
+          ]
+        },
+        {
+          "heading": "Keep a small readiness record",
+          "paragraphs": [
+            "Make one row each for account confirmation, electricity/water readiness and gas if needed. Record the evidence, relevant date, unresolved question, responsible person and next action. Keep account numbers and personal documents privately. Fictional example: the account application has an acknowledgement, but the gas appointment is not confirmed. The gas row remains open; a planned kitchen installation date does not close it."
+          ]
+        },
+        {
+          "heading": "Agree the renovation handoff",
+          "paragraphs": [
+            "Ask the contractor what supply and access the proposed work needs, and compare that with your confirmed arrangements. Keep utility readiness separate from contractor registration, renovation permission and defects reporting; none substitutes for the others. Where To BTO organises planning questions and published facts. It does not open accounts, certify installations or approve work. Use the existing contractor and defects guides for those separate checks."
+          ]
+        }
+      ],
+      "callout": {
+        "title": "Keep approval checks separate",
+        "text": "Utility arrangements do not establish that proposed renovation work is authorised.",
+        "label": "Read contractor and permit checks",
+        "href": "/guides/bto-renovation-contractor-permit-checks"
+      },
+      "next": [
+        {
+          "title": "Record defects before renovation",
+          "href": "/guides/bto-defects-before-renovation"
+        },
+        {
+          "title": "Prepare your key-collection notice",
+          "href": "/guides/bto-key-collection-preparation"
+        }
+      ]
+    },
+    "es": {
+      "category": "Mudanza",
+      "title": "Suministros del BTO antes de reformar: cuenta, servicio y gas",
+      "description": "Distingue la cuenta de SP, la disponibilidad de electricidad y agua y la cita independiente del gas antes de reformar o mudarte a un BTO.",
+      "answer": "Abre una cuenta de suministros con SP aunque elijas otra comercializadora de electricidad. Confirma la cuenta y la fecha prevista del servicio; comprueba electricidad y agua por separado del gas. SP indica que los BTO no necesitan cita para conectar electricidad y agua; City Energy gestiona aparte la activación del gas. Un acuse de solicitud no resuelve toda la preparación.",
+      "sections": [
+        {
+          "heading": "Empieza por la cuenta, no por la tarifa",
+          "paragraphs": [
+            "La guía de mudanza de HDB recomienda preparar los suministros antes de instalarse. Necesitas una cuenta de SP cualquiera que sea la comercializadora de electricidad. Usa el canal oficial y la lista actual de documentos de SP, que incluye identificación y prueba de propiedad o alquiler. Prevé el depósito de garantía con información vigente, no con una captura antigua. Esta guía no compara tarifas."
+          ],
+          "sources": [
+            {
+              "title": "HDB MyNiceHome",
+              "href": "https://www.mynicehome.gov.sg/get-settled-in/hdb-move-in-guide/"
+            }
+          ]
+        },
+        {
+          "heading": "Distingue la excepción de cita para BTO",
+          "paragraphs": [
+            "SP distingue los BTO nuevos de las viviendas HDB de reventa y otros inmuebles: electricidad y agua de un BTO no requieren cita de conexión. Esta excepción no elimina la apertura de cuenta ni confirma el estado real de tu vivienda. Conserva la fecha confirmada con la cuenta. Si el tipo de inmueble o una instrucción no están claros, consulta a SP qué proceso corresponde."
+          ],
+          "sources": [
+            {
+              "title": "SP Group",
+              "href": "https://www.spgroup.com.sg/our-services/utilities/quick-guide-to-your-utilities-residential"
+            }
+          ]
+        },
+        {
+          "heading": "Gestiona el gas por separado",
+          "paragraphs": [
+            "Si vas a utilizar gas canalizado, SP indica que City Energy gestiona su activación por separado después de confirmar la apertura de cuenta. Sigue las instrucciones oficiales actuales de contacto y cita. No deduzcas que el gas está listo porque haya electricidad, agua o un SMS de solicitud. Comprueba la cita real y los preparativos exigidos antes de programar trabajos que dependan del gas."
+          ],
+          "sources": [
+            {
+              "title": "SP Group",
+              "href": "https://www.spgroup.com.sg/our-services/utilities/quick-guide-to-your-utilities-residential"
+            }
+          ]
+        },
+        {
+          "heading": "Conserva un registro breve",
+          "paragraphs": [
+            "Dedica una fila a la confirmación de cuenta, otra a electricidad y agua y otra al gas si lo necesitas. Anota prueba, fecha, duda pendiente, responsable y siguiente acción. Guarda en privado números de cuenta y documentos personales. Ejemplo ficticio: hay acuse de solicitud, pero la cita del gas no está confirmada. Esa fila sigue pendiente; una fecha prevista para instalar la cocina no la cierra."
+          ]
+        },
+        {
+          "heading": "Acuerda la entrega al contratista",
+          "paragraphs": [
+            "Pregunta al contratista qué suministros y acceso necesita cada trabajo y compáralos con lo confirmado. Separa esta preparación del registro del contratista, los permisos y la notificación de defectos: ninguna comprobación sustituye a las demás. Where To BTO organiza preguntas y datos publicados; no abre cuentas, certifica instalaciones ni autoriza obras. Usa las guías de contratistas y defectos para esas tareas."
+          ]
+        }
+      ],
+      "callout": {
+        "title": "Comprueba las autorizaciones aparte",
+        "text": "Preparar los suministros no demuestra que una reforma esté autorizada.",
+        "label": "Leer controles de contratista y permisos",
+        "href": "/guides/bto-renovation-contractor-permit-checks"
+      },
+      "next": [
+        {
+          "title": "Registrar defectos antes de reformar",
+          "href": "/guides/bto-defects-before-renovation"
+        },
+        {
+          "title": "Preparar el aviso de entrega de llaves",
+          "href": "/guides/bto-key-collection-preparation"
+        }
+      ]
+    },
+    "fr": {
+      "category": "Emménagement",
+      "title": "Réseaux du BTO avant travaux : compte, fourniture et gaz",
+      "description": "Distinguez le compte SP, la disponibilité de l’électricité et de l’eau et le rendez-vous distinct pour le gaz avant des travaux ou un emménagement.",
+      "answer": "Ouvrez un compte de services SP même si vous choisissez un autre fournisseur d’électricité. Confirmez le compte et la date prévue de fourniture, puis vérifiez l’électricité et l’eau séparément du gaz. Selon SP, leur mise en service dans un BTO ne nécessite pas de rendez-vous ; City Energy organise séparément celle du gaz. Un accusé de demande ne règle pas toute la préparation.",
+      "sections": [
+        {
+          "heading": "Commencer par le compte, pas par une offre",
+          "paragraphs": [
+            "Le guide d’emménagement HDB recommande de préparer les services avant d’habiter le logement. Le compte SP reste nécessaire quel que soit le fournisseur d’électricité. Utilisez le canal officiel et la liste actuelle des pièces de SP, qui mentionne identité et justificatif de propriété ou de location. Prévoyez le dépôt de garantie d’après les informations actuelles, sans reprendre une ancienne capture. Ce guide ne compare pas les offres."
+          ],
+          "sources": [
+            {
+              "title": "HDB MyNiceHome",
+              "href": "https://www.mynicehome.gov.sg/get-settled-in/hdb-move-in-guide/"
+            }
+          ]
+        },
+        {
+          "heading": "Comprendre l’exception de rendez-vous des BTO",
+          "paragraphs": [
+            "SP distingue les BTO neufs des logements HDB de revente et des autres biens : l’électricité et l’eau d’un BTO ne nécessitent pas de rendez-vous de mise en service. Cette exception ne supprime pas l’ouverture du compte et ne prouve pas l’état réel de votre logement. Conservez la date confirmée. Si le type de bien ou une instruction est ambigu, demandez à SP quelle procédure s’applique."
+          ],
+          "sources": [
+            {
+              "title": "SP Group",
+              "href": "https://www.spgroup.com.sg/our-services/utilities/quick-guide-to-your-utilities-residential"
+            }
+          ]
+        },
+        {
+          "heading": "Traiter le gaz séparément",
+          "paragraphs": [
+            "Si le logement utilisera du gaz de ville, SP indique que City Energy gère séparément son activation après confirmation de l’ouverture du compte. Suivez les instructions officielles actuelles de contact et de rendez-vous. Ne déduisez pas la disponibilité du gaz de l’électricité, de l’eau ou d’un SMS de demande. Vérifiez le rendez-vous réel et les préparatifs requis avant de programmer les travaux qui en dépendent."
+          ],
+          "sources": [
+            {
+              "title": "SP Group",
+              "href": "https://www.spgroup.com.sg/our-services/utilities/quick-guide-to-your-utilities-residential"
+            }
+          ]
+        },
+        {
+          "heading": "Tenir un petit registre de préparation",
+          "paragraphs": [
+            "Prévoyez une ligne pour la confirmation du compte, une pour l’électricité et l’eau, et une pour le gaz si nécessaire. Notez preuve, date, question ouverte, responsable et prochaine action. Gardez les numéros de compte et pièces personnelles privés. Exemple fictif : la demande a un accusé, mais le rendez-vous gaz reste à confirmer. Cette ligne reste ouverte ; une date prévue de pose de cuisine ne la clôt pas."
+          ]
+        },
+        {
+          "heading": "Convenir du relais avec l’entreprise",
+          "paragraphs": [
+            "Demandez à l’entreprise quels services et accès chaque intervention exige, puis comparez-les aux dispositions confirmées. Distinguez cette préparation de l’inscription de l’entreprise, des permis et du signalement des défauts : aucun contrôle ne remplace les autres. Where To BTO organise questions et faits publiés ; il n’ouvre pas de comptes, ne certifie pas les installations et n’autorise pas de travaux. Consultez les guides distincts sur l’entreprise et les défauts."
+          ]
+        }
+      ],
+      "callout": {
+        "title": "Vérifier les autorisations séparément",
+        "text": "Les dispositions de fourniture ne prouvent pas qu’une rénovation est autorisée.",
+        "label": "Lire les contrôles entreprise et permis",
+        "href": "/guides/bto-renovation-contractor-permit-checks"
+      },
+      "next": [
+        {
+          "title": "Documenter les défauts avant travaux",
+          "href": "/guides/bto-defects-before-renovation"
+        },
+        {
+          "title": "Préparer l’avis de remise des clés",
+          "href": "/guides/bto-key-collection-preparation"
+        }
+      ]
+    },
+    "de": {
+      "category": "Einzug",
+      "title": "BTO-Versorgung vor der Renovierung: Konto, Strom, Wasser und Gas",
+      "description": "Trennen Sie das SP-Konto von der Strom- und Wasserbereitschaft und einem gesonderten Gastermin vor Renovierung oder Einzug in eine BTO-Wohnung.",
+      "answer": "Eröffnen Sie ein SP-Versorgungskonto, auch wenn Sie einen anderen Stromanbieter wählen. Bestätigen Sie Konto und vorgesehenen Versorgungsbeginn und prüfen Sie Strom und Wasser getrennt vom Gas. Laut SP ist für Strom und Wasser in BTO-Wohnungen kein Einschalttermin nötig; City Energy organisiert die Gasaktivierung separat. Eine Eingangsbestätigung erledigt nicht sämtliche Vorbereitungen.",
+      "sections": [
+        {
+          "heading": "Mit dem Konto beginnen, nicht mit einem Tarif",
+          "paragraphs": [
+            "HDB empfiehlt im Einzugsleitfaden, die Versorgung vor dem Einzug vorzubereiten. Unabhängig vom Stromanbieter benötigen Sie ein SP-Konto. Nutzen Sie den offiziellen Weg und die aktuelle Dokumentenliste von SP; genannt werden Identitäts- und Eigentums- oder Mietnachweis. Planen Sie die Sicherheitsleistung anhand aktueller Angaben statt eines alten Bildschirmfotos. Dieser Leitfaden vergleicht keine Tarife."
+          ],
+          "sources": [
+            {
+              "title": "HDB MyNiceHome",
+              "href": "https://www.mynicehome.gov.sg/get-settled-in/hdb-move-in-guide/"
+            }
+          ]
+        },
+        {
+          "heading": "Die BTO-Ausnahme beim Einschalttermin prüfen",
+          "paragraphs": [
+            "SP unterscheidet neue BTO-Wohnungen von HDB-Wiederverkaufswohnungen und anderen Wohnimmobilien: Für BTO-Strom und -Wasser ist kein Einschalttermin erforderlich. Diese Ausnahme ersetzt weder die Kontoeröffnung noch den Nachweis des tatsächlichen Zustands Ihrer Wohnung. Bewahren Sie das bestätigte Datum beim Kontonachweis auf. Ist der Immobilientyp oder eine Anweisung unklar, fragen Sie SP nach dem passenden Verfahren."
+          ],
+          "sources": [
+            {
+              "title": "SP Group",
+              "href": "https://www.spgroup.com.sg/our-services/utilities/quick-guide-to-your-utilities-residential"
+            }
+          ]
+        },
+        {
+          "heading": "Gas als eigenen Vorgang behandeln",
+          "paragraphs": [
+            "Wenn Sie Leitungsgas nutzen werden, wird dessen Aktivierung laut SP nach bestätigter Kontoeröffnung separat von City Energy organisiert. Folgen Sie den aktuellen offiziellen Kontakt- und Terminhinweisen. Leiten Sie Gasbereitschaft weder aus Strom oder Wasser noch aus einer Antrags-SMS ab. Prüfen Sie den tatsächlichen Termin und erforderliche Vorbereitungen, bevor davon abhängige Arbeiten eingeplant werden."
+          ],
+          "sources": [
+            {
+              "title": "SP Group",
+              "href": "https://www.spgroup.com.sg/our-services/utilities/quick-guide-to-your-utilities-residential"
+            }
+          ]
+        },
+        {
+          "heading": "Eine kurze Bereitschaftsliste führen",
+          "paragraphs": [
+            "Führen Sie je eine Zeile für Kontobestätigung, Strom/Wasser und gegebenenfalls Gas. Notieren Sie Nachweis, Datum, offene Frage, verantwortliche Person und nächsten Schritt. Kontonummern und persönliche Dokumente bleiben privat. Fiktives Beispiel: Der Antrag wurde bestätigt, der Gastermin jedoch nicht. Die Gaszeile bleibt offen; ein geplanter Kücheneinbau schließt sie nicht ab."
+          ]
+        },
+        {
+          "heading": "Die Übergabe an das Unternehmen klären",
+          "paragraphs": [
+            "Fragen Sie das Unternehmen, welche Versorgung und welcher Zugang für jede Arbeit erforderlich sind, und vergleichen Sie dies mit den bestätigten Vorkehrungen. Trennen Sie Versorgung von Unternehmenseintrag, Renovierungsgenehmigung und Mängelmeldung; keine Prüfung ersetzt die anderen. Where To BTO ordnet Planungsfragen und veröffentlichte Fakten. Es eröffnet keine Konten, zertifiziert keine Anlagen und genehmigt keine Arbeiten. Nutzen Sie dafür die gesonderten Unternehmens- und Mängelleitfäden."
+          ]
+        }
+      ],
+      "callout": {
+        "title": "Genehmigungen gesondert prüfen",
+        "text": "Geregelte Versorgung belegt keine Genehmigung für geplante Renovierungsarbeiten.",
+        "label": "Unternehmens- und Genehmigungsprüfung lesen",
+        "href": "/guides/bto-renovation-contractor-permit-checks"
+      },
+      "next": [
+        {
+          "title": "Mängel vor der Renovierung dokumentieren",
+          "href": "/guides/bto-defects-before-renovation"
+        },
+        {
+          "title": "Schreiben zur Schlüsselübergabe vorbereiten",
+          "href": "/guides/bto-key-collection-preparation"
+        }
+      ]
+    },
+    "zh-Hans": {
+      "category": "入住准备",
+      "title": "BTO 装修前的水电煤准备：账户、供给与煤气预约",
+      "description": "装修或搬入 BTO 前，分清 SP 账户、电力和供水状态，以及须另行安排的煤气启用预约。",
+      "answer": "即使打算选其他电力零售商，也须开立 SP 公用事业账户。确认账户及预定供给日期，再把水电与煤气分开核对。SP 说明 BTO 的电力和供水启用无需预约；煤气须另由 City Energy 安排。收到申请确认，并不代表所有准备工作都已完成。",
+      "sections": [
+        {
+          "heading": "先处理账户，再比较电力配套",
+          "paragraphs": [
+            "HDB 入住指南建议搬家前先准备公用事业账户。不论选择哪家电力零售商，都需要 SP 账户。使用 SP 当前官方渠道及文件清单；所列文件包括身份证明和产权或租赁证明。保证金应按最新资料预算，不要照搬旧截图。本指南不比较电力配套。"
+          ],
+          "sources": [
+            {
+              "title": "HDB MyNiceHome",
+              "href": "https://www.mynicehome.gov.sg/get-settled-in/hdb-move-in-guide/"
+            }
+          ]
+        },
+        {
+          "heading": "分清 BTO 的预约例外",
+          "paragraphs": [
+            "SP 把新 BTO 与转售 HDB 及其他住宅分开说明：BTO 启用电力和供水不需预约。但这不免除开户步骤，也不能证明你单位的实际供给状态。把已确认日期与账户记录保存。若房屋类型或通知内容不清楚，应向 SP 确认适用流程，不要自行套用 BTO 例外。"
+          ],
+          "sources": [
+            {
+              "title": "SP Group",
+              "href": "https://www.spgroup.com.sg/our-services/utilities/quick-guide-to-your-utilities-residential"
+            }
+          ]
+        },
+        {
+          "heading": "煤气另列一项",
+          "paragraphs": [
+            "若家中将使用管道煤气，SP 说明应在开户获确认后，由 City Energy 另行处理启用。按当前官方联系及预约指引办理。不要因已有电力、供水或申请短信，就推断煤气已可使用。安排依赖煤气的工程前，应核对实际预约及所需准备。"
+          ],
+          "sources": [
+            {
+              "title": "SP Group",
+              "href": "https://www.spgroup.com.sg/our-services/utilities/quick-guide-to-your-utilities-residential"
+            }
+          ]
+        },
+        {
+          "heading": "保留简明准备记录",
+          "paragraphs": [
+            "分别为账户确认、水电准备，以及有需要时的煤气各列一行。记录证明、相关日期、待解决问题、负责人及下一步。账户号码和个人文件应私下保管。虚构例子：已收到开户申请回执，但煤气预约尚未确认。煤气一栏仍须保留待办；已排好厨房安装日期，并不能把它标作完成。"
+          ]
+        },
+        {
+          "heading": "与装修承包商确认交接",
+          "paragraphs": [
+            "询问承包商各项工程需要什么供给及进入单位的安排，再与实际确认事项比较。公用事业准备、承包商登记、装修批准和缺陷报告应分开处理，不能互相代替。Where To BTO 整理规划问题及已公布事实，不代办账户、不认证安装，也不审批工程。相关事项请另参考承包商与缺陷指南。"
+          ]
+        }
+      ],
+      "callout": {
+        "title": "装修批准另行核对",
+        "text": "已安排水电煤，不代表拟进行的装修工程已获授权。",
+        "label": "阅读承包商及许可证核对指南",
+        "href": "/guides/bto-renovation-contractor-permit-checks"
+      },
+      "next": [
+        {
+          "title": "装修前记录缺陷",
+          "href": "/guides/bto-defects-before-renovation"
+        },
+        {
+          "title": "准备领取钥匙通知",
+          "href": "/guides/bto-key-collection-preparation"
+        }
+      ]
+    }
+  }
+}
