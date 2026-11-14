@@ -145,3 +145,7 @@ The article loader discovers JSON files at runtime. A successful prebuilt sitema
 
 ## 11 November 2026 — PR25
 PR25 https://github.com/radiansnail-1/bto-narrowing-map/pull/25 adds a complete five-language contractor/permit preparation guide using the existing article-bundle renderer. Keep quotation, directory listing, application and actual approval distinct; owners retain responsibility. Current79answers and OTHER PR5 compared; coverage-only save now passes and preserves all cards. Earlier releases/packaging repair are history. Final exact-head tests/layouts and checked canonical release remain pending. Evidence, dated baseline, five URLs and7/28day review plan are in artifacts/seo-log.md. Preserve unrelated owner tasks and earlier observations.
+
+
+## 14 November 2026 — PR26
+BTO utilities guide: separate SP account receipt, actual water/electricity readiness and separately arranged gas. Five complete translations; SP/HDB sources read today. Source/measurement detail in artifacts/seo-log.md and PR26. Existing facts, snapshot dates and owner TODOs preserved. Final exact-head validation and live release pending; retain7/28-day observation plans.
