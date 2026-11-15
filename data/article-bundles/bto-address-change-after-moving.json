@@ -1,0 +1,458 @@
+{
+  "slug": "bto-address-change-after-moving",
+  "publishedDate": "2026-11-15",
+  "checkedDate": "2026-11-15",
+  "updatedDate": "2026-11-15",
+  "translations": {
+    "en": {
+      "category": "Moving in",
+      "title": "Moving into your BTO: when and how to update your IC address",
+      "description": "Separate moving in from collecting keys, then track your ICA address report, household consent, PIN verification and address sticker.",
+      "answer": "For IC holders, ICA requires reporting an address change within 28 days of moving to the new address. Update after you have moved in, rather than treating key collection as the move. Use ICA’s official service and track submission, any group consent, PIN verification and the address sticker separately.",
+      "sections": [
+        {
+          "heading": "Use the actual move, not the key appointment",
+          "paragraphs": [
+            "Keep your key-collection date and actual move-in date as separate entries. A flat can be handed over while renovation or other preparations continue. ICA’s current guidance says to update only after moving; its FAQ gives IC holders 28 days to report the change. Check with ICA promptly if your situation or deadline is unclear."
+          ],
+          "sources": [
+            {
+              "title": "ICA FAQ",
+              "href": "https://ask.gov.sg/ica/questions/clvvpo7u70035kx4ga9i9ln3a?from=quicklinks"
+            }
+          ]
+        },
+        {
+          "heading": "Use the official route privately",
+          "paragraphs": [
+            "Start from ICA’s current address-change page and follow its Singpass instructions. Keep identity numbers, credentials and the mailed PIN out of shared renovation sheets or this site. Your planning record needs a status and next action, not copies of sensitive identity material."
+          ],
+          "sources": [
+            {
+              "title": "ICA: current address service",
+              "href": "https://www.ica.gov.sg/information-and-e-services/identity-card-and-passport/identity-card/change-of-residential-address-on-identity-card"
+            }
+          ]
+        },
+        {
+          "heading": "Check each person in a group application",
+          "paragraphs": [
+            "ICA allows a main applicant changing their own address to include up to four people moving to that same address. Each sub-applicant must consent through the service within five days of the SMS notification. The 2025 announcement says a person who does not consent in time will not have their address updated through that application. Do not mark a whole household complete from one submission."
+          ],
+          "sources": [
+            {
+              "title": "ICA: 2025 group application procedure",
+              "href": "https://www.ica.gov.sg/about-ica/news-and-publications/media-room/new-feature-in-electronic-change-of-address-service-from-15-august-2025"
+            }
+          ]
+        },
+        {
+          "heading": "Track the PIN and the outcome separately",
+          "paragraphs": [
+            "The main applicant receives a PIN mailer at the new address and verifies it through the official service. Check the application status; for successful applicants, follow the instructions for the mailed address sticker. ICA says to contact it if the PIN mailer has not arrived after five working days. A submitted request alone is not the final outcome."
+          ],
+          "sources": [
+            {
+              "title": "ICA: current address service",
+              "href": "https://www.ica.gov.sg/information-and-e-services/identity-card-and-passport/identity-card/change-of-residential-address-on-identity-card"
+            }
+          ]
+        },
+        {
+          "heading": "Keep a short completion record",
+          "paragraphs": [
+            "Use rows for move-in date, report submission, each required consent, PIN verification, service status and sticker. Add evidence date, responsible person and next action. Fictional example: a household has submitted a group request, but one consent is pending. Keep that row open and resolve it through ICA; an approaching furniture delivery does not complete the address update."
+          ]
+        },
+        {
+          "heading": "Check remaining accounts individually",
+          "paragraphs": [
+            "ICA links a list of participating OSCARS agencies. Check the current list and separately confirm important records with providers such as your bank or insurer; do not assume every account changes automatically. Where To BTO helps organise planning questions. It does not collect identity details, submit reports or confirm that your statutory obligations are fulfilled."
+          ],
+          "sources": [
+            {
+              "title": "ICA: current address service",
+              "href": "https://www.ica.gov.sg/information-and-e-services/identity-card-and-passport/identity-card/change-of-residential-address-on-identity-card"
+            }
+          ]
+        }
+      ],
+      "callout": {
+        "title": "Keep utilities as a separate task",
+        "text": "Updating an identity record does not confirm electricity, water or gas arrangements.",
+        "label": "Review utilities preparation",
+        "href": "/guides/bto-utilities-before-renovation"
+      },
+      "next": [
+        {
+          "title": "Prepare the key-collection appointment",
+          "href": "/guides/bto-key-collection-preparation"
+        },
+        {
+          "title": "Record defects before renovation",
+          "href": "/guides/bto-defects-before-renovation"
+        }
+      ]
+    },
+    "es": {
+      "category": "Mudanza",
+      "title": "Mudarte al BTO: cuándo y cómo actualizar la dirección del IC",
+      "description": "Distingue la mudanza de la entrega de llaves y registra la solicitud a ICA, los consentimientos, la verificación del PIN y la etiqueta.",
+      "answer": "Para titulares de IC, ICA exige comunicar el cambio de dirección dentro de los 28 días posteriores a la mudanza. Actualiza después de instalarte; recoger las llaves no equivale a mudarte. Usa el servicio oficial y sigue por separado la solicitud, los consentimientos del grupo, el PIN y la etiqueta de dirección.",
+      "sections": [
+        {
+          "heading": "Parte de la mudanza real, no de la cita de llaves",
+          "paragraphs": [
+            "Anota por separado cuándo recoges las llaves y cuándo te mudas. Puedes recibir la vivienda mientras continúan las reformas u otros preparativos. La guía vigente de ICA dice que actualices solo después de mudarte; su FAQ da a los titulares de IC 28 días para comunicar el cambio. Si tu situación o plazo no están claros, consulta a ICA cuanto antes."
+          ],
+          "sources": [
+            {
+              "title": "ICA FAQ",
+              "href": "https://ask.gov.sg/ica/questions/clvvpo7u70035kx4ga9i9ln3a?from=quicklinks"
+            }
+          ]
+        },
+        {
+          "heading": "Usa el canal oficial de forma privada",
+          "paragraphs": [
+            "Empieza en la página actual de cambio de dirección de ICA y sigue sus instrucciones de Singpass. No incluyas números de identidad, credenciales ni el PIN recibido por correo en listas compartidas de reforma ni en este sitio. El registro de preparación necesita un estado y una siguiente acción, no copias de datos sensibles."
+          ],
+          "sources": [
+            {
+              "title": "ICA: current address service",
+              "href": "https://www.ica.gov.sg/information-and-e-services/identity-card-and-passport/identity-card/change-of-residential-address-on-identity-card"
+            }
+          ]
+        },
+        {
+          "heading": "Comprueba a cada persona de una solicitud de grupo",
+          "paragraphs": [
+            "ICA permite que quien cambia su propia dirección incluya hasta cuatro personas que se mudan a esa misma dirección. Cada participante debe consentir mediante el servicio dentro de los cinco días siguientes al SMS. El anuncio de 2025 indica que quien no consienta a tiempo no tendrá su dirección actualizada mediante esa solicitud. Un envío no completa el trámite de toda la familia."
+          ],
+          "sources": [
+            {
+              "title": "ICA: 2025 group application procedure",
+              "href": "https://www.ica.gov.sg/about-ica/news-and-publications/media-room/new-feature-in-electronic-change-of-address-service-from-15-august-2025"
+            }
+          ]
+        },
+        {
+          "heading": "Distingue el PIN del resultado",
+          "paragraphs": [
+            "La persona principal recibe una carta con PIN en la nueva dirección y lo verifica mediante el servicio oficial. Consulta el estado y, para las solicitudes aceptadas, sigue las instrucciones de la etiqueta enviada por correo. ICA indica que contactes con ella si el PIN no llega después de cinco días laborables. Enviar la solicitud no es el resultado final."
+          ],
+          "sources": [
+            {
+              "title": "ICA: current address service",
+              "href": "https://www.ica.gov.sg/information-and-e-services/identity-card-and-passport/identity-card/change-of-residential-address-on-identity-card"
+            }
+          ]
+        },
+        {
+          "heading": "Lleva un registro breve de finalización",
+          "paragraphs": [
+            "Usa filas para fecha de mudanza, envío, cada consentimiento necesario, verificación del PIN, estado y etiqueta. Añade fecha de la prueba, responsable y siguiente acción. Ejemplo ficticio: una familia ha enviado la solicitud de grupo, pero falta un consentimiento. Mantén esa fila abierta y resuélvela con ICA; una entrega de muebles próxima no completa el cambio."
+          ]
+        },
+        {
+          "heading": "Revisa las demás cuentas individualmente",
+          "paragraphs": [
+            "ICA enlaza la lista de organismos participantes en OSCARS. Consulta la lista actual y confirma por separado los registros importantes con proveedores, como el banco o la aseguradora; no supongas que todas las cuentas se actualizan automáticamente. Where To BTO organiza preguntas de preparación. No recoge datos de identidad, presenta solicitudes ni confirma el cumplimiento de tus obligaciones legales."
+          ],
+          "sources": [
+            {
+              "title": "ICA: current address service",
+              "href": "https://www.ica.gov.sg/information-and-e-services/identity-card-and-passport/identity-card/change-of-residential-address-on-identity-card"
+            }
+          ]
+        }
+      ],
+      "callout": {
+        "title": "Gestiona los suministros por separado",
+        "text": "Actualizar un registro de identidad no confirma los arreglos de electricidad, agua o gas.",
+        "label": "Revisar la preparación de suministros",
+        "href": "/guides/bto-utilities-before-renovation"
+      },
+      "next": [
+        {
+          "title": "Preparar la cita de entrega de llaves",
+          "href": "/guides/bto-key-collection-preparation"
+        },
+        {
+          "title": "Registrar defectos antes de reformar",
+          "href": "/guides/bto-defects-before-renovation"
+        }
+      ]
+    },
+    "fr": {
+      "category": "Emménagement",
+      "title": "Emménager dans un BTO : quand et comment modifier l’adresse du IC",
+      "description": "Distinguez l’emménagement de la remise des clés, puis suivez déclaration ICA, consentements, vérification du PIN et autocollant.",
+      "answer": "Pour les titulaires de IC, ICA exige de déclarer le changement d’adresse dans les 28 jours suivant l’emménagement. Modifiez l’adresse après avoir emménagé ; la remise des clés ne vaut pas emménagement. Utilisez le service officiel et suivez séparément dépôt, consentements du groupe, PIN et autocollant d’adresse.",
+      "sections": [
+        {
+          "heading": "Partir de l’emménagement réel, pas du rendez-vous des clés",
+          "paragraphs": [
+            "Notez séparément la remise des clés et l’emménagement réel. Le logement peut être livré alors que les travaux ou préparatifs continuent. Les consignes actuelles d’ICA demandent une modification seulement après l’emménagement ; sa FAQ donne aux titulaires de IC 28 jours pour déclarer le changement. Si votre situation ou délai est incertain, contactez rapidement ICA."
+          ],
+          "sources": [
+            {
+              "title": "ICA FAQ",
+              "href": "https://ask.gov.sg/ica/questions/clvvpo7u70035kx4ga9i9ln3a?from=quicklinks"
+            }
+          ]
+        },
+        {
+          "heading": "Utiliser le canal officiel en privé",
+          "paragraphs": [
+            "Partez de la page actuelle de changement d’adresse d’ICA et suivez les instructions Singpass. Gardez numéros d’identité, identifiants et PIN postal hors des tableaux de rénovation partagés et de ce site. Votre suivi nécessite un statut et une prochaine action, pas des copies de données sensibles."
+          ],
+          "sources": [
+            {
+              "title": "ICA: current address service",
+              "href": "https://www.ica.gov.sg/information-and-e-services/identity-card-and-passport/identity-card/change-of-residential-address-on-identity-card"
+            }
+          ]
+        },
+        {
+          "heading": "Vérifier chaque personne d’une demande groupée",
+          "paragraphs": [
+            "ICA permet au demandeur principal qui change sa propre adresse d’inclure jusqu’à quatre personnes emménageant à cette même adresse. Chaque participant doit consentir via le service dans les cinq jours suivant le SMS. L’annonce de 2025 précise que, sans consentement à temps, son adresse ne sera pas modifiée par cette demande. Un seul dépôt ne clôt pas le dossier de tout le foyer."
+          ],
+          "sources": [
+            {
+              "title": "ICA: 2025 group application procedure",
+              "href": "https://www.ica.gov.sg/about-ica/news-and-publications/media-room/new-feature-in-electronic-change-of-address-service-from-15-august-2025"
+            }
+          ]
+        },
+        {
+          "heading": "Séparer le PIN du résultat",
+          "paragraphs": [
+            "Le demandeur principal reçoit un courrier PIN à la nouvelle adresse et le vérifie via le service officiel. Consultez le statut ; pour les demandes acceptées, suivez les instructions de l’autocollant postal. ICA demande de la contacter si le courrier PIN n’arrive pas après cinq jours ouvrés. Un dépôt seul ne constitue pas le résultat final."
+          ],
+          "sources": [
+            {
+              "title": "ICA: current address service",
+              "href": "https://www.ica.gov.sg/information-and-e-services/identity-card-and-passport/identity-card/change-of-residential-address-on-identity-card"
+            }
+          ]
+        },
+        {
+          "heading": "Tenir un bref suivi de clôture",
+          "paragraphs": [
+            "Prévoyez des lignes pour emménagement, dépôt, chaque consentement requis, vérification PIN, statut et autocollant. Ajoutez date du justificatif, responsable et prochaine action. Exemple fictif : le foyer a déposé une demande groupée, mais un consentement manque. Laissez cette ligne ouverte et résolvez-la avec ICA ; une livraison de meubles imminente ne termine pas la modification."
+          ]
+        },
+        {
+          "heading": "Vérifier les autres comptes individuellement",
+          "paragraphs": [
+            "ICA fournit la liste des organismes participant à OSCARS. Consultez la liste actuelle et confirmez séparément les dossiers importants auprès des prestataires, comme banque ou assureur ; ne supposez pas que tous les comptes changent automatiquement. Where To BTO organise les questions de préparation. Il ne collecte pas de données d’identité, ne dépose pas de déclarations et ne confirme pas le respect de vos obligations légales."
+          ],
+          "sources": [
+            {
+              "title": "ICA: current address service",
+              "href": "https://www.ica.gov.sg/information-and-e-services/identity-card-and-passport/identity-card/change-of-residential-address-on-identity-card"
+            }
+          ]
+        }
+      ],
+      "callout": {
+        "title": "Traiter les fournitures séparément",
+        "text": "Modifier un registre d’identité ne confirme pas les dispositions d’électricité, d’eau ou de gaz.",
+        "label": "Revoir la préparation des fournitures",
+        "href": "/guides/bto-utilities-before-renovation"
+      },
+      "next": [
+        {
+          "title": "Préparer le rendez-vous des clés",
+          "href": "/guides/bto-key-collection-preparation"
+        },
+        {
+          "title": "Documenter les défauts avant travaux",
+          "href": "/guides/bto-defects-before-renovation"
+        }
+      ]
+    },
+    "de": {
+      "category": "Einzug",
+      "title": "Einzug in die BTO-Wohnung: wann und wie die IC-Adresse ändern?",
+      "description": "Trennen Sie Einzug und Schlüsselübergabe und verfolgen Sie ICA-Meldung, Zustimmungen, PIN-Prüfung und Adressaufkleber.",
+      "answer": "IC-Inhaber müssen ICA einen Adresswechsel innerhalb von 28 Tagen nach dem Einzug melden. Ändern Sie die Adresse nach dem tatsächlichen Einzug; die Schlüsselübergabe ist nicht dasselbe. Nutzen Sie den offiziellen Dienst und verfolgen Sie Antrag, Gruppenzustimmungen, PIN-Prüfung und Adressaufkleber getrennt.",
+      "sections": [
+        {
+          "heading": "Vom tatsächlichen Einzug ausgehen",
+          "paragraphs": [
+            "Notieren Sie Schlüsselübergabe und tatsächlichen Einzug getrennt. Eine Wohnung kann übergeben sein, während Renovierung oder andere Vorbereitungen laufen. ICA verlangt die Änderung erst nach dem Einzug; laut aktueller FAQ haben IC-Inhaber 28 Tage für die Meldung. Fragen Sie ICA zeitnah, wenn Ihr Fall oder Ihre Frist unklar ist."
+          ],
+          "sources": [
+            {
+              "title": "ICA FAQ",
+              "href": "https://ask.gov.sg/ica/questions/clvvpo7u70035kx4ga9i9ln3a?from=quicklinks"
+            }
+          ]
+        },
+        {
+          "heading": "Den offiziellen Weg vertraulich nutzen",
+          "paragraphs": [
+            "Beginnen Sie auf ICAs aktueller Seite zur Adressänderung und folgen Sie den Singpass-Anweisungen. Identitätsnummern, Zugangsdaten und die postalische PIN gehören weder in gemeinsame Renovierungslisten noch auf diese Website. Für Ihre Planung reichen Status und nächster Schritt statt sensibler Identitätskopien."
+          ],
+          "sources": [
+            {
+              "title": "ICA: current address service",
+              "href": "https://www.ica.gov.sg/information-and-e-services/identity-card-and-passport/identity-card/change-of-residential-address-on-identity-card"
+            }
+          ]
+        },
+        {
+          "heading": "Jede Person im Gruppenantrag prüfen",
+          "paragraphs": [
+            "Wer seine eigene Adresse ändert, kann laut ICA bis zu vier Personen aufnehmen, die an dieselbe Adresse ziehen. Jede weitere Person muss innerhalb von fünf Tagen nach der SMS über den Dienst zustimmen. Laut Mitteilung von 2025 wird die Adresse ohne rechtzeitige Zustimmung durch diesen Antrag nicht geändert. Ein abgeschickter Antrag erledigt nicht automatisch den gesamten Haushalt."
+          ],
+          "sources": [
+            {
+              "title": "ICA: 2025 group application procedure",
+              "href": "https://www.ica.gov.sg/about-ica/news-and-publications/media-room/new-feature-in-electronic-change-of-address-service-from-15-august-2025"
+            }
+          ]
+        },
+        {
+          "heading": "PIN und Ergebnis getrennt verfolgen",
+          "paragraphs": [
+            "Der Hauptantragsteller erhält eine PIN per Post an die neue Adresse und bestätigt sie im offiziellen Dienst. Prüfen Sie den Status und folgen Sie bei erfolgreicher Bearbeitung den Anweisungen zum zugesandten Adressaufkleber. ICA bittet um Kontakt, wenn der PIN-Brief nach fünf Arbeitstagen nicht angekommen ist. Die Einreichung allein ist noch kein endgültiges Ergebnis."
+          ],
+          "sources": [
+            {
+              "title": "ICA: current address service",
+              "href": "https://www.ica.gov.sg/information-and-e-services/identity-card-and-passport/identity-card/change-of-residential-address-on-identity-card"
+            }
+          ]
+        },
+        {
+          "heading": "Eine kurze Abschlussübersicht führen",
+          "paragraphs": [
+            "Nutzen Sie Zeilen für Einzug, Einreichung, jede erforderliche Zustimmung, PIN-Prüfung, Status und Aufkleber. Ergänzen Sie Nachweisdatum, verantwortliche Person und nächsten Schritt. Fiktives Beispiel: Der Haushalt hat den Gruppenantrag eingereicht, eine Zustimmung fehlt noch. Lassen Sie die Zeile offen und klären Sie sie mit ICA; eine bevorstehende Möbellieferung erledigt die Adressänderung nicht."
+          ]
+        },
+        {
+          "heading": "Weitere Konten einzeln prüfen",
+          "paragraphs": [
+            "ICA verlinkt die Liste der OSCARS-Teilnehmer. Prüfen Sie diese aktuell und bestätigen Sie wichtige Daten getrennt mit Anbietern wie Bank oder Versicherung. Nehmen Sie keine automatische Änderung sämtlicher Konten an. Where To BTO ordnet Planungsfragen. Es erhebt keine Identitätsdaten, reicht keine Meldungen ein und bestätigt nicht die Erfüllung Ihrer gesetzlichen Pflichten."
+          ],
+          "sources": [
+            {
+              "title": "ICA: current address service",
+              "href": "https://www.ica.gov.sg/information-and-e-services/identity-card-and-passport/identity-card/change-of-residential-address-on-identity-card"
+            }
+          ]
+        }
+      ],
+      "callout": {
+        "title": "Versorgung gesondert behandeln",
+        "text": "Eine geänderte Identitätsadresse bestätigt keine Strom-, Wasser- oder Gasvereinbarungen.",
+        "label": "Versorgungsvorbereitung prüfen",
+        "href": "/guides/bto-utilities-before-renovation"
+      },
+      "next": [
+        {
+          "title": "Termin zur Schlüsselübergabe vorbereiten",
+          "href": "/guides/bto-key-collection-preparation"
+        },
+        {
+          "title": "Mängel vor der Renovierung dokumentieren",
+          "href": "/guides/bto-defects-before-renovation"
+        }
+      ]
+    },
+    "zh-Hans": {
+      "category": "入住准备",
+      "title": "搬入 BTO 后，何时及如何更新身份证住址？",
+      "description": "分清领取钥匙与实际搬家日期，逐项跟进 ICA 申报、同住人同意、PIN 验证及住址贴纸。",
+      "answer": "ICA 规定，身份证持有人须在搬到新住址后的 28 天内申报住址变更。应在实际搬入后才更新，不要把领取钥匙当作搬家。使用 ICA 官方服务，并把提交、群组同意、PIN 验证和住址贴纸分开跟进。",
+      "sections": [
+        {
+          "heading": "以实际搬入日期为准",
+          "paragraphs": [
+            "分别记录领取钥匙和实际搬入日期。单位已交付时，装修或其他准备可能仍未完成。ICA 当前指引要求搬入后才更新；官方常见问题说明身份证持有人须在 28 天内申报。若自身情况或期限不清楚，应尽快向 ICA 查询。"
+          ],
+          "sources": [
+            {
+              "title": "ICA FAQ",
+              "href": "https://ask.gov.sg/ica/questions/clvvpo7u70035kx4ga9i9ln3a?from=quicklinks"
+            }
+          ]
+        },
+        {
+          "heading": "私下使用官方渠道",
+          "paragraphs": [
+            "从 ICA 当前住址变更页面进入，并按 Singpass 指示办理。不要把身份证号码、登录资料或邮寄 PIN 放进共享装修表格，也不要上传到本网站。规划记录只需状态和下一步，不需要敏感身份证明副本。"
+          ],
+          "sources": [
+            {
+              "title": "ICA: current address service",
+              "href": "https://www.ica.gov.sg/information-and-e-services/identity-card-and-passport/identity-card/change-of-residential-address-on-identity-card"
+            }
+          ]
+        },
+        {
+          "heading": "逐人核对群组申请",
+          "paragraphs": [
+            "ICA 允许正在更改自己住址的主申请人，加入最多四位搬到同一新住址的人。每位附属申请人须在收到短信后的五天内通过服务同意。2025 年公告说明，未及时同意者的住址不会通过该申请更新。不能因主申请已提交，就把全家标为完成。"
+          ],
+          "sources": [
+            {
+              "title": "ICA: 2025 group application procedure",
+              "href": "https://www.ica.gov.sg/about-ica/news-and-publications/media-room/new-feature-in-electronic-change-of-address-service-from-15-august-2025"
+            }
+          ]
+        },
+        {
+          "heading": "把 PIN 和处理结果分开",
+          "paragraphs": [
+            "主申请人会在新住址收到 PIN 信函，再通过官方服务验证。应查看申请状态；成功申请者须按指示处理邮寄住址贴纸。ICA 说明，若五个工作日后仍未收到 PIN 信函，应联系当局。已提交申请本身并不等于最终完成。"
+          ],
+          "sources": [
+            {
+              "title": "ICA: current address service",
+              "href": "https://www.ica.gov.sg/information-and-e-services/identity-card-and-passport/identity-card/change-of-residential-address-on-identity-card"
+            }
+          ]
+        },
+        {
+          "heading": "保留简明完成记录",
+          "paragraphs": [
+            "为搬入日期、提交、各人所需同意、PIN 验证、服务状态和贴纸分别列项，并写上证明日期、负责人及下一步。虚构例子：一家人已提交群组申请，但仍有一人未同意。该项应保持待办并向 ICA 处理；即将送家具，并不能完成住址更新。"
+          ]
+        },
+        {
+          "heading": "其他账户逐项确认",
+          "paragraphs": [
+            "ICA 提供 OSCARS 参与机构名单。应查看最新名单，并分别向银行或保险公司等服务方确认重要记录，不要假定所有账户都会自动更改。Where To BTO 整理规划问题，不收集身份资料、不代办申报，也不确认个人已履行法定义务。"
+          ],
+          "sources": [
+            {
+              "title": "ICA: current address service",
+              "href": "https://www.ica.gov.sg/information-and-e-services/identity-card-and-passport/identity-card/change-of-residential-address-on-identity-card"
+            }
+          ]
+        }
+      ],
+      "callout": {
+        "title": "公用事业另外处理",
+        "text": "更新身份证记录，不代表电力、供水或煤气安排已经确认。",
+        "label": "查看水电煤准备指南",
+        "href": "/guides/bto-utilities-before-renovation"
+      },
+      "next": [
+        {
+          "title": "准备领取钥匙预约",
+          "href": "/guides/bto-key-collection-preparation"
+        },
+        {
+          "title": "装修前记录缺陷",
+          "href": "/guides/bto-defects-before-renovation"
+        }
+      ]
+    }
+  }
+}
