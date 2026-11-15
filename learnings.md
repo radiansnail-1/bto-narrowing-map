@@ -149,3 +149,7 @@ PR25 https://github.com/radiansnail-1/bto-narrowing-map/pull/25 adds a complete 
 
 ## 14 November 2026 — PR26
 BTO utilities guide: separate SP account receipt, actual water/electricity readiness and separately arranged gas. Five complete translations; SP/HDB sources read today. Source/measurement detail in artifacts/seo-log.md and PR26. Existing facts, snapshot dates and owner TODOs preserved. Final exact-head validation and live release pending; retain7/28-day observation plans.
+
+
+## 15 November 2026 — PR 28 address-change preparation
+PR 28 https://github.com/radiansnail-1/bto-narrowing-map/pull/28 adds complete en/es/fr/de/zh-Hans move-in address reporting through the existing JSON loader. ICA current service, deadline FAQ and 2025 group procedure read today. Separate actual move, submission, each consent, PIN verification, status and sticker; private worksheet and fictional example are planning aids. No identity collection or account action. Preserve owner tasks, earlier releases, all project research dates and pending observations. Final exact-head validation and checked live release remain pending.

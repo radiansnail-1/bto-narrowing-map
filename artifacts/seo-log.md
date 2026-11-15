@@ -309,3 +309,17 @@ https://wheretobto.com/de/guides/bto-utilities-before-renovation
 https://wheretobto.com/zh-Hans/guides/bto-utilities-before-renovation
 News: fresh official HDB/MND search14Nov confirms4Nov launch and11Nov23:59Singapore close;12Nov final application update and HFEreopening described in official current results. No newly announced consequential policy change verified after prior bounded check. Historical exhaustive17Octcutoff/full28Augaudit remain; no official snapshot dates advanced.
 Next: validate exact final head and reviewed translations, then normal before-merge and exact-source release gates. Publication/preview/indexing/results are distinct.
+
+
+## 15 November 2026 — PR 28 address-change preparation
+PR 28 https://github.com/radiansnail-1/bto-narrowing-map/pull/28 adds complete en/es/fr/de/zh-Hans move-in address reporting through the existing JSON loader. ICA current service, deadline FAQ and 2025 group procedure read today. Separate actual move, submission, each consent, PIN verification, status and sticker; private worksheet and fictional example are planning aids. No identity collection or account action. Preserve owner tasks, earlier releases, all project research dates and pending observations. Final exact-head validation and checked live release remain pending.
+
+Coverage: all 84 stored answers paginated with returned offsets, exact main d038055c compared, five utilities translations read and added for 89 URLs. OTHER PR 5 full actual-head diff/body checked at 278bfc377910aabc5cd35b6ed48f0561dbc09f31; no same-intent answer. Coverage-only revision 56 preserved all 18 cards with matching hashes. Before-writing gate passed.
+Baseline: final Web GSC America/Los_Angeles cutoff 12 November. Latest 6–12 November: 9 clicks, 248 impressions; previous 30 October–5 November: 13 clicks, 303 impressions. All 14 dates returned; 13 November missing is unknown. Tiny sitewide totals are inconclusive and do not establish address-intent demand. English Singapore 2702 Planner at 04:33 UTC estimated 170 monthly for change ic address singapore; exact BTO and parking seeds unknown, not zero. Advertiser competition is not organic difficulty. No new URL baseline or measured business gain.
+Hypothesis: a source-backed stage record may support relevant discovery while preventing mistaken completion assumptions. Review actual final page/query evidence after 7 and 28 complete post-publication days plus lag; retain all earlier observations. URLs:
+https://wheretobto.com/guides/bto-address-change-after-moving
+https://wheretobto.com/es/guides/bto-address-change-after-moving
+https://wheretobto.com/fr/guides/bto-address-change-after-moving
+https://wheretobto.com/de/guides/bto-address-change-after-moving
+https://wheretobto.com/zh-Hans/guides/bto-address-change-after-moving
+News: bounded official HDB/MND searches 15 November found no newly verified consequential change after the prior 14 November check; November exercise close remains 11 November, 23:59 Singapore. Historical exhaustive cutoff and whole-snapshot audit remain unchanged. No sitemap resubmission or project-date advance.
