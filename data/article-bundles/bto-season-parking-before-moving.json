@@ -1,0 +1,398 @@
+{
+  "slug": "bto-season-parking-before-moving",
+  "publishedDate": "2026-11-16",
+  "checkedDate": "2026-11-16",
+  "updatedDate": "2026-11-16",
+  "translations": {
+    "en": {
+      "category": "Moving in",
+      "title": "Season parking for your BTO: what to check before buying",
+      "description": "Check the car park group, current availability, household and vehicle details, purchase period and official confirmation before relying on season parking.",
+      "answer": "Use HDB’s official parking service to check the correct car park and current availability. Confirm the household and vehicle category, whether you need a new purchase or renewal, and the actual validity period. Collecting BTO keys does not itself provide parking rights; a nearby car park or application screen is not confirmation of a completed purchase.",
+      "sections": [
+        {
+          "heading": "Identify the car park you actually need",
+          "paragraphs": [
+            "Start with the residential block and intended parking location. Record the car park number or group shown by HDB, vehicle type, month needed and date checked. Use HDB’s current availability enquiry rather than judging supply from empty bays seen during a visit. Availability can change; keep an unanswered result open and ask HDB about the correct route."
+          ],
+          "sources": [
+            {
+              "title": "HDB parking guidance",
+              "href": "https://www.hdb.gov.sg/parking/applying-for-season-parking/apply-for-season-parking"
+            }
+          ]
+        },
+        {
+          "heading": "Check the household and vehicle category",
+          "paragraphs": [
+            "HDB prioritises allocation because its car parks primarily serve residents. Its guidance distinguishes a household’s first car from subsequent cars and non-resident cars. Confirm the applicable category, relationship to the vehicle owner and any requested supporting documents through HDB. Ownership of a BTO flat alone does not settle every condition or guarantee availability. Use the actual quoted rate, not another household’s receipt."
+          ],
+          "sources": [
+            {
+              "title": "HDB parking guidance",
+              "href": "https://www.hdb.gov.sg/parking/applying-for-season-parking/apply-for-season-parking"
+            }
+          ]
+        },
+        {
+          "heading": "Choose the right transaction and period",
+          "paragraphs": [
+            "Check whether you already hold season parking for the same vehicle and car park group. HDB’s help says a purchase within the previous three months, without termination, should use renewal rather than a new application. If moving an existing arrangement, check HDB’s separate transfer guidance. Do not assume a fresh application is the correct way to change an existing record."
+          ],
+          "sources": [
+            {
+              "title": "HDB parking help",
+              "href": "https://www.hdb.gov.sg/apply-for-new-season-parking/get-help"
+            }
+          ]
+        },
+        {
+          "heading": "Read the dates and cancellation limits",
+          "paragraphs": [
+            "Season parking is sold by calendar month for long-term use. HDB distinguishes a first purchase for the current month at the full rate from a longer purchase with a pro-rated current month and following months. The initial period has termination and refund restrictions. Read the current terms and displayed dates before paying, especially if renovation or moving dates may change; do not assume unused days will be refunded."
+          ],
+          "sources": [
+            {
+              "title": "HDB parking terms",
+              "href": "https://www.hdb.gov.sg/apply-for-new-season-parking/terms-and-conditions"
+            }
+          ]
+        },
+        {
+          "heading": "Keep confirmation and open questions separate",
+          "paragraphs": [
+            "Use a private worksheet: car park group, vehicle, period requested, official outcome, validity dates, amount, date checked and next action. Keep credentials and identity documents out of shared planning notes. Fictional example: a household has checked availability for its move month but has not completed the purchase. Mark parking as pending, not ready. After the transaction, check the official record and resolve any mismatch with HDB before relying on it. Where To BTO does not sell parking, reserve a lot or verify your entitlement."
+          ]
+        }
+      ],
+      "callout": {
+        "title": "Keep utilities on their own checklist",
+        "text": "A parking record does not confirm electricity, water or gas readiness.",
+        "label": "Review utilities preparation",
+        "href": "/guides/bto-utilities-before-renovation"
+      },
+      "next": [
+        {
+          "title": "Prepare for key collection",
+          "href": "/guides/bto-key-collection-preparation"
+        },
+        {
+          "title": "Check nearby amenities",
+          "href": "/guides/checking-amenities-near-a-bto"
+        }
+      ]
+    },
+    "es": {
+      "category": "Mudanza",
+      "title": "Aparcamiento de temporada para tu BTO: qué comprobar antes de comprar",
+      "description": "Comprueba el grupo de aparcamientos, disponibilidad, hogar, vehículo, periodo y confirmación oficial antes de depender del abono.",
+      "answer": "Usa el servicio oficial de HDB para comprobar el aparcamiento correcto y la disponibilidad actual. Confirma la categoría del hogar y vehículo, si corresponde una compra nueva o renovación y el periodo válido. Recoger las llaves no concede por sí solo derechos de aparcamiento; ni la cercanía ni una pantalla de solicitud confirman una compra completada.",
+      "sections": [
+        {
+          "heading": "Identifica el aparcamiento que necesitas",
+          "paragraphs": [
+            "Empieza por el bloque residencial y el lugar donde quieres aparcar. Anota el número o grupo que muestra HDB, tipo de vehículo, mes necesario y fecha de consulta. Usa la consulta oficial de disponibilidad; ver plazas vacías durante una visita no demuestra oferta. Puede cambiar: deja abierto un resultado sin aclarar y consulta a HDB el procedimiento correcto."
+          ],
+          "sources": [
+            {
+              "title": "HDB parking guidance",
+              "href": "https://www.hdb.gov.sg/parking/applying-for-season-parking/apply-for-season-parking"
+            }
+          ]
+        },
+        {
+          "heading": "Comprueba la categoría del hogar y vehículo",
+          "paragraphs": [
+            "HDB prioriza la asignación porque sus aparcamientos sirven principalmente a residentes. Distingue el primer coche del hogar de los posteriores y de los coches de no residentes. Confirma con HDB la categoría, relación con la persona propietaria del vehículo y documentos exigidos. Poseer un BTO no resuelve todas las condiciones ni garantiza disponibilidad. Usa la tarifa realmente indicada, no el recibo de otra familia."
+          ],
+          "sources": [
+            {
+              "title": "HDB parking guidance",
+              "href": "https://www.hdb.gov.sg/parking/applying-for-season-parking/apply-for-season-parking"
+            }
+          ]
+        },
+        {
+          "heading": "Elige el trámite y periodo correctos",
+          "paragraphs": [
+            "Comprueba si ya tienes un abono para el mismo vehículo y grupo de aparcamientos. La ayuda de HDB indica que, si la última compra fue en los tres meses anteriores y no hubo terminación, corresponde renovar en lugar de solicitar uno nuevo. Para trasladar un abono existente, consulta la guía específica de transferencia. No supongas que una solicitud nueva sirve para cambiar un registro existente."
+          ],
+          "sources": [
+            {
+              "title": "HDB parking help",
+              "href": "https://www.hdb.gov.sg/apply-for-new-season-parking/get-help"
+            }
+          ]
+        },
+        {
+          "heading": "Lee las fechas y límites de cancelación",
+          "paragraphs": [
+            "El abono se vende por meses naturales para uso prolongado. HDB distingue la primera compra del mes actual a tarifa completa de una compra más larga con el mes actual prorrateado y meses siguientes. El periodo inicial tiene restricciones de terminación y reembolso. Lee las condiciones vigentes y fechas mostradas antes de pagar, especialmente si puede cambiar la reforma o mudanza; no presupongas que devolverán los días sin usar."
+          ],
+          "sources": [
+            {
+              "title": "HDB parking terms",
+              "href": "https://www.hdb.gov.sg/apply-for-new-season-parking/terms-and-conditions"
+            }
+          ]
+        },
+        {
+          "heading": "Separa confirmaciones y preguntas pendientes",
+          "paragraphs": [
+            "Usa una hoja privada: grupo, vehículo, periodo solicitado, resultado oficial, fechas válidas, importe, fecha de consulta y siguiente acción. No compartas credenciales ni documentos de identidad en notas de planificación. Ejemplo ficticio: una familia ha consultado disponibilidad para el mes de mudanza, pero no ha completado la compra. Marca aparcamiento pendiente, no listo. Después, revisa el registro oficial y aclara discrepancias con HDB antes de depender de él. Where To BTO no vende abonos, reserva plazas ni verifica derechos."
+          ]
+        }
+      ],
+      "callout": {
+        "title": "Gestiona los suministros por separado",
+        "text": "El registro de aparcamiento no confirma electricidad, agua ni gas.",
+        "label": "Revisar suministros",
+        "href": "/guides/bto-utilities-before-renovation"
+      },
+      "next": [
+        {
+          "title": "Preparar la entrega de llaves",
+          "href": "/guides/bto-key-collection-preparation"
+        },
+        {
+          "title": "Comprobar servicios cercanos",
+          "href": "/guides/checking-amenities-near-a-bto"
+        }
+      ]
+    },
+    "fr": {
+      "category": "Emménagement",
+      "title": "Stationnement de saison pour votre BTO : que vérifier avant l’achat ?",
+      "description": "Vérifiez groupe de parkings, disponibilité, foyer, véhicule, période et confirmation officielle avant de compter sur l’abonnement.",
+      "answer": "Consultez le service officiel HDB pour identifier le bon parking et sa disponibilité actuelle. Confirmez la catégorie du foyer et du véhicule, le choix entre nouvel achat et renouvellement, et la période de validité réelle. Recevoir les clés ne donne pas automatiquement un droit de stationnement ; ni un parking proche ni un écran de demande ne prouvent un achat achevé.",
+      "sections": [
+        {
+          "heading": "Identifier le parking nécessaire",
+          "paragraphs": [
+            "Partez du bloc résidentiel et du lieu où vous souhaitez stationner. Notez le numéro ou groupe affiché par HDB, le type de véhicule, le mois souhaité et la date de vérification. Utilisez la consultation officielle des disponibilités plutôt que les places vides vues sur place. La disponibilité évolue ; laissez toute réponse incertaine ouverte et demandez à HDB le bon parcours."
+          ],
+          "sources": [
+            {
+              "title": "HDB parking guidance",
+              "href": "https://www.hdb.gov.sg/parking/applying-for-season-parking/apply-for-season-parking"
+            }
+          ]
+        },
+        {
+          "heading": "Vérifier la catégorie du foyer et du véhicule",
+          "paragraphs": [
+            "HDB établit des priorités car ses parkings servent principalement les résidents. Ses indications distinguent la première voiture du foyer des suivantes et des véhicules de non-résidents. Confirmez auprès de HDB la catégorie, le lien avec le propriétaire du véhicule et les justificatifs demandés. Posséder un BTO ne règle pas toutes les conditions et ne garantit aucune disponibilité. Utilisez le tarif réellement proposé, pas le reçu d’un autre foyer."
+          ],
+          "sources": [
+            {
+              "title": "HDB parking guidance",
+              "href": "https://www.hdb.gov.sg/parking/applying-for-season-parking/apply-for-season-parking"
+            }
+          ]
+        },
+        {
+          "heading": "Choisir le bon traitement et la bonne période",
+          "paragraphs": [
+            "Vérifiez si vous possédez déjà un abonnement pour le même véhicule et groupe de parkings. Selon l’aide HDB, un achat effectué dans les trois mois précédents, sans résiliation, relève du renouvellement plutôt que d’une nouvelle demande. Pour déplacer un abonnement existant, consultez les règles distinctes de transfert. Une nouvelle demande n’est pas nécessairement la bonne façon de modifier un dossier."
+          ],
+          "sources": [
+            {
+              "title": "HDB parking help",
+              "href": "https://www.hdb.gov.sg/apply-for-new-season-parking/get-help"
+            }
+          ]
+        },
+        {
+          "heading": "Lire les dates et limites de résiliation",
+          "paragraphs": [
+            "Le stationnement de saison est vendu par mois civil pour un usage durable. HDB distingue un premier achat du mois courant au tarif intégral d’un achat plus long avec mois courant au prorata et mois suivants. La période initiale comporte des restrictions de résiliation et remboursement. Lisez les conditions actuelles et dates affichées avant paiement, surtout si travaux ou emménagement peuvent changer ; ne présumez pas le remboursement des jours inutilisés."
+          ],
+          "sources": [
+            {
+              "title": "HDB parking terms",
+              "href": "https://www.hdb.gov.sg/apply-for-new-season-parking/terms-and-conditions"
+            }
+          ]
+        },
+        {
+          "heading": "Séparer confirmation et questions ouvertes",
+          "paragraphs": [
+            "Tenez une fiche privée : groupe, véhicule, période demandée, résultat officiel, dates valides, montant, date du contrôle et prochaine action. Gardez identifiants et pièces d’identité hors des notes partagées. Exemple fictif : un foyer a vérifié la disponibilité pour le mois d’emménagement, sans terminer l’achat. Notez « en attente », pas « prêt ». Après l’opération, vérifiez le dossier officiel et clarifiez toute différence avec HDB avant de vous y fier. Where To BTO ne vend pas d’abonnements, ne réserve pas de place et ne vérifie pas vos droits."
+          ]
+        }
+      ],
+      "callout": {
+        "title": "Suivre les services séparément",
+        "text": "Un dossier de stationnement ne confirme ni électricité, ni eau, ni gaz.",
+        "label": "Préparer les services",
+        "href": "/guides/bto-utilities-before-renovation"
+      },
+      "next": [
+        {
+          "title": "Préparer la remise des clés",
+          "href": "/guides/bto-key-collection-preparation"
+        },
+        {
+          "title": "Vérifier les équipements proches",
+          "href": "/guides/checking-amenities-near-a-bto"
+        }
+      ]
+    },
+    "de": {
+      "category": "Einzug",
+      "title": "Dauerparken für Ihre BTO-Wohnung: Was vor dem Kauf prüfen?",
+      "description": "Prüfen Sie Parkplatzgruppe, Verfügbarkeit, Haushalt, Fahrzeug, Zeitraum und amtliche Bestätigung vor der Nutzung.",
+      "answer": "Prüfen Sie beim offiziellen HDB-Parkdienst den richtigen Parkplatz und die aktuelle Verfügbarkeit. Klären Sie Haushalts- und Fahrzeugkategorie, Neukauf oder Verlängerung und den tatsächlichen Gültigkeitszeitraum. Die Schlüsselübergabe gewährt nicht automatisch Parkrechte; weder ein naher Parkplatz noch eine Antragsmaske bestätigt einen abgeschlossenen Kauf.",
+      "sections": [
+        {
+          "heading": "Den tatsächlich benötigten Parkplatz bestimmen",
+          "paragraphs": [
+            "Beginnen Sie mit Wohnblock und gewünschtem Parkort. Notieren Sie die von HDB angezeigte Parkplatznummer oder Gruppe, Fahrzeugart, benötigten Monat und Prüfdatum. Nutzen Sie die offizielle Verfügbarkeitsabfrage statt leerer Stellplätze bei einem Besuch. Die Verfügbarkeit kann sich ändern; lassen Sie unklare Ergebnisse offen und fragen Sie HDB nach dem passenden Verfahren."
+          ],
+          "sources": [
+            {
+              "title": "HDB parking guidance",
+              "href": "https://www.hdb.gov.sg/parking/applying-for-season-parking/apply-for-season-parking"
+            }
+          ]
+        },
+        {
+          "heading": "Haushalts- und Fahrzeugkategorie prüfen",
+          "paragraphs": [
+            "HDB priorisiert die Vergabe, da seine Parkplätze vor allem Bewohnern dienen. Die Hinweise unterscheiden das erste Auto eines Haushalts von weiteren Autos und Fahrzeugen von Nichtbewohnern. Bestätigen Sie Kategorie, Beziehung zum Fahrzeugeigentümer und verlangte Nachweise bei HDB. Eigentum an einer BTO-Wohnung klärt nicht jede Bedingung und garantiert keine Verfügbarkeit. Nutzen Sie den tatsächlich angezeigten Tarif statt der Quittung eines anderen Haushalts."
+          ],
+          "sources": [
+            {
+              "title": "HDB parking guidance",
+              "href": "https://www.hdb.gov.sg/parking/applying-for-season-parking/apply-for-season-parking"
+            }
+          ]
+        },
+        {
+          "heading": "Den passenden Vorgang und Zeitraum wählen",
+          "paragraphs": [
+            "Prüfen Sie, ob bereits ein Abonnement für dasselbe Fahrzeug und dieselbe Parkplatzgruppe besteht. Laut HDB-Hilfe ist bei einem Kauf innerhalb der letzten drei Monate ohne Kündigung eine Verlängerung statt eines Neuantrags vorgesehen. Bei einem Umzug mit bestehender Berechtigung lesen Sie die gesonderten Übertragungsregeln. Ein neuer Antrag ist nicht automatisch der richtige Weg für eine Änderung."
+          ],
+          "sources": [
+            {
+              "title": "HDB parking help",
+              "href": "https://www.hdb.gov.sg/apply-for-new-season-parking/get-help"
+            }
+          ]
+        },
+        {
+          "heading": "Daten und Kündigungsgrenzen lesen",
+          "paragraphs": [
+            "Dauerparken wird für langfristige Nutzung nach Kalendermonaten verkauft. HDB unterscheidet den Erstkauf des laufenden Monats zum vollen Tarif von einem längeren Kauf mit anteiligem laufendem Monat und Folgemonaten. Für den Anfangszeitraum gelten Kündigungs- und Erstattungsbeschränkungen. Lesen Sie aktuelle Bedingungen und angezeigte Daten vor der Zahlung, besonders bei veränderlichen Renovierungs- oder Einzugsterminen. Ungenutzte Tage werden nicht automatisch erstattet."
+          ],
+          "sources": [
+            {
+              "title": "HDB parking terms",
+              "href": "https://www.hdb.gov.sg/apply-for-new-season-parking/terms-and-conditions"
+            }
+          ]
+        },
+        {
+          "heading": "Bestätigung und offene Fragen trennen",
+          "paragraphs": [
+            "Führen Sie eine private Liste: Parkplatzgruppe, Fahrzeug, beantragter Zeitraum, amtliches Ergebnis, Gültigkeitsdaten, Betrag, Prüfdatum und nächster Schritt. Zugangsdaten und Identitätsdokumente gehören nicht in geteilte Planungsnotizen. Fiktives Beispiel: Ein Haushalt hat die Verfügbarkeit für den Einzugsmonat geprüft, den Kauf jedoch nicht abgeschlossen. Vermerken Sie „offen“, nicht „bereit“. Prüfen Sie danach den amtlichen Datensatz und klären Sie Abweichungen mit HDB, bevor Sie darauf vertrauen. Where To BTO verkauft keine Berechtigungen, reserviert keine Stellplätze und prüft keine persönlichen Ansprüche."
+          ]
+        }
+      ],
+      "callout": {
+        "title": "Versorgung gesondert planen",
+        "text": "Ein Parknachweis bestätigt weder Strom noch Wasser oder Gas.",
+        "label": "Versorgung vorbereiten",
+        "href": "/guides/bto-utilities-before-renovation"
+      },
+      "next": [
+        {
+          "title": "Schlüsselübergabe vorbereiten",
+          "href": "/guides/bto-key-collection-preparation"
+        },
+        {
+          "title": "Nahe Einrichtungen prüfen",
+          "href": "/guides/checking-amenities-near-a-bto"
+        }
+      ]
+    },
+    "zh-Hans": {
+      "category": "入住准备",
+      "title": "BTO 长期停车：购买前应核对什么？",
+      "description": "核对停车场组别、现有名额、家庭与车辆类别、购买期间和官方确认，再安排用车。",
+      "answer": "通过 HDB 官方停车服务，核对正确停车场及当前名额。确认家庭与车辆类别、应首次购买还是续期，以及实际有效期间。领取 BTO 钥匙本身不代表取得停车权；附近有停车场，或已经打开申请页面，都不等于完成购买。",
+      "sections": [
+        {
+          "heading": "先确认实际需要的停车场",
+          "paragraphs": [
+            "从住宅楼座及打算停车的位置开始，记录 HDB 显示的停车场编号或组别、车辆类型、所需月份和查询日期。应使用官方名额查询，不要凭实地看见空车位判断供应。名额会变动；结果不清楚时应保留待办，并向 HDB 查询正确办理方式。"
+          ],
+          "sources": [
+            {
+              "title": "HDB parking guidance",
+              "href": "https://www.hdb.gov.sg/parking/applying-for-season-parking/apply-for-season-parking"
+            }
+          ]
+        },
+        {
+          "heading": "核对家庭与车辆类别",
+          "paragraphs": [
+            "HDB 停车场主要服务居民，因此按优先次序分配。官方指引区分家庭首辆汽车、后续汽车及非居民汽车。应通过 HDB 确认适用类别、与车主的关系及所需证明。拥有 BTO 单位，并不能满足所有条件，也不保证有名额。按实际显示的收费核对，不要照搬其他家庭的收据。"
+          ],
+          "sources": [
+            {
+              "title": "HDB parking guidance",
+              "href": "https://www.hdb.gov.sg/parking/applying-for-season-parking/apply-for-season-parking"
+            }
+          ]
+        },
+        {
+          "heading": "选对办理方式与期间",
+          "paragraphs": [
+            "先确认同一车辆及停车场组别是否已有长期停车记录。HDB 帮助说明，若最近一次购买在过去三个月内且未终止，应办理续期，而不是重新申请。若搬家时要更改现有安排，应另查 HDB 转移指引。不要假定重新申请就是修改旧记录的正确方法。"
+          ],
+          "sources": [
+            {
+              "title": "HDB parking help",
+              "href": "https://www.hdb.gov.sg/apply-for-new-season-parking/get-help"
+            }
+          ]
+        },
+        {
+          "heading": "付款前读清日期与取消限制",
+          "paragraphs": [
+            "长期停车按日历月出售，供长期使用。HDB 区分按全月收费购买当月，以及按比例购买当月并连同后续月份的较长期安排。初始期间有终止及退款限制。付款前应阅读当前条款和显示日期，尤其装修或搬家时间可能改变时；不要假定未使用日数一定获退款。"
+          ],
+          "sources": [
+            {
+              "title": "HDB parking terms",
+              "href": "https://www.hdb.gov.sg/apply-for-new-season-parking/terms-and-conditions"
+            }
+          ]
+        },
+        {
+          "heading": "把确认与待办分开",
+          "paragraphs": [
+            "用私人表格记录停车场组别、车辆、申请期间、官方结果、有效日期、金额、查询日期及下一步。登录资料和身份证明不应放进共享规划笔记。虚构例子：一家人已查询搬家月份的名额，但还未完成购买。应标作“待办”，而非“已准备好”。交易后核对官方记录；若有不符，应先向 HDB 澄清再依赖该记录。Where To BTO 不出售长期停车、不预留车位，也不确认个人停车资格。"
+          ]
+        }
+      ],
+      "callout": {
+        "title": "公用事业另列清单",
+        "text": "停车记录不代表电力、供水或煤气安排已经确认。",
+        "label": "查看水电煤准备",
+        "href": "/guides/bto-utilities-before-renovation"
+      },
+      "next": [
+        {
+          "title": "准备领取钥匙",
+          "href": "/guides/bto-key-collection-preparation"
+        },
+        {
+          "title": "核对附近设施",
+          "href": "/guides/checking-amenities-near-a-bto"
+        }
+      ]
+    }
+  }
+}
