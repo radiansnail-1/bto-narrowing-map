@@ -37,6 +37,8 @@ Open <http://localhost:3000>.
 
 Production metadata defaults to the verified canonical domain `https://wheretobto.com`. Set `NEXT_PUBLIC_SITE_URL` only when the canonical domain changes; preview and local hostnames do not become canonicals.
 
+Production releases use the existing validated publishing workflow, which stages and promotes a CLI deployment. `vercel.json` disables automatic Git deployments from `main` to avoid a second production build for the same commit. Git previews for other branches remain enabled.
+
 ## Verification
 
 ```bash
