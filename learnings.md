@@ -153,3 +153,7 @@ BTO utilities guide: separate SP account receipt, actual water/electricity readi
 
 ## 15 November 2026 — PR 28 address-change preparation
 PR 28 https://github.com/radiansnail-1/bto-narrowing-map/pull/28 adds complete en/es/fr/de/zh-Hans move-in address reporting through the existing JSON loader. ICA current service, deadline FAQ and 2025 group procedure read today. Separate actual move, submission, each consent, PIN verification, status and sticker; private worksheet and fictional example are planning aids. No identity collection or account action. Preserve owner tasks, earlier releases, all project research dates and pending observations. Final exact-head validation and checked live release remain pending.
+
+
+## 16 November 2026 — PR 29 parking records
+Availability, an application and a confirmed validity period are separate records. Keep a new purchase distinct from renewal or transfer; confirm actual category and displayed terms rather than inferring entitlement from flat ownership. Full official search results can be richer than heading-only direct extraction; retain that limitation. Coverage-only and partial card upserts preserve omitted cards and research dates. Final release proof remains required.

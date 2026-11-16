@@ -136,3 +136,7 @@ BTO utilities guide: separate SP account receipt, actual water/electricity readi
 
 ## 15 November 2026 — PR 28 address-change preparation
 PR 28 https://github.com/radiansnail-1/bto-narrowing-map/pull/28 adds complete en/es/fr/de/zh-Hans move-in address reporting through the existing JSON loader. ICA current service, deadline FAQ and 2025 group procedure read today. Separate actual move, submission, each consent, PIN verification, status and sticker; private worksheet and fictional example are planning aids. No identity collection or account action. Preserve owner tasks, earlier releases, all project research dates and pending observations. Final exact-head validation and checked live release remain pending.
+
+
+## 16 November 2026 — PR 29 season parking preparation
+PR 29 https://github.com/radiansnail-1/bto-narrowing-map/pull/29 adds complete en/es/fr/de/zh-Hans first-purchase preparation through the existing JSON loader. Check actual car park group, availability, household/vehicle category, new purchase versus renewal, period and official outcome. Current HDB official indexed guidance and terms read; direct terms extraction is incomplete. No personal entitlement or parking availability is asserted. Preserve project facts, historical snapshot dates, owner tasks and PR 5. Final exact-head validation, checked release and live acceptance remain pending.
