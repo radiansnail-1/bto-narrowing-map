@@ -157,3 +157,7 @@ PR 28 https://github.com/radiansnail-1/bto-narrowing-map/pull/28 adds complete e
 
 ## 16 November 2026 — PR 29 parking records
 Availability, an application and a confirmed validity period are separate records. Keep a new purchase distinct from renewal or transfer; confirm actual category and displayed terms rather than inferring entitlement from flat ownership. Full official search results can be richer than heading-only direct extraction; retain that limitation. Coverage-only and partial card upserts preserve omitted cards and research dates. Final release proof remains required.
+
+
+## 17 November 2026 — PR 31 season parking renewal
+PR 31 https://github.com/radiansnail-1/bto-narrowing-map/pull/31 adds complete en/es/fr/de/zh-Hans renewal preparation using the existing bundle loader. Read current HDB renewal guidance, help and terms; separate expiry, booking date, automatic setup, payment outcome and confirmed validity. Late renewal is not retrospective parking permission. Existing first-purchase guide remains separate. Preserve project facts, snapshot dates, owner work and OTHER PR 5. Source and translation meaning reviewed; final exact-head lint, unit, build, one-worker browser, ten layouts and checked live release remain pending.
