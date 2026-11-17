@@ -1,0 +1,398 @@
+{
+  "slug": "bto-season-parking-renewal-checks",
+  "publishedDate": "2026-11-17",
+  "checkedDate": "2026-11-17",
+  "updatedDate": "2026-11-17",
+  "translations": {
+    "en": {
+      "category": "Living in your BTO",
+      "title": "Renewing HDB season parking: check the dates and confirmed validity",
+      "description": "Check your parking expiry, next booking date, renewal outcome and actual valid period before relying on another month of season parking.",
+      "answer": "Check the existing HDB season parking record and its expiry, then use the renewal route and booking date shown for your record. Confirm the completed transaction and new validity period. A reminder, an auto-renewal application or an intended payment is not proof that the next month is covered.",
+      "sections": [
+        {
+          "heading": "Start with the existing record",
+          "paragraphs": [
+            "Keep the vehicle, car park group and current expiry together. HDB directs holders to their season parking transaction history for the next booking date. Check the record you actually use rather than a receipt for another vehicle or an older home. If your car park or vehicle is changing, read the separate transfer guidance instead of assuming renewal makes that change."
+          ],
+          "sources": [
+            {
+              "title": "HDB renewal guidance",
+              "href": "https://www.hdb.gov.sg/parking/renewing-season-parking/renew-season-parking"
+            }
+          ]
+        },
+        {
+          "heading": "Check the next booking date",
+          "paragraphs": [
+            "HDB sells renewal in advance, with timing depending on eligibility and demand. Use your actual next booking date rather than assuming every household can renew on the same day. Put an action before expiry in your own calendar. If the displayed month cannot be renewed, check whether it is already covered; HDB's renewal help identifies that as one possible reason. Ask HDB about an unexplained result."
+          ],
+          "sources": [
+            {
+              "title": "HDB renewal guidance",
+              "href": "https://www.hdb.gov.sg/renew-season-parking/get-help"
+            }
+          ]
+        },
+        {
+          "heading": "Separate automatic arrangements from completed renewal",
+          "paragraphs": [
+            "HDB offers manual renewal and automatic renewal by GIRO or credit card. For an automatic arrangement, read its approval and first deduction information. Keep setup, payment outcome and the parking period as separate entries. If you cannot confirm the next period, check the official record and ask HDB which action is needed; do not repeatedly pay because a planning sheet is incomplete."
+          ],
+          "sources": [
+            {
+              "title": "HDB renewal guidance",
+              "href": "https://www.hdb.gov.sg/parking/renewing-season-parking/renew-season-parking"
+            }
+          ]
+        },
+        {
+          "heading": "If renewal is late, check what is actually valid",
+          "paragraphs": [
+            "HDB's help says late renewal still attracts a full month's charge. Before renewal, expired season parking does not allow use of lots reserved for season parking holders; short-term charges apply and are not refunded. Its terms illustrate that a renewal on 15 June is valid from 15 to 30 June despite the full-month rate. Do not treat later payment as retrospective permission for earlier days."
+          ],
+          "sources": [
+            {
+              "title": "HDB renewal guidance",
+              "href": "https://www.hdb.gov.sg/renew-season-parking/terms-and-conditions"
+            }
+          ]
+        },
+        {
+          "heading": "Use a small confirmation record",
+          "paragraphs": [
+            "Use a private sheet with five fields: existing expiry, next booking date, renewal action, confirmed new period and unresolved question. Fictional example: a household applied for auto renewal but has not checked its first deduction or next period. Mark the next month as unconfirmed and check HDB's record, rather than copying the previous month's dates. Keep credentials and identity documents out of shared notes. Where To BTO does not renew parking or confirm personal entitlement."
+          ]
+        }
+      ],
+      "callout": {
+        "title": "Buying for the first time?",
+        "text": "Use the separate first-purchase checklist for availability and household checks.",
+        "label": "Read first-purchase preparation",
+        "href": "/guides/bto-season-parking-before-moving"
+      },
+      "next": [
+        {
+          "title": "Prepare utilities separately",
+          "href": "/guides/bto-utilities-before-renovation"
+        },
+        {
+          "title": "Check nearby amenities",
+          "href": "/guides/checking-amenities-near-a-bto"
+        }
+      ]
+    },
+    "es": {
+      "category": "Vivir en tu BTO",
+      "title": "Renovar el aparcamiento HDB: fechas y vigencia confirmada",
+      "description": "Comprueba vencimiento, próxima fecha de reserva, resultado y periodo válido antes de depender de otro mes de aparcamiento.",
+      "answer": "Consulta el registro vigente de HDB y su vencimiento; después usa la vía y fecha de renovación indicadas para ese registro. Confirma la operación completada y el nuevo periodo válido. Un recordatorio, una solicitud automática o un pago previsto no demuestran que el mes siguiente esté cubierto.",
+      "sections": [
+        {
+          "heading": "Empieza por el registro existente",
+          "paragraphs": [
+            "Reúne vehículo, grupo de aparcamientos y vencimiento actual. HDB remite al historial de operaciones para conocer la próxima fecha de reserva. Revisa el registro que utilizas, no un recibo de otro vehículo o vivienda anterior. Si cambia el vehículo o aparcamiento, consulta la guía específica de transferencia; renovar no implica realizar ese cambio."
+          ],
+          "sources": [
+            {
+              "title": "HDB: renovación",
+              "href": "https://www.hdb.gov.sg/parking/renewing-season-parking/renew-season-parking"
+            }
+          ]
+        },
+        {
+          "heading": "Consulta la próxima fecha de reserva",
+          "paragraphs": [
+            "HDB vende renovaciones por adelantado; el momento depende de la categoría y demanda. Usa tu fecha real, sin suponer que todos pueden renovar el mismo día. Programa una acción antes del vencimiento. Si no puedes renovar el mes mostrado, comprueba si ya está cubierto: la ayuda de HDB lo identifica como una posible causa. Consulta a HDB si no entiendes el resultado."
+          ],
+          "sources": [
+            {
+              "title": "HDB: renovación",
+              "href": "https://www.hdb.gov.sg/renew-season-parking/get-help"
+            }
+          ]
+        },
+        {
+          "heading": "Separa el sistema automático de la renovación completada",
+          "paragraphs": [
+            "HDB permite renovación manual y automática mediante GIRO o tarjeta. Para un sistema automático, lee la aprobación y la información sobre el primer cargo. Separa configuración, resultado del pago y periodo cubierto. Si no puedes confirmar el siguiente periodo, revisa el registro oficial y pregunta a HDB qué hacer; no repitas pagos porque tu hoja esté incompleta."
+          ],
+          "sources": [
+            {
+              "title": "HDB: renovación",
+              "href": "https://www.hdb.gov.sg/parking/renewing-season-parking/renew-season-parking"
+            }
+          ]
+        },
+        {
+          "heading": "Si renuevas tarde, comprueba la vigencia real",
+          "paragraphs": [
+            "La ayuda de HDB indica que renovar tarde sigue costando el mes completo. Antes de renovar, un abono vencido no permite usar plazas reservadas a titulares; se aplican cargos de corta duración que no se reembolsan. Sus condiciones ilustran que renovar el 15 de junio da vigencia del 15 al 30 de junio, aunque se pague el mes entero. Un pago posterior no autoriza retroactivamente los días anteriores."
+          ],
+          "sources": [
+            {
+              "title": "HDB: renovación",
+              "href": "https://www.hdb.gov.sg/renew-season-parking/terms-and-conditions"
+            }
+          ]
+        },
+        {
+          "heading": "Guarda una confirmación sencilla",
+          "paragraphs": [
+            "Usa una hoja privada con cinco campos: vencimiento actual, próxima fecha de reserva, acción, nuevo periodo confirmado y duda pendiente. Ejemplo ficticio: un hogar pidió renovación automática, pero no comprobó el primer cargo ni el nuevo periodo. Marca el mes siguiente como sin confirmar y consulta HDB, sin copiar las fechas anteriores. No incluyas credenciales ni identificación en notas compartidas. Where To BTO no renueva abonos ni confirma derechos personales."
+          ]
+        }
+      ],
+      "callout": {
+        "title": "¿Es tu primera compra?",
+        "text": "Usa la lista separada para comprobar disponibilidad y categoría del hogar.",
+        "label": "Leer preparación de la compra",
+        "href": "/guides/bto-season-parking-before-moving"
+      },
+      "next": [
+        {
+          "title": "Preparar suministros por separado",
+          "href": "/guides/bto-utilities-before-renovation"
+        },
+        {
+          "title": "Comprobar servicios cercanos",
+          "href": "/guides/checking-amenities-near-a-bto"
+        }
+      ]
+    },
+    "fr": {
+      "category": "Vivre dans votre BTO",
+      "title": "Renouveler le stationnement HDB : dates et validité confirmée",
+      "description": "Vérifiez expiration, prochaine date de réservation, résultat et période valide avant de compter sur un mois supplémentaire.",
+      "answer": "Consultez le dossier HDB existant et son expiration, puis utilisez le parcours et la date de renouvellement indiqués pour ce dossier. Confirmez l’opération achevée et la nouvelle période valide. Un rappel, une demande automatique ou un paiement prévu ne prouvent pas que le mois suivant est couvert.",
+      "sections": [
+        {
+          "heading": "Partir du dossier existant",
+          "paragraphs": [
+            "Regroupez véhicule, groupe de parkings et expiration actuelle. HDB renvoie les titulaires à l’historique des opérations pour connaître la prochaine date de réservation. Vérifiez le dossier réellement utilisé, pas le reçu d’un autre véhicule ou ancien logement. Si le véhicule ou parking change, consultez les règles distinctes de transfert ; renouveler ne réalise pas nécessairement ce changement."
+          ],
+          "sources": [
+            {
+              "title": "HDB : renouvellement",
+              "href": "https://www.hdb.gov.sg/parking/renewing-season-parking/renew-season-parking"
+            }
+          ]
+        },
+        {
+          "heading": "Vérifier la prochaine date de réservation",
+          "paragraphs": [
+            "HDB vend les renouvellements à l’avance, selon l’admissibilité et la demande. Utilisez votre date réelle plutôt que de supposer une même date pour tous. Prévoyez une action avant expiration. Si le mois affiché ne peut être renouvelé, vérifiez s’il est déjà couvert : l’aide HDB cite cette possibilité. Interrogez HDB si le résultat reste inexpliqué."
+          ],
+          "sources": [
+            {
+              "title": "HDB : renouvellement",
+              "href": "https://www.hdb.gov.sg/renew-season-parking/get-help"
+            }
+          ]
+        },
+        {
+          "heading": "Séparer automatisation et renouvellement achevé",
+          "paragraphs": [
+            "HDB propose le renouvellement manuel et automatique par GIRO ou carte bancaire. Pour un dispositif automatique, lisez l’approbation et les informations du premier prélèvement. Distinguez configuration, résultat du paiement et période couverte. Sans confirmation du prochain mois, consultez le dossier officiel et demandez à HDB quoi faire ; ne multipliez pas les paiements parce que votre fiche est incomplète."
+          ],
+          "sources": [
+            {
+              "title": "HDB : renouvellement",
+              "href": "https://www.hdb.gov.sg/parking/renewing-season-parking/renew-season-parking"
+            }
+          ]
+        },
+        {
+          "heading": "En cas de retard, vérifier la validité réelle",
+          "paragraphs": [
+            "Selon l’aide HDB, un renouvellement tardif reste facturé au mois complet. Avant renouvellement, un abonnement expiré n’autorise pas les places réservées aux titulaires ; les frais de courte durée s’appliquent sans remboursement. Les conditions donnent l’exemple d’un renouvellement le 15 juin, valide du 15 au 30 juin malgré le tarif mensuel intégral. Un paiement ultérieur n’autorise pas rétroactivement les jours antérieurs."
+          ],
+          "sources": [
+            {
+              "title": "HDB : renouvellement",
+              "href": "https://www.hdb.gov.sg/renew-season-parking/terms-and-conditions"
+            }
+          ]
+        },
+        {
+          "heading": "Tenir une petite fiche de confirmation",
+          "paragraphs": [
+            "Tenez une fiche privée avec cinq champs : expiration actuelle, prochaine réservation, action, nouvelle période confirmée et question ouverte. Exemple fictif : un foyer a demandé le renouvellement automatique sans vérifier premier prélèvement ni période suivante. Notez le mois suivant non confirmé et consultez HDB, sans recopier les anciennes dates. Gardez identifiants et pièces d’identité hors des notes partagées. Where To BTO ne renouvelle pas les abonnements et ne confirme aucun droit personnel."
+          ]
+        }
+      ],
+      "callout": {
+        "title": "Premier achat ?",
+        "text": "Utilisez la liste distincte pour la disponibilité et la catégorie du foyer.",
+        "label": "Préparer le premier achat",
+        "href": "/guides/bto-season-parking-before-moving"
+      },
+      "next": [
+        {
+          "title": "Préparer les services séparément",
+          "href": "/guides/bto-utilities-before-renovation"
+        },
+        {
+          "title": "Vérifier les équipements proches",
+          "href": "/guides/checking-amenities-near-a-bto"
+        }
+      ]
+    },
+    "de": {
+      "category": "Wohnen in Ihrer BTO-Wohnung",
+      "title": "HDB-Dauerparken verlängern: Daten und bestätigte Gültigkeit prüfen",
+      "description": "Prüfen Sie Ablauf, nächsten Buchungstermin, Ergebnis und gültigen Zeitraum, bevor Sie mit einem weiteren Parkmonat rechnen.",
+      "answer": "Prüfen Sie den bestehenden HDB-Parkdatensatz und seinen Ablauf. Nutzen Sie dann das dafür angezeigte Verlängerungsverfahren und Buchungsdatum. Bestätigen Sie den abgeschlossenen Vorgang und den neuen Zeitraum. Eine Erinnerung, ein Antrag auf automatische Verlängerung oder eine geplante Zahlung beweist keine Deckung des Folgemonats.",
+      "sections": [
+        {
+          "heading": "Mit dem bestehenden Datensatz beginnen",
+          "paragraphs": [
+            "Halten Sie Fahrzeug, Parkplatzgruppe und aktuelles Ablaufdatum zusammen. HDB verweist für das nächste Buchungsdatum auf den Verlauf der Parkvorgänge. Prüfen Sie den tatsächlich genutzten Datensatz statt einer Quittung für ein anderes Fahrzeug oder die frühere Wohnung. Bei Fahrzeug- oder Parkplatzwechsel lesen Sie die gesonderten Übertragungsregeln; eine Verlängerung führt diesen Wechsel nicht automatisch aus."
+          ],
+          "sources": [
+            {
+              "title": "HDB: Verlängerung",
+              "href": "https://www.hdb.gov.sg/parking/renewing-season-parking/renew-season-parking"
+            }
+          ]
+        },
+        {
+          "heading": "Den nächsten Buchungstermin prüfen",
+          "paragraphs": [
+            "HDB verkauft Verlängerungen im Voraus; der Zeitpunkt hängt von Berechtigung und Nachfrage ab. Nutzen Sie Ihren tatsächlichen Buchungstermin statt desselben Datums für alle Haushalte. Planen Sie vor Ablauf eine Handlung ein. Lässt sich der angezeigte Monat nicht verlängern, prüfen Sie, ob er bereits gedeckt ist: Die HDB-Hilfe nennt dies als möglichen Grund. Unklare Ergebnisse klären Sie mit HDB."
+          ],
+          "sources": [
+            {
+              "title": "HDB: Verlängerung",
+              "href": "https://www.hdb.gov.sg/renew-season-parking/get-help"
+            }
+          ]
+        },
+        {
+          "heading": "Automatik und abgeschlossene Verlängerung trennen",
+          "paragraphs": [
+            "HDB bietet manuelle sowie automatische Verlängerung über GIRO oder Kreditkarte. Lesen Sie bei einer automatischen Regelung die Genehmigung und Angaben zur ersten Abbuchung. Erfassen Sie Einrichtung, Zahlungsergebnis und Parkzeitraum getrennt. Können Sie den Folgemonat nicht bestätigen, prüfen Sie den amtlichen Datensatz und fragen Sie HDB nach der nötigen Handlung; zahlen Sie nicht wiederholt wegen einer unvollständigen Planungsliste."
+          ],
+          "sources": [
+            {
+              "title": "HDB: Verlängerung",
+              "href": "https://www.hdb.gov.sg/parking/renewing-season-parking/renew-season-parking"
+            }
+          ]
+        },
+        {
+          "heading": "Bei Verspätung die tatsächliche Gültigkeit prüfen",
+          "paragraphs": [
+            "Laut HDB-Hilfe kostet auch eine verspätete Verlängerung den vollen Monat. Vor der Verlängerung erlaubt eine abgelaufene Berechtigung keine reservierten Dauerparkplätze; Kurzparkgebühren fallen an und werden nicht erstattet. Die Bedingungen zeigen: Verlängerung am 15. Juni gilt vom 15. bis 30. Juni trotz vollem Monatspreis. Eine spätere Zahlung erlaubt frühere Tage nicht rückwirkend."
+          ],
+          "sources": [
+            {
+              "title": "HDB: Verlängerung",
+              "href": "https://www.hdb.gov.sg/renew-season-parking/terms-and-conditions"
+            }
+          ]
+        },
+        {
+          "heading": "Eine kurze Bestätigungsliste führen",
+          "paragraphs": [
+            "Nutzen Sie eine private Liste mit fünf Feldern: bisheriger Ablauf, nächster Buchungstermin, Handlung, bestätigter neuer Zeitraum und offene Frage. Fiktives Beispiel: Ein Haushalt hat die automatische Verlängerung beantragt, aber erste Abbuchung und Folgemonat nicht geprüft. Markieren Sie den nächsten Monat als unbestätigt und prüfen Sie HDBs Datensatz, statt alte Daten zu übernehmen. Zugangsdaten und Ausweise gehören nicht in geteilte Notizen. Where To BTO verlängert keine Parkrechte und bestätigt keine persönlichen Ansprüche."
+          ]
+        }
+      ],
+      "callout": {
+        "title": "Erster Kauf?",
+        "text": "Nutzen Sie die gesonderte Checkliste für Verfügbarkeit und Haushaltskategorie.",
+        "label": "Erstkauf vorbereiten",
+        "href": "/guides/bto-season-parking-before-moving"
+      },
+      "next": [
+        {
+          "title": "Versorgung gesondert vorbereiten",
+          "href": "/guides/bto-utilities-before-renovation"
+        },
+        {
+          "title": "Nahe Einrichtungen prüfen",
+          "href": "/guides/checking-amenities-near-a-bto"
+        }
+      ]
+    },
+    "zh-Hans": {
+      "category": "BTO 入住生活",
+      "title": "HDB 长期停车续期：核对日期与已确认的有效期间",
+      "description": "核对到期日、下次可办理日期、续期结果及实际有效期间，再依赖下个月的长期停车安排。",
+      "answer": "先查看现有 HDB 长期停车记录及到期日，再按该记录显示的日期和方式续期。确认交易已经完成，并核对新的有效期间。提醒、自动续期申请或计划付款，都不证明下个月已经取得停车权限。",
+      "sections": [
+        {
+          "heading": "从现有记录开始",
+          "paragraphs": [
+            "把车辆、停车场组别及当前到期日放在一起核对。HDB 指引持有人从停车交易历史查看下次可办理日期。应查看实际使用的记录，而不是另一辆车或旧住所的收据。如果要换车辆或停车场，应另查转移指引；不要假定续期同时完成这些更改。"
+          ],
+          "sources": [
+            {
+              "title": "HDB：续期指引",
+              "href": "https://www.hdb.gov.sg/parking/renewing-season-parking/renew-season-parking"
+            }
+          ]
+        },
+        {
+          "heading": "核对下次可办理日期",
+          "paragraphs": [
+            "HDB 提前出售续期，办理时间取决于资格及需求。按自己实际显示的日期办理，不要假定所有家庭同一天都可续期。在自己的日历中安排到期前的行动。如果显示的月份无法续期，先查该月份是否已有有效安排；HDB 帮助列明这是可能原因之一。无法解释的结果应向 HDB 查询。"
+          ],
+          "sources": [
+            {
+              "title": "HDB：续期指引",
+              "href": "https://www.hdb.gov.sg/renew-season-parking/get-help"
+            }
+          ]
+        },
+        {
+          "heading": "把自动安排与完成续期分开",
+          "paragraphs": [
+            "HDB 提供手动续期，以及通过 GIRO 或信用卡自动续期。采用自动安排时，应阅读批准结果及首次扣款信息。把设置、付款结果和有效期间分别记录。如果无法确认下一期间，应核对官方记录并向 HDB 查询所需行动，不要仅因规划表不完整就重复付款。"
+          ],
+          "sources": [
+            {
+              "title": "HDB：续期指引",
+              "href": "https://www.hdb.gov.sg/parking/renewing-season-parking/renew-season-parking"
+            }
+          ]
+        },
+        {
+          "heading": "逾期时核对实际有效期间",
+          "paragraphs": [
+            "HDB 帮助说明，迟续期仍按全月收费。续期前，已到期的长期停车不允许使用长期停车专用位；须支付短期停车费，且这些费用不退还。官方条款举例：6 月 15 日续期，即使付全月费用，有效期间仍为 6 月 15 至 30 日。不要把之后付款视为对之前日子的追溯许可。"
+          ],
+          "sources": [
+            {
+              "title": "HDB：续期指引",
+              "href": "https://www.hdb.gov.sg/renew-season-parking/terms-and-conditions"
+            }
+          ]
+        },
+        {
+          "heading": "保留简明确认表",
+          "paragraphs": [
+            "用私人表格设五栏：当前到期日、下次可办理日期、续期行动、已确认的新期间及未解决问题。虚构例子：一家人申请了自动续期，但尚未查首次扣款及下一期间。应把下个月标为未确认，并核对 HDB 记录，不要抄上个月的日期。登录资料及身份证明不应放进共享笔记。Where To BTO 不办理续期，也不确认个人停车权。"
+          ]
+        }
+      ],
+      "callout": {
+        "title": "首次购买？",
+        "text": "使用独立的首次购买清单，核对名额及家庭类别。",
+        "label": "查看首次购买准备",
+        "href": "/guides/bto-season-parking-before-moving"
+      },
+      "next": [
+        {
+          "title": "另行准备水电煤",
+          "href": "/guides/bto-utilities-before-renovation"
+        },
+        {
+          "title": "核对附近设施",
+          "href": "/guides/checking-amenities-near-a-bto"
+        }
+      ]
+    }
+  }
+}
