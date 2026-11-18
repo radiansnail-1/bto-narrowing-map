@@ -33,6 +33,7 @@ function launchLabel(record: SnapshotProject): string {
 }
 
 function summary(record: SnapshotProject): string {
+  if (record.publishedSummary) return record.publishedSummary;
   const note = (record as { publishedNote?: string }).publishedNote;
   let base: string;
   if (record.launch.status === 'launched') base = `Officially launched in the ${record.launch.exercise ?? '2026'} exercise. See HDB's source materials for the complete project details.`;

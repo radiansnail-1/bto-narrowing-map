@@ -33,7 +33,9 @@ describe('project matching', () => {
     const result = matchProject(btoProjects.find((project) => project.id === 'sembawang-voyage')!, { ...baseAnswers, flatType: '4-room', maxBudget: 304000, waitingBand: 'mid' });
     expect(result.budget).toBe('pass');
     expect(result.waiting).toBe('pass');
-    const unknownPrice = matchProject(btoProjects.find((project) => project.id === 'nov-2026-toa-payoh-west-caldecott')!, { ...baseAnswers, flatType: '4-room', maxBudget: 900000 });
+    const hillside = btoProjects.find((project) => project.id === 'nov-2026-toa-payoh-west-caldecott')!;
+    expect(matchProject(hillside, { ...baseAnswers, flatType: '4-room', maxBudget: 558000, waitingBand: 'mid' })).toMatchObject({ budget: 'pass', waiting: 'pass' });
+    const unknownPrice = matchProject(btoProjects.find((project) => project.id === 'nov-2026-bedok-unnamed')!, { ...baseAnswers, flatType: '4-room', maxBudget: 900000 });
     expect(unknownPrice.budget).toBe('unknown');
     const unknownWait = matchProject(btoProjects.find((project) => project.id === 'nov-2026-bedok-unnamed')!, { ...baseAnswers, waitingBand: 'later' });
     expect(unknownWait.waiting).toBe('unknown');
