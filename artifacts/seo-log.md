@@ -342,3 +342,21 @@ https://wheretobto.com/fr/guides/bto-season-parking-renewal-checks
 https://wheretobto.com/de/guides/bto-season-parking-renewal-checks
 https://wheretobto.com/zh-Hans/guides/bto-season-parking-renewal-checks
 Bounded fresh official HDB/MND/CPF/IRAS search found no newly verified consequential BTO change after prior checks; current results retain the 4 November launch and 11 November close. No exhaustive news cutoff or official snapshot date advanced. The HFE update brief stays retained: current legacy English ownership requires a separately reviewed five-language migration rather than a duplicate URL.
+
+
+## 18 November 2026 — PR 32 parking transfer
+PR 32: https://github.com/radiansnail-1/bto-narrowing-map/pull/32 . Five complete languages distinguish permanent moves and temporary parking transfers. Read current HDB guidance and terms. Immediate effect, availability, transfer limits, one allocated group and charges remain explicit. Existing project facts and owner history are preserved. Source and translation review passed; final validation and release remain pending.
+
+Hypothesis: a distinct source-backed transfer choice and confirmation checklist may support relevant discovery without suggesting dual-group parking rights. 18 November actual final GSC Web/Pacific cutoff 15 November: 9–15 November 9 clicks / 166 impressions versus 2–8 November 17 / 416; all fourteen dates returned. 16–17 November missing unknown. Tiny sitewide totals inconclusive; exact-intent query/page absent from returned rows, not zero. New URL baseline unknown. English Singapore Planner 04:32 UTC broad transfer 3,600 monthly, temporary transfer 480, exact car park seed unknown. Synonyms not additive, advertiser competition not organic difficulty; no traffic or business forecast.
+Review final exact-page and query clicks and impressions after seven and 28 complete post-release days plus reporting lag; retain all earlier observations. No measured gain.
+URLs:
+https://wheretobto.com/guides/bto-season-parking-transfer-checks
+https://wheretobto.com/es/guides/bto-season-parking-transfer-checks
+https://wheretobto.com/fr/guides/bto-season-parking-transfer-checks
+https://wheretobto.com/de/guides/bto-season-parking-transfer-checks
+https://wheretobto.com/zh-Hans/guides/bto-season-parking-transfer-checks
+Sources read 18 November:
+https://www.hdb.gov.sg/parking/transferring-season-parking/transfer-season-parking
+https://www.hdb.gov.sg/permanently-transfer-season-parking-to-another-car-park/terms-and-conditions
+https://www.hdb.gov.sg/temporarily-transfer-season-parking-to-another-car-park/terms-and-conditions
+Bounded official HDB, MND, CPF and IRAS news searches found no newly confirmed consequential change. Full news cutoff and official snapshot audit dates remain unchanged. Cached 17 November citation benchmark, Codex CLI 0.163.0, configured gpt-6-luna, actual model unreported, fixed questions: own links 1 of 1 branded and 0 of 2 unbranded; literal matches likewise, identity unverified. This is not consumer traffic.

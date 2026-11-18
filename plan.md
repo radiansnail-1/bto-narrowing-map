@@ -206,3 +206,7 @@ PR 29 https://github.com/radiansnail-1/bto-narrowing-map/pull/29 adds complete e
 
 ## 17 November 2026 — PR 31 season parking renewal
 PR 31 https://github.com/radiansnail-1/bto-narrowing-map/pull/31 adds complete en/es/fr/de/zh-Hans renewal preparation using the existing bundle loader. Read current HDB renewal guidance, help and terms; separate expiry, booking date, automatic setup, payment outcome and confirmed validity. Late renewal is not retrospective parking permission. Existing first-purchase guide remains separate. Preserve project facts, snapshot dates, owner work and OTHER PR 5. Source and translation meaning reviewed; final exact-head lint, unit, build, one-worker browser, ten layouts and checked live release remain pending.
+
+
+## 18 November 2026 — Season parking transfer guide
+PR 32: https://github.com/radiansnail-1/bto-narrowing-map/pull/32 . Complete English, Spanish, French, German and Simplified Chinese copy separates permanent moves from temporary parking transfers. Source review is complete; exact-head validation and checked release remain pending. Preserve the existing project facts and owner work.
