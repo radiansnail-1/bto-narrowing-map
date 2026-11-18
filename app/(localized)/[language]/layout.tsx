@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import { Analytics } from '@vercel/analytics/next';
+import { WebsiteReferrals } from '@/components/WebsiteReferrals';
 import { hankenGrotesk } from '@/app/fonts';
 import { ARTICLE_LANGUAGES, isArticleLanguage } from '@/data/article-bundles';
 import { articleUi } from '@/components/LocalizedArticle';
@@ -19,6 +20,6 @@ export default async function LocalizedLayout({ children, params }: { children: 
     <div className="content-shell"><header className="site-header"><div className="site-header-inner"><Link className="site-wordmark" href="/"><span>Where</span> To BTO</Link><nav className="site-nav" aria-label={ui.guides}><Link href="/">{ui.map}</Link><Link href="/guides">{ui.guides}</Link></nav></div></header>
       {children}
       <footer className="content-footer"><div><strong>Where To BTO</strong><p>{ui.notice}</p></div><Link href="/sitemap.xml">{ui.sitemap}</Link></footer>
-    </div><Analytics />
+    </div><Analytics /><WebsiteReferrals />
   </body></html>;
 }
