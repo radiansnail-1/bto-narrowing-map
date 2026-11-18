@@ -1,0 +1,398 @@
+{
+  "slug": "bto-season-parking-transfer-checks",
+  "publishedDate": "2026-11-18",
+  "checkedDate": "2026-11-18",
+  "updatedDate": "2026-11-18",
+  "translations": {
+    "en": {
+      "category": "Moving in",
+      "title": "Moving into your BTO: transfer existing season parking?",
+      "description": "Compare permanent and temporary HDB season parking transfers, availability, immediate effect, charges and confirmation before changing car parks.",
+      "answer": "If you already hold HDB season parking, check whether your move calls for a permanent transfer or a short temporary change. HDB makes transfers subject to availability and says they take effect immediately. Confirm the new car park group and valid period before relying on the change; moving home does not itself transfer your parking.",
+      "sections": [
+        {
+          "heading": "Start with the active record",
+          "paragraphs": [
+            "Record the current vehicle, car park group and expiry, then the new residential block and intended car park. Season parking covers one vehicle in one specific car park group during its validity. A nearby car park or an empty bay does not prove you can transfer there. If you do not already hold season parking, use the separate first-purchase guide."
+          ],
+          "sources": [
+            {
+              "title": "HDB transfer guidance and terms",
+              "href": "https://www.hdb.gov.sg/parking/transferring-season-parking/transfer-season-parking"
+            }
+          ]
+        },
+        {
+          "heading": "Match the transfer to the actual need",
+          "paragraphs": [
+            "HDB’s permanent route covers moving to another HDB block or changing vehicle. A temporary transfer is for a short need, such as a replacement vehicle or temporarily parking elsewhere, and lasts at most 31 days. Both depend on availability and take effect immediately. Do not submit early assuming a future move date will defer the change."
+          ],
+          "sources": [
+            {
+              "title": "HDB transfer guidance and terms",
+              "href": "https://www.hdb.gov.sg/permanently-transfer-season-parking-to-another-car-park/terms-and-conditions"
+            }
+          ]
+        },
+        {
+          "heading": "Check limits and charges before submitting",
+          "paragraphs": [
+            "The permanent car park transfer terms limit transfers to once in 30 days, subject to eligibility and availability. Temporary car park transfers are limited to six times in six months and are not intended for frequent or long-term use. Read the actual transaction terms and quoted amount. Permanent transfers can require a top-up for higher charges; HDB may refund a lower-charge difference. For a temporary move to a cheaper car park, HDB gives no difference refund, and unused temporary parking is not refunded."
+          ],
+          "sources": [
+            {
+              "title": "HDB transfer guidance and terms",
+              "href": "https://www.hdb.gov.sg/temporarily-transfer-season-parking-to-another-car-park/terms-and-conditions"
+            }
+          ]
+        },
+        {
+          "heading": "Confirm where you may park",
+          "paragraphs": [
+            "Check the completed official record for vehicle, allocated group and effective period. During a temporary transfer, your season parking applies to the destination group, not both groups. HDB’s terms say it returns to the original record when the temporary transfer expires, within the underlying validity period. Check that original parking has not expired. Keep renewal as a separate task."
+          ],
+          "sources": [
+            {
+              "title": "HDB transfer guidance and terms",
+              "href": "https://www.hdb.gov.sg/temporarily-transfer-season-parking-to-another-car-park/get-help"
+            }
+          ]
+        },
+        {
+          "heading": "Use the move plan without assuming approval",
+          "paragraphs": [
+            "Fictional example: a household will collect keys before actually moving. Its sheet lists the old group, intended new group, whether parking there is a temporary need or permanent move, the intended action date, actual HDB result and any return date. An unanswered availability check remains pending. If a date, group or charge is unclear, ask HDB before submitting or relying on it. Keep credentials and identity records out of shared notes. Where To BTO does not transfer parking or confirm personal entitlement."
+          ]
+        }
+      ],
+      "callout": {
+        "title": "Buying for the first time?",
+        "text": "Use the separate availability and purchase checklist.",
+        "label": "Read first-purchase preparation",
+        "href": "/guides/bto-season-parking-before-moving"
+      },
+      "next": [
+        {
+          "title": "Check renewal validity",
+          "href": "/guides/bto-season-parking-renewal-checks"
+        },
+        {
+          "title": "Prepare key collection",
+          "href": "/guides/bto-key-collection-preparation"
+        }
+      ]
+    },
+    "es": {
+      "category": "Mudanza",
+      "title": "Mudarte al BTO: ¿transferir el abono de aparcamiento existente?",
+      "description": "Compara transferencias permanentes y temporales de HDB, disponibilidad, efecto inmediato, cargos y confirmación antes de cambiar de aparcamiento.",
+      "answer": "Si ya tienes un abono HDB, comprueba si necesitas una transferencia permanente o un cambio temporal breve. HDB condiciona la transferencia a la disponibilidad e indica que tiene efecto inmediato. Confirma grupo y periodo válido; mudarte no transfiere el abono automáticamente.",
+      "sections": [
+        {
+          "heading": "Empieza por el registro activo",
+          "paragraphs": [
+            "Anota vehículo actual, grupo de aparcamientos y vencimiento; después, el nuevo bloque y aparcamiento previsto. El abono cubre un vehículo en un grupo específico durante su vigencia. La cercanía o una plaza vacía no demuestran que puedas transferirlo allí. Si aún no tienes abono, consulta la guía de primera compra."
+          ],
+          "sources": [
+            {
+              "title": "HDB: transferencia y condiciones",
+              "href": "https://www.hdb.gov.sg/parking/transferring-season-parking/transfer-season-parking"
+            }
+          ]
+        },
+        {
+          "heading": "Elige según la necesidad real",
+          "paragraphs": [
+            "La vía permanente de HDB sirve para mudarse a otro bloque HDB o cambiar de vehículo. La temporal cubre necesidades breves, como un vehículo de sustitución o aparcar provisionalmente en otro lugar, hasta 31 días. Ambas dependen de disponibilidad y tienen efecto inmediato. No solicites antes suponiendo que la fecha futura de mudanza aplaza el cambio."
+          ],
+          "sources": [
+            {
+              "title": "HDB: transferencia y condiciones",
+              "href": "https://www.hdb.gov.sg/permanently-transfer-season-parking-to-another-car-park/terms-and-conditions"
+            }
+          ]
+        },
+        {
+          "heading": "Comprueba límites y cargos antes de solicitar",
+          "paragraphs": [
+            "Las condiciones limitan la transferencia permanente de aparcamiento a una cada 30 días, según requisitos y disponibilidad. Las temporales se limitan a seis en seis meses y no son para uso frecuente o prolongado. Lee las condiciones e importe real. Una permanente puede exigir pagar la diferencia si sube el cargo; HDB puede devolver la diferencia si baja. En una temporal a un aparcamiento más barato no se devuelve la diferencia ni el periodo temporal sin utilizar."
+          ],
+          "sources": [
+            {
+              "title": "HDB: transferencia y condiciones",
+              "href": "https://www.hdb.gov.sg/temporarily-transfer-season-parking-to-another-car-park/terms-and-conditions"
+            }
+          ]
+        },
+        {
+          "heading": "Confirma dónde puedes aparcar",
+          "paragraphs": [
+            "Comprueba vehículo, grupo asignado y periodo efectivo en el registro oficial completado. Durante la transferencia temporal, el abono sirve para el grupo de destino, no ambos. Según las condiciones, al vencer vuelve al registro original dentro de la vigencia subyacente. Comprueba que el abono original no haya vencido. La renovación es otra tarea."
+          ],
+          "sources": [
+            {
+              "title": "HDB: transferencia y condiciones",
+              "href": "https://www.hdb.gov.sg/temporarily-transfer-season-parking-to-another-car-park/get-help"
+            }
+          ]
+        },
+        {
+          "heading": "Planifica sin presuponer aprobación",
+          "paragraphs": [
+            "Ejemplo ficticio: una familia recibe las llaves antes de mudarse. Su hoja recoge grupo anterior y previsto, necesidad temporal o mudanza permanente, fecha de actuación, resultado real de HDB y posible retorno. Una consulta de disponibilidad sin resolver sigue pendiente. Si fecha, grupo o cargo no están claros, pregunta a HDB antes de solicitar o depender del cambio. No compartas credenciales ni identificación en notas. Where To BTO no transfiere abonos ni confirma derechos personales."
+          ]
+        }
+      ],
+      "callout": {
+        "title": "¿Primera compra?",
+        "text": "Usa la lista separada de disponibilidad y compra.",
+        "label": "Preparar la primera compra",
+        "href": "/guides/bto-season-parking-before-moving"
+      },
+      "next": [
+        {
+          "title": "Comprobar vigencia de la renovación",
+          "href": "/guides/bto-season-parking-renewal-checks"
+        },
+        {
+          "title": "Preparar la entrega de llaves",
+          "href": "/guides/bto-key-collection-preparation"
+        }
+      ]
+    },
+    "fr": {
+      "category": "Emménagement",
+      "title": "Emménager dans votre BTO : transférer le stationnement existant ?",
+      "description": "Comparez transferts HDB permanent et temporaire, disponibilité, effet immédiat, frais et confirmation avant de changer de parking.",
+      "answer": "Si vous détenez déjà un abonnement HDB, vérifiez si votre besoin relève d’un transfert permanent ou temporaire. HDB les soumet à disponibilité et indique un effet immédiat. Confirmez groupe et période valide : déménager ne transfère pas automatiquement votre stationnement.",
+      "sections": [
+        {
+          "heading": "Partir du dossier actif",
+          "paragraphs": [
+            "Notez véhicule actuel, groupe de parkings et expiration, puis nouveau bloc résidentiel et parking souhaité. L’abonnement couvre un véhicule dans un groupe précis pendant sa validité. La proximité ou une place vide ne prouvent pas qu’un transfert y est possible. Sans abonnement existant, utilisez le guide du premier achat."
+          ],
+          "sources": [
+            {
+              "title": "HDB : transfert et conditions",
+              "href": "https://www.hdb.gov.sg/parking/transferring-season-parking/transfer-season-parking"
+            }
+          ]
+        },
+        {
+          "heading": "Choisir selon le besoin réel",
+          "paragraphs": [
+            "Le parcours permanent HDB concerne un déménagement vers un autre bloc HDB ou un changement de véhicule. Le temporaire répond à un besoin bref, comme un véhicule de remplacement ou un autre parking provisoire, pour 31 jours au maximum. Les deux dépendent des disponibilités et prennent effet immédiatement. Ne soumettez pas trop tôt en supposant qu’une future date de déménagement reportera le changement."
+          ],
+          "sources": [
+            {
+              "title": "HDB : transfert et conditions",
+              "href": "https://www.hdb.gov.sg/permanently-transfer-season-parking-to-another-car-park/terms-and-conditions"
+            }
+          ]
+        },
+        {
+          "heading": "Lire les limites et frais avant la demande",
+          "paragraphs": [
+            "Les conditions limitent le transfert permanent de parking à une fois tous les 30 jours, sous réserve d’admissibilité et de disponibilité. Le temporaire est limité à six fois en six mois et ne vise pas un usage fréquent ou durable. Lisez les conditions et le montant affiché. Un permanent peut nécessiter un complément si les frais augmentent ; HDB peut rembourser une différence à la baisse. Un temporaire vers un parking moins cher ne donne lieu à aucun remboursement de différence ni de période temporaire inutilisée."
+          ],
+          "sources": [
+            {
+              "title": "HDB : transfert et conditions",
+              "href": "https://www.hdb.gov.sg/temporarily-transfer-season-parking-to-another-car-park/terms-and-conditions"
+            }
+          ]
+        },
+        {
+          "heading": "Confirmer où stationner",
+          "paragraphs": [
+            "Vérifiez véhicule, groupe attribué et période effective dans le dossier officiel achevé. Pendant un temporaire, l’abonnement vaut pour le groupe de destination, pas les deux. Selon les conditions, il revient au dossier initial à l’expiration temporaire, dans la limite de sa validité sous-jacente. Vérifiez que l’abonnement initial n’a pas expiré. Traitez le renouvellement séparément."
+          ],
+          "sources": [
+            {
+              "title": "HDB : transfert et conditions",
+              "href": "https://www.hdb.gov.sg/temporarily-transfer-season-parking-to-another-car-park/get-help"
+            }
+          ]
+        },
+        {
+          "heading": "Planifier sans présumer l’accord",
+          "paragraphs": [
+            "Exemple fictif : un foyer reçoit les clés avant d’emménager. Sa fiche note ancien et nouveau groupes, besoin temporaire ou déménagement permanent, date d’action, résultat HDB réel et éventuelle date de retour. Une disponibilité non résolue reste en attente. Si date, groupe ou frais sont incertains, interrogez HDB avant de soumettre ou de vous fier au changement. Gardez identifiants et pièces d’identité hors des notes partagées. Where To BTO ne transfère aucun abonnement et ne confirme aucun droit personnel."
+          ]
+        }
+      ],
+      "callout": {
+        "title": "Premier achat ?",
+        "text": "Utilisez la liste distincte de disponibilité et d’achat.",
+        "label": "Préparer le premier achat",
+        "href": "/guides/bto-season-parking-before-moving"
+      },
+      "next": [
+        {
+          "title": "Vérifier la validité du renouvellement",
+          "href": "/guides/bto-season-parking-renewal-checks"
+        },
+        {
+          "title": "Préparer la remise des clés",
+          "href": "/guides/bto-key-collection-preparation"
+        }
+      ]
+    },
+    "de": {
+      "category": "Einzug",
+      "title": "Einzug in die BTO-Wohnung: bestehendes Dauerparken übertragen?",
+      "description": "Vergleichen Sie dauerhafte und vorübergehende HDB-Übertragung, Verfügbarkeit, sofortige Wirkung, Gebühren und Bestätigung.",
+      "answer": "Bei bestehendem HDB-Dauerparken prüfen Sie, ob Sie eine dauerhafte oder kurze vorübergehende Übertragung benötigen. HDB macht sie von Verfügbarkeit abhängig und nennt sofortige Wirkung. Bestätigen Sie neue Parkplatzgruppe und Gültigkeit; der Umzug allein überträgt die Berechtigung nicht.",
+      "sections": [
+        {
+          "heading": "Mit dem aktiven Datensatz beginnen",
+          "paragraphs": [
+            "Notieren Sie aktuelles Fahrzeug, Parkplatzgruppe und Ablauf, dann neuen Wohnblock und gewünschten Parkplatz. Dauerparken gilt für ein Fahrzeug in einer bestimmten Gruppe während seiner Gültigkeit. Nähe oder ein leerer Stellplatz beweisen keine Übertragungsmöglichkeit. Ohne bestehende Berechtigung nutzen Sie den gesonderten Erstkaufleitfaden."
+          ],
+          "sources": [
+            {
+              "title": "HDB: Übertragung und Bedingungen",
+              "href": "https://www.hdb.gov.sg/parking/transferring-season-parking/transfer-season-parking"
+            }
+          ]
+        },
+        {
+          "heading": "Den tatsächlichen Bedarf zuordnen",
+          "paragraphs": [
+            "Die dauerhafte HDB-Übertragung betrifft den Umzug in einen anderen HDB-Block oder einen Fahrzeugwechsel. Die vorübergehende dient einem kurzen Bedarf, etwa Ersatzfahrzeug oder zeitweisem Parken anderswo, für höchstens 31 Tage. Beide hängen von Verfügbarkeit ab und wirken sofort. Stellen Sie den Antrag nicht früh in der Annahme, ein späteres Einzugsdatum verschiebe die Wirkung."
+          ],
+          "sources": [
+            {
+              "title": "HDB: Übertragung und Bedingungen",
+              "href": "https://www.hdb.gov.sg/permanently-transfer-season-parking-to-another-car-park/terms-and-conditions"
+            }
+          ]
+        },
+        {
+          "heading": "Grenzen und Gebühren vor dem Antrag prüfen",
+          "paragraphs": [
+            "Die Bedingungen begrenzen dauerhafte Parkplatzübertragungen auf einmal in 30 Tagen, abhängig von Berechtigung und Verfügbarkeit. Vorübergehende sind auf sechs in sechs Monaten begrenzt und nicht für häufigen oder langfristigen Gebrauch gedacht. Lesen Sie Bedingungen und angezeigten Betrag. Dauerhafte Übertragung kann bei höheren Gebühren eine Nachzahlung erfordern; bei niedrigeren kann HDB die Differenz erstatten. Bei vorübergehendem Wechsel zu einem günstigeren Parkplatz gibt es weder Differenzerstattung noch Erstattung ungenutzter vorübergehender Parkzeit."
+          ],
+          "sources": [
+            {
+              "title": "HDB: Übertragung und Bedingungen",
+              "href": "https://www.hdb.gov.sg/temporarily-transfer-season-parking-to-another-car-park/terms-and-conditions"
+            }
+          ]
+        },
+        {
+          "heading": "Den erlaubten Parkort bestätigen",
+          "paragraphs": [
+            "Prüfen Sie Fahrzeug, zugeteilte Gruppe und wirksamen Zeitraum im abgeschlossenen amtlichen Datensatz. Während einer vorübergehenden Übertragung gilt die Berechtigung für die Zielgruppe, nicht beide. Laut Bedingungen kehrt sie nach deren Ablauf zum ursprünglichen Datensatz zurück, innerhalb der zugrunde liegenden Gültigkeit. Prüfen Sie, ob die ursprüngliche Berechtigung noch gilt. Verlängerung bleibt eine eigene Aufgabe."
+          ],
+          "sources": [
+            {
+              "title": "HDB: Übertragung und Bedingungen",
+              "href": "https://www.hdb.gov.sg/temporarily-transfer-season-parking-to-another-car-park/get-help"
+            }
+          ]
+        },
+        {
+          "heading": "Planen, ohne eine Genehmigung anzunehmen",
+          "paragraphs": [
+            "Fiktives Beispiel: Ein Haushalt erhält die Schlüssel vor dem Einzug. Seine Liste enthält alte und gewünschte Gruppe, vorübergehenden Bedarf oder dauerhaften Umzug, Handlungstag, tatsächliches HDB-Ergebnis und mögliches Rückkehrdatum. Ungeklärte Verfügbarkeit bleibt offen. Fragen Sie HDB vor Antrag oder Nutzung bei unklaren Daten, Gruppen oder Gebühren. Zugangsdaten und Identitätsdokumente gehören nicht in geteilte Notizen. Where To BTO überträgt keine Berechtigung und bestätigt keine persönlichen Ansprüche."
+          ]
+        }
+      ],
+      "callout": {
+        "title": "Erster Kauf?",
+        "text": "Nutzen Sie die gesonderte Liste zu Verfügbarkeit und Kauf.",
+        "label": "Erstkauf vorbereiten",
+        "href": "/guides/bto-season-parking-before-moving"
+      },
+      "next": [
+        {
+          "title": "Gültigkeit nach Verlängerung prüfen",
+          "href": "/guides/bto-season-parking-renewal-checks"
+        },
+        {
+          "title": "Schlüsselübergabe vorbereiten",
+          "href": "/guides/bto-key-collection-preparation"
+        }
+      ]
+    },
+    "zh-Hans": {
+      "category": "入住准备",
+      "title": "搬入 BTO：现有长期停车应办理转移吗？",
+      "description": "比较 HDB 永久与临时转移的用途、名额、即时生效、收费及确认事项，再更换停车场。",
+      "answer": "如果已有 HDB 长期停车，应先分清永久搬迁还是短期临时需要。HDB 转移须视名额而定，并说明会立即生效。依赖新安排前，核对新的停车场组别和有效期间；搬家本身不会自动转移停车安排。",
+      "sections": [
+        {
+          "heading": "从现有有效记录开始",
+          "paragraphs": [
+            "记录现有车辆、停车场组别和到期日，再列新住宅楼座及目标停车场。长期停车在有效期间只适用于一辆车和一个指定停车场组别。停车场靠近新家或现场有空位，并不证明可以转移过去。若尚无长期停车，应另看首次购买指引。"
+          ],
+          "sources": [
+            {
+              "title": "HDB：转移指引与条款",
+              "href": "https://www.hdb.gov.sg/parking/transferring-season-parking/transfer-season-parking"
+            }
+          ]
+        },
+        {
+          "heading": "按实际需要选转移方式",
+          "paragraphs": [
+            "HDB 永久转移适用于搬到另一座 HDB 住宅楼或更换车辆。临时转移用于短期需要，例如代步车辆或暂时在另一处停车，最长 31 天。两者均视名额而定，并立即生效。不要提早提交后，假定未来搬家日期会延后生效。"
+          ],
+          "sources": [
+            {
+              "title": "HDB：转移指引与条款",
+              "href": "https://www.hdb.gov.sg/permanently-transfer-season-parking-to-another-car-park/terms-and-conditions"
+            }
+          ]
+        },
+        {
+          "heading": "提交前核对次数限制与收费",
+          "paragraphs": [
+            "永久更换停车场的条款限制每 30 天办理一次，并须符合资格及名额要求。临时更换停车场最多六个月内六次，不供频繁或长期使用。阅读实际条款及显示金额。永久转移至较高收费安排可能须补差额；较低收费时 HDB 可能退还差额。临时转移至较便宜停车场不会退还差额，未使用的临时停车期间也不退款。"
+          ],
+          "sources": [
+            {
+              "title": "HDB：转移指引与条款",
+              "href": "https://www.hdb.gov.sg/temporarily-transfer-season-parking-to-another-car-park/terms-and-conditions"
+            }
+          ]
+        },
+        {
+          "heading": "确认实际可停的地点",
+          "paragraphs": [
+            "交易完成后，通过官方记录核对车辆、获分配组别及实际期间。临时转移期间，长期停车适用于目标组别，而不是两边都可用。条款说明临时期间结束后，会在原有有效期内恢复原记录；还须确认原长期停车并未到期。续期是另一项待办。"
+          ],
+          "sources": [
+            {
+              "title": "HDB：转移指引与条款",
+              "href": "https://www.hdb.gov.sg/temporarily-transfer-season-parking-to-another-car-park/get-help"
+            }
+          ]
+        },
+        {
+          "heading": "规划搬家，但不预设获批",
+          "paragraphs": [
+            "虚构例子：一家人在实际搬家前先领钥匙。私人表格列旧组别、新组别、临时需要还是永久搬迁、拟办理日期、HDB 实际结果及可能的恢复日期。名额尚未查明就保持待办。日期、组别或收费不清楚时，应在提交或依赖安排前向 HDB 查询。共享笔记不要放登录资料或身份证明。Where To BTO 不办理停车转移，也不确认个人停车资格。"
+          ]
+        }
+      ],
+      "callout": {
+        "title": "首次购买？",
+        "text": "另用名额与购买准备清单。",
+        "label": "查看首次购买准备",
+        "href": "/guides/bto-season-parking-before-moving"
+      },
+      "next": [
+        {
+          "title": "核对续期后的有效期间",
+          "href": "/guides/bto-season-parking-renewal-checks"
+        },
+        {
+          "title": "准备领取钥匙",
+          "href": "/guides/bto-key-collection-preparation"
+        }
+      ]
+    }
+  }
+}
