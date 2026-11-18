@@ -8,9 +8,17 @@
     "projectCount": 23,
     "namedLaunchedProjectCount": 20,
     "upcomingRecordCount": 3,
-    "caveat": "Partial check on 5 November against official 4 November launch material: seven existing November records now have confirmed names, classification, flat mix, sales supply and 4–11 November application window. Price ranges, exact coordinates and missing waits are unverified here, not assumed unavailable from HDB. Older project checks and the 28 August full audit remain unchanged."
+    "caveat": "Partial check on 5 November against official 4 November launch material: seven existing November records now have confirmed names, classification, flat mix, sales supply and 4–11 November application window. An 18 November annex check adds indicative prices and waiting time for Toa Payoh Hillside. Other unverified prices, waits and exact coordinates remain unknown. Older project checks and the 28 August full audit remain unchanged."
   },
   "sources": [
+    {
+      "id": "hdb-november-2026-annex-a",
+      "agency": "HDB",
+      "title": "Annex A: November 2026 BTO Flat Supply and Pricing Details",
+      "url": "https://www.hdb.gov.sg/-/media/hdb-pulse/news/2026/hdb-launches-7964-flats-across-seven-projects-in-nov-2026-bto-sales-exercise/Annex-A---Nov-2026-BTO---Final.pdf",
+      "checkedDate": "2026-11-18",
+      "usage": "Toa Payoh Hillside only: Table A(1)(a) verifies launch supply, indicative prices before grants, estimated floor areas and the 45-month wait. Table A(1)(j) lists CCA prices by lease length."
+    },
     {
       "id": "hdb-november-2026-launch-mynicehome",
       "agency": "HDB",
@@ -1456,22 +1464,36 @@
         ]
       },
       "classification": "Prime",
-      "estimatedWaitingTimeMonths": null,
+      "estimatedWaitingTimeMonths": 45,
       "estimatedCompletionDate": null,
       "approxUnitsTotal": 1600,
       "approxBtoUnits": 1432,
       "flatTypes": [
         {
           "type": "2-room Flexi",
-          "units": 592
+          "units": 592,
+          "priceRangeSgd": {
+            "min": 243000,
+            "max": 400000
+          }
         },
         {
           "type": "4-room",
-          "units": 584
+          "units": 584,
+          "priceRangeSgd": {
+            "min": 558000,
+            "max": 832000
+          }
         },
         {
           "type": "Community Care Apartment (CCA)",
-          "units": 256
+          "units": 256,
+          "estimatedFloorAreaSqm": 39,
+          "estimatedInternalFloorAreaSqm": 36,
+          "priceRangeSgd": {
+            "min": 151000,
+            "max": 192000
+          }
         }
       ],
       "publicRentalUnitsApprox": 230,
@@ -1487,6 +1509,7 @@
         "park-toapayoh-west-planned"
       ],
       "sourceUrls": [
+        "https://www.hdb.gov.sg/-/media/hdb-pulse/news/2026/hdb-launches-7964-flats-across-seven-projects-in-nov-2026-bto-sales-exercise/Annex-A---Nov-2026-BTO---Final.pdf",
         "https://www.mynicehome.gov.sg/get-started/hdb-bto-sales-launch/",
         "https://services-homes.hdb.gov.sg/sales/application-rate/bto/202611",
         "https://www.hdb.gov.sg/hdb-pulse/news/2026/increase-in-income-ceilings-and-greater-support-for-families-with-children",
@@ -1495,8 +1518,8 @@
         "https://www.hdb.gov.sg/hdb-pulse/news/2026/hdb-unveils-master-plan-for-toa-payoh-west",
         "https://www.hdb.gov.sg/sales-launch"
       ],
-      "checkedDate": "2026-11-05",
-      "publishedNote": "HDB launch material updated 4 Nov 2026, checked 5 Nov: 1,432 flats for sale; Prime project. Bounded by Toa Payoh Rise and Toa Payoh Link. Application period 4–11 November 2026, closing 11:59pm Singapore time on 11 November; allocation is by ballot, not first come. This partial check verifies name, classification, flat types and sales supply, not a complete price or location audit. Prices, floor areas, completion dates and any missing per-type counts or map coordinates remain unverified in this record; consult the current HDB Flat Portal. Planned facilities are not operating amenities. Current supply is 592 2-room Flexi, 584 4-room and 256 CCAs, superseding the 31 October approximate sold-flat counts; about 230 rental flats remain a separate earlier announcement. CCA minimum age is 55 from this exercise, subject to other conditions. The Caldecott map point is still an approximate station anchor, not a project centroid."
+      "checkedDate": "2026-11-18",
+      "publishedSummary": "Toa Payoh Hillside is a Prime BTO next to Caldecott MRT. HDB offered 1,432 flats and estimated a 45-month wait from the median flat-selection month to the median projected completion month. The table shows indicative launch prices before grants in SGD. The 2-room Flexi range covers both sizes on 99-year leases, the 4-room range includes balcony units, and the Community Care Apartment range uses a 40-year lease and excludes service packages. Applications closed at 11:59pm Singapore time on 11 November 2026. Community Care Apartments were offered from age 55, subject to HDB eligibility. The map pin marks Caldecott MRT, and the housing site is bounded by Toa Payoh Rise and Toa Payoh Link."
     },
     {
       "id": "lakeview-second-unnamed",

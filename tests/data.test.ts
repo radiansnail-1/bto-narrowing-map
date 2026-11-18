@@ -50,12 +50,19 @@ describe('official snapshot data integrity', () => {
     expect(november.reduce((sum, project) => sum + (project.approxBtoUnits ?? 0), 0)).toBe(7964);
     for (const project of november) {
       expect(project.launch).toMatchObject({ status: 'launched', launchDate: '2026-11-04', applicationWindow: ['2026-11-04', '2026-11-11'] });
-      expect(project.checkedDate).toBe('2026-11-05');
       expect(project.sourceUrls).toContain('https://www.mynicehome.gov.sg/get-started/hdb-bto-sales-launch/');
-      expect(btoProjects.find(item => item.id === project.id)?.flatTypes.every(flat => flat.minPrice === null && flat.maxPrice === null)).toBe(true);
+      if (project.id !== 'nov-2026-toa-payoh-west-caldecott') {
+        expect(project.checkedDate).toBe('2026-11-05');
+        expect(btoProjects.find(item => item.id === project.id)?.flatTypes.every(flat => flat.minPrice === null && flat.maxPrice === null)).toBe(true);
+      }
     }
     const hillside = november.find(project => project.id === 'nov-2026-toa-payoh-west-caldecott');
-    expect(hillside?.flatTypes?.map(flat => flat.units)).toEqual([592, 584, 256]);
+    expect(hillside?.checkedDate).toBe('2026-11-18');
+    expect(hillside?.flatTypes?.map(flat => [flat.units, flat.priceRangeSgd])).toEqual([
+      [592, { min: 243000, max: 400000 }],
+      [584, { min: 558000, max: 832000 }],
+      [256, { min: 151000, max: 192000 }],
+    ]);
     expect(hillside?.publicRentalUnitsApprox).toBe(230);
     expect(snapshot.lastAuditDate).toBe('2026-08-28');
     expect(btoProjects.find(project => project.id === 'nov-2026-sembawang-unnamed')?.estimatedWaitingTimeMonths).toBe(34);

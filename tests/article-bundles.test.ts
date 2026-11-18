@@ -104,7 +104,7 @@ describe('November 2026 launch reconciliation', () => {
     expect(project.flatTypes.find(flat => flat.type === 'Community Care Apartment (CCA)')!.units).toBe(256);
     expect(project.approxBtoUnits).toBe(592 + 584 + 256);
     expect(project.publicRentalUnitsApprox).toBe(230);
-    expect(project.estimatedWaitingTimeMonths).toBeNull();
+    expect(project.estimatedWaitingTimeMonths).toBe(45);
     expect(project.classification).toBe('Prime');
     expect(project.coordinateAccuracy).toContain('not the project centroid');
     expect(snapshot.lastAuditDate).toBe('2026-08-28');

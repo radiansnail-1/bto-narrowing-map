@@ -53,7 +53,7 @@ test('published November project facts stay readable at phone and desktop widths
       ['nov-2026-sembawang-unnamed', 'Sembawang Anchor', 'Standard', '34 months'],
       ['nov-2026-tengah-unnamed', 'Plantation Dew', 'Standard', '38 months'],
       ['nov-2026-yishun-unnamed', 'Chencharu Acres', 'Standard', null],
-      ['nov-2026-toa-payoh-west-caldecott', 'Toa Payoh Hillside', 'Prime', null],
+      ['nov-2026-toa-payoh-west-caldecott', 'Toa Payoh Hillside', 'Prime', '45 months'],
     ]) {
       await page.goto('/bto-projects/' + slug);
       await expect(page.getByRole('heading', { name: name!, exact: true })).toBeVisible();
@@ -61,10 +61,18 @@ test('published November project facts stay readable at phone and desktop widths
       await expect(page.locator('.fact-grid div').filter({ has: page.getByText('Classification', { exact: true }) }).locator('dd')).toHaveText(classification!);
       await expect(page.locator('.fact-grid div').filter({ has: page.getByText('Estimated waiting time', { exact: true }) }).locator('dd')).toHaveText(wait ?? 'Not verified in this dated record');
       const location = page.locator('.fact-grid div').filter({ has: page.getByText('Map location', { exact: true }) }).locator('dd');
-      if (slug === 'nov-2026-toa-payoh-west-caldecott') await expect(location).toContainText('Caldecott MRT anchor');
-      else await expect(location).toHaveText('Not verified in this dated record');
       await expect(page.locator('table tbody tr')).not.toHaveCount(0);
-      await expect(page.locator('table tbody tr td:nth-child(3)').first()).toHaveText('Not verified in this dated record');
+      if (slug === 'nov-2026-toa-payoh-west-caldecott') {
+        await expect(location).toContainText('Caldecott MRT anchor');
+        await expect(page.getByRole('row', { name: /2-room Flexi/ })).toContainText('$243,000–$400,000');
+        await expect(page.getByRole('row', { name: /4-room/ })).toContainText('$558,000–$832,000');
+        await expect(page.getByRole('row', { name: /Community Care Apartment/ })).toContainText('$151,000–$192,000');
+        await expect(page.locator('.project-hero')).toContainText('40-year lease');
+        await expect(page.locator('a[href$="/Annex-A---Nov-2026-BTO---Final.pdf"]')).toBeVisible();
+      } else {
+        await expect(location).toHaveText('Not verified in this dated record');
+        await expect(page.locator('table tbody tr td:nth-child(3)').first()).toHaveText('Not verified in this dated record');
+      }
       await expect(page.locator('.project-hero')).toContainText('11:59pm Singapore time on 11 November');
       await expect(page.locator('a[href="https://www.mynicehome.gov.sg/get-started/hdb-bto-sales-launch/"]')).toBeVisible();
       expect(await page.evaluate(() => document.documentElement.scrollWidth)).toBeLessThanOrEqual(width);
