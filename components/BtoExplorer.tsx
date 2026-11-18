@@ -18,6 +18,7 @@ import { matchAllProjects, projectOpacity } from '@/lib/matching';
 import { filterProjectsByLaunchStatus } from '@/lib/results';
 import { QUESTIONS_VIEW, RESULTS_VIEW, closeAmenity, closeProject, flowKindOf, openAmenity, openProject, type PanelView } from '@/lib/panel-view';
 import { DEFAULT_ANSWERS, DEFAULT_VISIBLE_GROUPS, MAX_STEP, loadStoredState, saveStoredState, type StoredPanelView } from '@/lib/storage';
+import { trackWebsiteReferral } from '@/lib/website-referrals';
 import type { Amenity, AmenityGroup, BtoProject, ExplorerAnswers } from '@/lib/types';
 
 const MapScene = dynamic(() => import('@/components/MapScene').then((module) => module.MapScene), {
@@ -30,6 +31,7 @@ export function BtoExplorer() {
   const panelLocation = useRef<string | null>(null);
   const mapRegion = useRef<HTMLDivElement>(null);
   const tray = useRef<HTMLDivElement>(null);
+  const requestedShortlistAddition = useRef<string | null>(null);
   useEffect(() => {
     const media = window.matchMedia('(max-width: 1023px)');
     const update = () => setIsMobile(media.matches);
@@ -131,12 +133,20 @@ export function BtoExplorer() {
   };
 
   const toggleShortlist = (id: string) => {
+    requestedShortlistAddition.current = !shortlistIds.includes(id) && shortlistIds.length < 4 ? id : null;
     setShortlistIds((current) => {
       if (current.includes(id)) return current.filter((item) => item !== id);
       if (current.length >= 4) return current;
       return [...current, id];
     });
   };
+  useEffect(() => {
+    const requested = requestedShortlistAddition.current;
+    if (requested && shortlistIds.includes(requested)) {
+      requestedShortlistAddition.current = null;
+      trackWebsiteReferral('shortlist');
+    }
+  }, [shortlistIds]);
 
   const selectAmenity = (amenity: Amenity) => {
     setView((current) => openAmenity(current, amenity.id));

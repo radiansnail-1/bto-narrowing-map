@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import { Analytics } from '@vercel/analytics/next';
+import { WebsiteReferrals } from '@/components/WebsiteReferrals';
 import { hankenGrotesk } from '../fonts';
 import { SITE_DESCRIPTION, SITE_NAME, SITE_URL } from '@/lib/site';
 import '../globals.css';
@@ -33,6 +34,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
       <body className={hankenGrotesk.className}>
         {children}
         <Analytics />
+        <WebsiteReferrals />
       </body>
     </html>
   );
