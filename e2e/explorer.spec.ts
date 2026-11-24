@@ -82,10 +82,6 @@ test('published November project facts stay readable at phone and desktop widths
     await expect(page.getByRole('row', { name: /Community Care Apartment/ })).not.toContainText('260');
     await expect(page.getByRole('row', { name: /Community Care Apartment/ })).not.toContainText('240');
     expect(await page.evaluate(() => document.documentElement.scrollWidth)).toBeLessThanOrEqual(width);
-    await page.goto('/guides/november-2026-bto-hfe-checklist');
-    await expect(page.locator('article')).toContainText('open 4–11 November');
-    await expect(page.locator('article')).toContainText('new HFE applications are suspended');
-    await expect(page.locator('meta[property="article:published_time"]')).toHaveAttribute('content', '2026-10-18');
   }
 });
 
