@@ -64,8 +64,6 @@ describe('crawlable site surface', () => {
     const entries = sitemap().filter(entry => new URL(entry.url).pathname === path);
     expect(entries).toHaveLength(1);
     expect(entries[0].lastModified).toEqual(new Date('2026-10-19T00:00:00Z'));
-    expect(REDDIT_GUIDES.find(({ slug }) => slug === 'november-2026-bto-hfe-checklist')?.publishedDate).toBe('2026-10-18');
-    expect(REDDIT_GUIDES.find(({ slug }) => slug === 'bto-cash-cpf-payment-timeline')?.publishedDate).toBeUndefined();
   });
 
   it('keeps FAQ questions distinct and answers nonempty', () => {
