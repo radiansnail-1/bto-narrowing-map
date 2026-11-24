@@ -210,3 +210,14 @@ PR 31 https://github.com/radiansnail-1/bto-narrowing-map/pull/31 adds complete e
 
 ## 18 November 2026 — Season parking transfer guide
 PR 32: https://github.com/radiansnail-1/bto-narrowing-map/pull/32 . Complete English, Spanish, French, German and Simplified Chinese copy separates permanent moves from temporary parking transfers. Source review is complete; exact-head validation and checked release remain pending. Preserve the existing project facts and owner work.
+
+
+## 24 November 2026 — HFE same-URL update, PR #35
+
+- Existing URL: https://wheretobto.com/guides/november-2026-bto-hfe-checklist . Retained PR: https://github.com/radiansnail-1/bto-narrowing-map/pull/35 . This is an update, not a new intent or project-fact snapshot.
+- Migrate only the exact legacy HFE record into a complete en/es/fr/de/zh-Hans bundle. Preserve 18 October original publication visibly and in metadata, four original next links plus /guides, disclaimer and unrelated source bytes. Keep all project snapshot dates unchanged.
+- Primary sources checked 24 November: HDB 4 November launch notice, 22 August income-ceiling announcement and Annex B, full indexed HFE stage table and new-flat during/after-exercise table. Historical November window is closed; service resumed 12 November. Approved-HFE income-only guidance must not be generalised to a submitted flat application. Post-exercise household or financial changes go to MyRequest for HDB determination.
+- Current production 8a0466721d0efa256d4bfaf177ce398aee98d9a3; all 109 coverage records paginated, OTHER PR #5 head 278bfc377910aabc5cd35b6ed48f0561dbc09f31 guide-related patches read. Queue revision 75 preserves all 21 omitted cards. HFE correctness outranks Tampines precise-location work (official Bliss plan still needed), then parking termination (generic rule/example already covered by HDB); same-vehicle IU/OBU record work remains a researched alternative.
+- Baseline: final GSC Web/Pacific 15–21 November 2 clicks / 9 impressions versus 8–14 November 9 / 180, all 14 dates. 22–23 November absent, unknown. Exact-intent baseline not established; tiny sample inconclusive. Complete Vercel 17–23 November UTC production-project-wide referrer aggregate: 99 pageviews, 70 blank referrers unattributed, no recognized assistant hostname. No sessions, actions or installs inferred.
+- Hypothesis: the dated stage-and-change worksheet prevents ambiguous cancellation advice and may support useful discovery. Service-owned seven-day discovery and 28-day comparable outcome checks apply to the exact URL and five-language group, preserving late reviews. Publication, indexing and impact are separate.
+- Next action: run exact-head lint, unit, production build, one-worker browser and five-language ten-layout checks, review current checks/base/opportunity before merge, then exact-source candidate, promotion and independent live acceptance. No release is claimed by this source note.

@@ -59,6 +59,35 @@ describe('five-language article publishing', () => {
   });
 });
 
+
+describe('HFE same-URL migration', () => {
+  it('preserves the original date and navigation while owning each route exactly once', () => {
+    const slug = 'november-2026-bto-hfe-checklist';
+    const b = ARTICLE_BUNDLES.find(bundle => bundle.slug === slug)!;
+    expect(ARTICLE_BUNDLES.filter(bundle => bundle.slug === slug)).toHaveLength(1);
+    expect(englishParams().filter(entry => entry.guide === slug)).toHaveLength(1);
+    expect(localizedParams().filter(entry => entry.guide === slug)).toHaveLength(1);
+    expect(b.publishedDate).toBe('2026-10-18');
+    expect(b.updatedDate).toBe('2026-11-24');
+    expect(b.checkedDate).toBe('2026-11-24');
+    const dates = { en: '18 October 2026', es: '18 de octubre de 2026', fr: '18 octobre 2026', de: '18. Oktober 2026', 'zh-Hans': '2026 年 10 月 18 日' };
+    const entries = sitemap();
+    for (const language of ARTICLE_LANGUAGES) {
+      const copy = b.translations[language];
+      expect(copy.sections[0].paragraphs[0]).toContain(dates[language]);
+      expect(copy.sections).toHaveLength(7);
+      expect(copy.next.map(next => next.href)).toEqual(['/guides/bto-queue-number-beyond-flat-supply', '/', '/guides/dia-hfe-and-housing-grants', '/guides/bto-cash-cpf-payment-timeline', '/guides']);
+      expect(entries.filter(entry => new URL(entry.url).pathname === articlePath(slug, language))).toHaveLength(1);
+      const metadata = localizedArticleMetadata(b, language);
+      expect(metadata.openGraph).toMatchObject({ publishedTime: '2026-10-18', modifiedTime: '2026-11-24' });
+    }
+    expect(b.translations.en.sections[3].paragraphs.join(' ')).toContain('income change alone');
+    expect(b.translations.en.sections[4].paragraphs.join(' ')).toContain('After the exercise');
+    expect(b.translations.en.sections[4].paragraphs.join(' ')).toContain('MyRequest@HDB');
+    expect(snapshot.lastAuditDate).toBe('2026-08-28');
+  });
+});
+
 describe('November 2026 launch reconciliation', () => {
   it('uses the published wait while unverified price and location remain unknown after launch', () => {
     const answers: ExplorerAnswers = { workHubIds: [], customWorkplace: [0, 0], maxBudget: 600000, flatType: '4-room', amenityGroups: [], waitingBand: 'soon' };
