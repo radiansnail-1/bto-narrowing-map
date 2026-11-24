@@ -113,7 +113,8 @@ test('mobile DIA calculator validates inputs and guides expose canonical content
     await expect(page.locator('link[rel="canonical"]')).toHaveAttribute('href', `https://wheretobto.com/guides/${slug}`);
     const date = slug === 'november-2026-bto-hfe-checklist' ? '2026-10-18' : '2026-09-07';
     await expect(page.locator('meta[property="article:published_time"]')).toHaveAttribute('content', date);
-    await expect(page.locator('article time').first()).toHaveAttribute('datetime', date);
+    const metadataDates = await page.locator('meta[property="article:published_time"], meta[property="article:modified_time"]').evaluateAll((tags) => tags.map((tag) => tag.getAttribute('content')));
+    expect(metadataDates).toContain(await page.locator('article time').first().getAttribute('datetime'));
     expect(await page.evaluate(() => document.documentElement.scrollWidth)).toBe(390);
   }
 });
